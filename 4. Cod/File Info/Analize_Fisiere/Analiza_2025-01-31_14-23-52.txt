@@ -1,0 +1,117 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/06_Zookeeper.pdf
+File Type: application/pdf
+File Size: 2347377 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2024-12-07 20:51:42
+Modified: 2024-12-07 22:04:41
+Accessed: 2025-01-31 14:23:52
+File Hash (MD5): 23786bf4e6bbe0395697ef8a903aff15
+
+Hex Dump (first 256 bytes):
+25 50 44 46 2d 31 2e 34 0d 25 e2 e3 cf d3 0d 0a 32 36 37 20 30 20 6f 62 6a 0d 3c 3c 2f 4c 69 6e 65 61 72 69 7a 65 64 20 31 2f 4c 20 32 33 32 34 30 39 34 2f 4f 20 32 36 39 2f 45 20 37 36 39 36 30 2f 4e 20 31 34 2f 54 20 32 33 32 33 32 36 31 2f 48 20 5b 20 35 30 30 20 33 34 34 5d 3e 3e 0d 65 6e 64 6f 62 6a 0d 20 20 20 20 20 20 20 20 20 20 20 20 0d 32 38 34 20 30 20 6f 62 6a 0d 3c 3c 2f 44 65 63 6f 64 65 50 61 72 6d 73 3c 3c 2f 43 6f 6c 75 6d 6e 73 20 35 2f 50 72 65 64 69 63 74 6f 72 20 31 32 3e 3e 2f 46 69 6c 74 65 72 2f 46 6c 61 74 65 44 65 63 6f 64 65 2f 49 44 5b 3c 43 35 37 36 44 33 45 37 35 32 32 44 44 45 36 35 38 41 35 32 31 30 34 33 36 39 46 33 39 36 45 42 3e 3c 35 45 36 45 44 46 39 46 30 45 38 33 34 38 36 36 39 45 30 35 36 43 36 34 37 31 32 38 36 32 33
+
+Extracted Strings (min 4 characters):
+%PDF-1.4
+267 0 obj
+<</Linearized 1/L 2324094/O 269/E 76960/N 14/T 2323261/H [ 500 344]>>
+endobj
+            
+284 0 obj
+<</DecodeParms<</Columns 5/Predictor 12>>/Filter/FlateDecode/ID[<C576D3E7522DDE658A52104369F396EB><5E6EDF9F0E8348669E056C6471286231>]/Index[267 36]/Info 266 0 R/Length 95/Prev 2323262/Root 268 0 R/Size 303/Type/XRef/W[1 3 1]>>stream
+bbd`
+``b``
+30120
+endstream
+endobj
+startxref
+%%EOF
+        
+302 0 obj
+<</Filter/FlateDecode/I 299/Length 262/S 230>>stream
+b```f``2c`c`
+r``8
+*:,]A&4Fz
+TfXN
+endstream
+endobj
+268 0 obj
+<</Metadata 158 0 R/Pages 262 0 R/Type/Catalog>>
+endobj
+269 0 obj
+<</Contents[275 0 R 276 0 R 277 0 R 278 0 R 279 0 R 281 0 R 282 0 R 283 0 R]/CropBox[0 0 612 792]/MediaBox[0 0 612 792]/Parent 263 0 R/Resources 285 0 R/Rotate 0/Type/Page>>
+endobj
+270 0 obj
+<</Filter/FlateDecode/First 144/Length 1537/N 17/Type/ObjStm>>stream
+;\z0H
+I<Wp}
+7>w_KV
+x; [
+Le4?
+~ &=
+=AQ@
+\oH}
+==<>
+@5)0
+tq1n
+L;gj
+@OP0
+<F*"2
+3B_0[e
+]c,LD
+E|Us
+S1%o#
+k(K[g
+;=:9
+endstream
+endobj
+271 0 obj
+<</Filter/FlateDecode/Length 1710/Length1 832/Length2 1146/Length3 0>>stream
+}<Ti
+$23g^L
+A:B4
+7Lb.
+!A"&
+"*!D
+a1.R
+ch0N"
+jMFR\
+4BBj
+ g~?M
+kr|N
+b)$+
+oKZDI
++\.I
+#J\R
+}20P
+ew62
+A[Fk
+3A+C
+n.B#m
+0PFPy
+7rn$
+]n}sC
+QsNe
+v~, 
+l_Uthouq@t
+endstream
+endobj
+272 0 obj
+<</Filter/FlateDecode/Length 16167/Length1 1612/Length2 15335/Length3 0>>stream
+LgKs;
+E-)y
+WgK;
+?}n@
+AU\E[S
+gWT\
+6qur
+fgT?
+ }t@
+/:=#O:~z
+M9%Jv
+Bh(<
+fX26
+Nk,FG...
+

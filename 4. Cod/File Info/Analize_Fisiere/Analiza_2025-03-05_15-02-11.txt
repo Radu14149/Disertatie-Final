@@ -1,0 +1,67 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie/1. Prezentare/Imagini Descărcate/LLMs.png
+File Type: image/png (89 50 4e 47)
+File Size: 227297 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-03-05 10:01:09
+Modified: 2025-03-05 10:01:10
+Accessed: 2025-03-05 15:02:11
+File Hash (MD5): fc03beda45f5b9c014fbf13831c44a38
+
+Hex Dump (first 256 bytes):
+89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 04 72 00 00 02 2c 08 06 00 00 00 9e 1f 8e 51 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00 00 04 67 41 4d 41 00 00 b1 8f 0b fc 61 05 00 00 00 09 70 48 59 73 00 00 12 74 00 00 12 74 01 de 66 1f 78 00 00 ff a5 49 44 41 54 78 5e ec 9d 07 a0 15 c5 d5 c7 cf 6d af bf 47 ef 4d 40 44 54 44 10 b1 00 2a 58 b1 f7 9a 98 d8 35 3d 5f 4c 62 4c 35 c6 54 35 6a 34 4d 4d ac b1 f7 de 50 b1 1b 91 26 02 22 d2 7b e7 f5 5b bf f3 3b 7b e7 b1 5c ef 6b 14 03 ba ff f7 ce dd dd d9 e9 33 3b 73 e6 cc 99 99 50 46 21 01 02 04 08 10 20 40 80 00 01 02 04 08 10 20 40 80 00 01 b6 7b 84 b3 d7 00 01 02 04 08 10 20 40 80 00 01 02 04 08 10 20 40 80 00 db 39 02 41 4e 80 00 01 02 04 08 10 20 40 80 00 01 02 04 08 10 20 c0 0e 82 40 90 13 20 40 80 00
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 50 strings):
+IHDR
+sRGB
+gAMA
+pHYs
+IDATx^
+M@DTD
+5=_LbL5
+T5j4MM
+.2Y)
+"l7*R
+).(2
+KM]}
+q\)i"
+k/FXc
+HHUU
+R]]-
+%3!Y
+?_jkk
+SRR"
+R^^.
+mwn;
+H4nV$
+H2U%
+Ciyj
+7^{7
+srV]&%
+_X8f
+!LAA
+RVV&
+N>F)
+*)s6
+oF9~k
+&W/ZCee"!
+jgCZ
+*#4p
+%ZXl6
+tMZ"j7
+jkKd
+Uqyt
+oK<Y/
+5Of4
+'ZA"
+(7=e]Z
+-T{Q
+~2zp
+OL"8`
+^rLX
+/Y%?
+)P#]=6m3
+sL5~

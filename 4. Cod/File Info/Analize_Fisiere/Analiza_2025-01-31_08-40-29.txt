@@ -1,0 +1,22 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/06_Zookeeper.pdf
+File Type: application/pdf
+File Hash (MD5): 23786bf4e6bbe0395697ef8a903aff15
+
+Hex Dump (first 256 bytes):
+25 50 44 46 2d 31 2e 34 0d 25 e2 e3 cf d3 0d 0a 32 36 37 20 30 20 6f 62 6a 0d 3c 3c 2f 4c 69 6e 65 61 72 69 7a 65 64 20 31 2f 4c 20 32 33 32 34 30 39 34 2f 4f 20 32 36 39 2f 45 20 37 36 39 36 30 2f 4e 20 31 34 2f 54 20 32 33 32 33 32 36 31 2f 48 20 5b 20 35 30 30 20 33 34 34 5d 3e 3e 0d 65 6e 64 6f 62 6a 0d 20 20 20 20 20 20 20 20 20 20 20 20 0d 32 38 34 20 30 20 6f 62 6a 0d 3c 3c 2f 44 65 63 6f 64 65 50 61 72 6d 73 3c 3c 2f 43 6f 6c 75 6d 6e 73 20 35 2f 50 72 65 64 69 63 74 6f 72 20 31 32 3e 3e 2f 46 69 6c 74 65 72 2f 46 6c 61 74 65 44 65 63 6f 64 65 2f 49 44 5b 3c 43 35 37 36 44 33 45 37 35 32 32 44 44 45 36 35 38 41 35 32 31 30 34 33 36 39 46 33 39 36 45 42 3e 3c 35 45 36 45 44 46 39 46 30 45 38 33 34 38 36 36 39 45 30 35 36 43 36 34 37 31 32 38 36 32 33
+
+PDF Content:
+ZooKeeper: Wait-free coordination for Internet-scale systems
+Patrick Hunt and Mahadev Konar
+Yahoo! Grid
+fphunt,mahadev g@yahoo-inc.comFlavio P. Junqueira and Benjamin Reed
+Yahoo! Research
+ffpj,breed g@yahoo-inc.com
+Abstract
+In this paper, we describe ZooKeeper, a service for co-
+ordinating processes of distributed applications. Since
+ZooKeeper is part of critical infrastructure, ZooKeeper
+aims to provide a simple and high performance kernel
+for building more complex coordination primitives at th...
+

@@ -1,0 +1,13 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/06_Zookeeper.pdf
+File Type: application/pdf
+File Size: 2347377 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2024-12-07 20:51:42
+Modified: 2024-12-07 22:04:41
+Accessed: 2025-01-31 14:32:58
+File Hash (MD5): 23786bf4e6bbe0395697ef8a903aff15
+
+Eroare analiză PE: 'DOS Header magic not found.'

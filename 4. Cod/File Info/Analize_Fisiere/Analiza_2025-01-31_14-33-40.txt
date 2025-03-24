@@ -1,0 +1,292 @@
+File Analysis
+File Path: C:/Users/Here/AppData/Local/GitHubDesktop/GitHubDesktop.exe
+File Type: application/x-msdownload
+File Hash (MD5): 86872334fb5275f9fbb9bc08dbd9d192
+
+Hex Dump (first 256 bytes):
+4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 01 00 00 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e 0d 0d 0a 24 00 00 00 00 00 00 00 d1 2e 65 00 95 4f 0b 53 95 4f 0b 53 95 4f 0b 53 f0 29 08 52 98 4f 0b 53 f0 29 0e 52 0e 4f 0b 53 f0 29 0f 52 83 4f 0b 53 c7 27 08 52 86 4f 0b 53 c7 27 0e 52 a9 4f 0b 53 c7 27 0f 52 b7 4f 0b 53 f0 29 0a 52 90 4f 0b 53 95 4f 0a 53 cc 4f 0b 53 35 26 02 52 91 4f 0b 53 35 26 f4 53 94 4f 0b 53 95 4f 9c 53 94 4f 0b 53 35 26 09 52 94 4f 0b 53 52 69 63 68 95 4f 0b 53 00 00 00 00 00 00 00 00
+
+Extracted Strings (min 4 characters):
+!This program cannot be run in DOS mode.
+SRich
+.text
+`.rdata
+@.data
+.rsrc
+@.reloc
+az--
+09AZP
+H_^[
+YY;E
+YY^]
+t5;p
+,;0u
+8_^]
+tw;;u 
+?"_^t
+:^0t
+VWj8_W
+!=$I
+YY;E
+_^[]
+_^[]
+YY[kE
+YY[kE
+YY^]
+t1;p
+(;0u
+8_^]
+_^[]
+SVW3
+?"_^t
+jD^V
+D$$SP
+D$TG3
+|$Pf
+CD$lP
+L$$QPSSWSSVS
+_^[3
+t%VW
+9N8s
+9N8s
+r8;0
+;0v:f
+G<YY
+BN8+
+D8$;
+L98P
+L98P
+wS9G
+\0 9|0$|
+L18P
+P$;E
+L18P
+_^[]
+_^[]
+CYY;
+CYY;
+SVWP
+~,9~$t
+~$9~
+u>jD
+Wh|k@
+^_[]
+YY^]
+9;t>
+YYhT
+h'v@
+@_^[
+j,VW
+_[^]
+SVW3
+_^[]
+Y_^[
+t>+}
+8csm
+Y_^[
+j Y+
+j Y+
+Y_^[
+hrP@
+Y_^[
+Y__^[
+Y__^[
+Genu
+5ineI
+5ntel
+t#=`
+8csm
+QQSVWd
+8csm
+Y_^[
+8RCC
+8MOC
+8csm
+oF f
+oF f
+oF f
+oV f
+o^0f...
+
+Imports:
+KERNEL32.dll
+KERNEL32.dll -> GetModuleFileNameW
+KERNEL32.dll -> GetModuleHandleW
+KERNEL32.dll -> FindFirstFileW
+KERNEL32.dll -> FindNextFileW
+KERNEL32.dll -> FindClose
+KERNEL32.dll -> CreateProcessW
+KERNEL32.dll -> CreateFileW
+KERNEL32.dll -> CloseHandle
+KERNEL32.dll -> WideCharToMultiByte
+KERNEL32.dll -> GetLastError
+KERNEL32.dll -> MultiByteToWideChar
+KERNEL32.dll -> GetStringTypeW
+KERNEL32.dll -> EncodePointer
+KERNEL32.dll -> DecodePointer
+KERNEL32.dll -> SetLastError
+KERNEL32.dll -> InitializeCriticalSectionAndSpinCount
+KERNEL32.dll -> SwitchToThread
+KERNEL32.dll -> TlsAlloc
+KERNEL32.dll -> TlsGetValue
+KERNEL32.dll -> TlsSetValue
+KERNEL32.dll -> TlsFree
+KERNEL32.dll -> GetSystemTimeAsFileTime
+KERNEL32.dll -> GetProcAddress
+KERNEL32.dll -> EnterCriticalSection
+KERNEL32.dll -> LeaveCriticalSection
+KERNEL32.dll -> DeleteCriticalSection
+KERNEL32.dll -> LCMapStringW
+KERNEL32.dll -> GetLocaleInfoW
+KERNEL32.dll -> GetCPInfo
+KERNEL32.dll -> UnhandledExceptionFilter
+KERNEL32.dll -> SetUnhandledExceptionFilter
+KERNEL32.dll -> GetCurrentProcess
+KERNEL32.dll -> TerminateProcess
+KERNEL32.dll -> IsProcessorFeaturePresent
+KERNEL32.dll -> IsDebuggerPresent
+KERNEL32.dll -> GetStartupInfoW
+KERNEL32.dll -> QueryPerformanceCounter
+KERNEL32.dll -> GetCurrentProcessId
+KERNEL32.dll -> GetCurrentThreadId
+KERNEL32.dll -> InitializeSListHead
+KERNEL32.dll -> RtlUnwind
+KERNEL32.dll -> RaiseException
+KERNEL32.dll -> FreeLibrary
+KERNEL32.dll -> LoadLibraryExW
+KERNEL32.dll -> ExitProcess
+KERNEL32.dll -> GetModuleHandleExW
+KERNEL32.dll -> GetStdHandle
+KERNEL32.dll -> WriteFile
+KERNEL32.dll -> HeapFree
+KERNEL32.dll -> HeapAlloc
+KERNEL32.dll -> IsValidLocale
+KERNEL32.dll -> GetUserDefaultLCID
+KERNEL32.dll -> EnumSystemLocalesW
+KERNEL32.dll -> HeapReAlloc
+KERNEL32.dll -> GetFileType
+KERNEL32.dll -> FindFirstFileExW
+KERNEL32.dll -> IsValidCodePage
+KERNEL32.dll -> GetACP
+KERNEL32.dll -> GetOEMCP
+KERNEL32.dll -> GetCommandLineA
+KERNEL32.dll -> GetCommandLineW
+KERNEL32.dll -> GetEnvironmentStringsW
+KERNEL32.dll -> FreeEnvironmentStringsW
+KERNEL32.dll -> GetProcessHeap
+KERNEL32.dll -> SetStdHandle
+KERNEL32.dll -> SetFilePointerEx
+KERNEL32.dll -> HeapSize
+KERNEL32.dll -> FlushFileBuffers
+KERNEL32.dll -> GetConsoleCP
+KERNEL32.dll -> GetConsoleMode
+KERNEL32.dll -> WriteConsoleW
+USER32.dll
+USER32.dll -> AllowSetForegroundWindow
+USER32.dll -> WaitForInputIdle
+
+Exports:
+
+
+Assembly Code:
+882b:	push	0x168
+8830:	mov	eax, 0x41c024
+8835:	call	0x100cb
+883a:	mov	ebx, 0x4297e0
+883f:	mov	dword ptr [ebp - 0x34], 0x401270
+8846:	lea	eax, [ebp - 0x38]
+8849:	mov	dword ptr [ebp - 0x38], ebx
+884c:	xor	esi, esi
+884e:	mov	dword ptr [ebp - 0x14], eax
+8851:	mov	dword ptr [ebp - 4], esi
+8854:	lea	ecx, [ebp - 0x168]
+885a:	push	eax
+885b:	mov	dword ptr [ebp - 0x170], esi
+8861:	mov	dword ptr [ebp - 0x16c], esi
+8867:	call	0x8d93
+886c:	mov	byte ptr [ebp - 4], 3
+8870:	mov	ecx, dword ptr [ebp - 0x14]
+8873:	test	ecx, ecx
+8875:	je	0x888b
+8877:	mov	edx, dword ptr [ecx]
+8879:	lea	eax, [ebp - 0x38]
+887c:	cmp	ecx, eax
+887e:	setne	al
+8881:	movzx	eax, al
+8884:	push	eax
+8885:	call	dword ptr [edx + 0x10]
+8888:	mov	dword ptr [ebp - 0x14], esi
+888b:	lea	eax, [ebp - 0x88]
+8891:	mov	dword ptr [ebp - 0x88], 0x429818
+889b:	mov	dword ptr [ebp - 0x64], eax
+889e:	xor	edi, edi
+88a0:	mov	byte ptr [ebp - 4], 4
+88a4:	inc	edi
+88a5:	mov	dword ptr [ebp - 0x140], esi
+88ab:	push	eax
+88ac:	lea	ecx, [ebp - 0x138]
+88b2:	mov	dword ptr [ebp - 0x13c], edi
+88b8:	call	0x8d93
+88bd:	mov	byte ptr [ebp - 4], 7
+88c1:	mov	ecx, dword ptr [ebp - 0x64]
+88c4:	test	ecx, ecx
+88c6:	je	0x88df
+88c8:	mov	edx, dword ptr [ecx]
+88ca:	lea	eax, [ebp - 0x88]
+88d0:	cmp	ecx, eax
+88d2:	setne	al
+88d5:	movzx	eax, al
+88d8:	push	eax
+88d9:	call	dword ptr [edx + 0x10]
+88dc:	mov	dword ptr [ebp - 0x64], esi
+88df:	lea	eax, [ebp - 0xb0]
+88e5:	mov	dword ptr [ebp - 0xb0], 0x4297fc
+88ef:	mov	dword ptr [ebp - 0x8c], eax
+88f5:	mov	byte ptr [ebp - 4], 8
+88f9:	lea	ecx, [ebp - 0x108]
+88ff:	push	eax
+8900:	mov	dword ptr [ebp - 0x110], edi
+8906:	mov	dword ptr [ebp - 0x10c], esi
+890c:	call	0x8d93
+8911:	mov	byte ptr [ebp - 4], 0xb
+8915:	mov	ecx, dword ptr [ebp - 0x8c]
+891b:	test	ecx, ecx
+891d:	je	0x8939
+891f:	mov	edx, dword ptr [ecx]
+8921:	lea	eax, [ebp - 0xb0]
+8927:	cmp	ecx, eax
+8929:	setne	al
+892c:	movzx	eax, al
+892f:	push	eax
+8930:	call	dword ptr [edx + 0x10]
+8933:	mov	dword ptr [ebp - 0x8c], esi
+8939:	lea	eax, [ebp - 0x60]
+893c:	mov	dword ptr [ebp - 0x60], ebx
+893f:	mov	dword ptr [ebp - 0x5c], 0x4012b4
+8946:	mov	dword ptr [ebp - 0x3c], eax
+8949:	mov	byte ptr [ebp - 4], 0xc
+894d:	lea	ecx, [ebp - 0xd8]
+8953:	push	eax
+8954:	mov	dword ptr [ebp - 0xe0], edi
+895a:	mov	dword ptr [ebp - 0xdc], edi
+8960:	call	0x8d93
+8965:	mov	byte ptr [ebp - 4], 0xd
+8969:	mov	ecx, dword ptr [ebp - 0x3c]
+896c:	test	ecx, ecx
+896e:	je	0x8984
+8970:	mov	edx, dword ptr [ecx]
+8972:	lea	eax, [ebp - 0x60]
+8975:	cmp	ecx, eax
+8977:	setne	al
+897a:	movzx	eax, al
+897d:	push	eax
+897e:	call	dword ptr [edx + 0x10]
+8981:	mov	dword ptr [ebp - 0x3c], esi
+8984:	mov	dword ptr [ebp - 4], 0xe
+898b:	mov	dword ptr [0x42f398], esi
+8991:	mov	dword ptr [0x42f39c], esi
+8997:	call	0x9178
+899c:	mov	esi, eax
+899e:	mov	dword ptr [0x42f398], esi
+89a4:	mov	byte ptr [ebp - 4], 0xf...
+

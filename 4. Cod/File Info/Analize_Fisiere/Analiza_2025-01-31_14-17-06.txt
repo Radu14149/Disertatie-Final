@@ -1,0 +1,110 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/fluier.png
+File Type: image/png
+File Hash (MD5): 5fa2f192e301a7a3314d21fe6f66f399
+
+Hex Dump (first 256 bytes):
+89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 03 bc 00 00 03 4e 08 06 00 00 00 32 19 00 25 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00 00 04 67 41 4d 41 00 00 b1 8f 0b fc 61 05 00 00 00 09 70 48 59 73 00 00 12 74 00 00 12 74 01 de 66 1f 78 00 00 ff a5 49 44 41 54 78 5e ec dd 07 60 14 d5 16 06 e0 03 09 29 40 42 20 01 42 4b e8 bd f7 0e 52 44 aa d2 44 44 45 45 04 ec 22 28 45 10 69 76 45 45 7c 76 05 15 51 51 94 26 bd f7 16 7a ef 2d 10 5a 7a 87 37 ff 9d 19 b2 09 9b de 76 37 ff e7 db 97 cd ec 26 6c c9 ce cc b9 e7 dc 73 f3 f9 fb fb df 91 24 ce 9c 39 63 5c 23 22 22 22 22 22 22 b2 7d e5 cb 97 37 ae 25 c8 6f 7c 25 22 22 22 22 22 22 72 28 0c 78 89 88 88 88 88 88 c8 21 31 e0 25 22 22 22 22 22 22 87 c4 80 97 88 88 88 88 88 88 1c 12 03 5e 22 22 22 22 22 22 72 48
+
+Extracted Strings (min 4 characters):
+IHDR
+sRGB
+gAMA
+pHYs
+IDATx^
+)@B 
+DDEE
+ivEE|v
+9c\#""""""
+o|%""""""r(
+%""""""
+^""""""rH
+%88Xn
+;wN&M
+;vL}
+?_^x
+:T6o
+,qqq
+lm||
+'$66V=
+~oxx
+7o._~
+}CCCU
+<O""
+^]ex
+6~*u
+%""J
+Nd.Q
+d]\\
+Pu@FYtz hE
+M>>>R
+<""B
+(dj1
+d<g3
+ DDD
+4Z.]
+b9"<~
+$""J
+m`>_|o
+%""""""
+%""""""
+H,rov
+$"""""
+HDDDDDD9/**J
+DDDDDD
+%""""""
+""""""
+gPLDDDDD
++nnn
+,111
+DDDDD
+l8~M;
+W^yE
+BDDDD
+""""
+9}=\
+g%  @
+=E|}}
+%""""
+KDDDD
+KDDDD
+%v+"FF
+O*4*N
+=BnF
+32QVa
+KDDDD
+.>"#
+%42N}
+%""""J
+^""""
+"[pM
+^""""
+wY&-<$
+w;2'W
+Y~(P~
+^"""""+
+->b\K
+%""""
+LuN3Qnb
+KDDDDd
+^"""""+
+DDDDD
+DDDDD
+r9~%
+%"""
+wiA\
+9(4J"c
+LXp@~
+8?{#k
+KDDDD
+f${L
+ilI]
+e!1_6:
+DDDDd
+QY]4
+:z%L
+^""""
+E0{M{
+rBDy
+^""""...
+

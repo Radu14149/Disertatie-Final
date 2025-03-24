@@ -1,0 +1,171 @@
+File Analysis
+File Path: C:/Users/Here/AppData/Local/GitHubDesktop/GitHubDesktop.exe
+File Type: application/x-msdownload (4d 5a 90 00)
+File Size: 400488 bytes
+Permissions: 777
+Owner: Here
+Group: N/A
+Created: 2024-07-23 23:00:37
+Modified: 2024-07-23 23:00:37
+Accessed: 2025-01-31 14:41:38
+File Hash (MD5): 86872334fb5275f9fbb9bc08dbd9d192
+
+Hex Dump (first 256 bytes):
+4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 01 00 00 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e 0d 0d 0a 24 00 00 00 00 00 00 00 d1 2e 65 00 95 4f 0b 53 95 4f 0b 53 95 4f 0b 53 f0 29 08 52 98 4f 0b 53 f0 29 0e 52 0e 4f 0b 53 f0 29 0f 52 83 4f 0b 53 c7 27 08 52 86 4f 0b 53 c7 27 0e 52 a9 4f 0b 53 c7 27 0f 52 b7 4f 0b 53 f0 29 0a 52 90 4f 0b 53 95 4f 0a 53 cc 4f 0b 53 35 26 02 52 91 4f 0b 53 35 26 f4 53 94 4f 0b 53 95 4f 9c 53 94 4f 0b 53 35 26 09 52 94 4f 0b 53 52 69 63 68 95 4f 0b 53 00 00 00 00 00 00 00 00
+
+PE Analysis:
+Imports:
+
+KERNEL32.dll:
+	GetModuleFileNameW
+	GetModuleHandleW
+	FindFirstFileW
+	FindNextFileW
+	FindClose
+	CreateProcessW
+	CreateFileW
+	CloseHandle
+	WideCharToMultiByte
+	GetLastError
+	MultiByteToWideChar
+	GetStringTypeW
+	EncodePointer
+	DecodePointer
+	SetLastError
+	InitializeCriticalSectionAndSpinCount
+	SwitchToThread
+	TlsAlloc
+	TlsGetValue
+	TlsSetValue
+	TlsFree
+	GetSystemTimeAsFileTime
+	GetProcAddress
+	EnterCriticalSection
+	LeaveCriticalSection
+	DeleteCriticalSection
+	LCMapStringW
+	GetLocaleInfoW
+	GetCPInfo
+	UnhandledExceptionFilter
+	SetUnhandledExceptionFilter
+	GetCurrentProcess
+	TerminateProcess
+	IsProcessorFeaturePresent
+	IsDebuggerPresent
+	GetStartupInfoW
+	QueryPerformanceCounter
+	GetCurrentProcessId
+	GetCurrentThreadId
+	InitializeSListHead
+	RtlUnwind
+	RaiseException
+	FreeLibrary
+	LoadLibraryExW
+	ExitProcess
+	GetModuleHandleExW
+	GetStdHandle
+	WriteFile
+	HeapFree
+	HeapAlloc
+	IsValidLocale
+	GetUserDefaultLCID
+	EnumSystemLocalesW
+	HeapReAlloc
+	GetFileType
+	FindFirstFileExW
+	IsValidCodePage
+	GetACP
+	GetOEMCP
+	GetCommandLineA
+	GetCommandLineW
+	GetEnvironmentStringsW
+	FreeEnvironmentStringsW
+	GetProcessHeap
+	SetStdHandle
+	SetFilePointerEx
+	HeapSize
+	FlushFileBuffers
+	GetConsoleCP
+	GetConsoleMode
+	WriteConsoleW
+
+USER32.dll:
+	AllowSetForegroundWindow
+	WaitForInputIdle
+
+Exports:
+Niciun export detectat.
+
+Assembly Code (first 20 instructions):
+0x400000:	push 0x168
+0x400005:	mov eax, 0x41c024
+0x40000a:	call 0x4078a0
+0x40000f:	mov ebx, 0x4297e0
+0x400014:	mov dword ptr [ebp - 0x34], 0x401270
+0x40001b:	lea eax, [ebp - 0x38]
+0x40001e:	mov dword ptr [ebp - 0x38], ebx
+0x400021:	xor esi, esi
+0x400023:	mov dword ptr [ebp - 0x14], eax
+0x400026:	mov dword ptr [ebp - 4], esi
+0x400029:	lea ecx, [ebp - 0x168]
+0x40002f:	push eax
+0x400030:	mov dword ptr [ebp - 0x170], esi
+0x400036:	mov dword ptr [ebp - 0x16c], esi
+0x40003c:	call 0x400568
+0x400041:	mov byte ptr [ebp - 4], 3
+0x400045:	mov ecx, dword ptr [ebp - 0x14]
+0x400048:	test ecx, ecx
+0x40004a:	je 0x400060
+0x40004c:	mov edx, dword ptr [ecx]
+
+Extracted Strings (first 50 strings):
+!This program cannot be run in DOS mode.
+SRich
+.text
+`.rdata
+@.data
+.rsrc
+@.reloc
+az--
+09AZP
+H_^[
+YY;E
+YY^]
+t5;p
+,;0u
+8_^]
+tw;;u 
+?"_^t
+:^0t
+VWj8_W
+!=$I
+YY;E
+_^[]
+_^[]
+YY[kE
+YY[kE
+YY^]
+t1;p
+(;0u
+8_^]
+_^[]
+SVW3
+?"_^t
+jD^V
+D$$SP
+D$TG3
+|$Pf
+CD$lP
+L$$QPSSWSSVS
+_^[3
+t%VW
+9N8s
+9N8s
+r8;0
+;0v:f
+G<YY
+BN8+
+D8$;
+L98P
+L98P
+wS9G

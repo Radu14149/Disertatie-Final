@@ -1,0 +1,117 @@
+File Analysis
+File Path: C:/Users/Here/AppData/Local/GitHubDesktop/GitHubDesktop.exe
+File Type: application/x-msdownload
+File Size: 400488 bytes
+Permissions: 777
+Owner: Here
+Group: N/A
+Created: 2024-07-23 23:00:37
+Modified: 2024-07-23 23:00:37
+Accessed: 2025-01-31 14:28:01
+File Hash (MD5): 86872334fb5275f9fbb9bc08dbd9d192
+
+Hex Dump (first 256 bytes):
+4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 01 00 00 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e 0d 0d 0a 24 00 00 00 00 00 00 00 d1 2e 65 00 95 4f 0b 53 95 4f 0b 53 95 4f 0b 53 f0 29 08 52 98 4f 0b 53 f0 29 0e 52 0e 4f 0b 53 f0 29 0f 52 83 4f 0b 53 c7 27 08 52 86 4f 0b 53 c7 27 0e 52 a9 4f 0b 53 c7 27 0f 52 b7 4f 0b 53 f0 29 0a 52 90 4f 0b 53 95 4f 0a 53 cc 4f 0b 53 35 26 02 52 91 4f 0b 53 35 26 f4 53 94 4f 0b 53 95 4f 9c 53 94 4f 0b 53 35 26 09 52 94 4f 0b 53 52 69 63 68 95 4f 0b 53 00 00 00 00 00 00 00 00
+
+Extracted Strings (min 4 characters):
+!This program cannot be run in DOS mode.
+SRich
+.text
+`.rdata
+@.data
+.rsrc
+@.reloc
+az--
+09AZP
+H_^[
+YY;E
+YY^]
+t5;p
+,;0u
+8_^]
+tw;;u 
+?"_^t
+:^0t
+VWj8_W
+!=$I
+YY;E
+_^[]
+_^[]
+YY[kE
+YY[kE
+YY^]
+t1;p
+(;0u
+8_^]
+_^[]
+SVW3
+?"_^t
+jD^V
+D$$SP
+D$TG3
+|$Pf
+CD$lP
+L$$QPSSWSSVS
+_^[3
+t%VW
+9N8s
+9N8s
+r8;0
+;0v:f
+G<YY
+BN8+
+D8$;
+L98P
+L98P
+wS9G
+\0 9|0$|
+L18P
+P$;E
+L18P
+_^[]
+_^[]
+CYY;
+CYY;
+SVWP
+~,9~$t
+~$9~
+u>jD
+Wh|k@
+^_[]
+YY^]
+9;t>
+YYhT
+h'v@
+@_^[
+j,VW
+_[^]
+SVW3
+_^[]
+Y_^[
+t>+}
+8csm
+Y_^[
+j Y+
+j Y+
+Y_^[
+hrP@
+Y_^[
+Y__^[
+Y__^[
+Genu
+5ineI
+5ntel
+t#=`
+8csm
+QQSVWd
+8csm
+Y_^[
+8RCC
+8MOC
+8csm
+oF f
+oF f
+oF f
+oV f
+o^0f...
+
