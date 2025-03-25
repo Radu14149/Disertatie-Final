@@ -1,0 +1,260 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{quote}
+\textbf{Aras G¨ung¨ore}\\
+\emph{\textbar{} \textbar{} \textbar{} \textbar{} \textbar{}}
+
+Education
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Bo˘gazi¸ci University}
+
+\emph{B.Sc. in Electrical and Electronics Engineering; \textbf{GPA:
+3.62/4.00}}
+
+\emph{Minor Degree in Computer Science; \textbf{GPA: 3.58/4.00}}
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Istanbul, Turkey \emph{Sep 2018 \textbf{--} Jun 2023 Oct 2020
+\textbf{--} Jun 2023}
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+\textbf{National University Admission Exam (YKS):} Ranked 75\emph{th}in
+Mathematics and Science among ca. 2.3 million candidates with a test
+score of 489.92/500. (Jul 2018)
+
+Skills
+
+\textbf{Languages:} C/C++, C\#, Java, Python, Go, JavaScript,
+TypeScript, SQL, Swift, Scala, MATLAB, R
+
+\textbf{Technologies:} Qt, Flask, Django, Node.js, React.js, MySQL,
+MongoDB, Git, SVN, Docker, AWS, Kubernetes, GCP, Kafka, RabbitMQ,
+OpenCV, PyTorch, TensorFlow
+
+\textbf{Methodologies:} Agile, Scrum, OOP, Functional Programming,
+DevOps, CI/CD, TDD
+
+Experience
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Avikon}\\
+\emph{Software Engineer}
+\end{quote}\strut
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Istanbul, Turkey\\
+\emph{Dec 2023 \textbf{--} Present, Full-time}
+\end{quote}\strut
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+\emph{•} Designed a Qt-based chat application utilizing TCP for
+real-time communication within a client-server architecture,
+demonstrating expertise in socket programming, data serialization, and
+message routing.
+
+\emph{•} Crafted message types in IDL and designed a data-centric
+publish-subscribe architecture based on a flyweight design pattern to
+implement OpenDDS for a radar system's command and control interface.
+Utilized QoS policies to facilitate the transmission of both volatile
+and persistent data across different topics.
+
+\emph{•} Implemented a fully asynchronous AMQP-based C++ client with a
+layered architecture for RabbitMQ message broker to ensure seamless
+message handling among multiple topics.
+
+\emph{•} Developed a cross-platform asynchronous program to refine UAV
+detection for a GIS application. Benchmarked point-in-polygon algorithms
+with a GeoJSON polygon database concurrently fetched from MongoDB.
+
+\textbf{SemperTech} Istanbul, Turkey \emph{Software Engineer} \emph{Sep
+2023 \textbf{--} Nov 2023, Full-time} \emph{•} Worked on the ``Ar¸celik
+Digital Home Energy'' project in a collaborative effort with DAI-Labor
+at the Technical University of Berlin under the supervision of.
+
+\emph{•} Simulated discovery, pairing, and data exchange processes using
+the EEBUS protocol suite with C\# and Go.
+
+Migrated the framework from Go to C++ in order to ensure future
+adaptability for smart home IoT devices.\emph{•} Implemented the TLS
+protocol for secure data exchange using the X.509 standard and
+integrated multicast DNS for seamless communication to complement the
+development of SHIP and SPINE protocols.
+
+\textbf{Max Planck Institute for Intelligent Systems}
+\emph{Undergraduate Researcher}
+
+Stuttgart, Baden\textbf{-}W¨urttemberg, Germany
+\end{quote}
+
+\emph{Jun 2022 \textbf{--} Aug 2022, Internship}
+
+\begin{quote}
+\emph{•} Engaged in collaborative research within the s and at the
+Physical
+
+Intelligence Department with Ph.D. students and on a project about 3D
+
+printing and heat-assisted magnetic programming of soft machines under
+the supervision of.
+
+\emph{•} Optimized a C++ ROS package for real-time conversion of 3D
+motion controller events to ROS messages, achieving
+
+high-frequency and buffer-free synchronization.
+
+\emph{•} Developed an Arduino Mega driver to activate a laser and
+pressure regulator, for monitoring coil temperatures and
+
+PID tuning to control the coil currents. Established a robust
+ROS-Arduino communication network by integrating
+
+ROSSerial and handshaking to simulate a 3D printing and magnetic
+programming process with Python.
+
+\textbf{SESTEK Speech Enabled Software Technologies} Istanbul, Turkey
+
+\emph{AI Research and Development Intern} \emph{Jan 2022 \textbf{--} Feb
+2022, Internship}
+
+\emph{•} Developed a generative QA system with dense passage retrieval
+(DPR) and retrieval-augmented generation (RAG)
+
+techniques using the Haystack framework and PyTorch.
+
+\emph{•} Worked on a Turkish open-domain QA system made by fine-tuning
+BERTurk and XLM-Roberta models.
+
+Tabularized exact match and F1 scores derived from DeepMind's XQuAD and
+various Turkish data sets.
+
+Awards \& Achievements
+
+\textbf{High Honors Degree:} Awarded to Bachelor alumni who have
+graduated with a GPA greater than or equal to 3.50 by Bo˘gazi¸ci
+University. (Jul 2023)\\
+\textbf{T ¨UB˙ITAK 2247-C Intern Researcher Scholarship:} Awarded to
+students who take part in research projects carried out by the
+Scientific and Technological Research Council of Turkey (T¨UB˙ITAK).
+(Dec 2021 \textbf{--} Jun 2022)
+
+\textbf{KYK Outstanding Success Scholarship:} Awarded to students who
+have been ranked in the top 100 on National University Admission Exam by
+Higher Education Credit and Hostels Institution (KYK). (Sep 2018
+\textbf{--} Jun 2023)
+
+\textbf{Kocaeli Science High School Valedictorian Award:} Graduated as
+the highest ranked student. (Jun 2018)
+
+Projects
+
+\textbf{Filters and Fractals} \emph{\textbar{}}\\
+\emph{•} A C project which implements a variety of image processing
+operations that manipulate the size, filter, brightness, contrast,
+saturation, and other properties of PPM images from scratch and
+recursive fractal generation functions to model popular fractals
+including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and
+Sierpinski triangle.
+
+\textbf{Chess Bot} \emph{\textbar{}}\\
+\emph{•} A C++ project in which you can play chess against an AI with a
+specified decision tree depth that uses alpha-beta pruning algorithm to
+predict the optimal move. Aside from basic moves, this mini chess engine
+also implements chess rules such as castling, en passant, fifty-move
+rule, threefold repetition, and pawn promotion.
+
+\textbf{DS\&A Projects} \emph{\textbar{}}\\
+\emph{•} Five Java projects that apply DS\&A concepts such as
+discrete-event simulation using priority queues, Dijkstra's shortest
+path algorithm, Prim's algorithm to find the minimum spanning tree,
+Dinic's algorithm for maximum flow problems, and weighted job scheduling
+with dynamic programming to real-world problems.
+\end{quote}
+
+\end{document}

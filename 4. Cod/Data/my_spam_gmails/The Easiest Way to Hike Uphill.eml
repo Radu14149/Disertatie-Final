@@ -1,0 +1,2005 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp862852gdb;
+        Fri, 28 Feb 2025 04:22:44 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IEB0rbXJN6iDp4GpaIdHF5rRAF3bAU/NJTscB4M2TjXHom/lORx3pRUsOdCrlXTLDrVM6eT
+X-Received: by 2002:ac8:5d56:0:b0:471:f437:2971 with SMTP id d75a77b69052e-474bc110754mr42107291cf.50.1740745363729;
+        Fri, 28 Feb 2025 04:22:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1740745363; cv=none;
+        d=google.com; s=arc-20240605;
+        b=XlU7scOmFU4XDql64B0S2h5br53DAWNToP4NqqiWWx5bRmzA3th+KhhP8qUA+XKRoj
+         Fm1hLezYWmf+XJbuTQAWwgrgO3CyhqRr80gFsjMxpu0H70hioZVqSyDrCZpApnybWsN5
+         RQ4JAneY7UgTpHLMf6QCYIR8WlQhmzZXbkiq0HoYumMX+LQWStuTqr8PdTmvoT5Ormub
+         f8vxV36LYvur7fdgRgAQY8OeQQWOkSep0VPCXa63gJPphdA+p4YNNt9LJQagm0g2TUZC
+         uN83ZyVKZtBTEwM09QJOXxaYTLpRQEAovr5mTD0jEKEPLp5gwG9PunWiK/GDAVEwEmo2
+         L38Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe-post:precedence:mime-version:subject
+         :message-id:to:reply-to:from:date:list-unsubscribe:dkim-signature
+         :dkim-signature;
+        bh=ehjMOi8fStaNrUsaGj9h0MwVIBP3DRzUFjXBR9X5sO4=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=JVd3eQHbBCjmQYIrMP03KVbpEU1zxUp3SFXRcqh4wjiJL7wb84cz0OL+Fl7kpaM6P6
+         Ssig9GZpbyDOIb7SFwHHktUdetHD++Da1mYYqfARWazVZsvdmGQqyQBgAGMp9tT3RVOi
+         oXBbZ/JzfuN9lYOTIF7PAl0sKabznenGd7oE/nRy/eXs2titcL6WXpSWHKLJgRrQl024
+         FmPG2F5DplNcMWTFZXgubC9mMsT3B4Mz2ZM0nXWk87r6BLMgKsWnFQ564tm6V+rV3BdO
+         G6CBaYe2U4fKDNwn25WFMiHsMiyV4E30UjpmIm9N77VjX5wG8ew10xoVYq3ovDkoc083
+         Kv5w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@marketing.pocketoutdoormedia.com header.s=hs1 header.b=X9zXslWg;
+       dkim=pass header.i=@gaiagps.com header.s=hs2-4566937 header.b=QE4k7T64;
+       spf=pass (google.com: domain of 1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2e25201=gmail.com@marketing.pocketoutdoormedia.com designates 54.174.60.193 as permitted sender) smtp.mailfrom="1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2E25201=gmail.com@marketing.pocketoutdoormedia.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=gaiagps.com
+Return-Path: <1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2E25201=gmail.com@marketing.pocketoutdoormedia.com>
+Received: from pgg3rn.marketing.pocketoutdoormedia.com (pgg3rn.marketing.pocketoutdoormedia.com. [54.174.60.193])
+        by mx.google.com with ESMTPS id d75a77b69052e-4747357d561si29701811cf.663.2025.02.28.04.22.43
+        for <radu.25201@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 28 Feb 2025 04:22:43 -0800 (PST)
+Received-SPF: pass (google.com: domain of 1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2e25201=gmail.com@marketing.pocketoutdoormedia.com designates 54.174.60.193 as permitted sender) client-ip=54.174.60.193;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@marketing.pocketoutdoormedia.com header.s=hs1 header.b=X9zXslWg;
+       dkim=pass header.i=@gaiagps.com header.s=hs2-4566937 header.b=QE4k7T64;
+       spf=pass (google.com: domain of 1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2e25201=gmail.com@marketing.pocketoutdoormedia.com designates 54.174.60.193 as permitted sender) smtp.mailfrom="1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2E25201=gmail.com@marketing.pocketoutdoormedia.com";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=gaiagps.com
+Received: by 172.16.114.16 with SMTP id a0b2377bl4ybydseq1yhjk7kp5wfshwye1c9qbrf3bc;
+        Fri, 28 Feb 2025 12:22:43 GMT
+DKIM-Signature: v=1; s=hs1; d=marketing.pocketoutdoormedia.com; 
+        i=@marketing.pocketoutdoormedia.com; 
+        h=sender:from:from:reply-to:to:to:cc:cc:subject:subject:list-unsubscribe:form-sub:feedback-id:list-unsubscribe-post; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=ehjMOi8fStaNrUsaGj9h0MwVIBP3DRzUFjXBR9X5sO4=; 
+        b=X9zXslWgASgUh9UvwbwrE5N08j/NQ8O/CH3rCH5vuwInd6me1y+DcsdopMxwh5
+         NCJ0ziXpiw1DUGcYAcZ65VrOKqzUioQPtb7cbDxzBu4UtEnEnZW9VS8GXhRQmLK
+         72uaXJs9uKYWQme927DqA4F1OuK/9/G9Mf3NE2utFB686Nb6LdOgStqYEo9uZLG
+         o8hZouJuv98eDRY1GpdYVy1tDjJ8/QDr0ROqC1l7d+P/zvEgXrvAPFUbP4puvNC
+         xo3qRrC+Erax9XE1apm/KfmfIeYvDI78Ny1CN4QAPJoAlE6Sl7sUh0O3O58RSDS
+         X1CQebeK7iHiUls2UOSnZSCy2Vbg==; q=dns/txt; t=1740745363; 
+        x=1741008163;
+DKIM-Signature: v=1; s=hs2-4566937; d=gaiagps.com; 
+        i=@gaiagps.com; 
+        h=sender:from:from:reply-to:to:to:cc:cc:subject:subject:list-unsubscribe:form-sub:feedback-id:list-unsubscribe-post; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=ehjMOi8fStaNrUsaGj9h0MwVIBP3DRzUFjXBR9X5sO4=; 
+        b=QE4k7T64+I+pMW8rQFzSP532ZKo8Y4N1WivPIN072bC/2zC07SVhVPbxBhbS23
+         ltReBSA2wLaJA21RsiA8O79UgqxuJfT3LOmvyaHqDA7E5CSZ7u0fqYY1WK/Vq4K
+         X15Fbv+S81JQCLFnN8lRKULkUv1jty67X0iaRGBD1YrHy2/NaFpspx8dh2LIkUG
+         bPLFb5XNi2Fn5WuUoj24DvMZTCadR7TLZeUm9nhgaZsbnsoAwYfTKG+JQjxGIWI
+         LkS/no/BxO4cDsuLS32VzQYvhQtybSpPsMRm0r+MZeoYVzFGqwpVj9FYGXFJWgo
+         3PbSVJD4CnTafsssrNzGyZV0Mx7Q==; q=dns/txt; t=1740745363; 
+        x=1741008163;
+Return-Path: <1axbzmtsx4h252sojmkui9gqu34y7lgagwtaum-radu+2E25201=gmail.com@marketing.pocketoutdoormedia.com>
+X-HS-Cid: 1axe6afj65bi58ctt0nonx02l1vnni0r46fmzy
+List-Unsubscribe: <mailto:1axcyak8xn1mbp82vjm6ej2tp6bzbhjkliy8ku-radu+2E25201=gmail.com@marketing.pocketoutdoormedia.com?subject=unsubscribe>, <https://plus.gaiagps.com/hs/subscription-preferences/v2/unsubscribe-all?data=W2nXS-N30h-MNW49kF7823mKk9W3by3dS2Ry1NbW3QSwkb1ZbMKkW1NC9rz3QTQd2W30mmD722YvYBW3DT6pX2-g68cW1Lk1XC234P8fW3F7Xt11ZmBTQW3W35Vl2Kp191W2KBph63B-XsnW2FWSRm1LFV06W2r5_ZR4klXlDW47F30F2qWRXkW2Rwqwq215m7cW49RJkV2HtQbnW1_lxQc30GxPDW1_6n_P34n7FGW2xy5Ft1NDxv3W2CKcCt2PtzZyW4fHQ4s2-9ZXPW38wjff45S2SzW1QCvgr43F31cW4plXH72KWT43W1V0nmR2WzjX5W3dzDwS1Nx0B_W2YKt9X1ZpDVDW3F00rS3Xy43zW3NCN2W2WDJ-2W1BHDk83XMl5WW4r7txF3c_NSwW3NDchc38sk45W4tvPpH1BKhMfW38sl241Shy6_W4mtLF443R6b5W2nFsYs47m45hW2D0rLS30G_RhW367Sd71Sr5mzW1Vjg4l3_GNNgW213JqG1Vv9rpW1SjTl22sFtsYW3GHJnv3dwjC8W3LVY4k3SClLVW2zYZsH1QrkRWW20W7tW4ctl8ZW3_Hc172Yx2VHf3SwlqX04>
+Date: Fri, 28 Feb 2025 05:22:43 -0700
+From: Gaia GPS Newsletter <membership@gaiagps.com>
+Reply-To: membership@gaiagps.com
+To: radu.25201@gmail.com
+Message-ID: <1740745363125.93763902-1cbb-45e4-81b5-463074fdd41d@marketing.pocketoutdoormedia.com>
+Subject: The Easiest Way to Hike Uphill
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_225611_265731333.1740745363362"
+Precedence: bulk
+X-Report-Abuse-To: abuse@hubspot.com (see
+ https://policy.hubspot.com/abuse-complaints)
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: aecz55n:aif2ap5g:aidf:HubSpot
+
+------=_Part_225611_265731333.1740745363362
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Plus: Gaia is excited to announce our new Trail Karma partnership with Toyo=
+ta, designed to support the trails we love - learn more!
+
+View in browser (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt49=
+2LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jXj5m_5PW5BWr2F6lZ3nCW4P10x_7WfDydW8FlMXx4=
+q1M9MW59C2gH6HyhqkW1m9Ynl3xWrH2W83Gv3j4d13_zW4nJKpK85F3NrW1lPDwt2LkWVQW4JMD=
+Ls8KKngcW4FKt5C1G2ByxN6yMnmVCTbCCW6HjP7l6BMtFvW1D2sNR75TvN_W6zvlC92dV8VGW29=
+Swqq316CqpW7S5qK_5skHrrVFFytV1ykBs1N4bNbL1Nm4BtW8gKHZc3hhKg_W8P_jK62r2px6W4=
+JvdM657nR_-W633t7p82sTQ0VgLZ1528hcFgW3zwGBn177lS5W8lk4g-8MMc7XW4TJN_d2yyVlQ=
+W5ltk0-4-dpcRW2H9jnQ3LCgYTVsvCY08KT_T4W417mKK8z_0MVW44psWg4yHYh4W61_SCJ3Wtx=
+h2W3t4y5q8mCSMnN549sdBFfczdW4KShqt1Gl-_7dl-BP804 )
+
+woman-hiking_getty-2 (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWv=
+vdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3pPW5KSZHc8h2GL0W4B=
+spyL1jSG4zW2SMjn71qbS6tW4ldTqb29Xm2PW98Vr9P2tm5S1W2Rv4b_3CwGcNVtTBz_384jrxW=
+1Gr15b8g0rzvN58dxY9-GMGTW6srCqR4f32NZW1ZBy4-1CMT_QW4DTbWH3Gf03rW7W_Tyj3yS5p=
+0W3Tm0Gj6TRsrXW7LZqXW4Nj3GxW8WTXmz7F_rnrN24xRj0_HVvMN2w9T3HKKzh6W1rxzhH8Hkq=
+q5W4MJ02l4sg8Z2W7zbHrm3Jfd43W4XcZ9v5j2YBvW3jJnPD8mk5yHW3Mt1gj1nF4YtW2C6RMG4=
+pw-MqW98Jwt043GsD5W1Lbgh678-t-nW89D4497vTg7vdZNxVz04 )
+
+What=E2=80=99s the easiest way to hike uphill? (https://hub.outsideinc.com/=
+e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8w=
+LKSR6lZ3pPW5KSZHc8h2GL0W4BspyL1jSG4zW2SMjn71qbS6tW4ldTqb29Xm2PW98Vr9P2tm5S1=
+W2Rv4b_3CwGcNVtTBz_384jrxW1Gr15b8g0rzvN58dxY9-GMGTW6srCqR4f32NZW1ZBy4-1CMT_=
+QW4DTbWH3Gf03rW7W_Tyj3yS5p0W3Tm0Gj6TRsrXW7LZqXW4Nj3GxW8WTXmz7F_rnrN24xRj0_H=
+VvMN2w9T3HKKzh6W1rxzhH8Hkqq5W4MJ02l4sg8Z2W7zbHrm3Jfd43W4XcZ9v5j2YBvW3jJnPD8=
+mk5yHW3Mt1gj1nF4YtW2C6RMG4pw-MqW98Jwt043GsD5W1Lbgh678-t-nW89D4497vTg7vdZNxV=
+z04 ) New research suggests the climb might be steeper than you think.
+
+Meanwhile, Toyota and Gaia GPS are giving back to the trails with our new T=
+rail Karma partnership (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/M=
+Wvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43gP0xW95jsWP6lZ3plW7nyTRd5sjHC2W=
+48Qd5V40xZW5Vz1dw93qtn3kW5jxpgz5m0K7wW2F6CsW4lvSGRVynyvN6jflH2W22mr0v99_VmX=
+W2LYMss5bRbNCW5XcKr_5Kybr-W85G1s81YhxSgW1_Dm_p6tyq6TW1_5xhJ5qwMCcW7VfL2Y4cb=
+NG-W6JS3RQ3p2qN1W1s0_5h2PB-yKVR_jG64B7-1YW8FNtyx15mfCMW5qY5dT5qmB5_W2Grlfr2=
+DJk7FW5jhZQw7mdNmTW3B8WG5664K37VkN9GV7VLwT1VzRfgB4lZxB5Vh7xGP721jGZW6JB31F9=
+fTZjwN5GXdSZzqhbbW7fq0Hk3fsJQ6W5Vf8g663CQkbW8SLfNf4Pskk4W4DmPPM76bXD5f6j4LW=
+404 ) , supporting local trail organizations. Learn how you can get involve=
+d!
+
+Plus, follow a Gaia GPS editor=E2=80=99s journey (https://hub.outsideinc.co=
+m/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW=
+8wLKSR6lZ3nyW24y7nJ7C2P-pVxHH248Rk2SjW3gNKCT4cvb1CW3JL3Hj4F4HZWW8Dl-m97ZvWp=
+GW3znj-53CSD6MW5Z-yqR42sp7SW29VfLw5Dq1RlW3H8v5q6pgth6W4D8FZr6yMJCcW449v851x=
+5S_0Vv6C-l8k4VM-W80vZK42vS-6lW7PvY-P1b1pjbW3NMnf07N4tFsVhqDl283KkSKW931zqV1=
+Mvjr6W8PCcNg45ZzyTN84BrCTxzGQGW8vdYZF1fpRtCN7J1WLjp7TyMW5DPYbL7nQg5fW1BNKmW=
+60RTQPW5nKJxQ2y6076W3Gp5Rh15nMj5VjS9j92lkfZQF3vxCjywc5bW1qRPzs6S5GDrf92B65Y=
+04 ) through Italy, using the app to navigate its cities and streets.
+
+Adventure on,
+
+The Gaia GPS Team
+
+hiking-uphill-2 (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt49=
+2LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3pPW5KSZHc8h2GL0W4BspyL1=
+jSG4zW2SMjn71qbS6tW4ldTqb29Xm2PW98Vr9P2tm5S1W2Rv4b_3CwGcNVtTBz_384jrxW1Gr15=
+b8g0rzvN58dxY9-GMGTW6srCqR4f32NZW1ZBy4-1CMT_QW4DTbWH3Gf03rW7W_Tyj3yS5p0W3Tm=
+0Gj6TRsrXW7LZqXW4Nj3GxW8WTXmz7F_rnrN24xRj0_HVvMN2w9T3HKKzh6W1rxzhH8Hkqq5W4M=
+J02l4sg8Z2W7zbHrm3Jfd43W4XcZ9v5j2YBvW3jJnPD8mk5yHW3Mt1gj1nF4YtW2C6RMG4pw-Mq=
+W98Jwt043GsD5W1Lbgh678-t-nW89D4497vTg7vdZNxVz04 )
+
+This Is the Easiest Way to Hike Uphill (https://hub.outsideinc.com/e3t/Ctc/=
+LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3=
+pPW5KSZHc8h2GL0W4BspyL1jSG4zW2SMjn71qbS6tW4ldTqb29Xm2PW98Vr9P2tm5S1W2Rv4b_3=
+CwGcNVtTBz_384jrxW1Gr15b8g0rzvN58dxY9-GMGTW6srCqR4f32NZW1ZBy4-1CMT_QW4DTbWH=
+3Gf03rW7W_Tyj3yS5p0W3Tm0Gj6TRsrXW7LZqXW4Nj3GxW8WTXmz7F_rnrN24xRj0_HVvMN2w9T=
+3HKKzh6W1rxzhH8Hkqq5W4MJ02l4sg8Z2W7zbHrm3Jfd43W4XcZ9v5j2YBvW3jJnPD8mk5yHW3M=
+t1gj1nF4YtW2C6RMG4pw-MqW98Jwt043GsD5W1Lbgh678-t-nW89D4497vTg7vdZNxVz04 )
+
+New data suggests that the most efficient uphill slope is steeper than you =
+think.
+
+Read More
+(https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwg=
+W13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3pPW5KSZHc8h2GL0W4BspyL1jSG4zW2SMjn71qbS=
+6tW4ldTqb29Xm2PW98Vr9P2tm5S1W2Rv4b_3CwGcNVtTBz_384jrxW1Gr15b8g0rzvN58dxY9-G=
+MGTW6srCqR4f32NZW1ZBy4-1CMT_QW4DTbWH3Gf03rW7W_Tyj3yS5p0W3Tm0Gj6TRsrXW7LZqXW=
+4Nj3GxW8WTXmz7F_rnrN24xRj0_HVvMN2w9T3HKKzh6W1rxzhH8Hkqq5W4MJ02l4sg8Z2W7zbHr=
+m3Jfd43W4XcZ9v5j2YBvW3jJnPD8mk5yHW3Mt1gj1nF4YtW2C6RMG4pw-MqW98Jwt043GsD5W1L=
+bgh678-t-nW89D4497vTg7vdZNxVz04 )
+
+morahan_visuals_outside_inc_toyota_mesquite_03418 (https://hub.outsideinc.c=
+om/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43gP0x=
+W95jsWP6lZ3plW7nyTRd5sjHC2W48Qd5V40xZW5Vz1dw93qtn3kW5jxpgz5m0K7wW2F6CsW4lvS=
+GRVynyvN6jflH2W22mr0v99_VmXW2LYMss5bRbNCW5XcKr_5Kybr-W85G1s81YhxSgW1_Dm_p6t=
+yq6TW1_5xhJ5qwMCcW7VfL2Y4cbNG-W6JS3RQ3p2qN1W1s0_5h2PB-yKVR_jG64B7-1YW8FNtyx=
+15mfCMW5qY5dT5qmB5_W2Grlfr2DJk7FW5jhZQw7mdNmTW3B8WG5664K37VkN9GV7VLwT1VzRfg=
+B4lZxB5Vh7xGP721jGZW6JB31F9fTZjwN5GXdSZzqhbbW7fq0Hk3fsJQ6W5Vf8g663CQkbW8SLf=
+Nf4Pskk4W4DmPPM76bXD5f6j4LW404 )
+
+Introducing Trail Karma with Toyota (https://hub.outsideinc.com/e3t/Ctc/LW+=
+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43gP0xW95jsWP6lZ3plW=
+7nyTRd5sjHC2W48Qd5V40xZW5Vz1dw93qtn3kW5jxpgz5m0K7wW2F6CsW4lvSGRVynyvN6jflH2=
+W22mr0v99_VmXW2LYMss5bRbNCW5XcKr_5Kybr-W85G1s81YhxSgW1_Dm_p6tyq6TW1_5xhJ5qw=
+MCcW7VfL2Y4cbNG-W6JS3RQ3p2qN1W1s0_5h2PB-yKVR_jG64B7-1YW8FNtyx15mfCMW5qY5dT5=
+qmB5_W2Grlfr2DJk7FW5jhZQw7mdNmTW3B8WG5664K37VkN9GV7VLwT1VzRfgB4lZxB5Vh7xGP7=
+21jGZW6JB31F9fTZjwN5GXdSZzqhbbW7fq0Hk3fsJQ6W5Vf8g663CQkbW8SLfNf4Pskk4W4DmPP=
+M76bXD5f6j4LW404 )
+
+Gaia is excited to announce our new Trail Karma partnership with Toyota, de=
+signed to support the trails we love. For the first time ever, Gaia GPS use=
+rs can donate directly to trail organizations inside the app, and Toyota is=
+ stepping up in a huge way: matching donations up to $100,000. Every single=
+ cent goes straight to the people maintaining and restoring our trails.
+
+To help make this a movement, we=E2=80=99re unlocking the Overland Map Laye=
+r for FREE from February 3 to May 3, 2025. That means everyone=E2=80=94free=
+ users, paid users, first-time users=E2=80=94gets access to curated overlan=
+d routes with:
+
+- Photos so you know what=E2=80=99s ahead
+- Difficulty ratings to match your adventure to your rig
+- Detailed descriptions so you can plan with confidence
+
+Explore and Donate Now!
+(https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwg=
+W13cSCp5sBfxbN6D7jZ43gP0xW95jsWP6lZ3plW7nyTRd5sjHC2W48Qd5V40xZW5Vz1dw93qtn3=
+kW5jxpgz5m0K7wW2F6CsW4lvSGRVynyvN6jflH2W22mr0v99_VmXW2LYMss5bRbNCW5XcKr_5Ky=
+br-W85G1s81YhxSgW1_Dm_p6tyq6TW1_5xhJ5qwMCcW7VfL2Y4cbNG-W6JS3RQ3p2qN1W1s0_5h=
+2PB-yKVR_jG64B7-1YW8FNtyx15mfCMW5qY5dT5qmB5_W2Grlfr2DJk7FW5jhZQw7mdNmTW3B8W=
+G5664K37VkN9GV7VLwT1VzRfgB4lZxB5Vh7xGP721jGZW6JB31F9fTZjwN5GXdSZzqhbbW7fq0H=
+k3fsJQ6W5Vf8g663CQkbW8SLfNf4Pskk4W4DmPPM76bXD5f6j4LW404 )
+
+Gaia GPS Italy (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492=
+LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3nyW24y7nJ7C2P-pVxHH248Rk=
+2SjW3gNKCT4cvb1CW3JL3Hj4F4HZWW8Dl-m97ZvWpGW3znj-53CSD6MW5Z-yqR42sp7SW29VfLw=
+5Dq1RlW3H8v5q6pgth6W4D8FZr6yMJCcW449v851x5S_0Vv6C-l8k4VM-W80vZK42vS-6lW7PvY=
+-P1b1pjbW3NMnf07N4tFsVhqDl283KkSKW931zqV1Mvjr6W8PCcNg45ZzyTN84BrCTxzGQGW8vd=
+YZF1fpRtCN7J1WLjp7TyMW5DPYbL7nQg5fW1BNKmW60RTQPW5nKJxQ2y6076W3Gp5Rh15nMj5Vj=
+S9j92lkfZQF3vxCjywc5bW1qRPzs6S5GDrf92B65Y04 )
+
+How I Used Gaia GPS to Navigate Italy (https://hub.outsideinc.com/e3t/Ctc/L=
+W+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3n=
+yW24y7nJ7C2P-pVxHH248Rk2SjW3gNKCT4cvb1CW3JL3Hj4F4HZWW8Dl-m97ZvWpGW3znj-53CS=
+D6MW5Z-yqR42sp7SW29VfLw5Dq1RlW3H8v5q6pgth6W4D8FZr6yMJCcW449v851x5S_0Vv6C-l8=
+k4VM-W80vZK42vS-6lW7PvY-P1b1pjbW3NMnf07N4tFsVhqDl283KkSKW931zqV1Mvjr6W8PCcN=
+g45ZzyTN84BrCTxzGQGW8vdYZF1fpRtCN7J1WLjp7TyMW5DPYbL7nQg5fW1BNKmW60RTQPW5nKJ=
+xQ2y6076W3Gp5Rh15nMj5VjS9j92lkfZQF3vxCjywc5bW1qRPzs6S5GDrf92B65Y04 )
+
+To be honest, I didn=E2=80=99t realize how much Gaia GPS would come in hand=
+y during my Italy trip. I typically use it for hiking and local adventures =
+in the woods of Colorado, but it turns out that Gaia GPS is great for any t=
+ype of adventure=E2=80=94even navigating the cities and streets of Italy.
+
+Read More
+(https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwg=
+W13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3nyW24y7nJ7C2P-pVxHH248Rk2SjW3gNKCT4cvb1=
+CW3JL3Hj4F4HZWW8Dl-m97ZvWpGW3znj-53CSD6MW5Z-yqR42sp7SW29VfLw5Dq1RlW3H8v5q6p=
+gth6W4D8FZr6yMJCcW449v851x5S_0Vv6C-l8k4VM-W80vZK42vS-6lW7PvY-P1b1pjbW3NMnf0=
+7N4tFsVhqDl283KkSKW931zqV1Mvjr6W8PCcNg45ZzyTN84BrCTxzGQGW8vdYZF1fpRtCN7J1WL=
+jp7TyMW5DPYbL7nQg5fW1BNKmW60RTQPW5nKJxQ2y6076W3Gp5Rh15nMj5VjS9j92lkfZQF3vxC=
+jywc5bW1qRPzs6S5GDrf92B65Y04 )
+
+tiger-wall-1 (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQ=
+W8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3mCN7pwbR9qVH9zW1VHnVG2cRZM=
+sW64_zdg5mfF2HW6zgKTx8XjB3mW4-cmKc8hfQmDW56742N8f5WLQMrD0H3fxgBKW5NxBxS7Vp2=
+msW5VxYrk5Py54dW2D93pZ81lmPNW2gnG804cw2GGW6_Djky9fdpKLW2tdSTz55ySFcW2FVJzX9=
+5YpwhVQb6wJ4VRK6KW1X-gGb7j6jDVW57NNgg5cWkGsW5_vttG75VzHrW109tP16NtC70W6bbc5=
+-66Y7-NW6nxRt42yxLgXW2nFj6L7Ww-tXW4_7hwd73x0jPW5-N2JX5Lb7_KVv2LJp6vJ6KkVvGD=
+Mq2HMZ_nVXzqpZ3nycwfW4_CYXr36yLRBf2lbLJK04 )
+
+Deal of the Week: Save Over $100 On This Eco-Conscious Ultralight Tent (htt=
+ps://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13c=
+SCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3mCN7pwbR9qVH9zW1VHnVG2cRZMsW64_zdg5mfF2HW6z=
+gKTx8XjB3mW4-cmKc8hfQmDW56742N8f5WLQMrD0H3fxgBKW5NxBxS7Vp2msW5VxYrk5Py54dW2=
+D93pZ81lmPNW2gnG804cw2GGW6_Djky9fdpKLW2tdSTz55ySFcW2FVJzX95YpwhVQb6wJ4VRK6K=
+W1X-gGb7j6jDVW57NNgg5cWkGsW5_vttG75VzHrW109tP16NtC70W6bbc5-66Y7-NW6nxRt42yx=
+LgXW2nFj6L7Ww-tXW4_7hwd73x0jPW5-N2JX5Lb7_KVv2LJp6vJ6KkVvGDMq2HMZ_nVXzqpZ3ny=
+cwfW4_CYXr36yLRBf2lbLJK04 )
+
+Big Agnes's Tiger Wall UL2's easy setup and spacious tent floor is perfect =
+for hikers trying to lighten their load without sacrificing comfort. The be=
+st part? It's now 30 percent off.
+
+Get the Deal
+(https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwg=
+W13cSCp5sBfxbN6D7jYP3gP0xW8wLKSR6lZ3mCN7pwbR9qVH9zW1VHnVG2cRZMsW64_zdg5mfF2=
+HW6zgKTx8XjB3mW4-cmKc8hfQmDW56742N8f5WLQMrD0H3fxgBKW5NxBxS7Vp2msW5VxYrk5Py5=
+4dW2D93pZ81lmPNW2gnG804cw2GGW6_Djky9fdpKLW2tdSTz55ySFcW2FVJzX95YpwhVQb6wJ4V=
+RK6KW1X-gGb7j6jDVW57NNgg5cWkGsW5_vttG75VzHrW109tP16NtC70W6bbc5-66Y7-NW6nxRt=
+42yxLgXW2nFj6L7Ww-tXW4_7hwd73x0jPW5-N2JX5Lb7_KVv2LJp6vJ6KkVvGDMq2HMZ_nVXzqp=
+Z3nycwfW4_CYXr36yLRBf2lbLJK04 )
+
+Join Outside+ (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492L=
+QW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYb3prCCW7lCdLW6lZ3mtW7dVVPp77y2Z3W1d2lCd6V4=
+06mW6dTqKN2g6ln8W2WLhxt3fBw4SW1lJPP06cqbb2W2z9P-_6t1GjsW4DnzP83tSVb3W6DQC2-=
+6d0M9vW8pSKq-3c6xZ3W6kkfBs4GPCCzW41Tps-5TnXwGW4Xj88q4hLHF-W66mBWN2Xgb8RV4dn=
+qp5k_LZ8Vsyd4x6w4ww0W1Dwt0n91v_g9W2Z8cfg9353tlVzrQ2k6zBv_9Vyh1bc1lG4chW4zHm=
+bF79BYdRW6_m8Bb6RfwCvW2bYyLK3JzyQfW3hhGz031BWqjW1s7hmV2CN1vzf64HlDF04 )
+
+A =E2=80=9CMiracle=E2=80=9D Lost Backpack Saved Two Hikers in Southern Utah=
+ (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXw=
+gW13cSCp5sBfxbN6D7jZ43gP0xW95jsWP6lZ3lvW7txWp65_BFwqN82FTcly6Hh7W2srJ2Q57nW=
+CqW7kbtFd1XT6hlW7vB6J188yLB9W1yr3xx7wGKQhN2FKgqcrYCrQW33-m8X1Nt0rVW5WqwKf8J=
+rlw7W4lpMNG2GClXjW49HBfJ6xK_K1N1TRC80fCh8tW9cMBwR2n44dPW3hXGVT8tfb3zW8krbY-=
+7tLykqW5lZQJv48YtdKW72C6KX5jgFq9W2_pkJP78yy2pW4pcLT-70xwJcW6P43pT7fQq65N7vc=
+Qb_pNyRSW2n1J-y6WZljbW5VYpWM3p5ntlW1ST4JV5p878WN7pQ5Bk7vt8KW3XnCCH7hrCMmW2m=
+ZVc36jZkRLW56QwjL2MHkjYW1nzqKJ5GFQtgW3ZHjZM52W_qnf4VKMnM04 )
+
+A rescue story from Southern Utah has a happy ending=E2=80=94thanks to a di=
+scarded bag filled with survival gear. Read =E2=87=A2 (https://hub.outsidei=
+nc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43=
+gP0xW95jsWP6lZ3lvW7txWp65_BFwqN82FTcly6Hh7W2srJ2Q57nWCqW7kbtFd1XT6hlW7vB6J1=
+88yLB9W1yr3xx7wGKQhN2FKgqcrYCrQW33-m8X1Nt0rVW5WqwKf8Jrlw7W4lpMNG2GClXjW49HB=
+fJ6xK_K1N1TRC80fCh8tW9cMBwR2n44dPW3hXGVT8tfb3zW8krbY-7tLykqW5lZQJv48YtdKW72=
+C6KX5jgFq9W2_pkJP78yy2pW4pcLT-70xwJcW6P43pT7fQq65N7vcQb_pNyRSW2n1J-y6WZljbW=
+5VYpWM3p5ntlW1ST4JV5p878WN7pQ5Bk7vt8KW3XnCCH7hrCMmW2mZVc36jZkRLW56QwjL2MHkj=
+YW1nzqKJ5GFQtgW3ZHjZM52W_qnf4VKMnM04 )
+
+Greenland: The Final Frontier (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy=
+08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYv3prCCW7Y8-PT6lZ3nDW1kVRCc=
+6V7QHzW4mXLn016GB8CN2Y8CTH8FQtTW3bygh29dJGXjW12-X_W7jbm0cW9kqKs55cCY7GW8Hb4=
+3t5p04d2W5qWSbd4HWmxZN3gsG2VzbqsMW5x3KDL3ZVCR3W2q74PM4smYy7N677kxpMFDKtW6xy=
+n2x6MD7hlW4_Z_BV7XCWYfN3CpCw6hPPKXW25NgNs7BgfbyW461jtB98B7M4W8M_hJS39rHSmW7=
+5Md7n1y1G39VnsGGP466yd3W67V83K6r43wVW5W4w4Y3208RnW9f7Gnt3mjLMhW8lL3gz4g0yNn=
+W2TD7wj3kfYQfW8_787b4NDkRBf7KP3fK04 )
+
+An all-female team of scientists, environmentalists, and filmmakers endure =
+harsh seas on their quest to capture data on changing weather, microplastic=
+s, and the rapidly melting Greenland ice sheet, one of the earth=E2=80=99s =
+largest sources of frozen freshwater. Watch  (https://hub.outsideinc.com/e3=
+t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYv3prCCW7Y8-=
+PT6lZ3nDW1kVRCc6V7QHzW4mXLn016GB8CN2Y8CTH8FQtTW3bygh29dJGXjW12-X_W7jbm0cW9k=
+qKs55cCY7GW8Hb43t5p04d2W5qWSbd4HWmxZN3gsG2VzbqsMW5x3KDL3ZVCR3W2q74PM4smYy7N=
+677kxpMFDKtW6xyn2x6MD7hlW4_Z_BV7XCWYfN3CpCw6hPPKXW25NgNs7BgfbyW461jtB98B7M4=
+W8M_hJS39rHSmW75Md7n1y1G39VnsGGP466yd3W67V83K6r43wVW5W4w4Y3208RnW9f7Gnt3mjL=
+MhW8lL3gz4g0yNnW2TD7wj3kfYQfW8_787b4NDkRBf7KP3fK04 ) =E2=87=A2 (https://hub=
+.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfx=
+bN6D7jYP3prCCW8wLKSR6lZ3mzW71QnCR81YF-SW5vPZLk2Tr6NGN8XCtY0hXykFW51b9Ny8y5K=
+19W7_kWs06b6jbTW1YzsSS82qHmzW4RDhG79d5gvlVRydr36PFMDHW4hZs8P875912Ld32rhZF5=
+SW7ScMh64tq9ClW6XxfJr1zGS9VVq2pcM8-VmgtW3C60dW5QRPBKW2v82hR76htFDN1cMJPcGL3=
+m2W1Cz-wf8zNHLkW630xXG1LFKQrV4whPK8_KB3LV9Vxbg4Mnz4FW2fb5k-8PKnN2W2B5M136BD=
+JmFVgWDwW2jPxsZW1MxyC87gG0FdW75xpvG54gMy-N3L9K-JMx8H8W7Z7V--7qR-LWW82SS1l1v=
+82Q3f1mwQ0x04 )
+
+6 Weeks to Trail Fit (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWv=
+vdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYv3gP0xW7Y8-PT6lZ3l6W1j0sTk5dB3_3W82=
+Rfrj4Z6JJPW8Mv_sl98cfQWMK8K1YZfd_cW1PZ-gL8ss46GW47cdcP2FW6N_W1jzKvC7ysJpCW1=
+vY93j8S4zwQW1-7kbV8nR7-2W5jNTjy7jxknyW4v5wNd5cjLC7W6zSvPl8qF3C7W1tW-xz4wWT4=
+XW4wvFml3sj7xlW4C0y621lYQGSW2_6ZSB4pzqgYW51vd9q3mG-f7N98rYRQktQZsW23S-R72nD=
+MWnW94rrdN4V1cnZN8y86Y7hflHwW7J-Kxp5QzQ35W2zQxfb6PXq3xW7j7r5Z6G-FhCVFnV-G2m=
+GKJbW6H6YGl5yyH-QdM3-Jv04 )
+
+When you=E2=80=99re out on the trail, you want to focus on the views and th=
+e experience=E2=80=94not the pain in your legs. That=E2=80=99s why Jason An=
+tin, a mountain guide and performance coach, designed this 6.5-week fitness=
+ online class to help you be physically ready for your next summit. Learn =
+=E2=87=A2 (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8l=
+TyXR1NCXwgW13cSCp5sBfxbN6D7jYv3gP0xW7Y8-PT6lZ3l6W1j0sTk5dB3_3W82Rfrj4Z6JJPW=
+8Mv_sl98cfQWMK8K1YZfd_cW1PZ-gL8ss46GW47cdcP2FW6N_W1jzKvC7ysJpCW1vY93j8S4zwQ=
+W1-7kbV8nR7-2W5jNTjy7jxknyW4v5wNd5cjLC7W6zSvPl8qF3C7W1tW-xz4wWT4XW4wvFml3sj=
+7xlW4C0y621lYQGSW2_6ZSB4pzqgYW51vd9q3mG-f7N98rYRQktQZsW23S-R72nDMWnW94rrdN4=
+V1cnZN8y86Y7hflHwW7J-Kxp5QzQ35W2zQxfb6PXq3xW7j7r5Z6G-FhCVFnV-G2mGKJbW6H6YGl=
+5yyH-QdM3-Jv04 )
+
+You are receiving this Gaia GPS Newsletter email because you are subscribed=
+ to , which is a part of the Outside Network.
+
+Outside | 1600 Pearl Street  | Boulder | CO | 80302 | USA
+
+Unsubscribe (https://plus.gaiagps.com/hs/preferences-center/1039098/en/page=
+?data=3DW2nXS-N30h-z9W3M9TwW3gxKJ-W32jyRh3GRCzYW4rC06X3_HYPzW3LV6gF3jcRxcW2=
+FKqhy2Tjs9hW2zLK6q30FLqxW4r74DM25nMHyW3XGjXQ1T_ZymW1NCH5-32BcNQW30HrZd217st=
+GW2CDG3g1_lznyW3LY6HC2TRkNNW43Rxkf3LTjmrW1NBMrz38mLf3W2y1L2k2xQcGzW36FB2w2K=
+Fk__W2FQWT64hpG1sW2KwDwm2FWmRYW3F5r2r3JFW3XW2PRfYW3T51zFW1LlcvP1SwJxZW4hrfM=
+s2PKsKHW41rrY22p28lGW23hFdk2TtZXPW1BLXc23LDQTYW2Wpdgs4msB_kW1LwthH38h_2BW30=
+9JZx2MpcrjW2RtLtv4cwWP5W4fkgZM2-rcrNW4pmK-l2HCQvgW24-M4B2r1rF7W2KZnTd3VGB8k=
+W36sWVj2zM5rHW3V-C-k4rzlMCW3jr7ns3VPFlTW4pFhLV3VMzfGW49zCK53JTBk6W36DKwH2xN=
+vNjW4hMN5l4tdF8dW43yTCt3D_BfTW3dhG2m3P51YzW2xZYRt4fxy0FW43B62z3hZMlDW47lMmL=
+49mJKrW2MpZDr2y0tZL0&_hsenc=3Dp2ANqtz-8qBS3JB5gsGkMd-xzt4wJUIGppgu44wzdwuM4=
+EdaWgnzXEs3zlWeXfBno_n9LWraIDaTdoT2EqN9WdKYu0ZfHewpTYfw&_hsmi=3D349380690 )=
+ | My Preference (https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt4=
+92LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYv3prCCW7Y8-PT6lZ3q6W5Rpt1S852nc2W2P-mf1=
+15wCKCW5QBDcH1YjF0ZW5yCFKJ9cLzvxV47fBF2GzhrCW5xKxTC5qlnhDW5qyXnb5WbV5jVKCcw=
+d547JSBW7zv_jQ6VZVqcW1F04df8-c7nWW2TT9Qx3RHmczW6Tj_KC4ycpwLW3TxHYz2PvWGrW1-=
+xgtY2T7TVLVGWLJk8j3rBmW6WX4T68gnvr5VS0RQ61C37GDW5kzyzM6-75J0W4yXScW86Sm0lW2=
+TLgpw79fpcWW7GfVSc5yyPndW3MF3g11z7qy0W14nTnj11DRkzW2z2jrv3tdWvGW6dp0BS7Q4DC=
+TVcqzpr7nWswhf7bkqMC04 )
+------=_Part_225611_265731333.1740745363362
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3=
+.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" lang=3D"en"><head>
+    <title>The Easiest Way to Hike Uphill</title>
+    <meta property=3D"og:title" content=3D"The Easiest Way to Hike Uphill">
+    <meta name=3D"twitter:title" content=3D"The Easiest Way to Hike Uphill"=
+>
+   =20
+   =20
+   =20
+<meta name=3D"x-apple-disable-message-reformatting">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+    <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings></xml>
+ =20
+  <style>
+    ul > li {
+      text-indent: -1em;
+    }
+  </style>
+<![endif]-->
+<!--[if mso]>
+<style type=3D"text/css">
+ body, td {font-family: Arial, Helvetica, sans-serif;}
+ .hse-body-wrapper-table {background-color: #FFFFFF;}
+</style>
+<![endif]-->
+   =20
+     =20
+ =20
+ =20
+   =20
+  <meta name=3D"generator" content=3D"HubSpot"><meta property=3D"og:url" co=
+ntent=3D"https://hub.outsideinc.com/the-easiest-way-to-hike-uphill"><meta n=
+ame=3D"robots" content=3D"noindex,follow"><!--[if !((mso)|(IE))]><!-- --><s=
+tyle type=3D"text/css">@media only screen and (max-width:639px){img.stretch=
+-on-mobile,.hs_rss_email_entries_table img,.hs-stretch-cta .hs-cta-img{heig=
+ht:auto !important;width:100% !important}
+.display_block_on_small_screens{display:block}.hs_padded{padding-left:20px =
+!important;padding-right:20px !important}
+.hs-hm,table.hs-hm{display:none}.hs-hd{display:block !important}table.hs-hd=
+{display:table !important}
+}@media only screen and (max-width:639px){.hse-border-m{border-left:1px sol=
+id #ccc !important;border-right:1px solid #ccc !important;box-sizing:border=
+-box}
+.hse-border-bottom-m{border-bottom:1px solid #ccc !important}.hse-border-to=
+p-m{border-top:1px solid #ccc !important}
+.hse-border-top-hm{border-top:none !important}.hse-border-bottom-hm{border-=
+bottom:none !important}
+}.moz-text-html .hse-column-container{max-width:600px !important;width:600p=
+x !important}
+.moz-text-html .hse-column{display:table-cell;vertical-align:top}.moz-text-=
+html .hse-section .hse-size-12{max-width:600px !important;width:600px !impo=
+rtant}
+@media only screen and (min-width:640px){.hse-column-container{max-width:60=
+0px !important;width:600px !important}
+.hse-column{display:table-cell;vertical-align:top}.hse-section .hse-size-12=
+{max-width:600px !important;width:600px !important}
+}@media only screen and (max-width:639px){ul,blockquote{margin:0;padding:1e=
+m 40px}
+}@media only screen and (max-width:639px){.hse-body-wrapper-td{padding-top:=
+20px !important}
+#section_1677247888707 .hse-column-container{background-color:transparent !=
+important}
+#section_1677247888707 .hse-column-container{background-color:transparent !=
+important}
+}@media only screen and (max-width:639px){.hse-body-wrapper-td{padding-bott=
+om:20px !important}
+#section_1701212243019 .hse-column-container{background-color:#fafafa !impo=
+rtant}
+}</style><!--<![endif]--><style type=3D"text/css">#hs_body #hs_cos_wrapper_=
+main a[x-apple-data-detectors]{color:inherit !important;text-decoration:non=
+e !important;font-size:inherit !important;font-family:inherit !important;fo=
+nt-weight:inherit !important;line-height:inherit !important}
+a{text-decoration:underline}p{margin:0}body{-ms-text-size-adjust:100%;-webk=
+it-text-size-adjust:100%;-webkit-font-smoothing:antialiased;moz-osx-font-sm=
+oothing:grayscale}
+table{border-spacing:0;mso-table-lspace:0;mso-table-rspace:0}table,td{borde=
+r-collapse:collapse}
+img{-ms-interpolation-mode:bicubic}p,a,li,td,blockquote{mso-line-height-rul=
+e:exactly}</style></head>
+  <body id=3D"hs_body" bgcolor=3D"#FFFFFF" style=3D"margin:0 !important; pa=
+dding:0 !important; font-family:Arial, sans-serif; font-size:16px; color:#0=
+00000; word-break:break-word">
+    <div id=3D"preview_text" style=3D"display:none;font-size:1px;color:#FFF=
+FFF;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;=
+" lang=3D"en">Plus: Gaia is excited to announce our new Trail Karma partner=
+ship with Toyota, designed to support the trails we love - learn more!&nbsp=
+;</div>
+   =20
+<!--[if gte mso 9]>
+<v:background xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t">
+    <v:fill type=3D"tile" size=3D"100%,100%" color=3D"#ffffff"/>
+</v:background>
+<![endif]-->
+    <div class=3D"hse-body-background" lang=3D"en" style=3D"background-colo=
+r:#ffffff" bgcolor=3D"#ffffff">
+      <table role=3D"presentation" class=3D"hse-body-wrapper-table" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"margin:0; padding:0; width:100% !impo=
+rtant; min-width:320px !important; height:100% !important" width=3D"100%" h=
+eight=3D"100%">
+        <tbody><tr>
+          <td class=3D"hse-body-wrapper-td" valign=3D"top" style=3D"font-fa=
+mily:Arial, sans-serif; font-size:16px; color:#000000; word-break:break-wor=
+d; padding-top:20px; padding-bottom:20px">
+            <div id=3D"hs_cos_wrapper_main" class=3D"hs_cos_wrapper hs_cos_=
+wrapper_widget hs_cos_wrapper_type_dnd_area" style=3D"color: inherit; font-=
+size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" d=
+ata-hs-cos-type=3D"dnd_area">  <div id=3D"section_1677247888707" class=3D"h=
+se-section hse-section-first" style=3D"padding-left:10px; padding-right:10p=
+x">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation">
+      <tr>
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1677247888708_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_16772478887062" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><div style=3D"overflow:hidden">
+  <table role=3D"presentation" class=3D"hse-pre-header hse-secondary" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"text-align:right; fo=
+nt-family:Arial, sans-serif; font-size:12px; line-height:135%; color:#23496=
+d; margin-bottom:0; padding:0" align=3D"right">
+    <tbody>
+      <tr>
+        <td align=3D"right" valign=3D"top" style=3D"color:#000000; word-bre=
+ak:break-word; text-align:right; font-family:Arial, sans-serif; font-size:1=
+2px; padding:10px 0; margin-bottom:0; line-height:135%">
+          <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvv=
+dt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jXj5nR32W5BWr2F6lZ3pWW7n2mXX1FX1WJW3nR=
+6H21F9pF8W7JsKNQ2sBWWcVCmLTM4cmHXhW5vh9_R3Gmx91W1vfqty345gjdW90656Q5GTt-5VJ=
+y43t8SS95bW2ZxM3n7BktwtW1cNSQT4nyk8YW8fxdgt5brPxYW3vP_s82wYmG-W5Mw2YL5QlFnt=
+W7TnyXF7mtlZPW123HFV6tSrnBW3BX6qg2FrPVyN26gkjzCnNtjW9jccnK6gpVnBW7vbkfT7BZ6=
+2gW4cyvcZ4JhstlVv4ggs8Dgvc_VmcWm75bVzVhN548PW7yvJl5W5MSJF08SCTJ4W1PqkT-2_L1=
+ncW3Jm6kk99S4LRW6-RsNC8pc6sSW1D8qTg1-DfmvF3C1dZ9lMM_W6l7D0G3NL9YBW64GRzx4fC=
+lKjW84_gnP6pnQ11V3_TLm2PkBpLN45hFHKgkS7Kf3GZFYn04" style=3D"color:#000000; =
+font-weight:bold; text-decoration:none; font-style:normal" data-hs-link-id=
+=3D"0" target=3D"_blank">View in browser</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_16753011042573" class=3D"hse-section" style=3D"padding=
+-left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-0-0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_16753011042572" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; color:#000000; word-break:break-word; text-align:center; padding:0px=
+; font-size:0px">
+        <img alt=3D"Gaia GPS-Header-OutsideNetwork" src=3D"https://hub.outs=
+ideinc.com/hs-fs/hubfs/2024%20Email%20Header%20and%20Footer/Gaia%20GPS-Head=
+er-OutsideNetwork.jpg?width=3D1200&amp;upscale=3Dtrue&amp;name=3DGaia%20GPS=
+-Header-OutsideNetwork.jpg" style=3D"outline:none; text-decoration:none; ma=
+x-width:100%; font-size:16px" width=3D"600" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1728400218140" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1728400218140_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17284002181081" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; color:#000000; word-break:break-word; text-align:center; padding:0px=
+; font-size:0px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3lVW8XzgPK8KMZnxVX9Pcf=
+9ddV_DW8WfC7Q93dx4BW13qlx561tx5DW3v_L498CCcCQW8rtr743WJy3vN2mVJDdTnvvcW5TZ2=
+Vj1h16gtVyS3zG57mBPqW9jpJMg7Pj928W3MglpB36744RW9kxz1w6KfTxzW8bNFYf6LHySsW44=
+tXpy2nSMhJVJ46wV3wK7KdW6P3XsK40fdFfW5yryMz2RfplrW3V5q5R1LgFQZW5915s07bV_K8W=
+4kh8l52rhvMrW6p-gWR3FQTJRW7VHh0q60q_NzW6XwC1_6HwBdfVwS2w27tVydPW4Kz_bB30-CN=
+FW3H0RlZ69fCnRW62rjZj8V-GcqN8-XJ8bplSjVf3YN5xd04" target=3D"_blank" style=
+=3D"color:#00a4bd" data-hs-link-id=3D"0">
+        <img alt=3D"woman-hiking_getty-2" src=3D"https://hub.outsideinc.com=
+/hs-fs/hubfs/Imported%20sitepage%20images/woman-hiking_getty-2.jpg?width=3D=
+1200&amp;upscale=3Dtrue&amp;name=3Dwoman-hiking_getty-2.jpg" style=3D"outli=
+ne:none; text-decoration:none; border:none; max-width:100%; font-size:16px"=
+ width=3D"600" align=3D"middle" class=3D"stretch-on-mobile">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1719947921857" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1719947921857_0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:b=
+reak-word; padding:24px 40px"><div id=3D"hs_cos_wrapper_module_171994792181=
+32" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modul=
+e" style=3D"color: inherit; font-size: inherit; line-height: inherit;" data=
+-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_c=
+os_wrapper_module_17199479218132_" class=3D"hs_cos_wrapper hs_cos_wrapper_w=
+idget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: in=
+herit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-c=
+os-type=3D"rich_text"><p data-start=3D"81" data-end=3D"190" style=3D"mso-li=
+ne-height-rule:exactly; line-height:150%"><a  href=3D"https://hub.outsidein=
+c.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3h=
+CZPW8wLKSR6lZ3nvW2GFtTx7pL8dsW7dKhN66pkWltW1FL6HW1gCK3HW1kzs-C5X-lGnW50-rzF=
+3tTbQLN3BBCRBqmP8vW3FDxx22QJzKkW2bjc9q2cMGyDW53m5Qg2LKz__W92-8nt5Z72S4W5Z1y=
+cT4KyxxzW1hHXZh3324SWW6hyByX6BsrcvW1StTpL8Tzd6ZW2Lc1-c2Fjhk4W4f53XX3WjfKRW5=
+Ttn6f2K9gcwVBNQJX8jsvp8W6ZG3jz6fDg3tW7PFprt6tmtLlW70NJ4r8HX-rXMMkmKp78Lj5W4=
+ztBJD9glnxFW8GryX23tPf5hW8D1st63XxJn5W1wP1YF4PclvDN3nGxtzwR5lwW1X0xqg522HRr=
+f4Fy7Jz04" rel=3D"noopener" style=3D"color:#000000; text-decoration:none; f=
+ont-weight:bold" data-hs-link-id=3D"1" target=3D"_blank"><strong data-start=
+=3D"81" data-end=3D"123">What=E2=80=99s the easiest way to hike uphill?</st=
+rong></a> New research suggests the climb might be steeper than you think.<=
+/p>
+<p data-start=3D"81" data-end=3D"190" style=3D"mso-line-height-rule:exactly=
+; line-height:150%">&nbsp;</p>
+<p data-start=3D"192" data-end=3D"370" style=3D"mso-line-height-rule:exactl=
+y; line-height:150%">Meanwhile, <span style=3D"font-weight: normal;">Toyota=
+ and Gaia GPS </span>are giving back to the trails with our new <a href=3D"=
+https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW=
+13cSCp5sBfxbN6D7jZ43hCZPW95jsWP6lZ3mjVhhp295XWV8XV2M5hp1h3XSLW8cdYWF4zBrmHV=
+fXw3Q48_Hk_W7mvSKZ5XN5lnW2xgTmB4_wgypW7R8FdZ6bMZkTW5bdqn46hRmqXW3dQ9CP1mFXs=
+3N2-rxZ6sHy6BW56fkGx7j-mc8W6QQ2xP98BHQmW6n3f2p9bTlrKW7_WSdN2NByTcW2PRffc115=
+6BWW8_53Y06Sjv3LVlksvp28b8KGW1Pjl9J99PRN5W1Rq-sd8bpJZ_W5ft4H064hJWkN1ppYW0j=
+t0jrW14Pdsm2H28SWW5r57Nj2yyB87W9hQT35490pL0N7CchpVnp-dtW5cCzx55DldsDW5lPDx4=
+4Q5f0pW2-ydcx8_sY2bN2rZ9W9NfrtdV-sjyC63mS4NdSl0jC04" rel=3D"noopener" style=
+=3D"color:#000000; text-decoration:none; font-weight:bold" data-hs-link-id=
+=3D"0" target=3D"_blank"><strong data-start=3D"270" data-end=3D"297">Trail =
+Karma partnership</strong></a>, supporting local trail organizations. Learn=
+ how you can get involved!</p>
+<p data-start=3D"192" data-end=3D"370" style=3D"mso-line-height-rule:exactl=
+y; line-height:150%">&nbsp;</p>
+<p data-start=3D"372" data-end=3D"483" style=3D"mso-line-height-rule:exactl=
+y; line-height:150%">Plus, follow a <a href=3D"https://hub.outsideinc.com/e=
+3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wL=
+KSR6lZ3l1W8QTNkX7L4cqvW6p8bdj14qcRjW1zxBtd25DC25W1Wn8ZY32xBBbV-Pvxw5-n821W3=
+j7QfS2gzlGHW6zgHqK8f70VjW5mmPxQ7cYHk_W1FTR0j41xD6qW6N0W9r8hmy_4W3RVrvm6Mb_9=
+KW7XGsZG3WmVcJW8NY-v23Zm2x7W3-5RB05C_0wZV-nQmM27qQxDN7mrmJ49NXszW3Zm6dN323H=
+QJW38SCgV7W_sg-W9fDV2q3YZNkYW3XqsSS6kpKZvW4YjQH31cTn7TW7K-fn37W6BknW7KXSTb3=
+HPx8pW1Dp0hR8YTkT6W4yxc323N7rMZW6gv4-91wZJ_4W7JjsbB6nFTZhW138dCB7X2Hbxf9l2S=
+T804" rel=3D"noopener" style=3D"color:#000000; text-decoration:none; font-w=
+eight:bold" data-hs-link-id=3D"0" target=3D"_blank"><strong data-start=3D"3=
+87" data-end=3D"416">Gaia GPS editor=E2=80=99s journey</strong></a> through=
+ Italy, using the app to navigate its cities and streets.</p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">&nbsp;</p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">Adventure on, &=
+nbsp;<br>The Gaia GPS Team</p></div></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"module_1733241177439" class=3D"hse-section" style=3D"padding-l=
+eft:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#ffffff; pa=
+dding-bottom:20px; padding-top:20px" bgcolor=3D"#ffffff">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:20px; padding-top:=
+20px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"module_1733241177439_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17332411774311" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#000000; word-break:break-word; text-align=
+:center; padding:10px 20px; font-size:0px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3k_N5nqb2Vbl6c_W5JkMrV=
+3D8MmjW3nhp7-3hgdlZVYvnKy3503q0W1d3_S51hhydQW15mxY1242BM5W2JL1bd2bgzFmW4R1R=
+FD7X3sSTW7JVwNT8mbm6sN23cmCRrZTsJW7YZhSX2_FYJXV1qc4N94TtQWW3fj-rx81BDKVW25l=
+xnR7BzmYTTnkrp4ZjbNSW598gt44PrrZ0W8CG_HF2-VflhW2khJ0f5ZGhLzW80j63r6m1QTGW6q=
+tmcP6lcx7JW5qL_xt4r4LBsW1-PZ8C5Q2JxGW1gMPcW5S4JHHW4JXN463dnNCGW9gzHQC4-3Yhw=
+W2MFHC-8x6Qh1W8tbWfD86M1QcW82cGR21NSfLxf82y7RH04" target=3D"_blank" style=
+=3D"color:#00a4bd" data-hs-link-id=3D"2">
+        <img alt=3D"hiking-uphill-2" src=3D"https://hub.outsideinc.com/hs-f=
+s/hubfs/Imported%20sitepage%20images/hiking-uphill-2.jpg?width=3D1120&amp;u=
+pscale=3Dtrue&amp;name=3Dhiking-uphill-2.jpg" style=3D"outline:none; text-d=
+ecoration:none; border:none; max-width:100%; font-size:16px; border-radius:=
+18px" width=3D"560" align=3D"middle" class=3D"stretch-on-mobile">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+<div id=3D"hs_cos_wrapper_module_17332411774312" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"pr=
+esentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Outside" src=3D"https://hub.outsideinc.com/hs-fs/hubfs/=
+Brand%20Icons/Color/Outside.png?width=3D1200&amp;upscale=3Dtrue&amp;name=3D=
+Outside.png" style=3D"outline:none; text-decoration:none; max-width:100%; f=
+ont-size:16px" width=3D"600" align=3D"middle" class=3D"stretch-on-mobile">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:10px 40px 0px"><div id=3D"hs_cos_wrapper_module_17332411774=
+313" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modu=
+le" style=3D"color: inherit; font-size: inherit; line-height: inherit;" dat=
+a-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_=
+cos_wrapper_module_17332411774313_" class=3D"hs_cos_wrapper hs_cos_wrapper_=
+widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: i=
+nherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-=
+cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exactly;=
+ font-family:Arial, sans-serif; font-size:23px; line-height:150%"><a href=
+=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NC=
+XwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3pwN9lwjm1Q40-MVkrQLp5-SF_BW7qLzJB56Y=
+fYDW7bpg108RmNbZW64Wqkn6Vb152W3ScMhX8_LXm1W3Phk8X5YRw1YW77yBVN1jCDsgW1wtx1b=
+1Hp9j9W8Hsfd663TQY6N5k45XVQ-sFQW6TPHqn5BgR7-W6rwXyS7L6dgGW1hyGQ753hcqXW79XS=
+D45_lVDGW4b_rK22FQ6h2W7nYW5J6Sz8n_Vz_Xt742Y6BpW6MGyXS7THzxGN88HWzdlnV47N8d2=
+lD7z2-xZW6TNdJz2sGjBHW21_fy36hWhhvW1m_Y6n6vJht4W5JFrtk1QFggzW1-HDbC6YLrvgW5=
+8yQ8h9hvBjyN7v63C2tdP28f5_21sR04" rel=3D"noopener" style=3D"color:#000000; =
+text-decoration:none; font-weight:bold" data-hs-link-id=3D"3" target=3D"_bl=
+ank">This Is the Easiest Way to Hike Uphill</a></h1>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">New data sugges=
+ts that the most efficient uphill slope is steeper than you think.</p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">&nbsp;</p></div=
+></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:0px 40px"><div id=3D"hs_cos_wrapper_module_17332411774314" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" s=
+tyle=3D"border-collapse:separate!important">
+    <tbody><tr>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#FFD100" style=3D"f=
+ont-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:bre=
+ak-word; border-radius:23px; cursor:auto; background-color:#FFD100; mso-pad=
+ding-alt:12px 18px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3kzN3-3x6h3RQj3W7NKWW9=
+2v5FGHW1sjX_R8YdTj8VZ_zTw7-GbXGN2Ds5vTbR-H0W5ZchGd2jgwTrMN4y-QM5ZwlVjbRDw84=
+RsP7N3TfHdSDNH3JW7xpxSv2GJklGVQv8c_73660VW8pzQCV70jT8HW5kQgTV4KkcZYW1mq54m2=
+Yn5X8W5VcPVv5JTslBVp8kGd23t8lvW4LXCTr1Fglb4MnPw6g6fmvgW1Kw4-P8RfMBlVCYTsD6l=
+DMZ6N4Js739fscwvN95_J4nFy1lZW1WHhwx5WHDH2W6BzdgZ8YfdMNW2xs1-T8rMmmwW20ktkv3=
+xbzCNW8KXdqZ75Mbq0W1QDWyD9cspW_f4fZ46n04" target=3D"_blank" style=3D"color:=
+#00a4bd; font-size:16px; font-family:Arial, sans-serif; Margin:0; text-tran=
+sform:none; text-decoration:none; padding:12px 18px; display:block" data-hs=
+-link-id=3D"4">
+          <strong style=3D"color:#222222;font-weight:bold;text-decoration:n=
+one;font-style:normal;">Read More</strong>
+        </a>
+      </td>
+    </tr>
+  </tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"module_1727880783657" class=3D"hse-section" style=3D"padding-l=
+eft:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa; pa=
+dding-bottom:20px; padding-top:20px" bgcolor=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:20px; padding-top:=
+20px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"module_1727880783657_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17278807836491" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#000000; word-break:break-word; text-align=
+:center; padding:10px 20px; font-size:0px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43hCZPW95jsWP6lZ3p2TFS4-5JxxlJW5fLgYS8=
+DmHr4W8FqlBQ27-DgxW9190NS31Rr1JW4_F5L26RH_22W6vCN_039YmWCW96_cz-3YD4j0VyWhP=
+m7Y5N7wW6V_rJ359jJnzW6JC-Pv93qCgVW1q2Pxj348TSlVkqyFn3S3qNvVL6PmP6TXRctW4V6C=
+3J56SGz7W1-VCT76pvDgFW9bftyV3lYTprVgVbjs2vTpC6W8LzYcP3cBd-MW3v8_8L4SX37XW2_=
+ZLFP209yXnW5Mhzxs1NbqwDW4BWN076GQGZNW5KBsSF1lB9F9N1cpcXQ1M7TrW2lc0yn1KT2V6N=
+4jbczf8tjjMW24Zk2X8z8m6rW31vG8T1Cc9Y8W8ywRmR4l3f2JW3Qvz4451tyXLdw9kTC04" ta=
+rget=3D"_blank" style=3D"color:#00a4bd" data-hs-link-id=3D"1">
+        <img alt=3D"morahan_visuals_outside_inc_toyota_mesquite_03418" src=
+=3D"https://hub.outsideinc.com/hs-fs/hubfs/morahan_visuals_outside_inc_toyo=
+ta_mesquite_03418.jpg?width=3D1120&amp;upscale=3Dtrue&amp;name=3Dmorahan_vi=
+suals_outside_inc_toyota_mesquite_03418.jpg" style=3D"outline:none; text-de=
+coration:none; border:none; max-width:100%; font-size:16px; border-radius:1=
+8px" width=3D"560" align=3D"middle" class=3D"stretch-on-mobile">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+<div id=3D"hs_cos_wrapper_module_17278807836492" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"pr=
+esentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Sponsored" src=3D"https://hub.outsideinc.com/hs-fs/hubf=
+s/Sponsored.png?width=3D1200&amp;upscale=3Dtrue&amp;name=3DSponsored.png" s=
+tyle=3D"outline:none; text-decoration:none; max-width:100%; font-size:16px"=
+ width=3D"600" align=3D"middle" class=3D"stretch-on-mobile">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:10px 40px 0px"><div id=3D"hs_cos_wrapper_module_17278807836=
+493" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modu=
+le" style=3D"color: inherit; font-size: inherit; line-height: inherit;" dat=
+a-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_=
+cos_wrapper_module_17278807836493_" class=3D"hs_cos_wrapper hs_cos_wrapper_=
+widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: i=
+nherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-=
+cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exactly;=
+ font-family:Arial, sans-serif; font-size:23px; line-height:150%"><a href=
+=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NC=
+XwgW13cSCp5sBfxbN6D7jZ43hCZPW95jsWP6lZ3kqN6c23b-14nTfW3tBs8L8gGQBMW3YXfkD6t=
+MyGpW7FxGXQ3zHcwdW3Lt2yg7cl_DlW1S8Jfz5PZ3YxW2LLlvD4zPYfyW3YQpT18H_3z_W8xSFX=
+z2Wnm4BW7tF5VN3fYjz8V5Jdmx2Nj5sxW2VN0Yv1xMhj0W5RgxLs7wxcshW3VXdcd1yJcQjW5yL=
+jYs8Q3NYdMB5Y2mn5NhFW3kJDRc8sJr87V62l467JyjsWW49gkb02_z5SWW43p8f01BcK3-N1w2=
+bMYtC3YlW6t3YSp1wDPT0W7Kxj-84rHnW2W5cg4H61NSqfQVn8BCR1f8wgKW6fCjXn8NMqDyW7B=
+Gqsk4rsSw5W96ZRxZ4QflbPW4m-2w05v3W_NW6p53-r2r2MDKf45qs3z04" rel=3D"noopener=
+" data-analytics-event=3D"click" data-analytics-data=3D"{&quot;name&quot;: =
+&quot;Post Clicked&quot;, &quot;props&quot;: {&quot;domain&quot;: &quot;<<a=
+nalytics_vars.domain>>&quot;, &quot;path&quot;: &quot;https://www.outsideon=
+line.com/adventure-travel/destinations/north-america/tsuchinshan-atlas-come=
+t/&quot;, &quot;listing_type&quot;: &quot;archive&quot;, &quot;location&quo=
+t;: &quot;list&quot;, &quot;title&quot;: &quot;How to See the Brightest Com=
+et of the Year This Weekend&quot;}}" data-analytics-instanced=3D"true" data=
+-outbound-instanced=3D"true" style=3D"color:#000000; text-decoration:none; =
+font-weight:bold" data-hs-link-id=3D"2" target=3D"_blank">Introducing Trail=
+ Karma with Toyota</a></h1>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">Gaia is excited=
+ to announce our new Trail Karma partnership with Toyota, designed to suppo=
+rt the trails we love. For the first time ever, Gaia GPS users can donate d=
+irectly to trail organizations inside the app, and Toyota is stepping up in=
+ a huge way: matching donations up to $100,000. Every single cent goes stra=
+ight to the people maintaining and restoring our trails.</p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">&nbsp;</p>
+<div style=3D"mso-line-height-rule:exactly; line-height:150%">To help make =
+this a movement, we=E2=80=99re&nbsp;unlocking the Overland Map Layer for FR=
+EE from February 3 to May 3, 2025.&nbsp;That means&nbsp;everyone=E2=80=94fr=
+ee users, paid users, first-time users=E2=80=94gets access to curated overl=
+and routes with:</div>
+<ul style=3D"mso-line-height-rule:exactly; line-height:150%">
+<li>Photos so you know what=E2=80=99s ahead</li>
+<li>Difficulty ratings to match your adventure to your rig</li>
+<li>Detailed descriptions so you can plan with confidence</li>
+</ul>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">&nbsp;</p></div=
+></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:0px 40px"><div id=3D"hs_cos_wrapper_module_17278807836494" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" s=
+tyle=3D"border-collapse:separate!important">
+    <tbody><tr>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#FFD100" style=3D"f=
+ont-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:bre=
+ak-word; border-radius:23px; cursor:auto; background-color:#FFD100; mso-pad=
+ding-alt:12px 18px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43hCZPW95jsWP6lZ3p0VvfNS41NHrnQW38TW4p=
+4rWvrKW1ZG3Qx7h6bqfW2hgdLs8fhYmjW13pCLw98xWgkW7lD1jf8pBLgLW1ZZ2jM55Hrm0W6mv=
+l8w5dbqjCW8QCZbk5r5HbwVBvTYJ8lvh12W47--6z4mVnGvW6_kvpY6pSL30W71dG2D7w_L4SW6=
+X3dJn91Qh94W6ntqlQ6rdhh-N952ptCgd_3zW8nxCQp4VykZMW5Qd-k73l5sYDW2PLghn7w_3jZ=
+W7dbQ9M6J6qWPW33_m2w2K_XcBW62W3j98lbFGpW516R1l1BwzhPW5g5l353B48kvW1mRYFR8Tr=
+K_jW4YcDSx4Fw_5wW8Tx1Y52C8v36N3SrRRT1jRbhVR6r318g12GJW61bRsw2SSgJ1f8qy6Sl04=
+" target=3D"_blank" style=3D"color:#00a4bd; font-size:16px; font-family:Ari=
+al, sans-serif; Margin:0; text-transform:none; text-decoration:none; paddin=
+g:12px 18px; display:block" data-hs-link-id=3D"3">
+          <strong style=3D"color:#222222;font-weight:bold;text-decoration:n=
+one;font-style:normal;">Explore and Donate Now!</strong>
+        </a>
+      </td>
+    </tr>
+  </tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"module_1740355296916" class=3D"hse-section" style=3D"padding-l=
+eft:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#ffffff; pa=
+dding-bottom:20px; padding-top:20px" bgcolor=3D"#ffffff">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:20px; padding-top:=
+20px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"module_1740355296916_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17403552969101" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#000000; word-break:break-word; text-align=
+:center; padding:10px 20px; font-size:0px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3nCN6xppjD5W66rW8JXSR1=
+3Spl60VP7Pmy2nKSCCW1YQT6h8l-_cZW6l2hpS8qrHr3W91xJsK7ZDGSGN6bZgVN2bGqpW3LmB1=
+Q2Lz6s6W9ffH-Z537_lnVtbM9W8ryfjmW8L6_Cj3dKhtlW3L3Lfp8nPywzN1dYWqKw39NjW6GTd=
+4q785R_zVttbbn43zBpYW6C1fgJ94nw0_W89NHt4872cC3W2Dz9k98B5f2bW5HvLF54JtJw4N25=
+2rVTzh9bdW4962Bg3JxfVRW1t1NKs1Kny3jW7xF7Nq2Bf-rNW6yrjPl1TZFqrW6_Sbx62v4Wj8W=
+7shC3H4w1dRcW47sl9Q6hGrwTW7wN_Lt6y2ByRf4tS40M04" target=3D"_blank" style=3D=
+"color:#00a4bd" data-hs-link-id=3D"1">
+        <img alt=3D"Gaia GPS Italy" src=3D"https://hub.outsideinc.com/hs-fs=
+/hubfs/Screen%20Shot%202025-02-26%20at%2010.39.10%20AM.png?width=3D1120&amp=
+;upscale=3Dtrue&amp;name=3DScreen%20Shot%202025-02-26%20at%2010.39.10%20AM.=
+png" style=3D"outline:none; text-decoration:none; border:none; max-width:10=
+0%; font-size:16px; border-radius:18px" width=3D"560" align=3D"middle" clas=
+s=3D"stretch-on-mobile">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+<div id=3D"hs_cos_wrapper_module_17403552969102" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"pr=
+esentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Gaia GPS" src=3D"https://hub.outsideinc.com/hs-fs/hubfs=
+/Brand%20Icons/Color/Gaia%20GPS.png?width=3D1200&amp;upscale=3Dtrue&amp;nam=
+e=3DGaia%20GPS.png" style=3D"outline:none; text-decoration:none; max-width:=
+100%; font-size:16px" width=3D"600" align=3D"middle" class=3D"stretch-on-mo=
+bile">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:10px 40px 0px"><div id=3D"hs_cos_wrapper_module_17403552969=
+103" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modu=
+le" style=3D"color: inherit; font-size: inherit; line-height: inherit;" dat=
+a-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_=
+cos_wrapper_module_17403552969103_" class=3D"hs_cos_wrapper hs_cos_wrapper_=
+widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: i=
+nherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-=
+cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exactly;=
+ font-family:Arial, sans-serif; font-size:23px; line-height:150%"><a href=
+=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NC=
+XwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3mdN3m6T7x7RDrQW2CG5Bw5fNHqjW1V2Zbh7g=
+l6RBW13XDDN2Mr3jNN11KcjP5T4qKW19gKvR1-VXg9N3R3C1mr-J-9W6JWSL76kDFvJN8Jc3y42=
+JJ0kW1zW7vR7-w7ZcW2N8fNM1l32tMW5ysPXn81p1CcW2Qdlz36kGrgLW6Ps7qn4Q7NjVW663TL=
+j7Ns7H-W5g8GlR61f_XXW891y821h-P0SN5Ygw1zYqVWyV_98j71WGxLDW6XtWNd7kQ2mlN5Kqb=
+wBZymM9W2VQLzY3QfwhGW6q2-HK4vXYxnW6cmJMR4SbT2kW3fTqGZ1VrN7yW6PyfnB8C2ZsBW81=
+ZHV73SXwfFW36S1wj2g2vdpf92RkNq04" rel=3D"noopener" data-analytics-event=3D"=
+click" data-analytics-data=3D"{&quot;name&quot;: &quot;Post Clicked&quot;, =
+&quot;props&quot;: {&quot;domain&quot;: &quot;<<analytics_vars.domain>>&quo=
+t;, &quot;path&quot;: &quot;https://www.outsideonline.com/adventure-travel/=
+destinations/north-america/tsuchinshan-atlas-comet/&quot;, &quot;listing_ty=
+pe&quot;: &quot;archive&quot;, &quot;location&quot;: &quot;list&quot;, &quo=
+t;title&quot;: &quot;How to See the Brightest Comet of the Year This Weeken=
+d&quot;}}" data-analytics-instanced=3D"true" data-outbound-instanced=3D"tru=
+e" style=3D"color:#000000; text-decoration:none; font-weight:bold" data-hs-=
+link-id=3D"2" target=3D"_blank">How I Used Gaia GPS to Navigate Italy</a></=
+h1>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">To be honest, I=
+ didn=E2=80=99t realize how much Gaia GPS would come in handy during my Ita=
+ly trip. I typically use it for hiking and local adventures in the woods of=
+ Colorado, but it turns out that Gaia GPS is great for any type of adventur=
+e=E2=80=94even navigating the cities and streets of Italy.</p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">&nbsp;</p></div=
+></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:0px 40px"><div id=3D"hs_cos_wrapper_module_17403552969104" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" s=
+tyle=3D"border-collapse:separate!important">
+    <tbody><tr>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#FFD100" style=3D"f=
+ont-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:bre=
+ak-word; border-radius:23px; cursor:auto; background-color:#FFD100; mso-pad=
+ding-alt:12px 18px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3pCW8q9BHd7xmxDnW1vMJW=
+x6DVnsxW4dlw9C70SzV-W4H2lxF5YjhdhW4vbCV05vKVLrW8KdSVn2187SnW82TMg94wDSjbW7Z=
+w85D56k6z4W4Zn-x93JC38lW6kWDrG7nzg-VW66pTcx6B6B63W6rTj_b1lk1RTW3tclxv8Y7cn4=
+W9j2ZG234BTPgW4dchY968fvFcW9hGpng6VH6d6W6sg0cN6QgyTFW122kSX9bDQR4W3_1PQP3h-=
+DFKW8NLBv73klLTcVqkfX-2DvCHZW3sk_481ZpQ-zN3s99Ctsr2-hN3vmqzBZqdJjW69VXb04Lm=
+ZCyN35QZ6YltMWBW1K4TBz19V3p_W3Ms9C-1zQWsZf2vWWzd04" target=3D"_blank" style=
+=3D"color:#00a4bd; font-size:16px; font-family:Arial, sans-serif; Margin:0;=
+ text-transform:none; text-decoration:none; padding:12px 18px; display:bloc=
+k" data-hs-link-id=3D"3">
+          <strong style=3D"color:#222222;font-weight:bold;text-decoration:n=
+one;font-style:normal;">Read More</strong>
+        </a>
+      </td>
+    </tr>
+  </tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"module_1723733883364" class=3D"hse-section" style=3D"padding-l=
+eft:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#ffffff; pa=
+dding-bottom:20px; padding-top:20px" bgcolor=3D"#ffffff">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:20px; padding-top:=
+20px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"module_1723733883364_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17237338833431" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#000000; word-break:break-word; text-align=
+:center; padding:10px 20px; font-size:0px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3lNW6pBb7r4HPVs_W8d143=
+-4Yb38sW8kJ77n2wPJZDW7R6Qxh5793qfW3jnhzv88CzplW2_41-p8g1TCBW1b8R3d4nJCV0W5x=
+lSJV2MQ6FrN6lh8hg6gYb0N1k5HDQWrxDcN3qC7-BmKJJ_W6hQpRG1pBwswW4bK8LM7ccxzJW37=
+Lmpc3rCtwTW86znzc5wJhlLN57cy5T4SYzDW6Yz9NF3KFP6HW7BRkml1hQ3nPW6CKfFL4yRqtbW=
+6nMrgR4DdtSkW5G1HC932_X6pW9dtk7c8DcvctW96cgWg9fKVDpW2FsB3W5h7jl3VqS35n5Cgd_=
+fVKhbkf3y_95gW6Fx6bc5kCqSSW6rG51_6CJw2zf91jT-C04" target=3D"_blank" style=
+=3D"color:#00a4bd" data-hs-link-id=3D"0">
+        <img alt=3D"tiger-wall-1" src=3D"https://hub.outsideinc.com/hs-fs/h=
+ubfs/Imported%20sitepage%20images/tiger-wall-1.jpeg?width=3D1120&amp;upscal=
+e=3Dtrue&amp;name=3Dtiger-wall-1.jpeg" style=3D"outline:none; text-decorati=
+on:none; border:none; max-width:100%; font-size:16px; border-radius:18px" w=
+idth=3D"560" align=3D"middle" class=3D"stretch-on-mobile">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+<div id=3D"hs_cos_wrapper_module_17237338833432" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"pr=
+esentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Limited Deal" src=3D"https://hub.outsideinc.com/hs-fs/h=
+ubfs/Limited%20Deal.png?width=3D1200&amp;upscale=3Dtrue&amp;name=3DLimited%=
+20Deal.png" style=3D"outline:none; text-decoration:none; max-width:100%; fo=
+nt-size:16px" width=3D"600" align=3D"middle" class=3D"stretch-on-mobile">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:10px 40px 0px"><div id=3D"hs_cos_wrapper_module_17237338833=
+433" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modu=
+le" style=3D"color: inherit; font-size: inherit; line-height: inherit;" dat=
+a-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_=
+cos_wrapper_module_17237338833433_" class=3D"hs_cos_wrapper hs_cos_wrapper_=
+widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: i=
+nherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-=
+cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exactly;=
+ font-family:Arial, sans-serif; font-size:23px; line-height:150%"><a href=
+=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NC=
+XwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3l-W43phZQ2S0qxYMLXvmWK11dfW2LncPf7GM=
+WZkW5hh2M67l12JtW7xWm-88b7GLTW7WvNDS26ZvCKVnwRLB5nwCJBW5mXTVP52Rsg4W2PKscx8=
+wVhsFVhCvtL4vM5c_W7Ptksm7MxrM3W95hT1v5L3TsxW6LRVln7kb_nhW71cHQf25NTDjW2NZ49=
+x1zd--RVBNk6J1SML1HW6T-JCP7fTLgTW7znxVz6FTk5vW5KwLFY1fNxq9W4qJX7c5xmNB6W3dj=
+n6G4TfNrsW5ztdpr1CBN1pW3dSSfw49Qdg-N29Dpc-R41BRW45MSzS4gvZswW8wnbBF5RD5rHN2=
+twXZscShBYW97wXSW5kLj7kf8yD_Xg04" rel=3D"noopener" style=3D"color:#000000; =
+text-decoration:none; font-weight:bold" data-hs-link-id=3D"1" target=3D"_bl=
+ank">Deal of the Week: Save Over $100 On This Eco-Conscious Ultralight Tent=
+</a></h1>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">Big Agnes's Tig=
+er Wall UL2's easy setup and spacious tent floor is perfect for hikers tryi=
+ng to lighten their load without sacrificing comfort. The best part? It's n=
+ow 30 percent off.</p>
+<p style=3D"mso-line-height-rule:exactly; line-height:150%">&nbsp;</p></div=
+></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:brea=
+k-word; padding:0px 40px"><div id=3D"hs_cos_wrapper_module_17237338833434" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table align=3D"lef=
+t" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" s=
+tyle=3D"border-collapse:separate!important">
+    <tbody><tr>
+      <td align=3D"center" valign=3D"middle" bgcolor=3D"#FFD100" style=3D"f=
+ont-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:bre=
+ak-word; border-radius:23px; cursor:auto; background-color:#FFD100; mso-pad=
+ding-alt:12px 18px">
+        <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt=
+492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3hCZPW8wLKSR6lZ3mHW4xrV6V59QWRpW6hFBJ=
+87MvH86W5-vq5M22cM_DW7lzQnM6KhjLXN1mL8p16qWRWW6RNyJw6Bj3BcW29znzB2JqwbJW8z1=
+Q9t4gK0jkW1LhHWD8dZ0jxW1tKbL13VvQ6hW6Zg89l5Vv_jfW37WrL38cTWhdW2qmkm_5cPqtNV=
+87Vdx5zwvRDW62bThS2WQ02bW8hrXt71Hs51tW19H_Sx5zYtY5W7j_Ltw5KQhBDW7Ftyxx8C2yS=
+kW8Fwvn38_6JslW7J3twj5jqbQ5W1QJpM32q4y-PN77blCLDgBNyW3xpqwq4TWtzXN7r4h7WP4-=
+CqW5FMltm7DPKBgV6twgP7VmNlnW1n4tZF5m54C5f6Lb43T04" target=3D"_blank" style=
+=3D"color:#00a4bd; font-size:16px; font-family:Arial, sans-serif; Margin:0;=
+ text-transform:none; text-decoration:none; padding:12px 18px; display:bloc=
+k" data-hs-link-id=3D"2">
+          <strong style=3D"color:#222222;font-weight:bold;text-decoration:n=
+one;font-style:normal;">Get the Deal</strong>
+        </a>
+      </td>
+    </tr>
+  </tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_17367862925363" class=3D"hse-section" style=3D"padding=
+-left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#FFFFFF" bg=
+color=3D"#FFFFFF">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#FFFFFF">
+      <tr style=3D"background-color:#FFFFFF;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-1736786292536-0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17379886106611" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module">
+<div align=3D"center" style=3D"max-width:600px; background-color:#ffffff; m=
+argin:0px auto; padding: 0px; display:block;">  =20
+    <table width=3D"100%" align=3D"center" style=3D"max-width:600px; paddin=
+g:0px; margin:0 auto; text-align:center;">
+      <tbody><tr>
+        <td align=3D"center" style=3D"font-family:Arial, sans-serif; font-s=
+ize:16px; color:#000000; word-break:break-word; max-width:600px; display:in=
+line-block; padding:20px 0 0; margin:0 auto; text-align:center">
+          <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvv=
+dt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYb3qgyTW7lCdLW6lZ3lyW78GNQH8m1fKGW8LQ=
+fWR2H-WdjW6sxTgm42VNzYW3T2pYq488p7GV6NGb38MrN15W2Dpj8w46RPHhW8YMHdV1MGbXyW2=
+PLQYy7w64QlW2mpQ7B5Z0KKMW7PsHbZ4RS0_kW7j9zLf2hxw4HW4XJ3Jf89bwHPW5_bGFq3TwhR=
+3W3GVBKW1-VZ3YTbpr-39qjpkW8k_4wr2Xc2BjW1hRL882GQH8KV7GHM449S3YHW3Yn8rG3ND_t=
+0W56BQcb2P_TtHW4hWkSl34ttqYW9jDFCD8jTx_TMcVhst9l7vfN1nsZYRLM0n8f5Ngz7g04" r=
+el=3D"noopener" style=3D"color:#00a4bd" data-hs-link-id=3D"0" target=3D"_bl=
+ank"><img src=3D"https://hub.outsideinc.com/hs-fs/hubfs/Holiday%202024-Phas=
+e3-GaiaGPS-Boilerplate.png?upscale=3Dtrue&amp;name=3DHoliday%202024-Phase3-=
+GaiaGPS-Boilerplate.png" width=3D"100%" alt=3D"Join Outside+" align=3D"cent=
+er" style=3D"outline:none; text-decoration:none; border:none; padding:0; ma=
+rgin:0"></a>
+        </td>
+      </tr>
+    </tbody></table>
+</div>
+</div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1722965418199" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#FFFFFF; pa=
+dding-top:24px" bgcolor=3D"#FFFFFF">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#FFFFFF">
+      <tr style=3D"background-color:#FFFFFF;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-top:24px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1722965418199_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17229654181561" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; color:#000000; word-break:break-word; text-align:center; padding:0px=
+; font-size:0px">
+        <img alt=3D"DiscoverMore2x" src=3D"https://hub.outsideinc.com/hs-fs=
+/hubfs/DiscoverMore2x.png?width=3D1200&amp;upscale=3Dtrue&amp;name=3DDiscov=
+erMore2x.png" style=3D"outline:none; text-decoration:none; max-width:100%; =
+font-size:16px" width=3D"600" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"module_1724958397023" class=3D"hse-section" style=3D"padding-l=
+eft:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa; pa=
+dding-top:24px" bgcolor=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-top:24px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"module_1724958397023_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17249583969872" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Read-Nov-28-2023-10-26-56-5131-PM" src=3D"https://hub.o=
+utsideinc.com/hs-fs/hubfs/Read-Nov-28-2023-10-26-56-5131-PM.png?width=3D120=
+0&amp;upscale=3Dtrue&amp;name=3DRead-Nov-28-2023-10-26-56-5131-PM.png" styl=
+e=3D"outline:none; text-decoration:none; max-width:100%; font-size:16px" wi=
+dth=3D"600" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"module_1724958464665" class=3D"hse-section" style=3D"padding-l=
+eft:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"module_1724958464665_0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:b=
+reak-word; padding:6px 40px 10px"><div id=3D"hs_cos_wrapper_module_17249584=
+646434" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_m=
+odule" style=3D"color: inherit; font-size: inherit; line-height: inherit;" =
+data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"=
+hs_cos_wrapper_module_17249584646434_" class=3D"hs_cos_wrapper hs_cos_wrapp=
+er_widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size=
+: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-=
+hs-cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exact=
+ly; font-family:Arial, sans-serif; font-size:16px; line-height:150%"><a hre=
+f=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1N=
+CXwgW13cSCp5sBfxbN6D7jZ43hCZPW95jsWP6lZ3p4W96HkXH5GLtbMW4L70Ss4WNyhZVK6c8T2=
+X8nnXW7BvhX31LKDkpW1rcFqd74056LW7jp4kf4V5zhYW4-tTvX2b15rPW6lt8ZS3nrYmwV3BGT=
+w22MyG3W8qqFtT7mc61SW7RBfbN8c0HQhW46XbCG92YrxHW714lrY7bWVbdV9l-Qt3z38xkW1Cg=
+sr42q_p2GVx6Pw-7VHjjvW3-gT0Q2lZTKvW7fz8Jz4gFvqpW8CMDZD1WgNw6W3MdMXx7lm107W7=
+MsgDr2b0mYVW1jpDrt5ww-6fW8NBvCr2qhmGSW75mmwr2CzY7TW80t1Tv5vbY9lW450zSw21GR6=
+GW6FZJgJ4pjPbZW8wy2Nd7SCQD3W64WC2s6Jhq26VLdJFy3Q5Kl3f7KCq1Y04" rel=3D"noope=
+ner" data-outbound-instanced=3D"true" style=3D"color:#000000; text-decorati=
+on:none; font-weight:bold" data-hs-link-id=3D"0" target=3D"_blank">A =E2=80=
+=9CMiracle=E2=80=9D Lost Backpack Saved Two Hikers in Southern Utah</a></h1=
+>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:150%"=
+>A rescue story from Southern Utah has a happy ending=E2=80=94thanks to a d=
+iscarded bag filled with survival gear. <a href=3D"https://hub.outsideinc.c=
+om/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jZ43hCZP=
+W95jsWP6lZ3lrW6Nd02J8nwfMVW8ZkZQT2ByFVrW8W7SY86CxBnRW6wr_6l7cxX44W35Q0yk5Ym=
+P5vW7_BPrN8gT-dXW7Kf-tb611tVkN5st7LBkbQq-W9klGyT8BNTpsW2stRsX4RPrx0W725wBz4=
+4q7DVW2CCqCZ3wkVkzW5yBqcf5LFs0tW7nzZYS3_L0HXN6vlygrLTlZCW3z6QJV2S6CYDW4F28J=
+h5ng0yNW88WW4K5C430BW5nf4fQ5xYt7LW3ZY5HV1GRKGwN5pWcPhCCz7PN6XDRL0Mr4GDW2dhd=
+zv4spZ27W4gGvHW7tjb4gW2b0pfT791sswW8vtxHd5ZX92yW590Lg37LyTXdW7HYf0h4JBmcfW8=
+lHTPn8QB1kcW5VDrrw6bS3whf1FRk3v04" style=3D"color:#000000; font-weight:bold=
+; text-decoration:underline" rel=3D"noopener" data-hs-link-id=3D"1" target=
+=3D"_blank">Read =E2=87=A2</a></p></div></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1702580775376" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa; pa=
+dding-top:12px" bgcolor=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-top:12px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1702580775376_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17025807753554" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Watch-V2-Nov-28-2023-10-26-56-5103-PM" src=3D"https://h=
+ub.outsideinc.com/hs-fs/hubfs/Watch-V2-Nov-28-2023-10-26-56-5103-PM.png?wid=
+th=3D1200&amp;upscale=3Dtrue&amp;name=3DWatch-V2-Nov-28-2023-10-26-56-5103-=
+PM.png" style=3D"outline:none; text-decoration:none; max-width:100%; font-s=
+ize:16px" width=3D"600" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1702580802885" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1702580802885_0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:b=
+reak-word; padding:6px 40px 10px"><div id=3D"hs_cos_wrapper_module_17025808=
+028605" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_m=
+odule" style=3D"color: inherit; font-size: inherit; line-height: inherit;" =
+data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"=
+hs_cos_wrapper_module_17025808028605_" class=3D"hs_cos_wrapper hs_cos_wrapp=
+er_widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size=
+: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-=
+hs-cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exact=
+ly; font-family:Arial, sans-serif; font-size:16px; line-height:150%"><a hre=
+f=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1N=
+CXwgW13cSCp5sBfxbN6D7jYv3qgyTW7Y8-PT6lZ3nJW6fGkhm74t9GrW65Gvr81DRJ9VW6LBMdt=
+1qBMBnF81GcKSW3WNW86Z14h2jx3PrW21q3-T85xztPVPVSCB6pS_qGVRwvGN7kvDbQW7xlZL81=
+7nfqpW5Mgk401FgzD7V7Z6qj28YyWzW41xp0m8_FDy1VZ8_2W7KbyZRW6KFjCL6FLV4xW2WvF1z=
+8CJJxXVJhD5F5my1fdW602wb36Y90gYW5Z98Tr5LXvgcW50PdS08yj5XKW2DtCfD2btyWXW54-w=
+Fk456pzfW3sFhZK6bPQYKW4lrp7x2HRYkrW8gZrqf52FKHSVhD8sY3sgGvpW2-p6fG8qyCMKf7p=
+Q6Nb04" rel=3D"noopener" style=3D"color:#000000; text-decoration:none; font=
+-weight:bold" data-hs-link-id=3D"0" target=3D"_blank">Greenland: The Final =
+Frontier</a></h1>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:150%"=
+>An all-female team of scientists, environmentalists, and filmmakers endure=
+ harsh seas on their quest to capture data on changing weather, microplasti=
+cs, and the rapidly melting Greenland ice sheet, one of the earth=E2=80=99s=
+ largest sources of frozen freshwater. <a href=3D"https://hub.outsideinc.co=
+m/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYv3qgyTW=
+7Y8-PT6lZ3lxW10VLMw8s69KPN3XFQVFFgCQ4W7bsLmC3rVwLCVt8c0w7G4zz6N1xpvZs9FTCNW=
+8z1qhk6XXtK9W5xNk1k65GHsRW2-QpNy13-Mk9W41llWd3qdfMWW2-5PKq9dPz51W6xSgmw3DWR=
+h_W4RHVVV8m85Q_W2PsszL3Vn8yxVZJ8jd3f7CfbN2WBGsfxwlpqW6N4Sw636yyNrW2JKbWr8bF=
+SwYV1wkYt66qQ75W7dQTZw8bG2r-W6k6_HT1ZxQ4QW7jh99L8x2vxSW1pYvM325JpVsN2NXnlxJ=
+ghKTW5GqvQl2P206tW9hwwWK4hzLxRN36KW_sj-XVpf6rcD1T04" style=3D"color:#000000=
+; font-weight:bold; text-decoration:underline" rel=3D"noopener" data-hs-lin=
+k-id=3D"1" target=3D"_blank">Watch </a><a href=3D"https://hub.outsideinc.co=
+m/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYP3qgyTW=
+8wLKSR6lZ3kyV1tD557pkYMKW2C1LzT1f7cmWN4HgWccX8thKVCC9vM5M0VfqN4hzkw4Mx9p8W7=
+393Qp7QR4qzW6gXZ1b5myHWQW5lr8Cp3FKFDnVdJbr75L5HbWW5kzVts3Tp38cW4CcX6h6wy3pS=
+W3BL2-R1LlLVfW2-WsBK5cgTxhW5nVBPs2MmXs9W5-_nhS3cJsLtVFBYMy49m7SdN4Fc89f7GMw=
+RW32c-r94n0p7NW1Hny0w80tqbYW1-JdJv5p8R-PVLw9LG4RNnMDN7yMYBy9RDPVW6_ZKxJ8s2y=
+vNVj95g-2FslXSW4T0F4J3ybhPxW4VZ05F7_bqFxW6LBJ8r4hg4jvW2J1qsy7MBWp-f5gRl9Y04=
+" style=3D"color:#000000; font-weight:bold; text-decoration:underline" rel=
+=3D"noopener" data-hs-link-id=3D"0" target=3D"_blank">=E2=87=A2</a></p></di=
+v></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1702581085902" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa; pa=
+dding-top:12px" bgcolor=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-top:12px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1702581085902_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17025810858696" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"left" valign=3D"top" style=3D"font-family:Arial, sans-se=
+rif; color:#000000; word-break:break-word; text-align:left; padding:0px; fo=
+nt-size:0px">
+        <img alt=3D"Learn-V2-Nov-28-2023-10-26-56-4958-PM" src=3D"https://h=
+ub.outsideinc.com/hs-fs/hubfs/Learn-V2-Nov-28-2023-10-26-56-4958-PM.png?wid=
+th=3D1120&amp;upscale=3Dtrue&amp;name=3DLearn-V2-Nov-28-2023-10-26-56-4958-=
+PM.png" style=3D"outline:none; text-decoration:none; max-width:100%; font-s=
+ize:16px" width=3D"560" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1702581123038" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1702581123038_0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:16px; color:#000000; word-break:b=
+reak-word; padding:6px 40px 10px"><div id=3D"hs_cos_wrapper_module_17025811=
+230107" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_m=
+odule" style=3D"color: inherit; font-size: inherit; line-height: inherit;" =
+data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"=
+hs_cos_wrapper_module_17025811230107_" class=3D"hs_cos_wrapper hs_cos_wrapp=
+er_widget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size=
+: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-=
+hs-cos-type=3D"rich_text"><h1 style=3D"margin:0; mso-line-height-rule:exact=
+ly; font-family:Arial, sans-serif; font-size:16px; line-height:150%"><a hre=
+f=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1N=
+CXwgW13cSCp5sBfxbN6D7jYv3hCZPW7Y8-PT6lZ3lHW1pwbdw113Jh1W4hm50C2dc_ZQN2h2nvP=
+82LlHW3qKsVR8-9XMBW60218c64yV-DW6QVywm6jDlDxW2f2fh-9bsjQ7W17zmqX18HbTSW4RBX=
+GH5V5mjFW7kH0021NWPwTW16kPbN1yBrMwW2BXKgT3qcXwtW3n4mjJ5rPVQnW1j5Rj31CWrTjW5=
+c4SN-2wBtVXW5gKjWr7h80PVW1FDsD540mwKsW2Gg6HV3WwZF1W4k0Tv91RjNBdW4-tLJC7TzjM=
+BW6jZdFg4xns0LW88rNys3zlDJPN4N8FptwtKP7W5qr0Lh3ZnqFGN5D87gdBF6PcW9376jZ6zY9=
+d1dQ7ptT04" rel=3D"noopener" style=3D"color:#000000; text-decoration:none; =
+font-weight:bold" data-hs-link-id=3D"0" target=3D"_blank">6 Weeks to Trail =
+Fit</a></h1>
+<p style=3D"mso-line-height-rule:exactly; font-size:14px; line-height:150%"=
+>When you=E2=80=99re out on the trail, you want to focus on the views and t=
+he experience=E2=80=94not the pain in your legs. That=E2=80=99s why Jason A=
+ntin, a mountain guide and performance coach, designed this 6.5-week fitnes=
+s online class to help you be physically ready for your next summit. <a hre=
+f=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MWvvdt492LQW8lTyXR1N=
+CXwgW13cSCp5sBfxbN6D7jYv3hCZPW7Y8-PT6lZ3m7Vv5NHk8lCjJ5W6R95wY6LB4G6W5RhvPz9=
+3Wln0W279XMX1wg9c_W6lkZ1c8vJW26W1X8TKG51ZLXNN4Y0RSp_PjVdW8k8K886b4mmFV-LVjB=
+7TZ2mZW87l4ft5WJRnbW4n9zt51Wd4GNW6jknBc3D9F5SW7w6CKS2DSd7sW7rtS2k6-Bh3HW4Hq=
+JqJ4qKzx4W1VVfVV7Fyz6kW5gn5jd89NmlQVW36HY3NjW5WVh1-xm3MWmfXW8MHsvh5kD292N3b=
+nDcSdXR8cW3K0xmm3kJ5vzW2r-XtS5M0RtmN55p4GJ_XtnZW632rPp79bn_rW6PcJ6j2Dr475f2=
+g74DY04" style=3D"color:#000000; font-weight:bold; text-decoration:underlin=
+e" rel=3D"noopener" data-hs-link-id=3D"1" target=3D"_blank">Learn =E2=87=A2=
+</a></p>
+<ul style=3D"mso-line-height-rule:exactly; line-height:150%"></ul></div></d=
+iv></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1701212243019" class=3D"hse-section hse-section-last" =
+style=3D"padding-left:10px; padding-right:10px">
+   =20
+   =20
+   =20
+    <!--[if !((mso)|(IE))]><!-- -->
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; Margin-left:auto; Margin-right:auto; background-color:#fafafa" bg=
+color=3D"#fafafa">
+   =20
+    <!--<![endif]-->
+   =20
+   =20
+    <!--[if (mso)|(IE)]>
+     =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px;max-widt=
+h:600px;width:100%;Margin-left:auto;Margin-right:auto;">
+     =20
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#fafafa">
+      <tr style=3D"background-color:#fafafa;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1701212243019_0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17199478098141" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module">
+<div width=3D"100%" style=3D"max-width:600px; padding-top:32px; margin:0px;=
+" align=3D"center">
+=09=09=09<p style=3D"font-size:12px; padding: 20px 60px 2px; color:#979797;=
+ line-height: 1.6 !important;">You are receiving this Gaia GPS Newsletter e=
+mail because you are subscribed to , which is a part of the Outside Network=
+.</p>
+=09=09=09<p style=3D"font-size:12px; padding: 20px 2px 2px; 2px; color:#979=
+797 !important;">Outside | 1600 Pearl Street  | Boulder | CO | 80302 | USA<=
+/p>
+  <p style=3D"font-size:12px; padding: 8px 40px 24px; text-decoration: unde=
+rline;"><a href=3D"https://plus.gaiagps.com/hs/preferences-center/1039098/e=
+n/page?data=3DW2nXS-N30h-z9W3M9TwW3gxKJ-W32jyRh3GRCzYW4rC06X3_HYPzW3LV6gF3j=
+cRxcW2FKqhy2Tjs9hW2zLK6q30FLqxW4r74DM25nMHyW3XGjXQ1T_ZymW1NCH5-32BcNQW30HrZ=
+d217stGW2CDG3g1_lznyW3LY6HC2TRkNNW43Rxkf3LTjmrW1NBMrz38mLf3W2y1L2k2xQcGzW36=
+FB2w2KFk__W2FQWT64hpG1sW2KwDwm2FWmRYW3F5r2r3JFW3XW2PRfYW3T51zFW1LlcvP1SwJxZ=
+W4hrfMs2PKsKHW41rrY22p28lGW23hFdk2TtZXPW1BLXc23LDQTYW2Wpdgs4msB_kW1LwthH38h=
+_2BW309JZx2MpcrjW2RtLtv4cwWP5W4fkgZM2-rcrNW4pmK-l2HCQvgW24-M4B2r1rF7W2KZnTd=
+3VGB8kW36sWVj2zM5rHW3V-C-k4rzlMCW3jr7ns3VPFlTW4pFhLV3VMzfGW49zCK53JTBk6W36D=
+KwH2xNvNjW4hMN5l4tdF8dW43yTCt3D_BfTW3dhG2m3P51YzW2xZYRt4fxy0FW43B62z3hZMlDW=
+47lMmL49mJKrW2MpZDr2y0tZL0&amp;utm_campaign=3DGPS%20-%20NL&amp;utm_source=
+=3Dhs_email&amp;utm_medium=3Demail&amp;utm_content=3D349380690&amp;_hsenc=
+=3Dp2ANqtz--BBMJuzhWF3xU8ad0YAri8ol4JW98VGXbtbkGn0JI-Ig9vI4IOIT83Bg5nDnz5US=
+bR58AF5pMGRK10DJqWU7mrAyGbOw&amp;_hsmi=3D349380690" style=3D"color:#979797 =
+!important" data-hs-link-id=3D"0" target=3D"_blank"><strong>Unsubscribe</st=
+rong></a> | <a href=3D"https://hub.outsideinc.com/e3t/Ctc/LW+113/cy08X04/MW=
+vvdt492LQW8lTyXR1NCXwgW13cSCp5sBfxbN6D7jYv3qgyTW7Y8-PT6lZ3kwW53VxDJ1J1T8gMf=
+D3YJyXC37N1K4Gz8hThkGW4L_s3c2vr257VK7tX23L7XSzW7JszW821XhgsW5_nN0_2SFw0lW1N=
+ST5Q38xnB6W3vjgyk3h1DZjW5Z4yVH9cJLg-W28jfzM4MpJc9W2Jbsw_2L78nZN6_DZWfswN0JW=
+6ffn1D57T1_mW8Yjwyz1GdG5bW2W_55b4HMRWfW5h_ymC6NZMb4W5sFdHn1vQ_CQW1ymTTR2Wc5=
+p4MzMtlH5l59XVBvc2B6s6CnMN8__028PmctkW1-r83d22BWvMW3cR1sz2QNclTW6zpQK74Nr-k=
+tW72103d4NJkyvf5scbqd04" style=3D"color:#979797 !important" data-hs-link-id=
+=3D"0" target=3D"_blank"><strong>My Preference</strong></a></p>
+=09=09  <img src=3D"" style=3D"outline:none; text-decoration:none; max-widt=
+h:100%"> =20
+</div></div>
+<div id=3D"hs_cos_wrapper_module_170121224299110" class=3D"hs_cos_wrapper h=
+s_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; f=
+ont-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widge=
+t" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"p=
+resentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; color:#000000; word-break:break-word; text-align:center; padding:0px=
+; font-size:0px">
+        <img alt=3D"Gaia_Footer" src=3D"https://hub.outsideinc.com/hs-fs/hu=
+bfs/2024%20Email%20Header%20and%20Footer/Gaia_Footer.jpg?width=3D1200&amp;u=
+pscale=3Dtrue&amp;name=3DGaia_Footer.jpg" style=3D"outline:none; text-decor=
+ation:none; max-width:100%; font-size:16px" width=3D"600" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div></div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+ =20
+<img src=3D"https://hub.outsideinc.com/e3t/Cto/LW+113/cy08X04/MWvvdt492LQW8=
+lTyXR1NCXwgW13cSCp5sBfxbW6D7jH_3CyBBs122" alt=3D"" width=3D"1" height=3D"1"=
+ border=3D"0" style=3D"display:none!important;min-height:1px!important;widt=
+h:1px!important;border-width:0!important;margin-top:0!important;margin-bott=
+om:0!important;margin-right:0!important;margin-left:0!important;padding-top=
+:0!important;padding-bottom:0!important;padding-right:0!important;padding-l=
+eft:0!important"></body></html>
+------=_Part_225611_265731333.1740745363362--
+

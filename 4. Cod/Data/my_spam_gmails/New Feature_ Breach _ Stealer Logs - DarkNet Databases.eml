@@ -1,0 +1,1107 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp2524873gdb;
+        Mon, 3 Mar 2025 05:31:26 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IHr3Zwo2V8a7Gzyt2WIUiLLdx3nG2WxKq5qbx2T6QbZhBTo16bXS3vHNTpS6XV9/LCJ5cnS
+X-Received: by 2002:a05:600c:4f0d:b0:439:5766:7232 with SMTP id 5b1f17b1804b1-43ba674776amr93296625e9.21.1741008686559;
+        Mon, 03 Mar 2025 05:31:26 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741008686; cv=none;
+        d=google.com; s=arc-20240605;
+        b=NW09Abb83O+dVSgyVN3Pky4Gqu/qDW4VvThXSbWmCSJVJwiWrcLIacW+DAbN0csiPZ
+         PWNrONxMPxhvwqtstnXBhITfQREjJ6P+eUbrJqvz77JHGzwvzKWZjosXsfWpsBpv9kF2
+         VfzCKr/cwf0vm80fIRMi2moUq/gZf5DTGSN1nNHg9G0B3bOncxeUS9eZ4DfAhAu34Bzk
+         88PTQgKRweHKVGgCAPgc81IzQqVD2oZOQ0zfr7ekAAZZ3L731Azm7sxmjq+atez9v89G
+         t7OgGtj5x8latDseD9N+9jcNXxrg0MV7yFSkuWwggCRouDAZIywRprS8xSj75iB8fpjz
+         mMbw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=reply-to:message-id:mime-version:list-unsubscribe-post
+         :list-unsubscribe:list-id:from:feedback-id:date:subject:to
+         :dkim-signature:dkim-signature;
+        bh=oKe9qGOglJBLS8opQ4nbzovJX9U0yciiD1aN3s1AVXk=;
+        fh=Jwnx7V/dPWD4f+yR4bKafb6/Pmmf8s4MN5qeq13zBJ4=;
+        b=G1fsvNGS+bO0dUs4EF8K/Od+H0YaAwKQjpw+hhDqK7pbQ/HAPr0xxCjmMwkO50PRS9
+         SNUZTkufEEfKHRUbs8lm8HUq6/N7dQWN2m0dort6PVOHeGp08Q3/60TI0LE49tuJ2Wub
+         HGKq7dCFkuwAAlxvT+cXFWWAOnwPwkiQS4rWM/QZLMHLA3+dUysW0NUQxZFhlvLRXL+M
+         znADvGwg/WOIvzsFQoPCZgOS2QbiVp84sH3GuIPCzXadIlGTRz6OP64Jw3L2BvK0oCx4
+         gBGYWQXrmaIWsxR+D0hCKc3cYUkNI+iEJSaFz/5dOsdmbIKz2zjAl+a+PQW0nODFNGJF
+         N2iw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@usersearch.org header.s=brevo1 header.b=SiK0ko6m;
+       dkim=pass header.i=@mailin.fr header.s=mail header.b=KGLw9miE;
+       spf=pass (google.com: domain of bounces-etc0p-newsletter=usersearch.org@ih.d.sender-sib.com designates 77.32.148.60 as permitted sender) smtp.mailfrom="bounces-etc0p-newsletter=usersearch.org@ih.d.sender-sib.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=usersearch.org
+Return-Path: <bounces-etc0p-newsletter=usersearch.org@ih.d.sender-sib.com>
+Received: from ih.d.sender-sib.com (ih.d.sender-sib.com. [77.32.148.60])
+        by mx.google.com with ESMTPS id 5b1f17b1804b1-43aba51c274si87705275e9.22.2025.03.03.05.31.26
+        for <radu.25201@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 03 Mar 2025 05:31:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces-etc0p-newsletter=usersearch.org@ih.d.sender-sib.com designates 77.32.148.60 as permitted sender) client-ip=77.32.148.60;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@usersearch.org header.s=brevo1 header.b=SiK0ko6m;
+       dkim=pass header.i=@mailin.fr header.s=mail header.b=KGLw9miE;
+       spf=pass (google.com: domain of bounces-etc0p-newsletter=usersearch.org@ih.d.sender-sib.com designates 77.32.148.60 as permitted sender) smtp.mailfrom="bounces-etc0p-newsletter=usersearch.org@ih.d.sender-sib.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=usersearch.org
+DKIM-Signature: a=rsa-sha256; bh=oKe9qGOglJBLS8opQ4nbzovJX9U0yciiD1aN3s1AVXk=;
+ c=relaxed/relaxed; d=usersearch.org;
+ h=to:cc:from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:sender:x-sib-id:x-mailin-client:x-mailin-campaign:feedback-id;
+ q=dns/txt; s=brevo1; t=1741008686; v=1;
+ b=SiK0ko6m8c8KUdzq6cVaOa5NC1CWCmra+jN/FmrWtkWwxYzBNCg1pwNROS90es+0z8efnu2C
+ cZAqlFNIM6G7+N3hx5H1hwbhqqICBWtBwySaws4KnGbPzcROGtnjeYTHTB3X2qKqFEy5WO9ob8P
+ RFcXUmHZC88Xn0ciuBc9GG/7KQUX83R6XbWl/sQPWxHK7Gp7wnxCyVn7DRzoR1VNibGGTnQ4o03
+ TV/h9Y7JUTXFau9MPHixMQweULh8QVgeNpnEzD7HozKdr24HxhQeN9xgoOnbL/4OzPLyT75rlz8
+ DOaPmX4l17A9fh55MIYlYUM7u6Fln5XcZioC3sbTnBvBQ==
+DKIM-Signature: a=rsa-sha256; bh=oKe9qGOglJBLS8opQ4nbzovJX9U0yciiD1aN3s1AVXk=;
+ c=relaxed/relaxed; d=mailin.fr;
+ h=to:cc:from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:sender:x-sib-id:x-mailin-client:x-mailin-campaign:feedback-id;
+ q=dns/txt; s=mail; t=1741008686; v=1;
+ b=KGLw9miEUX9L8e0v/j0CyJ6sw47vMYbfbuYZxDwKuau7FW23+MaRegnW8cX4V/82LSW/ba1y
+ v3/+GbXTQ/Eot7dDHNdpgaDWQRG3Cx/eaOGgjF2lG5rOLrer17AIqqPJ3leMb4rMHnYyHD/xuSA
+ C7GJHoSG+t6gKadfy9tOWIys=
+To: <radu.25201@gmail.com>
+Subject: New Feature: Breach / Stealer Logs - DarkNet Databases
+Content-Type: multipart/alternative; boundary="-------?=_19129-8101226341216"
+Date: Mon, 03 Mar 2025 13:31:26 +0000
+Feedback-ID: 77.32.148.60:8400021_14:8400021:Sendinblue
+From: UserSearch Team <newsletter@usersearch.org>
+List-Id: ODQwMDAyMS0xOTAxMS00 <ODQwMDAyMS0xOTAxMS00.list-id.mailin.fr>
+List-Unsubscribe: <mailto:unsubscribe@ih.d.sender-sib.com?subject=unsub-nnua2z4lc2vj&body=nnua2z4lc2vj>,<https://etc0p.r.ag.d.sendibm3.com/mk/un/li/sh/1t6AVsdYhqSR1hMazJgNqb3mWtqrCi/mxbmWWoXGMyX>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+MIME-Version: 1.0
+Message-Id: <202503031331.nnua2z4lc2vj@ih.d.sender-sib.com>
+Reply-To: <newsletter@usersearch.org>
+X-Csa-Complaints: csa-complaints@eco.de
+X-Mailer: Sendinblue
+X-Mailin-Campaign: 14
+X-Mailin-Client: 8400021
+X-sib-id: FLAcKZvbvWQfwX3dCwiDSEHjSFIjH2XMjXcUdu9KsUdJdeFxkXnGta63bpIOnahwpfWuMa-mVEln2ZrUT4PkGL1co4QMK9bAO94tfw8P85-kSdJ5zMKVXsM65zdA2QfFOcXn6nU9KA4E-wnVYPWt6QugIsmRNtgQ-ZZZ_Yq3zcNRkrTVPn_xrgL-FW52DPcl_X0MsVXU2BToHCe9TK41JhMuz48yOhY
+
+---------?=_19129-8101226341216
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+[ View in browser](https://etc0p.r.ag.d.sendibm3.com/mk/mr/sh/1t6AVsd2XFnIG=
+A9ySqXnPgluwx0llg/UcgYLHotSWbY)
+
+New Feature
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Stealer Logs. =C2=A0Breach Data. =C2=A0Darknet Databases.
+
+=C2=A0
+
+Search by Email, Phone or Domain against these databases.
+
+=C2=A0
+
+=C2=A0
+
+=C2=A0
+
+**What Are These?**
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+=C2=A0
+
+**Stealer Logs****/****Breach Databases****/=C2=A0****Darknet Databases****=
+?=C2=A0**
+
+=C2=A0
+
+**Stealer logs, breach databases, and darknet databases** are collections o=
+f stolen or compromised information=E2=80=94such as login credentials, pers=
+onal details, or account data=E2=80=94collected through hacking, phishing, =
+or malware attacks. =C2=A0Cybercriminals often sell or trade this informati=
+on on hidden parts of the internet (the =E2=80=9Cdarknet=E2=80=9D).=C2=A0
+
+=C2=A0
+
+Our new feature allows you to search these sources by email address, phone =
+number, or domain, showing details like when and where the information was =
+exposed, which service was affected, related usernames, partially exposed p=
+asswords, and real-world identity details (e.g., age and name).
+
+=C2=A0
+
+**All subscribers have access by default. =C2=A0**
+
+=C2=A0
+
+[ Try Now](https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsEag0vBIlG=
+Azblrb050si/x-T80WLxSK8n "Try Now Free")
+
+[ Try Now](https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsFxg9WSTpX=
+wUNxLkT1E0u/FfAp9uSFtcc1 "Try Now Free")=20
+
+
+Benefits of Breach Data
+-----------------------
+
+
+1. **Early Risk Detection**: Spot compromised credentials and personal data=
+ before they=E2=80=99re exploited in attacks.=20
+2. **Proactive Security**: Recognize vulnerabilities and strengthen defense=
+s to reduce the risk of future breaches.=20
+3. **Enhanced OSINT**: Gather detailed personal and account data to build m=
+ore complete investigative profiles.=20
+4. **Threat Actor Insights**: Gain visibility into where cybercriminals ope=
+rate, how they trade data, and common attack methods.=20
+5. **Historic Data Access**: Check past breaches to see if older credential=
+s are still circulating, helping you understand long-term patterns.=20
+6. **Expanded Coverage**: Uncover breaches from lesser-known sources and si=
+tes that standard checks can=E2=80=99t easily verify.=20
+7. **Passive Checks**: Investigate these databases without alerting externa=
+l parties or leaving a trace of your queries.=20
+8. **Informed Decision-Making**: Use this actionable intelligence to guide =
+security strategies, policy updates, and incident responses.=20
+=C2=A0
+
+[ Try Now](https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsGQ0rissBd=
+ree1B8Hzxiy/8SdNfmLQ3BLw "Try Now Free")
+
+
+Other Features Included
+-----------------------
+
+
+Our ModulesOur Features Search Type=20
+PIPL.com
+
+People, Address, Phone Number, Email, Username
+
+Internet Archive
+
+Archival Search
+
+GitHub
+
+Username
+
+HaveIBeenPwned
+
+Data Breach Search
+
+OSINT Industries
+
+Email, Phone & Username
+
+ScamSearch
+
+Scam Records
+
+Predicat Search
+
+Email & Phone Number
+
+EPIEOS
+
+Email & Phone Number
+
+Castrick Clues
+
+Email & Phone Number
+
+Gravatar
+
+Avatar Lookup
+
+Telemitry App
+
+Telegram Users & Chat Records
+
+Hudson Rock
+
+Domain & IP Threat Intel
+
+GeoSpy
+
+Geographic Images
+
+FaceCheck.id
+
+Facial Images
+
+TinEye
+
+Generic Images
+
+Google Lens
+
+Generic Images
+
+Google Image Reverse
+
+Generic Images
+
+Onchain Industry
+
+BlockChain related records
+
+SpamHaus
+
+IP / Domain Threat Intelligence
+
+Wigle.net
+
+WiFi Network Search
+
+40+ other features where we've built our own capabilities and not relied on=
+ external services
+
+[ Try Now](https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsGsLZvJGXj=
+mou50W6yhR2/9j4Je4pGdjDC "Try Now Free")
+
+
+Other News
+----------
+
+
+=C2=A0
+
+=C2=A0
+
+
+- UserSearch has created a global investigations community called 'The OSIN=
+T Society' where we share expert-level knowledge across LinkedIn, X Reddit =
+& Telegram.=20
+=C2=A0
+
+
+- By being members of UserSearch.ai, you will automatically gain premium ac=
+cess to osint.wiki and all planned initiatives on that platform, for free. =
+=C2=A0Keep an eye out for the first newsletter!=20
+=C2=A0
+
+
+- Checkout the community links below:=20
+=C2=A0
+
+
+Each week we add a new major feature for all standard subscribers.
+------------------------------------------------------------------
+
+
+UserSearch 2.0 - not 'just' a search tool.
+
+
+####**UserSearch**
+203 West Street, Fareham,
+
+PO16 0EN,=C2=A0Hampshire
+SUPPORT@USERSEARCH.ORG
+PO16 0EN
+
+=C2=A0
+
+[Unsubscribe](https://etc0p.r.ag.d.sendibm3.com/mk/un/sh/1t6AVsdYhqSR1hMazJ=
+gNqb3mWtqrCi/mxbmWWoXGMyX)
+
+
+---------?=_19129-8101226341216
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head><meta=
+ http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><meta h=
+ttp-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><meta name=3D"format-de=
+tection" content=3D"telephone=3Dno"><meta name=3D"viewport" content=3D"widt=
+h=3Ddevice-width, initial-scale=3D1.0"><title>New Feature: Breach / Stealer=
+ Logs - DarkNet Databases</title><style type=3D"text/css" emogrify=3D"no">#=
+outlook a { padding:0; } .ExternalClass { width:100%; } .ExternalClass, .Ex=
+ternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td,=
+ .ExternalClass div { line-height: 100%; } table td { border-collapse: coll=
+apse; mso-line-height-rule: exactly; } .editable.image { font-size: 0 !impo=
+rtant; line-height: 0 !important; } .nl2go_preheader { display: none !impor=
+tant; mso-hide:all !important; mso-line-height-rule: exactly; visibility: h=
+idden !important; line-height: 0px !important; font-size: 0px !important; }=
+ body { width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size=
+-adjust:100%; margin:0; padding:0; } img { outline:none; text-decoration:no=
+ne; -ms-interpolation-mode: bicubic; } a img { border:none; } table { borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } th { fon=
+t-weight: normal; text-align: left; } *[class=3D"gmail-fix"] { display: non=
+e !important; } </style><style type=3D"text/css" emogrify=3D"no"> @media (m=
+ax-width: 600px) { .gmx-killpill { content: ' \03D1';} } </style><style typ=
+e=3D"text/css" emogrify=3D"no">@media (max-width: 600px) { .gmx-killpill { =
+content: ' \03D1';} .r0-o { border-style: solid !important; margin: 0 auto =
+0 auto !important; width: 100% !important } .r1-i { background-color: trans=
+parent !important } .r2-c { box-sizing: border-box !important; text-align: =
+center !important; valign: top !important; width: 100% !important } .r3-i {=
+ padding-bottom: 5px !important; padding-top: 5px !important } .r4-c { box-=
+sizing: border-box !important; display: block !important; valign: top !impo=
+rtant; width: 100% !important } .r5-o { border-style: solid !important; wid=
+th: 100% !important } .r6-i { padding-left: 10px !important; padding-right:=
+ 10px !important; text-align: center !important } .r7-i { background-color:=
+ #000000 !important } .r8-c { box-sizing: border-box !important; text-align=
+: center !important; valign: middle !important; width: 100% !important } .r=
+9-i { background-color: #000000 !important; padding-bottom: 20px !important=
+; padding-left: 16px !important; padding-right: 16px !important; padding-to=
+p: 20px !important } .r10-c { box-sizing: border-box !important; valign: mi=
+ddle !important; width: 50% !important } .r11-o { border-style: solid !impo=
+rtant; margin: 0 auto 0 0 !important; width: 95px !important } .r12-i { pad=
+ding-bottom: 14px !important; padding-top: 14px !important } .r13-c { box-s=
+izing: border-box !important; text-align: right !important; width: 100% !im=
+portant } .r14-o { border-style: solid !important; margin: 0 0 0 auto !impo=
+rtant; width: 100% !important } .r15-i { font-size: 0px !important; padding=
+-bottom: 0px !important; padding-left: 0px !important; padding-right: 0px !=
+important; padding-top: 0px !important } .r16-c { box-sizing: border-box !i=
+mportant; width: 16px !important } .r17-o { border-style: solid !important;=
+ margin-right: 5px !important; width: 16px !important } .r18-o { border-sty=
+le: solid !important; margin-right: 0px !important; width: 16px !important =
+} .r19-o { border-style: solid !important; margin: 0 auto 0 auto !important=
+; margin-bottom: 20px !important; margin-top: 7px !important; width: 100% !=
+important } .r20-i { background-color: #000000 !important; padding-bottom: =
+3px !important; padding-left: 16px !important; padding-right: 16px !importa=
+nt; padding-top: 12px !important } .r21-i { padding-left: 0px !important; p=
+adding-right: 0px !important } .r22-c { box-sizing: border-box !important; =
+padding-top: 15px !important; text-align: center !important; valign: top !i=
+mportant; width: 100% !important } .r23-c { box-sizing: border-box !importa=
+nt; text-align: left !important; valign: top !important; width: 100% !impor=
+tant } .r24-o { border-style: solid !important; margin: 0 auto 0 0 !importa=
+nt; width: 100% !important } .r25-i { padding-bottom: 0px !important; paddi=
+ng-top: 8px !important; text-align: center !important } .r26-c { box-sizing=
+: border-box !important; text-align: center !important; valign: top !import=
+ant; width: 135px !important } .r27-o { border-style: solid !important; mar=
+gin: 0 auto 0 auto !important; margin-bottom: 0px !important; margin-top: 3=
+2px !important; width: 135px !important } .r28-i { text-align: center !impo=
+rtant } .r29-r { background-color: #bd5e25 !important; border-color: #00000=
+0 !important; border-radius: 18px !important; border-width: 6px !important;=
+ padding-bottom: 12px !important; padding-top: 12px !important; text-align:=
+ center !important; width: 123px !important } .r30-c { box-sizing: border-b=
+ox !important; padding-bottom: 15px !important; padding-top: 15px !importan=
+t; text-align: center !important; valign: top !important; width: 100% !impo=
+rtant } .r31-c { box-sizing: border-box !important; padding-bottom: 30px !i=
+mportant; padding-top: 30px !important; text-align: center !important; widt=
+h: 100% !important } .r32-c { box-sizing: border-box !important; text-align=
+: center !important; width: 100% !important } .r33-i { font-size: 0px !impo=
+rtant; padding-bottom: 14px !important; padding-left: 0px !important; paddi=
+ng-right: 0px !important; padding-top: 12px !important } .r34-c { box-sizin=
+g: border-box !important; width: 32px !important } .r35-o { border-style: s=
+olid !important; margin-right: 8px !important; width: 32px !important } .r3=
+6-o { border-style: solid !important; margin-right: 0px !important; width: =
+32px !important } .r37-i { background-color: #000000 !important; padding-bo=
+ttom: 20px !important; padding-left: 15px !important; padding-right: 15px !=
+important; padding-top: 20px !important } .r38-c { box-sizing: border-box !=
+important; padding-top: 15px !important; text-align: left !important; valig=
+n: top !important; width: 100% !important } .r39-c { box-sizing: border-box=
+ !important; padding-bottom: 0px !important; padding-top: 16px !important; =
+text-align: left !important; valign: top !important; width: 100% !important=
+ } .r40-r { background-color: #bd5e21 !important; border-radius: 18px !impo=
+rtant; border-width: 0px !important; padding-bottom: 12px !important; paddi=
+ng-top: 12px !important; text-align: center !important; width: 135px !impor=
+tant } .r41-c { box-sizing: border-box !important; padding-bottom: 0px !imp=
+ortant; padding-left: 0px !important; padding-right: 0px !important; paddin=
+g-top: 0px !important; width: 100% !important } .r42-i { font-size: 0px !im=
+portant; padding-bottom: 15px !important; padding-left: 0px !important; pad=
+ding-right: 0px !important; padding-top: 0px !important } .r43-o { border-s=
+tyle: solid !important; margin: 0 auto 0 auto !important; margin-bottom: 20=
+px !important; margin-top: 20px !important; width: 100% !important } .r44-i=
+ { background-color: #000000 !important; padding-bottom: 40px !important; p=
+adding-left: 16px !important; padding-right: 16px !important; padding-top: =
+40px !important } .r45-i { padding-bottom: 30px !important; padding-top: 30=
+px !important } .r46-i { padding-bottom: 0px !important; padding-left: 0px =
+!important; padding-right: 0px !important; padding-top: 0px !important; tex=
+t-align: center !important } .r47-i { background-color: #000000 !important;=
+ padding-bottom: 0px !important; padding-left: 15px !important; padding-rig=
+ht: 15px !important; padding-top: 0px !important } .r48-o { border-style: s=
+olid !important; margin: 0 auto 0 auto !important; margin-bottom: 0px !impo=
+rtant; margin-top: 0px !important; width: 100% !important } .r49-i { backgr=
+ound-color: #414141 !important; padding-bottom: 16px !important; padding-le=
+ft: 32px !important; padding-right: 32px !important; padding-top: 16px !imp=
+ortant } .r50-c { box-sizing: border-box !important; valign: middle !import=
+ant; width: 58.33% !important } .r51-i { padding-bottom: 0px !important; pa=
+dding-left: 0px !important; padding-right: 0px !important; padding-top: 0px=
+ !important; text-align: left !important } .r52-i { padding-bottom: 0px !im=
+portant; padding-left: 0px !important; padding-right: 0px !important; paddi=
+ng-top: 8px !important; text-align: left !important } .r53-c { box-sizing: =
+border-box !important; valign: middle !important; width: 41.67% !important =
+} .r54-i { padding-bottom: 0px !important; padding-left: 0px !important; pa=
+dding-right: 0px !important; padding-top: 0px !important; text-align: right=
+ !important } body { -webkit-text-size-adjust: none } .nl2go-responsive-hid=
+e { display: none } .nl2go-body-table { min-width: unset !important } .mobs=
+how { height: auto !important; overflow: visible !important; max-height: un=
+set !important; visibility: visible !important } .resp-table { display: inl=
+ine-table !important } .magic-resp { display: table-cell !important } } </s=
+tyle><style type=3D"text/css">p, h1, h2, h3, h4, ol, ul, li { margin: 0; } =
+.nl2go-default-textstyle { color: #ffffff; font-family: Tahoma,Geneva,sans-=
+serif; font-size: 16px; line-height: 1.5; word-break: break-word } .default=
+-button { color: #ffffff; font-family: Tahoma,Geneva,sans-serif; font-size:=
+ 16px; font-style: normal; font-weight: bold; line-height: 1.15; text-decor=
+ation: none; word-break: break-word } a, a:link { color: #ffffff; font-weig=
+ht: bold; text-decoration: underline } .default-heading1 { color: #ffffff; =
+font-family: Tahoma,Geneva,sans-serif, Arial; font-size: 32px; word-break: =
+break-word } .default-heading2 { color: #ffffff; font-family: Tahoma,Geneva=
+,sans-serif, Arial; font-size: 24px; word-break: break-word } .default-head=
+ing3 { color: #ffffff; font-family: Tahoma,Geneva,sans-serif, Arial; font-s=
+ize: 24px; word-break: break-word } .default-heading4 { color: #ffffff; fon=
+t-family: Tahoma,Geneva,sans-serif, Arial; font-size: 18px; word-break: bre=
+ak-word } a[x-apple-data-detectors] { color: inherit !important; text-decor=
+ation: inherit !important; font-size: inherit !important; font-family: inhe=
+rit !important; font-weight: inherit !important; line-height: inherit !impo=
+rtant; } .no-show-for-you { border: none; display: none; float: none; font-=
+size: 0; height: 0; line-height: 0; max-height: 0; mso-hide: all; overflow:=
+ hidden; table-layout: fixed; visibility: hidden; width: 0; } </style><!--[=
+if mso]><xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96<=
+/o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]--><style type=
+=3D"text/css">a:link{color: #fff; font-weight: bold; text-decoration: under=
+line;}</style></head><body bgcolor=3D"#000000" text=3D"#ffffff" link=3D"#ff=
+ffff" yahoo=3D"fix" style=3D"background-color: #000000;"> <table cellpaddin=
+g=3D"0" border=3D"0" cellspacing=3D"0" style=3D" mso-hide: all; display: no=
+ne;"><tr><td>Stealer Logs, Breach Dta, Darknet Databases&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&=
+#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#84=
+7;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&=
+zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwn=
+j;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&=
+nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbs=
+p;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</td></tr></table> =
+<!--[if mso]> <img width=3D"1" height=3D"1" src=3D"https://etc0p.r.ag.d.sen=
+dibm3.com/mk/op/sh/1t6AVse4sR7ZnEZDVmoyHVLe6qgwdk/W1s9K3m6d3OS" /> <![endif=
+]-->
+	<!--[if !mso]> <!----> <img style=3D"display:none" src=3D"https://etc0p.r.=
+ag.d.sendibm3.com/mk/op/sh/1t6AVse4sR7ZnEZDVmoyHVLe6qgwdk/W1s9K3m6d3OS" /> =
+<!-- <![endif]-->  <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+role=3D"presentation" class=3D"nl2go-body-table" width=3D"100%" style=3D"ba=
+ckground-color: #000000; width: 100%;"><tr><td> <table cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" align=3D"=
+center" class=3D"r0-o" style=3D"table-layout: fixed; width: 100%;"><tr><td =
+valign=3D"top" class=3D"r1-i" style=3D"background-color: transparent;"> <ta=
+ble cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" =
+width=3D"600" align=3D"center" class=3D"r0-o" style=3D"table-layout: fixed;=
+"><tr><td class=3D"r3-i" style=3D"padding-bottom: 5px; padding-top: 5px;"> =
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation"><tr><th width=3D"100%" valign=3D"top" class=3D"r4-c" styl=
+e=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" role=3D"presentation" width=3D"100%" align=3D"center" class=3D"r0-=
+o" style=3D"table-layout: fixed; width: 100%;"><tr><td align=3D"center" cla=
+ss=3D"r6-i nl2go-default-textstyle" style=3D"color: #fff; font-family: Taho=
+ma,Geneva,sans-serif; font-size: 16px; line-height: 1.5; word-break: break-=
+word; padding-left: 30px; padding-right: 30px; text-align: center;"> <div><=
+p style=3D"margin: 0;"><a href=3D"https://etc0p.r.ag.d.sendibm3.com/mk/mr/s=
+h/1t6AVsd2XFnIGA9ySqXnPgluwx0llg/UcgYLHotSWbY" style=3D"color: #fff; font-w=
+eight: bold; text-decoration: underline;"> <span style=3D"color: #858588; f=
+ont-size: 12px; text-decoration: underline;"> View in browser</span></a></p=
+></div> </td> </tr></table></th> </tr></table></td> </tr></table></td> </tr=
+></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pr=
+esentation" width=3D"600" align=3D"center" class=3D"r0-o" style=3D"table-la=
+yout: fixed; width: 600px;"><tr><td valign=3D"top" class=3D"r7-i" style=3D"=
+background-color: #000000;"> <table cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" role=3D"presentation" width=3D"100%" align=3D"center" class=3D"r0=
+-o" style=3D"table-layout: fixed; width: 100%;"><tr><td class=3D"r9-i" styl=
+e=3D"background-color: #000000; padding-bottom: 20px; padding-left: 16px; p=
+adding-right: 16px; padding-top: 20px;"> <table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><th width=
+=3D"50%" valign=3D"middle" class=3D"r10-c" style=3D"font-weight: normal;"> =
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"300" align=3D"left" class=3D"r11-o" style=3D"table-layout: fixe=
+d; width: 300px;"><tr><td class=3D"r12-i" style=3D"font-size: 0px; line-hei=
+ght: 0px; padding-bottom: 14px; padding-top: 14px;"> <img src=3D"https://et=
+c0p.img.ag.d.sendibm3.com/im/sh/0yVOUAIaNHN2.png?u=3DWtVElij8PJZGcPbMuEg6Wt=
+16U7mooBiK" width=3D"300" border=3D"0" style=3D"display: block; width: 100%=
+;" sib_img_id=3D"0"></td> </tr></table></th> <th width=3D"50%" valign=3D"mi=
+ddle" class=3D"r10-c" style=3D"font-weight: normal;"> <table cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"284" alig=
+n=3D"right" class=3D"r14-o" style=3D"table-layout: fixed; width: 284px;"><t=
+r><td valign=3D"top"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" role=3D"presentation"><tr><td class=3D"r13-c" align=3D"=
+right" style=3D"display: inline-block;"> <table cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" role=3D"presentation" width=3D"284" align=3D"right" c=
+lass=3D"r14-o" style=3D"table-layout: fixed; width: 284px;"><tr><td class=
+=3D"r15-i" style=3D"padding-left: 183px;"> <table width=3D"100%" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><th width=
+=3D"53" class=3D"r16-c mobshow resp-table" style=3D"font-weight: normal;"> =
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" class=3D"r17-o" style=3D"table-layout: fixed; width: 100%=
+;"><tr><td class=3D"r3-i" style=3D"font-size: 0px; line-height: 0px; paddin=
+g-bottom: 5px; padding-top: 5px;"> <a href=3D"https://etc0p.r.ag.d.sendibm3=
+.com/mk/cl/f/sh/1t6Af4OiGsDg0aWKW34Kf5eCpM7XSa/_WoRHHfcotc9" target=3D"_bla=
+nk" style=3D"color: #fff; font-weight: bold; text-decoration: underline;" s=
+ib_link_id=3D"0" templating=3D"n"> <img src=3D"https://etc0p.img.ag.d.sendi=
+bm3.com/im/sh/YR9WUa8yASU6.png?u=3DWtVElij8PJZGfbwMJDQbCLAuuvTZfLgm" width=
+=3D"48" border=3D"0" style=3D"display: block; width: 100%;" sib_img_id=3D"7=
+"></a> </td> <td class=3D"nl2go-responsive-hide" width=3D"5" style=3D"font-=
+size: 0px; line-height: 1px;">=C2=AD </td> </tr></table></th> <th width=3D"=
+48" class=3D"r16-c mobshow resp-table" style=3D"font-weight: normal;"> <tab=
+le cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" w=
+idth=3D"100%" class=3D"r18-o" style=3D"table-layout: fixed; width: 100%;"><=
+tr><td class=3D"r3-i" style=3D"font-size: 0px; line-height: 0px; padding-bo=
+ttom: 5px; padding-top: 5px;"> <a href=3D"https://etc0p.r.ag.d.sendibm3.com=
+/mk/cl/f/sh/1t6Af4OiGsE8LIikuPAFpLi2DB6HAe/Nf1Wm8wlaXND" target=3D"_blank" =
+style=3D"color: #fff; font-weight: bold; text-decoration: underline;" sib_l=
+ink_id=3D"1" templating=3D"n"> <img src=3D"https://etc0p.img.ag.d.sendibm3.=
+com/im/sh/6BCJwaIatfwY.png?u=3DWtVElij8PJZGg4H4VdoxIGLAykrOe5Oq" width=3D"4=
+8" border=3D"0" style=3D"display: block; width: 100%;" sib_img_id=3D"8"></a=
+> </td> </tr></table></th> </tr></table></td> </tr></table></td> </tr></tab=
+le></td> </tr></table></th> </tr></table></td> </tr></table><table cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100=
+%" align=3D"center" class=3D"r19-o" style=3D"table-layout: fixed; width: 10=
+0%;"><tr class=3D"nl2go-responsive-hide"><td height=3D"7" style=3D"font-siz=
+e: 7px; line-height: 7px;">=C2=AD</td> </tr><tr><td class=3D"r20-i" style=
+=3D"background-color: #000000; padding-bottom: 3px; padding-left: 16px; pad=
+ding-right: 16px; padding-top: 12px;"> <table width=3D"100%" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><th width=3D"1=
+00%" valign=3D"top" class=3D"r4-c" style=3D"font-weight: normal;"> <table c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=
+=3D"100%" class=3D"r5-o" style=3D"table-layout: fixed; width: 100%;"><tr><t=
+d valign=3D"top" class=3D"r21-i"> <table width=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><td class=3D"r22-c =
+nl2go-default-textstyle" align=3D"center" style=3D"color: #fff; font-family=
+: Tahoma,Geneva,sans-serif; font-size: 16px; word-break: break-word; line-h=
+eight: 1.2; padding-top: 15px; text-align: center; valign: top;"> <div><h1 =
+class=3D"default-heading1" style=3D"margin: 0; color: #fff; font-family: Ta=
+homa,Geneva,sans-serif,Arial; font-size: 32px; word-break: break-word;"><sp=
+an style=3D"font-family: Verdana, geneva, sans-serif;">New Feature</span></=
+h1></div> </td> </tr><tr><td class=3D"r23-c" align=3D"left"> <table cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"10=
+0%" class=3D"r24-o" style=3D"table-layout: fixed; width: 100%;"><tr><td ali=
+gn=3D"center" valign=3D"top" class=3D"r25-i nl2go-default-textstyle" style=
+=3D"color: #fff; font-family: Tahoma,Geneva,sans-serif; font-size: 16px; li=
+ne-height: 1.5; word-break: break-word; padding-top: 8px; text-align: cente=
+r;"> <div><p style=3D"margin: 0;">Stealer Logs. =C2=A0Breach Data. =C2=A0Da=
+rknet Databases.</p><p style=3D"margin: 0;">=C2=A0</p><p style=3D"margin: 0=
+;">Search by <span style=3D"color: #E06C25;">Email</span>, <span style=3D"c=
+olor: #E06C25;">Phone </span>or <span style=3D"color: #E06C25;">Domain </sp=
+an>against these databases.</p><p style=3D"margin: 0;">=C2=A0</p><p style=
+=3D"margin: 0;">=C2=A0</p><p style=3D"margin: 0;">=C2=A0</p><p style=3D"mar=
+gin: 0;"><span style=3D"font-family: Verdana, geneva, sans-serif; font-size=
+: 22px;"><strong>What Are These?</strong></span></p><p style=3D"margin: 0;"=
+>=C2=A0</p><p style=3D"margin: 0;"><span style=3D"color: #E06C25; font-size=
+: 14px;"><strong>Stealer Logs</strong></span><span style=3D"font-size: 14px=
+;"><strong> / </strong></span><span style=3D"color: #E06C25; font-size: 14p=
+x;"><strong>Breach Databases</strong></span><span style=3D"font-size: 14px;=
+"><strong> /=C2=A0</strong></span><span style=3D"color: #E06C25; font-size:=
+ 14px;"><strong> Darknet Databases</strong></span><span style=3D"font-size:=
+ 14px;"><strong>?=C2=A0</strong></span></p><p style=3D"margin: 0;">=C2=A0</=
+p><p style=3D"margin: 0;"><strong>Stealer logs, breach databases, and darkn=
+et databases</strong> are collections of stolen or compromised information=
+=E2=80=94such as <span style=3D"color: #E06C25;">login credentials</span>, =
+<span style=3D"color: #E06C25;">personal details</span>, or <span style=3D"=
+color: #E06C25;">account data</span>=E2=80=94collected through hacking, phi=
+shing, or malware attacks. =C2=A0Cybercriminals often sell or trade this in=
+formation on hidden parts of the internet (the =E2=80=9Cdarknet=E2=80=9D).=
+=C2=A0</p><p style=3D"margin: 0;">=C2=A0</p><p style=3D"margin: 0;">Our new=
+ feature allows you to <span style=3D"color: #E06C25;">search </span>these =
+sources <span style=3D"color: #FFFFFF;">by</span><span style=3D"color: #E06=
+C25;"> email address</span>, <span style=3D"color: #E06C25;">phone number</=
+span>, or <span style=3D"color: #E06C25;">domain</span>, showing details li=
+ke when and where the information was exposed, which service was affected, =
+related usernames, partially exposed passwords, and real-world identity det=
+ails (e.g., age and name).</p><p style=3D"margin: 0;">=C2=A0</p><p style=3D=
+"margin: 0;"><span style=3D"color: #E06C25;"><strong>All subscribers have a=
+ccess by default. =C2=A0</strong></span></p><p style=3D"margin: 0;">=C2=A0<=
+/p></div> </td> </tr></table></td> </tr><tr><td class=3D"r26-c" align=3D"ce=
+nter"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pres=
+entation" width=3D"135" class=3D"r27-o" style=3D"table-layout: fixed; width=
+: 135px;"><tr class=3D"nl2go-responsive-hide"><td height=3D"32" style=3D"fo=
+nt-size: 32px; line-height: 32px;">=C2=AD</td> </tr><tr><td height=3D"17" a=
+lign=3D"center" valign=3D"top" class=3D"r28-i nl2go-default-textstyle" styl=
+e=3D"color: #fff; font-family: Tahoma,Geneva,sans-serif; font-size: 16px; l=
+ine-height: 1.5; word-break: break-word;">  <!--[if mso]> <v:roundrect xmln=
+s:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:=
+office:word" href=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiG=
+sEag0vBIlGAzblrb050si/x-T80WLxSK8n" style=3D"v-text-anchor:middle; height: =
+47px; width: 141px;" arcsize=3D"34%" fillcolor=3D"#bd5e25" strokecolor=3D"#=
+000000" strokeweight=3D"6px" data-btn=3D"1" sib_link_id=3D"2" templating=3D=
+"n"> <w:anchorlock> </w:anchorlock> <v:textbox inset=3D"0,0,0,0"> <div styl=
+e=3D"display:none;"> <center class=3D"default-button"><span><span style=3D"=
+font-family:Verdana, geneva, sans-serif;font-size:14px;">Try Now</span></sp=
+an></center> </div> </v:textbox> </v:roundrect> <![endif]-->  <!--[if !mso]=
+><!-- --> <a href=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiG=
+sEag0vBIlGAzblrb050si/x-T80WLxSK8n" class=3D"r29-r default-button" target=
+=3D"_blank" title=3D"Try Now Free" data-btn=3D"1" style=3D"font-style: norm=
+al; font-weight: bold; line-height: 1.15; text-decoration: none; word-break=
+: break-word; border-style: solid; word-wrap: break-word; display: block; -=
+webkit-text-size-adjust: none; background-color: #bd5e25; border-color: #00=
+0000; border-radius: 18px; border-width: 6px; color: #ffffff; font-family: =
+Tahoma,Geneva,sans-serif; font-size: 16px; height: 17px; mso-hide: all; pad=
+ding-bottom: 12px; padding-top: 12px; width: 123px;" sib_link_id=3D"2" temp=
+lating=3D"n"> <span><span style=3D"font-family: Verdana, geneva, sans-serif=
+; font-size: 14px;">Try Now</span></span></a> <!--<![endif]--> </td> </tr><=
+/table></td> </tr><tr><td class=3D"r30-c" align=3D"center" style=3D"font-si=
+ze: 0px; line-height: 0px; padding-bottom: 15px; padding-top: 15px; valign:=
+ top;"> <img src=3D"https://etc0p.img.ag.d.sendibm3.com/im/sh/Y9nklm0DuabJ.=
+gif?u=3DWtVElij8PJZGdKGnJ5SoijLcbmYSlf8S" width=3D"568" border=3D"0" style=
+=3D"display: block; width: 100%;" sib_img_id=3D"2"></td> </tr><tr><td class=
+=3D"r31-c" align=3D"center" style=3D"padding-bottom: 30px; padding-top: 30p=
+x;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ role=3D"presentation" height=3D"1" style=3D"border-top-style: dotted; back=
+ground-clip: border-box; border-top-color: #ffffff; border-top-width: 1px; =
+font-size: 1px; line-height: 1px;"><tr><td height=3D"0" style=3D"font-size:=
+ 0px; line-height: 0px;">=C2=AD</td> </tr></table></td> </tr><tr><td class=
+=3D"r32-c" align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" role=3D"presentation" width=3D"568" align=3D"center" class=3D"r0-=
+o" style=3D"table-layout: fixed; width: 568px;"><tr><td valign=3D"top"> <ta=
+ble width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D=
+"presentation"><tr><td class=3D"r32-c" align=3D"center" style=3D"display: i=
+nline-block;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation" width=3D"568" align=3D"center" class=3D"r0-o" style=3D"ta=
+ble-layout: fixed; width: 568px;"><tr><td class=3D"r33-i" style=3D"padding-=
+bottom: 14px; padding-left: 232px; padding-right: 232px; padding-top: 12px;=
+"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" r=
+ole=3D"presentation"><tr><th width=3D"56" class=3D"r34-c mobshow resp-table=
+" style=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" role=3D"presentation" width=3D"100%" class=3D"r35-o" style=
+=3D"table-layout: fixed; width: 100%;"><tr><td class=3D"r3-i" style=3D"font=
+-size: 0px; line-height: 0px; padding-bottom: 5px; padding-top: 5px;"> <a h=
+ref=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsF30j7bh7M69rp=
+gyp3kam/3vKqdXkxIAP0" target=3D"_blank" style=3D"color: #fff; font-weight: =
+bold; text-decoration: underline;" sib_link_id=3D"3" templating=3D"n"> <img=
+ src=3D"https://etc0p.img.ag.d.sendibm3.com/im/sh/xM9lurrTbCg-.png?u=3DWtVE=
+lij8PJZGgWbmi4DJOBVR2aFDcp6u" width=3D"48" border=3D"0" style=3D"display: b=
+lock; width: 100%;" sib_img_id=3D"9"></a> </td> <td class=3D"nl2go-responsi=
+ve-hide" width=3D"8" style=3D"font-size: 0px; line-height: 1px;">=C2=AD </t=
+d> </tr></table></th> <th width=3D"48" class=3D"r34-c mobshow resp-table" s=
+tyle=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0" role=3D"presentation" width=3D"100%" class=3D"r36-o" style=3D"t=
+able-layout: fixed; width: 100%;"><tr><td class=3D"r3-i" style=3D"font-size=
+: 0px; line-height: 0px; padding-bottom: 5px; padding-top: 5px;"> <a href=
+=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsFVLRK25TS1K7tWMe=
+2UIq/_1a763I9COiF" target=3D"_blank" style=3D"color: #fff; font-weight: bol=
+d; text-decoration: underline;" sib_link_id=3D"4" templating=3D"n"> <img sr=
+c=3D"https://etc0p.img.ag.d.sendibm3.com/im/sh/2SrL_HE1AEYG.png?u=3D2BpAyz2=
+gMiWncci5QUexvadnEh29RLzcQC" width=3D"48" border=3D"0" style=3D"display: bl=
+ock; width: 100%;" sib_img_id=3D"10"></a> </td> </tr></table></th> </tr></t=
+able></td> </tr></table></td> </tr></table></td> </tr></table></td> </tr><t=
+r><td class=3D"r26-c" align=3D"center"> <table cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" role=3D"presentation" width=3D"135" class=3D"r27-o" st=
+yle=3D"table-layout: fixed; width: 135px;"><tr class=3D"nl2go-responsive-hi=
+de"><td height=3D"32" style=3D"font-size: 32px; line-height: 32px;">=C2=AD<=
+/td> </tr><tr><td height=3D"17" align=3D"center" valign=3D"top" class=3D"r2=
+8-i nl2go-default-textstyle" style=3D"color: #fff; font-family: Tahoma,Gene=
+va,sans-serif; font-size: 16px; line-height: 1.5; word-break: break-word;">=
+  <!--[if mso]> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmln=
+s:w=3D"urn:schemas-microsoft-com:office:word" href=3D"https://etc0p.r.ag.d.=
+sendibm3.com/mk/cl/f/sh/1t6Af4OiGsFxg9WSTpXwUNxLkT1E0u/FfAp9uSFtcc1" style=
+=3D"v-text-anchor:middle; height: 47px; width: 141px;" arcsize=3D"34%" fill=
+color=3D"#bd5e25" strokecolor=3D"#000000" strokeweight=3D"6px" data-btn=3D"=
+2" sib_link_id=3D"5" templating=3D"n"> <w:anchorlock> </w:anchorlock> <v:te=
+xtbox inset=3D"0,0,0,0"> <div style=3D"display:none;"> <center class=3D"def=
+ault-button"><span><span style=3D"font-size:14px;">Try Now</span></span></c=
+enter> </div> </v:textbox> </v:roundrect> <![endif]-->  <!--[if !mso]><!-- =
+--> <a href=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsFxg9W=
+STpXwUNxLkT1E0u/FfAp9uSFtcc1" class=3D"r29-r default-button" target=3D"_bla=
+nk" title=3D"Try Now Free" data-btn=3D"2" style=3D"font-style: normal; font=
+-weight: bold; line-height: 1.15; text-decoration: none; word-break: break-=
+word; border-style: solid; word-wrap: break-word; display: block; -webkit-t=
+ext-size-adjust: none; background-color: #bd5e25; border-color: #000000; bo=
+rder-radius: 18px; border-width: 6px; color: #ffffff; font-family: Tahoma,G=
+eneva,sans-serif; font-size: 16px; height: 17px; mso-hide: all; padding-bot=
+tom: 12px; padding-top: 12px; width: 123px;" sib_link_id=3D"5" templating=
+=3D"n"> <span><span style=3D"font-size: 14px;">Try Now</span></span></a> <!=
+--<![endif]--> </td> </tr></table></td> </tr></table></td> </tr></table></t=
+h> </tr></table></td> </tr><tr class=3D"nl2go-responsive-hide"><td height=
+=3D"20" style=3D"font-size: 20px; line-height: 20px;">=C2=AD</td> </tr></ta=
+ble><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"present=
+ation" width=3D"100%" align=3D"center" class=3D"r0-o" style=3D"table-layout=
+: fixed; width: 100%;"><tr><td class=3D"r37-i" style=3D"background-color: #=
+000000; padding-bottom: 20px; padding-top: 20px;"> <table width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><t=
+h width=3D"100%" valign=3D"top" class=3D"r4-c" style=3D"font-weight: normal=
+;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"present=
+ation" width=3D"100%" class=3D"r5-o" style=3D"table-layout: fixed; width: 1=
+00%;"><tr><td valign=3D"top" class=3D"r21-i" style=3D"padding-left: 15px; p=
+adding-right: 15px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" role=3D"presentation"><tr><td class=3D"r38-c nl2go-defa=
+ult-textstyle" align=3D"left" style=3D"color: #fff; font-family: Tahoma,Gen=
+eva,sans-serif; font-size: 16px; line-height: 1.5; word-break: break-word; =
+padding-top: 15px; text-align: left; valign: top;"> <div><h2 class=3D"defau=
+lt-heading2" style=3D"margin: 0; color: #fff; font-family: Tahoma,Geneva,sa=
+ns-serif,Arial; font-size: 24px; word-break: break-word;"><span style=3D"co=
+lor: #E06C25; font-family: 'Courier new', courier, monospace;">Benefits </s=
+pan><span style=3D"font-family: 'Courier new', courier, monospace;">of Brea=
+ch Data</span></h2></div> </td> </tr></table></td> </tr></table></th> </tr>=
+</table></td> </tr></table><table cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation" width=3D"100%" align=3D"center" class=3D"r0-o=
+" style=3D"table-layout: fixed; width: 100%;"><tr><td class=3D"r37-i" style=
+=3D"background-color: #000000; padding-bottom: 20px; padding-top: 20px;"> <=
+table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation"><tr><th width=3D"100%" valign=3D"top" class=3D"r4-c" styl=
+e=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" role=3D"presentation" width=3D"100%" class=3D"r5-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td valign=3D"top" class=3D"r21-i" style=
+=3D"padding-left: 15px; padding-right: 15px;"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><td cl=
+ass=3D"r39-c nl2go-default-textstyle" align=3D"left" style=3D"color: #fff; =
+font-family: Tahoma,Geneva,sans-serif; font-size: 16px; line-height: 1.5; w=
+ord-break: break-word; padding-top: 16px; text-align: left; valign: top;"> =
+<div><ol style=3D"margin: 0;"><li style=3D"margin: 0;"><strong>Early Risk D=
+etection</strong>: Spot compromised credentials and personal data before th=
+ey=E2=80=99re exploited in attacks.</li><li style=3D"margin: 0;"><strong>Pr=
+oactive Security</strong>: Recognize vulnerabilities and strengthen defense=
+s to reduce the risk of future breaches.</li><li style=3D"margin: 0;"><stro=
+ng>Enhanced OSINT</strong>: Gather detailed personal and account data to bu=
+ild more complete investigative profiles.</li><li style=3D"margin: 0;"><str=
+ong>Threat Actor Insights</strong>: Gain visibility into where cybercrimina=
+ls operate, how they trade data, and common attack methods.</li><li style=
+=3D"margin: 0;"><strong>Historic Data Access</strong>: Check past breaches =
+to see if older credentials are still circulating, helping you understand l=
+ong-term patterns.</li><li style=3D"margin: 0;"><strong>Expanded Coverage</=
+strong>: Uncover breaches from lesser-known sources and sites that standard=
+ checks can=E2=80=99t easily verify.</li><li style=3D"margin: 0;"><strong>P=
+assive Checks</strong>: Investigate these databases without alerting extern=
+al parties or leaving a trace of your queries.</li><li style=3D"margin: 0;"=
+><strong>Informed Decision-Making</strong>: Use this actionable intelligenc=
+e to guide security strategies, policy updates, and incident responses.</li=
+></ol><p style=3D"margin: 0;">=C2=A0</p></div> </td> </tr><tr><td class=3D"=
+r26-c" align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" role=3D"presentation" width=3D"135" class=3D"r27-o" style=3D"table-l=
+ayout: fixed; width: 135px;"><tr class=3D"nl2go-responsive-hide"><td height=
+=3D"32" style=3D"font-size: 32px; line-height: 32px;">=C2=AD</td> </tr><tr>=
+<td height=3D"18" align=3D"center" valign=3D"top" class=3D"r28-i nl2go-defa=
+ult-textstyle" style=3D"color: #fff; font-family: Tahoma,Geneva,sans-serif;=
+ font-size: 16px; line-height: 1.5; word-break: break-word;">  <!--[if mso]=
+> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:sch=
+emas-microsoft-com:office:word" href=3D"https://etc0p.r.ag.d.sendibm3.com/m=
+k/cl/f/sh/1t6Af4OiGsGQ0rissBdree1B8Hzxiy/8SdNfmLQ3BLw" style=3D"v-text-anch=
+or:middle; height: 41px; width: 134px;" arcsize=3D"43%" fillcolor=3D"#bd5e2=
+1" strokecolor=3D"#bd5e21" strokeweight=3D"1px" data-btn=3D"3" sib_link_id=
+=3D"6" templating=3D"n"> <w:anchorlock> </w:anchorlock> <v:textbox inset=3D=
+"0,0,0,0"> <div style=3D"display:none;"> <center class=3D"default-button"><=
+span><span style=3D"font-size:14px;">Try Now</span></span></center> </div> =
+</v:textbox> </v:roundrect> <![endif]-->  <!--[if !mso]><!-- --> <a href=3D=
+"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsGQ0rissBdree1B8Hzxi=
+y/8SdNfmLQ3BLw" class=3D"r40-r default-button" target=3D"_blank" title=3D"T=
+ry Now Free" data-btn=3D"3" style=3D"font-style: normal; font-weight: bold;=
+ line-height: 1.15; text-decoration: none; word-break: break-word; border-s=
+tyle: solid; word-wrap: break-word; display: block; -webkit-text-size-adjus=
+t: none; background-color: #bd5e21; border-color: #bd5e21; border-radius: 1=
+8px; border-width: 0px; color: #ffffff; font-family: Tahoma,Geneva,sans-ser=
+if; font-size: 16px; height: 18px; mso-hide: all; padding-bottom: 12px; pad=
+ding-top: 12px; width: 135px;" sib_link_id=3D"6" templating=3D"n"> <span><s=
+pan style=3D"font-size: 14px;">Try Now</span></span></a> <!--<![endif]--> <=
+/td> </tr></table></td> </tr></table></td> </tr></table></th> </tr></table>=
+</td> </tr></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+role=3D"presentation" width=3D"100%" align=3D"center" class=3D"r0-o" style=
+=3D"table-layout: fixed; width: 100%;"><tr><td class=3D"r37-i" style=3D"bac=
+kground-color: #000000; padding-bottom: 20px; padding-top: 20px;"> <table w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pres=
+entation"><tr><th width=3D"100%" valign=3D"top" class=3D"r4-c" style=3D"fon=
+t-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ role=3D"presentation" width=3D"100%" class=3D"r5-o" style=3D"table-layout:=
+ fixed; width: 100%;"><tr><td valign=3D"top" class=3D"r21-i" style=3D"paddi=
+ng-left: 15px; padding-right: 15px;"> <table width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><td class=3D"r3=
+8-c nl2go-default-textstyle" align=3D"left" style=3D"color: #fff; font-fami=
+ly: Tahoma,Geneva,sans-serif; font-size: 16px; line-height: 1.5; word-break=
+: break-word; padding-top: 15px; text-align: left; valign: top;"> <div><h2 =
+class=3D"default-heading2" style=3D"margin: 0; color: #fff; font-family: Ta=
+homa,Geneva,sans-serif,Arial; font-size: 24px; word-break: break-word;"><sp=
+an style=3D"font-family: 'Courier new', courier, monospace;">Other Features=
+ </span><span style=3D"color: #E06C25; font-family: 'Courier new', courier,=
+ monospace;">Included</span></h2></div> </td> </tr></table></td> </tr></tab=
+le></th> </tr></table></td> </tr></table><table cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" align=3D"center"=
+ class=3D"r0-o" style=3D"table-layout: fixed; width: 100%;"><tr><td class=
+=3D"r37-i" style=3D"background-color: #000000; padding-bottom: 20px; paddin=
+g-top: 20px;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0" role=3D"presentation"><tr><th width=3D"100%" valign=3D"top" clas=
+s=3D"r4-c" style=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" class=3D"r5-o"=
+ style=3D"table-layout: fixed; width: 100%;"><tr><td valign=3D"top" class=
+=3D"r21-i" style=3D"padding-left: 15px; padding-right: 15px;"> <table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presenta=
+tion"><tr><td class=3D"r41-c nl2go-default-textstyle" style=3D"color: #fff;=
+ font-family: Tahoma,Geneva,sans-serif; font-size: 16px; line-height: 1.5; =
+word-break: break-word;"> <title>Our Modules</title><table><tr><th>Our Feat=
+ures</th> <th>Search Type</th> </tr><tr><td>PIPL.com</td> <td>People, Addre=
+ss, Phone Number, Email, Username</td> </tr><tr><td>Internet Archive</td> <=
+td>Archival Search</td> </tr><tr><td>GitHub</td> <td>Username</td> </tr><tr=
+><td>HaveIBeenPwned</td> <td>Data Breach Search</td> </tr><tr><td>OSINT Ind=
+ustries</td> <td>Email, Phone & Username</td> </tr><tr><td>ScamSearch</td> =
+<td>Scam Records</td> </tr><tr><td>Predicat Search</td> <td>Email & Phone N=
+umber</td> </tr><tr><td>EPIEOS</td> <td>Email & Phone Number</td> </tr><tr>=
+<td>Castrick Clues</td> <td>Email & Phone Number</td> </tr><tr><td>Gravatar=
+</td> <td>Avatar Lookup</td> </tr><tr><td>Telemitry App</td> <td>Telegram U=
+sers & Chat Records</td> </tr><tr><td>Hudson Rock</td> <td>Domain & IP Thre=
+at Intel</td> </tr><tr><td>GeoSpy</td> <td>Geographic Images</td> </tr><tr>=
+<td>FaceCheck.id</td> <td>Facial Images</td> </tr><tr><td>TinEye</td> <td>G=
+eneric Images</td> </tr><tr><td>Google Lens</td> <td>Generic Images</td> </=
+tr><tr><td>Google Image Reverse</td> <td>Generic Images</td> </tr><tr><td>O=
+nchain Industry</td> <td>BlockChain related records</td> </tr><tr><td>SpamH=
+aus</td> <td>IP / Domain Threat Intelligence</td> </tr><tr><td>Wigle.net</t=
+d> <td>WiFi Network Search</td> </tr><tr class=3D"final-row"><td colspan=3D=
+"2">40+ other features where we've built our own capabilities and not relie=
+d on external services</td> </tr></table></td> </tr><tr><td class=3D"r26-c"=
+ align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+role=3D"presentation" width=3D"135" class=3D"r27-o" style=3D"table-layout: =
+fixed; width: 135px;"><tr class=3D"nl2go-responsive-hide"><td height=3D"32"=
+ style=3D"font-size: 32px; line-height: 32px;">=C2=AD</td> </tr><tr><td hei=
+ght=3D"18" align=3D"center" valign=3D"top" class=3D"r28-i nl2go-default-tex=
+tstyle" style=3D"color: #fff; font-family: Tahoma,Geneva,sans-serif; font-s=
+ize: 16px; line-height: 1.5; word-break: break-word;">  <!--[if mso]> <v:ro=
+undrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-mi=
+crosoft-com:office:word" href=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/=
+sh/1t6Af4OiGsGsLZvJGXjmou50W6yhR2/9j4Je4pGdjDC" style=3D"v-text-anchor:midd=
+le; height: 41px; width: 134px;" arcsize=3D"43%" fillcolor=3D"#bd5e21" stro=
+kecolor=3D"#bd5e21" strokeweight=3D"1px" data-btn=3D"4" sib_link_id=3D"7" t=
+emplating=3D"n"> <w:anchorlock> </w:anchorlock> <v:textbox inset=3D"0,0,0,0=
+"> <div style=3D"display:none;"> <center class=3D"default-button"><span><sp=
+an style=3D"font-size:14px;">Try Now</span></span></center> </div> </v:text=
+box> </v:roundrect> <![endif]-->  <!--[if !mso]><!-- --> <a href=3D"https:/=
+/etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsGsLZvJGXjmou50W6yhR2/9j4Je4=
+pGdjDC" class=3D"r40-r default-button" target=3D"_blank" title=3D"Try Now F=
+ree" data-btn=3D"4" style=3D"font-style: normal; font-weight: bold; line-he=
+ight: 1.15; text-decoration: none; word-break: break-word; border-style: so=
+lid; word-wrap: break-word; display: block; -webkit-text-size-adjust: none;=
+ background-color: #bd5e21; border-color: #bd5e21; border-radius: 18px; bor=
+der-width: 0px; color: #ffffff; font-family: Tahoma,Geneva,sans-serif; font=
+-size: 16px; height: 18px; mso-hide: all; padding-bottom: 12px; padding-top=
+: 12px; width: 135px;" sib_link_id=3D"7" templating=3D"n"> <span><span styl=
+e=3D"font-size: 14px;">Try Now</span></span></a> <!--<![endif]--> </td> </t=
+r></table></td> </tr></table></td> </tr></table></th> </tr></table></td> </=
+tr></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"=
+presentation" width=3D"100%" align=3D"center" class=3D"r0-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td class=3D"r37-i" style=3D"background-c=
+olor: #000000; padding-bottom: 20px; padding-top: 20px;"> <table width=3D"1=
+00%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"=
+><tr><th width=3D"100%" valign=3D"top" class=3D"r4-c" style=3D"font-weight:=
+ normal;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"=
+presentation" width=3D"100%" class=3D"r5-o" style=3D"table-layout: fixed; w=
+idth: 100%;"><tr><td valign=3D"top" class=3D"r21-i" style=3D"padding-left: =
+15px; padding-right: 15px;"> <table width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" role=3D"presentation"><tr><td class=3D"r38-c nl2go=
+-default-textstyle" align=3D"left" style=3D"color: #fff; font-family: Tahom=
+a,Geneva,sans-serif; font-size: 16px; line-height: 1.5; word-break: break-w=
+ord; padding-top: 15px; text-align: left; valign: top;"> <div><h2 class=3D"=
+default-heading2" style=3D"margin: 0; color: #fff; font-family: Tahoma,Gene=
+va,sans-serif,Arial; font-size: 24px; word-break: break-word;">Other News</=
+h2></div> </td> </tr><tr><td class=3D"r39-c nl2go-default-textstyle" align=
+=3D"left" style=3D"color: #fff; font-family: Tahoma,Geneva,sans-serif; font=
+-size: 16px; word-break: break-word; line-height: 1.5; padding-top: 16px; t=
+ext-align: left; valign: top;"> <div><p style=3D"margin: 0; font-style: nor=
+mal; font-weight: 400; text-decoration-style: initial; text-decoration-thic=
+kness: initial;">=C2=A0</p><p style=3D"margin: 0; font-style: normal; font-=
+weight: 400; text-decoration-style: initial; text-decoration-thickness: ini=
+tial;">=C2=A0</p><ul style=3D"margin: 0; font-style: normal; font-weight: 4=
+00; text-decoration-style: initial; text-decoration-thickness: initial;"><l=
+i style=3D"margin: 0;">UserSearch has created a global investigations commu=
+nity called <span style=3D"color: #E06C25;">'The OSINT Society</span>' wher=
+e we share expert-level knowledge across LinkedIn, X Reddit & Telegram.</li=
+></ul><p style=3D"margin: 0; font-style: normal; font-weight: 400; text-dec=
+oration-style: initial; text-decoration-thickness: initial;">=C2=A0</p><ul =
+style=3D"margin: 0; font-style: normal; font-weight: 400; text-decoration-s=
+tyle: initial; text-decoration-thickness: initial;"><li style=3D"margin: 0;=
+">By being members of UserSearch.ai, you will automatically gain premium ac=
+cess to osint.wiki and all planned initiatives on that platform, for free. =
+=C2=A0Keep an eye out for the first newsletter!</li></ul><p style=3D"margin=
+: 0; font-style: normal; font-weight: 400; text-decoration-style: initial; =
+text-decoration-thickness: initial;">=C2=A0</p><ul style=3D"margin: 0; font=
+-style: normal; font-weight: 400; text-decoration-style: initial; text-deco=
+ration-thickness: initial;"><li style=3D"margin: 0;">Checkout the community=
+ links below:</li></ul><p style=3D"margin: 0;">=C2=A0</p></div> </td> </tr>=
+<tr><td class=3D"r32-c" align=3D"center"> <table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"570" align=3D"center"=
+ class=3D"r0-o" style=3D"table-layout: fixed; width: 570px;"><tr><td valign=
+=3D"top"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" role=3D"presentation"><tr><td class=3D"r32-c" align=3D"center" style=
+=3D"display: inline-block;"> <table cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" role=3D"presentation" width=3D"570" align=3D"center" class=3D"r0-=
+o" style=3D"table-layout: fixed; width: 570px;"><tr><td class=3D"r42-i" sty=
+le=3D"padding-bottom: 15px; padding-left: 177px; padding-right: 177px;"> <t=
+able width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=
+=3D"presentation"><tr><th width=3D"56" class=3D"r34-c mobshow resp-table" s=
+tyle=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0" role=3D"presentation" width=3D"100%" class=3D"r35-o" style=3D"t=
+able-layout: fixed; width: 100%;"><tr><td class=3D"r3-i" style=3D"font-size=
+: 0px; line-height: 0px; padding-bottom: 5px; padding-top: 5px;"> <a href=
+=3D"https://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsHKgI7jetphzA8ptv=
+xR96/Og4CAKtOB5NM" target=3D"_blank" style=3D"color: #fff; font-weight: bol=
+d; text-decoration: underline;" sib_link_id=3D"8" templating=3D"n"> <img sr=
+c=3D"https://etc0p.img.ag.d.sendibm3.com/im/sh/xM9lurrTbCg-.png?u=3DWtVElij=
+8PJZGgWbmi4DJOBVR2aFDcp6u" width=3D"48" border=3D"0" style=3D"display: bloc=
+k; width: 100%;" sib_img_id=3D"9"></a> </td> <td class=3D"nl2go-responsive-=
+hide" width=3D"8" style=3D"font-size: 0px; line-height: 1px;">=C2=AD </td> =
+</tr></table></th> <th width=3D"56" class=3D"r34-c mobshow resp-table" styl=
+e=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" role=3D"presentation" width=3D"100%" class=3D"r35-o" style=3D"tabl=
+e-layout: fixed; width: 100%;"><tr><td class=3D"r3-i" style=3D"font-size: 0=
+px; line-height: 0px; padding-bottom: 5px; padding-top: 5px;"> <a href=3D"h=
+ttps://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/1t6Af4OiGsHn10KA3Fvd9QCfHkwArA/=
+z1NXw-XwwBwc" target=3D"_blank" style=3D"color: #fff; font-weight: bold; te=
+xt-decoration: underline;" sib_link_id=3D"9" templating=3D"n"> <img src=3D"=
+https://etc0p.img.ag.d.sendibm3.com/im/sh/2SrL_HE1AEYG.png?u=3D2BpAyz2gMiWn=
+cci5QUexvadnEh29RLzcQC" width=3D"48" border=3D"0" style=3D"display: block; =
+width: 100%;" sib_img_id=3D"10"></a> </td> <td class=3D"nl2go-responsive-hi=
+de" width=3D"8" style=3D"font-size: 0px; line-height: 1px;">=C2=AD </td> </=
+tr></table></th> <th width=3D"56" class=3D"r34-c mobshow resp-table" style=
+=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation" width=3D"100%" class=3D"r35-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td class=3D"r3-i" style=3D"font-size: 0p=
+x; line-height: 0px; padding-bottom: 5px; padding-top: 5px;"> <a href=3D"ht=
+tps://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/7nVU1aA2nfsZpYhx4PIjwLEexuttPQG/=
+JMrDPL0bJMKn" target=3D"_blank" style=3D"color: #fff; font-weight: bold; te=
+xt-decoration: underline;" sib_link_id=3D"10" templating=3D"n"> <img src=3D=
+"https://etc0p.img.ag.d.sendibm3.com/im/sh/YosMe5Rm87DT.png?u=3D2BpAyz2gMiW=
+nceb4wzxwUp5pb0qJnqmMMi" width=3D"48" border=3D"0" style=3D"display: block;=
+ width: 100%;" sib_img_id=3D"11"></a> </td> <td class=3D"nl2go-responsive-h=
+ide" width=3D"8" style=3D"font-size: 0px; line-height: 1px;">=C2=AD </td> <=
+/tr></table></th> <th width=3D"48" class=3D"r34-c mobshow resp-table" style=
+=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation" width=3D"100%" class=3D"r36-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td class=3D"r3-i" style=3D"font-size: 0p=
+x; line-height: 0px; padding-bottom: 5px; padding-top: 5px;"> <a href=3D"ht=
+tps://etc0p.r.ag.d.sendibm3.com/mk/cl/f/sh/7nVU1aA2nfuSp5DG2yXByhYT8HOg9Mm/=
+VgF9ROc4rG_J" target=3D"_blank" style=3D"color: #fff; font-weight: bold; te=
+xt-decoration: underline;" sib_link_id=3D"11" templating=3D"n"> <img src=3D=
+"https://etc0p.img.ag.d.sendibm3.com/im/sh/j-dZNe3L-Zs0.png?u=3D2BpAyz2gMiW=
+ncgU4TVGv43XrxKeUALZ6JE" width=3D"48" border=3D"0" style=3D"display: block;=
+ width: 100%;" sib_img_id=3D"12"></a> </td> </tr></table></th> </tr></table=
+></td> </tr></table></td> </tr></table></td> </tr></table></td> </tr></tabl=
+e></td> </tr></table></th> </tr></table></td> </tr></table><table cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%=
+" align=3D"center" class=3D"r0-o" style=3D"table-layout: fixed; width: 100%=
+;"><tr><td class=3D"r37-i" style=3D"background-color: #000000; padding-bott=
+om: 20px; padding-top: 20px;"> <table width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" role=3D"presentation"><tr><th width=3D"100%" val=
+ign=3D"top" class=3D"r4-c" style=3D"font-weight: normal;"> <table cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%=
+" class=3D"r5-o" style=3D"table-layout: fixed; width: 100%;"><tr><td valign=
+=3D"top" class=3D"r21-i" style=3D"padding-left: 15px; padding-right: 15px;"=
+> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" ro=
+le=3D"presentation"><tr><td class=3D"r38-c nl2go-default-textstyle" align=
+=3D"left" style=3D"color: #fff; font-family: Tahoma,Geneva,sans-serif; font=
+-size: 16px; line-height: 1.5; word-break: break-word; padding-top: 15px; t=
+ext-align: left; valign: top;"> <div><h2 class=3D"default-heading2" style=
+=3D"margin: 0; color: #fff; font-family: Tahoma,Geneva,sans-serif,Arial; fo=
+nt-size: 24px; word-break: break-word;"><span style=3D"font-size: 16px;">Ea=
+ch week we add a new major feature for all standard subscribers.</span></h2=
+></div> </td> </tr></table></td> </tr></table></th> </tr></table></td> </tr=
+></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pr=
+esentation" width=3D"100%" align=3D"center" class=3D"r43-o" style=3D"table-=
+layout: fixed; width: 100%;"><tr class=3D"nl2go-responsive-hide"><td height=
+=3D"20" style=3D"font-size: 20px; line-height: 20px;">=C2=AD</td> </tr><tr>=
+<td class=3D"r44-i" style=3D"background-color: #000000; padding-bottom: 40p=
+x; padding-left: 16px; padding-right: 16px; padding-top: 40px;"> <table wid=
+th=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presen=
+tation"><tr><th width=3D"100%" valign=3D"top" class=3D"r4-c" style=3D"font-=
+weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" r=
+ole=3D"presentation" width=3D"568" align=3D"center" class=3D"r0-o" style=3D=
+"table-layout: fixed;"><tr><td class=3D"r45-i" style=3D"padding-bottom: 30p=
+x; padding-top: 30px; height: 1px;"> <table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" role=3D"presentation"><tr><td><table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presenta=
+tion" class=3D"r45-i" height=3D"1" style=3D"border-top-style: dotted; backg=
+round-clip: border-box; border-top-color: #ffffff; border-top-width: 1px; f=
+ont-size: 1px; line-height: 1px;"><tr><td height=3D"0" style=3D"font-size: =
+0px; line-height: 0px;">=C2=AD</td> </tr></table></td> </tr></table></td> <=
+/tr></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D=
+"presentation" width=3D"100%" align=3D"left" class=3D"r24-o" style=3D"table=
+-layout: fixed; width: 100%;"><tr><td align=3D"center" valign=3D"top" class=
+=3D"r46-i nl2go-default-textstyle" style=3D"color: #fff; font-family: Tahom=
+a,Geneva,sans-serif; font-size: 16px; line-height: 1.5; word-break: break-w=
+ord; text-align: center;"> <div><p style=3D"margin: 0;">UserSearch 2.0 - no=
+t 'just' a search tool.</p></div> </td> </tr></table><table cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"568" align=
+=3D"center" class=3D"r0-o" style=3D"table-layout: fixed;"><tr><td class=3D"=
+r45-i" style=3D"padding-bottom: 30px; padding-top: 30px; height: 1px;"> <ta=
+ble width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D=
+"presentation"><tr><td><table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" role=3D"presentation" class=3D"r45-i" height=3D"1" styl=
+e=3D"border-top-style: dotted; background-clip: border-box; border-top-colo=
+r: #ffffff; border-top-width: 1px; font-size: 1px; line-height: 1px;"><tr><=
+td height=3D"0" style=3D"font-size: 0px; line-height: 0px;">=C2=AD</td> </t=
+r></table></td> </tr></table></td> </tr></table></th> </tr></table></td> </=
+tr><tr class=3D"nl2go-responsive-hide"><td height=3D"20" style=3D"font-size=
+: 20px; line-height: 20px;">=C2=AD</td> </tr></table><table cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" alig=
+n=3D"center" class=3D"r0-o" style=3D"table-layout: fixed; width: 100%;"><tr=
+><td class=3D"r47-i" style=3D"background-color: #000000;"> <table width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation=
+"><tr><th width=3D"100%" valign=3D"top" class=3D"r4-c" style=3D"font-weight=
+: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D=
+"presentation" width=3D"600" align=3D"center" class=3D"r0-o" style=3D"table=
+-layout: fixed; width: 600px;"><tr><td height=3D"20" class=3D"r1-i" style=
+=3D"font-size: 20px; line-height: 20px; background-color: transparent;"> =
+=C2=AD </td> </tr></table></th> </tr></table></td> </tr></table><table cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D=
+"100%" align=3D"center" class=3D"r48-o" style=3D"table-layout: fixed; width=
+: 100%;"><tr><td class=3D"r49-i" style=3D"background-color: #414141; paddin=
+g-bottom: 16px; padding-left: 32px; padding-right: 32px; padding-top: 16px;=
+"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" r=
+ole=3D"presentation"><tr><th width=3D"58.33%" valign=3D"middle" class=3D"r5=
+0-c" style=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" align=3D"left" cla=
+ss=3D"r24-o" style=3D"table-layout: fixed; width: 100%;"><tr><td align=3D"l=
+eft" valign=3D"top" class=3D"r51-i nl2go-default-textstyle" style=3D"color:=
+ #fff; font-family: Tahoma,Geneva,sans-serif; font-size: 16px; line-height:=
+ 1.5; word-break: break-word; text-align: left;"> <div><h4 class=3D"default=
+-heading4" style=3D"margin: 0; color: #fff; font-family: Tahoma,Geneva,sans=
+-serif,Arial; font-size: 18px; word-break: break-word;"><span style=3D"font=
+-size: 12px; color: #ffffff;"><strong>UserSearch</strong></span></h4></div>=
+ </td> </tr></table><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ role=3D"presentation" width=3D"100%" align=3D"left" class=3D"r24-o" style=
+=3D"table-layout: fixed; width: 100%;"><tr><td align=3D"left" valign=3D"top=
+" class=3D"r52-i nl2go-default-textstyle" style=3D"color: #fff; font-family=
+: Tahoma,Geneva,sans-serif; font-size: 16px; word-break: break-word; line-h=
+eight: 1.2; padding-top: 8px; text-align: left;"> <div><p style=3D"margin: =
+0;"><span style=3D"font-size: 12px; color: #ffffff;">203 West Street, Fareh=
+am,</span></p><p style=3D"margin: 0;"><span style=3D"font-size: 12px; color=
+: #ffffff;">PO16 0EN,=C2=A0Hampshire</span></p></div> </td> </tr></table><t=
+able cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"=
+ width=3D"100%" align=3D"left" class=3D"r24-o" style=3D"table-layout: fixed=
+; width: 100%;"><tr><td align=3D"left" valign=3D"top" class=3D"r52-i nl2go-=
+default-textstyle" style=3D"color: #fff; font-family: Tahoma,Geneva,sans-se=
+rif; font-size: 16px; word-break: break-word; line-height: 1.2; padding-top=
+: 8px; text-align: left;"> <div><p style=3D"margin: 0;"><span style=3D"colo=
+r: #F7F7F7; font-size: 12px;">SUPPORT@USERSEARCH.ORG</span><br><span style=
+=3D"color: #ffffff; font-size: 12px;">PO16 0EN</span></p></div> </td> </tr>=
+</table></th> <th width=3D"41.67%" valign=3D"middle" class=3D"r53-c" style=
+=3D"font-weight: normal;"> <table cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation" width=3D"100%" align=3D"left" class=3D"r24-o"=
+ style=3D"table-layout: fixed; width: 100%;"><tr><td align=3D"right" valign=
+=3D"top" class=3D"r54-i nl2go-default-textstyle" style=3D"color: #fff; font=
+-family: Tahoma,Geneva,sans-serif; font-size: 16px; word-break: break-word;=
+ line-height: 1.1; text-align: right;"> <div><p style=3D"margin: 0;">=C2=A0=
+</p><p style=3D"margin: 0;"><a href=3D"https://etc0p.r.ag.d.sendibm3.com/mk=
+/un/sh/1t6AVsdYhqSR1hMazJgNqb3mWtqrCi/mxbmWWoXGMyX" target=3D"_blank" style=
+=3D"color: #fff; font-weight: bold; text-decoration: underline;"><span styl=
+e=3D"font-size: 12px;"><u>Unsubscribe</u></span></a></p></div> </td> </tr><=
+/table></th> </tr></table></td> </tr></table></td> </tr></table></td> </tr>=
+</table>   </body></html>
+
+
+---------?=_19129-8101226341216--
+

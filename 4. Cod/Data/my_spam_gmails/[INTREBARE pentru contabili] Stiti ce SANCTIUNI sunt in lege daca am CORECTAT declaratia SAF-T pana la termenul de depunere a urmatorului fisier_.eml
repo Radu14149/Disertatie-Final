@@ -1,0 +1,617 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp2608753gdb;
+        Mon, 3 Mar 2025 07:40:31 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IEP3l7Ygaiw5LzsbER9Snjg6zeA7SBKUD8G3UV84B3XZiUgchHU73YA/0M8P/cDURKB/3G5
+X-Received: by 2002:a5d:6da3:0:b0:38d:d666:5448 with SMTP id ffacd0b85a97d-390eca52d9bmr12628288f8f.40.1741016431317;
+        Mon, 03 Mar 2025 07:40:31 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741016431; cv=none;
+        d=google.com; s=arc-20240605;
+        b=hPrVOrMYBX7tKjsftIntW4gEyt/kyzGEsfvCkt9ds1/WKOL16l6qgUYV2P8aFG+t0m
+         aT6uez9f733/WEeUkA1HJ6yDVUs+GFITOSRZlTnK0bvdFvWnxT78D+UxhwSfMgpxAtI6
+         va6e0kzjCplqwR1cSkAshRD0/loowEoB+D7A8/x1q+QYyMW+cufVpBjvlP6/96ueStMS
+         vmaGBdunz5rrRNlAvVNkFnGBf2mVRo4Twr+Bn/XGs/Z+00wu9SqMFZBjeqDQSuaqkMK3
+         QSkLlSBnHDei6sxSTYZfq2xUmIAZkV2W62JurtI6oEpkRS5SXKIjXBC52tMEtYLoHfyr
+         Qcfw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:message-id:list-unsubscribe
+         :require-recipient-valid-since:subject:errors-to:reply-to:from:to
+         :date:domainkey-signature:dkim-signature;
+        bh=F64MS587bw7r32QOHka1zu5vPoxdfhtX9dlPuIyZHMU=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=A+nqmqRkRoZ+pUzwjR+wZK141qjeHdikt2lPhQj0LLYDWqtIK9pkYOGt0oPqhJ/D6T
+         vsEDVwATywV19cUXWt0PWlioXqkinNC3+4uwApaUmLirnA4fuQkybnEDBekNzNDdHnrk
+         9oplMZEBL562cuvNOKwvCSOwNeCc8VM5dITEx/bHXeqOnTCJ3Z16D57MHZEFvpUf45qh
+         qSw+JKKHimnmXTWaVdI413QKzo2KkLPH4hIKlDwQ/X5zMpconVdcCuVHA5qOtOxknaIL
+         ywMqyvniP2UCT3uCgj1GjPtSvddKmHsZX+1UwJewKnLybX9NvVk1fkV/3s8dcwPeSMiw
+         80dQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b=F7Taaoz2;
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Return-Path: <news@info.contabilul.ro>
+Received: from info.contabilul.ro (info.contabilul.ro. [89.46.103.122])
+        by mx.google.com with ESMTP id ffacd0b85a97d-390e47974adsi7501933f8f.74.2025.03.03.07.40.30
+        for <radu.25201@gmail.com>;
+        Mon, 03 Mar 2025 07:40:31 -0800 (PST)
+Received-SPF: pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) client-ip=89.46.103.122;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b=F7Taaoz2;
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id 739A7462F3047
+	for <radu.25201@gmail.com>; Mon,  3 Mar 2025 17:40:30 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; s=private; bh=JRykH3r4XIREU3n+IklrtD
+	ohhr0=; b=F7Taaoz2nx6JcAL7ETbDxmuROZpzUBnZXQSadV4PxFXAvJCQS38Bef
+	NWifwE5Kb5flaK1bUqotjYiQZOmbhjxBLWRngg4LNlvtuF/d5nvBqaNRT+MtQfUT
+	b+icniM4f2jArS2dc6K98WzPQ+Kp+T9uKafBOXofsq7EfwO2LRqaY=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; q=dns; s=private; b=eTjTUC1MeuvmQp8m
+	QBPXtv04uBIzvhqpT3ZlB2WbOsrPEz4F+lXbpSHX/Q4f/1H77fL/QdLMliSt6HDb
+	/25DjmRbHohz21Sdfsyej6EigjlC+ZRMTbQEgVnLZPKM9R4jlJQhG+iXYXo7fM4L
+	kGHqOQ9I609wnnmkwpE4jHXH0PM=
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id 67DB8462F303C
+	for <radu.25201@gmail.com>; Mon,  3 Mar 2025 17:40:30 +0200 (EET)
+Date: Mon, 3 Mar 2025 17:40:30 +0200
+To: radu.25201@gmail.com
+From: InfoNews Contabilul <news@info.contabilul.ro>
+Reply-to: eIC <office@info.contabilul.ro>
+Errors-To: news@info.contabilul.ro
+Subject: [INTREBARE pentru contabili] Stiti ce SANCTIUNI sunt in lege daca am CORECTAT declaratia SAF-T pana la termenul de depunere a urmatorului fisier?
+X-Complaints-To: abuse@info.contabilul.ro
+Require-Recipient-Valid-Since: radu.25201@gmail.com; Tue, 05 Jul 2022 16:46:51 +0300
+List-Unsubscribe: http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3792&CampaignStatisticsID=3392&Demo=0&EncryptedMemberID=NDY1ODExODYwOA%3D%3D&Email=cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Sender: news@info.contabilul.ro
+Message-ID: <468353d239bd6f4784e156c135606b1e@info.contabilul.ro>
+X-Priority: 3
+X-Mailer-MsgId: cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Mailer-CSID: Mzc5Ml8zMzky
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_468353d239bd6f4784e156c135606b1e"
+
+
+--b1_468353d239bd6f4784e156c135606b1e
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+=09
+=09
+	=09
+	=09
+		=09
+			=09
+				=09
+					=09
+						=09
+							=09
+									Stimate Abonat  , inscris la data de 05/25/2022
+										Bucuresti, 3.3.25 17:40
+							=09
+						=09
+					=09
+					=09
+						=09
+					=09
+					=09
+						=09
+							=09
+								=09
+									=09
+										=09
+											=09
+												=09
+														CONCURS cu Premii de top
+															pentru contabilii isteti
+														RASPUNDE CORECT si CASTIGI
+														Stii raspunsul la intrebarea de mai jos?
+													=09
+														Intrebare: In conditiile in care o societate corecteaza
+declaratia SAF-T pana la termenul de depunere a urmatorului fisier,
+sanctiunea contraventionala este:
+														=09
+															Varianta a)avertisment
+														(
+https://contabilul.manager.ro/a/29175/saf-t-sanctiuni-in-legatura-cu-fisi=
+erul-standard-de-control-operativ.html?raspuns=3Dshow
+)...click AICI daca e raspunsul corect=20
+													=09
+															Varianta b) amenda de la 500 la 1500 lei
+														(
+https://contabilul.manager.ro/a/29175/saf-t-sanctiuni-in-legatura-cu-fisi=
+erul-standard-de-control-operativ.html?raspuns=3Dshow
+)...click AICI daca e raspunsul corect=20
+													=09
+															Varianta c) nu se sanctioneaza contraventional
+														( https://raspuns-corect.fisc.ro/?cs=3D1632418 )...click
+AICI daca e raspunsul corect=20
+														Speram ca v-a placut concursul nostru si va asteptam sa
+participati si la urmatorul
+														Un contabil informat inseamna un contabil cu clienti
+fericiti!
+														De aceea e important sa fim la zi cu toate modificarile
+din legislatie
+												=09
+											=09
+										=09
+									=09
+								=09
+							=09
+						=09
+					=09
+					=09
+						=09
+							=09
+						=09
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+							( http://www.contabilul.ro/privacypolicy/privacypolicy.html
+)Politica de confidentialitate | ( mailto:gdpr@rs.ro )Raporteaza abuz
+| (
+http://www.info.contabilul.ro/html_version.php?CampaignID=3D3792&Campaign=
+StatisticsID=3D3392&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Ema=
+il=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvbQ=3D=3D
+)Versiune html | (
+http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3792&CampaignS=
+tatisticsID=3D3392&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D
+)Click aici pentru dezabonare
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+						=09
+								Va reamintim ca ati solicitat primirea acestui newsletter pe
+data de 05/25/2022
+								Expeditor: RentropStraton, Bdul. Natiunile Unite nr. 4,
+Bucuresti, Romania
+									Tel: 004-021.209.45.12
+						=09
+					=09
+				=09
+			=09
+		=09
+	=09
+
+
+--b1_468353d239bd6f4784e156c135606b1e
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:s=
+chemas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:=
+vml">
+	<head>
+		<meta charset=3D"utf-8">
+		<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+		<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+		<meta name=3D"x-apple-disable-message-reformatting">
+		<title></title>
+		<style type=3D"text/css">html,
+			body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			}
+
+			* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			}
+
+			div[style*=3D"margin: 16px 0"] {
+			margin: 0 !important;
+			}
+
+			table,
+			td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			}
+
+			table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+			}
+			table table table {
+			table-layout: auto;
+			}
+
+			img {
+			-ms-interpolation-mode:bicubic;
+			}
+
+			a {
+			text-decoration: none;
+			}
+
+			*[x-apple-data-detectors],  /* iOS */
+			.unstyle-auto-detected-links *,
+			.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+			}
+
+			.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+			}
+			img.g-img + div {
+			display: none !important;
+			}
+
+			@media only screen and (min-device-width: 320px) and (max-device-width=
+: 374px) {
+			u ~ div .email-container {
+			min-width: 320px !important;
+			}
+			}
+			@media only screen and (min-device-width: 375px) and (max-device-width=
+: 413px) {
+			u ~ div .email-container {
+			min-width: 375px !important;
+			}
+			}
+			@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+			min-width: 414px !important;
+			}
+			}</style>
+		<style type=3D"text/css">.button-td, .button-a {
+				transition: all 100ms ease-in;
+			}
+			.button-td-primary:hover, .button-a-primary:hover {
+				background: #555555 !important;
+				border-color: #555555 !important;
+			}
+
+			@media screen and (max-width: 480px) {
+				.fluid {
+					width: 100% !important;
+					max-width: 100% !important;
+					height: auto !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+
+				.stack-column, .stack-column-center {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					direction: ltr !important;
+				}
+				.stack-column-center {
+					text-align: center !important;
+				}
+
+				.center-on-narrow {
+					text-align: center !important;
+					display: block !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+					float: none !important;
+				}
+				table.center-on-narrow {
+					display: inline-block !important;
+				}
+
+				.email-container p {
+					font-size: 17px !important;
+				}
+				.maxwidthmobile {
+					max-width: 100% !important;
+				}
+				.center-on-narrow img {
+					max-width: 320px !important;
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!--[if mso]>
+		<noscript>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		</noscript>
+		<![endif]--><!--[if lte mso 11]>
+		<style type=3D"text/css">
+		.mj-outlook-group-fix { width:100% !important; }
+		</style>
+		<![endif]-->		<style type=3D"text/css">@media only screen and (min-widt=
+h: 480px) {
+				.mj-column-per-100 {
+					width: 100% !important;
+					max-width: 100%;
+				}
+				.mj-column-per-32 {
+					width: 32% !important;
+					max-width: 32%;
+				}
+				.mj-column-per-50 {
+					width: 50% !important;
+					max-width: 50%;
+				}
+			}</style>
+		<style media=3D"screen and (min-width:480px)" type=3D"text/css">.moz-te=
+xt-html .mj-column-per-100 {
+				width: 100% !important;
+				max-width: 100%;
+			}
+			.moz-text-html .mj-column-per-32 {
+				width: 32% !important;
+				max-width: 32%;
+			}
+			.moz-text-html .mj-column-per-50 {
+				width: 50% !important;
+				max-width: 50%;
+			}</style>
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				table.mj-full-width-mobile {
+					width: 100% !important;
+				}
+				td.mj-full-width-mobile {
+					width: auto !important;
+				}
+			}</style>
+<!--[if gte mso 9]>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->	</head>
+	<body style=3D"margin: 0; padding: 0 !important; mso-line-height-rule: e=
+xactly; background-color:#f0f0f0;" width=3D"100%">
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!-- <center style=3D"width: 100%; background-color: #f0f0f0;"> --><!--[i=
+f mso | IE]>
+		<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"background-color:#f0f0f0;">
+		<tr>
+		<td>
+		<![endif]-->		<div align=3D"center" style=3D"background: #f0f0f0; paddi=
+ng: 15px 0 15px 0;">
+			<div class=3D"email-container" style=3D"max-width: 720px; margin: 0 au=
+to;"><!--[if mso]>
+				<table align=3D"center" role=3D"presentation" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" width=3D"720">
+				<tr>
+				<td>
+				<![endif]--><!-- Email Body : BEGIN -->
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"margin: 0px auto; width: 100%;"><!-- Hero Image, Flush =
+: BEGIN -->
+				=09
+						<tr>
+							<td style=3D"padding: 10px 20px; text-align: left; background-colo=
+r: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-=
+serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; font=
+-weight: 400; color: #000000;">
+								<div style=3D"text-align: left; background-color: #ffffff; font-f=
+amily: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: =
+15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; colo=
+r: #000000;">
+									<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height:=
+ 24px; text-align: center; color: #343535;">Stimate Abonat <span style=3D=
+"text-transform: uppercase;"> </span>, inscris la data de 05/25/2022<br>
+										Bucuresti, 3.3.25 17:40</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style=3D"background-color: #ffffff; text-align: center;"><img =
+alt=3D"alt_text" border=3D"0" class=3D"fluid g-img" height=3D"" src=3D"ht=
+tp://contabilul.manager.ro/images/nws_img/contabilul_header.png" style=3D=
+"width: 100%; max-width: 720px; height: auto; background: #dddddd; font-f=
+amily: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; =
+color: #000000; margin: auto;" width=3D"720"></td>
+						</tr>
+<!-- Hero Image, Flush : END --><!-- 1 Column Text: BEGIN -->						<tr>
+							<td style=3D"background-color: #ffffff;">
+								<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"width: 100%;">
+								=09
+										<tr>
+											<td style=3D"padding: 10px 20px; text-align: left; background-=
+color: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,s=
+ans-serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; =
+font-weight: 400; color: #000000;"><!--START_CONTENT-->
+												<div style=3D"text-align: left; background-color: #ffffff; fo=
+nt-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; =
+color: #000000;">
+													<div style=3D"text-align: left; background-color: #ffffff; f=
+ont-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-s=
+ize: 15px; line-height: 140%; mso-line-height: exactly; font-weight: 400;=
+ color: #000000;">
+														<h1 align=3D"center" style=3D"font-size: 26px; color: #0000=
+00; line-height: 1.4;">CONCURS cu Premii de top<br>
+															pentru contabilii isteti</h1>
+														<h2 align=3D"center" style=3D"font-size: 32px; color: #ff00=
+00; line-height: 1.4;">RASPUNDE CORECT si CASTIGI</h2>
+														<h3 align=3D"center" style=3D"font-size: 24px; color: #0000=
+00; line-height: 1.4; font-style: italic;">Stii raspunsul la intrebarea d=
+e mai jos?</h3>
+														<br>
+														<p><strong style=3D"font-style: italic;">Intrebare: </stron=
+g>In conditiile in care o societate corecteaza declaratia SAF-T pana la t=
+ermenul de depunere a urmatorului fisier, sanctiunea contraventionala est=
+e:<br>
+															<br>
+															<em><strong>Varianta a)</strong></em>&nbsp;avertisment</p>
+														<h3 align=3D"center"><a href=3D"http://www.info.contabilul.=
+ro/link.php?URL=3DaHR0cHM6Ly9jb250YWJpbHVsLm1hbmFnZXIucm8vYS8yOTE3NS9zYWY=
+tdC1zYW5jdGl1bmktaW4tbGVnYXR1cmEtY3UtZmlzaWVydWwtc3RhbmRhcmQtZGUtY29udHJv=
+bC1vcGVyYXRpdi5odG1sP3Jhc3B1bnM9c2hvdw=3D=3D&Name=3D&EncryptedMemberID=3D=
+NDY1ODExODYwOA%3D%3D&CampaignID=3D3792&CampaignStatisticsID=3D3392&Demo=3D=
+0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none;=
+ color: #ffffff; line-height: 1.4; font-size: 16px; background-color: #44=
+75db; padding: 6px 10px; font-weight: normal;" target=3D"_blank">...click=
+ <u>AICI</u> daca e raspunsul corect &raquo;</a></h3>
+														<p><br>
+															<em><strong>Varianta </strong><strong>b)</strong></em> ame=
+nda de la 500 la 1500 lei</p>
+														<h3 align=3D"center"><a href=3D"http://www.info.contabilul.=
+ro/link.php?URL=3DaHR0cHM6Ly9jb250YWJpbHVsLm1hbmFnZXIucm8vYS8yOTE3NS9zYWY=
+tdC1zYW5jdGl1bmktaW4tbGVnYXR1cmEtY3UtZmlzaWVydWwtc3RhbmRhcmQtZGUtY29udHJv=
+bC1vcGVyYXRpdi5odG1sP3Jhc3B1bnM9c2hvdw=3D=3D&Name=3D&EncryptedMemberID=3D=
+NDY1ODExODYwOA%3D%3D&CampaignID=3D3792&CampaignStatisticsID=3D3392&Demo=3D=
+0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none;=
+ color: #ffffff; line-height: 1.4; font-size: 16px; background-color: #44=
+75db; padding: 6px 10px; font-weight: normal;" target=3D"_blank">...click=
+ <u>AICI</u> daca e raspunsul corect &raquo;</a></h3>
+														<p><br>
+															<em><strong>Varianta c)</strong></em>&nbsp; nu se sanction=
+eaza contraventional</p>
+														<h3 align=3D"center"><a href=3D"http://www.info.contabilul.=
+ro/link.php?URL=3DaHR0cHM6Ly9yYXNwdW5zLWNvcmVjdC5maXNjLnJvLz9jcz0xNjMyNDE=
+4&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3792&Camp=
+aignStatisticsID=3D3392&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" =
+style=3D"text-decoration: none; color: #ffffff; line-height: 1.4; font-si=
+ze: 16px; background-color: #4475db; padding: 6px 10px; font-weight: norm=
+al;" target=3D"_blank">...click <u>AICI</u> daca e raspunsul corect &raqu=
+o;</a></h3>
+														<p align=3D"center"><strong style=3D"font-style: italic;">S=
+peram ca v-a placut concursul nostru si va asteptam sa participati si la =
+urmatorul</strong></p>
+														<p align=3D"center"><strong style=3D"color: #4475db; font-s=
+ize: 17px;">Un contabil informat inseamna un contabil cu clienti fericiti=
+!</strong></p>
+														<p align=3D"center">De aceea e important sa fim la zi cu to=
+ate modificarile din legislatie</p>
+													</div>
+												</div>
+<!--END_CONTENT-->											</td>
+										</tr>
+								=09
+								</table>
+							</td>
+						</tr>
+<!-- 1 Column Text
+						<!-- Clear Spacer : END -->						<tr>
+							<td class=3D"center-on-narrow" dir=3D"ltr" style=3D"font-family: A=
+rial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #=
+000000; padding: 0px 10px; text-align: center; background-color: #ffffff;=
+">
+								<p style=3D"margin: 0 0 10px 0; text-align: center; font-size: 12=
+px!important; line-height: 20px;">&nbsp;</p>
+							</td>
+						</tr>
+				=09
+				</table>
+<!-- Email Body : END -->				<table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" style=3D"max-width: 720px; width: 100%;=
+">
+				=09
+						<tr>
+							<td style=3D"padding: 20px; font-family: Arial, Helvetica, sans-se=
+rif; font-size: 12px; line-height: 15px; text-align: center; color: #6373=
+81; background-color:#e7e7e7;"><a href=3D"http://www.info.contabilul.ro/l=
+ink.php?URL=3DaHR0cDovL3d3dy5jb250YWJpbHVsLnJvL3ByaXZhY3lwb2xpY3kvcHJpdmF=
+jeXBvbGljeS5odG1s&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Campai=
+gnID=3D3792&CampaignStatisticsID=3D3392&Demo=3D0&Email=3DcmFkdS4yNTIwMUBn=
+bWFpbC5jb20=3D" style=3D"color: #637381;" target=3D"_blank">Politica de c=
+onfidentialitate</a> | <a href=3D"mailto:gdpr@rs.ro" style=3D"color: #637=
+381;">Raporteaza abuz</a> | <a href=3D"http://www.info.contabilul.ro/html=
+_version.php?CampaignID=3D3792&CampaignStatisticsID=3D3392&Demo=3D0&Encry=
+ptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvb=
+Q=3D=3D" style=3D"color: #637381;">Versiune html</a> | <a href=3D"http://=
+www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3792&CampaignStatisti=
+csID=3D3392&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D"
+style=3D"color: #637381;">Click aici pentru dezabonare</a></td>
+						</tr>
+				=09
+				</table>
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"background-color: #fbfbfb; padding: 15px 0px; width: 10=
+0%;">
+				=09
+						<tr>
+							<td style=3D"padding: 0px 20px; text-align: center; font-family: '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weig=
+ht: 400; line-height: 24px; color: #343535;">
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Va reamintim ca ati solicitat =
+primirea acestui newsletter pe data de 05/25/2022</p>
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Expeditor: Rentrop&amp;Straton=
+, Bdul. Natiunile Unite nr. 4, Bucuresti, Romania<br>
+									Tel: 004-021.209.45.12</p>
+							</td>
+						</tr>
+				=09
+				</table>
+<!--[if mso]>
+
+				</td>
+				</tr>
+				</table>
+				<![endif]-->			</div>
+		</div>
+<!--[if mso | IE]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+<img src=3D"http://www.info.contabilul.ro/read.php?EncryptedMemberID=3DND=
+Y1ODExODYwOA%3D%3D&CampaignID=3D3792&CampaignStatisticsID=3D3392&Demo=3D0=
+&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" width=3D"10" height=3D"10" alt=3D=
+"---">
+
+</body>
+</html>
+
+
+
+--b1_468353d239bd6f4784e156c135606b1e--
+
+

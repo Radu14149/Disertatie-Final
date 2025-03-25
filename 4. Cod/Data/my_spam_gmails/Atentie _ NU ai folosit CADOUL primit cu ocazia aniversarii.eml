@@ -1,0 +1,2033 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:7a07:b0:3ef:e700:b403 with SMTP id ik7csp213050gdb;
+        Tue, 4 Mar 2025 08:24:35 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFzkL//QgJOnh2CQhlk7iuVtPj2Oj+r4G2yw3lb2LwK2+PF4K/w1RmiKg0Sq5KbZROy5XfM
+X-Received: by 2002:a5d:64ec:0:b0:390:f832:383f with SMTP id ffacd0b85a97d-390f8323a5amr10131280f8f.2.1741105474956;
+        Tue, 04 Mar 2025 08:24:34 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741105474; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Pkwg2Ie3rghBVpF41yaNScUoVKtP5kUD/6CoBoLdjX4jX8GxOtR/VBxVjkBq68F17k
+         evRxvOwOQPaf4v9p9gZn7cAwSc4rXfX+bcgdJRe/2d0tDJQZawoVOa3dKmL4BNajcw7D
+         muMnOrxATTrZHC9E8kSJKbNqOViB5OCSvTnccAVTcCQ3aLtrFStm6plXmErzQeEtI0/k
+         SwhuNmnZisMqu11+M4uBi15ty1cavHzIq63LJWyEKwNQwl4/1yQJLCVe4tCQgg+EFIz0
+         qAlxEruthjo18BZb06Jc07Jb3TV3oAI3/ZoQ8awg4Yk7X3z7wzCR9YGzjcSgWuygn87G
+         JQJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:message-id:list-unsubscribe
+         :require-recipient-valid-since:subject:errors-to:reply-to:from:to
+         :date:domainkey-signature:dkim-signature;
+        bh=Qoyg8H7K3rie+M+Lafz77QoWTt8caOkgjlTH4Md4O5k=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=ZxauxjUVBQRWSVLaYjqeV8PwsZfsTmvCiNbcdSN60pYJvUNBKaWUc/aJb5QSUTk6wJ
+         aB7XcnxvqO1GBEFclldnBoYLUTfMaaaHoHJd5jQn4iJ7XwwSSPTuOuAoDOkIsSYUfa5l
+         z9D8GuJIa4bQ4EuW/6cNh6D3TM2Lj52cwbjF/M5F+5rU6ztl7XxyfKc0L4avQOoh4/n5
+         QcfO2yKrk+kThnbFFQZSHL2txR4oLwpvKK1pofVYFhJmKgjz8rbAlbdE7Ipnk+b04cCm
+         d2/MKfrKSDRrCKYMfXWe89oEw3dUhV0fSbLqTH2NW08VydgmXYlTqW7OQlmPG8I5FD2R
+         3YuA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b=dhsuXcLk;
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Return-Path: <news@info.contabilul.ro>
+Received: from info.contabilul.ro (info.contabilul.ro. [89.46.103.122])
+        by mx.google.com with ESMTP id ffacd0b85a97d-390e479793bsi9008051f8f.176.2025.03.04.08.24.34
+        for <radu.25201@gmail.com>;
+        Tue, 04 Mar 2025 08:24:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) client-ip=89.46.103.122;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b=dhsuXcLk;
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id C58A646C4AE43
+	for <radu.25201@gmail.com>; Tue,  4 Mar 2025 18:24:33 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; s=private; bh=B0F5FchCOeF8jkPB1kdJ20
+	9CTKU=; b=dhsuXcLkIjLPqk6GLbWJPmERYhtYk/Q0wbLAXAVsTcZErLIenIjuG3
+	Fa1p4CcbgWkDhiWFDWw4Bl60dxMZ1lbYnd3+lpatAXtaZiRmZ9EMhks2CP0wxjQ1
+	FlgnTRJi9kw4aQ6t1Fb6Lp3D9eadmAX+Oj6Wc1/sIOhsFKzBONH/M=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; q=dns; s=private; b=eXyJLkN5zRVKJe4V
+	Umj8GQ7vt1QK/n2PrT9Uc02JbfQjPGV2nG3VxXeAESzF+slRSyNUdHrWhxomn14n
+	sIDxVocgBJKYHHcm9azpmvqhWOkdq4uWP8rutkO9EOrkvcxVecB1O2Osu57qtzvo
+	VrTwqM0lOeY123BQZcYYZFr70aA=
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id B7C6446C4AE3C
+	for <radu.25201@gmail.com>; Tue,  4 Mar 2025 18:24:33 +0200 (EET)
+Date: Tue, 4 Mar 2025 18:24:33 +0200
+To: radu.25201@gmail.com
+From: InfoNews Contabilul <news@info.contabilul.ro>
+Reply-to: eIC <office@info.contabilul.ro>
+Errors-To: news@info.contabilul.ro
+Subject: Atentie : NU ai folosit CADOUL primit cu ocazia aniversarii
+X-Complaints-To: abuse@info.contabilul.ro
+Require-Recipient-Valid-Since: radu.25201@gmail.com; Tue, 05 Jul 2022 16:46:51 +0300
+List-Unsubscribe: http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3793&CampaignStatisticsID=3393&Demo=0&EncryptedMemberID=NDY1ODExODYwOA%3D%3D&Email=cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Sender: news@info.contabilul.ro
+Message-ID: <c25e7cffd90a89b5285b15203a73ba80@info.contabilul.ro>
+X-Priority: 3
+X-Mailer-MsgId: cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Mailer-CSID: Mzc5M18zMzkz
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_c25e7cffd90a89b5285b15203a73ba80"
+
+
+--b1_c25e7cffd90a89b5285b15203a73ba80
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+=09
+=09
+	=09
+	=09
+		=09
+			=09
+				=09
+					=09
+						=09
+							=09
+									Stimate Abonat  , inscris la data de 05/25/2022
+										Bucuresti, 4.3.25 18:24
+							=09
+						=09
+					=09
+					=09
+						=09
+					=09
+					=09
+						=09
+							=09
+								=09
+									=09
+										=09
+											=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Va multumim pentru
+ca sunteti alaturi de noi!
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) RentropStraton -
+sarbatorim
+																									30 de ani impreuna=20
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) REDUCERI 30%
+																									 pentru Noutatile Contabile din 2025=20
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Oferta limitata.
+Stoc limitat
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) ...click AICI
+pentru toate produsele=20
+																						=09
+																					=09
+																				=09
+																				=09
+																						(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )=20
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Atentie: produsele
+au stoc limitat!=20
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) ...vezi AICI lista
+de produse =20
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																							=09
+																								=09
+																									=09
+																										=09
+																											=09
+																													(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Cartea Verde a
+Impozitului pe Profit 2025
+																											=09
+																										=09
+																									=09
+																									=09
+																											(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )=20
+																									=09
+																									=09
+																										=09
+																											=09
+																													154.35 lei
+																														220.50 lei cu TVA
+																											=09
+																										=09
+																									=09
+																									=09
+																										=09
+																											=09
+																												=09
+																													=09
+																															(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )Comanda AICI
+																													=09
+																												=09
+																											=09
+																										=09
+																									=09
+																								=09
+																							=09
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																							=09
+																								=09
+																									=09
+																										=09
+																											=09
+																													(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Inchiderea de luna
+si de exercitiu financiar=20
+																											=09
+																										=09
+																									=09
+																									=09
+																											(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )=20
+																									=09
+																									=09
+																										=09
+																											=09
+																													102.90 lei
+																														147.00 lei cu TVA
+																											=09
+																										=09
+																									=09
+																									=09
+																										=09
+																											=09
+																												=09
+																													=09
+																															(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )Comanda AICI
+																													=09
+																												=09
+																											=09
+																										=09
+																									=09
+																								=09
+																							=09
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																							=09
+																								=09
+																									=09
+																										=09
+																											=09
+																													(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Conturile
+contabile. Norme metodologice de utilizare
+																											=09
+																										=09
+																									=09
+																									=09
+																											(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )=20
+																									=09
+																									=09
+																										=09
+																											=09
+																													76.65 lei
+																														110.25 lei cu TVA
+																											=09
+																										=09
+																									=09
+																									=09
+																										=09
+																											=09
+																												=09
+																													=09
+																															(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate )Comanda AICI
+																													=09
+																												=09
+																											=09
+																										=09
+																									=09
+																								=09
+																							=09
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) ...vezi AICI lista
+de produse=20
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																							=09
+																								=09
+																									=09
+																										=09
+																											=09
+																													( https://oferta.fisc.ro/?cs=3D1632418 )
+Cartea Verde a TVA 2025
+																											=09
+																										=09
+																									=09
+																									=09
+																											( https://oferta.fisc.ro/?cs=3D1632418 )=20
+																									=09
+																									=09
+																										=09
+																											=09
+																													154.35 lei
+																														220.50 lei cu TVA
+																											=09
+																										=09
+																									=09
+																									=09
+																										=09
+																											=09
+																												=09
+																													=09
+																															( https://oferta.fisc.ro/?cs=3D1632418
+)Comanda AICI
+																													=09
+																												=09
+																											=09
+																										=09
+																									=09
+																								=09
+																							=09
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																							=09
+																								=09
+																									=09
+																										=09
+																											=09
+																													( https://oferta.fisc.ro/?cs=3D1632418 )
+Manual de Politici Contabile 2025=20
+																											=09
+																										=09
+																									=09
+																									=09
+																											( https://oferta.fisc.ro/?cs=3D1632418 )=20
+																									=09
+																									=09
+																										=09
+																											=09
+																													153.30 lei
+																														218.40 lei cu TVA
+																											=09
+																										=09
+																									=09
+																									=09
+																										=09
+																											=09
+																												=09
+																													=09
+																															( https://oferta.fisc.ro/?cs=3D1632418
+)Comanda AICI
+																													=09
+																												=09
+																											=09
+																										=09
+																									=09
+																								=09
+																							=09
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																							=09
+																								=09
+																									=09
+																										=09
+																											=09
+																													( https://oferta.fisc.ro/?cs=3D1632418 )
+Proceduri contabile pentru societatile comerciale 2025
+																											=09
+																										=09
+																									=09
+																									=09
+																											( https://oferta.fisc.ro/?cs=3D1632418 )=20
+																									=09
+																									=09
+																										=09
+																											=09
+																													151.20 lei
+																														216.30 lei cu TVA
+																											=09
+																										=09
+																									=09
+																									=09
+																										=09
+																											=09
+																												=09
+																													=09
+																															( https://oferta.fisc.ro/?cs=3D1632418
+)Comanda AICI
+																													=09
+																												=09
+																											=09
+																										=09
+																									=09
+																								=09
+																							=09
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) ...vezi AICI lista
+de produse=20
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) Nu ratati Reducerea
+de 30%!=20
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								(
+https://oferta.fisc.ro/?cs=3D1632418#contabilitate ) ...click AICI
+pentru lista de produse=20
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+												=09
+													=09
+														=09
+															=09
+																=09
+																	=09
+																		=09
+																			=09
+																				=09
+																					=09
+																						=09
+																								Va rugam sa alegeti produsele care va
+intereseaza
+																						=09
+																					=09
+																				=09
+																			=09
+																		=09
+																	=09
+																=09
+															=09
+														=09
+													=09
+												=09
+											=09
+										=09
+									=09
+								=09
+							=09
+						=09
+					=09
+					=09
+						=09
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+							( http://www.contabilul.ro/privacypolicy/privacypolicy.html
+)Politica de confidentialitate | ( mailto:gdpr@rs.ro )Raporteaza abuz
+| (
+http://www.info.contabilul.ro/html_version.php?CampaignID=3D3793&Campaign=
+StatisticsID=3D3393&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Ema=
+il=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvbQ=3D=3D
+)Versiune html | (
+http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3793&CampaignS=
+tatisticsID=3D3393&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D
+)Click aici pentru dezabonare
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+						=09
+								Va reamintim ca ati solicitat primirea acestui newsletter pe
+data de 05/25/2022
+								Expeditor: RentropStraton, Bdul. Natiunile Unite nr. 4,
+Bucuresti, Romania
+									Tel: 004-021.209.45.12
+						=09
+					=09
+				=09
+			=09
+		=09
+	=09
+
+
+--b1_c25e7cffd90a89b5285b15203a73ba80
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:s=
+chemas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:=
+vml">
+	<head>
+		<meta charset=3D"utf-8">
+		<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+		<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+		<meta name=3D"x-apple-disable-message-reformatting">
+		<title></title>
+		<style type=3D"text/css">html,
+			body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			}
+
+			* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			}
+
+			div[style*=3D"margin: 16px 0"] {
+			margin: 0 !important;
+			}
+
+			table,
+			td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			}
+
+			table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+			}
+			table table table {
+			table-layout: auto;
+			}
+
+			img {
+			-ms-interpolation-mode:bicubic;
+			}
+
+			a {
+			text-decoration: none;
+			}
+
+			*[x-apple-data-detectors],  /* iOS */
+			.unstyle-auto-detected-links *,
+			.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+			}
+
+			.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+			}
+			img.g-img + div {
+			display: none !important;
+			}
+
+			@media only screen and (min-device-width: 320px) and (max-device-width=
+: 374px) {
+			u ~ div .email-container {
+			min-width: 320px !important;
+			}
+			}
+			@media only screen and (min-device-width: 375px) and (max-device-width=
+: 413px) {
+			u ~ div .email-container {
+			min-width: 375px !important;
+			}
+			}
+			@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+			min-width: 414px !important;
+			}
+			}</style>
+		<style type=3D"text/css">.button-td, .button-a {
+				transition: all 100ms ease-in;
+			}
+			.button-td-primary:hover, .button-a-primary:hover {
+				background: #555555 !important;
+				border-color: #555555 !important;
+			}
+
+			@media screen and (max-width: 480px) {
+				.fluid {
+					width: 100% !important;
+					max-width: 100% !important;
+					height: auto !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+
+				.stack-column, .stack-column-center {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					direction: ltr !important;
+				}
+				.stack-column-center {
+					text-align: center !important;
+				}
+
+				.center-on-narrow {
+					text-align: center !important;
+					display: block !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+					float: none !important;
+				}
+				table.center-on-narrow {
+					display: inline-block !important;
+				}
+
+				.email-container p {
+					font-size: 17px !important;
+				}
+				.maxwidthmobile {
+					max-width: 100% !important;
+				}
+				.center-on-narrow img {
+					max-width: 320px !important;
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!--[if mso]>
+		<noscript>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		</noscript>
+		<![endif]--><!--[if lte mso 11]>
+		<style type=3D"text/css">
+		.mj-outlook-group-fix { width:100% !important; }
+		</style>
+		<![endif]-->		<style type=3D"text/css">@media only screen and (min-widt=
+h: 480px) {
+				.mj-column-per-100 {
+					width: 100% !important;
+					max-width: 100%;
+				}
+				.mj-column-per-32 {
+					width: 32% !important;
+					max-width: 32%;
+				}
+				.mj-column-per-50 {
+					width: 50% !important;
+					max-width: 50%;
+				}
+			}</style>
+		<style media=3D"screen and (min-width:480px)" type=3D"text/css">.moz-te=
+xt-html .mj-column-per-100 {
+				width: 100% !important;
+				max-width: 100%;
+			}
+			.moz-text-html .mj-column-per-32 {
+				width: 32% !important;
+				max-width: 32%;
+			}
+			.moz-text-html .mj-column-per-50 {
+				width: 50% !important;
+				max-width: 50%;
+			}</style>
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				table.mj-full-width-mobile {
+					width: 100% !important;
+				}
+				td.mj-full-width-mobile {
+					width: auto !important;
+				}
+			}</style>
+<!--[if gte mso 9]>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->	</head>
+	<body style=3D"margin: 0; padding: 0 !important; mso-line-height-rule: e=
+xactly; background-color:#f0f0f0;" width=3D"100%">
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!-- <center style=3D"width: 100%; background-color: #f0f0f0;"> --><!--[i=
+f mso | IE]>
+		<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"background-color:#f0f0f0;">
+		<tr>
+		<td>
+		<![endif]-->		<div align=3D"center" style=3D"background: #f0f0f0; paddi=
+ng: 15px 0 15px 0;">
+			<div class=3D"email-container" style=3D"max-width: 720px; margin: 0 au=
+to;"><!--[if mso]>
+				<table align=3D"center" role=3D"presentation" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" width=3D"720">
+				<tr>
+				<td>
+				<![endif]--><!-- Email Body : BEGIN -->
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"margin: 0px auto; width: 100%;"><!-- Hero Image, Flush =
+: BEGIN -->
+				=09
+						<tr>
+							<td style=3D"padding: 10px 20px; text-align: left; background-colo=
+r: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-=
+serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; font=
+-weight: 400; color: #000000;">
+								<div style=3D"text-align: left; background-color: #ffffff; font-f=
+amily: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: =
+15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; colo=
+r: #000000;">
+									<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height:=
+ 24px; text-align: center; color: #343535;">Stimate Abonat <span style=3D=
+"text-transform: uppercase;"> </span>, inscris la data de 05/25/2022<br>
+										Bucuresti, 4.3.25 18:24</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style=3D"background-color: #ffffff; text-align: center;"><img =
+alt=3D"alt_text" border=3D"0" class=3D"fluid g-img" height=3D"" src=3D"ht=
+tp://contabilul.manager.ro/images/nws_img/contabilul_header.png" style=3D=
+"width: 100%; max-width: 720px; height: auto; background: #dddddd; font-f=
+amily: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; =
+color: #000000; margin: auto;" width=3D"720"></td>
+						</tr>
+<!-- Hero Image, Flush : END --><!-- 1 Column Text: BEGIN -->						<tr>
+							<td style=3D"background-color: #ffffff;">
+								<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"width: 100%;">
+								=09
+										<tr>
+											<td style=3D"padding: 10px 20px; text-align: left; background-=
+color: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,s=
+ans-serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; =
+font-weight: 400; color: #000000;"><!--START_CONTENT-->
+												<div style=3D"text-align: left; background-color: #ffffff; fo=
+nt-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; =
+color: #000000;"><!--[if mso | IE]><table role=3D"presentation" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" width=3D"720px=
+" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffffff" ><=
+tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactl=
+y;"><![endif]-->
+													<div style=3D"background:#ffffff;background-color:#ffffff;ma=
+rgin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:20px 0 =
+0;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso | =
+IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><!=
+[endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #ffffff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:2=
+0px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:22px;font-weight:400;mso-line-height: ex=
+actly; line-height: 1.4; line-height: 28px;text-align:center;color:#000;"=
+>
+																								<h1 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:30px;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&En=
+cryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisti=
+csID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"lin=
+e-height: 1.4; text-decoration: none; color: #ff0000;font-size:30px;font-=
+weight: 600;" target=3D"_blank"> Va multumim pentru ca sunteti alaturi de=
+ noi!</a></h1>
+																								<p align=3D"left"><a href=3D"http://www.info.cont=
+abilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNj=
+b250YWJpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Campaig=
+nID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnb=
+WFpbC5jb20=3D" style=3D"text-decoration: none;" target=3D"_blank"><img al=
+ign=3D"left" alt=3D"produs" class=3D"img-prod" src=3D"https://img.rspedia=
+.ro/beta/upload/banner_1740727165.jpg" style=3D"margin-left: 8px; width: =
+230px;" width=3D"230"></a></p>
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:33px;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&En=
+cryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisti=
+csID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"lin=
+e-height: 1.4; text-decoration: none; color: #0000cc;font-size: 33px;" ta=
+rget=3D"_blank"> Rentrop&amp;Straton - sarbatorim<br>
+																									<u>30 de ani</u> impreuna </a></h2>
+																								<h1 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:48px;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&En=
+cryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisti=
+csID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"lin=
+e-height: 1.4; text-decoration: none; color: #ff0000;font-size:48px;font-=
+weight: 600;" target=3D"_blank"> REDUCERI 30%<br>
+																									<span style=3D"font-size: 30px;"> pentru Noutati=
+le Contabile din 2025</span> </a></h1>
+																								<h1 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:30px;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&En=
+cryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisti=
+csID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"lin=
+e-height: 1.4; text-decoration: none; color: #000000;font-size:30px;font-=
+weight: 600;" target=3D"_blank"> Oferta limitata. Stoc limitat</a></h1>
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&En=
+cryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisti=
+csID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"lin=
+e-height: 1.4; text-decoration: none; color: #0000ff;font-size: 26px;back=
+ground-color: #ffffc2;" target=3D"_blank"> ...click <u>AICI</u> pentru to=
+ate produsele &raquo;</a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td style=3D"width: 680px;text-align: center;"><a h=
+ref=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZ=
+mlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&EncryptedMemberID=3DN=
+DY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D=
+0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"> <img alt=3D"=
+" height=3D"auto" src=3D"https://img.rspedia.ro/beta/upload/banner_174072=
+7528.jpg" style=3D"border: 0; display: block; outline: none; text-decorat=
+ion: none; height: auto; width: 100%;margin:0px auto;" width=3D"680"></a>=
+</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;margin-bottom: 0px;"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJp=
+bGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D37=
+93&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb=
+20=3D" style=3D"line-height: 1.4; text-decoration: none; color: #000000;f=
+ont-size: 26px;" target=3D"_blank"> <span style=3D"color: #ff0000;">Atent=
+ie:</span> produsele au stoc limitat! </a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;margin-bottom: 0px;"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJp=
+bGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D37=
+93&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb=
+20=3D" style=3D"line-height: 1.4; text-decoration: none; color: #0000ff;f=
+ont-size: 26px; background-color: #ffffc2;" target=3D"_blank"> ...vezi <u=
+>AICI</u> lista de produse &raquo; </a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:5px 5px=
+ 0;padding-top:0;text-align:center;"><!--[if mso | IE]><table role=3D"pre=
+sentation" border=3D"0" bgcolor=3D"#ffffff" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:200;" ><![end=
+if]-->
+																		<div bgcolor=3D"#ffffff" style=3D"background-color: #ff=
+ffff;background:#ffffff;">
+																			<div class=3D"mj-column-per-32 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;">
+																				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																				=09
+																						<tr>
+																							<td align=3D"center" style=3D"font-size:0px;paddin=
+g:0px;word-break:break-word;">
+																								<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+																								=09
+																										<tr>
+																											<td align=3D"left" height=3D"115" style=3D"fon=
+t-size:0px;padding:10px 5px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><a href=3D"http://www.info.contabilul=
+.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YW=
+JpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"color: #000000;text-decoration: none;font-weight: bold;=
+" target=3D"_blank"> Cartea Verde a Impozitului pe<br>
+																														Profit 2025</a></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td height=3D"215" style=3D"width: 200px;text-=
+align: center;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3Da=
+HR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&E=
+ncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatist=
+icsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_=
+blank"> <img alt=3D"" height=3D"180" src=3D"https://lp.rs.ro/upload_img/6=
+275_oferta.fisc.ro/pphoto_1_small_491a8a490b.jpg" style=3D"border: 0; dis=
+play: block; outline: none; text-decoration: none; height: 180px!importan=
+t; font-size: 13px;margin:0px auto;"></a></td>
+																										</tr>
+																										<tr>
+																											<td align=3D"left" height=3D"60" style=3D"font=
+-size:0px;padding:0px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><strong style=3D"color: #cc0000;">154=
+.35 lei</strong><br>
+																														<s>220.50 lei cu TVA</s></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td align=3D"center" style=3D"font-size:0px;pa=
+dding:0px 0px 10px;word-break:break-word;" vertical-align=3D"middle">
+																												<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;width:=
+200px;line-height:100%;">
+																												=09
+																														<tr>
+																															<td align=3D"center" bgcolor=3D"#0e3a68" r=
+ole=3D"presentation" style=3D"border:none;border-radius:3px;cursor:auto;m=
+so-padding-alt:10px 25px;background:#0e3a68;" valign=3D"middle"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5=
+yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODE=
+xODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"display:inline-block;width:2=
+00px;background:#0e3a68;color:#ffffff;font-family:'Helvetica Neue', Helve=
+tica, Arial, sans-serif;font-size:17px;line-height:120%;margin:0;text-dec=
+oration:none;padding:10px 5px;mso-padding-alt:0px;border-radius:3px;font-=
+weight: bold;" target=3D"_blank">Comanda AICI</a></td>
+																														</tr>
+																												=09
+																												</table>
+																											</td>
+																										</tr>
+																								=09
+																								</table>
+																							</td>
+																						</tr>
+																				=09
+																				</table>
+																			</div>
+<!--[if mso | IE]></td><td class=3D"" style=3D"vertical-align:top;width:2=
+00;" ><![endif]-->																			<div class=3D"mj-column-per-32 mj-ou=
+tlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;dis=
+play:inline-block;vertical-align:top;width:100%;">
+																				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																				=09
+																						<tr>
+																							<td align=3D"center" style=3D"font-size:0px;paddin=
+g:0px;word-break:break-word;">
+																								<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+																								=09
+																										<tr>
+																											<td align=3D"left" height=3D"115" style=3D"fon=
+t-size:0px;padding:10px 5px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><a href=3D"http://www.info.contabilul=
+.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YW=
+JpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"color: #000000;text-decoration: none;font-weight: bold;=
+" target=3D"_blank"> Inchiderea de luna si de exercitiu financiar </a></p=
+>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td height=3D"215" style=3D"width: 200px;text-=
+align: center;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3Da=
+HR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&E=
+ncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatist=
+icsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_=
+blank"> <img alt=3D"" height=3D"180" src=3D"https://lp.rs.ro/upload_img/6=
+275_oferta.fisc.ro/pphoto_1_small_a154d6d8f1.jpg" style=3D"border: 0; dis=
+play: block; outline: none; text-decoration: none; height: 180px!importan=
+t; font-size: 13px;margin:0px auto;"></a></td>
+																										</tr>
+																										<tr>
+																											<td align=3D"left" height=3D"60" style=3D"font=
+-size:0px;padding:0px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><strong style=3D"color: #cc0000;">102=
+.90 lei</strong><br>
+																														<s>147.00 lei cu TVA</s></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td align=3D"center" style=3D"font-size:0px;pa=
+dding:0px 0px 10px;word-break:break-word;" vertical-align=3D"middle">
+																												<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;width:=
+200px;line-height:100%;">
+																												=09
+																														<tr>
+																															<td align=3D"center" bgcolor=3D"#0e3a68" r=
+ole=3D"presentation" style=3D"border:none;border-radius:3px;cursor:auto;m=
+so-padding-alt:10px 25px;background:#0e3a68;" valign=3D"middle"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5=
+yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODE=
+xODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"display:inline-block;width:2=
+00px;background:#0e3a68;color:#ffffff;font-family:'Helvetica Neue', Helve=
+tica, Arial, sans-serif;font-size:17px;line-height:120%;margin:0;text-dec=
+oration:none;padding:10px 5px;mso-padding-alt:0px;border-radius:3px;font-=
+weight: bold;" target=3D"_blank">Comanda AICI</a></td>
+																														</tr>
+																												=09
+																												</table>
+																											</td>
+																										</tr>
+																								=09
+																								</table>
+																							</td>
+																						</tr>
+																				=09
+																				</table>
+																			</div>
+<!--[if mso | IE]></td><td class=3D"" style=3D"vertical-align:top;width:2=
+00;" ><![endif]-->																			<div class=3D"mj-column-per-32 mj-ou=
+tlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;dis=
+play:inline-block;vertical-align:top;width:100%;">
+																				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																				=09
+																						<tr>
+																							<td align=3D"center" style=3D"font-size:0px;paddin=
+g:0px;word-break:break-word;">
+																								<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+																								=09
+																										<tr>
+																											<td align=3D"left" height=3D"115" style=3D"fon=
+t-size:0px;padding:10px 5px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><a href=3D"http://www.info.contabilul=
+.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YW=
+JpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"color: #000000;text-decoration: none;font-weight: bold;=
+" target=3D"_blank"> Conturile contabile. Norme metodologice de utilizare=
+</a></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td height=3D"215" style=3D"width: 200px;text-=
+align: center;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3Da=
+HR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&E=
+ncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatist=
+icsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_=
+blank"> <img alt=3D"" height=3D"180" src=3D"https://lp.rs.ro/upload_img/6=
+275_oferta.fisc.ro/pphoto_1_small_55c085b0bd.jpg" style=3D"border: 0; dis=
+play: block; outline: none; text-decoration: none; height: 180px!importan=
+t; font-size: 13px;margin:0px auto;"></a></td>
+																										</tr>
+																										<tr>
+																											<td align=3D"left" height=3D"60" style=3D"font=
+-size:0px;padding:0px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><strong style=3D"color: #cc0000;">76.=
+65 lei</strong><br>
+																														<s>110.25 lei cu TVA</s></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td align=3D"center" style=3D"font-size:0px;pa=
+dding:0px 0px 10px;word-break:break-word;" vertical-align=3D"middle">
+																												<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;width:=
+200px;line-height:100%;">
+																												=09
+																														<tr>
+																															<td align=3D"center" bgcolor=3D"#0e3a68" r=
+ole=3D"presentation" style=3D"border:none;border-radius:3px;cursor:auto;m=
+so-padding-alt:10px 25px;background:#0e3a68;" valign=3D"middle"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5=
+yby8/Y3M9MTYzMjQxOCNjb250YWJpbGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODE=
+xODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"display:inline-block;width:2=
+00px;background:#0e3a68;color:#ffffff;font-family:'Helvetica Neue', Helve=
+tica, Arial, sans-serif;font-size:17px;line-height:120%;margin:0;text-dec=
+oration:none;padding:10px 5px;mso-padding-alt:0px;border-radius:3px;font-=
+weight: bold;" target=3D"_blank">Comanda AICI</a></td>
+																														</tr>
+																												=09
+																												</table>
+																											</td>
+																										</tr>
+																								=09
+																								</table>
+																							</td>
+																						</tr>
+																				=09
+																				</table>
+																			</div>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;margin-bottom: 0px;"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJp=
+bGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D37=
+93&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb=
+20=3D" style=3D"line-height: 1.4; text-decoration: none; color: #0000ff;f=
+ont-size: 26px;background-color: #ffffc2;" target=3D"_blank"> ...vezi <u>=
+AICI</u> lista de produse &raquo;</a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:5px 5px=
+ 0;padding-top:0;text-align:center;"><!--[if mso | IE]><table role=3D"pre=
+sentation" border=3D"0" bgcolor=3D"#ffffff" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:200;" ><![end=
+if]-->
+																		<div bgcolor=3D"#ffffff" style=3D"background-color: #ff=
+ffff;background:#ffffff;">
+																			<div class=3D"mj-column-per-32 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;">
+																				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																				=09
+																						<tr>
+																							<td align=3D"center" style=3D"font-size:0px;paddin=
+g:0px;word-break:break-word;">
+																								<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+																								=09
+																										<tr>
+																											<td align=3D"left" height=3D"115" style=3D"fon=
+t-size:0px;padding:10px 5px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><a href=3D"http://www.info.contabilul=
+.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&N=
+ame=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&Campaig=
+nStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" sty=
+le=3D"color: #000000;text-decoration: none;font-weight: bold;" target=3D"=
+_blank"> Cartea Verde a<br>
+																														TVA 2025</a></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td height=3D"215" style=3D"width: 200px;text-=
+align: center;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3Da=
+HR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemb=
+erID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393=
+&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"> <img=
+ alt=3D"" height=3D"180" src=3D"https://lp.rs.ro/upload_img/6275_oferta.f=
+isc.ro/pphoto_1_small_dc02b403a2.jpg" style=3D"border: 0; display: block;=
+ outline: none; text-decoration: none; height: 180px!important; font-size=
+: 13px;margin:0px auto;"></a></td>
+																										</tr>
+																										<tr>
+																											<td align=3D"left" height=3D"60" style=3D"font=
+-size:0px;padding:0px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><strong style=3D"color: #cc0000;">154=
+.35 lei</strong><br>
+																														<s>220.50 lei cu TVA</s></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td align=3D"center" style=3D"font-size:0px;pa=
+dding:0px 0px 10px;word-break:break-word;" vertical-align=3D"middle">
+																												<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;width:=
+200px;line-height:100%;">
+																												=09
+																														<tr>
+																															<td align=3D"center" bgcolor=3D"#0e3a68" r=
+ole=3D"presentation" style=3D"border:none;border-radius:3px;cursor:auto;m=
+so-padding-alt:10px 25px;background:#0e3a68;" valign=3D"middle"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5=
+yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3=
+D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4y=
+NTIwMUBnbWFpbC5jb20=3D" style=3D"display:inline-block;width:200px;backgro=
+und:#0e3a68;color:#ffffff;font-family:'Helvetica Neue', Helvetica, Arial,=
+ sans-serif;font-size:17px;line-height:120%;margin:0;text-decoration:none=
+;padding:10px 5px;mso-padding-alt:0px;border-radius:3px;font-weight: bold=
+;" target=3D"_blank">Comanda AICI</a></td>
+																														</tr>
+																												=09
+																												</table>
+																											</td>
+																										</tr>
+																								=09
+																								</table>
+																							</td>
+																						</tr>
+																				=09
+																				</table>
+																			</div>
+<!--[if mso | IE]></td><td class=3D"" style=3D"vertical-align:top;width:2=
+00;" ><![endif]-->																			<div class=3D"mj-column-per-32 mj-ou=
+tlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;dis=
+play:inline-block;vertical-align:top;width:100%;">
+																				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																				=09
+																						<tr>
+																							<td align=3D"center" style=3D"font-size:0px;paddin=
+g:0px;word-break:break-word;">
+																								<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+																								=09
+																										<tr>
+																											<td align=3D"left" height=3D"115" style=3D"fon=
+t-size:0px;padding:10px 5px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><a href=3D"http://www.info.contabilul=
+.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&N=
+ame=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&Campaig=
+nStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" sty=
+le=3D"color: #000000;text-decoration: none;font-weight: bold;" target=3D"=
+_blank"> Manual de Politici Contabile 2025 </a></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td height=3D"215" style=3D"width: 200px;text-=
+align: center;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3Da=
+HR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemb=
+erID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393=
+&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"> <img=
+ alt=3D"" height=3D"180" src=3D"https://lp.rs.ro/upload_img/6275_oferta.f=
+isc.ro/pphoto_1_small_cf06c21ce7.jpg" style=3D"border: 0; display: block;=
+ outline: none; text-decoration: none; height: 180px!important; font-size=
+: 13px;margin:0px auto;"></a></td>
+																										</tr>
+																										<tr>
+																											<td align=3D"left" height=3D"60" style=3D"font=
+-size:0px;padding:0px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><strong style=3D"color: #cc0000;">153=
+.30 lei</strong><br>
+																														<s>218.40 lei cu TVA</s></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td align=3D"center" style=3D"font-size:0px;pa=
+dding:0px 0px 10px;word-break:break-word;" vertical-align=3D"middle">
+																												<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;width:=
+200px;line-height:100%;">
+																												=09
+																														<tr>
+																															<td align=3D"center" bgcolor=3D"#0e3a68" r=
+ole=3D"presentation" style=3D"border:none;border-radius:3px;cursor:auto;m=
+so-padding-alt:10px 25px;background:#0e3a68;" valign=3D"middle"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5=
+yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3=
+D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4y=
+NTIwMUBnbWFpbC5jb20=3D" style=3D"display:inline-block;width:200px;backgro=
+und:#0e3a68;color:#ffffff;font-family:'Helvetica Neue', Helvetica, Arial,=
+ sans-serif;font-size:17px;line-height:120%;margin:0;text-decoration:none=
+;padding:10px 5px;mso-padding-alt:0px;border-radius:3px;font-weight: bold=
+;" target=3D"_blank">Comanda AICI</a></td>
+																														</tr>
+																												=09
+																												</table>
+																											</td>
+																										</tr>
+																								=09
+																								</table>
+																							</td>
+																						</tr>
+																				=09
+																				</table>
+																			</div>
+<!--[if mso | IE]></td><td class=3D"" style=3D"vertical-align:top;width:2=
+00;" ><![endif]-->																			<div class=3D"mj-column-per-32 mj-ou=
+tlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;dis=
+play:inline-block;vertical-align:top;width:100%;">
+																				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																				=09
+																						<tr>
+																							<td align=3D"center" style=3D"font-size:0px;paddin=
+g:0px;word-break:break-word;">
+																								<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+																								=09
+																										<tr>
+																											<td align=3D"left" height=3D"115" style=3D"fon=
+t-size:0px;padding:10px 5px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><a href=3D"http://www.info.contabilul=
+.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&N=
+ame=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&Campaig=
+nStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" sty=
+le=3D"color: #000000;text-decoration: none;font-weight: bold;" target=3D"=
+_blank"> Proceduri contabile pentru societatile comerciale 2025</a></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td height=3D"215" style=3D"width: 200px;text-=
+align: center;"><a href=3D"http://www.info.contabilul.ro/link.php?URL=3Da=
+HR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemb=
+erID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393=
+&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"> <img=
+ alt=3D"" height=3D"180" src=3D"https://lp.rs.ro/upload_img/6275_oferta.f=
+isc.ro/pphoto_1_small_3280028981.jpg" style=3D"border: 0; display: block;=
+ outline: none; text-decoration: none; height: 180px!important; font-size=
+: 13px;margin:0px auto;"></a></td>
+																										</tr>
+																										<tr>
+																											<td align=3D"left" height=3D"60" style=3D"font=
+-size:0px;padding:0px 0px;word-break:break-word;">
+																												<div style=3D"font-family:'Helvetica Neue', H=
+elvetica, Arial, sans-serif;font-size:14px;font-weight:400;mso-line-heigh=
+t: exactly; line-height: 1.4; line-height: 28px;text-align:left;color:#00=
+0;">
+																													<p style=3D"font-size: 16px;color: #000000;l=
+ine-height:1.4;text-align: center;"><strong style=3D"color: #cc0000;">151=
+.20 lei</strong><br>
+																														<s>216.30 lei cu TVA</s></p>
+																												</div>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td align=3D"center" style=3D"font-size:0px;pa=
+dding:0px 0px 10px;word-break:break-word;" vertical-align=3D"middle">
+																												<table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"border-collapse:separate;width:=
+200px;line-height:100%;">
+																												=09
+																														<tr>
+																															<td align=3D"center" bgcolor=3D"#0e3a68" r=
+ole=3D"presentation" style=3D"border:none;border-radius:3px;cursor:auto;m=
+so-padding-alt:10px 25px;background:#0e3a68;" valign=3D"middle"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5=
+yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3=
+D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4y=
+NTIwMUBnbWFpbC5jb20=3D" style=3D"display:inline-block;width:200px;backgro=
+und:#0e3a68;color:#ffffff;font-family:'Helvetica Neue', Helvetica, Arial,=
+ sans-serif;font-size:17px;line-height:120%;margin:0;text-decoration:none=
+;padding:10px 5px;mso-padding-alt:0px;border-radius:3px;font-weight: bold=
+;" target=3D"_blank">Comanda AICI</a></td>
+																														</tr>
+																												=09
+																												</table>
+																											</td>
+																										</tr>
+																								=09
+																								</table>
+																							</td>
+																						</tr>
+																				=09
+																				</table>
+																			</div>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;margin-bottom: 0px;"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJp=
+bGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D37=
+93&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb=
+20=3D" style=3D"line-height: 1.4; text-decoration: none; color: #0000ff;f=
+ont-size: 26px;background-color: #ffffc2;" target=3D"_blank"> ...vezi <u>=
+AICI</u> lista de produse &raquo;</a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;margin-bottom: 0px;"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJp=
+bGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D37=
+93&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb=
+20=3D" style=3D"line-height: 1.4; text-decoration: none; color: #ff0000;f=
+ont-size: 36px;" target=3D"_blank"> Nu ratati Reducerea de 30%! </a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<h2 align=3D"center" style=3D"line-height: 1.4;fo=
+nt-size:26px;margin-bottom: 0px;"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9vZmVydGEuZmlzYy5yby8/Y3M9MTYzMjQxOCNjb250YWJp=
+bGl0YXRl&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D37=
+93&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb=
+20=3D" style=3D"line-height: 1.4; text-decoration: none; color: #0000ff;f=
+ont-size: 26px;background-color: #ffffc2;" target=3D"_blank"> ...click AI=
+CI pentru lista de produse &raquo;</a></h2>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr><tr><td class=3D"" width=3D=
+"720px" ><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" class=3D"" style=3D"width:720px;" width=3D"720" bgcolor=3D"#ffff=
+ff" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]-->													<div style=3D"background:#ffffff;backg=
+round-color:#ffffff;margin:0px auto;max-width:720px;">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:#ffffff;backgroun=
+d-color:#ffffff;width:100%;">
+														=09
+																<tr>
+																	<td style=3D"direction:ltr;font-size:0px;padding:0px 0 0=
+px;padding-left:15px;padding-right:15px;text-align:center;"><!--[if mso |=
+ IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:680px;" ><=
+![endif]-->
+																		<div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color: #fff;">
+																			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+																			=09
+																					<tr>
+																						<td align=3D"left" style=3D"font-size:0px;padding:0=
+px 5px;word-break:break-word;">
+																							<div style=3D"font-family:'Helvetica Neue', Helvet=
+ica, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;col=
+or:#000;mso-line-height: exactly; line-height: 1.4; line-height: 28px;">
+																								<p align=3D"center" style=3D"font-size: 20px;"><b=
+><u>Va rugam sa alegeti produsele care va intereseaza</u></b></p>
+																							</div>
+																						</td>
+																					</tr>
+																			=09
+																			</table>
+																		</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->																	</td>
+																</tr>
+														=09
+														</table>
+													</div>
+<!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->							=
+					</div>
+<!--END_CONTENT-->											</td>
+										</tr>
+								=09
+								</table>
+							</td>
+						</tr>
+<!-- 1 Column Text
+						<!-- Clear Spacer : END -->						<tr>
+							<td class=3D"center-on-narrow" dir=3D"ltr" style=3D"font-family: A=
+rial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #=
+000000; padding: 0px 10px; text-align: center; background-color: #ffffff;=
+">&nbsp;</td>
+						</tr>
+				=09
+				</table>
+<!-- Email Body : END -->				<table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" style=3D"max-width: 720px; width: 100%;=
+">
+				=09
+						<tr>
+							<td style=3D"padding: 20px; font-family: Arial, Helvetica, sans-se=
+rif; font-size: 12px; line-height: 15px; text-align: center; color: #6373=
+81; background-color:#e7e7e7;"><a href=3D"http://www.info.contabilul.ro/l=
+ink.php?URL=3DaHR0cDovL3d3dy5jb250YWJpbHVsLnJvL3ByaXZhY3lwb2xpY3kvcHJpdmF=
+jeXBvbGljeS5odG1s&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Campai=
+gnID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Email=3DcmFkdS4yNTIwMUBn=
+bWFpbC5jb20=3D" style=3D"color: #637381;" target=3D"_blank">Politica de c=
+onfidentialitate</a> | <a href=3D"mailto:gdpr@rs.ro" style=3D"color: #637=
+381;">Raporteaza abuz</a> | <a href=3D"http://www.info.contabilul.ro/html=
+_version.php?CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0&Encry=
+ptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvb=
+Q=3D=3D" style=3D"color: #637381;">Versiune html</a> | <a href=3D"http://=
+www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3793&CampaignStatisti=
+csID=3D3393&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D"
+style=3D"color: #637381;">Click aici pentru dezabonare</a></td>
+						</tr>
+				=09
+				</table>
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"background-color: #fbfbfb; padding: 15px 0px; width: 10=
+0%;">
+				=09
+						<tr>
+							<td style=3D"padding: 0px 20px; text-align: center; font-family: '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weig=
+ht: 400; line-height: 24px; color: #343535;">
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Va reamintim ca ati solicitat =
+primirea acestui newsletter pe data de 05/25/2022</p>
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Expeditor: Rentrop&amp;Straton=
+, Bdul. Natiunile Unite nr. 4, Bucuresti, Romania<br>
+									Tel: 004-021.209.45.12</p>
+							</td>
+						</tr>
+				=09
+				</table>
+<!--[if mso]>
+
+				</td>
+				</tr>
+				</table>
+				<![endif]-->			</div>
+		</div>
+<!--[if mso | IE]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+<img src=3D"http://www.info.contabilul.ro/read.php?EncryptedMemberID=3DND=
+Y1ODExODYwOA%3D%3D&CampaignID=3D3793&CampaignStatisticsID=3D3393&Demo=3D0=
+&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" width=3D"10" height=3D"10" alt=3D=
+"---">
+
+</body>
+</html>
+
+
+
+--b1_c25e7cffd90a89b5285b15203a73ba80--
+
+

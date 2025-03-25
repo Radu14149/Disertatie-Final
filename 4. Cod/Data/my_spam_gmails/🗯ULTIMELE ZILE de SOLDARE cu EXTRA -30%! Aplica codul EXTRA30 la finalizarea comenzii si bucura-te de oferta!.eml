@@ -1,0 +1,2504 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:7a07:b0:3ef:e700:b403 with SMTP id ik7csp678477gdb;
+        Wed, 5 Mar 2025 02:22:18 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFllfGSi/26NgMwOCUiobAuA0s08viTv62NfEp6KweZnkDpFvL3Kcjmp1i+EuAosrlVeb1s
+X-Received: by 2002:a05:6402:2548:b0:5e0:9269:f54e with SMTP id 4fb4d7f45d1cf-5e59f3df563mr2719387a12.14.1741170138303;
+        Wed, 05 Mar 2025 02:22:18 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741170138; cv=none;
+        d=google.com; s=arc-20240605;
+        b=aPp6JcFJByesisjCkuxLnPrHAaAElbWXDjfg508BkN57sSpsH/S1oh48M/RJOddZxc
+         PrHe9ByXYc/0RcAyOdIxfdo9jBrOE2Dy+oriXcdgbk/Q9KWVRE5qOl4VGvkPRXDbC6HX
+         Ha2+1RhXtkoR1Rd0M7A8fd38Umv5zbix+UHV87EvXRoMNtn+JfgEGpVdRHHpZs7enzI5
+         NC15pda6fOE9mGFIQHdm/YGmz0tPh5gHAJ3YOKLue8cHohnB7DJmUvKNUKPLesR7mQzw
+         b5D/tAff+QIBRnXE+WTeeCW9rIVtTBs9S19AkcDReR5tzju0Ymr6ihknNw+d0hNP5ugv
+         wPnw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:feedback-id:list-unsubscribe:reply-to:errors-to:subject
+         :to:from:date:content-transfer-encoding:mime-version:dkim-signature;
+        bh=KyLotVAb2p4Be+fruTL4GGFLqLXWz6MJGQ+ZYodmaxI=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=Hb4+C9n8kVfR585IYBsk9Lr1kRHeMdweAKgIXjhQgOtYPIng8gQ4kuOecjR6Sc7p4e
+         O1yojppSDBBYDUEBBKmQs2RS76wl9f8jUtDjJCyRCYSX4ZqSB6iUzYT8BORTsFDMWGhi
+         z/4UFjsSMJiedTQ3ZcMzbOFrFAqdqndJYhtrDqDBx+IF9v0MIiZZQUUPi1cYviLCcaEK
+         GVJOzhx2jx2ZIrpn9BE7NXVCl91vK/y3nBcFpVeh2VIbmQp+7H1jm+8Yt6BnaBp6QXjP
+         1XAyOffU7F8AiyLC/jNXEq+jAcgDKYSQU6sfNxPcA2IQMiveX62KzeVLdR9TAcwsT4h1
+         tvWw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@intersport.ro header.s=cp1 header.b=C4SUx19v;
+       spf=pass (google.com: domain of bounces_85639784.1881390@bounces.cpigsv32.com designates 108.181.58.145 as permitted sender) smtp.mailfrom=bounces_85639784.1881390@bounces.cpigsv32.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=intersport.ro
+Return-Path: <bounces_85639784.1881390@bounces.cpigsv32.com>
+Received: from s145.bl144.cpigsv32.com (s145.bl144.cpigsv32.com. [108.181.58.145])
+        by mx.google.com with ESMTPS id 4fb4d7f45d1cf-5e595193da6si2196384a12.350.2025.03.05.02.22.18
+        for <radu.25201@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 05 Mar 2025 02:22:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces_85639784.1881390@bounces.cpigsv32.com designates 108.181.58.145 as permitted sender) client-ip=108.181.58.145;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@intersport.ro header.s=cp1 header.b=C4SUx19v;
+       spf=pass (google.com: domain of bounces_85639784.1881390@bounces.cpigsv32.com designates 108.181.58.145 as permitted sender) smtp.mailfrom=bounces_85639784.1881390@bounces.cpigsv32.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=intersport.ro
+Received: from localhost.localdomain (s145.bl144.cpigsv32.com [108.181.58.145])
+	by s145.bl144.cpigsv32.com (Postfix) with ESMTP id 073F079
+	for <radu.25201@gmail.com>; Wed,  5 Mar 2025 12:22:18 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=intersport.ro; s=cp1;
+	t=1741170138; bh=KyLotVAb2p4Be+fruTL4GGFLqLXWz6MJGQ+ZYodmaxI=;
+	h=Date:From:To:Subject:Reply-To:List-Unsubscribe:From;
+	b=C4SUx19v/9B2Nsha1CKjuWDgtvM2TxJ3V5wVxVJkF1qidl4BT0Sm2HlhLPw+BsuXw
+	 OOYFsZMzbKxm8klSpNBlSA7WGxx55HqQkDQ6175976dw596Z+oqn+CYHn4edofDgAe
+	 6MXN46rqogucoMEXX6XH+mi4XBK/Q0F/2HgNWzys=
+MIME-Version: 1.0
+Content-Transfer-Encoding: binary
+Content-Type: multipart/alternative; boundary="_----------=_1741170138293704225929"; charset="UTF-8"
+Date: Wed, 5 Mar 2025 12:22:18 +0200
+From: =?UTF-8?B?SW50ZXJzcG9ydA==?= <newletters@intersport.ro>
+To: radu.25201@gmail.com
+Subject: =?UTF-8?B?8J+Xr1VMVElNRUxFIFpJTEUgZGUgU09MREFSRSBjdSBFWFRSQSAtMzAlISBBcGxpY2EgY29kdWwgRVhUUkEzMCBsYSBmaW5hbGl6YXJlYSBjb21lbnppaSBzaSBidWN1cmEtdGUgZGUgb2ZlcnRhIQ==?=
+Errors-To: bounces_85639784.1881390@bounces.cpigsv32.com
+X-Return-Path-Hint: bounces_85639784.1881390@bounces.cpigsv32.com
+Reply-To: =?UTF-8?B?SW50ZXJzcG9ydA==?= <newletters@intersport.ro>
+List-Unsubscribe: <https://do.contactpigeon.com/apps/en/stem/unsubscribe.html/?emid=1881390&em=radu.25201@gmail.com&crid=85639784&scid=2510>
+X-List-Unsubscribe: <https://do.contactpigeon.com/apps/en/stem/unsubscribe.html/?emid=1881390&em=radu.25201@gmail.com&crid=85639784&scid=2510>
+X-Unsubscribe-Web: <https://do.contactpigeon.com/apps/en/stem/unsubscribe.html/?emid=1881390&em=radu.25201@gmail.com&crid=85639784&scid=2510>
+X-Auto-Response-Suppress: OOF, AutoReply
+Feedback-Id: 1881390:85639784:do._bk:s2024s2510
+X-Mailer: contactpigeon.com Mailer v0.9.7
+Message-Id: <20250305102218.073F079@s145.bl144.cpigsv32.com>
+
+This is a multi-part message in MIME format.
+
+--_----------=_1741170138293704225929
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+ EXTRA -30% la articole SOLDARE! Descopera selectia de produse acum! Femei =
+B=C4=83rba=C8=9Bi Copii Cost livrare =C3=AEn Easybox sau Fanbox cu doar 10 =
+lei. Transport gratuit la tine acas=C4=83 pentru comenzi de peste 250 de le=
+i. CUMPARA ACUM DESCOPERA SELECTIA PRODUSE BARBATI adidas Tricou barbati Da=
+me Knockout Champ 189.99 113.99 79.79 LEI cu EXTRA30 CUMPARA adidas Hanorac=
+ barbati DAME 8 INN HDY 449.99 269.99 188.99 LEI cu EXTRA30 CUMPARA ENERGET=
+ICS Pantaloni scurti barbati Osmo 149.99 74.99 52.49 LEI cu EXTRA30 CUMPARA=
+ ENERGETICS Bermude barbati Ancel VI 169.99 84.99 59.49 LEI cu EXTRA30 CUMP=
+ARA DESCOPERA SELECTIA PRODUSE FEMEI adidas Tricou dama Terrex Parley Agrav=
+ic TR Pro 289.99 173.26 121.28 LEI cu EXTRA30 CUMPARA Bustiera dama Adidas =
+You for You (suport scazut) 159.99 95.99 67.19 LEI cu EXTRA30 CUMPARA ENERG=
+ETICS Colanti dama Kapedi 2 174.99 87.49 61.24 LEI cu EXTRA30 CUMPARA ENERG=
+ETICS Colanti dama Astrid V W 139.99 69.99 48.99 LEI cu EXTRA30 CUMPARA DES=
+COPERA SELECTIA PRODUSE COPII BRUNOTTI Tricou copii Tim Print 99.99 51.88 3=
+6.31 LEI cu EXTRA30 CUMPARA Tricou copii Brunotti Tim-Print 99.99 51.88 36.=
+31 LEI cu EXTRA30 CUMPARA ENERGETICS Tricou copii Garianne IV 69.99 34.99 2=
+4.49=C2=A0LEI cu EXTRA30 CUMPARA ENERGETICS Tricou copii Garianne IV 69.99 =
+34.99 24.49 LEI cu EXTRA30 CUMPARA Rezervare =C3=AEn magazine Rezervare gra=
+tuit=C4=83=C2=A0=C3=AEn cele 37 de magazine ale noastre Livrare gratuit=C4=
+=83 la adresa ta Pentru toate comenzile online de peste 250 lei Retur =C8=
+=99i schimb gratuite =C3=8En cele 37 de magazine ale noastre Livrare cu doa=
+r 10 lei =C3=AEn Easybox =C8=99i Fanbox Facebook LinkedIn Instagram YouTube=
+ Dezaboneaz=C4=83-te Deschide =C3=AEn browser=20
+
+--_----------=_1741170138293704225929
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title></title><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width" initial-scale=3D"1.0=
+" user-scalable=3D"yes"><meta http-equiv=3D"Content-Type" content=3D"text/h=
+tml; charset=3Dutf-8"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D=
+edge"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
+e=3D1"></head><body style=3D"cursor: auto;"><img style=3D"display:none !imp=
+ortant; width:1px; height:1px;" src=3D"https://go.contactpigeon.com/redir/i=
+huWsurgm1/e/85639784/ei/1881390/image/im.jpg" alt=3D"" height=3D1 width=3D1=
+ border=3D"0" title=3D"=CE=B9"/><style>a{text-decoration: none;}body{font:1=
+4px/1.5 Arial,Helvetica,sans-serif;margin:0;padding:0;-webkit-text-size-adj=
+ust:100%;-ms-text-size-adjust:100%}=0D
+@media screen and (max-device-width:600px),screen and (max-width:600px){tab=
+le.main,td.main{width:100%!important;}td.block-text h2{font-size:20px!impor=
+tant;line-height:170%!important}td.block-text p{line-height:170%!important}=
+td.block-text li{line-height:170%!important}td.two-columns{padding-left:25p=
+x!important;padding-right:25px!important}td.image img{width:100%!important;=
+height:auto!important;box-sizing:border-box}.givemeid{border:0;display:bloc=
+k;margin:0 auto 15px;width:100%!important;max-width:none!important}.allowch=
+ild{display:block!important;margin:0px auto;width:100%}.mobile-full img{hei=
+ght:auto!important;box-sizing:border-box}}</style><style class=3D"linkcolor=
+"> #primary a { color:#c91926;}</style><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size: 14px; font-family: Arial, Helvetica=
+, sans-serif; background: transparent; color: rgb(0, 0, 0);" width=3D"100%"=
+><tbody><tr><td align=3D"center" class=3D"main demo" id=3D"primary" style=
+=3D"min-height: 896px; color: rgb(0, 0, 0);" valign=3D"top" width=3D"100%">=
+<div style=3D"font-size:0px;visibility:hidden;overflow:hidden;float:left;di=
+splay:none;line-height:0px;" class=3D"previewtext">EXTRA -30% la articole S=
+OLDARE! Descopera selectia de produse acum!</div><div class=3D"column"><!--=
+ default element text --><div class=3D"lyrow" style=3D"display: block;"> <d=
+iv class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" sty=
+le=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=
+=3D"display: block; max-width: 640px; vertical-align: top; width: 100%; bac=
+kground-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table =
+align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+640" style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=
+=3D"border: 0px; background-color: rgb(243, 243, 243); width: 640px; max-wi=
+dth: 640px; font-family: Arial, Helvetica, sans-serif; display: table; min-=
+width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" a=
+lign=3D"center" data-type=3D"spacer" id=3D"39b08db8-fe08-4d46-5360-17852593=
+0a23" width=3D"640"> <tbody> <tr> <td class=3D"spacer-simple" style=3D"widt=
+h: 640px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"min-width:100% !impo=
+rtant; width:100% !important"> <tbody> <tr> <td id=3D"spaceman" width=3D"10=
+0%" height=3D"12" style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, =
+0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if ms=
+o]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![e=
+ndif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block;">=
+ <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" =
+style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" styl=
+e=3D"display: block; max-width: 640px; width: 100%; background-color: rgb(2=
+43, 243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:6=
+40px;"><tr><td><![endif]--> <table class=3D"main" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(243=
+, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica,=
+ sans-serif; display: table; min-width: 100% !important;" data-type=3D"imag=
+e" id=3D"b060d199-6ab2-f6ae-9f3f-6ea968007653" width=3D"640"> <tbody> <tr> =
+<td align=3D"center" style=3D"padding: 0px 15px; width: 400px; font-size: 1=
+4px; color: rgb(0, 0, 0);" class=3D"image onebefore" id=3D"ed533c26-0b2d-3e=
+6b-da5d-f1367bc78219"> <a class=3D"link" href=3D"https://go.contactpigeon.c=
+om/redir/85639784/72078885/" id=3D"1b22c0c9-b43c-02b2-9f1d-9618935be5a9"> <=
+img border=3D"0" style=3D"box-sizing: border-box; display: block; max-width=
+: 400px; width: 100%; padding: 0px;" alt=3D"image" src=3D"https://dimages.c=
+ontactpigeon.com/dndcp/upload/files/2510/1677147980_69259_1677148016.png" p=
+utwidth=3D"400" haspadding=3D"1" realdimensions=3D"400x51" tabindex=3D"0" i=
+d=3D"eb95f981-3e2a-dbe8-25ef-76c9eac0a390" width=3D"400"> </a> </td> </tr> =
+</tbody> </table> <!--[if mso]></td></tr></table><![endif]--></div><!--[if =
+mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow"=
+ style=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfix=
+"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div=
+ class=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-=
+align: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hi=
+dden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--=
+><table class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243=
+, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans=
+-serif; display: table; min-width: 100% !important;" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" align=3D"center" data-type=3D"spacer" id=3D"aaff=
+da7a-adf2-14b3-9db0-ab90d8f47067" width=3D"640"> <tbody> <tr> <td class=3D"=
+spacer-simple" style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);=
+"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" s=
+tyle=3D"min-width:100% !important; width:100% !important"> <tbody> <tr> <td=
+ id=3D"spaceman" width=3D"100%" height=3D"6" style=3D"width: 640px; font-si=
+ze: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> =
+</tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if =
+mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow"=
+ data-code=3D"colsettings" style=3D"display: block; position: relative; opa=
+city: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clea=
+rfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> =
+<div class=3D"mobile-full" style=3D"display: block; max-width: 640px; verti=
+cal-align: top; width: 100%; background-color: rgb(243, 243, 243); overflow=
+: hidden;"><table class=3D"main" style=3D"border-collapse: collapse; text-a=
+lign: center; background: rgb(243, 243, 243); width: 640px; max-width: 640p=
+x; display: table; font-family: Arial, Helvetica, sans-serif;" data-type=3D=
+"multiculti" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cent=
+er" id=3D"ca80eb56-c496-3ae7-a784-256a79d0f616" width=3D"640"><!--[if mso]>=
+<tbody><tr><![endif]--><tbody><tr class=3D"lyrow displaytable" align=3D"cen=
+ter" style=3D"display: block;"><td style=3D"width: 640px; font-size: 14px; =
+color: rgb(0, 0, 0);"><div style=3D"font-size: 14px; display: inline-block;=
+ background-position: center top; vertical-align: top; float: left; max-wid=
+th: 213px; height: auto; background-color: rgb(243, 243, 243); width: 33.28=
+12% !important; min-width: 10px !important; overflow: hidden;" valign=3D"to=
+p" class=3D"mobile-full allowchild" width=3D"213" id=3D"e1062569-d9d3-f17c-=
+4bc5-013df584fba5"><div class=3D"lyrow" style=3D"display: block; position: =
+relative; opacity: 1; left: 0px; top: 0px;"><div class=3D"view"><div class=
+=3D"row clearfix"><!--[if mso]><td style=3D"width: 213px; vertical-align: t=
+op;"><![endif]--><div class=3D"mobile-full" style=3D"display: block; max-wi=
+dth: 213px; vertical-align: top; width: 100%; background-color: rgb(243, 24=
+3, 243); overflow: hidden;"><table class=3D"main" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0" align=3D"center" style=3D"background-color: rgb(243=
+, 243, 243); width: 213px; font-family: Arial, Helvetica, sans-serif; displ=
+ay: table; min-width: 100% !important;" data-type=3D"button" id=3D"c6c49590=
+-efeb-f143-7138-1873ec67a1e1" width=3D"213"><tbody><tr align=3D"center"><td=
+ style=3D"padding: 8px 10px; font-size: 14px; color: rgb(0, 0, 0);" class=
+=3D"buttons-full-width" width=3D"213" id=3D"29b82b7e-cfa7-acc6-a1e8-d40dcf8=
+40464"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"193" style=3D"width:193px;"><![endif]--><table c=
+lass=3D"button" style=3D"" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100" style=3D"width:100px;=
+"><![endif]--><td style=3D"text-align: center; font-family: Cabin, Avenir, =
+sans-serif; white-space: nowrap; background-color: rgb(0, 63, 152); margin:=
+ 0px; width: 100px; padding: 8px 10px; border-radius: 6px; box-shadow: rgba=
+(0, 0, 0, 0.2) 0px -2px 0px 0px inset; font-size: 14px; color: rgb(0, 0, 0)=
+;" class=3D"button" btn-style=3D"btn-shadow" btnbc=3D"rgb(0, 63, 152)" id=
+=3D"11dd07c3-ba8e-4851-e836-55f8af97f0e3"><a style=3D"white-space: nowrap; =
+font-family: Cabin, Avenir, sans-serif; padding: 15px; color: rgb(255, 255,=
+ 255); font-size: 11px; text-align: center; text-decoration: none; font-wei=
+ght: bold;" class=3D"button-1" href=3D"https://go.contactpigeon.com/redir/8=
+5639784/72078897/" btn-style=3D"btn-flat" data-default=3D"1" id=3D"f875a05a=
+-c3e4-1ba6-0d73-a5725394879c">Femei </a></td><!--[if mso]></table><![endif]=
+--></tr></tbody></table><!--[if mso]></table><![endif]--></td></tr></tbody>=
+</table></div><!-- [if mso]></td><![endif] --></div></div></div></div><div =
+style=3D"font-size: 14px; display: inline-block; background-position: cente=
+r top; vertical-align: top; float: left; max-width: 213px; height: auto; ba=
+ckground-color: rgb(243, 243, 243); width: 33.2812% !important; min-width: =
+10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-full all=
+owchild" width=3D"213"><div class=3D"lyrow" style=3D"display: block;"><div =
+class=3D"view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"width:=
+ 213px; vertical-align: top;"><![endif]--><div class=3D"mobile-full" style=
+=3D"display: block; max-width: 213px; vertical-align: top; width: 100%; bac=
+kground-color: rgb(243, 243, 243); overflow: hidden;"><table class=3D"main"=
+ cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=3D=
+"background-color: rgb(243, 243, 243); width: 213px; font-family: Arial, He=
+lvetica, sans-serif; display: table; min-width: 100% !important;" data-type=
+=3D"button" id=3D"8d6f4e18-cf01-f184-e4a0-4474b7a02e35" width=3D"213"><tbod=
+y><tr align=3D"center"><td style=3D"padding: 8px 10px; font-size: 14px; col=
+or: rgb(0, 0, 0);" class=3D"buttons-full-width" width=3D"213" id=3D"50d8fde=
+b-112f-5cff-84ae-9af8d4734809"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"193" style=3D"width:193=
+px;"><![endif]--><table class=3D"button" style=3D"" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1=
+00" style=3D"width:100px;"><![endif]--><td style=3D"text-align: center; fon=
+t-family: Cabin, Avenir, sans-serif; white-space: nowrap; background-color:=
+ rgb(0, 63, 152); margin: 0px; width: 100px; padding: 8px 10px; border-radi=
+us: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset; font-size: =
+14px; color: rgb(0, 0, 0);" class=3D"button" btn-style=3D"btn-shadow" btnbc=
+=3D"rgb(0, 63, 152)" id=3D"3e793ec7-21e7-40b2-45fa-ff4b70c0d290"><a style=
+=3D"white-space: nowrap; font-family: Cabin, Avenir, sans-serif; padding: 1=
+5px; color: rgb(255, 255, 255); font-size: 11px; text-align: center; text-d=
+ecoration: none; font-weight: bold;" class=3D"button-1" href=3D"https://go.=
+contactpigeon.com/redir/85639784/72078887/" btn-style=3D"btn-flat" data-def=
+ault=3D"1" id=3D"a3bccd43-6c09-5ee6-73e3-3258f54f475d">B=C4=83rba=C8=9Bi </=
+a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!--[if mso]><=
+/table><![endif]--></td></tr></tbody></table></div><!-- [if mso]></td><![en=
+dif] --></div></div></div></div><div style=3D"font-size: 14px; display: inl=
+ine-block; background-position: center top; vertical-align: top; float: lef=
+t; max-width: 213px; height: auto; background-color: rgb(243, 243, 243); wi=
+dth: 33.2812% !important; min-width: 10px !important; overflow: hidden;" va=
+lign=3D"top" class=3D"mobile-full allowchild" width=3D"213"><div class=3D"l=
+yrow" style=3D"display: block;"><div class=3D"view"><div class=3D"row clear=
+fix"><!--[if mso]><td style=3D"width: 213px; vertical-align: top;"><![endif=
+]--><div class=3D"mobile-full" style=3D"display: block; max-width: 213px; v=
+ertical-align: top; width: 100%; background-color: rgb(243, 243, 243); over=
+flow: hidden;"><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0" align=3D"center" style=3D"background-color: rgb(243, 243, 243); =
+width: 213px; font-family: Arial, Helvetica, sans-serif; display: table; mi=
+n-width: 100% !important;" data-type=3D"button" id=3D"b36dc466-1b0e-8762-22=
+f5-ec0a2cc679c2" width=3D"213"><tbody><tr align=3D"center"><td style=3D"pad=
+ding: 8px 10px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"buttons-ful=
+l-width" width=3D"213" id=3D"7b66b517-3413-41b4-395e-95e8b0a8c6a6"><!--[if =
+mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"193" style=3D"width:193px;"><![endif]--><table class=3D"button"=
+ style=3D"" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cente=
+r"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100" style=3D"width:100px;"><![endif]--><=
+td style=3D"text-align: center; font-family: Cabin, Avenir, sans-serif; whi=
+te-space: nowrap; background-color: rgb(0, 63, 152); margin: 0px; width: 10=
+0px; padding: 8px 10px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) =
+0px -2px 0px 0px inset; font-size: 14px; color: rgb(0, 0, 0);" class=3D"but=
+ton" btn-style=3D"btn-shadow" btnbc=3D"rgb(0, 63, 152)" id=3D"350acff2-152c=
+-d4dc-8094-10fed2e9eab2"><a style=3D"white-space: nowrap; font-family: Cabi=
+n, Avenir, sans-serif; padding: 15px; color: rgb(255, 255, 255); font-size:=
+ 11px; text-align: center; text-decoration: none; font-weight: bold;" class=
+=3D"button-1" href=3D"https://go.contactpigeon.com/redir/85639784/72078895/=
+" btn-style=3D"btn-flat" data-default=3D"1" id=3D"fa5eb6da-6261-1601-7a0e-4=
+8489e3fd60a">Copii </a></td><!--[if mso]></table><![endif]--></tr></tbody><=
+/table><!--[if mso]></table><![endif]--></td></tr></tbody></table></div><!-=
+- [if mso]></td><![endif] --></div></div></div></div></td></tr></tbody><!--=
+[if mso]></td></tr></tbody><![endif]--></table></div><!--[if mso]></td></tr=
+></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"disp=
+lay: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div cla=
+ss=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"cente=
+r" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"=
+width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"disp=
+lay: block; max-width: 640px; vertical-align: top; width: 100%; background-=
+color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" sty=
+le=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"bord=
+er: 0px; background-color: rgb(243, 243, 243); width: 640px; max-width: 640=
+px; font-family: Arial, Helvetica, sans-serif; display: table; min-width: 1=
+00% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"=
+center" data-type=3D"line" width=3D"640" id=3D"24858cfb-d30f-6e2c-f456-eac3=
+68396b50"> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 5px =
+40px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rg=
+b(0, 0, 0); min-width: 100% !important; width: 100% !important;"> <tbody> <=
+tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </t=
+d> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td><=
+/tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--><=
+/div> </div> </div><div class=3D"lyrow" data-code=3D"colsettings" style=3D"=
+display: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if =
+mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"=
+mobile-full" style=3D"display: block; max-width: 640px; vertical-align: top=
+; width: 100%; background-color: rgb(255, 255, 255); overflow: hidden;"><ta=
+ble class=3D"main" style=3D"border-collapse: collapse; text-align: center; =
+background: rgb(255, 255, 255); width: 640px; max-width: 640px; display: ta=
+ble; font-family: Arial, Helvetica, sans-serif;" data-type=3D"multiculti" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" id=3D"e9c6=
+4d9e-9082-38f3-2a68-04de3c47b32d" width=3D"640"><!--[if mso]><tbody><tr><![=
+endif]--><tbody><tr class=3D"lyrow displaytable" align=3D"center" style=3D"=
+display: block;"><td style=3D"width: 640px; font-size: 14px; color: rgb(0, =
+0, 0);"><div style=3D"font-size: 14px; display: inline-block; background-po=
+sition: center top; vertical-align: top; float: left; max-width: 320px; hei=
+ght: auto; background-color: rgb(255, 255, 255); width: 50% !important; min=
+-width: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-=
+full allowchild" width=3D"320" id=3D"0bd44f06-38ca-5ebb-ab43-98ff12cb8ef2">=
+<div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><div cla=
+ss=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; vertical-align:=
+ top;"><![endif]--><div class=3D"mobile-full" style=3D"display: block; max-=
+width: 320px; vertical-align: top; width: 100%; background-color: rgb(255, =
+255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320=
+px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; backgr=
+ound-color: rgb(255, 255, 255); width: 320px; text-align: center; font-fami=
+ly: Arial, Helvetica, sans-serif; display: table; min-width: 100% !importan=
+t;" data-type=3D"text-block" id=3D"cb568c39-546a-dbd4-f53b-142b4bb68888" wi=
+dth=3D"320"><tbody><tr><td class=3D"block-text" data-clonable=3D"true" styl=
+e=3D"padding: 10px 20px; font-size: 14px; color: rgb(0, 0, 0);" width=3D"32=
+0"><div id=3D"f76d44c9-d9be-0f1d-b7db-a51a816c49b6">Cost livrare =C3=AEn Ea=
+sybox sau <span style=3D"color: #000000;">Fanbox </span>cu doar 10 lei.</di=
+v></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></di=
+v><!-- [if mso]></td><![endif] --></div></div></div></div><div style=3D"fon=
+t-size: 14px; display: inline-block; background-position: center top; verti=
+cal-align: top; float: left; max-width: 320px; height: auto; background-col=
+or: rgb(255, 255, 255); width: 50% !important; min-width: 10px !important; =
+overflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" width=3D=
+"320"><div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><d=
+iv class=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; vertical-=
+align: top;"><![endif]--><div class=3D"mobile-full" style=3D"display: block=
+; max-width: 320px; vertical-align: top; width: 100%; background-color: rgb=
+(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width=
+:320px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; ba=
+ckground-color: rgb(255, 255, 255); width: 320px; text-align: center; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" data-type=3D"text-block" id=3D"5624e2fe-f109-0736-fb3e-a5888dc48c0b=
+" width=3D"320"><tbody><tr><td class=3D"block-text" data-clonable=3D"true" =
+style=3D"padding: 10px 20px; font-size: 14px; color: rgb(0, 0, 0);" width=
+=3D"320"><div id=3D"4116d9e6-b1e6-18bd-1a15-d868c1c09125">Transport gratuit=
+ la tine acas=C4=83 pentru comenzi de peste 250 de lei.</div></td></tr></tb=
+ody></table><!--[if mso]></td></tr></table><![endif]--></div><!-- [if mso]>=
+</td><![endif] --></div></div></div></div></td></tr></tbody><!--[if mso]></=
+td></tr></tbody><![endif]--></table></div><!--[if mso]></td></tr></table><!=
+[endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block;=
+ position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"=
+> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"line" width=3D"640" id=3D"fd39c625-b03e-66ba-3b54-167056e91324"=
+> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 5px 40px; fon=
+t-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(0, 0, 0=
+); min-width: 100% !important; width: 100% !important;"> <tbody> <tr> <td w=
+idth=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> =
+</tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></tab=
+le><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </d=
+iv> </div><div class=3D"lyrow" style=3D"display: block;"> <div class=3D"vie=
+w"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; width: 100%; background-color: rgb(255, 255, 255); ove=
+rflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![=
+endif]--> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"font-size: 14px; background-color: rgb(255, 255, 255); widt=
+h: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; disp=
+lay: table; min-width: 100% !important;" data-type=3D"image" id=3D"4ca9179d=
+-53d7-e0a2-d18e-42f159629798" width=3D"640"> <tbody> <tr> <td align=3D"cent=
+er" style=3D"padding: 0px; width: 640px; font-size: 14px; color: rgb(0, 0, =
+0);" class=3D"image onebefore"> <a class=3D"link" href=3D"https://go.contac=
+tpigeon.com/redir/85639784/72078883/"> <img border=3D"0" style=3D"box-sizin=
+g: border-box; display: block; max-width: 640px; width: 100%;" alt=3D"image=
+" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510/17272561=
+63_32507.jpg" putwidth=3D"640" haspadding=3D"0" realdimensions=3D"640x100" =
+tabindex=3D"0" id=3D"dfbe02db-caba-66b5-405a-1b2c3b562616" width=3D"640"> <=
+/a> </td> </tr> </tbody> </table> <!--[if mso]></td></tr></table><![endif]-=
+-></div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div=
+ class=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; l=
+eft: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"=
+> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tabl=
+e class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=
+=3D"a08727b5-46d7-fcbf-c33b-9ce7c97d8f6a"> <tbody> <tr> <td class=3D"divide=
+r-simple" style=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);=
+" id=3D"cea6adb1-91fc-f589-e798-aa9c8680251c"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid r=
+gba(0, 0, 0, 0); min-width: 100% !important; width: 100% !important;"> <tbo=
+dy> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"=
+> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso]><=
+/td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![endif=
+]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block; posit=
+ion: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div=
+ class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr=
+><td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-w=
+idth: 640px; vertical-align: top; width: 100%; background-color: rgb(243, 2=
+43, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; backgr=
+ound-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family=
+: Arial, Helvetica, sans-serif; display: table; min-width: 100% !important;=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-ty=
+pe=3D"line" width=3D"640" id=3D"5b4d4923-9a5c-ff6b-286e-3cc0d3ef2d9f"> <tbo=
+dy> <tr> <td class=3D"divider-simple" style=3D"padding: 0px 40px 5px; font-=
+size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgba(0, 0, 0,=
+ 0); min-width: 100% !important; width: 100% !important;"> <tbody> <tr> <td=
+ width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);" id=3D"7ee29=
+804-287b-a500-e737-b3a98ddb193d"> </td> </tr> </tbody> </table> </td> </tr>=
+ </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if=
+ mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow=
+" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfi=
+x"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <di=
+v class=3D"mobile-full" style=3D"display: block; max-width: 640px; width: 1=
+00%; background-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]>=
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <table class=3D"mai=
+n" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14p=
+x; background-color: rgb(255, 255, 255); width: 640px; max-width: 640px; fo=
+nt-family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !i=
+mportant;" data-type=3D"image" id=3D"3de345d2-628f-7241-7070-656f926ff403" =
+width=3D"640"> <tbody> <tr> <td align=3D"center" style=3D"padding: 0px; wid=
+th: 640px; font-size: 14px;" class=3D"image onebefore"> <a class=3D"link" h=
+ref=3D"https://go.contactpigeon.com/redir/85639784/72078884/"> <img border=
+=3D"0" style=3D"box-sizing: border-box; display: block; max-width: 640px; w=
+idth: 100%;" alt=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/u=
+pload/files/2510/1738663649_64352.jpg" putwidth=3D"640" haspadding=3D"0" re=
+aldimensions=3D"640x420" tabindex=3D"0" id=3D"8554ecf2-c850-f943-2cc7-fcb2b=
+67bf696" width=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></t=
+d></tr></table><![endif]--></div><!--[if mso]></td></tr></table><![endif]--=
+></div> </div> </div><div class=3D"lyrow" style=3D"display: block; position=
+: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div cl=
+ass=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><t=
+d><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-widt=
+h: 640px; vertical-align: top; width: 100%; background-color: rgb(243, 243,=
+ 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;">=
+<tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; background-=
+color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Ari=
+al, Helvetica, sans-serif; display: table; min-width: 100% !important;" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D=
+"line" width=3D"640" id=3D"0716af99-332a-7cb5-dde1-6ace7fc1ddb6"> <tbody> <=
+tr> <td class=3D"divider-simple" style=3D"padding: 5px 40px; font-size: 14p=
+x; color: rgb(0, 0, 0);" id=3D"0cd3ad64-f6bc-b813-8293-9b204a43f4b9"> <tabl=
+e width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"=
+border-top: 1px solid rgb(51, 51, 51); min-width: 100% !important; width: 1=
+00% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px;=
+ color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> =
+</table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td=
+></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D=
+"display: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <di=
+v class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"=
+center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" styl=
+e=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D=
+"display: block; max-width: 640px; vertical-align: top; width: 100%; backgr=
+ound-color: rgb(186, 0, 1); overflow: hidden;"> <table class=3D"main" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=3D"backg=
+round-color: rgb(186, 0, 1); max-width: 640px; width: 640px; font-family: A=
+rial, Helvetica, sans-serif; display: table; min-width: 100% !important;" d=
+ata-type=3D"button" width=3D"640" id=3D"5148cde5-a368-77a2-ff92-883e4e92827=
+6"> <tbody> <tr align=3D"center"> <td style=3D"padding: 8px 10px; font-size=
+: 14px; color: rgb(0, 0, 0);" class=3D"buttons-full-width" id=3D"2ded78cc-c=
+403-f444-2033-ce98e610ec48"> <!--[if mso]><table align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"620" style=3D"width:620px;=
+"><![endif]--><table class=3D"button" style=3D"" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" align=3D"center"> <tbody> <tr> <!--[if mso]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1=
+75" style=3D"width:175px;"><![endif]--><td style=3D"text-align: center; fon=
+t-family: Cabin, Avenir, sans-serif; white-space: nowrap; background-color:=
+ rgb(57, 1, 246); margin: 0px; width: 175px; padding: 8px 10px; border-radi=
+us: 6px; font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px i=
+nset; color: rgb(0, 0, 0);" class=3D"button" btn-style=3D"btn-shadow" btnbc=
+=3D"#3901f6"> <a style=3D"white-space: nowrap; font-family: Cabin, Avenir, =
+sans-serif; padding: 15px; color: rgb(255, 255, 255); font-size: 14px; text=
+-align: center; text-decoration: none; font-weight: bold;" class=3D"button-=
+1" href=3D"https://go.contactpigeon.com/redir/85639784/72078884/" btn-style=
+=3D"btn-flat" data-default=3D"1" id=3D"e5c6282f-4196-bf15-b7f5-a28be5df3af0=
+">CUMPARA ACUM</a> </td><!--[if mso]></table><![endif]--> </tr> </tbody> </=
+table><!--[if mso]></table><![endif]--> </td> </tr> </tbody> </table> </div=
+><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=
+=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; left: 0=
+px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if ms=
+o]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mo=
+bile-full" style=3D"display: block; max-width: 640px; vertical-align: top; =
+width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"> <!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table clas=
+s=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243); widt=
+h: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; disp=
+lay: table; min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"a43d=
+677e-8ee2-cd7a-09ed-d294ad14044a"> <tbody> <tr> <td class=3D"divider-simple=
+" style=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <tabl=
+e width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"=
+border-top: 1px solid rgb(51, 51, 51); min-width: 100% !important; width: 1=
+00% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px;=
+ color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> =
+</table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td=
+></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D=
+"display: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if=
+ mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D=
+"mobile-full" style=3D"display: block; max-width: 640px; width: 100%; backg=
+round-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table ali=
+gn=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640=
+" style=3D"width:640px;"><tr><td><![endif]--> <table class=3D"main" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; backgro=
+und-color: rgb(255, 255, 255); width: 640px; max-width: 640px; font-family:=
+ Arial, Helvetica, sans-serif; display: table; min-width: 100% !important;"=
+ data-type=3D"image" id=3D"d60fcb9f-559c-21de-0ede-279ea6637189" width=3D"6=
+40"> <tbody> <tr> <td align=3D"center" style=3D"padding: 0px; width: 640px;=
+ font-size: 14px;" class=3D"image onebefore"> <a class=3D"link" href=3D"htt=
+ps://go.contactpigeon.com/redir/85639784/72078888/"> <img border=3D"0" styl=
+e=3D"box-sizing: border-box; display: block; max-width: 640px; width: 100%;=
+" alt=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files=
+/2510/1741166360_14823.png" putwidth=3D"640" haspadding=3D"0" realdimension=
+s=3D"1000x667" tabindex=3D"0" id=3D"4a553a6d-b5b5-9a83-e598-bab938dbf4b6" w=
+idth=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td></tr></t=
+able><![endif]--></div><!--[if mso]></td></tr></table><![endif]--></div> </=
+div> </div><div class=3D"lyrow" style=3D"display: block; position: relative=
+; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row=
+ clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif=
+]--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; =
+vertical-align: top; width: 100%; background-color: rgb(243, 243, 243); ove=
+rflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><!=
+[endif]--><table class=3D"main" style=3D"border: 0px; background-color: rgb=
+(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvet=
+ica, sans-serif; display: table; min-width: 100% !important;" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" w=
+idth=3D"640" id=3D"e660829a-270b-c350-35b1-f27ea75be3ed"> <tbody> <tr> <td =
+class=3D"divider-simple" style=3D"padding: 5px 40px; font-size: 14px; color=
+: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 10=
+0% !important; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" st=
+yle=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table=
+> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> =
+</div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div c=
+lass=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; lef=
+t: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[i=
+f mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(186, 0, 1); overflow: hidden;"> <t=
+able class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" style=3D"background-color: rgb(186, 0, 1); max-width: 640px; wi=
+dth: 640px; font-family: Arial, Helvetica, sans-serif; display: table; min-=
+width: 100% !important;" data-type=3D"button" width=3D"640" id=3D"bf3584f3-=
+ee26-8d3e-5f44-dd20643da327"> <tbody> <tr align=3D"center"> <td style=3D"pa=
+dding: 8px 10px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"buttons-fu=
+ll-width" id=3D"5bb338f8-bed2-871b-ca55-4ec4e25d69d6"> <!--[if mso]><table =
+align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+620" style=3D"width:620px;"><![endif]--><table class=3D"button" style=3D"" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"> <tbody> =
+<tr> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" width=3D"330" style=3D"width:330px;"><![endif]--><td style=
+=3D"text-align: center; font-family: Cabin, Avenir, sans-serif; white-space=
+: nowrap; background-color: rgb(57, 1, 246); margin: 0px; width: 175px; pad=
+ding: 8px 10px; border-radius: 6px; font-size: 14px; box-shadow: rgba(0, 0,=
+ 0, 0.2) 0px -2px 0px 0px inset; color: rgb(0, 0, 0);" class=3D"button" btn=
+-style=3D"btn-shadow" btnbc=3D"#3901f6" id=3D"630141c1-c390-9c10-4333-5704e=
+765a5d1"> <a style=3D"white-space: nowrap; font-family: Cabin, Avenir, sans=
+-serif; padding: 15px; color: rgb(255, 255, 255); font-size: 14px; text-ali=
+gn: center; text-decoration: none; font-weight: bold;" class=3D"button-1" h=
+ref=3D"https://go.contactpigeon.com/redir/85639784/72078888/" btn-style=3D"=
+btn-flat" data-default=3D"1">DESCOPERA SELECTIA PRODUSE BARBATI</a> </td><!=
+--[if mso]></table><![endif]--> </tr> </tbody> </table><!--[if mso]></table=
+><![endif]--> </td> </tr> </tbody> </table> </div><!--[if mso]></td></tr></=
+table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display=
+: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=
+=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wi=
+dth:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"displa=
+y: block; max-width: 640px; vertical-align: top; width: 100%; background-co=
+lor: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"c=
+enter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=
+=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border=
+: 0px; background-color: rgb(243, 243, 243); width: 640px; max-width: 640px=
+; font-family: Arial, Helvetica, sans-serif; display: table; min-width: 100=
+% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"ce=
+nter" data-type=3D"line" width=3D"640" id=3D"611c59d4-400d-40a9-9470-cc8f00=
+e9ca78"> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 5px 40=
+px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(=
+51, 51, 51); min-width: 100% !important; width: 100% !important;"> <tbody> =
+<tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </=
+td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td>=
+</tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![endif]-->=
+</div> </div> </div><div class=3D"lyrow products" data-code=3D"_AC_PROD_" s=
+tyle=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfix">=
+<!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div c=
+lass=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-al=
+ign: top; width: 100%; background-color: rgb(186, 0, 1); overflow: hidden;"=
+><table class=3D"main" style=3D"border-collapse: collapse; text-align: cent=
+er; background: rgb(186, 0, 1); width: 640px; max-width: 640px; display: ta=
+ble; font-family: Arial, Helvetica, sans-serif;" data-type=3D"productgrid" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" id=3D"d47=
+32da0-1364-1ef8-6fa2-a51e293fc4b5" width=3D"640"><tbody><tr class=3D"lyrow =
+displaytable"><td style=3D"width: 640px; font-size: 14px;" width=3D"640"> <=
+!--[if mso]><td style=3D"width:310px; vertical-align: top;"><![endif]--><di=
+v class=3D"mobile-full givemeid" style=3D"display: inline-block; vertical-a=
+lign: top; width: 310px; max-width: 310px; background-color: rgb(255, 255, =
+255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full" sty=
+le=3D"display: block; max-width: 310px; vertical-align: top; width: 100%; m=
+argin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidden;"><=
+!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"310" style=3D"width:310px;"><tr><![endif]--><!--[if mso]=
+><td width=3D"310" valign=3D"top" style=3D"width:310px;"><![endif]--><table=
+ class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"c=
+enter" data-type=3D"singleproduct" style=3D"overflow: hidden; background-co=
+lor: rgb(255, 255, 255); width: 310px; font-family: Arial, Helvetica, sans-=
+serif; display: table;" id=3D"0bf8d7cd-7f0b-44ae-086b-8527b9800b37" width=
+=3D"310" data-templid=3D"460" itemusedid=3D"1996154465"><tbody><tr><td alig=
+n=3D"center" class=3D"foredit" style=3D"width: 310px; font-size: 14px;"><!-=
+- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><table cl=
+ass=3D"layout_element clickement" style=3D"overflow: hidden; padding-bottom=
+: 21px; width: 100%; margin: 0 auto; background-color: #ba0001; border: 0px=
+ solid #ba0001;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"center=
+"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=
+=3D"clickement title_element" style=3D"z-index: 99999999; width: 100%; heig=
+ht: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"t=
+ext-align: center; padding: 0px 9px; font-size: 14px;" align=3D"center"><sp=
+an style=3D"font-size: 14px; font-family: Arial; color: white; font-weight:=
+ bold; font-style: normal;"><a style=3D"color: white; width: 100%; padding:=
+ 5px 5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redi=
+r/85639784/72078877/"> adidas Tricou barbati Dame Knockout Champ</a></span>=
+</td></tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"width=
+: 310px; font-size: 14px;" width=3D"310"><table class=3D"clickement image_e=
+lement" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" align=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px; font=
+-size: 14px;" align=3D"center" valign=3D"middle"><a href=3D"https://go.cont=
+actpigeon.com/redir/85639784/72078877/" target=3D"_blank" rel=3D"noopener">=
+<img style=3D"width: 85%; border: 10px solid rgb(57, 1, 246); max-width: 26=
+3.8px;" src=3D"https://www.intersport.ro/Uploads/resources/289611/4f76d19f-=
+91ce-4-affiliate.jpg?lm=3D14538412" alt=3D"adidas Tricou barbati Dame Knock=
+out Champ" width=3D"263.8" data-originalsrc=3D"https://www.intersport.ro/Up=
+loads/resources/289611/4f76d19f-91ce-4-affiliate.jpg?lm=3D14538412" id=3D"7=
+f842d64-08c1-96d9-a5de-b459e9914d2c"></a></td></tr></tbody></table></td></t=
+r><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width: 310px; f=
+ont-size: 14px;" width=3D"310"><table class=3D"clickement price_element" st=
+yle=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center; font-=
+size: 14px; font-family: Arial; color: white; font-weight: normal; font-sty=
+le: normal; width: 640px;" align=3D"center"><span style=3D"font-size: 14px;=
+ font-family: Arial; color: white; font-weight: normal; font-style: normal;=
+"><span style=3D"text-decoration: line-through;">189.99</span><br><span sty=
+le=3D"text-decoration: line-through;">113.99</span><br>79.79 LEI cu EXTRA30=
+</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=
+=3D"width: 310px; font-size: 14px;" width=3D"310"><!-- [if mso]><table alig=
+n=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text=
+-align: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button=
+" style=3D"background: url() center; background-repeat: no-repeat; width: 1=
+02px; white-space: nowrap; margin: 0 auto; background-color: #3901f6; borde=
+r-radius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; f=
+ont-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter=
+-spacing: normal; line-height: 100%; text-align: center; font-weight: norma=
+l; color: white; font-style: normal; text-decoration: none; padding: 7px; d=
+isplay: inline-block; height: 100%;" title=3D"adidas Tricou barbati Dame Kn=
+ockout Champ" href=3D"https://go.contactpigeon.com/redir/85639784/72078877/=
+" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table>=
+<![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]-=
+-></td></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></t=
+d></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></div></d=
+iv></div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D"width:310=
+px; vertical-align: top;"><![endif]--><div class=3D"mobile-full givemeid" s=
+tyle=3D"display: inline-block; vertical-align: top; width: 310px; max-width=
+: 310px; background-color: rgb(255, 255, 255); overflow: hidden;"> <div cla=
+ss=3D"row"><div class=3D"mobile-full" style=3D"display: block; max-width: 3=
+10px; vertical-align: top; width: 100%; margin: 0px auto; background-color:=
+ rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"310" style=3D"w=
+idth:310px;"><tr><![endif]--><!--[if mso]><td width=3D"310" valign=3D"top" =
+style=3D"width:310px;"><![endif]--><table class=3D"main" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct"=
+ style=3D"overflow: hidden; background-color: rgb(255, 255, 255); width: 31=
+0px; font-family: Arial, Helvetica, sans-serif; display: table;" id=3D"b333=
+2029-735d-dcb2-f176-eb707ee20ffc" width=3D"310" data-templid=3D"460" itemus=
+edid=3D"1777919661"><tbody><tr><td align=3D"center" class=3D"foredit" style=
+=3D"width: 310px; font-size: 14px;"><!-- [if mso]><table align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"wid=
+th:100%;"><tr><td><![endif]--><table class=3D"layout_element clickement" st=
+yle=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto;=
+ background-color: #ba0001; border: 0px solid #ba0001;" border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=
+=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 310px; font-s=
+ize: 14px;" width=3D"310"><table class=3D"clickement title_element" style=
+=3D"z-index: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;=
+"><td class=3D"cpTextContent" style=3D"text-align: center; padding: 0px 9px=
+; font-size: 14px;" align=3D"center"><span style=3D"font-size: 14px; font-f=
+amily: Arial; color: white; font-weight: bold; font-style: normal;"><a styl=
+e=3D"color: white; width: 100%; padding: 5px 5px; text-decoration: none;" h=
+ref=3D"https://go.contactpigeon.com/redir/85639784/72078879/"> adidas Hanor=
+ac barbati DAME 8 INN HDY</a><br><br></span></td></tr></tbody></table></td>=
+</tr><tr align=3D"center"><td style=3D"width: 310px; font-size: 14px;" widt=
+h=3D"310"><table class=3D"clickement image_element" style=3D"border: 0;" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr>=
+<td style=3D"width: 85%; height: 170px; font-size: 14px;" align=3D"center" =
+valign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/85639784/72=
+078879/" target=3D"_blank" rel=3D"noopener"><img id=3D"eec07322-3edc-7bb9-9=
+ea6-64f332f3b287" style=3D"width: 85%; border: 10px solid rgb(57, 1, 246); =
+max-width: 263.8px;" src=3D"https://www.intersport.ro/Uploads/resources/293=
+075/adidas-affiliate.jpg?lm=3D12075301" alt=3D"adidas Hanorac barbati DAME =
+8 INN HDY" width=3D"263.8" data-originalsrc=3D"https://www.intersport.ro/Up=
+loads/resources/293075/adidas-affiliate.jpg?lm=3D12075301"></a></td></tr></=
+tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"center"><td st=
+yle=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D"clicke=
+ment price_element" style=3D"width: 100%; height: 60px;" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"tex=
+t-align: center; font-size: 14px; font-family: Arial; color: white; font-we=
+ight: normal; font-style: normal; width: 640px;" align=3D"center"><span sty=
+le=3D"font-size: 14px; font-family: Arial; color: white; font-weight: norma=
+l; font-style: normal;"><span style=3D"text-decoration: line-through;">449.=
+99</span><br><span style=3D"text-decoration: line-through;">269.99</span><b=
+r>188.99 LEI cu EXTRA30</span></td></tr></tbody></table></td></tr><tr align=
+=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><!--=
+ [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif]--><table cl=
+ass=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"ce=
+nter"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]-=
+-><td class=3D"button" style=3D"background: url() center; background-repeat=
+: no-repeat; width: 102px; white-space: nowrap; margin: 0 auto; background-=
+color: #3901f6; border-radius: 5px; padding: 8px 10px; text-align: center; =
+font-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D"white-=
+space: nowrap; letter-spacing: normal; line-height: 100%; text-align: cente=
+r; font-weight: normal; color: white; font-style: normal; text-decoration: =
+none; padding: 7px; display: inline-block; height: 100%;" title=3D"adidas H=
+anorac barbati DAME 8 INN HDY" href=3D"https://go.contactpigeon.com/redir/8=
+5639784/72078879/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--=
+[if mso]></table><![endif]--></tr></tbody></table><!-- [if mso]></td></tr><=
+/table><![endif]--></td></tr></tbody></table><!-- [if mso]></td></tr></tabl=
+e><![endif]--></td></tr></tbody></table><!--[if mso]></td></tr></table><![e=
+ndif]--></div></div></div><!--[if mso]></td><![endif]--></td> </tr><tr clas=
+s=3D"lyrow displaytable"><td width=3D"640" style=3D"width: 640px; font-size=
+: 14px;"> <!--[if mso]><td style=3D"width:310px; vertical-align: top;"><![e=
+ndif]--><div class=3D"mobile-full givemeid" style=3D"display: inline-block;=
+ vertical-align: top; width: 310px; max-width: 310px; background-color: rgb=
+(255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobil=
+e-full" style=3D"display: block; max-width: 310px; vertical-align: top; wid=
+th: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); overflow:=
+ hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"310" style=3D"width:310px;"><tr><![endif]--><=
+!--[if mso]><td width=3D"310" valign=3D"top" style=3D"width:310px;"><![endi=
+f]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center" data-type=3D"singleproduct" style=3D"overflow: hidden; ba=
+ckground-color: rgb(255, 255, 255); width: 310px; font-family: Arial, Helve=
+tica, sans-serif; display: table;" id=3D"7aca4b64-5948-b67f-e1ec-bbb93da093=
+f4" width=3D"310" data-templid=3D"460" itemusedid=3D"1881296309"><tbody><tr=
+><td align=3D"center" class=3D"foredit" style=3D"width: 310px; font-size: 1=
+4px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]-->=
+<table class=3D"layout_element clickement" style=3D"overflow: hidden; paddi=
+ng-bottom: 21px; width: 100%; margin: 0 auto; background-color: #ba0001; bo=
+rder: 0px solid #ba0001;" border=3D"0" width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=
+=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><tab=
+le class=3D"clickement title_element" style=3D"z-index: 99999999; width: 10=
+0%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" =
+style=3D"text-align: center; padding: 0px 9px; font-size: 14px;" align=3D"c=
+enter"><span style=3D"font-size: 14px; font-family: Arial; color: white; fo=
+nt-weight: bold; font-style: normal;"><a style=3D"color: white; width: 100%=
+; padding: 5px 5px; text-decoration: none;" href=3D"https://go.contactpigeo=
+n.com/redir/85639784/72078889/"> ENERGETICS Pantaloni scurti barbati Osmo <=
+/a></span></td></tr></tbody></table></td></tr><tr align=3D"center"><td styl=
+e=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D"clickeme=
+nt image_element" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85%; height: 1=
+70px; font-size: 14px;" align=3D"center" valign=3D"middle"><a href=3D"https=
+://go.contactpigeon.com/redir/85639784/72078889/" target=3D"_blank" rel=3D"=
+noopener"><img style=3D"width: 85%; border: 10px solid rgb(57, 1, 246); max=
+-width: 263.8px;" src=3D"https://www.intersport.ro/Uploads/resources/294450=
+/energetics-affiliate.jpg?lm=3D19820857" alt=3D"ENERGETICS Pantaloni scurti=
+ barbati Osmo " width=3D"263.8" data-originalsrc=3D"https://www.intersport.=
+ro/Uploads/resources/294450/energetics-affiliate.jpg?lm=3D19820857" id=3D"3=
+e0ccd6c-f19d-a7fc-9ac6-5e95aea9d54b"></a></td></tr></tbody></table></td></t=
+r><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width: 310px; f=
+ont-size: 14px;" width=3D"310"><table class=3D"clickement price_element" st=
+yle=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center; font-=
+size: 14px; font-family: Arial; color: white; font-weight: normal; font-sty=
+le: normal; width: 640px;" align=3D"center"><span style=3D"font-size: 14px;=
+ font-family: Arial; color: white; font-weight: normal; font-style: normal;=
+"><span style=3D"text-decoration: line-through;">149.99</span><br><span sty=
+le=3D"text-decoration: line-through;">74.99</span><br>52.49 LEI cu EXTRA30<=
+/span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=3D=
+"width: 310px; font-size: 14px;" width=3D"310"><!-- [if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-=
+align: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button=
+" style=3D"background: url() center; background-repeat: no-repeat; width: 1=
+02px; white-space: nowrap; margin: 0 auto; background-color: #3901f6; borde=
+r-radius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; f=
+ont-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter=
+-spacing: normal; line-height: 100%; text-align: center; font-weight: norma=
+l; color: white; font-style: normal; text-decoration: none; padding: 7px; d=
+isplay: inline-block; height: 100%;" title=3D"ENERGETICS Pantaloni scurti b=
+arbati Osmo " href=3D"https://go.contactpigeon.com/redir/85639784/72078889/=
+" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table>=
+<![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]-=
+-></td></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></t=
+d></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></div></d=
+iv></div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D"width:310=
+px; vertical-align: top;"><![endif]--><div class=3D"mobile-full givemeid" s=
+tyle=3D"display: inline-block; vertical-align: top; width: 310px; max-width=
+: 310px; background-color: rgb(255, 255, 255); overflow: hidden;"> <div cla=
+ss=3D"row"><div class=3D"mobile-full" style=3D"display: block; max-width: 3=
+10px; vertical-align: top; width: 100%; margin: 0px auto; background-color:=
+ rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"310" style=3D"w=
+idth:310px;"><tr><![endif]--><!--[if mso]><td width=3D"310" valign=3D"top" =
+style=3D"width:310px;"><![endif]--><table class=3D"main" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct"=
+ style=3D"overflow: hidden; background-color: rgb(255, 255, 255); width: 31=
+0px; font-family: Arial, Helvetica, sans-serif; display: table;" id=3D"1cd8=
+a53f-cc98-714c-6bdd-1da02a8a7677" width=3D"310" data-templid=3D"460" itemus=
+edid=3D"1881296585"><tbody><tr><td align=3D"center" class=3D"foredit" style=
+=3D"width: 310px; font-size: 14px;"><!-- [if mso]><table align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"wid=
+th:100%;"><tr><td><![endif]--><table class=3D"layout_element clickement" st=
+yle=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto;=
+ background-color: #ba0001; border: 0px solid #ba0001;" border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=
+=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 310px; font-s=
+ize: 14px;" width=3D"310"><table class=3D"clickement title_element" style=
+=3D"z-index: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;=
+"><td class=3D"cpTextContent" style=3D"text-align: center; padding: 0px 9px=
+; font-size: 14px;" align=3D"center"><span style=3D"font-size: 14px; font-f=
+amily: Arial; color: white; font-weight: bold; font-style: normal;"><a styl=
+e=3D"color: white; width: 100%; padding: 5px 5px; text-decoration: none;" h=
+ref=3D"https://go.contactpigeon.com/redir/85639784/72078890/"> ENERGETICS B=
+ermude barbati Ancel VI</a></span></td></tr></tbody></table></td></tr><tr a=
+lign=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"310">=
+<table class=3D"clickement image_element" style=3D"border: 0;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=
+=3D"width: 85%; height: 170px; font-size: 14px;" align=3D"center" valign=3D=
+"middle"><a href=3D"https://go.contactpigeon.com/redir/85639784/72078890/" =
+target=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%; border: 10px s=
+olid rgb(57, 1, 246); max-width: 263.8px;" src=3D"https://www.intersport.ro=
+/Uploads/resources/330588/bermude-ancel-vi-m-affiliate.jpg?lm=3D16598709" a=
+lt=3D"ENERGETICS Bermude barbati Ancel VI" width=3D"263.8" data-originalsrc=
+=3D"https://www.intersport.ro/Uploads/resources/330588/bermude-ancel-vi-m-a=
+ffiliate.jpg?lm=3D16598709" id=3D"7ca1e4ad-82b7-b390-d90a-252689476d79"></a=
+></td></tr></tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"c=
+enter"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table cl=
+ass=3D"clickement price_element" style=3D"width: 100%; height: 60px;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td=
+ style=3D"text-align: center; font-size: 14px; font-family: Arial; color: w=
+hite; font-weight: normal; font-style: normal; width: 640px;" align=3D"cent=
+er"><span style=3D"font-size: 14px; font-family: Arial; color: white; font-=
+weight: normal; font-style: normal;"><span style=3D"text-decoration: line-t=
+hrough;">169.99</span><br><span style=3D"text-decoration: line-through;">84=
+.99</span><br>59.49 LEI cu EXTRA30</span></td></tr></tbody></table></td></t=
+r><tr align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=
+=3D"310"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif=
+]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102=
+px;"><![endif]--><td class=3D"button" style=3D"background: url() center; ba=
+ckground-repeat: no-repeat; width: 102px; white-space: nowrap; margin: 0 au=
+to; background-color: #3901f6; border-radius: 5px; padding: 8px 10px; text-=
+align: center; font-family: Arial; font-size: 16px;"><a class=3D"cpButton" =
+style=3D"white-space: nowrap; letter-spacing: normal; line-height: 100%; te=
+xt-align: center; font-weight: normal; color: white; font-style: normal; te=
+xt-decoration: none; padding: 7px; display: inline-block; height: 100%;" ti=
+tle=3D"ENERGETICS Bermude barbati Ancel VI" href=3D"https://go.contactpigeo=
+n.com/redir/85639784/72078890/" target=3D"_blank" rel=3D"noopener">CUMPARA =
+</a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if mso=
+]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]></t=
+d></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td></tr=
+></table><![endif]--></div></div></div><!--[if mso]></td><![endif]--></td> =
+</tr></tbody></table></div><!--[if mso]></td></tr></table><![endif]--></div=
+> </div> </div><div class=3D"lyrow" style=3D"display: block; position: rela=
+tive; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D=
+"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![e=
+ndif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640=
+px; vertical-align: top; width: 100%; background-color: rgb(243, 243, 243);=
+ overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><t=
+d><![endif]--><table class=3D"main" style=3D"border: 0px; background-color:=
+ rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial, He=
+lvetica, sans-serif; display: table; min-width: 100% !important;" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line"=
+ width=3D"640" id=3D"a2283595-0f0c-2a3f-566f-28fc21a390e5"> <tbody> <tr> <t=
+d class=3D"divider-simple" style=3D"padding: 3px 40px; font-size: 14px; col=
+or: rgb(0, 0, 0);" id=3D"426814e1-400f-b5a2-fefc-b4192a9935d4"> <table widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border=
+-top: 1px solid rgb(51, 51, 51); min-width: 100% !important; width: 100% !i=
+mportant;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color=
+: rgb(0, 0, 0);" id=3D"5e37eb3a-09c4-fcb3-443b-88efee835ae5"> </td> </tr> <=
+/tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></tabl=
+e><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </di=
+v> </div><div class=3D"lyrow" style=3D"display: block; position: relative; =
+opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row c=
+learfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-=
+-> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; ve=
+rtical-align: top; width: 100%; background-color: rgb(243, 243, 243); overf=
+low: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![e=
+ndif]--><table class=3D"main" style=3D"border: 0px; background-color: rgb(2=
+43, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetic=
+a, sans-serif; display: table; min-width: 100% !important;" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=
+=3D"640" id=3D"3b815a72-8767-d402-2e9a-07b930fb23c8"> <tbody> <tr> <td clas=
+s=3D"divider-simple" style=3D"padding: 5px 40px 0px; font-size: 14px; color=
+: rgb(0, 0, 0);" id=3D"5fa18b50-ce37-b568-24d6-c3238dc67cff"> <table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-=
+top: 0px solid rgba(0, 0, 0, 0); min-width: 100% !important; width: 100% !i=
+mportant;" id=3D"9a37f114-eee5-e2d4-ff0b-54493fa63779"> <tbody> <tr> <td wi=
+dth=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);" id=3D"bfc92f97=
+-ea0b-79e1-a9e4-df2ecd51b3c0"> </td> </tr> </tbody> </table> </td> </tr> </=
+tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if ms=
+o]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" s=
+tyle=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfix">=
+<!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div c=
+lass=3D"mobile-full" style=3D"display: block; max-width: 640px; width: 100%=
+; background-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><ta=
+ble align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <table class=3D"main" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; =
+background-color: rgb(255, 255, 255); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" data-type=3D"image" id=3D"a2644acd-ea74-89f8-c29f-34a4eea56f4b" wid=
+th=3D"640"> <tbody> <tr> <td align=3D"center" style=3D"padding: 0px; width:=
+ 640px; font-size: 14px;" class=3D"image onebefore"> <a class=3D"link" href=
+=3D"https://go.contactpigeon.com/redir/85639784/72078892/"> <img border=3D"=
+0" style=3D"box-sizing: border-box; display: block; max-width: 640px; width=
+: 100%;" alt=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/uploa=
+d/files/2510/1741166302_40430.png" putwidth=3D"640" haspadding=3D"0" realdi=
+mensions=3D"1000x750" tabindex=3D"0" id=3D"64752cae-a91e-bd99-4b89-320515b8=
+2a6c" width=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td><=
+/tr></table><![endif]--></div><!--[if mso]></td></tr></table><![endif]--></=
+div> </div> </div><div class=3D"lyrow" style=3D"display: block; position: r=
+elative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=
+=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><=
+![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: =
+640px; vertical-align: top; width: 100%; background-color: rgb(243, 243, 24=
+3); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr=
+><td><![endif]--><table class=3D"main" style=3D"border: 0px; background-col=
+or: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial,=
+ Helvetica, sans-serif; display: table; min-width: 100% !important;" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"li=
+ne" width=3D"640" id=3D"25bd9599-fcf5-aca0-5187-55607ad45f9a"> <tbody> <tr>=
+ <td class=3D"divider-simple" style=3D"padding: 3px 40px; font-size: 14px; =
+color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-wid=
+th: 100% !important; width: 100% !important;"> <tbody> <tr> <td width=3D"10=
+0%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> <=
+/table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endi=
+f]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div>=
+<div class=3D"lyrow" style=3D"display: block; position: relative; opacity: =
+1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix">=
+<!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div c=
+lass=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-al=
+ign: top; width: 100%; background-color: rgb(186, 0, 1); overflow: hidden;"=
+> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" al=
+ign=3D"center" style=3D"background-color: rgb(186, 0, 1); max-width: 640px;=
+ width: 640px; font-family: Arial, Helvetica, sans-serif; display: table; m=
+in-width: 100% !important;" data-type=3D"button" width=3D"640" id=3D"63607f=
+d4-2477-60d8-b83c-00e70dc5a1d4"> <tbody> <tr align=3D"center"> <td style=3D=
+"padding: 8px 10px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"buttons=
+-full-width" id=3D"d06ce672-0b83-1012-2640-86f52673382d"> <!--[if mso]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"620" style=3D"width:620px;"><![endif]--><table class=3D"button" style=
+=3D"" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"> <t=
+body> <tr> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"310" style=3D"width:310px;"><![endif]--><td =
+style=3D"text-align: center; font-family: Cabin, Avenir, sans-serif; white-=
+space: nowrap; background-color: rgb(57, 1, 246); margin: 0px; width: 175px=
+; padding: 8px 10px; border-radius: 6px; font-size: 14px; box-shadow: rgba(=
+0, 0, 0, 0.2) 0px -2px 0px 0px inset; color: rgb(0, 0, 0);" class=3D"button=
+" btn-style=3D"btn-shadow" btnbc=3D"rgb(57, 1, 246)"> <a style=3D"white-spa=
+ce: nowrap; font-family: Cabin, Avenir, sans-serif; padding: 15px; color: r=
+gb(255, 255, 255); font-size: 14px; text-align: center; text-decoration: no=
+ne; font-weight: bold;" class=3D"button-1" href=3D"https://go.contactpigeon=
+.com/redir/85639784/72078892/" btn-style=3D"btn-flat" data-default=3D"1">DE=
+SCOPERA SELECTIA PRODUSE FEMEI</a> </td><!--[if mso]></table><![endif]--> <=
+/tr> </tbody> </table><!--[if mso]></table><![endif]--> </td> </tr> </tbody=
+> </table> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> <=
+/div><div class=3D"lyrow" style=3D"display: block; position: relative; opac=
+ity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clear=
+fix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <=
+div class=3D"mobile-full" style=3D"display: block; max-width: 640px; vertic=
+al-align: top; width: 100%; background-color: rgb(243, 243, 243); overflow:=
+ hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif=
+]--><table class=3D"main" style=3D"border: 0px; background-color: rgb(243, =
+243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica, s=
+ans-serif; display: table; min-width: 100% !important;" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"=
+640" id=3D"3def152f-7cfd-366e-2364-a846d3ae0926"> <tbody> <tr> <td class=3D=
+"divider-simple" style=3D"padding: 3px 40px; font-size: 14px; color: rgb(0,=
+ 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 100% !imp=
+ortant; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"=
+font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td>=
+ </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><=
+!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D=
+"lyrow" style=3D"display: block; position: relative; opacity: 1; left: 0px;=
+ top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]>=
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobil=
+e-full" style=3D"display: block; max-width: 640px; vertical-align: top; wid=
+th: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if=
+ mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table class=
+=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243); width=
+: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; displ=
+ay: table; min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"26ece=
+bb8-8c36-355e-b188-534ed0c0cef4"> <tbody> <tr> <td class=3D"divider-simple"=
+ style=3D"padding: 0px 40px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"7=
+6affdee-b7a6-9c18-0039-5d2c54ea3edf"> <table width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgba(0, 0,=
+ 0, 0); min-width: 100% !important; width: 100% !important;"> <tbody> <tr> =
+<td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);" id=3D"b9=
+713fca-998e-fe21-b395-accc4d0d24d6"> </td> </tr> </tbody> </table> </td> </=
+tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--=
+[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"ly=
+row products" data-code=3D"_AC_PROD_" style=3D"display: block; position: re=
+lative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=
+=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><=
+![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: =
+640px; vertical-align: top; width: 100%; background-color: rgb(186, 0, 1); =
+overflow: hidden;"><table class=3D"main" style=3D"border-collapse: collapse=
+; text-align: center; background: rgb(186, 0, 1); width: 640px; max-width: =
+640px; display: table; font-family: Arial, Helvetica, sans-serif;" data-typ=
+e=3D"productgrid" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D=
+"center" width=3D"640" id=3D"b23403e6-e9ff-679f-d0fd-f63ac95148b3"><tbody><=
+tr class=3D"lyrow displaytable"><td style=3D"width: 640px; font-size: 14px;=
+" width=3D"640"> <!--[if mso]><td style=3D"width:310px; vertical-align: top=
+;"><![endif]--><div class=3D"mobile-full givemeid" style=3D"display: inline=
+-block; vertical-align: top; width: 310px; max-width: 310px; background-col=
+or: rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=
+=3D"mobile-full" style=3D"display: block; max-width: 310px; vertical-align:=
+ top; width: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); =
+overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" width=3D"310" style=3D"width:310px;"><tr><![e=
+ndif]--><!--[if mso]><td width=3D"310" valign=3D"top" style=3D"width:310px;=
+"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"overflow: h=
+idden; background-color: rgb(255, 255, 255); width: 310px; font-family: Ari=
+al, Helvetica, sans-serif; display: table;" width=3D"310" data-templid=3D"4=
+60" itemusedid=3D"1996154043" id=3D"543ab68b-3645-a1c6-89ac-84a7707028b6"><=
+tbody><tr><td align=3D"center" class=3D"foredit" style=3D"width: 310px; fon=
+t-size: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![=
+endif]--><table class=3D"layout_element clickement" style=3D"overflow: hidd=
+en; padding-bottom: 21px; width: 100%; margin: 0 auto; background-color: #b=
+a0001; border: 0px solid #ba0001;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><=
+tr align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"3=
+10"><table class=3D"clickement title_element" style=3D"z-index: 99999999; w=
+idth: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextCon=
+tent" style=3D"text-align: center; padding: 0px 9px; font-size: 14px;" alig=
+n=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color: whi=
+te; font-weight: bold; font-style: normal;"><a style=3D"color: white; width=
+: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https://go.contac=
+tpigeon.com/redir/85639784/72078882/"> adidas Tricou dama Terrex Parley Agr=
+avic TR Pro</a></span></td></tr></tbody></table></td></tr><tr align=3D"cent=
+er"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=
+=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85=
+%; height: 170px; font-size: 14px;" align=3D"center" valign=3D"middle"><a h=
+ref=3D"https://go.contactpigeon.com/redir/85639784/72078882/" target=3D"_bl=
+ank" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid rgb(57, =
+1, 246); max-width: 263.8px;" src=3D"https://www.intersport.ro/Uploads/reso=
+urces/252226/f4b525f0-01e1-4-affiliate.jpg?lm=3D12616859" alt=3D"adidas Tri=
+cou dama Terrex Parley Agravic TR Pro" width=3D"263.8" data-originalsrc=3D"=
+https://www.intersport.ro/Uploads/resources/252226/f4b525f0-01e1-4-affiliat=
+e.jpg?lm=3D12616859" id=3D"a0f5fffe-1fc5-dd3f-fc94-7d676aba75ae"></a></td><=
+/tr></tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"center">=
+<td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D"=
+clickement price_element" style=3D"width: 100%; height: 60px;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=
+=3D"text-align: center; font-size: 14px; font-family: Arial; color: white; =
+font-weight: normal; font-style: normal; width: 640px;" align=3D"center"><s=
+pan style=3D"font-size: 14px; font-family: Arial; color: white; font-weight=
+: normal; font-style: normal;"><span style=3D"text-decoration: line-through=
+;">289.99</span><br><span style=3D"text-decoration: line-through;">173.26</=
+span><br>121.28 LEI cu EXTRA30</span></td></tr></tbody></table></td></tr><t=
+r align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"31=
+0"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif]--><t=
+able class=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![=
+endif]--><td class=3D"button" style=3D"background: url() center; background=
+-repeat: no-repeat; width: 102px; white-space: nowrap; margin: 0 auto; back=
+ground-color: #3901f6; border-radius: 5px; padding: 8px 10px; text-align: c=
+enter; font-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D=
+"white-space: nowrap; letter-spacing: normal; line-height: 100%; text-align=
+: center; font-weight: normal; color: white; font-style: normal; text-decor=
+ation: none; padding: 7px; display: inline-block; height: 100%;" title=3D"a=
+didas Tricou dama Terrex Parley Agravic TR Pro" href=3D"https://go.contactp=
+igeon.com/redir/85639784/72078882/" target=3D"_blank" rel=3D"noopener">CUMP=
+ARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if=
+ mso]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]=
+></td></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td>=
+</tr></table><![endif]--></div></div></div><!--[if mso]></td><![endif]--> <=
+!--[if mso]><td style=3D"width:310px; vertical-align: top;"><![endif]--><di=
+v class=3D"mobile-full givemeid" style=3D"display: inline-block; vertical-a=
+lign: top; width: 310px; max-width: 310px; background-color: rgb(255, 255, =
+255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full" sty=
+le=3D"display: block; max-width: 310px; vertical-align: top; width: 100%; m=
+argin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidden;"><=
+!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"310" style=3D"width:310px;"><tr><![endif]--><!--[if mso]=
+><td width=3D"310" valign=3D"top" style=3D"width:310px;"><![endif]--><table=
+ class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"c=
+enter" data-type=3D"singleproduct" style=3D"overflow: hidden; background-co=
+lor: rgb(255, 255, 255); width: 310px; font-family: Arial, Helvetica, sans-=
+serif; display: table;" width=3D"310" data-templid=3D"460" itemusedid=3D"17=
+83754607" id=3D"e6a85dee-dde5-9335-a6aa-133f7c14aa5f"><tbody><tr><td align=
+=3D"center" class=3D"foredit" style=3D"width: 310px; font-size: 14px;"><!--=
+ [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><table cla=
+ss=3D"layout_element clickement" style=3D"overflow: hidden; padding-bottom:=
+ 21px; width: 100%; margin: 0 auto; background-color: #ba0001; border: 0px =
+solid #ba0001;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"center=
+"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=
+=3D"clickement title_element" style=3D"z-index: 99999999; width: 100%; heig=
+ht: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"t=
+ext-align: center; padding: 0px 9px; font-size: 14px;" align=3D"center"><sp=
+an style=3D"font-size: 14px; font-family: Arial; color: white; font-weight:=
+ bold; font-style: normal;"><a style=3D"color: white; width: 100%; padding:=
+ 5px 5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redi=
+r/85639784/72078896/"> Bustiera dama Adidas You for You (suport scazut) </a=
+></span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=
+=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D"clickemen=
+t image_element" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85%; height: 17=
+0px; font-size: 14px;" align=3D"center" valign=3D"middle"><a href=3D"https:=
+//go.contactpigeon.com/redir/85639784/72078896/" target=3D"_blank" rel=3D"n=
+oopener"><img style=3D"width: 85%; border: 10px solid rgb(57, 1, 246); max-=
+width: 263.8px;" src=3D"https://www.intersport.ro/Uploads/resources/299539/=
+adidas-affiliate.jpg?lm=3D12847560" alt=3D"Bustiera dama Adidas You for You=
+ (suport scazut) " width=3D"263.8" data-originalsrc=3D"https://www.interspo=
+rt.ro/Uploads/resources/299539/adidas-affiliate.jpg?lm=3D12847560" id=3D"cb=
+4d71d2-fa3e-603b-4ac7-457351839e35"></a></td></tr></tbody></table></td></tr=
+><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width: 310px; fo=
+nt-size: 14px;" width=3D"310"><table class=3D"clickement price_element" sty=
+le=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center; font-s=
+ize: 14px; font-family: Arial; color: white; font-weight: normal; font-styl=
+e: normal; width: 640px;" align=3D"center"><span style=3D"font-size: 14px; =
+font-family: Arial; color: white; font-weight: normal; font-style: normal;"=
+><span style=3D"text-decoration: line-through;">159.99</span><br><span styl=
+e=3D"text-decoration: line-through;">95.99</span><br>67.19 LEI cu EXTRA30</=
+span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"=
+width: 310px; font-size: 14px;" width=3D"310"><!-- [if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-ali=
+gn: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if =
+mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button" st=
+yle=3D"background: url() center; background-repeat: no-repeat; width: 102px=
+; white-space: nowrap; margin: 0 auto; background-color: #3901f6; border-ra=
+dius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; font-=
+size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter-spa=
+cing: normal; line-height: 100%; text-align: center; font-weight: normal; c=
+olor: white; font-style: normal; text-decoration: none; padding: 7px; displ=
+ay: inline-block; height: 100%;" title=3D"Bustiera dama Adidas You for You =
+(suport scazut) " href=3D"https://go.contactpigeon.com/redir/85639784/72078=
+896/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></ta=
+ble><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table><![end=
+if]--></td></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--=
+></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></div=
+></div></div><!--[if mso]></td><![endif]--></td> </tr><tr class=3D"lyrow di=
+splaytable"><td width=3D"640" style=3D"width: 640px; font-size: 14px;"> <!-=
+-[if mso]><td style=3D"width:310px; vertical-align: top;"><![endif]--><div =
+class=3D"mobile-full givemeid" style=3D"display: inline-block; vertical-ali=
+gn: top; width: 310px; max-width: 310px; background-color: rgb(255, 255, 25=
+5); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full" style=
+=3D"display: block; max-width: 310px; vertical-align: top; width: 100%; mar=
+gin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidden;"><!-=
+-[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"310" style=3D"width:310px;"><tr><![endif]--><!--[if mso]><=
+td width=3D"310" valign=3D"top" style=3D"width:310px;"><![endif]--><table c=
+lass=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cen=
+ter" data-type=3D"singleproduct" style=3D"overflow: hidden; background-colo=
+r: rgb(255, 255, 255); width: 310px; font-family: Arial, Helvetica, sans-se=
+rif; display: table;" width=3D"310" data-templid=3D"460" itemusedid=3D"1996=
+155189" id=3D"3e7d4f6f-790c-631a-60fe-629351d1c2d9"><tbody><tr><td align=3D=
+"center" class=3D"foredit" style=3D"width: 310px; font-size: 14px;"><!-- [i=
+f mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><table clas=
+s=3D"layout_element clickement" style=3D"overflow: hidden; padding-bottom: =
+21px; width: 100%; margin: 0 auto; background-color: #ba0001; border: 0px s=
+olid #ba0001;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"center"><=
+td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D"c=
+lickement title_element" style=3D"z-index: 99999999; width: 100%; height: 1=
+00%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tb=
+ody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-a=
+lign: center; padding: 0px 9px; font-size: 14px;" align=3D"center"><span st=
+yle=3D"font-size: 14px; font-family: Arial; color: white; font-weight: bold=
+; font-style: normal;"><a style=3D"color: white; width: 100%; padding: 5px =
+5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redir/856=
+39784/72078878/"> ENERGETICS Colanti dama Kapedi 2</a></span></td></tr></tb=
+ody></table></td></tr><tr align=3D"center"><td style=3D"width: 310px; font-=
+size: 14px;" width=3D"310"><table class=3D"clickement image_element" style=
+=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><tbody><tr><td style=3D"width: 85%; height: 170px; font-size: 14px;"=
+ align=3D"center" valign=3D"middle"><a href=3D"https://go.contactpigeon.com=
+/redir/85639784/72078878/" target=3D"_blank" rel=3D"noopener"><img style=3D=
+"width: 85%; border: 10px solid rgb(57, 1, 246); max-width: 263.8px;" src=
+=3D"https://www.intersport.ro/Uploads/resources/331079/energetics-affiliate=
+.jpg?lm=3D10221198" alt=3D"ENERGETICS Colanti dama Kapedi 2" width=3D"263.8=
+" data-originalsrc=3D"https://www.intersport.ro/Uploads/resources/331079/en=
+ergetics-affiliate.jpg?lm=3D10221198" id=3D"e59f7086-48f5-87e5-fc7b-dba2ad2=
+66ba4"></a></td></tr></tbody></table></td></tr><tr style=3D"height: 50px;" =
+align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"=
+><table class=3D"clickement price_element" style=3D"width: 100%; height: 60=
+px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbo=
+dy><tr><td style=3D"text-align: center; font-size: 14px; font-family: Arial=
+; color: white; font-weight: normal; font-style: normal; width: 640px;" ali=
+gn=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color: wh=
+ite; font-weight: normal; font-style: normal;"><span style=3D"text-decorati=
+on: line-through;">174.99</span><br><span style=3D"text-decoration: line-th=
+rough;">87.49</span><br>61.24 LEI cu EXTRA30</span></td></tr></tbody></tabl=
+e></td></tr><tr align=3D"center"><td style=3D"width: 310px; font-size: 14px=
+;" width=3D"310"><!-- [if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;">=
+<![endif]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"wid=
+th:102px;"><![endif]--><td class=3D"button" style=3D"background: url() cent=
+er; background-repeat: no-repeat; width: 102px; white-space: nowrap; margin=
+: 0 auto; background-color: #3901f6; border-radius: 5px; padding: 8px 10px;=
+ text-align: center; font-family: Arial; font-size: 16px;"><a class=3D"cpBu=
+tton" style=3D"white-space: nowrap; letter-spacing: normal; line-height: 10=
+0%; text-align: center; font-weight: normal; color: white; font-style: norm=
+al; text-decoration: none; padding: 7px; display: inline-block; height: 100=
+%;" title=3D"ENERGETICS Colanti dama Kapedi 2" href=3D"https://go.contactpi=
+geon.com/redir/85639784/72078878/" target=3D"_blank" rel=3D"noopener">CUMPA=
+RA </a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if =
+mso]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]>=
+</td></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td><=
+/tr></table><![endif]--></div></div></div><!--[if mso]></td><![endif]--> <!=
+--[if mso]><td style=3D"width:310px; vertical-align: top;"><![endif]--><div=
+ class=3D"mobile-full givemeid" style=3D"display: inline-block; vertical-al=
+ign: top; width: 310px; max-width: 310px; background-color: rgb(255, 255, 2=
+55); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full" styl=
+e=3D"display: block; max-width: 310px; vertical-align: top; width: 100%; ma=
+rgin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidden;"><!=
+--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"310" style=3D"width:310px;"><tr><![endif]--><!--[if mso]>=
+<td width=3D"310" valign=3D"top" style=3D"width:310px;"><![endif]--><table =
+class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"ce=
+nter" data-type=3D"singleproduct" style=3D"overflow: hidden; background-col=
+or: rgb(255, 255, 255); width: 310px; font-family: Arial, Helvetica, sans-s=
+erif; display: table;" width=3D"310" data-templid=3D"460" itemusedid=3D"193=
+8032139" id=3D"7f276f6e-1af0-93e9-86c0-4bfcb9835589"><tbody><tr><td align=
+=3D"center" class=3D"foredit" style=3D"width: 310px; font-size: 14px;"><!--=
+ [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><table cla=
+ss=3D"layout_element clickement" style=3D"overflow: hidden; padding-bottom:=
+ 21px; width: 100%; margin: 0 auto; background-color: #ba0001; border: 0px =
+solid #ba0001;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"center=
+"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=
+=3D"clickement title_element" style=3D"z-index: 99999999; width: 100%; heig=
+ht: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"t=
+ext-align: center; padding: 0px 9px; font-size: 14px;" align=3D"center"><sp=
+an style=3D"font-size: 14px; font-family: Arial; color: white; font-weight:=
+ bold; font-style: normal;"><a style=3D"color: white; width: 100%; padding:=
+ 5px 5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redi=
+r/85639784/72078898/"> ENERGETICS Colanti dama Astrid V W</a></span></td></=
+tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"width: 310px=
+; font-size: 14px;" width=3D"310"><table class=3D"clickement image_element"=
+ style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px; font-size: =
+14px;" align=3D"center" valign=3D"middle"><a href=3D"https://go.contactpige=
+on.com/redir/85639784/72078898/" target=3D"_blank" rel=3D"noopener"><img st=
+yle=3D"width: 85%; border: 10px solid rgb(57, 1, 246); max-width: 263.8px;"=
+ src=3D"https://www.intersport.ro/Uploads/resources/330646/colanti-astrid-v=
+-w-affiliate.jpg?lm=3D16837330" alt=3D"ENERGETICS Colanti dama Astrid V W" =
+width=3D"263.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/resou=
+rces/330646/colanti-astrid-v-w-affiliate.jpg?lm=3D16837330" id=3D"f0e237ff-=
+180f-5d18-cc34-96f431da11cf"></a></td></tr></tbody></table></td></tr><tr st=
+yle=3D"height: 50px;" align=3D"center"><td style=3D"width: 310px; font-size=
+: 14px;" width=3D"310"><table class=3D"clickement price_element" style=3D"w=
+idth: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"center"><tbody><tr><td style=3D"text-align: center; font-size: 14=
+px; font-family: Arial; color: white; font-weight: normal; font-style: norm=
+al; width: 640px;" align=3D"center"><span style=3D"font-size: 14px; font-fa=
+mily: Arial; color: white; font-weight: normal; font-style: normal;"><span =
+style=3D"text-decoration: line-through;">139.99</span><br><span style=3D"te=
+xt-decoration: line-through;">69.99</span><br>48.99 LEI cu EXTRA30</span></=
+td></tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"width: =
+310px; font-size: 14px;" width=3D"310"><!-- [if mso]><table align=3D"center=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: cen=
+ter; margin: 0 auto;"><![endif]--><table class=3D"button" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><t=
+able align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" widt=
+h=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button" style=3D"=
+background: url() center; background-repeat: no-repeat; width: 102px; white=
+-space: nowrap; margin: 0 auto; background-color: #3901f6; border-radius: 5=
+px; padding: 8px 10px; text-align: center; font-family: Arial; font-size: 1=
+6px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter-spacing: n=
+ormal; line-height: 100%; text-align: center; font-weight: normal; color: w=
+hite; font-style: normal; text-decoration: none; padding: 7px; display: inl=
+ine-block; height: 100%;" title=3D"ENERGETICS Colanti dama Astrid V W" href=
+=3D"https://go.contactpigeon.com/redir/85639784/72078898/" target=3D"_blank=
+" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table><![endif]--></tr><=
+/tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbod=
+y></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></t=
+able><!--[if mso]></td></tr></table><![endif]--></div></div></div><!--[if m=
+so]></td><![endif]--></td> </tr></tbody></table></div><!--[if mso]></td></t=
+r></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"dis=
+play: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div cl=
+ass=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"cent=
+er" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D=
+"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"dis=
+play: block; max-width: 640px; vertical-align: top; width: 100%; background=
+-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" =
+style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"b=
+order: 0px; background-color: rgb(243, 243, 243); width: 640px; max-width: =
+640px; font-family: Arial, Helvetica, sans-serif; display: table; min-width=
+: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" data-type=3D"line" width=3D"640" id=3D"14f5dbc3-c82a-08ec-371f-=
+af08626946ad"> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: =
+3px 40px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"b9f3986f-234e-f328-7=
+84a-a58a97ae410f"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 1=
+00% !important; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" s=
+tyle=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </tabl=
+e> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]-->=
+ </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div =
+class=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; le=
+ft: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[=
+if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"=
+> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tabl=
+e class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=
+=3D"166dacf2-a15b-ecf5-2bdd-e963b0924e58"> <tbody> <tr> <td class=3D"divide=
+r-simple" style=3D"padding: 0px 40px; font-size: 14px; color: rgb(0, 0, 0);=
+"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" s=
+tyle=3D"border-top: 1px solid rgba(0, 0, 0, 0); min-width: 100% !important;=
+ width: 100% !important;" id=3D"97643bba-9667-22cf-869b-a9dbd89ec0df"> <tbo=
+dy> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"=
+> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso]><=
+/td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![endif=
+]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block; posit=
+ion: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div=
+ class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr=
+><td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-w=
+idth: 640px; vertical-align: top; width: 100%; background-color: rgb(243, 2=
+43, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; backgr=
+ound-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family=
+: Arial, Helvetica, sans-serif; display: table; min-width: 100% !important;=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-ty=
+pe=3D"line" width=3D"640" id=3D"71d42a08-9b4d-3e77-1bf6-85a7bd94c237"> <tbo=
+dy> <tr> <td class=3D"divider-simple" style=3D"padding: 0px 40px; font-size=
+: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgba(0, 0, 0, 0);=
+ min-width: 100% !important; width: 100% !important;"> <tbody> <tr> <td wid=
+th=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);" id=3D"c3e05df5-=
+18c2-e041-9fd9-99f007b587cf"> </td> </tr> </tbody> </table> </td> </tr> </t=
+body> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso=
+]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" st=
+yle=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfix"><=
+!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div cl=
+ass=3D"mobile-full" style=3D"display: block; max-width: 640px; width: 100%;=
+ background-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <table class=3D"main" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; =
+background-color: rgb(255, 255, 255); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" data-type=3D"image" id=3D"9dbcbd40-6456-ba32-fdbc-b4afd7a4f257" wid=
+th=3D"640"> <tbody> <tr> <td align=3D"center" style=3D"padding: 0px; width:=
+ 640px; font-size: 14px;" class=3D"image onebefore"> <a class=3D"link" href=
+=3D"https://go.contactpigeon.com/redir/85639784/72078874/"> <img border=3D"=
+0" style=3D"box-sizing: border-box; display: block; max-width: 640px; width=
+: 100%;" alt=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/uploa=
+d/files/2510/1741166328_78860.png" putwidth=3D"640" haspadding=3D"0" realdi=
+mensions=3D"1000x667" tabindex=3D"0" id=3D"b38acaab-ad83-f0a0-d58f-d59934b4=
+9d5c" width=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td><=
+/tr></table><![endif]--></div> <!--[if mso]></td></tr></table><![endif]--><=
+/div> </div> </div><div class=3D"lyrow" style=3D"display: block; position: =
+relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div clas=
+s=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td>=
+<![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width:=
+ 640px; vertical-align: top; width: 100%; background-color: rgb(243, 243, 2=
+43); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><t=
+r><td><![endif]--><table class=3D"main" style=3D"border: 0px; background-co=
+lor: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial=
+, Helvetica, sans-serif; display: table; min-width: 100% !important;" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"l=
+ine" width=3D"640" id=3D"e91687d4-5a2a-5f37-5cd4-dc8ccdb9b040"> <tbody> <tr=
+> <td class=3D"divider-simple" style=3D"padding: 0px 40px; font-size: 14px;=
+ color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" style=3D"border-top: 1px solid rgba(0, 0, 0, 0); min-wi=
+dth: 100% !important; width: 100% !important;"> <tbody> <tr> <td width=3D"1=
+00%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> =
+</table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![end=
+if]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div=
+><div class=3D"lyrow" style=3D"display: block; position: relative; opacity:=
+ 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"=
+><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div =
+class=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-a=
+lign: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hid=
+den;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-->=
+<table class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243,=
+ 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-=
+serif; display: table; min-width: 100% !important;" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640"=
+ id=3D"dac007fb-68ae-c37f-9760-c69a2afea35b"> <tbody> <tr> <td class=3D"div=
+ider-simple" style=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, =
+0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" style=3D"border-top: 1px solid rgb(0, 0, 0); min-width: 100% !important; =
+width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-siz=
+e: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> <=
+/tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if m=
+so]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" =
+style=3D"display: block; position: relative; opacity: 1; left: 0px; top: 0p=
+x;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"6=
+40" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" =
+style=3D"display: block; max-width: 640px; vertical-align: top; width: 100%=
+; background-color: rgb(186, 0, 1); overflow: hidden;"> <table class=3D"mai=
+n" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=
+=3D"background-color: rgb(186, 0, 1); max-width: 640px; width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" data-type=3D"button" width=3D"640" id=3D"c379a6fa-9150-d49f-39b2-21=
+f3c27db289"> <tbody> <tr align=3D"center"> <td style=3D"padding: 8px 10px; =
+font-size: 14px; color: rgb(0, 0, 0);" class=3D"buttons-full-width" id=3D"c=
+1fc7aea-2286-a460-8832-9b6e3765cdf6"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"620" style=3D"wid=
+th:620px;"><![endif]--><table class=3D"button" style=3D"" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center"> <tbody> <tr> <!--[if mso]=
+><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" w=
+idth=3D"306" style=3D"width:306px;"><![endif]--><td style=3D"text-align: ce=
+nter; font-family: Cabin, Avenir, sans-serif; white-space: nowrap; backgrou=
+nd-color: rgb(57, 1, 246); margin: 0px; width: 175px; padding: 8px 10px; bo=
+rder-radius: 6px; font-size: 14px; box-shadow: rgba(0, 0, 0, 0.2) 0px -2px =
+0px 0px inset; color: rgb(0, 0, 0);" class=3D"button" btn-style=3D"btn-shad=
+ow" btnbc=3D"rgb(57, 1, 246)"> <a style=3D"white-space: nowrap; font-family=
+: Cabin, Avenir, sans-serif; padding: 15px; color: rgb(255, 255, 255); font=
+-size: 14px; text-align: center; text-decoration: none; font-weight: bold;"=
+ class=3D"button-1" href=3D"https://go.contactpigeon.com/redir/85639784/720=
+78874/" btn-style=3D"btn-flat" data-default=3D"1">DESCOPERA SELECTIA PRODUS=
+E COPII</a> </td><!--[if mso]></table><![endif]--> </tr> </tbody> </table><=
+!--[if mso]></table><![endif]--> </td> </tr> </tbody> </table> </div><!--[i=
+f mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyro=
+w" style=3D"display: block; position: relative; opacity: 1; left: 0px; top:=
+ 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><tabl=
+e align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-f=
+ull" style=3D"display: block; max-width: 640px; vertical-align: top; width:=
+ 100%; background-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if ms=
+o]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table class=3D"m=
+ain" style=3D"border: 0px; background-color: rgb(243, 243, 243); width: 640=
+px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; display: t=
+able; min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"141f26c3-2=
+223-88c2-fb12-426710725e5b"> <tbody> <tr> <td class=3D"divider-simple" styl=
+e=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <table widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border=
+-top: 1px solid rgb(0, 0, 0); min-width: 100% !important; width: 100% !impo=
+rtant;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: r=
+gb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><=
+!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></t=
+able><![endif]--></div> </div> </div><div class=3D"lyrow products" data-cod=
+e=3D"_AC_PROD_" style=3D"display: block; position: relative; opacity: 1; le=
+ft: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[=
+if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(186, 0, 1); overflow: hidden;"><ta=
+ble class=3D"main" style=3D"border-collapse: collapse; text-align: center; =
+background: rgb(186, 0, 1); width: 640px; max-width: 640px; display: table;=
+ font-family: Arial, Helvetica, sans-serif;" data-type=3D"productgrid" cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" width=3D"640"=
+ id=3D"b748e5b4-424f-b2f4-68c2-f903a97e923c"><tbody><tr class=3D"lyrow disp=
+laytable"><td style=3D"width: 640px; font-size: 14px;" width=3D"640"> <!--[=
+if mso]><td style=3D"width:310px; vertical-align: top;"><![endif]--><div cl=
+ass=3D"mobile-full givemeid" style=3D"display: inline-block; vertical-align=
+: top; width: 310px; max-width: 310px; background-color: rgb(255, 255, 255)=
+; overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full" style=
+=3D"display: block; max-width: 310px; vertical-align: top; width: 100%; mar=
+gin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidden;"><!-=
+-[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"310" style=3D"width:310px;"><tr><![endif]--><!--[if mso]><=
+td width=3D"310" valign=3D"top" style=3D"width:310px;"><![endif]--><table c=
+lass=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cen=
+ter" data-type=3D"singleproduct" style=3D"overflow: hidden; background-colo=
+r: rgb(255, 255, 255); width: 310px; font-family: Arial, Helvetica, sans-se=
+rif; display: table;" width=3D"310" data-templid=3D"460" itemusedid=3D"1996=
+154211" id=3D"8e65bbeb-8747-0d21-c337-a032c898b4f5"><tbody><tr><td align=3D=
+"center" class=3D"foredit" style=3D"width: 310px; font-size: 14px;"><!-- [i=
+f mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><table clas=
+s=3D"layout_element clickement" style=3D"overflow: hidden; padding-bottom: =
+21px; width: 100%; margin: 0 auto; background-color: #ba0001; border: 0px s=
+olid #ba0001;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"center"><=
+td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D"c=
+lickement title_element" style=3D"z-index: 99999999; width: 100%; height: 1=
+00%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tb=
+ody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-a=
+lign: center; padding: 0px 9px; font-size: 14px;" align=3D"center"><span st=
+yle=3D"font-size: 14px; font-family: Arial; color: white; font-weight: bold=
+; font-style: normal;"><a style=3D"color: white; width: 100%; padding: 5px =
+5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redir/856=
+39784/72078894/"> BRUNOTTI Tricou copii Tim Print</a></span></td></tr></tbo=
+dy></table></td></tr><tr align=3D"center"><td style=3D"width: 310px; font-s=
+ize: 14px;" width=3D"310"><table class=3D"clickement image_element" style=
+=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><tbody><tr><td style=3D"width: 85%; height: 170px; font-size: 14px;"=
+ align=3D"center" valign=3D"middle"><a href=3D"https://go.contactpigeon.com=
+/redir/85639784/72078894/" target=3D"_blank" rel=3D"noopener"><img style=3D=
+"width: 85%; border: 10px solid rgb(57, 1, 246); max-width: 263.8px;" src=
+=3D"https://www.intersport.ro/Uploads/resources/283653/tricou-copii-t-shirt=
+-tim-print-affiliate.jpg?lm=3D11710533" alt=3D"BRUNOTTI Tricou copii Tim Pr=
+int" width=3D"263.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/=
+resources/283653/tricou-copii-t-shirt-tim-print-affiliate.jpg?lm=3D11710533=
+" id=3D"c790fcda-ac0c-d9ad-d05f-5f0fefa39442"></a></td></tr></tbody></table=
+></td></tr><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width:=
+ 310px; font-size: 14px;" width=3D"310"><table class=3D"clickement price_el=
+ement" style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: cent=
+er; font-size: 14px; font-family: Arial; color: white; font-weight: normal;=
+ font-style: normal; width: 640px;" align=3D"center"><span style=3D"font-si=
+ze: 14px; font-family: Arial; color: white; font-weight: normal; font-style=
+: normal;"><span style=3D"text-decoration: line-through;">99.99</span><br><=
+span style=3D"text-decoration: line-through;">51.88</span><br>36.31 LEI cu =
+EXTRA30</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td =
+style=3D"width: 310px; font-size: 14px;" width=3D"310"><!-- [if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"text-align: center; margin: 0 auto;"><![endif]--><table class=3D"button" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr=
+><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"b=
+utton" style=3D"background: url() center; background-repeat: no-repeat; wid=
+th: 102px; white-space: nowrap; margin: 0 auto; background-color: #3901f6; =
+border-radius: 5px; padding: 8px 10px; text-align: center; font-family: Ari=
+al; font-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; l=
+etter-spacing: normal; line-height: 100%; text-align: center; font-weight: =
+normal; color: white; font-style: normal; text-decoration: none; padding: 7=
+px; display: inline-block; height: 100%;" title=3D"BRUNOTTI Tricou copii Ti=
+m Print" href=3D"https://go.contactpigeon.com/redir/85639784/72078894/" tar=
+get=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table><![en=
+dif]--></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></t=
+d></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></t=
+r></tbody></table><!--[if mso]></td></tr></table><![endif]--></div></div></=
+div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D"width:310px; v=
+ertical-align: top;"><![endif]--><div class=3D"mobile-full givemeid" style=
+=3D"display: inline-block; vertical-align: top; width: 310px; max-width: 31=
+0px; background-color: rgb(255, 255, 255); overflow: hidden;"> <div class=
+=3D"row"><div class=3D"mobile-full" style=3D"display: block; max-width: 310=
+px; vertical-align: top; width: 100%; margin: 0px auto; background-color: r=
+gb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"310" style=3D"wid=
+th:310px;"><tr><![endif]--><!--[if mso]><td width=3D"310" valign=3D"top" st=
+yle=3D"width:310px;"><![endif]--><table class=3D"main" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct" s=
+tyle=3D"overflow: hidden; background-color: rgb(255, 255, 255); width: 310p=
+x; font-family: Arial, Helvetica, sans-serif; display: table;" width=3D"310=
+" data-templid=3D"460" itemusedid=3D"1996154209" id=3D"7452017d-05bd-9826-5=
+7d5-7dd3f8bf2204"><tbody><tr><td align=3D"center" class=3D"foredit" style=
+=3D"width: 310px; font-size: 14px;"><!-- [if mso]><table align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"wid=
+th:100%;"><tr><td><![endif]--><table class=3D"layout_element clickement" st=
+yle=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto;=
+ background-color: #ba0001; border: 0px solid #ba0001;" border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=
+=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 310px; font-s=
+ize: 14px;" width=3D"310"><table class=3D"clickement title_element" style=
+=3D"z-index: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;=
+"><td class=3D"cpTextContent" style=3D"text-align: center; padding: 0px 9px=
+; font-size: 14px;" align=3D"center"><span style=3D"font-size: 14px; font-f=
+amily: Arial; color: white; font-weight: bold; font-style: normal;"><a styl=
+e=3D"color: white; width: 100%; padding: 5px 5px; text-decoration: none;" h=
+ref=3D"https://go.contactpigeon.com/redir/85639784/72078881/"> Tricou copii=
+ Brunotti Tim-Print</a></span></td></tr></tbody></table></td></tr><tr align=
+=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><tab=
+le class=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"w=
+idth: 85%; height: 170px; font-size: 14px;" align=3D"center" valign=3D"midd=
+le"><a href=3D"https://go.contactpigeon.com/redir/85639784/72078881/" targe=
+t=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid =
+rgb(57, 1, 246); max-width: 263.8px;" src=3D"https://www.intersport.ro/Uplo=
+ads/resources/259236/tricou-copii-t-shirt-tim-print-affiliate.jpg?lm=3D1056=
+4167" alt=3D"Tricou copii Brunotti Tim-Print" width=3D"263.8" data-original=
+src=3D"https://www.intersport.ro/Uploads/resources/259236/tricou-copii-t-sh=
+irt-tim-print-affiliate.jpg?lm=3D10564167" id=3D"30789d52-79c7-41aa-cd76-37=
+b9571213cb"></a></td></tr></tbody></table></td></tr><tr style=3D"height: 50=
+px;" align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D=
+"310"><table class=3D"clickement price_element" style=3D"width: 100%; heigh=
+t: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"=
+><tbody><tr><td style=3D"text-align: center; font-size: 14px; font-family: =
+Arial; color: white; font-weight: normal; font-style: normal; width: 640px;=
+" align=3D"center"><span style=3D"font-size: 14px; font-family: Arial; colo=
+r: white; font-weight: normal; font-style: normal;"><span style=3D"text-dec=
+oration: line-through;">99.99</span><br><span style=3D"text-decoration: lin=
+e-through;">51.88</span><br>36.31 LEI cu EXTRA30</span></td></tr></tbody></=
+table></td></tr><tr align=3D"center"><td style=3D"width: 310px; font-size: =
+14px;" width=3D"310"><!-- [if mso]><table align=3D"center" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 aut=
+o;"><![endif]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"cent=
+er" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D=
+"width:102px;"><![endif]--><td class=3D"button" style=3D"background: url() =
+center; background-repeat: no-repeat; width: 102px; white-space: nowrap; ma=
+rgin: 0 auto; background-color: #3901f6; border-radius: 5px; padding: 8px 1=
+0px; text-align: center; font-family: Arial; font-size: 16px;"><a class=3D"=
+cpButton" style=3D"white-space: nowrap; letter-spacing: normal; line-height=
+: 100%; text-align: center; font-weight: normal; color: white; font-style: =
+normal; text-decoration: none; padding: 7px; display: inline-block; height:=
+ 100%;" title=3D"Tricou copii Brunotti Tim-Print" href=3D"https://go.contac=
+tpigeon.com/redir/85639784/72078881/" target=3D"_blank" rel=3D"noopener">CU=
+MPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [=
+if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if ms=
+o]></td></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></t=
+d></tr></table><![endif]--></div></div></div><!--[if mso]></td><![endif]-->=
+</td> </tr><tr class=3D"lyrow displaytable"><td width=3D"640" style=3D"widt=
+h: 640px; font-size: 14px;"> <!--[if mso]><td style=3D"width:310px; vertica=
+l-align: top;"><![endif]--><div class=3D"mobile-full givemeid" style=3D"dis=
+play: inline-block; vertical-align: top; width: 310px; max-width: 310px; ba=
+ckground-color: rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row">=
+<div class=3D"mobile-full" style=3D"display: block; max-width: 310px; verti=
+cal-align: top; width: 100%; margin: 0px auto; background-color: rgb(255, 2=
+55, 255); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"310" style=3D"width:310px;=
+"><tr><![endif]--><!--[if mso]><td width=3D"310" valign=3D"top" style=3D"wi=
+dth:310px;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"o=
+verflow: hidden; background-color: rgb(255, 255, 255); width: 310px; font-f=
+amily: Arial, Helvetica, sans-serif; display: table;" width=3D"310" data-te=
+mplid=3D"460" itemusedid=3D"1996154591" id=3D"482d202e-a13c-e764-8fea-82474=
+e359c09"><tbody><tr><td align=3D"center" class=3D"foredit" style=3D"width: =
+310px; font-size: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><=
+tr><td><![endif]--><table class=3D"layout_element clickement" style=3D"over=
+flow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto; background=
+-color: #ba0001; border: 0px solid #ba0001;" border=3D"0" width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"=
+><tbody><tr align=3D"center"><td style=3D"width: 310px; font-size: 14px;" w=
+idth=3D"310"><table class=3D"clickement title_element" style=3D"z-index: 99=
+999999; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"=
+cpTextContent" style=3D"text-align: center; padding: 0px 9px; font-size: 14=
+px;" align=3D"center"><span style=3D"font-size: 14px; font-family: Arial; c=
+olor: white; font-weight: bold; font-style: normal;"><a style=3D"color: whi=
+te; width: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https://=
+go.contactpigeon.com/redir/85639784/72078891/"> ENERGETICS Tricou copii Gar=
+ianne IV</a></span></td></tr></tbody></table></td></tr><tr align=3D"center"=
+><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table class=3D=
+"clickement image_element" style=3D"border: 0;" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85%; =
+height: 170px; font-size: 14px;" align=3D"center" valign=3D"middle"><a href=
+=3D"https://go.contactpigeon.com/redir/85639784/72078891/" target=3D"_blank=
+" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid rgb(57, 1, =
+246); max-width: 263.8px;" src=3D"https://www.intersport.ro/Uploads/resourc=
+es/295417/2d60b442-8fec-4-affiliate.jpg?lm=3D10330006" alt=3D"ENERGETICS Tr=
+icou copii Garianne IV" width=3D"263.8" data-originalsrc=3D"https://www.int=
+ersport.ro/Uploads/resources/295417/2d60b442-8fec-4-affiliate.jpg?lm=3D1033=
+0006" id=3D"21f34069-3d04-dfde-098f-6fe851991671"></a></td></tr></tbody></t=
+able></td></tr><tr style=3D"height: 50px;" align=3D"center"><td style=3D"wi=
+dth: 310px; font-size: 14px;" width=3D"310"><table class=3D"clickement pric=
+e_element" style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: =
+center; font-size: 14px; font-family: Arial; color: white; font-weight: nor=
+mal; font-style: normal; width: 640px;" align=3D"center"><span style=3D"fon=
+t-size: 14px; font-family: Arial; color: white; font-weight: normal; font-s=
+tyle: normal;"><span style=3D"text-decoration: line-through;">69.99</span><=
+br><span style=3D"text-decoration: line-through;">34.99</span><br>24.49=C2=
+=A0LEI cu EXTRA30</span></td></tr></tbody></table></td></tr><tr align=3D"ce=
+nter"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><!-- [if m=
+so]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"text-align: center; margin: 0 auto;"><![endif]--><table class=3D=
+"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">=
+<tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td =
+class=3D"button" style=3D"background: url() center; background-repeat: no-r=
+epeat; width: 102px; white-space: nowrap; margin: 0 auto; background-color:=
+ #3901f6; border-radius: 5px; padding: 8px 10px; text-align: center; font-f=
+amily: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D"white-space:=
+ nowrap; letter-spacing: normal; line-height: 100%; text-align: center; fon=
+t-weight: normal; color: white; font-style: normal; text-decoration: none; =
+padding: 7px; display: inline-block; height: 100%;" title=3D"ENERGETICS Tri=
+cou copii Garianne IV" href=3D"https://go.contactpigeon.com/redir/85639784/=
+72078891/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]=
+></table><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table><=
+![endif]--></td></tr></tbody></table><!-- [if mso]></td></tr></table><![end=
+if]--></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]-->=
+</div></div></div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D"=
+width:310px; vertical-align: top;"><![endif]--><div class=3D"mobile-full gi=
+vemeid" style=3D"display: inline-block; vertical-align: top; width: 310px; =
+max-width: 310px; background-color: rgb(255, 255, 255); overflow: hidden;">=
+ <div class=3D"row"><div class=3D"mobile-full" style=3D"display: block; max=
+-width: 310px; vertical-align: top; width: 100%; margin: 0px auto; backgrou=
+nd-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"310" =
+style=3D"width:310px;"><tr><![endif]--><!--[if mso]><td width=3D"310" valig=
+n=3D"top" style=3D"width:310px;"><![endif]--><table class=3D"main" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"sing=
+leproduct" style=3D"overflow: hidden; background-color: rgb(255, 255, 255);=
+ width: 310px; font-family: Arial, Helvetica, sans-serif; display: table;" =
+width=3D"310" data-templid=3D"460" itemusedid=3D"1857435611" id=3D"69285af4=
+-607a-e490-8e9b-e29946888f5b"><tbody><tr><td align=3D"center" class=3D"fore=
+dit" style=3D"width: 310px; font-size: 14px;"><!-- [if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" st=
+yle=3D"width:100%;"><tr><td><![endif]--><table class=3D"layout_element clic=
+kement" style=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margi=
+n: 0 auto; background-color: #ba0001; border: 0px solid #ba0001;" border=3D=
+"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" dat=
+a-layout=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 310px=
+; font-size: 14px;" width=3D"310"><table class=3D"clickement title_element"=
+ style=3D"z-index: 99999999; width: 100%; height: 100%;" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height:=
+ 65px;"><td class=3D"cpTextContent" style=3D"text-align: center; padding: 0=
+px 9px; font-size: 14px;" align=3D"center"><span style=3D"font-size: 14px; =
+font-family: Arial; color: white; font-weight: bold; font-style: normal;"><=
+a style=3D"color: white; width: 100%; padding: 5px 5px; text-decoration: no=
+ne;" href=3D"https://go.contactpigeon.com/redir/85639784/72078880/"> ENERGE=
+TICS Tricou copii Garianne IV</a></span></td></tr></tbody></table></td></tr=
+><tr align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D=
+"310"><table class=3D"clickement image_element" style=3D"border: 0;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td =
+style=3D"width: 85%; height: 170px; font-size: 14px;" align=3D"center" vali=
+gn=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/85639784/720788=
+80/" target=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%; border: 1=
+0px solid rgb(57, 1, 246); max-width: 263.8px;" src=3D"https://www.interspo=
+rt.ro/Uploads/resources/295412/aecf4c72-702c-4-affiliate.jpg?lm=3D10244689"=
+ alt=3D"ENERGETICS Tricou copii Garianne IV" width=3D"263.8" data-originals=
+rc=3D"https://www.intersport.ro/Uploads/resources/295412/aecf4c72-702c-4-af=
+filiate.jpg?lm=3D10244689" id=3D"bc40b2ee-683a-0d12-6714-83d386565378"></a>=
+</td></tr></tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"ce=
+nter"><td style=3D"width: 310px; font-size: 14px;" width=3D"310"><table cla=
+ss=3D"clickement price_element" style=3D"width: 100%; height: 60px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td =
+style=3D"text-align: center; font-size: 14px; font-family: Arial; color: wh=
+ite; font-weight: normal; font-style: normal; width: 640px;" align=3D"cente=
+r"><span style=3D"font-size: 14px; font-family: Arial; color: white; font-w=
+eight: normal; font-style: normal;"><span style=3D"text-decoration: line-th=
+rough;">69.99</span><br><span style=3D"text-decoration: line-through;">34.9=
+9</span><br>24.49 LEI cu EXTRA30</span></td></tr></tbody></table></td></tr>=
+<tr align=3D"center"><td style=3D"width: 310px; font-size: 14px;" width=3D"=
+310"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif]-->=
+<table class=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><=
+![endif]--><td class=3D"button" style=3D"background: url() center; backgrou=
+nd-repeat: no-repeat; width: 102px; white-space: nowrap; margin: 0 auto; ba=
+ckground-color: #3901f6; border-radius: 5px; padding: 8px 10px; text-align:=
+ center; font-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=
+=3D"white-space: nowrap; letter-spacing: normal; line-height: 100%; text-al=
+ign: center; font-weight: normal; color: white; font-style: normal; text-de=
+coration: none; padding: 7px; display: inline-block; height: 100%;" title=
+=3D"ENERGETICS Tricou copii Garianne IV" href=3D"https://go.contactpigeon.c=
+om/redir/85639784/72078880/" target=3D"_blank" rel=3D"noopener">CUMPARA </a=
+></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if mso]><=
+/td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]></td><=
+/tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td></tr></=
+table><![endif]--></div></div></div><!--[if mso]></td><![endif]--></td> </t=
+r></tbody></table></div> <!--[if mso]></td></tr></table><![endif]--></div> =
+</div> </div><div class=3D"lyrow" style=3D"display: block; position: relati=
+ve; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"r=
+ow clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![en=
+dif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640p=
+x; vertical-align: top; width: 100%; background-color: rgb(243, 243, 243); =
+overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td=
+><![endif]--><table class=3D"main" style=3D"border: 0px; background-color: =
+rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Hel=
+vetica, sans-serif; display: table; min-width: 100% !important;" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" =
+width=3D"640" id=3D"13304b6e-be0d-d991-efe4-82d1ee976ee4"> <tbody> <tr> <td=
+ class=3D"divider-simple" style=3D"padding: 3px 40px; font-size: 14px; colo=
+r: rgb(0, 0, 0);" id=3D"6ff3221b-8f91-df99-cb3b-22e52dbbebf0"> <table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-=
+top: 1px solid rgb(51, 51, 51); min-width: 100% !important; width: 100% !im=
+portant;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color:=
+ rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table=
+><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr><=
+/table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"displa=
+y: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=
+=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wi=
+dth:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"displa=
+y: block; max-width: 640px; vertical-align: top; width: 100%; background-co=
+lor: rgb(186, 0, 1); overflow: hidden;"> <!--[if mso]><table align=3D"cente=
+r" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"=
+width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0p=
+x; background-color: rgb(186, 0, 1); width: 640px; max-width: 640px; font-f=
+amily: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impor=
+tant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" da=
+ta-type=3D"line" width=3D"640" id=3D"1dfc081b-fc97-e0f5-8718-588dd8c47600">=
+ <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 0px 50px 20px;=
+ font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(18=
+6, 0, 1); min-width: 100% !important; width: 100% !important;"> <tbody> <tr=
+> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td>=
+ </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></t=
+r></table><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></d=
+iv> </div> </div><div class=3D"lyrow" style=3D"display: block;"> <div class=
+=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wi=
+dth:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"displa=
+y: block; max-width: 640px; width: 100%; background-color: rgb(255, 255, 25=
+5); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr>=
+<td><![endif]--> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" style=3D"font-size: 14px; background-color: rgb(255, 255, 255)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" data-type=3D"image" id=3D"87=
+2843ef-ecca-b5a3-8e4b-5837dbe454d9" width=3D"640"> <tbody> <tr> <td align=
+=3D"center" style=3D"padding: 0px; width: 640px; font-size: 14px; color: rg=
+b(0, 0, 0);" class=3D"image onebefore"> <a class=3D"link" href=3D"https://g=
+o.contactpigeon.com/redir/85639784/72078883/"> <img border=3D"0" style=3D"b=
+ox-sizing: border-box; display: block; max-width: 640px; width: 100%;" alt=
+=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510=
+/1728474695_19193.jpg" putwidth=3D"640" haspadding=3D"0" realdimensions=3D"=
+640x200" tabindex=3D"0" id=3D"9ea31830-be99-baed-34ce-bcdc60543d16" width=
+=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td></tr></table=
+><![endif]--></div><!--[if mso]></td></tr></table><![endif]--></div> </div>=
+ </div><div class=3D"lyrow" style=3D"display: block; position: relative; op=
+acity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row cle=
+arfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-->=
+ <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; vert=
+ical-align: top; width: 100%; background-color: rgb(243, 243, 243); overflo=
+w: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![en=
+dif]--><table class=3D"main" style=3D"border: 0px; background-color: rgb(24=
+3, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica=
+, sans-serif; display: table; min-width: 100% !important;" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=
+=3D"640" id=3D"8a07ad9a-cd2e-2e4e-0888-2934c8d4ea27"> <tbody> <tr> <td clas=
+s=3D"divider-simple" style=3D"padding: 5px 40px; font-size: 14px; color: rg=
+b(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" style=3D"border-top: 1px solid rgb(0, 0, 0); min-width: 100% !imp=
+ortant; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"=
+font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td>=
+ </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><=
+!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D=
+"lyrow" style=3D"display: block; position: relative; opacity: 1; left: 0px;=
+ top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]>=
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobil=
+e-full" style=3D"display: block; max-width: 640px; vertical-align: top; wid=
+th: 100%; background-color: rgb(186, 0, 1); overflow: hidden;"> <!--[if mso=
+]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table class=3D"ma=
+in" style=3D"border: 0px; background-color: rgb(186, 0, 1); width: 640px; m=
+ax-width: 640px; font-family: Arial, Helvetica, sans-serif; display: table;=
+ min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"a5a6d6a2-ce3d-c=
+fb3-a3ba-8c95a8d88113"> <tbody> <tr> <td class=3D"divider-simple" style=3D"=
+padding: 0px 50px 20px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"ea1706=
+18-af20-3921-1cb2-4010790f3538"> <table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(186, 0, 1);=
+ min-width: 100% !important; width: 100% !important;"> <tbody> <tr> <td wid=
+th=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </=
+tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table=
+><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div=
+> </div><div class=3D"lyrow" style=3D"display: block; position: relative; o=
+pacity: 1; left: 0px; top: 0px;"><div class=3D"view"><div class=3D"row clea=
+rfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><=
+div class=3D"mobile-full" style=3D"display: block; max-width: 640px; vertic=
+al-align: top; width: 100%; background-color: rgb(255, 255, 255); overflow:=
+ hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]=
+--><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"main" data-type=3D"image" id=3D"e48be318-bb20-93ab-c78e-cbb9bddd9=
+c1a" style=3D"background-color: rgb(255, 255, 255); width: 640px; max-width=
+: 640px; font-family: Arial, Helvetica, sans-serif; display: table;" width=
+=3D"640"><tbody><tr><td align=3D"center" class=3D"image onebefore" style=3D=
+"padding: 0px; font-size: 14px; width: 640px; color: rgb(0, 0, 0);"><a clas=
+s=3D"link" href=3D"https://go.contactpigeon.com/redir/85639784/72078885/"><=
+img alt=3D"image" border=3D"0" id=3D"f2c0b449-67b0-5179-fd94-89b3140a6bba" =
+src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510/1728028719=
+_89422.jpg" style=3D"box-sizing: border-box; display: block; max-width: 640=
+px; width: 100%;" tabindex=3D"0" width=3D"640" putwidth=3D"640" realdimensi=
+ons=3D"640x200" haspadding=3D"0"></a></td></tr></tbody></table><!--[if mso]=
+></td></tr></table><![endif]--></div><!--[if mso]></td></tr></table><![endi=
+f]--></div></div></div><div class=3D"lyrow" style=3D"display: block; positi=
+on: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div =
+class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr>=
+<td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-wi=
+dth: 640px; vertical-align: top; width: 100%; background-color: rgb(186, 0,=
+ 1); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><t=
+r><td><![endif]--><table class=3D"main" style=3D"border: 0px; background-co=
+lor: rgb(186, 0, 1); width: 640px; max-width: 640px; font-family: Arial, He=
+lvetica, sans-serif; display: table; min-width: 100% !important;" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line"=
+ width=3D"640" id=3D"f227a4e8-2b6f-8d71-3423-69f3c7b5ee8b"> <tbody> <tr> <t=
+d class=3D"divider-simple" style=3D"padding: 0px 50px 20px; font-size: 14px=
+; color: rgb(0, 0, 0);" id=3D"148d4af7-576b-73b2-1a12-21857f925dd0"> <table=
+ width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"b=
+order-top: 1px solid rgb(186, 0, 1); min-width: 100% !important; width: 100=
+% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; c=
+olor: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </=
+table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td><=
+/tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"d=
+isplay: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div =
+class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"ce=
+nter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=
+=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"=
+display: block; max-width: 640px; vertical-align: top; width: 100%; backgro=
+und-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table alig=
+n=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640"=
+ style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"=
+border: 0px; background-color: rgb(243, 243, 243); width: 640px; max-width:=
+ 640px; font-family: Arial, Helvetica, sans-serif; display: table; min-widt=
+h: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" data-type=3D"spacer" width=3D"640" id=3D"9c1d4583-4f68-5cd0-a64=
+0-f59c32d40d57"> <tbody> <tr> <td class=3D"spacer-simple" style=3D"width: 6=
+40px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"min-width:100% !importan=
+t; width:100% !important"> <tbody> <tr> <td width=3D"100%" height=3D"13" st=
+yle=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"ed4999ae-=
+e0ee-8056-8689-d66f15af2c8d"> </td> </tr> </tbody> </table> </td> </tr> </t=
+body> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso=
+]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" da=
+ta-code=3D"colsettings" style=3D"display: block;"> <div class=3D"view"> <di=
+v class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><t=
+r><td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-=
+width: 640px; vertical-align: top; width: 100%; background-color: rgb(243, =
+243, 243); overflow: hidden;"><table class=3D"main" style=3D"border-collaps=
+e: collapse; text-align: center; background: rgb(243, 243, 243); width: 640=
+px; max-width: 640px; display: table; font-family: Arial, Helvetica, sans-s=
+erif;" data-type=3D"multiculti" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" align=3D"center" id=3D"0bd3fae5-fe2e-3eec-d55a-7c9d00c44ab9" width=
+=3D"640"><!--[if mso]><tbody><tr><![endif]--><tbody><tr class=3D"lyrow disp=
+laytable" align=3D"center" style=3D"display: block;"><td style=3D"width: 64=
+0px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"77f69f01-6a31-8937-51dc-7=
+089cbcb3899"><div style=3D"font-size: 14px; display: inline-block; backgrou=
+nd-position: center top; vertical-align: top; float: left; max-width: 320px=
+; height: auto; background-color: rgb(243, 243, 243); width: 50% !important=
+; min-width: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mo=
+bile-full allowchild" width=3D"320" id=3D"5fca5df7-6e71-b5ff-d4b7-246bf5868=
+d7d"><div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><di=
+v class=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; vertical-a=
+lign: top;"><![endif]--><div class=3D"mobile-full" style=3D"display: block;=
+ max-width: 320px; width: 100%; background-color: rgb(243, 243, 243); overf=
+low: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td style=
+=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(24=
+3, 243, 243); width: 100%; font-family: Arial, Helvetica, sans-serif; displ=
+ay: table; min-width: 100% !important;" data-type=3D"image" id=3D"0d5a03eb-=
+203e-8ef4-cbee-64fbbfc72361" width=3D"320"><tbody><tr><td align=3D"center" =
+style=3D"padding: 0px; width: 90px; font-size: 14px; color: rgb(0, 0, 0);" =
+class=3D"image onebefore" width=3D"320"><a class=3D"link" id=3D"a6bf3ad0-3b=
+58-cf96-bba9-08648b7229a3"><img border=3D"0" style=3D"box-sizing: border-bo=
+x; display: block; max-width: 90px; width: 100%;" alt=3D"image" src=3D"http=
+s://dimages.contactpigeon.com/dndcp/upload/files/2510/1709030359_35901.png"=
+ putwidth=3D"90" haspadding=3D"0" realdimensions=3D"90x90" tabindex=3D"0" i=
+d=3D"bbd64ff3-c939-0346-363e-5ae4969ed053" width=3D"90"></a></td></tr></tbo=
+dy></table><!--[if mso]></td></tr></table><![endif]--></div><!-- [if mso]><=
+/td><![endif] --></div></div></div><div class=3D"lyrow" style=3D"display: b=
+lock;"><div class=3D"view"><div class=3D"row clearfix"><div class=3D"mobile=
+-full" style=3D"display: block; max-width: 320px; vertical-align: top; widt=
+h: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"><!--[if m=
+so]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"320" style=3D"width:320px;"><tr><td style=3D"padding: 0;"><![end=
+if]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" style=3D"font-size: 14px; background-color: rgb(243, 243, 243); width: 32=
+0px; text-align: center; font-family: Arial, Helvetica, sans-serif; display=
+: table; line-height: 17px; min-width: 100% !important;" data-type=3D"text-=
+block" id=3D"08959554-0095-4768-578a-85d0d9e2f141" width=3D"320"><tbody><tr=
+><td class=3D"block-text" data-clonable=3D"true" style=3D"padding: 0px 20px=
+ 5px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"0dd41edf-ce7d-5acd-94ca-=
+2ce265bcc7b7"><div id=3D"820c9a57-f202-8e82-1d0a-927a15f26aa7"><span style=
+=3D"color: #164196; font-family: Cabin, Avenir, sans-serif;"><span style=3D=
+"font-size: 12px;"><strong id=3D"2cc58e55-160e-92e3-830e-cd26d623c49c">Reze=
+rvare=C2=A0<span id=3D"e046a68f-fab2-f137-86af-67e78923542d" style=3D"color=
+: #164196; font-family: Cabin, Avenir, sans-serif; font-size: 12px;">=C3=AE=
+n</span> magazine</strong></span></span><br><span id=3D"e046a68f-fab2-f137-=
+86af-67e78923542d" style=3D"color: #164196; font-family: Cabin, Avenir, san=
+s-serif; font-size: 12px;">Rezervare gratuit=C4=83=C2=A0=C3=AEn cele 37 de =
+magazine ale noastre</span></div></td></tr></tbody></table><!--[if mso]></t=
+d></tr></table><![endif]--></div></div></div></div></div><div style=3D"font=
+-size: 14px; display: inline-block; background-position: center top; vertic=
+al-align: top; float: left; max-width: 320px; height: auto; background-colo=
+r: rgb(243, 243, 243); width: 50% !important; min-width: 10px !important; o=
+verflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" width=3D"=
+320" id=3D"edfc23f3-2267-b901-3d72-af7736b7b8e3"><div class=3D"lyrow" style=
+=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix"><!--[i=
+f mso]><td style=3D"width: 320px; vertical-align: top;"><![endif]--><div cl=
+ass=3D"mobile-full" style=3D"display: block; max-width: 320px; width: 100%;=
+ background-color: rgb(243, 243, 243); overflow: hidden;"><!--[if mso]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"320" style=3D"width:320px;"><tr><td style=3D"padding: 0;"><![endif]--><=
+table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=
+=3D"font-size: 14px; background-color: rgb(243, 243, 243); width: 100%; fon=
+t-family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !im=
+portant;" data-type=3D"image" id=3D"b5fe48d2-5589-08fb-dbb3-5eb6488bb665" w=
+idth=3D"320"><tbody><tr><td align=3D"center" style=3D"padding: 0px; width: =
+90px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"image onebefore" widt=
+h=3D"320"><a class=3D"link" id=3D"c6748a43-19d9-3b26-8b36-faa47de84f27"><im=
+g border=3D"0" style=3D"box-sizing: border-box; display: block; max-width: =
+90px; width: 100%;" alt=3D"image" src=3D"https://dimages.contactpigeon.com/=
+dndcp/upload/files/2510/1709030394_66144.png" putwidth=3D"90" haspadding=3D=
+"0" realdimensions=3D"90x90" tabindex=3D"0" id=3D"634ba243-66f3-6c1b-13b9-1=
+28f64c35c4b" width=3D"90"></a></td></tr></tbody></table><!--[if mso]></td><=
+/tr></table><![endif]--></div><!-- [if mso]></td><![endif] --></div></div><=
+/div><div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><di=
+v class=3D"row clearfix"><div class=3D"mobile-full" style=3D"display: block=
+; max-width: 320px; vertical-align: top; width: 100%; background-color: rgb=
+(243, 243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width=
+:320px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; ba=
+ckground-color: rgb(243, 243, 243); width: 320px; text-align: center; font-=
+family: Arial, Helvetica, sans-serif; display: table; line-height: 17px; mi=
+n-width: 100% !important;" data-type=3D"text-block" id=3D"edd5b5be-9587-7d9=
+b-3d46-88437b157e25" width=3D"320"><tbody><tr><td class=3D"block-text" data=
+-clonable=3D"true" style=3D"padding: 0px 20px 5px; font-size: 14px; color: =
+rgb(0, 0, 0);"><div id=3D"7fb289f6-a65a-9481-939b-a2bd309fe33f"><span style=
+=3D"color: #164196; font-family: Cabin, Avenir, sans-serif; font-size: 12px=
+;"><strong id=3D"e3cc2237-73e5-1773-ba5e-5ef2df542a9c">Livrare gratuit=C4=
+=83 la adresa ta</strong></span><br><span id=3D"5dae2fb4-056c-365f-3727-fd2=
+b53a0cd55" style=3D"color: #164196; font-family: Cabin, Avenir, sans-serif;=
+ font-size: 12px;">Pentru toate comenzile online de peste 250 lei</span></d=
+iv></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></d=
+iv></div></div></div></div></td></tr></tbody><!--[if mso]></td></tr></tbody=
+><![endif]--></table></div><!--[if mso]></td></tr></table><![endif]--></div=
+> </div> </div><div class=3D"lyrow" data-code=3D"colsettings" style=3D"disp=
+lay: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]=
+><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" w=
+idth=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobi=
+le-full" style=3D"display: block; max-width: 640px; vertical-align: top; wi=
+dth: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"><table =
+class=3D"main" style=3D"border-collapse: collapse; text-align: center; back=
+ground: rgb(243, 243, 243); width: 640px; max-width: 640px; display: table;=
+ font-family: Arial, Helvetica, sans-serif;" data-type=3D"multiculti" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" width=3D"640" =
+id=3D"02b84261-6214-2d9b-c190-58db2efe8151"><!--[if mso]><tbody><tr><![endi=
+f]--><tbody><tr class=3D"lyrow displaytable" align=3D"center" style=3D"disp=
+lay: block;"><td style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0=
+);"><div style=3D"font-size: 14px; display: inline-block; background-positi=
+on: center top; vertical-align: top; float: left; max-width: 320px; height:=
+ auto; background-color: rgb(243, 243, 243); width: 50% !important; min-wid=
+th: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-full=
+ allowchild" width=3D"320"><div class=3D"lyrow" style=3D"display: block;"><=
+div class=3D"view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"wi=
+dth: 320px; vertical-align: top;"><![endif]--><div class=3D"mobile-full" st=
+yle=3D"display: block; max-width: 320px; width: 100%; background-color: rgb=
+(243, 243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width=
+:320px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; ba=
+ckground-color: rgb(243, 243, 243); width: 100%; font-family: Arial, Helvet=
+ica, sans-serif; display: table; min-width: 100% !important;" data-type=3D"=
+image" width=3D"320" id=3D"ac48f02d-7d8d-c82b-5726-cc3c7408af08"><tbody><tr=
+><td align=3D"center" style=3D"padding: 0px; width: 90px; font-size: 14px; =
+color: rgb(0, 0, 0);" class=3D"image onebefore" width=3D"320"><a class=3D"l=
+ink" id=3D"d7889e2e-c868-ddbc-ef7e-7157f2857d1a"><img border=3D"0" style=3D=
+"box-sizing: border-box; display: block; max-width: 90px; width: 100%;" alt=
+=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510=
+/1709030429_89141.png" putwidth=3D"90" haspadding=3D"0" realdimensions=3D"9=
+0x90" tabindex=3D"0" width=3D"90" id=3D"6760091f-242a-2c32-939a-2caf7754e48=
+6"></a></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--=
+></div><!-- [if mso]></td><![endif] --></div></div></div><div class=3D"lyro=
+w" style=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix=
+"><div class=3D"mobile-full" style=3D"display: block; max-width: 320px; ver=
+tical-align: top; width: 100%; background-color: rgb(243, 243, 243); overfl=
+ow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td style=
+=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(24=
+3, 243, 243); width: 320px; text-align: center; font-family: Arial, Helveti=
+ca, sans-serif; display: table; line-height: 17px; min-width: 100% !importa=
+nt;" data-type=3D"text-block" width=3D"320" id=3D"0b4bafbf-a95d-7cfb-49e0-b=
+48e4b65c6ee"><tbody><tr><td class=3D"block-text" data-clonable=3D"true" sty=
+le=3D"padding: 0px 20px 5px; font-size: 14px; color: rgb(0, 0, 0);"><div id=
+=3D"e0259448-9bf1-1135-3109-67826dacfee4"><span style=3D"color: #164196; fo=
+nt-family: Cabin, Avenir, sans-serif; font-size: 12px;"><strong id=3D"89c2b=
+b0d-9bda-5229-3485-66c9d100b6af">Retur =C8=99i schimb gratuite</strong></sp=
+an><br><span id=3D"6c1b00cb-7811-cb24-2ca7-1b261537505f" style=3D"color: #1=
+64196; font-family: Cabin, Avenir, sans-serif; font-size: 12px;">=C3=8En ce=
+le 37 de magazine ale noastre</span></div></td></tr></tbody></table><!--[if=
+ mso]></td></tr></table><![endif]--></div></div></div></div></div><div styl=
+e=3D"font-size: 14px; display: inline-block; background-position: center to=
+p; vertical-align: top; float: left; max-width: 320px; height: auto; backgr=
+ound-color: rgb(243, 243, 243); width: 50% !important; min-width: 10px !imp=
+ortant; overflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" =
+width=3D"320"><div class=3D"lyrow" style=3D"display: block;"><div class=3D"=
+view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; v=
+ertical-align: top;"><![endif]--><div class=3D"mobile-full" style=3D"displa=
+y: block; max-width: 320px; width: 100%; background-color: rgb(243, 243, 24=
+3); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr>=
+<td style=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; background-colo=
+r: rgb(243, 243, 243); width: 100%; font-family: Arial, Helvetica, sans-ser=
+if; display: table; min-width: 100% !important;" data-type=3D"image" width=
+=3D"320" id=3D"8e5ae3a2-c684-4250-910c-3eba0972f45d"><tbody><tr><td align=
+=3D"center" style=3D"padding: 0px; width: 90px; font-size: 14px; color: rgb=
+(0, 0, 0);" class=3D"image onebefore" width=3D"320"><a class=3D"link" id=3D=
+"c6ae51dc-c5e1-c25a-df4b-e1afb6ec3745"><img border=3D"0" style=3D"box-sizin=
+g: border-box; display: block; max-width: 90px; width: 100%;" alt=3D"image"=
+ src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510/170903046=
+1_61066.png" putwidth=3D"90" haspadding=3D"0" realdimensions=3D"90x90" tabi=
+ndex=3D"0" width=3D"90" id=3D"2847359b-af34-1607-10cf-f6d1eb64c330"></a></t=
+d></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></div><!-=
+- [if mso]></td><![endif] --></div></div></div><div class=3D"lyrow" style=
+=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix"><div c=
+lass=3D"mobile-full" style=3D"display: block; max-width: 320px; vertical-al=
+ign: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidd=
+en;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td style=3D"paddi=
+ng: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(243, 243, 2=
+43); width: 320px; text-align: center; font-family: Arial, Helvetica, sans-=
+serif; display: table; line-height: 17px; min-width: 100% !important;" data=
+-type=3D"text-block" width=3D"320" id=3D"f0434baf-2358-c7a3-76c3-20411119e0=
+f1"><tbody><tr><td class=3D"block-text" data-clonable=3D"true" style=3D"pad=
+ding: 0px 20px 5px; font-size: 14px; color: rgb(0, 0, 0);"><div id=3D"95cb8=
+3b1-8bf2-3a79-2aee-91dd025f55c4"><span style=3D"color: #164196; font-family=
+: Cabin, Avenir, sans-serif; font-size: 12px;"><strong id=3D"e3cc2237-73e5-=
+1773-ba5e-5ef2df542a9c">Livrare cu doar 10 lei=C2=A0<span id=3D"e046a68f-fa=
+b2-f137-86af-67e78923542d" style=3D"color: #164196; font-family: Cabin, Ave=
+nir, sans-serif; font-size: 12px;">=C3=AEn</span> Easybox=C2=A0<strong id=
+=3D"89c2bb0d-9bda-5229-3485-66c9d100b6af">=C8=99i</strong> Fanbox<br><br></=
+strong></span></div></td></tr></tbody></table><!--[if mso]></td></tr></tabl=
+e><![endif]--></div></div></div></div></div></td></tr></tbody><!--[if mso]>=
+</td></tr></tbody><![endif]--></table></div><!--[if mso]></td></tr></table>=
+<![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: bloc=
+k; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"vie=
+w"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"line" width=3D"640" id=3D"f515476c-56f7-5160-c562-c5691f4959fc"=
+> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 6px 50px 0px;=
+ font-size: 14px; color: rgb(0, 0, 0);" id=3D"a3089c85-b610-ef75-9363-21f42=
+89a592e"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 100% !imp=
+ortant; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"=
+font-size: 14px; color: rgb(0, 0, 0);" id=3D"6ec33a12-4004-5303-5f72-2e4e32=
+019cc2"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if=
+ mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><=
+![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block=
+; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view=
+"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"spacer" id=3D"c0692e48-471a-66e8-cf43-a2f7feb897d4" width=3D"64=
+0"> <tbody> <tr> <td class=3D"spacer-simple" style=3D"width: 640px; font-si=
+ze: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" style=3D"min-width:100% !important; width:100%=
+ !important"> <tbody> <tr> <td id=3D"spaceman" width=3D"100%" height=3D"9" =
+style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> =
+</tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></tab=
+le><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </d=
+iv> </div><div class=3D"lyrow" style=3D"display: block; position: relative;=
+ opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row =
+clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]=
+--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; w=
+idth: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"><!--[i=
+f mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <table cla=
+ss=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-=
+size: 14px; background-color: rgb(243, 243, 243); width: 640px; max-width: =
+640px; font-family: Arial, Helvetica, sans-serif; display: table; min-width=
+: 100% !important;" data-type=3D"image" id=3D"0617abe3-99a4-a4a5-a1ad-ca642=
+a8cc689" width=3D"640"> <tbody> <tr> <td align=3D"center" style=3D"padding:=
+ 0px 15px; width: 400px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"im=
+age onebefore"> <a class=3D"link" id=3D"f15b0e60-90e8-0b59-e9ad-ca5343fc780=
+8" href=3D"https://go.contactpigeon.com/redir/85639784/72078885/"> <img bor=
+der=3D"0" style=3D"box-sizing: border-box; display: block; max-width: 400px=
+; width: 100%; padding: 0px;" alt=3D"image" src=3D"https://dimages.contactp=
+igeon.com/dndcp/upload/files/2510/1677672384_49249_1677672431.png" putwidth=
+=3D"400" haspadding=3D"1" realdimensions=3D"400x52" tabindex=3D"0" id=3D"94=
+b08ae3-091d-3c1c-0ee4-42abf0bdf4c7" width=3D"400"> </a> </td> </tr> </tbody=
+> </table> <!--[if mso]></td></tr></table><![endif]--></div><!--[if mso]></=
+td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=
+=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"=
+> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tabl=
+e class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" align=3D"center" data-type=3D"spacer" width=3D"640" id=
+=3D"a5b8efe1-7c37-480b-a452-d250c46924c5"> <tbody> <tr> <td class=3D"spacer=
+-simple" style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);"> <ta=
+ble width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=
+=3D"min-width:100% !important; width:100% !important"> <tbody> <tr> <td wid=
+th=3D"100%" height=3D"13" style=3D"width: 640px; font-size: 14px; color: rg=
+b(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!=
+--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></ta=
+ble><![endif]--></div> </div> </div><div class=3D"lyrow" data-code=3D"_AC_S=
+OCTABLE_" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row=
+ clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif=
+]--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; =
+vertical-align: top; width: 100%; background-color: rgb(243, 243, 243); ove=
+rflow: hidden;"> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" style=3D"font-size: 14px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" data-type=3D"socials" id=3D"=
+bbe0a65a-315c-d4a1-21d3-b939d40da833" width=3D"640"> <tbody> <tr> <td style=
+=3D"padding-left: 9px; padding-right: 9px; font-size: 14px; color: rgb(0, 0=
+, 0);" align=3D"center" valign=3D"top" id=3D"43867c06-cf2c-d7f5-bad0-84261d=
+5ac71e"> <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"> <tbody> <tr> <td align=3D"center" valign=3D"top" style=3D"font-size=
+: 14px; color: rgb(0, 0, 0);"> <!--[if mso]><td align=3D"center" valign=3D"=
+top"><![endif]--><table class=3D"singlesocial" style=3D"display:inline;" al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tbody><tr> =
+<td style=3D"padding-right: 10px; padding-bottom: 5px; font-size: 14px; col=
+or: rgb(0, 0, 0);" align=3D"center" valign=3D"top"> <a href=3D"https://go.c=
+ontactpigeon.com/redir/85639784/72078893/" target=3D"_blank" id=3D"9ee0b012=
+-5d1f-e7e2-52aa-1982579ad643"><img src=3D"https://dimages.contactpigeon.com=
+/editor/v5/img/blackWhite/facebook.png" alt=3D"Facebook" width=3D"23" style=
+=3D"border: 0px; width: 23px; max-width: 640px; display: block;" id=3D"1b3b=
+8617-d99e-5766-5385-9c1ae7e984af"></a> </td> </tr> <tr> <td style=3D"paddin=
+g-right: 10px; font-size: 14px; color: rgb(0, 0, 0);" align=3D"center" vali=
+gn=3D"top"> <a style=3D"color: #202020;font-family: Arial;font-size: 11px;f=
+ont-weight: normal;text-decoration: none;" href=3D"https://go.contactpigeon=
+.com/redir/85639784/72078893/" target=3D"_blank">Facebook</a> </td> </tr> <=
+/tbody></table><!--[if mso]></td><![endif]--> <!--[if mso]><td align=3D"cen=
+ter" valign=3D"top"><![endif]--><table class=3D"singlesocial" style=3D"disp=
+lay:inline;" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"> <tbody><tr> <td style=3D"padding-right: 10px; padding-bottom: 5px; font-=
+size: 14px; color: rgb(0, 0, 0);" align=3D"center" valign=3D"top"> <a href=
+=3D"https://go.contactpigeon.com/redir/85639784/72078875/" target=3D"_blank=
+" id=3D"ecd0071b-6f51-e88e-f3bf-a9eb2770f43f"><img src=3D"https://dimages.c=
+ontactpigeon.com/editor/v5/img/blackWhite/linkedin.png" alt=3D"LinkedIn" wi=
+dth=3D"23" style=3D"border: 0px; width: 23px; max-width: 640px; display: bl=
+ock;" id=3D"df5b4890-fb5a-c044-e768-19ea09c2d90f"></a> </td> </tr> <tr> <td=
+ style=3D"padding-right: 10px; font-size: 14px; color: rgb(0, 0, 0);" align=
+=3D"center" valign=3D"top"> <a style=3D"color: #202020;font-family: Arial;f=
+ont-size: 11px;font-weight: normal;text-decoration: none;" href=3D"https://=
+go.contactpigeon.com/redir/85639784/72078875/" target=3D"_blank">LinkedIn</=
+a> </td> </tr> </tbody></table><!--[if mso]></td><![endif]--> <!--[if mso]>=
+<td align=3D"center" valign=3D"top"><![endif]--><table class=3D"singlesocia=
+l" style=3D"display:inline;" align=3D"left" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"> <tbody><tr> <td style=3D"padding-right: 10px; padding-bo=
+ttom: 5px; font-size: 14px; color: rgb(0, 0, 0);" align=3D"center" valign=
+=3D"top"> <a href=3D"https://go.contactpigeon.com/redir/85639784/72078886/"=
+ target=3D"_blank"><img src=3D"https://dimages.contactpigeon.com/editor/v5/=
+img/blackWhite/instagram.png" alt=3D"Instagram" width=3D"23" style=3D"borde=
+r: 0px; width: 23px; max-width: 640px; display: block;" id=3D"a918dc8f-c004=
+-4bd7-09d9-9ba13a23375b"></a> </td> </tr> <tr> <td style=3D"padding-right: =
+10px; font-size: 14px; color: rgb(0, 0, 0);" align=3D"center" valign=3D"top=
+"> <a style=3D"color: #202020;font-family: Arial;font-size: 11px;font-weigh=
+t: normal;text-decoration: none;" href=3D"https://go.contactpigeon.com/redi=
+r/85639784/72078886/" target=3D"_blank">Instagram</a> </td> </tr> </tbody><=
+/table><!--[if mso]></td><![endif]--> <!--[if mso]><td align=3D"center" val=
+ign=3D"top"><![endif]--><table class=3D"singlesocial" style=3D"display:inli=
+ne;" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tbod=
+y><tr> <td style=3D"padding-right: 10px; padding-bottom: 5px; font-size: 14=
+px; color: rgb(0, 0, 0);" align=3D"center" valign=3D"top"> <a href=3D"https=
+://go.contactpigeon.com/redir/85639784/72078876/" target=3D"_blank"><img sr=
+c=3D"https://dimages.contactpigeon.com/editor/v5/img/blackWhite/youtube.png=
+" alt=3D"YouTube" width=3D"23" style=3D"border: 0px; width: 23px; max-width=
+: 640px; display: block;" id=3D"d1be51a1-4670-15b9-3061-525fdbbc37ea"></a> =
+</td> </tr> <tr> <td style=3D"padding-right: 10px; font-size: 14px; color: =
+rgb(0, 0, 0);" align=3D"center" valign=3D"top" id=3D"47c4b221-c756-c3d6-0da=
+4-c3677c65aba6"> <a style=3D"color: #202020;font-family: Arial;font-size: 1=
+1px;font-weight: normal;text-decoration: none;" href=3D"https://go.contactp=
+igeon.com/redir/85639784/72078876/" target=3D"_blank" id=3D"25834873-426f-4=
+fbd-4307-52b2ba8758c4">YouTube</a> </td> </tr> </tbody></table><!--[if mso]=
+></td><![endif]--> </td> </tr> </tbody> </table> </td> </tr> </tbody></tabl=
+e> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><di=
+v class=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; =
+left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!-=
+-[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div clas=
+s=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align=
+: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;=
+"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tab=
+le class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243=
+); width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-seri=
+f; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=
+=3D"d1c22401-3c98-91ea-1292-08b029ca0b6d"> <tbody> <tr> <td class=3D"divide=
+r-simple" style=3D"padding: 6px 50px 0px; font-size: 14px; color: rgb(0, 0,=
+ 0);" id=3D"bbfd92a3-8bd9-1d11-a74b-25864a0d9508"> <table width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px sol=
+id rgb(51, 51, 51); min-width: 100% !important; width: 100% !important;"> <=
+tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0=
+);" id=3D"dba2b956-91bc-bb73-3394-a04e3e5411fd"> </td> </tr> </tbody> </tab=
+le> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--=
+> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div=
+ class=3D"lyrow" data-code=3D"colsettings" style=3D"display: block; positio=
+n: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div c=
+lass=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><=
+td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-wid=
+th: 640px; vertical-align: top; width: 100%; background-color: rgb(255, 255=
+, 255); overflow: hidden;"><table class=3D"main" style=3D"border-collapse: =
+collapse; text-align: center; background: rgb(255, 255, 255); width: 640px;=
+ max-width: 640px; display: table; font-family: Arial, Helvetica, sans-seri=
+f;" data-type=3D"multiculti" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" align=3D"center" id=3D"7d967603-7712-35e4-02d7-43fdbefb5f61" width=3D"64=
+0"><!--[if mso]><tbody><tr><![endif]--><tbody><tr class=3D"lyrow displaytab=
+le" align=3D"center" style=3D"display: block;"><td style=3D"width: 640px; f=
+ont-size: 14px; color: rgb(0, 0, 0);"><div style=3D"font-size: 14px; displa=
+y: inline-block; background-position: center top; vertical-align: top; floa=
+t: left; max-width: 320px; height: auto; background-color: rgb(243, 243, 24=
+3); width: 50% !important; min-width: 10px !important; overflow: hidden;" v=
+align=3D"top" class=3D"mobile-full allowchild" width=3D"320"><div class=3D"=
+lyrow" style=3D"display: block;"><div class=3D"view"><div class=3D"row clea=
+rfix"><!--[if mso]><td style=3D"width: 320px; vertical-align: top;"><![endi=
+f]--><div class=3D"mobile-full" style=3D"display: block; max-width: 320px; =
+vertical-align: top; width: 100%; background-color: rgb(243, 243, 243); ove=
+rflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td sty=
+le=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(=
+243, 243, 243); width: 320px; text-align: center; font-family: Arial, Helve=
+tica, sans-serif; display: table; color: rgb(51, 51, 51); min-width: 100% !=
+important;" data-type=3D"text-block" id=3D"0a06e0e0-5eea-618b-cc74-7213b4a4=
+b3ce" width=3D"320"><tbody><tr><td class=3D"block-text" data-clonable=3D"tr=
+ue" style=3D"padding: 10px 20px; font-size: 14px; color: rgb(0, 0, 0);" wid=
+th=3D"320" id=3D"6fccf096-c96e-34dc-66fe-fa8bc3e5dc27"><div id=3D"26a2f948-=
+6804-e584-29fb-4d457928bd8d"><span style=3D"text-decoration: underline; col=
+or: #333399; font-family: Cabin, Avenir, sans-serif;"><span style=3D"font-s=
+ize: 8px;"><a style=3D"color: #333399; text-decoration: underline;" href=3D=
+"https://do.contactpigeon.com/apps/en/stem/unsubscribev2.html/?emid=3D18813=
+90&em=3Dradu.25201@gmail.com&crid=3D85639784&scid=3D2510&">Dezaboneaz=C4=83=
+-te</a></span></span></div></td></tr></tbody></table><!--[if mso]></td></tr=
+></table><![endif]--></div><!-- [if mso]></td><![endif] --></div></div></di=
+v></div><div style=3D"font-size: 14px; display: inline-block; background-po=
+sition: center top; vertical-align: top; float: left; max-width: 320px; hei=
+ght: auto; background-color: rgb(243, 243, 243); width: 50% !important; min=
+-width: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-=
+full allowchild" width=3D"320" id=3D"ab3e2eee-7cfa-70c3-e341-975401f015ed">=
+<div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><div cla=
+ss=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; vertical-align:=
+ top;"><![endif]--><div class=3D"mobile-full" style=3D"display: block; max-=
+width: 320px; vertical-align: top; width: 100%; background-color: rgb(243, =
+243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320=
+px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; backgr=
+ound-color: rgb(243, 243, 243); width: 320px; text-align: center; font-fami=
+ly: Arial, Helvetica, sans-serif; display: table; color: rgb(51, 51, 51); m=
+in-width: 100% !important;" data-type=3D"text-block" id=3D"f3b4ac84-a17f-11=
+8c-1e9e-4de13dbfccea" width=3D"320"><tbody><tr><td class=3D"block-text" dat=
+a-clonable=3D"true" style=3D"padding: 10px 20px; font-size: 14px; color: rg=
+b(0, 0, 0);" width=3D"320"><div id=3D"0da33c1e-dc8f-3551-4f67-c9f5ae755529"=
+><span style=3D"text-decoration: underline; font-family: Cabin, Avenir, san=
+s-serif;"><span style=3D"color: #333399; font-size: 8px;"><a style=3D"color=
+: #333399; text-decoration: underline;" href=3D"https://do.contactpigeon.co=
+m/apps/en/stem/viewmail.html?gm_pid=3D1881390&gm_nID=3D&crid=3D85639784&rdm=
+e=3D18401209&">Deschide =C3=AEn browser</a></span></span></div></td></tr></=
+tbody></table><!--[if mso]></td></tr></table><![endif]--></div><!-- [if mso=
+]></td><![endif] --></div></div></div></div></td></tr></tbody><!--[if mso]>=
+</td></tr></tbody><![endif]--></table></div><!--[if mso]></td></tr></table>=
+<![endif]--></div> </div> </div><div class=3D"column"></div><div class=3D"l=
+yrow" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row cle=
+arfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-->=
+ <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; vert=
+ical-align: top; width: 100%; background-color: rgb(243, 243, 243); overflo=
+w: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![en=
+dif]--><table class=3D"main" style=3D"border: 0px; background-color: rgb(24=
+3, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica=
+, sans-serif; display: table; min-width: 100% !important;" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"spacer" id=
+=3D"bb06f6e0-16f3-63ee-caa5-5a2da811aa9e" width=3D"640"> <tbody> <tr> <td c=
+lass=3D"spacer-simple" style=3D"width: 640px; font-size: 14px; color: rgb(0=
+, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"min-width:100% !important; width:100% !important"> <tbody> =
+<tr> <td id=3D"spaceman" width=3D"100%" height=3D"2" style=3D"width: 640px;=
+ font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td=
+> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div>=
+<!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=
+=3D"generaldataishere" data-emailwidth=3D"640"></div></div></td></tr></tbod=
+y></table> <img style=3D"display:none !important; width:1px; height:1px;" s=
+rc=3D"https://sloth.contactpigeon.com/sloth/ihuWsurgm1/e/85639784/ei/188139=
+0/image/im-intersportro.jpg" alt=3D"" height=3D1 width=3D1 border=3D"0" tit=
+le=3D"=CE=B9"/></body></html>=
+
+--_----------=_1741170138293704225929--
+

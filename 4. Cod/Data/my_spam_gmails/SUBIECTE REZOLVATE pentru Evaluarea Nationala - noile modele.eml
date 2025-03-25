@@ -1,0 +1,1385 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp1603169gdb;
+        Sat, 1 Mar 2025 08:10:28 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGPamIPmE0r6jXkn+Sre+MKtlUmU6a2fmowJpsQWAQ44OD61r8Zyb8BDyqtm9N5P9AlxuKt
+X-Received: by 2002:a17:907:c283:b0:ab7:e567:4fe8 with SMTP id a640c23a62f3a-abf261eae7bmr902528666b.25.1740845427883;
+        Sat, 01 Mar 2025 08:10:27 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1740845427; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Q5QvwmPtl0AgcYn26ndu7PyRbyhywfCj991fECfLyZX3E/TK8YyODMFDO+GnGe7J8K
+         XXAbzu9Lne2gMK2+blrwXsNqgYc8eKuIMKakXeDv7mZYXGrXHvWg/jmljnNumnWQPBJI
+         Z+HNOd7DU1tz70FuokpI2pB7XvWEtM2LSk3jtLY4YRUyCFzMiYmHwui0NHkZL2FpyeVT
+         3qoe5hJMcE42KVoZ9/i9VrEXapYvbRCiANPJ21FL0Rb7yave7t1ox/d9NTU9w7SgY/XC
+         nIQOj0G+mb4aFAjnyYNiBOu8ko2AGBdozjgbCNFuwAqhyoEZjjdr0AtiRMzjT0clasY0
+         v0Kw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:message-id:list-unsubscribe
+         :require-recipient-valid-since:subject:errors-to:reply-to:from:to
+         :date:domainkey-signature:dkim-signature;
+        bh=dyFSHDWC/PJ8mANGiPMWBMDsLZdfuVo/IzAcwQK+xKE=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=Dj4VgbZwbEQ9i0lAevi70Gq42jnpYkMqRPvQazyW5L9noMdWaMdAqMsf5DiQytvH59
+         AP4KgFwvQMzK/tep4l937pwWlBl1q/k8kEDi0Q4/Sh+aRQTh79fcCD8KUNCFuhlRg5Gj
+         Q7Om5j82MHjj22XH9Woi2tk7u+0AEuSRT7mtNd+P+i7BN+yIJ7lqhWbS3mMki2ai6p7K
+         /y8A48Ivd+gjXcuzvIJnNW46yMdutc2blP0F6yQt0PG8+1RFYI4/P8lI3hmQhfFCcGi2
+         Lgh0WAfZAhq5RQAeMfd7gX4gXkXuzNP4oLipqflICEtQJRhEEeyhqtwiwXEvosT1A/yQ
+         f6rA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b="AxWLUb/A";
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Return-Path: <news@info.contabilul.ro>
+Received: from info.contabilul.ro (info.contabilul.ro. [89.46.103.122])
+        by mx.google.com with ESMTP id 4fb4d7f45d1cf-5e4c3fb642bsi5834245a12.309.2025.03.01.08.10.27
+        for <radu.25201@gmail.com>;
+        Sat, 01 Mar 2025 08:10:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) client-ip=89.46.103.122;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b="AxWLUb/A";
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id 03EE6451DAAF9
+	for <radu.25201@gmail.com>; Sat,  1 Mar 2025 18:10:27 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; s=private; bh=IjmoWKR3vbWlNpX5easjsY
+	79TM4=; b=AxWLUb/AFe1NQ496+m414HDZ2rGXKJrAKP5xAF5dnYNmPKYsLvT1QF
+	4/qW/FIEenLTeH8LUuKZXTjgL7blrEuS14KuAR72LmMpItA3zl0QczizlV6ypkcy
+	EidBfC80FDiD+pYY8QG00hzbSECSBCxgd2OPmgAXKLy/5HhxVtuKo=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; q=dns; s=private; b=EEZ+SsDjrIYAUMYr
+	Bh+beHmuKiNp/Efr7U0YCn0jvTTCT4vUUB3dUEMkQNoogr8h72rcD8dCflDsP+tC
+	0qA/NWeUXEBsHxHJXGwk5xeBotfP7z0vRnlHhn3W1m/yyoIpULpbIdsEB3nVwcHw
+	+opZVPsjAEwa2XfsraXSbOJsYvw=
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id E7396451DAAEB
+	for <radu.25201@gmail.com>; Sat,  1 Mar 2025 18:10:26 +0200 (EET)
+Date: Sat, 1 Mar 2025 18:10:26 +0200
+To: radu.25201@gmail.com
+From: InfoNews Contabilul <news@info.contabilul.ro>
+Reply-to: eIC <office@info.contabilul.ro>
+Errors-To: news@info.contabilul.ro
+Subject: SUBIECTE REZOLVATE pentru Evaluarea Nationala - noile modele
+X-Complaints-To: abuse@info.contabilul.ro
+Require-Recipient-Valid-Since: radu.25201@gmail.com; Tue, 05 Jul 2022 16:46:51 +0300
+List-Unsubscribe: http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3791&CampaignStatisticsID=3391&Demo=0&EncryptedMemberID=NDY1ODExODYwOA%3D%3D&Email=cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Sender: news@info.contabilul.ro
+Message-ID: <57f1ea1f7c4487c1062eb8f5bec37937@info.contabilul.ro>
+X-Priority: 3
+X-Mailer-MsgId: cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Mailer-CSID: Mzc5MV8zMzkx
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_57f1ea1f7c4487c1062eb8f5bec37937"
+
+
+--b1_57f1ea1f7c4487c1062eb8f5bec37937
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+=09
+=09
+	=09
+	=09
+		=09
+			=09
+				=09
+					=09
+						=09
+							=09
+									Stimate Abonat  , inscris la data de 05/25/2022
+										Bucuresti, 1.3.25 18:10
+							=09
+						=09
+					=09
+					=09
+						=09
+					=09
+					=09
+						=09
+							=09
+								=09
+									=09
+										=09
+											=09
+												=09
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )40%
+REDUCERE la culegeri (
+https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )pentru=20
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)Evaluarea Nationala
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)Transport GRATUIT prin curier
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)...vezi AICI toate Reducerile=20
+														=09
+														Stimate parinte,
+														In fiecare an avem parte de o perioada agitata pentru
+copiii nostri: Evaluarile Nationale!
+															Sunteti un pic ingrijorat?
+														Nu e cazul, deoarece acum aveti la dispozitie cele mai
+eficiente( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)instrumente de pregatire, conform programei, la preturi reduse de
+pana la 40%.
+														Este vorba despre(
+https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )Culegeri cu
+exercitii rezolvate, care si-au dovedit deja eficienta in anii trecuti
+si care au intrunit aprecierile unanime atat ale elevilor, cat si ale
+parintilor si profesorilor. Ele contin sute de exercitii pentru toate
+nivelurile si permit fixarea impecabila a informatiei la materiile de
+baza: limba romana si matematica.
+														Doar 2-3 exercitii pe zi incepand din acest moment si
+Evaluarea Nationalase va dovedi floare la ureche pentru copilul dvs.,
+oferindu-i incredere in sine si o stare de spirit optimista, fara
+stres  un lucru esential mai ales daca in vara urmeaza admiterea la
+liceu!
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)Bonus! ( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )Comandati
+acum si beneficiati de Transport GRATUIT!=20
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)Alegeti Culegerile dorite  profitati de REDUCERILE valabile astazi:
+													=09
+														=09
+															=09
+																	Evaluare Nationala clasa a VI-a: Exercitii Rezolvate
+la Matematica
+																	Evaluare Nationala clasa a VIII-a
+																		Vocabular si Fonetica
+																		+ Reguli de punctuatie si ortografie
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	68.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)57.75 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	126.00 lei
+																		 ( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)74.55 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+															=09
+															=09
+																	Evaluare Nationala clasa a VIII-a
+																		(exercitii rezolvate la
+																		limba romana si matematica)=20
+																	Evaluare Nationala clasa a VI-a
+																		(545 exercitii rezolvate la romana
+																		- engleza si matematica)=20
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	136.50 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)89.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	136.50 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)89.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+															=09
+															=09
+																	Evaluare Nationala clasa a IV-a
+																		(500 exercitii rezolvate la
+																		limba romana si matematica)=20
+																	Evaluare Nationala: Dictionar 1001 cuvinte si
+constructii gresite
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	136.50 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)89.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	46.20 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)38.85 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+															=09
+														=09
+													=09
+													=09
+														=09
+															=09
+																	Evaluare Nationala clasa a II-a
+																		(495 exercitii rezolvate la
+																		limba romana si matematica)
+																	Evaluare Nationala clasa a VIII-a: Modele de texte
+pentru nota 10
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	136.50 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)89.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	68.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)57.75 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+															=09
+														=09
+													=09
+													=09
+														=09
+															=09
+																=09
+																		Evaluare Nationala clasa a VIII-a
+																		Gramatica - Fise de lucru rezolvate
+																	Evaluare Nationala clasa a VIII-a: Caiet de
+antrenament Limba si Literatura Romana
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+															=09
+															=09
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	68.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)57.75 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+																	( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+																	68.25 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)57.75 lei
+																		( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)(TVA inclusa)
+															=09
+														=09
+													=09
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )
+															Grabiti-va! Stocuri limitate!
+														=09
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418
+)Vedeti AICI toate Culegerile incluse in oferta=20
+														( https://evaluare-nationala.stiinta.ro/?cs=3D1632418 )Nu
+ratati REDUCERILE de pana la 40%! Profitati!
+												=09
+											=09
+										=09
+									=09
+								=09
+							=09
+						=09
+					=09
+					=09
+						=09
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+							( http://www.contabilul.ro/privacypolicy/privacypolicy.html
+)Politica de confidentialitate | ( mailto:gdpr@rs.ro )Raporteaza abuz
+| (
+http://www.info.contabilul.ro/html_version.php?CampaignID=3D3791&Campaign=
+StatisticsID=3D3391&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Ema=
+il=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvbQ=3D=3D
+)Versiune html | (
+http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3791&CampaignS=
+tatisticsID=3D3391&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D
+)Click aici pentru dezabonare
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+						=09
+								Va reamintim ca ati solicitat primirea acestui newsletter pe
+data de 05/25/2022
+								Expeditor: RentropStraton, Bdul. Natiunile Unite nr. 4,
+Bucuresti, Romania
+									Tel: 004-021.209.45.12
+						=09
+					=09
+				=09
+			=09
+		=09
+	=09
+
+
+--b1_57f1ea1f7c4487c1062eb8f5bec37937
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:s=
+chemas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:=
+vml">
+	<head>
+		<meta charset=3D"utf-8">
+		<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+		<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+		<meta name=3D"x-apple-disable-message-reformatting">
+		<title></title>
+		<style type=3D"text/css">html,
+			body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			}
+
+			* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			}
+
+			div[style*=3D"margin: 16px 0"] {
+			margin: 0 !important;
+			}
+
+			table,
+			td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			}
+
+			table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+			}
+			table table table {
+			table-layout: auto;
+			}
+
+			img {
+			-ms-interpolation-mode:bicubic;
+			}
+
+			a {
+			text-decoration: none;
+			}
+
+			*[x-apple-data-detectors],  /* iOS */
+			.unstyle-auto-detected-links *,
+			.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+			}
+
+			.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+			}
+			img.g-img + div {
+			display: none !important;
+			}
+
+			@media only screen and (min-device-width: 320px) and (max-device-width=
+: 374px) {
+			u ~ div .email-container {
+			min-width: 320px !important;
+			}
+			}
+			@media only screen and (min-device-width: 375px) and (max-device-width=
+: 413px) {
+			u ~ div .email-container {
+			min-width: 375px !important;
+			}
+			}
+			@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+			min-width: 414px !important;
+			}
+			}</style>
+		<style type=3D"text/css">.button-td, .button-a {
+				transition: all 100ms ease-in;
+			}
+			.button-td-primary:hover, .button-a-primary:hover {
+				background: #555555 !important;
+				border-color: #555555 !important;
+			}
+
+			@media screen and (max-width: 480px) {
+				.fluid {
+					width: 100% !important;
+					max-width: 100% !important;
+					height: auto !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+
+				.stack-column, .stack-column-center {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					direction: ltr !important;
+				}
+				.stack-column-center {
+					text-align: center !important;
+				}
+
+				.center-on-narrow {
+					text-align: center !important;
+					display: block !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+					float: none !important;
+				}
+				table.center-on-narrow {
+					display: inline-block !important;
+				}
+
+				.email-container p {
+					font-size: 17px !important;
+				}
+				.maxwidthmobile {
+					max-width: 100% !important;
+				}
+				.center-on-narrow img {
+					max-width: 320px !important;
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!--[if mso]>
+		<noscript>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		</noscript>
+		<![endif]--><!--[if lte mso 11]>
+		<style type=3D"text/css">
+		.mj-outlook-group-fix { width:100% !important; }
+		</style>
+		<![endif]-->		<style type=3D"text/css">@media only screen and (min-widt=
+h: 480px) {
+				.mj-column-per-100 {
+					width: 100% !important;
+					max-width: 100%;
+				}
+				.mj-column-per-32 {
+					width: 32% !important;
+					max-width: 32%;
+				}
+				.mj-column-per-50 {
+					width: 50% !important;
+					max-width: 50%;
+				}
+			}</style>
+		<style media=3D"screen and (min-width:480px)" type=3D"text/css">.moz-te=
+xt-html .mj-column-per-100 {
+				width: 100% !important;
+				max-width: 100%;
+			}
+			.moz-text-html .mj-column-per-32 {
+				width: 32% !important;
+				max-width: 32%;
+			}
+			.moz-text-html .mj-column-per-50 {
+				width: 50% !important;
+				max-width: 50%;
+			}</style>
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				table.mj-full-width-mobile {
+					width: 100% !important;
+				}
+				td.mj-full-width-mobile {
+					width: auto !important;
+				}
+			}</style>
+<!--[if gte mso 9]>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->	</head>
+	<body style=3D"margin: 0; padding: 0 !important; mso-line-height-rule: e=
+xactly; background-color:#f0f0f0;" width=3D"100%">
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!-- <center style=3D"width: 100%; background-color: #f0f0f0;"> --><!--[i=
+f mso | IE]>
+		<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"background-color:#f0f0f0;">
+		<tr>
+		<td>
+		<![endif]-->		<div align=3D"center" style=3D"background: #f0f0f0; paddi=
+ng: 15px 0 15px 0;">
+			<div class=3D"email-container" style=3D"max-width: 720px; margin: 0 au=
+to;"><!--[if mso]>
+				<table align=3D"center" role=3D"presentation" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" width=3D"720">
+				<tr>
+				<td>
+				<![endif]--><!-- Email Body : BEGIN -->
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"margin: 0px auto; width: 100%;"><!-- Hero Image, Flush =
+: BEGIN -->
+				=09
+						<tr>
+							<td style=3D"padding: 10px 20px; text-align: left; background-colo=
+r: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-=
+serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; font=
+-weight: 400; color: #000000;">
+								<div style=3D"text-align: left; background-color: #ffffff; font-f=
+amily: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: =
+15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; colo=
+r: #000000;">
+									<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height:=
+ 24px; text-align: center; color: #343535;">Stimate Abonat <span style=3D=
+"text-transform: uppercase;"> </span>, inscris la data de 05/25/2022<br>
+										Bucuresti, 1.3.25 18:10</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style=3D"background-color: #ffffff; text-align: center;"><img =
+alt=3D"alt_text" border=3D"0" class=3D"fluid g-img" height=3D"" src=3D"ht=
+tp://contabilul.manager.ro/images/nws_img/contabilul_header.png" style=3D=
+"width: 100%; max-width: 720px; height: auto; background: #dddddd; font-f=
+amily: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; =
+color: #000000; margin: auto;" width=3D"720"></td>
+						</tr>
+<!-- Hero Image, Flush : END --><!-- 1 Column Text: BEGIN -->						<tr>
+							<td style=3D"background-color: #ffffff;">
+								<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"width: 100%;">
+								=09
+										<tr>
+											<td style=3D"padding: 10px 20px; text-align: left; background-=
+color: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,s=
+ans-serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; =
+font-weight: 400; color: #000000;"><!--START_CONTENT-->
+												<div style=3D"text-align: left; background-color: #ffffff; fo=
+nt-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; =
+color: #000000;">
+													<div style=3D"text-align: left; font-family: 'Helvetica Neue=
+','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1.5=
+; font-weight: 400; color: #000000; padding-top: 10px;">
+														<p align=3D"center"><span><a href=3D"http://www.info.contab=
+ilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby=
+8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&C=
+ampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTI=
+wMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff;" tar=
+get=3D"_blank"><img alt=3D"header_culegeri_exercitii_rezolvate_760x400.jp=
+g" height=3D"358" src=3D"https://infonews.portalinvatamant.ro/admin/temp/=
+newsletters/7167/header_culegeri_exercitii_rezolvate_760x400.jpg" style=3D=
+"border: 0; height: auto; line-height: 100%; outline: none; text-decorati=
+on: none; margin: auto; max-width: 100%; min-width: 300px; vertical-align=
+: top; display: block; width: 680px;" title=3D"header_culegeri_exercitii_=
+rezolvate_760x400.jpg" width=3D"680"></a></span></p>
+														<h1 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #ff0000;" ta=
+rget=3D"_blank">40% REDUCERE la culegeri</a> <a href=3D"http://www.info.c=
+ontabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50Y=
+S5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D=
+%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS=
+4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #ff0000;=
+" target=3D"_blank">pentru </a></span></h1>
+														<h1 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #ff0000;" ta=
+rget=3D"_blank">Evaluarea Nationala</a></span></h1>
+														<p style=3D"text-align: center;"><span style=3D"font-size: =
+24px;"><strong><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Na=
+me=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campaign=
+StatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" styl=
+e=3D"text-decoration: none; color: #0000ff;" target=3D"_blank">Transport =
+GRATUIT prin curier</a></strong></span></p>
+														<h2 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; bac=
+kground-color: #ffff99;" target=3D"_blank">...vezi <span style=3D"text-de=
+coration: underline;">AICI</span> toate Reducerile &gt;&gt;<br>
+															</a></span></h2>
+														<p><span><strong><em>Stimate parinte,</em></strong></span><=
+/p>
+														<p><span><strong>In fiecare an avem parte de o perioada agi=
+tata pentru copiii nostri: Evaluarile Nationale!<br>
+															Sunteti un pic ingrijorat?</strong></span></p>
+														<p><span>Nu e cazul, deoarece acum aveti la dispozitie cele=
+ mai eficiente<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR=
+0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Nam=
+e=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignS=
+tatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=
+=3D"text-decoration: none; color: #ff0000; font-weight: bold;" target=3D"=
+_blank">&nbsp;instrumente de pregatire, conform programei, la preturi red=
+use de pana la 40%.</a></span></p>
+														<p><span>Este vorba despre<a href=3D"http://www.info.contab=
+ilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby=
+8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&C=
+ampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTI=
+wMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #ff0000; font=
+-weight: bold;" target=3D"_blank">&nbsp;Culegeri cu exercitii rezolvate</=
+a>, care si-au dovedit deja eficienta in anii trecuti si care au intrunit=
+ aprecierile unanime atat ale elevilor, cat si ale parintilor si profesor=
+ilor. Ele contin sute de exercitii pentru toate nivelurile si permit fixa=
+rea impecabila a informatiei la materiile de baza: limba romana si matema=
+tica.</span></p>
+														<p><span>Doar 2-3 exercitii pe zi incepand din acest moment=
+ si <strong>Evaluarea Nationala</strong>&nbsp;se va dovedi floare la urec=
+he pentru copilul dvs., oferindu-i incredere in sine si o stare de spirit=
+ optimista, fara stres &ndash; un lucru esential mai ales daca in vara ur=
+meaza admiterea la liceu!</span></p>
+														<h3><span><a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=
+=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791=
+&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=
+=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">B=
+onus</a><span style=3D"color: #ff0000;">!</span> <a href=3D"http://www.in=
+fo.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3Rpa=
+W50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwO=
+A%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3Dcm=
+FkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #000=
+0ff;" target=3D"_blank">Comandati acum si beneficiati de Transport GRATUI=
+T! </a></span></h3>
+														<h3 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #ff0000;" ta=
+rget=3D"_blank">Alegeti Culegerile dorite &ndash; profitati de REDUCERILE=
+ valabile astazi:</a></span></h3>
+														<table border=3D"0" cellpadding=3D"5" cellspacing=3D"5" sty=
+le=3D"width: 100%;">
+														=09
+																<tr>
+																	<td align=3D"center" colspan=3D"2" style=3D"font-family:=
+ 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; =
+line-height: 1.5; font-weight: 400; color: #000000; padding-top: 10px;"><=
+span><strong>Evaluare Nationala clasa a VI-a: Exercitii Rezolvate la Mate=
+matica</strong></span></td>
+																	<td align=3D"center" colspan=3D"2" style=3D"font-family:=
+ 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; =
+line-height: 1.5; font-weight: 400; color: #000000; padding-top: 10px;"><=
+span><strong>Evaluare Nationala clasa a VIII-a<br>
+																		Vocabular si Fonetica<br>
+																		+ Reguli de punctuatie si ortografie</strong></span></t=
+d>
+																</tr>
+																<tr>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"36%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"174" src=3D"https://lp.rs.ro/upload_=
+img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_963c8b7959.jpg" tit=
+le=3D"" width=3D"150"></span></a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"15%"><span><a href=3D"http://www.info.contabilul.ro/link.php?URL=
+=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campa=
+ignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff;" target=3D"_blank"><img al=
+t=3D"alt_text" height=3D"77" src=3D"https://infonews.portalinvatamant.ro/=
+admin/temp/newsletters/3718/15.png" title=3D"" width=3D"80"></a></span></=
+td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><img align=3D"middle" alt=3D"alt_text" border=3D"0" height=3D"129" s=
+rc=3D"https://lp.rs.ro/upload_img/5464_evaluare-nationala.stiinta.ro/ppho=
+to_1_small_18f6a49622.jpg" title=3D"" width=3D"200"></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><a href=3D"http://www.info.contabilul.ro/link.php?URL=
+=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campa=
+ignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff;" target=3D"_blank"><img al=
+t=3D"alt_text" src=3D"https://img.rspedia.ro/beta/upload/badge_1581506382=
+.png" title=3D"" width=3D"80"></a></span></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"36%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.ro/be=
+ta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a></spa=
+n></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"15%"><span><s>68.25 lei</s></span><br>
+																		<span><a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=
+=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791=
+&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=
+=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">5=
+7.75 lei</a></span><br>
+																		<span style=3D"font-size: 10px; font-family: arial, hel=
+vetica, sans-serif;"><a href=3D"http://www.info.contabilul.ro/link.php?UR=
+L=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=
+=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Ca=
+mpaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D=
+" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">(TVA=
+ inclusa)</a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.ro/be=
+ta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a></spa=
+n></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><s>126.00 lei</s></span><br>
+																		<span> <a href=3D"http://www.info.contabilul.ro/link.ph=
+p?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxO=
+A=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D379=
+1&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb2=
+0=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">=
+74.55 lei</a></span><br>
+																		<span style=3D"font-size: 10px; font-family: arial, hel=
+vetica, sans-serif;"><a href=3D"http://www.info.contabilul.ro/link.php?UR=
+L=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=
+=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Ca=
+mpaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D=
+" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">(TVA=
+ inclusa)</a></span></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" colspan=3D"2" style=3D"font-family:=
+ 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; =
+line-height: 1.5; font-weight: 400; color: #000000; padding-top: 10px;"><=
+span><strong>Evaluare Nationala clasa a VIII-a<br>
+																		(exercitii rezolvate la<br>
+																		limba romana si matematica) </strong></span></td>
+																	<td align=3D"center" colspan=3D"2" style=3D"font-family:=
+ 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; =
+line-height: 1.5; font-weight: 400; color: #000000; padding-top: 10px;"><=
+span><strong>Evaluare Nationala clasa a VI-a<br>
+																		(545 exercitii rezolvate la romana<br>
+																		- engleza si matematica) </strong></span></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"36%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"105" src=3D"https://lp.rs.ro/upload_=
+img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_ef902ad38b.jpg" tit=
+le=3D"" width=3D"150"></span></a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"15%"><span><a href=3D"http://www.info.contabilul.ro/link.php?URL=
+=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campa=
+ignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff;" target=3D"_blank"><img al=
+t=3D"alt_text" height=3D"81" src=3D"https://infonews.portalinvatamant.ro/=
+admin/temp/newsletters/3718/35.png" title=3D"" width=3D"80"></a></span></=
+td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"150" src=3D"https://lp.rs.ro/upload_=
+img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_79321c79db.jpg" tit=
+le=3D"" width=3D"150"></span></a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><a href=3D"http://www.info.contabilul.ro/link.php?URL=
+=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campa=
+ignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff;" target=3D"_blank"><img al=
+t=3D"alt_text" height=3D"81" src=3D"https://infonews.portalinvatamant.ro/=
+admin/temp/newsletters/3718/35.png" title=3D"" width=3D"80"></a></span></=
+td>
+																</tr>
+																<tr>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.ro/be=
+ta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a></spa=
+n></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><s>136.50 lei</s></span><br>
+																		<span><a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=
+=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791=
+&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=
+=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">8=
+9.25 lei</a></span><br>
+																		<span style=3D"font-size: 10px; font-family: arial, hel=
+vetica, sans-serif;"><a href=3D"http://www.info.contabilul.ro/link.php?UR=
+L=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=
+=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Ca=
+mpaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D=
+" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">(TVA=
+ inclusa)</a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.ro/be=
+ta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a></spa=
+n></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><s>136.50 lei</s></span><br>
+																		<span><a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=
+=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791=
+&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=
+=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">8=
+9.25 lei</a></span><br>
+																		<span style=3D"font-size: 10px; font-family: arial, hel=
+vetica, sans-serif;"><a href=3D"http://www.info.contabilul.ro/link.php?UR=
+L=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=
+=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Ca=
+mpaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D=
+" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">(TVA=
+ inclusa)</a></span></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" colspan=3D"2" style=3D"font-family:=
+ 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; =
+line-height: 1.5; font-weight: 400; color: #000000; padding-top: 10px;"><=
+span><strong>Evaluare Nationala clasa a IV-a<br>
+																		(500 exercitii rezolvate la<br>
+																		limba romana si matematica) </strong></span></td>
+																	<td align=3D"center" colspan=3D"2" style=3D"font-family:=
+ 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; =
+line-height: 1.5; font-weight: 400; color: #000000; padding-top: 10px;"><=
+span><strong>Evaluare Nationala: Dictionar 1001 cuvinte si constructii gr=
+esite</strong></span></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"36%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"135" src=3D"https://lp.rs.ro/upload_=
+img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_0e244214fd.jpg" tit=
+le=3D"" width=3D"200"></span></a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"15%"><span><a href=3D"http://www.info.contabilul.ro/link.php?URL=
+=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campa=
+ignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff;" target=3D"_blank"><img al=
+t=3D"alt_text" height=3D"81" src=3D"https://infonews.portalinvatamant.ro/=
+admin/temp/newsletters/3718/35.png" title=3D"" width=3D"80"></a></span></=
+td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"205" src=3D"https://lp.rs.ro/upload_=
+img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_4d4963c58b.jpg" tit=
+le=3D"" width=3D"150"></span></a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><a href=3D"http://www.info.contabilul.ro/link.php?URL=
+=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Campa=
+ignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff;" target=3D"_blank"><img al=
+t=3D"alt_text" height=3D"81" src=3D"https://infonews.portalinvatamant.ro/=
+admin/temp/newsletters/3718/40.png" title=3D"" width=3D"80"></a></span></=
+td>
+																</tr>
+																<tr>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.ro/be=
+ta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a></spa=
+n></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><s>136.50 lei</s></span><br>
+																		<span><a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=
+=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791=
+&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=
+=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">8=
+9.25 lei</a></span><br>
+																		<span style=3D"font-size: 10px; font-family: arial, hel=
+vetica, sans-serif;"><a href=3D"http://www.info.contabilul.ro/link.php?UR=
+L=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=
+=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Ca=
+mpaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D=
+" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">(TVA=
+ inclusa)</a></span></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" width=3D"35%"><=
+span><a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9l=
+dmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encr=
+yptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatistics=
+ID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-=
+decoration: none; color: #0000ff;" target=3D"_blank"><span class=3D"img-p=
+rod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.ro/be=
+ta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a></spa=
+n></td>
+																	<td align=3D"center" style=3D"font-family: 'Helvetica Ne=
+ue','HelveticaNeue',Helvetica,sans-serif; font-size: 15px; line-height: 1=
+.5; font-weight: 400; color: #000000; padding-top: 10px;" valign=3D"top" =
+width=3D"14%"><span><s>46.20 lei</s></span><br>
+																		<span><a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=
+=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791=
+&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=
+=3D" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">3=
+8.85 lei</a></span><br>
+																		<span style=3D"font-size: 10px; font-family: arial, hel=
+vetica, sans-serif;"><a href=3D"http://www.info.contabilul.ro/link.php?UR=
+L=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=
+=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&Ca=
+mpaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D=
+" style=3D"text-decoration: none; color: #ff0000;" target=3D"_blank">(TVA=
+ inclusa)</a></span></td>
+																</tr>
+														=09
+														</table>
+														<table border=3D"0" cellpadding=3D"5" cellspacing=3D"5">
+														=09
+																<tr>
+																	<td align=3D"center" colspan=3D"2"><span style=3D"font-s=
+ize: 16px; font-family: arial, helvetica, sans-serif;"><strong>Evaluare N=
+ationala clasa a II-a<br>
+																		(495 exercitii rezolvate la<br>
+																		limba romana si matematica)</strong></span></td>
+																	<td align=3D"center" colspan=3D"2"><span style=3D"font-s=
+ize: 16px; font-family: arial, helvetica, sans-serif;"><strong>Evaluare N=
+ationala clasa a VIII-a: Modele de texte pentru nota 10</strong></span></=
+td>
+																</tr>
+																<tr>
+																	<td align=3D"center" width=3D"36%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"125" src=3D"https://lp.rs.ro/upl=
+oad_img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_84dcc47fec.jpg"=
+ title=3D"" width=3D"170"></span></a></span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"15%"><span>=
+<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsd=
+WFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encrypted=
+MemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D=
+3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><=
+img alt=3D"alt_text" height=3D"81" src=3D"https://infonews.portalinvatama=
+nt.ro/admin/temp/newsletters/3718/35.png" title=3D"" width=3D"80"></a></s=
+pan></td>
+																	<td align=3D"center" width=3D"35%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"199" src=3D"https://lp.rs.ro/upl=
+oad_img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_7c67a46299.jpg"=
+ title=3D"" width=3D"150"></span></a></span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"14%"><span>=
+<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsd=
+WFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encrypted=
+MemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D=
+3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><=
+img alt=3D"alt_text" height=3D"77" src=3D"https://infonews.portalinvatama=
+nt.ro/admin/temp/newsletters/3718/15.png" title=3D"" width=3D"80"></a></s=
+pan></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" width=3D"35%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.r=
+o/beta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a><=
+/span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"14%"><span =
+style=3D"font-size: 14px; font-family: arial, helvetica, sans-serif;"><s>=
+136.50 lei</s></span><br>
+																		<span style=3D"color: #ff0000; font-size: 14px; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">89.25=
+ lei</span></a></span><br>
+																		<span style=3D"color: #ff0000; font-size: 14px; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">(TVA =
+inclusa)</span></a></span></td>
+																	<td align=3D"center" width=3D"35%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.r=
+o/beta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a><=
+/span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"14%"><span =
+style=3D"font-size: 14px; font-family: arial, helvetica, sans-serif;"><s>=
+68.25 lei</s></span><br>
+																		<span style=3D"font-size: 14px; color: #ff0000; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">57.75=
+ lei</span></a></span><br>
+																		<span style=3D"font-size: 14px; color: #ff0000; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">(TVA =
+inclusa)</span></a></span></td>
+																</tr>
+														=09
+														</table>
+														<table border=3D"0" cellpadding=3D"5" cellspacing=3D"5">
+														=09
+																<tr>
+																	<td align=3D"center" colspan=3D"2"><br>
+																		<span style=3D"font-size: 16px; font-family: arial, hel=
+vetica, sans-serif;"><strong>Evaluare Nationala clasa a VIII-a<br>
+																		Gramatica - Fise de lucru rezolvate</strong></span></td=
+>
+																	<td align=3D"center" colspan=3D"2"><span style=3D"font-s=
+ize: 16px; font-family: arial, helvetica, sans-serif;"><strong>Evaluare N=
+ationala clasa a VIII-a: Caiet de antrenament Limba si Literatura Romana<=
+/strong></span></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" width=3D"36%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"201" src=3D"https://lp.rs.ro/upl=
+oad_img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_3de2406274.jpg"=
+ title=3D"" width=3D"160"></span></a></span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"15%"><span>=
+<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsd=
+WFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encrypted=
+MemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D=
+3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><=
+img alt=3D"alt_text" height=3D"79" src=3D"https://infonews.portalinvatama=
+nt.ro/admin/temp/newsletters/3927/reducere.png" title=3D"" width=3D"80"><=
+/a></span></td>
+																	<td align=3D"center" width=3D"35%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"215" src=3D"https://lp.rs.ro/upl=
+oad_img/5464_evaluare-nationala.stiinta.ro/pphoto_1_small_6c6a9f999f.jpg"=
+ title=3D"" width=3D"150"></span></a></span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"14%"><span>=
+<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsd=
+WFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&Encrypted=
+MemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D=
+3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><=
+img alt=3D"alt_text" height=3D"77" src=3D"https://infonews.portalinvatama=
+nt.ro/admin/temp/newsletters/3718/15.png" title=3D"" width=3D"80"></a></s=
+pan></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" width=3D"35%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.r=
+o/beta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a><=
+/span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"14%"><span =
+style=3D"font-size: 14px; font-family: arial, helvetica, sans-serif;"><s>=
+68.25 lei</s></span><br>
+																		<span style=3D"font-size: 14px; color: #ff0000; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">57.75=
+ lei</span></a></span><br>
+																		<span style=3D"font-size: 14px; color: #ff0000; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">(TVA =
+inclusa)</span></a></span></td>
+																	<td align=3D"center" width=3D"35%"><span><a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25h=
+bGEuc3RpaW50YS5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1=
+ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&E=
+mail=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" target=3D"_blank"><span class=3D"i=
+mg-prod"><img alt=3D"alt_text" height=3D"43" src=3D"https://img.rspedia.r=
+o/beta/upload/buton_1581507955.png" title=3D"" width=3D"172"></span></a><=
+/span></td>
+																	<td align=3D"center" valign=3D"top" width=3D"14%"><span =
+style=3D"font-size: 14px; font-family: arial, helvetica, sans-serif;"><s>=
+68.25 lei</s></span><br>
+																		<span style=3D"font-size: 14px; color: #ff0000; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">57.75=
+ lei</span></a></span><br>
+																		<span style=3D"font-size: 14px; color: #ff0000; font-fa=
+mily: arial, helvetica, sans-serif;"><a href=3D"http://www.info.contabilu=
+l.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yby8/Y=
+3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Camp=
+aignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMU=
+BnbWFpbC5jb20=3D" target=3D"_blank"><span style=3D"color: #ff0000;">(TVA =
+inclusa)</span></a></span></td>
+																</tr>
+														=09
+														</table>
+														<h3 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #ff0000;" ta=
+rget=3D"_blank"><br>
+															Grabiti-va! Stocuri limitate!<br>
+															</a></span></h3>
+														<h2 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; bac=
+kground-color: #ffff99;" target=3D"_blank">Vedeti <u>AICI</u> toate Culeg=
+erile incluse in oferta &gt;&gt;</a></span></h2>
+														<h2 align=3D"center"><span><a href=3D"http://www.info.conta=
+bilul.ro/link.php?URL=3DaHR0cHM6Ly9ldmFsdWFyZS1uYXRpb25hbGEuc3RpaW50YS5yb=
+y8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&=
+CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNT=
+IwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: underline; color: #000000=
+; background-color: #ffff99;" target=3D"_blank">Nu ratati REDUCERILE de p=
+ana la 40%! Profitati!</a></span></h2>
+													</div>
+												</div>
+<!--END_CONTENT-->											</td>
+										</tr>
+								=09
+								</table>
+							</td>
+						</tr>
+<!-- 1 Column Text
+						<!-- Clear Spacer : END -->						<tr>
+							<td class=3D"center-on-narrow" dir=3D"ltr" style=3D"font-family: A=
+rial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #=
+000000; padding: 0px 10px; text-align: center; background-color: #ffffff;=
+">&nbsp;</td>
+						</tr>
+				=09
+				</table>
+<!-- Email Body : END -->				<table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" style=3D"max-width: 720px; width: 100%;=
+">
+				=09
+						<tr>
+							<td style=3D"padding: 20px; font-family: Arial, Helvetica, sans-se=
+rif; font-size: 12px; line-height: 15px; text-align: center; color: #6373=
+81; background-color:#e7e7e7;"><a href=3D"http://www.info.contabilul.ro/l=
+ink.php?URL=3DaHR0cDovL3d3dy5jb250YWJpbHVsLnJvL3ByaXZhY3lwb2xpY3kvcHJpdmF=
+jeXBvbGljeS5odG1s&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Campai=
+gnID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Email=3DcmFkdS4yNTIwMUBn=
+bWFpbC5jb20=3D" style=3D"color: #637381;" target=3D"_blank">Politica de c=
+onfidentialitate</a> | <a href=3D"mailto:gdpr@rs.ro" style=3D"color: #637=
+381;">Raporteaza abuz</a> | <a href=3D"http://www.info.contabilul.ro/html=
+_version.php?CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0&Encry=
+ptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvb=
+Q=3D=3D" style=3D"color: #637381;">Versiune html</a> | <a href=3D"http://=
+www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3791&CampaignStatisti=
+csID=3D3391&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D"
+style=3D"color: #637381;">Click aici pentru dezabonare</a></td>
+						</tr>
+				=09
+				</table>
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"background-color: #fbfbfb; padding: 15px 0px; width: 10=
+0%;">
+				=09
+						<tr>
+							<td style=3D"padding: 0px 20px; text-align: center; font-family: '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weig=
+ht: 400; line-height: 24px; color: #343535;">
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Va reamintim ca ati solicitat =
+primirea acestui newsletter pe data de 05/25/2022</p>
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Expeditor: Rentrop&amp;Straton=
+, Bdul. Natiunile Unite nr. 4, Bucuresti, Romania<br>
+									Tel: 004-021.209.45.12</p>
+							</td>
+						</tr>
+				=09
+				</table>
+<!--[if mso]>
+
+				</td>
+				</tr>
+				</table>
+				<![endif]-->			</div>
+		</div>
+<!--[if mso | IE]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+<img src=3D"http://www.info.contabilul.ro/read.php?EncryptedMemberID=3DND=
+Y1ODExODYwOA%3D%3D&CampaignID=3D3791&CampaignStatisticsID=3D3391&Demo=3D0=
+&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" width=3D"10" height=3D"10" alt=3D=
+"---">
+
+</body>
+</html>
+
+
+
+--b1_57f1ea1f7c4487c1062eb8f5bec37937--
+
+

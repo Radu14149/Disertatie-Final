@@ -1,0 +1,1486 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp2969865gdb;
+        Mon, 3 Mar 2025 21:09:08 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IExCMx4NbOhNXoMZAyYzuClAPtx7GOI7pYk7sIjAfSdGVpvgsUx1ftlT1VvOPdLWE9elnON
+X-Received: by 2002:a05:6000:2805:b0:390:fb37:1ca with SMTP id ffacd0b85a97d-390fb3705aamr6349512f8f.53.1741064947708;
+        Mon, 03 Mar 2025 21:09:07 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1741064947; cv=none;
+        d=google.com; s=arc-20240605;
+        b=F0fbGGA52R4m1BiQh3fNLTGegg8cj8YeEjKeRQTZZfg21/Wh0o3sRq00lstsZse7u2
+         GP1ygYkGc+vjBGaKd22fVbWwRNXfuqENSCOum7lrl59E5mrPBts9oHFomRvaoBbvikWH
+         IZtvjs1wf2zXCNXEFBWVFvXaS+UQAAaD2i96+mB8QaCZYbO4aeL7WPagsTAh9vK3stST
+         ox7xNOrjYs4Pw7cipZab11kB9685QjYWhfLiiXhbFKyRysuehkZrftDsmEIY6k1iGa6W
+         GwccJRPXk0GLeawh0m7Msb4eE6wMEgW9RnbwA4MZYoXb5QD5HBGB2AUqHpNbKabqW9uo
+         fKaw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:date:message-id:list-unsubscribe-post:list-unsubscribe
+         :mime-version:subject:to:reply-to:from:dkim-signature:dkim-signature;
+        bh=htZRdXN935AD9WyelUAtWepzXvmc8lwEH1ZfgBG9G1o=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=C2ppWQCB8hQBcC8LvO+j8tsNfy5YsBO8PY7bzEjFqzQWcHEnKt0E9jEognt44j+G94
+         UOF3TyGMd2WyWRhAyWyUJNJxmQgNYLwPbYyKyvHZd2GNIPj/UrqknkKkyy9dR9ti+vgd
+         E6szVIL+At0OAgYgw2fcmoggJPhCKEdQf4x5aPUsMW3mFW/OAxRqR0f6F/FlEEuqXXE6
+         9qWVWjEBPAqMtPLf7QZn40i9sr3AzvReU4Bi3or5h4GL1tKCSB4qMp5vbbsz0irYPBKA
+         dVcukh9Mz3HDlyWTXUbTevbeYFOFkiHe4+FSp1wrpjD+B15Ts1gzrCX8K+lpAf4VWaW9
+         QyZw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ebagaje.ro header.s=cd5bimbab7oe2oyyml7n5f3tqgdsb6st header.b=nfFdk9co;
+       dkim=pass header.i=@amazonses.com header.s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz header.b=lwScQYRR;
+       spf=pass (google.com: domain of 010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@nwl.ebagaje.ro designates 69.169.224.10 as permitted sender) smtp.mailfrom=010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@nwl.ebagaje.ro;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ebagaje.ro
+Return-Path: <010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@nwl.ebagaje.ro>
+Received: from b224-10.smtp-out.eu-central-1.amazonses.com (b224-10.smtp-out.eu-central-1.amazonses.com. [69.169.224.10])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-390e47970a0si7953932f8f.94.2025.03.03.21.09.07
+        for <radu.25201@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 03 Mar 2025 21:09:07 -0800 (PST)
+Received-SPF: pass (google.com: domain of 010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@nwl.ebagaje.ro designates 69.169.224.10 as permitted sender) client-ip=69.169.224.10;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ebagaje.ro header.s=cd5bimbab7oe2oyyml7n5f3tqgdsb6st header.b=nfFdk9co;
+       dkim=pass header.i=@amazonses.com header.s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz header.b=lwScQYRR;
+       spf=pass (google.com: domain of 010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@nwl.ebagaje.ro designates 69.169.224.10 as permitted sender) smtp.mailfrom=010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@nwl.ebagaje.ro;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ebagaje.ro
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=cd5bimbab7oe2oyyml7n5f3tqgdsb6st; d=ebagaje.ro; t=1741064947;
+	h=From:Reply-To:To:Subject:MIME-Version:Content-Type:List-Unsubscribe:List-Unsubscribe-Post:Message-ID:Date;
+	bh=9gF6rv4guivbNWEuKdhcuyY/ZYGDa8lgGLgCViAjPgs=;
+	b=nfFdk9coFJcJ3aE4grSTqrdvfrIam4gSmT8cM4Zgp+YX7dnSXHXsQ2IF3u7HZtLN
+	IJkFscKxXXSOJN1LF3L6Qh9fZW2k4eHI60WCkXdcb/DqEcXQXUzGFMerKp+MoiE6vI0
+	WAC2CcBwvRv/vf0r8lFBokgek8BJzgi6egz7Pm3V15FN8DkDgc5o3c9Z5D8II00tReb
+	hXSQyPAkp/mABlmyRlml27ysZ8A5r5u5dG9Xm7KWZwtDPnS1eR79LXtIFM7CTfPdfOu
+	kPWtLhtCkBUXWsrUmdKr28o5pfQ7nogeczYP5ACRwlribC0urRHPj3jfRfPHNT6+ouq
+	rIaREUaw6Q==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz; d=amazonses.com; t=1741064947;
+	h=From:Reply-To:To:Subject:MIME-Version:Content-Type:List-Unsubscribe:List-Unsubscribe-Post:Message-ID:Date:Feedback-ID;
+	bh=9gF6rv4guivbNWEuKdhcuyY/ZYGDa8lgGLgCViAjPgs=;
+	b=lwScQYRRJQcDE0/9p7gm3+HGrQOw4d0snFSAMM4Dez/NJqRSEDMDcu4Qz5jXZipw
+	tQ0mXUXLLXRO7E0wXuQI30P37KvDWYdJLkggikqbrI7ImTvpNu9ZIKhhvxYlFVhlkEi
+	Gyp4IIX9zy/kwHCH+GacOb6cJnlas+ueEq941afQ=
+From: =?utf-8?B?8J+ns0FkZWxpbmEgfCBlQmFnYWplLnJv?= <info@ebagaje.ro>
+Reply-To: =?utf-8?B?8J+ns0FkZWxpbmEgfCBlQmFnYWplLnJv?= <info@ebagaje.ro>
+To: radu.25201@gmail.com
+Subject: =?utf-8?B?Q8SDbMSDdG9yZciZdGUgY3Ugc3RpbCDinKggRGVzY29wZXLEgyBjb2xlY8ibaWEgc3BlY2lhbMSD?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_510759_1263831119.1741064947192"
+List-Unsubscribe: List-Unsubscribe, <https://api4.mktr2.com/act/e/u/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Message-ID: <010701955f8ec5f8-ba2dd5c1-a204-4c22-82ac-40d53b09501c-000000@eu-central-1.amazonses.com>
+Date: Tue, 4 Mar 2025 05:09:07 +0000
+Feedback-ID: ::1.eu-central-1.R3Uv48Qlr3buwzLHJ3jaXY2kZkhzHA2R3ShjpaMs/mw=:AmazonSES
+X-SES-Outgoing: 2025.03.04-69.169.224.10
+
+------=_Part_510759_1263831119.1741064947192
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Reduceri =C3=AEn Luna Femeii=F0=9F=98=8D
+=F0=9F=A7=B3Accesoriul t=C4=83u de c=C4=83l=C4=83torie te a=C8=99teapt=C4=
+=83=F0=9F=A7=B3
+TROLERE GEN=C8=9AI RUCSACURI ACCESORII PENTRU COPII
+Fii chic =C8=99i =C3=AEn mi=C8=99care
+Bun=C4=83, drag client. Adelina aici =F0=9F=91=A9 C=C4=83l=C4=83toriile nu =
+sunt doar despre destina=C8=9Bii, ci =C8=99i despre felul =C3=AEn care te p=
+rezin=C8=9Bi lumii. =C3=8En Luna Femeii, =C3=AE=C8=9Bi oferim o selec=C8=9B=
+ie atent=C4=83 de bagaje =C8=99i accesorii de c=C4=83l=C4=83torie care =C3=
+=AE=C8=9Bi scot =C3=AEn eviden=C8=9B=C4=83 stilul autentic. Le g=C4=83se=C8=
+=99ti pe toate, la pre=C8=9Buri speciale pentru tine, =C3=AEn categoria Lun=
+a femeii . Gr=C4=83be=C8=9Bte-te, stocurile sunt limitate. Profit=C4=83 de =
+ofertele speciale =C8=99i c=C4=83l=C4=83tore=C8=99te cu stil oriunde, oric=
+=C3=A2nd=F0=9F=92=99 Vezi produsele
+Alese pentru tine
+Troler Mic De Cabina, ABS, Madisson, Cifru, 4 Roti, SW33103, 55 cm, Negru -=
+19% Vezi detalii
+Rucsac Calatorie, Wizz Air/Ryanair, Cabin PRO Small, Bestway, F40290-R Rose=
+ -24% Vezi detalii
+Geanta Fabrizio F50413 Bleumarin -40% Vezi detalii
+Geanta Pliabila Sport/Calatorie BENZI BZ 5328 - 42 cm, Portocaliu -35% Vezi=
+ detalii
+Troler cabina Gladiator Boxing MG 3810, roti cu suspensie, extensibil, poli=
+propilena, 55 cm, rosu -24% Vezi detalii
+Troler Cabina Diplomat ZC 6039 - 53 cm Rose -23% Vezi detalii
+Geanta cumparaturi cu role Punta F10183 Verde Olive -23% Vezi detalii
+Geanta Sport/Calatorie BENZI BZ 5369 - 48 cm Rosu -24% Vezi detalii
+Geanta de Cosmetice BENZI BZ 5327 BC Mov -23% Vezi detalii
+Rucsac urban Butterfly, fond roz - LaRue -15% Vezi detalii
+Geanta de voiaj Gladiator Expedition MG 0641 - 52 cm Rosu -23% Vezi detalii
+Geanta Cosmetice, Policarbonat, Madisson, SW86820, BC, Alb -45% Vezi detali=
+i
+C=C4=83l=C4=83toriile tale. Confortul t=C4=83u. Accesoriile eBagaje
+Evadeaz=C4=83 din rutin=C4=83 cu accesorii de c=C4=83l=C4=83torie ideale pe=
+ntru: =F0=9F=91=89c=C4=83l=C4=83torii cu familia,=F0=9F=91=89c=C4=83l=C4=83=
+torii scurte,=F0=9F=91=89concedii,=F0=9F=91=89city breaks. =F0=9F=92=99Iube=
+=C8=99te. Exploreaz=C4=83. C=C4=83l=C4=83tore=C8=99te=F0=9F=92=99 Vezi prod=
+usele
+Pe data viitoare,Adelina=F0=9F=91=A9
+Contacteaz=C4=83-ne! =F0=9F=93=9E Telefon: 031 333 0331 (Luni - Vineri: 09:=
+00 - 17:00) =F0=9F=93=A7 Email: contact@ebagaje.ro =C2=A9 2025 Mondial Capr=
+ice S.R.L. Toate drepturile rezervate. Dac=C4=83 dori=C8=9Bi s=C4=83 v=C4=
+=83 dezabona=C8=9Bi, face=C8=9Bi click aici Vizualiza=C8=9Bi acest e-mail c=
+a pagin=C4=83 web
+------=_Part_510759_1263831119.1741064947192
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" lang=3D"en"><head><title></title><meta http-equiv=
+=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><meta name=3D"view=
+port" content=3D"width=3Ddevice-width,initial-scale=3D1"><!--[if gte mso 9]=
+><xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:Pixe=
+lsPerInch></o:OfficeDocumentSettings> </xml><![endif]--><!--[if mso]><style=
+ type=3D"text/css"> .container {width: 700px;} .container-default {width: 7=
+00px;}</style><![endif]--><style>* {box-sizing: border-box;} body {margin: =
+0; padding: 0;} a[x-apple-data-detectors] {color: inherit !important;text-d=
+ecoration: inherit !important}  #MessageViewBody a {color: inherit;text-dec=
+oration: none} p {margin-top: 0; margin-right: 0; margin-bottom: 0; margin-=
+left: 0;} table {border-collapse: collapse;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt; border-spacing: 0;} td {mso-table-lspace: 0pt;mso-table-rspace=
+: 0pt;} .nl-hide-block-on-desktop, .nl-hide-table-on-desktop {mso-hide: all=
+;display: none;} @media (max-width: 520px) {.full_width {width: 100% !impor=
+tant; max-width: 100% !important; display: block;margin: 20px 0 0 0 !import=
+ant; padding: 0 !important;} .product_image_h {max-height: 100px !important=
+; min-height: 100px !important; height: 100px !important;} .product_image_h=
+_2 {max-height: 200px !important; min-height: 200px !important; height: 200=
+px !important;} .product_image_h_1 {max-height: 300px !important; min-heigh=
+t: auto !important; height: auto !important;} .product_image_v {height: aut=
+o !important; min-height: unset !important;} .stacked_row td.row_cell {widt=
+h: 100% !important;display: block;} .stacked_row_h_auto td.row_cell {width:=
+ 100% !important; height: auto !important; display: block;} .stacked_row td=
+.base_td_33 {width: 33% !important; display: table-cell !important;} .stack=
+ed_row_h_auto td.base_td_33 {width: 33% !important; display: table-cell !im=
+portant;} .stacked_row td.base_td_50 {width: 50% !important; display: table=
+-cell !important;} .stacked_row_h_auto td.base_td_50 {width: 50% !important=
+; display: table-cell !important;} .stacked_row td.base_td_100 {width: 100%=
+ !important; display: table-cell !important;} .stacked_row_h_auto td.base_t=
+d_100 {width: 100% !important; display: table-cell !important;} .nl-hide-bl=
+ock-on-desktop {mso-hide: none;display: block;} .nl-hide-table-on-desktop {=
+mso-hide: none;display: table;} .nl-hide-on-mobile {display: none;min-heigh=
+t: 0;max-height: 0;max-width: 0;overflow: hidden;font-size: 0;mso-hide: all=
+;} .item_d_block {display: block !important;} .item_d_none {display: none !=
+important;} .reverse_stack_mobile  tr.reverse_row {display: table;width: 10=
+0%;} .reverse_stack_mobile td.first_col {display: table-footer-group !impor=
+tant;} .reverse_stack_mobile td.last_col {display: table-header-group !impo=
+rtant;} .product_name {overflow: hidden !important;} .linked-images {max-wi=
+dth: 240px !important; width: 240px;}}</style><link href=3D"https://fonts.g=
+oogleapis.com/css2?family=3DOpen+Sans" rel=3D"stylesheet" type=3D"text/css"=
+></head><body><div style=3D"display: none; max-height: 0px; overflow: hidde=
+n;">Reduceri =C3=AEn Luna Femeii=F0=9F=98=8D</div><table border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" width=3D"100%" role=3D"presentation" align=
+=3D"center" id=3D"ix3y" class=3D"container-default" style=3D"min-height: 30=
+0px; max-width: 700px; width: 100%; border-top-width: 1px; border-right-wid=
+th: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style=
+: solid; border-right-style: solid; border-bottom-style: solid; border-left=
+-style: solid; border-top-color: rgba(0, 0, 0, 0.05); border-right-color: r=
+gba(0, 0, 0, 0.05); border-bottom-color: rgba(0, 0, 0, 0.05); border-left-c=
+olor: rgba(0, 0, 0, 0.05); border-image-source: initial; border-image-slice=
+: initial; border-image-width: initial; border-image-outset: initial; borde=
+r-image-repeat: initial; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; f=
+ont-family: 'Times New Roman', Times, serif; font-size: 16px; background-im=
+age: initial; background-position: initial; background-size: initial; backg=
+round-repeat: initial; background-attachment: initial; background-origin: i=
+nitial; background-clip: initial; background-color: rgb(255, 255, 255); mar=
+gin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; pa=
+dding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;=
+ margin: 0 auto; padding: 0; mso-table-lspace: 0; mso-table-rspace: 0;" bac=
+kground=3D"initial" bgcolor=3D"rgb(255, 255, 255)"><tbody><tr><td id=3D"ioe=
+j" style=3D"width: 100%;" width=3D"100%"><div id=3D"inimx4" class=3D"text-b=
+lock" style=3D"padding-top: 10px; padding-right: 10px; padding-bottom: 10px=
+; padding-left: 10px; text-size-adjust: none; font-size: 16px; box-sizing: =
+border-box; font-family: Arial, Helvetica, sans-serif; line-height: 120%; f=
+ont-weight: 400; letter-spacing: 0px; word-break: break-word;"><p style=3D"=
+text-align: center;">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=F0=9F=A7=B3Accesori=
+ul t=C4=83u de c=C4=83l=C4=83torie te a=C8=99teapt=C4=83=F0=9F=A7=B3</p></d=
+iv><div id=3D"i91y" class=3D"text-block" style=3D"padding-top: 10px; paddin=
+g-right: 10px; padding-bottom: 10px; padding-left: 10px; text-size-adjust: =
+none; font-size: 16px; box-sizing: border-box; font-family: Arial, Helvetic=
+a, sans-serif; line-height: 120%; font-weight: 400; letter-spacing: 0px; wo=
+rd-break: break-word; background-color: rgb(25, 70, 185); color: rgb(250, 2=
+46, 246);"><p style=3D"text-align: center;"><strong><span style=3D"font-siz=
+e:16px"><a data-cke-saved-href=3D"https://www.ebagaje.ro/trolere/" href=3D"=
+https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570ca=
+a8af5/c249a6f1588af9751cac1176/822535dd4e3496865fd783ddae802c05" target=3D"=
+_blank" style=3D"text-decoration-line: none; text-decoration-thickness: ini=
+tial; text-decoration-style: initial; text-decoration-color: initial; font-=
+family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); font-weight: 400=
+; font-size: 16px;"><span style=3D"color:#ffffff;">TROLERE</span></a><span =
+style=3D"color:#ffffff;">=C2=A0 =C2=A0</span><a data-cke-saved-href=3D"http=
+s://www.ebagaje.ro/genti-de-voiaj" href=3D"https://api4.mktr2.com/act/e/r/c=
+215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/3=
+301a8e647cb38a185297f71f12607a4" style=3D"text-decoration-line: none; text-=
+decoration-thickness: initial; text-decoration-style: initial; text-decorat=
+ion-color: initial; font-family: Arial, Helvetica, sans-serif; color: rgb(0=
+, 0, 0); font-weight: 400; font-size: 16px;"><span style=3D"color:#ffffff;"=
+>GEN=C8=9AI=C2=A0</span></a><span style=3D"color:#ffffff;"> =C2=A0</span><a=
+ data-cke-saved-href=3D"https://www.ebagaje.ro/rucsacuri" href=3D"https://a=
+pi4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c24=
+9a6f1588af9751cac1176/47f81f0bd5258cf02db3bc4733f39a53" style=3D"text-decor=
+ation-line: none; text-decoration-thickness: initial; text-decoration-style=
+: initial; text-decoration-color: initial; font-family: Arial, Helvetica, s=
+ans-serif; color: rgb(0, 0, 0); font-weight: 400; font-size: 16px;"><span s=
+tyle=3D"color:#ffffff;">RUCSACURI</span></a><span style=3D"color:#ffffff;">=
+=C2=A0 =C2=A0</span><a data-cke-saved-href=3D"https://www.ebagaje.ro/acceso=
+rii" href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c25010=
+2f3a10bd570caa8af5/c249a6f1588af9751cac1176/fa5095f84a24001eae457a81804c8b3=
+a?mktci=3Dm7by0xxwt81vzunew4n" id=3D"m7by0xxwt81vzunew4n" tag=3D"m7by0xxwt8=
+1vzunew4n" target=3D"_blank" style=3D"text-decoration-line: none; text-deco=
+ration-thickness: initial; text-decoration-style: initial; text-decoration-=
+color: initial; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0,=
+ 0); font-weight: 400; font-size: 16px;"><span style=3D"color:#ffffff;">ACC=
+ESORII</span></a><a data-cke-saved-href=3D"https://www.ebagaje.ro/black-fri=
+day-2020/?features_hash=3D23-2747" href=3D"https://api4.mktr2.com/act/e/r/c=
+215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/8=
+f1c478e09acef47111f05ccbd445e9f" style=3D"text-decoration-line: none; text-=
+decoration-thickness: initial; text-decoration-style: initial; text-decorat=
+ion-color: initial; font-family: Arial, Helvetica, sans-serif; color: rgb(0=
+, 0, 0); font-weight: 400; font-size: 16px;"><span style=3D"color:#ffffff;"=
+>=C2=A0</span></a><span style=3D"color:#ffffff;"> =C2=A0</span><a data-cke-=
+saved-href=3D"https://www.ebagaje.ro/pentru-copii" href=3D"https://api4.mkt=
+r2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f158=
+8af9751cac1176/0be2e63daf6959a1a159d57bd3ec7e81" style=3D"text-decoration-l=
+ine: none; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial; font-family: Arial, Helvetica, sans-ser=
+if; color: rgb(0, 0, 0); font-weight: 400; font-size: 16px;"><span style=3D=
+"color:#ffffff;">PENTRU COPII</span></a></span></strong></p></div><table bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" role=3D"prese=
+ntation" align=3D"center" tag=3D"m74vrs2choiwx8w348v" id=3D"i0ef4" style=3D=
+"width: 100%; max-width: 700px; margin-top: 0px; margin-right: auto; margin=
+-bottom: 0px; margin-left: auto;"><tbody><tr><td id=3D"irtc83" style=3D"tex=
+t-align: center; padding-top: 0px; padding-right: 0px; padding-bottom: 0px;=
+ padding-left: 0px;" align=3D"center"><a id=3D"m7t4wc77yf0g85opu" href=3D"h=
+ttps://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa=
+8af5/c249a6f1588af9751cac1176/f51f214c50a5dc86d39ac43d666a28fb?mktci=3Dm7t4=
+wc77yf0g85opu" target=3D"_blank" tag=3D"m7t4wc77yf0g85opu"><img alt id=3D"i=
+j7s0g" src=3D"https://cdn1.mktr2.com/newsletter-assets/679cb55342b25adcf60f=
+cfdc/my-uploads/default-folder/UE3stvXwubZ8rUlOKk6KZYm6m9TV9y46gEHz86ih.png=
+" width=3D"698" height=3D"349" style=3D"width: auto; max-width: 100%; displ=
+ay: inline-block; height: auto; border-top-left-radius: 0px; border-top-rig=
+ht-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius:=
+ 0px;"></a></td></tr></tbody></table><div id=3D"i46l6" class=3D"text-block"=
+ style=3D"padding-top: 10px; padding-right: 10px; padding-bottom: 10px; pad=
+ding-left: 10px; text-size-adjust: none; font-size: 16px; box-sizing: borde=
+r-box; font-family: Arial, Helvetica, sans-serif; line-height: 120%; font-w=
+eight: 400; letter-spacing: 0px; word-break: break-word;"><p style=3D"text-=
+align: center;"><b style=3D"color:#000000; font-family:arial, helvetica, sa=
+ns-serif; font-size:24px; font-style:normal; font-variant-ligatures:normal;=
+ text-align:center; white-space:normal; background-color:#ffffff; text-deco=
+ration-thickness:initial; text-decoration-style:initial; text-decoration-co=
+lor:initial">Fii chic =C8=99i =C3=AEn mi=C8=99care</b>=E2=80=8B=E2=80=8B=E2=
+=80=8B=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8B</p></div><div id=3D"i3sfj" class=
+=3D"text-block" style=3D"text-size-adjust: none; font-size: 20px; box-sizin=
+g: border-box; line-height: 150%; font-weight: 400; letter-spacing: 0px; wo=
+rd-break: break-word; padding-top: 5px; padding-right: 10px; padding-bottom=
+: 5px; padding-left: 10px; background-color: transparent; color: rgb(0, 0, =
+0); font-family: 'Open Sans', sans-serif;"><p><span style=3D"font-size:20px=
+;"><span style=3D"text-align: justify;"><span style=3D"color:#000000"><span=
+ style=3D"font-family:arial, helvetica, sans-serif"><span style=3D"font-sty=
+le:normal"><span style=3D"font-variant-ligatures:normal"><span style=3D"fon=
+t-weight:400"><span style=3D"white-space:normal"><span style=3D"background-=
+color:#ffffff"><span style=3D"text-decoration-thickness:initial"><span styl=
+e=3D"text-decoration-style:initial"><span style=3D"text-decoration-color:in=
+itial"><span style=3D"display:inline !important"><span style=3D"float:none"=
+>Bun=C4=83,=C2=A0</span></span></span></span></span></span></span></span></=
+span></span></span></span></span>drag client. Adelina aici<span style=3D"te=
+xt-align:justify"><span style=3D"color:#000000"><span style=3D"font-family:=
+arial, helvetica, sans-serif"><span style=3D"font-style:normal"><span style=
+=3D"font-variant-ligatures:normal"><span style=3D"font-weight:400"><span st=
+yle=3D"white-space:normal"><span style=3D"background-color:#ffffff"><span s=
+tyle=3D"text-decoration-thickness:initial"><span style=3D"text-decoration-s=
+tyle:initial"><span style=3D"text-decoration-color:initial"><span style=3D"=
+display:inline !important"><span style=3D"float:none">=F0=9F=91=A9</span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></p><p><br></p><p>C=C4=83l=C4=83toriile nu sunt doar despre d=
+estina=C8=9Bii, ci =C8=99i despre <strong data-start=3D"557" data-end=3D"59=
+2">felul =C3=AEn care te prezin=C8=9Bi lumii</strong>. =C3=8En <strong data=
+-start=3D"597" data-end=3D"612">Luna Femeii</strong>, =C3=AE=C8=9Bi oferim =
+o selec=C8=9Bie atent=C4=83 de <strong>bagaje =C8=99i accesorii de c=C4=83l=
+=C4=83torie</strong> care =C3=AE=C8=9Bi scot =C3=AEn eviden=C8=9B=C4=83=C2=
+=A0stilul autentic.</p><p><br></p><p>Le g=C4=83se=C8=99ti pe toate, la <str=
+ong>pre=C8=9Buri speciale pentru tine</strong>, =C3=AEn categoria <u><a dat=
+a-cke-saved-href=3D"https://www.ebagaje.ro/luna-femeii/" id=3D"m7t3gai24veo=
+8ujdc5" tag=3D"m7t3gai24veo8ujdc5" target=3D"_blank" href=3D"https://api4.m=
+ktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1=
+588af9751cac1176/f51f214c50a5dc86d39ac43d666a28fb?mktci=3Dm7t3gai24veo8ujdc=
+5" style=3D"font-family: 'Open Sans', sans-serif; color: rgb(25, 70, 185); =
+font-weight: 400; font-size: 19px; text-decoration-line: none; text-decorat=
+ion-thickness: initial; text-decoration-style: initial; text-decoration-col=
+or: initial;">Luna femeii</a></u><a data-cke-saved-href=3D"https://www.ebag=
+aje.ro/luna-femeii/" tag=3D"m7t3gai24veo8ujdc5" target=3D"_blank" href=3D"h=
+ttps://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa=
+8af5/c249a6f1588af9751cac1176/f51f214c50a5dc86d39ac43d666a28fb?mktci=3Dm7t3=
+gai24veo8ujdc5" style=3D"font-family: 'Open Sans', sans-serif; color: rgb(2=
+5, 70, 185); font-weight: 400; font-size: 19px; text-decoration-line: none;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial;"></a>. Gr=C4=83be=C8=9Bte-te, stocurile sunt limi=
+tate.</p><p style=3D"text-align: justify; "><br></p><p style=3D"text-align:=
+ justify; "><b>Profit=C4=83 de ofertele speciale =C8=99i c=C4=83l=C4=83tore=
+=C8=99te cu stil oriunde, oric=C3=A2nd</b>=F0=9F=92=99</p></div><table bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" align=3D=
+"center" width=3D"100%" id=3D"i9ar1c" class=3D"gjs-f-divider" style=3D"text=
+-align: center; width: 100%; margin-top: 0px; margin-right: auto; margin-bo=
+ttom: 0px; margin-left: auto; max-width: 700px; background-image: initial; =
+background-position: initial; background-size: initial; background-repeat: =
+initial; background-attachment: initial; background-origin: initial; backgr=
+ound-clip: initial; background-color: transparent; border-collapse: separat=
+e; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing:=
+ 0px;" background=3D"initial" bgcolor=3D"transparent"><tbody><tr><td valign=
+=3D"middle" id=3D"i5vhf7" style=3D"vertical-align: middle; text-align: left=
+; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-lef=
+t: 10px; background-image: initial; background-position: initial; backgroun=
+d-size: initial; background-repeat: initial; background-attachment: initial=
+; background-origin: initial; background-clip: initial; background-color: t=
+ransparent; width: 100%;" width=3D"100%" align=3D"left" background=3D"initi=
+al" bgcolor=3D"transparent"><table border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" role=3D"presentation" align=3D"left" width=3D"100%" id=3D"ib79za" =
+style=3D"width: 100%; min-width: 100%; text-align: left; margin-top: auto; =
+margin-right: auto; margin-bottom: auto; margin-left: 0px; border-collapse:=
+ separate; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-=
+spacing: 0px;"><tbody><tr><td valign=3D"middle" id=3D"ii2fiq" style=3D"vert=
+ical-align: middle; border-bottom-width: 1px; border-bottom-style: solid; b=
+order-bottom-color: rgb(179, 192, 206); width: 100%;" width=3D"100%"><span =
+id=3D"i8osj7" class=3D"text-block" style=3D"font-family: Arial, Helvetica, =
+'Helvetica Neue', sans-serif; font-size: 1px; line-height: 1px;"></span></t=
+d></tr></tbody></table></td></tr></tbody></table><table data-comp=3D"button=
+" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"=
+center" target=3D"_blank" id=3D"i5iqw" style=3D"width: 100%; margin-top: 0p=
+x; margin-right: auto; margin-bottom: 0px; margin-left: auto; max-width: 70=
+0px;"><tbody><tr><td id=3D"iaq9iz" style=3D"width: 100%; max-width: 100%; p=
+adding-top: 10px; padding-bottom: 10px; background-image: initial; backgrou=
+nd-position: initial; background-size: initial; background-repeat: initial;=
+ background-attachment: initial; background-origin: initial; background-cli=
+p: initial; background-color: transparent; text-align: center;" width=3D"10=
+0%" background=3D"initial" bgcolor=3D"transparent" align=3D"center"><!--[if=
+ mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/luna-femeii/"
+                                             style=3D"height:59px;width:202=
+px;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             strokecolor=3D"#1946b9"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:24px">
+                                        Vezi produsele
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/f51f21=
+4c50a5dc86d39ac43d666a28fb?mktci=3Dm74ybhx3llula3nlqc" id=3D"m74ybhx3llula3=
+nlqc" tag=3D"m74ybhx3llula3nlqc" class=3D"inline-button" style=3D"display: =
+inline-block; border-top-width: 5px; border-right-width: 5px; border-bottom=
+-width: 5px; border-left-width: 5px; border-top-style: none; border-right-s=
+tyle: none; border-bottom-style: none; border-left-style: none; border-top-=
+color: rgb(25, 70, 185); border-right-color: rgb(25, 70, 185); border-botto=
+m-color: rgb(25, 70, 185); border-left-color: rgb(25, 70, 185); border-imag=
+e-source: initial; border-image-slice: initial; border-image-width: initial=
+; border-image-outset: initial; border-image-repeat: initial; color: rgb(25=
+5, 255, 255); text-align: center; max-width: 100%; font-family: 'Open Sans'=
+, sans-serif; font-size: 24px; font-weight: 400; text-transform: none; lett=
+er-spacing: 0px; padding-top: 10px; padding-right: 20px; padding-bottom: 10=
+px; padding-left: 20px; text-decoration-line: none; text-decoration-thickne=
+ss: initial; text-decoration-style: initial; text-decoration-color: initial=
+; border-top-left-radius: 12px; border-top-right-radius: 12px; border-botto=
+m-right-radius: 12px; border-bottom-left-radius: 12px; white-space-collapse=
+: collapse; text-wrap-mode: wrap; word-break: break-word; background-image:=
+ url(''); background-position: center; background-repeat: no-repeat; backgr=
+ound-attachment: initial; background-origin: initial; background-clip: init=
+ial; background-color: rgb(25, 70, 185); background-size: auto;">Vezi produ=
+sele</a><!--<![endif]--></td></tr></tbody></table><table width=3D"100%" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" align=
+=3D"center" data-comp=3D"products-custom" id=3D"imq2ng" style=3D"text-align=
+: center; width: 100%; max-width: 700px;"><tbody><tr><td id=3D"iy9k4" style=
+=3D"padding: 20px 0; text-align: center; width: 100%;" width=3D"100%" align=
+=3D"center"><div id=3D"ijj44" style=3D"border-radius: 0px; background-color=
+: transparent;"><p class=3D"product_block_title" id=3D"iluv9" style=3D"disp=
+lay: block; margin: 0 0 20px 0; padding: 15px; font-family: Open Sans, sans=
+-serif; font-size: 22px; line-height: 22px; font-weight: 300; text-transfor=
+m: uppercase; text-align: center; letter-spacing: 0px; color: #000000; text=
+-decoration: none; padding-top: 10px; padding-right: 10px; padding-bottom: =
+10px; padding-left: 10px;">Alese pentru tine</p></div><table border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" align=3D"center" i=
+d=3D"ircxcx" style=3D"margin: 0 auto; width: 100%; max-width: 700px;" width=
+=3D"100%"><tr><td valign=3D"top" id=3D"m7t4vm5ktpgbvm4cgce" class=3D"base_t=
+d_50" style=3D"padding-left: 10px; padding-right: 10px; padding-top: 20px; =
+padding-bottom: 0px; width: 50%; padding: 0px;" width=3D"50%"><table border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-item=3D"0" role=3D"presenta=
+tion" align=3D"center" id=3D"idp591" style=3D"width: 100%;" width=3D"100%">=
+<tbody><tr><td id=3D"i7jpbb" style=3D"text-align: center;" align=3D"center"=
+><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102=
+f3a10bd570caa8af5/c249a6f1588af9751cac1176/1dd8d07f5c9f2b4ab90ae457ac6e9e66=
+?mktci=3Dm7t4vm5ktpgbvm4cgce" target=3D"_blank" tag=3D"m7t4vm5ktpgbvm4cgce"=
+ id=3D"ixhrlr" style=3D"display: inline-block;"><img alt=3D"Troler Mic De C=
+abina, ABS, Madisson, Cifru, 4 Roti, SW33103, 55 cm, Negru" src=3D"https://=
+www.ebagaje.ro/images/detailed/208/33103__17__3zbm-4k-1.webp" width=3D"200"=
+ height=3D"210" id=3D"if7vhf" class=3D"product_image_h_2" style=3D"display:=
+ block; width: auto; max-width: 100%; height: 210px; object-fit: contain; p=
+adding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"ixtw8n" style=3D"text-=
+align: center; padding: 0px 6px 48px 6px;" align=3D"center"><!--[if mso]><t=
+able width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" align=3D"center" style=3D"height: 87px; width: 100%;" heigh=
+t=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87" valign=3D"top"=
+ style=3D"height: 87px; vertical-align: top; text-align: center"><![endif]-=
+-><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c25010=
+2f3a10bd570caa8af5/c249a6f1588af9751cac1176/1dd8d07f5c9f2b4ab90ae457ac6e9e6=
+6?mktci=3Dm7t4vm5ktpgbvm4cgce" target=3D"_blank" tag=3D"m7t4vm5ktpgbvm4cgce=
+" id=3D"igbool" style=3D"display: inline-block; width: 100%; text-decoratio=
+n: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"isq8dv" style=
+=3D"height: 57px; margin: 0; font-family: Open Sans, sans-serif; font-size:=
+ 16px; line-height: 1.2; color: #333333; text-transform: capitalize; overfl=
+ow: hidden; word-break: break-word; font-weight: 600; letter-spacing: 0px; =
+text-decoration: none; padding-top: 0px; padding-right: 0px; padding-bottom=
+: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; max-height: =
+57px;">Troler Mic De Cabina, ABS, Madisson, Cifru, 4 Roti, SW33103, 55 cm, =
+Negru</p></a><!--[if mso]></td></tr></tbody></table><![endif]--><div class=
+=3D"product_price" id=3D"in42vv" style=3D"margin-top: 8px; overflow: hidden=
+; text-align: center; height: 41px;"><span class=3D"discount_percentage" id=
+=3D"it4pdw" style=3D"display: inline-block; margin: 0 2px; font-family: Hel=
+vetica, sans-serif; font-size: 25px; line-height: 25px; font-weight: 700; c=
+olor: #F32323; text-align: center; text-decoration: none; letter-spacing: 0=
+px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left=
+: 0px; height: 25px; max-height: 25px;"> -19% </span></div><table data-comp=
+=3D"button" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"=
+ align=3D"center" id=3D"i1x3qk" style=3D"width: 100%; margin: 0 auto; max-w=
+idth: 700px;"><tbody><tr><td id=3D"ivnmbk" style=3D"width: 100%; max-width:=
+ 100%; padding-top: 5px; padding-bottom: 5px; background: transparent; text=
+-align: center;" width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/troler-mic-de-cabina-abs-madisson-cifru-4-roti-sw33103-55-cm-negru/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/1dd8d0=
+7f5c9f2b4ab90ae457ac6e9e66?mktci=3Dm7t4vm5ktpgbvm4cgce" id=3D"m7t4t4gy91her=
+1yo84" tag=3D"m7t4vm5ktpgbvm4cgce" class=3D"inline-button" style=3D"display=
+: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cent=
+er; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; f=
+ont-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8p=
+x; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-decor=
+ation: none; border-radius: 8px; white-space: normal; word-break: break-wor=
+d; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody>=
+</table></td></tr></tbody></table></td><td valign=3D"top" id=3D"m7t4vm5ktch=
+hvxr04ra" class=3D"base_td_50" style=3D"padding-left: 10px; padding-right: =
+10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0px;" wi=
+dth=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-it=
+em=3D"1" role=3D"presentation" align=3D"center" id=3D"izbtmv" style=3D"widt=
+h: 100%;" width=3D"100%"><tbody><tr><td id=3D"i17uzy" style=3D"text-align: =
+center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c215900=
+d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/28885d6=
+557e0facf20436ec2f3632807?mktci=3Dm7t4vm5ktchhvxr04ra" target=3D"_blank" ta=
+g=3D"m7t4vm5ktchhvxr04ra" id=3D"iweiqk" style=3D"display: inline-block;"><i=
+mg alt=3D"Rucsac Calatorie, Wizz Air/Ryanair, Cabin PRO Small, Bestway, F40=
+290-R Rose" src=3D"https://www.ebagaje.ro/images/detailed/163/40290-2100_rs=
+5p-8f-2.webp" width=3D"200" height=3D"210" id=3D"igdzdl" class=3D"product_i=
+mage_h_2" style=3D"display: block; width: auto; max-width: 100%; height: 21=
+0px; object-fit: contain; padding: 22px 8px 0 8px;"></a></td></tr><tr><td i=
+d=3D"i0w06z" style=3D"text-align: center; padding: 0px 6px 48px 6px;" align=
+=3D"center"><!--[if mso]><table width=3D"100%" role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"height=
+: 87px; width: 100%;" height=3D"87;"><tr style=3D"text-align:center;"><td h=
+eight=3D"87" valign=3D"top" style=3D"height: 87px; vertical-align: top; tex=
+t-align: center"><![endif]--><a href=3D"https://api4.mktr2.com/act/e/r/c215=
+900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/2888=
+5d6557e0facf20436ec2f3632807?mktci=3Dm7t4vm5ktchhvxr04ra" target=3D"_blank"=
+ tag=3D"m7t4vm5ktchhvxr04ra" id=3D"ih97ye" style=3D"display: inline-block; =
+width: 100%; text-decoration: none; margin: 15px 0 0 0;"><p class=3D"produc=
+t_name" id=3D"inkrq5" style=3D"height: 57px; margin: 0; font-family: Open S=
+ans, sans-serif; font-size: 16px; line-height: 1.2; color: #333333; text-tr=
+ansform: capitalize; overflow: hidden; word-break: break-word; font-weight:=
+ 600; letter-spacing: 0px; text-decoration: none; padding-top: 0px; padding=
+-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margi=
+n-bottom: 0px; max-height: 57px;">Rucsac Calatorie, Wizz Air/Ryanair, Cabin=
+ PRO Small, Bestway, F40290-R Rose</p></a><!--[if mso]></td></tr></tbody></=
+table><![endif]--><div class=3D"product_price" id=3D"i2wyih" style=3D"margi=
+n-top: 8px; overflow: hidden; text-align: center; height: 41px;"><span clas=
+s=3D"discount_percentage" id=3D"ij7wx8" style=3D"display: inline-block; mar=
+gin: 0 2px; font-family: Helvetica, sans-serif; font-size: 25px; line-heigh=
+t: 25px; font-weight: 700; color: #F32323; text-align: center; text-decorat=
+ion: none; letter-spacing: 0px; padding-top: 0px; padding-right: 0px; paddi=
+ng-bottom: 0px; padding-left: 0px; height: 25px; max-height: 25px;"> -24% <=
+/span></div><table data-comp=3D"button" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0" width=3D"100%" align=3D"center" id=3D"iff07f" style=3D"width:=
+ 100%; margin: 0 auto; max-width: 700px;"><tbody><tr><td id=3D"ii8doj" styl=
+e=3D"width: 100%; max-width: 100%; padding-top: 5px; padding-bottom: 5px; b=
+ackground: transparent; text-align: center;" width=3D"100%" align=3D"center=
+"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/rucsac-calatorie-cabin-wizz-air-pro-small-bestway-f40290-r-rose/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/28885d=
+6557e0facf20436ec2f3632807?mktci=3Dm7t4vp6isjf1iffp55" id=3D"m7t4vp6isjf1if=
+fp55" tag=3D"m7t4vp6isjf1iffp55" class=3D"inline-button" style=3D"display: =
+inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: center=
+; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; fon=
+t-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8px;=
+ padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-decorat=
+ion: none; border-radius: 8px; white-space: normal; word-break: break-word;=
+ background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m7t4=
+vm5k7n5rng9je1" class=3D"base_td_50" style=3D"padding-left: 10px; padding-r=
+ight: 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0p=
+x;" width=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" d=
+ata-item=3D"2" role=3D"presentation" align=3D"center" id=3D"is3bqi" style=
+=3D"width: 100%;" width=3D"100%"><tbody><tr><td id=3D"iihtj3" style=3D"text=
+-align: center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r=
+/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176=
+/bcb942cf639818c51e1c7dba2f12eebc?mktci=3Dm7t4vm5k7n5rng9je1" target=3D"_bl=
+ank" tag=3D"m7t4vm5k7n5rng9je1" id=3D"i447ys" style=3D"display: inline-bloc=
+k;"><img alt=3D"Geanta Fabrizio F50413 Bleumarin" src=3D"https://www.ebagaj=
+e.ro/images/detailed/187/50413-0600_1cha-bl-1.webp" width=3D"200" height=3D=
+"210" id=3D"ihooey" class=3D"product_image_h_2" style=3D"display: block; wi=
+dth: auto; max-width: 100%; height: 210px; object-fit: contain; padding: 22=
+px 8px 0 8px;"></a></td></tr><tr><td id=3D"ilmnki" style=3D"text-align: cen=
+ter; padding: 0px 6px 48px 6px;" align=3D"center"><!--[if mso]><table width=
+=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"center" style=3D"height: 87px; width: 100%;" height=3D"87;"=
+><tr style=3D"text-align:center;"><td height=3D"87" valign=3D"top" style=3D=
+"height: 87px; vertical-align: top; text-align: center"><![endif]--><a href=
+=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd5=
+70caa8af5/c249a6f1588af9751cac1176/bcb942cf639818c51e1c7dba2f12eebc?mktci=
+=3Dm7t4vm5k7n5rng9je1" target=3D"_blank" tag=3D"m7t4vm5k7n5rng9je1" id=3D"i=
+y1z22" style=3D"display: inline-block; width: 100%; text-decoration: none; =
+margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"i4wp95" style=3D"heigh=
+t: 57px; margin: 0; font-family: Open Sans, sans-serif; font-size: 16px; li=
+ne-height: 1.2; color: #333333; text-transform: capitalize; overflow: hidde=
+n; word-break: break-word; font-weight: 600; letter-spacing: 0px; text-deco=
+ration: none; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; pa=
+dding-left: 0px; margin-top: 0px; margin-bottom: 0px; max-height: 57px;">Ge=
+anta Fabrizio F50413 Bleumarin</p></a><!--[if mso]></td></tr></tbody></tabl=
+e><![endif]--><div class=3D"product_price" id=3D"i57gp5" style=3D"margin-to=
+p: 8px; overflow: hidden; text-align: center; height: 41px;"><span class=3D=
+"discount_percentage" id=3D"idre8l" style=3D"display: inline-block; margin:=
+ 0 2px; font-family: Helvetica, sans-serif; font-size: 25px; line-height: 2=
+5px; font-weight: 700; color: #F32323; text-align: center; text-decoration:=
+ none; letter-spacing: 0px; padding-top: 0px; padding-right: 0px; padding-b=
+ottom: 0px; padding-left: 0px; height: 25px; max-height: 25px;"> -40% </spa=
+n></div><table data-comp=3D"button" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" width=3D"100%" align=3D"center" id=3D"is2uxd" style=3D"width: 100=
+%; margin: 0 auto; max-width: 700px;"><tbody><tr><td id=3D"i0bkjp" style=3D=
+"width: 100%; max-width: 100%; padding-top: 5px; padding-bottom: 5px; backg=
+round: transparent; text-align: center;" width=3D"100%" align=3D"center"><!=
+--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-fabrizio-f50413-bleumarin/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/bcb942=
+cf639818c51e1c7dba2f12eebc?mktci=3Dm7t4vp7e1kepmw8deoi" id=3D"m7t4vp7e1kepm=
+w8deoi" tag=3D"m7t4vp7e1kepmw8deoi" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td><td valign=3D"top" id=3D"m7t4vm5k1a=
+c449vx5eg" class=3D"base_td_50" style=3D"padding-left: 10px; padding-right:=
+ 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0px;" w=
+idth=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-i=
+tem=3D"3" role=3D"presentation" align=3D"center" id=3D"i2f2wo" style=3D"wid=
+th: 100%;" width=3D"100%"><tbody><tr><td id=3D"iqdwbt" style=3D"text-align:=
+ center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/dceb45=
+4bb9e3783b346d7e9070e3950c?mktci=3Dm7t4vm5k1ac449vx5eg" target=3D"_blank" t=
+ag=3D"m7t4vm5k1ac449vx5eg" id=3D"i5ckc8" style=3D"display: inline-block;"><=
+img alt=3D"Geanta Pliabila Sport/Calatorie BENZI BZ 5328 - 42 cm, Portocali=
+u" src=3D"https://www.ebagaje.ro/images/detailed/138/BZ5328-1.webp" width=
+=3D"200" height=3D"210" id=3D"iikf6p" class=3D"product_image_h_2" style=3D"=
+display: block; width: auto; max-width: 100%; height: 210px; object-fit: co=
+ntain; padding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"i9x0on" style=
+=3D"text-align: center; padding: 0px 6px 48px 6px;" align=3D"center"><!--[i=
+f mso]><table width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" style=3D"height: 87px; width: 100=
+%;" height=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87" valig=
+n=3D"top" style=3D"height: 87px; vertical-align: top; text-align: center"><=
+![endif]--><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca656=
+35/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/dceb454bb9e3783b346d7e=
+9070e3950c?mktci=3Dm7t4vm5k1ac449vx5eg" target=3D"_blank" tag=3D"m7t4vm5k1a=
+c449vx5eg" id=3D"ik4o5h" style=3D"display: inline-block; width: 100%; text-=
+decoration: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"i6pd=
+ei" style=3D"height: 57px; margin: 0; font-family: Open Sans, sans-serif; f=
+ont-size: 16px; line-height: 1.2; color: #333333; text-transform: capitaliz=
+e; overflow: hidden; word-break: break-word; font-weight: 600; letter-spaci=
+ng: 0px; text-decoration: none; padding-top: 0px; padding-right: 0px; paddi=
+ng-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; max=
+-height: 57px;">Geanta Pliabila Sport/Calatorie BENZI BZ 5328 - 42 cm, Port=
+ocaliu</p></a><!--[if mso]></td></tr></tbody></table><![endif]--><div class=
+=3D"product_price" id=3D"i64p17" style=3D"margin-top: 8px; overflow: hidden=
+; text-align: center; height: 41px;"><span class=3D"discount_percentage" id=
+=3D"iiscp5" style=3D"display: inline-block; margin: 0 2px; font-family: Hel=
+vetica, sans-serif; font-size: 25px; line-height: 25px; font-weight: 700; c=
+olor: #F32323; text-align: center; text-decoration: none; letter-spacing: 0=
+px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left=
+: 0px; height: 25px; max-height: 25px;"> -35% </span></div><table data-comp=
+=3D"button" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"=
+ align=3D"center" id=3D"itz9kb" style=3D"width: 100%; margin: 0 auto; max-w=
+idth: 700px;"><tbody><tr><td id=3D"i3arlv" style=3D"width: 100%; max-width:=
+ 100%; padding-top: 5px; padding-bottom: 5px; background: transparent; text=
+-align: center;" width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-pliabila-sport-calatorie-benzi-bz-5328-44-cm/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/dceb45=
+4bb9e3783b346d7e9070e3950c?mktci=3Dm7t4vp8awyt88b570vf" id=3D"m7t4vp8awyt88=
+b570vf" tag=3D"m7t4vp8awyt88b570vf" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m=
+7t4vm5klachblel7oa" class=3D"base_td_50" style=3D"padding-left: 10px; paddi=
+ng-right: 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding=
+: 0px;" width=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" data-item=3D"4" role=3D"presentation" align=3D"center" id=3D"iv874v" sty=
+le=3D"width: 100%;" width=3D"100%"><tbody><tr><td id=3D"iitd17" style=3D"te=
+xt-align: center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e=
+/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac11=
+76/591108d093ac203494e9d56eae377f88?mktci=3Dm7t4vm5klachblel7oa" target=3D"=
+_blank" tag=3D"m7t4vm5klachblel7oa" id=3D"i1yifv" style=3D"display: inline-=
+block;"><img alt=3D"Troler cabina Gladiator Boxing MG 3810, roti cu suspens=
+ie, extensibil, polipropilena, 55 cm, rosu" src=3D"https://www.ebagaje.ro/i=
+mages/detailed/224/MG38-R-S__1_-1.webp" width=3D"200" height=3D"210" id=3D"=
+i28e8r" class=3D"product_image_h_2" style=3D"display: block; width: auto; m=
+ax-width: 100%; height: 210px; object-fit: contain; padding: 22px 8px 0 8px=
+;"></a></td></tr><tr><td id=3D"i769yh" style=3D"text-align: center; padding=
+: 0px 6px 48px 6px;" align=3D"center"><!--[if mso]><table width=3D"100%" ro=
+le=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" style=3D"height: 87px; width: 100%;" height=3D"87;"><tr style=
+=3D"text-align:center;"><td height=3D"87" valign=3D"top" style=3D"height: 8=
+7px; vertical-align: top; text-align: center"><![endif]--><a href=3D"https:=
+//api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/=
+c249a6f1588af9751cac1176/591108d093ac203494e9d56eae377f88?mktci=3Dm7t4vm5kl=
+achblel7oa" target=3D"_blank" tag=3D"m7t4vm5klachblel7oa" id=3D"i8lhum" sty=
+le=3D"display: inline-block; width: 100%; text-decoration: none; margin: 15=
+px 0 0 0;"><p class=3D"product_name" id=3D"imqxoh" style=3D"height: 57px; m=
+argin: 0; font-family: Open Sans, sans-serif; font-size: 16px; line-height:=
+ 1.2; color: #333333; text-transform: capitalize; overflow: hidden; word-br=
+eak: break-word; font-weight: 600; letter-spacing: 0px; text-decoration: no=
+ne; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left=
+: 0px; margin-top: 0px; margin-bottom: 0px; max-height: 57px;">Troler cabin=
+a Gladiator Boxing MG 3810, roti cu suspensie, extensibil, polipropilena, 5=
+5 cm, rosu</p></a><!--[if mso]></td></tr></tbody></table><![endif]--><div c=
+lass=3D"product_price" id=3D"iq1wmt" style=3D"margin-top: 8px; overflow: hi=
+dden; text-align: center; height: 41px;"><span class=3D"discount_percentage=
+" id=3D"ijs6je" style=3D"display: inline-block; margin: 0 2px; font-family:=
+ Helvetica, sans-serif; font-size: 25px; line-height: 25px; font-weight: 70=
+0; color: #F32323; text-align: center; text-decoration: none; letter-spacin=
+g: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-=
+left: 0px; height: 25px; max-height: 25px;"> -24% </span></div><table data-=
+comp=3D"button" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"1=
+00%" align=3D"center" id=3D"ij1s6r" style=3D"width: 100%; margin: 0 auto; m=
+ax-width: 700px;"><tbody><tr><td id=3D"i9ewaa" style=3D"width: 100%; max-wi=
+dth: 100%; padding-top: 5px; padding-bottom: 5px; background: transparent; =
+text-align: center;" width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/troler-cabina-extensibil-polipropilena-gladiator-boxing-mg-3810-55-cm-rosu=
+/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/591108=
+d093ac203494e9d56eae377f88?mktci=3Dm7t4vp99qoigojaex2" id=3D"m7t4vp99qoigoj=
+aex2" tag=3D"m7t4vp99qoigojaex2" class=3D"inline-button" style=3D"display: =
+inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: center=
+; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; fon=
+t-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8px;=
+ padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-decorat=
+ion: none; border-radius: 8px; white-space: normal; word-break: break-word;=
+ background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody></=
+table></td></tr></tbody></table></td><td valign=3D"top" id=3D"m7t4vm5kvr45t=
+o517be" class=3D"base_td_50" style=3D"padding-left: 10px; padding-right: 10=
+px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0px;" widt=
+h=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-item=
+=3D"5" role=3D"presentation" align=3D"center" id=3D"ilbbme" style=3D"width:=
+ 100%;" width=3D"100%"><tbody><tr><td id=3D"iy1rmc" style=3D"text-align: ce=
+nter;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8=
+f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/858c0cada=
+646ac68801f14d77e370cda?mktci=3Dm7t4vm5kvr45to517be" target=3D"_blank" tag=
+=3D"m7t4vm5kvr45to517be" id=3D"icj59u" style=3D"display: inline-block;"><im=
+g alt=3D"Troler Cabina Diplomat ZC 6039 - 53 cm Rose" src=3D"https://www.eb=
+agaje.ro/images/detailed/170/ZC6039-55-Pink-dip19_107-1071x2048-1.webp" wid=
+th=3D"200" height=3D"210" id=3D"iybdek" class=3D"product_image_h_2" style=
+=3D"display: block; width: auto; max-width: 100%; height: 210px; object-fit=
+: contain; padding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"ia4wlf" st=
+yle=3D"text-align: center; padding: 0px 6px 48px 6px;" align=3D"center"><!-=
+-[if mso]><table width=3D"100%" role=3D"presentation" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" align=3D"center" style=3D"height: 87px; width: =
+100%;" height=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87" va=
+lign=3D"top" style=3D"height: 87px; vertical-align: top; text-align: center=
+"><![endif]--><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca=
+65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/858c0cada646ac68801=
+f14d77e370cda?mktci=3Dm7t4vm5kvr45to517be" target=3D"_blank" tag=3D"m7t4vm5=
+kvr45to517be" id=3D"idufbh" style=3D"display: inline-block; width: 100%; te=
+xt-decoration: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"i=
+4d8ue" style=3D"height: 57px; margin: 0; font-family: Open Sans, sans-serif=
+; font-size: 16px; line-height: 1.2; color: #333333; text-transform: capita=
+lize; overflow: hidden; word-break: break-word; font-weight: 600; letter-sp=
+acing: 0px; text-decoration: none; padding-top: 0px; padding-right: 0px; pa=
+dding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; =
+max-height: 57px;">Troler Cabina Diplomat ZC 6039 - 53 cm Rose</p></a><!--[=
+if mso]></td></tr></tbody></table><![endif]--><div class=3D"product_price" =
+id=3D"ivadsi" style=3D"margin-top: 8px; overflow: hidden; text-align: cente=
+r; height: 41px;"><span class=3D"discount_percentage" id=3D"i84sst" style=
+=3D"display: inline-block; margin: 0 2px; font-family: Helvetica, sans-seri=
+f; font-size: 25px; line-height: 25px; font-weight: 700; color: #F32323; te=
+xt-align: center; text-decoration: none; letter-spacing: 0px; padding-top: =
+0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 25=
+px; max-height: 25px;"> -23% </span></div><table data-comp=3D"button" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center"=
+ id=3D"ihjmah" style=3D"width: 100%; margin: 0 auto; max-width: 700px;"><tb=
+ody><tr><td id=3D"ik9w3m" style=3D"width: 100%; max-width: 100%; padding-to=
+p: 5px; padding-bottom: 5px; background: transparent; text-align: center;" =
+width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/troler-cabina-diplomat-zc-6039-53-cm-rose/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/858c0c=
+ada646ac68801f14d77e370cda?mktci=3Dm7t4vpa5o8531329t8j" id=3D"m7t4vpa5o8531=
+329t8j" tag=3D"m7t4vpa5o8531329t8j" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m=
+7t4vm5kdoay171bhr6" class=3D"base_td_50" style=3D"padding-left: 10px; paddi=
+ng-right: 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding=
+: 0px;" width=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" data-item=3D"6" role=3D"presentation" align=3D"center" id=3D"i7p9dl" sty=
+le=3D"width: 100%;" width=3D"100%"><tbody><tr><td id=3D"igry8z" style=3D"te=
+xt-align: center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e=
+/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac11=
+76/b4aeaa6da8229ee4b8fda7456c288f8e?mktci=3Dm7t4vm5kdoay171bhr6" target=3D"=
+_blank" tag=3D"m7t4vm5kdoay171bhr6" id=3D"id73th" style=3D"display: inline-=
+block;"><img alt=3D"Geanta cumparaturi cu role Punta F10183 Verde Olive=09"=
+ src=3D"https://www.ebagaje.ro/images/detailed/167/10183-0709_rpvk-u4-1.web=
+p" width=3D"200" height=3D"210" id=3D"i1hqxh" class=3D"product_image_h_2" s=
+tyle=3D"display: block; width: auto; max-width: 100%; height: 210px; object=
+-fit: contain; padding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"ijcspg=
+" style=3D"text-align: center; padding: 0px 6px 48px 6px;" align=3D"center"=
+><!--[if mso]><table width=3D"100%" role=3D"presentation" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"height: 87px; wid=
+th: 100%;" height=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87=
+" valign=3D"top" style=3D"height: 87px; vertical-align: top; text-align: ce=
+nter"><![endif]--><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f043=
+56ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/b4aeaa6da8229ee=
+4b8fda7456c288f8e?mktci=3Dm7t4vm5kdoay171bhr6" target=3D"_blank" tag=3D"m7t=
+4vm5kdoay171bhr6" id=3D"iyv1hg" style=3D"display: inline-block; width: 100%=
+; text-decoration: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=
+=3D"inm6xu" style=3D"height: 57px; margin: 0; font-family: Open Sans, sans-=
+serif; font-size: 16px; line-height: 1.2; color: #333333; text-transform: c=
+apitalize; overflow: hidden; word-break: break-word; font-weight: 600; lett=
+er-spacing: 0px; text-decoration: none; padding-top: 0px; padding-right: 0p=
+x; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: =
+0px; max-height: 57px;">Geanta cumparaturi cu role Punta F10183 Verde Olive=
+=09</p></a><!--[if mso]></td></tr></tbody></table><![endif]--><div class=3D=
+"product_price" id=3D"i3t43h" style=3D"margin-top: 8px; overflow: hidden; t=
+ext-align: center; height: 41px;"><span class=3D"discount_percentage" id=3D=
+"ihemqk" style=3D"display: inline-block; margin: 0 2px; font-family: Helvet=
+ica, sans-serif; font-size: 25px; line-height: 25px; font-weight: 700; colo=
+r: #F32323; text-align: center; text-decoration: none; letter-spacing: 0px;=
+ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0=
+px; height: 25px; max-height: 25px;"> -23% </span></div><table data-comp=3D=
+"button" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" al=
+ign=3D"center" id=3D"iji37f" style=3D"width: 100%; margin: 0 auto; max-widt=
+h: 700px;"><tbody><tr><td id=3D"ijymgf" style=3D"width: 100%; max-width: 10=
+0%; padding-top: 5px; padding-bottom: 5px; background: transparent; text-al=
+ign: center;" width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-cumparaturi-cu-role-punta-f10183/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/b4aeaa=
+6da8229ee4b8fda7456c288f8e?mktci=3Dm7t4vpackqkrztioie" id=3D"m7t4vpackqkrzt=
+ioie" tag=3D"m7t4vpackqkrztioie" class=3D"inline-button" style=3D"display: =
+inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: center=
+; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; fon=
+t-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8px;=
+ padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-decorat=
+ion: none; border-radius: 8px; white-space: normal; word-break: break-word;=
+ background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody></=
+table></td></tr></tbody></table></td><td valign=3D"top" id=3D"m7t4vm5kqswnv=
+q0n199" class=3D"base_td_50" style=3D"padding-left: 10px; padding-right: 10=
+px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0px;" widt=
+h=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-item=
+=3D"7" role=3D"presentation" align=3D"center" id=3D"i5l1l6" style=3D"width:=
+ 100%;" width=3D"100%"><tbody><tr><td id=3D"ie9mg9" style=3D"text-align: ce=
+nter;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8=
+f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/722936583=
+cf38e42debdee5dd9e5a9ef?mktci=3Dm7t4vm5kqswnvq0n199" target=3D"_blank" tag=
+=3D"m7t4vm5kqswnvq0n199" id=3D"iojk1r" style=3D"display: inline-block;"><im=
+g alt=3D"Geanta Sport/Calatorie BENZI BZ 5369 - 48 cm Rosu" src=3D"https://=
+www.ebagaje.ro/images/detailed/138/BZ5369col2-1.webp" width=3D"200" height=
+=3D"210" id=3D"i2sqli" class=3D"product_image_h_2" style=3D"display: block;=
+ width: auto; max-width: 100%; height: 210px; object-fit: contain; padding:=
+ 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"isvlxc" style=3D"text-align: =
+center; padding: 0px 6px 48px 6px;" align=3D"center"><!--[if mso]><table wi=
+dth=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" align=3D"center" style=3D"height: 87px; width: 100%;" height=3D"87=
+;"><tr style=3D"text-align:center;"><td height=3D"87" valign=3D"top" style=
+=3D"height: 87px; vertical-align: top; text-align: center"><![endif]--><a h=
+ref=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10=
+bd570caa8af5/c249a6f1588af9751cac1176/722936583cf38e42debdee5dd9e5a9ef?mktc=
+i=3Dm7t4vm5kqswnvq0n199" target=3D"_blank" tag=3D"m7t4vm5kqswnvq0n199" id=
+=3D"itwlu1" style=3D"display: inline-block; width: 100%; text-decoration: n=
+one; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"ileg7s" style=3D"=
+height: 57px; margin: 0; font-family: Open Sans, sans-serif; font-size: 16p=
+x; line-height: 1.2; color: #333333; text-transform: capitalize; overflow: =
+hidden; word-break: break-word; font-weight: 600; letter-spacing: 0px; text=
+-decoration: none; padding-top: 0px; padding-right: 0px; padding-bottom: 0p=
+x; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; max-height: 57px=
+;">Geanta Sport/Calatorie BENZI BZ 5369 - 48 cm Rosu</p></a><!--[if mso]></=
+td></tr></tbody></table><![endif]--><div class=3D"product_price" id=3D"iqu1=
+ci" style=3D"margin-top: 8px; overflow: hidden; text-align: center; height:=
+ 41px;"><span class=3D"discount_percentage" id=3D"ibdz15" style=3D"display:=
+ inline-block; margin: 0 2px; font-family: Helvetica, sans-serif; font-size=
+: 25px; line-height: 25px; font-weight: 700; color: #F32323; text-align: ce=
+nter; text-decoration: none; letter-spacing: 0px; padding-top: 0px; padding=
+-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 25px; max-heig=
+ht: 25px;"> -24% </span></div><table data-comp=3D"button" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" id=3D"idd5o=
+k" style=3D"width: 100%; margin: 0 auto; max-width: 700px;"><tbody><tr><td =
+id=3D"ilzaqn" style=3D"width: 100%; max-width: 100%; padding-top: 5px; padd=
+ing-bottom: 5px; background: transparent; text-align: center;" width=3D"100=
+%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-sport-calatorie-benzi-bz-5369-48-cm-rosu/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/722936=
+583cf38e42debdee5dd9e5a9ef?mktci=3Dm7t4vpb8zoma46pjcfq" id=3D"m7t4vpb8zoma4=
+6pjcfq" tag=3D"m7t4vpb8zoma46pjcfq" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m=
+7t4vm5ljo6f130xf8s" class=3D"base_td_50" style=3D"padding-left: 10px; paddi=
+ng-right: 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding=
+: 0px;" width=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" data-item=3D"8" role=3D"presentation" align=3D"center" id=3D"i6595n" sty=
+le=3D"width: 100%;" width=3D"100%"><tbody><tr><td id=3D"izw9to" style=3D"te=
+xt-align: center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e=
+/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac11=
+76/c3ca524b93b7b45be52e9a1a7c712186?mktci=3Dm7t4vm5ljo6f130xf8s" target=3D"=
+_blank" tag=3D"m7t4vm5ljo6f130xf8s" id=3D"ih81jg" style=3D"display: inline-=
+block;"><img alt=3D"Geanta de Cosmetice BENZI BZ 5327 BC Mov" src=3D"https:=
+//www.ebagaje.ro/images/detailed/135/BZ5327col3-1.webp" width=3D"200" heigh=
+t=3D"210" id=3D"ixnys7" class=3D"product_image_h_2" style=3D"display: block=
+; width: auto; max-width: 100%; height: 210px; object-fit: contain; padding=
+: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"iigpi3" style=3D"text-align:=
+ center; padding: 0px 6px 48px 6px;" align=3D"center"><!--[if mso]><table w=
+idth=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"center" style=3D"height: 87px; width: 100%;" height=3D"8=
+7;"><tr style=3D"text-align:center;"><td height=3D"87" valign=3D"top" style=
+=3D"height: 87px; vertical-align: top; text-align: center"><![endif]--><a h=
+ref=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10=
+bd570caa8af5/c249a6f1588af9751cac1176/c3ca524b93b7b45be52e9a1a7c712186?mktc=
+i=3Dm7t4vm5ljo6f130xf8s" target=3D"_blank" tag=3D"m7t4vm5ljo6f130xf8s" id=
+=3D"ipt8x6" style=3D"display: inline-block; width: 100%; text-decoration: n=
+one; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"iy2xas" style=3D"=
+height: 57px; margin: 0; font-family: Open Sans, sans-serif; font-size: 16p=
+x; line-height: 1.2; color: #333333; text-transform: capitalize; overflow: =
+hidden; word-break: break-word; font-weight: 600; letter-spacing: 0px; text=
+-decoration: none; padding-top: 0px; padding-right: 0px; padding-bottom: 0p=
+x; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; max-height: 57px=
+;">Geanta de Cosmetice BENZI BZ 5327 BC Mov</p></a><!--[if mso]></td></tr><=
+/tbody></table><![endif]--><div class=3D"product_price" id=3D"im77wb" style=
+=3D"margin-top: 8px; overflow: hidden; text-align: center; height: 41px;"><=
+span class=3D"discount_percentage" id=3D"ixtkrh" style=3D"display: inline-b=
+lock; margin: 0 2px; font-family: Helvetica, sans-serif; font-size: 25px; l=
+ine-height: 25px; font-weight: 700; color: #F32323; text-align: center; tex=
+t-decoration: none; letter-spacing: 0px; padding-top: 0px; padding-right: 0=
+px; padding-bottom: 0px; padding-left: 0px; height: 25px; max-height: 25px;=
+"> -23% </span></div><table data-comp=3D"button" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" width=3D"100%" align=3D"center" id=3D"inqavg" style=
+=3D"width: 100%; margin: 0 auto; max-width: 700px;"><tbody><tr><td id=3D"ig=
+kw8s" style=3D"width: 100%; max-width: 100%; padding-top: 5px; padding-bott=
+om: 5px; background: transparent; text-align: center;" width=3D"100%" align=
+=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-de-cosmetice-benzi-bz-5327-bc-mov/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/c3ca52=
+4b93b7b45be52e9a1a7c712186?mktci=3Dm7t4vpc7gswgtlse29h" id=3D"m7t4vpc7gswgt=
+lse29h" tag=3D"m7t4vpc7gswgtlse29h" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td><td valign=3D"top" id=3D"m7t4vm5lxh=
+ixbm06c0f" class=3D"base_td_50" style=3D"padding-left: 10px; padding-right:=
+ 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0px;" w=
+idth=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-i=
+tem=3D"9" role=3D"presentation" align=3D"center" id=3D"i8ncpk" style=3D"wid=
+th: 100%;" width=3D"100%"><tbody><tr><td id=3D"it4aya" style=3D"text-align:=
+ center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/182547=
+7ce4d3d4dd088abae710ccfc95?mktci=3Dm7t4vm5lxhixbm06c0f" target=3D"_blank" t=
+ag=3D"m7t4vm5lxhixbm06c0f" id=3D"img59f" style=3D"display: inline-block;"><=
+img alt=3D"Rucsac urban Butterfly, fond roz - LaRue" src=3D"https://www.eba=
+gaje.ro/images/detailed/118/WP_20170621_09_15_33_Pro-1.webp" width=3D"200" =
+height=3D"210" id=3D"itw3mf" class=3D"product_image_h_2" style=3D"display: =
+block; width: auto; max-width: 100%; height: 210px; object-fit: contain; pa=
+dding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"i2vzhu" style=3D"text-a=
+lign: center; padding: 0px 6px 48px 6px;" align=3D"center"><!--[if mso]><ta=
+ble width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" align=3D"center" style=3D"height: 87px; width: 100%;" height=
+=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87" valign=3D"top" =
+style=3D"height: 87px; vertical-align: top; text-align: center"><![endif]--=
+><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102=
+f3a10bd570caa8af5/c249a6f1588af9751cac1176/1825477ce4d3d4dd088abae710ccfc95=
+?mktci=3Dm7t4vm5lxhixbm06c0f" target=3D"_blank" tag=3D"m7t4vm5lxhixbm06c0f"=
+ id=3D"ilr1x5" style=3D"display: inline-block; width: 100%; text-decoration=
+: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"itpk43" style=
+=3D"height: 57px; margin: 0; font-family: Open Sans, sans-serif; font-size:=
+ 16px; line-height: 1.2; color: #333333; text-transform: capitalize; overfl=
+ow: hidden; word-break: break-word; font-weight: 600; letter-spacing: 0px; =
+text-decoration: none; padding-top: 0px; padding-right: 0px; padding-bottom=
+: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; max-height: =
+57px;">Rucsac urban Butterfly, fond roz - LaRue</p></a><!--[if mso]></td></=
+tr></tbody></table><![endif]--><div class=3D"product_price" id=3D"iefdjr" s=
+tyle=3D"margin-top: 8px; overflow: hidden; text-align: center; height: 41px=
+;"><span class=3D"discount_percentage" id=3D"idprxp" style=3D"display: inli=
+ne-block; margin: 0 2px; font-family: Helvetica, sans-serif; font-size: 25p=
+x; line-height: 25px; font-weight: 700; color: #F32323; text-align: center;=
+ text-decoration: none; letter-spacing: 0px; padding-top: 0px; padding-righ=
+t: 0px; padding-bottom: 0px; padding-left: 0px; height: 25px; max-height: 2=
+5px;"> -15% </span></div><table data-comp=3D"button" cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" id=3D"iq6t5u" st=
+yle=3D"width: 100%; margin: 0 auto; max-width: 700px;"><tbody><tr><td id=3D=
+"i8n5jl" style=3D"width: 100%; max-width: 100%; padding-top: 5px; padding-b=
+ottom: 5px; background: transparent; text-align: center;" width=3D"100%" al=
+ign=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/rucsac-urban-butterfly-fond-roz-larue/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/182547=
+7ce4d3d4dd088abae710ccfc95?mktci=3Dm7t4vpd44szdsa88n6j" id=3D"m7t4vpd44szds=
+a88n6j" tag=3D"m7t4vpd44szdsa88n6j" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr><tr><td valign=3D"top" id=3D"m=
+7t4vm5l1kda2z3epkc" class=3D"base_td_50" style=3D"padding-left: 10px; paddi=
+ng-right: 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding=
+: 0px;" width=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" data-item=3D"10" role=3D"presentation" align=3D"center" id=3D"ips5h1" st=
+yle=3D"width: 100%;" width=3D"100%"><tbody><tr><td id=3D"ipl8wa" style=3D"t=
+ext-align: center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/=
+e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1=
+176/4ca967468eddde43b981611f1de356e8?mktci=3Dm7t4vm5l1kda2z3epkc" target=3D=
+"_blank" tag=3D"m7t4vm5l1kda2z3epkc" id=3D"i0pndp" style=3D"display: inline=
+-block;"><img alt=3D"Geanta de voiaj Gladiator Expedition MG 0641 - 52 cm R=
+osu" src=3D"https://www.ebagaje.ro/images/detailed/164/064103-2.webp" width=
+=3D"200" height=3D"210" id=3D"ij26c1" class=3D"product_image_h_2" style=3D"=
+display: block; width: auto; max-width: 100%; height: 210px; object-fit: co=
+ntain; padding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"ic9jne" style=
+=3D"text-align: center; padding: 0px 6px 48px 6px;" align=3D"center"><!--[i=
+f mso]><table width=3D"100%" role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" style=3D"height: 87px; width: 100=
+%;" height=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87" valig=
+n=3D"top" style=3D"height: 87px; vertical-align: top; text-align: center"><=
+![endif]--><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca656=
+35/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/4ca967468eddde43b98161=
+1f1de356e8?mktci=3Dm7t4vm5l1kda2z3epkc" target=3D"_blank" tag=3D"m7t4vm5l1k=
+da2z3epkc" id=3D"i5hfvf" style=3D"display: inline-block; width: 100%; text-=
+decoration: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"i905=
+p5" style=3D"height: 57px; margin: 0; font-family: Open Sans, sans-serif; f=
+ont-size: 16px; line-height: 1.2; color: #333333; text-transform: capitaliz=
+e; overflow: hidden; word-break: break-word; font-weight: 600; letter-spaci=
+ng: 0px; text-decoration: none; padding-top: 0px; padding-right: 0px; paddi=
+ng-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; max=
+-height: 57px;">Geanta de voiaj Gladiator Expedition MG 0641 - 52 cm Rosu</=
+p></a><!--[if mso]></td></tr></tbody></table><![endif]--><div class=3D"prod=
+uct_price" id=3D"ig0zke" style=3D"margin-top: 8px; overflow: hidden; text-a=
+lign: center; height: 41px;"><span class=3D"discount_percentage" id=3D"i77z=
+9g" style=3D"display: inline-block; margin: 0 2px; font-family: Helvetica, =
+sans-serif; font-size: 25px; line-height: 25px; font-weight: 700; color: #F=
+32323; text-align: center; text-decoration: none; letter-spacing: 0px; padd=
+ing-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; h=
+eight: 25px; max-height: 25px;"> -23% </span></div><table data-comp=3D"butt=
+on" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=
+=3D"center" id=3D"ic52hj" style=3D"width: 100%; margin: 0 auto; max-width: =
+700px;"><tbody><tr><td id=3D"it11fl" style=3D"width: 100%; max-width: 100%;=
+ padding-top: 5px; padding-bottom: 5px; background: transparent; text-align=
+: center;" width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-de-voiaj-gladiator-expedition-mg-0641-53-cm/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/4ca967=
+468eddde43b981611f1de356e8?mktci=3Dm7t4vpe0msoalhm0nic" id=3D"m7t4vpe0msoal=
+hm0nic" tag=3D"m7t4vpe0msoalhm0nic" class=3D"inline-button" style=3D"displa=
+y: inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: cen=
+ter; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; =
+font-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8=
+px; padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-deco=
+ration: none; border-radius: 8px; white-space: normal; word-break: break-wo=
+rd; background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody=
+></table></td></tr></tbody></table></td><td valign=3D"top" id=3D"m7t4vm5l7r=
+4krssyz5w" class=3D"base_td_50" style=3D"padding-left: 10px; padding-right:=
+ 10px; padding-top: 20px; padding-bottom: 0px; width: 50%; padding: 0px;" w=
+idth=3D"50%"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-i=
+tem=3D"11" role=3D"presentation" align=3D"center" id=3D"i9a9eu" style=3D"wi=
+dth: 100%;" width=3D"100%"><tbody><tr><td id=3D"ip6gt7" style=3D"text-align=
+: center;" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c2159=
+00d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/114ea=
+adad63245db50da59a32312502d?mktci=3Dm7t4vm5l7r4krssyz5w" target=3D"_blank" =
+tag=3D"m7t4vm5l7r4krssyz5w" id=3D"ifa82j" style=3D"display: inline-block;">=
+<img alt=3D"Geanta Cosmetice, Policarbonat, Madisson, SW86820, BC, Alb" src=
+=3D"https://www.ebagaje.ro/images/detailed/189/86820_bc_5giz-bm-2.webp" wid=
+th=3D"200" height=3D"210" id=3D"iufsmy" class=3D"product_image_h_2" style=
+=3D"display: block; width: auto; max-width: 100%; height: 210px; object-fit=
+: contain; padding: 22px 8px 0 8px;"></a></td></tr><tr><td id=3D"iynsxh" st=
+yle=3D"text-align: center; padding: 0px 6px 48px 6px;" align=3D"center"><!-=
+-[if mso]><table width=3D"100%" role=3D"presentation" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" align=3D"center" style=3D"height: 87px; width: =
+100%;" height=3D"87;"><tr style=3D"text-align:center;"><td height=3D"87" va=
+lign=3D"top" style=3D"height: 87px; vertical-align: top; text-align: center=
+"><![endif]--><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca=
+65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/114eaadad63245db50d=
+a59a32312502d?mktci=3Dm7t4vm5l7r4krssyz5w" target=3D"_blank" tag=3D"m7t4vm5=
+l7r4krssyz5w" id=3D"iy2evl" style=3D"display: inline-block; width: 100%; te=
+xt-decoration: none; margin: 15px 0 0 0;"><p class=3D"product_name" id=3D"i=
+9ttq6" style=3D"height: 57px; margin: 0; font-family: Open Sans, sans-serif=
+; font-size: 16px; line-height: 1.2; color: #333333; text-transform: capita=
+lize; overflow: hidden; word-break: break-word; font-weight: 600; letter-sp=
+acing: 0px; text-decoration: none; padding-top: 0px; padding-right: 0px; pa=
+dding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; =
+max-height: 57px;">Geanta Cosmetice, Policarbonat, Madisson, SW86820, BC, A=
+lb</p></a><!--[if mso]></td></tr></tbody></table><![endif]--><div class=3D"=
+product_price" id=3D"i94idk" style=3D"margin-top: 8px; overflow: hidden; te=
+xt-align: center; height: 41px;"><span class=3D"discount_percentage" id=3D"=
+ik19lk" style=3D"display: inline-block; margin: 0 2px; font-family: Helveti=
+ca, sans-serif; font-size: 25px; line-height: 25px; font-weight: 700; color=
+: #F32323; text-align: center; text-decoration: none; letter-spacing: 0px; =
+padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0p=
+x; height: 25px; max-height: 25px;"> -45% </span></div><table data-comp=3D"=
+button" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" ali=
+gn=3D"center" id=3D"iavtpa" style=3D"width: 100%; margin: 0 auto; max-width=
+: 700px;"><tbody><tr><td id=3D"iydmvj" style=3D"width: 100%; max-width: 100=
+%; padding-top: 5px; padding-bottom: 5px; background: transparent; text-ali=
+gn: center;" width=3D"100%" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/geanta-cosmetice-policarbonat-madisson-sw86820-bc-alb/"
+                                             style=3D"height:41px;width:aut=
+o;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             stroke=3D"false"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:20px">
+                                        Vezi detalii
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/114eaa=
+dad63245db50da59a32312502d?mktci=3Dm7t4vpf27d4xwdxjvm" id=3D"m7t4vpf27d4xwd=
+xjvm" tag=3D"m7t4vpf27d4xwdxjvm" class=3D"inline-button" style=3D"display: =
+inline-block; border: 0px solid #000000; color: #FFFFFF; text-align: center=
+; max-width: 100%; font-family: Open Sans, sans-serif; font-size: 20px; fon=
+t-weight: 400; text-transform: none; letter-spacing: 0px; padding-top: 8px;=
+ padding-right: 12px; padding-bottom: 8px; padding-left: 12px; text-decorat=
+ion: none; border-radius: 8px; white-space: normal; word-break: break-word;=
+ background: #1946b9;">Vezi detalii</a><!--<![endif]--></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr></table></td></tr></tbody></table=
+><div id=3D"irk3l2" class=3D"text-block" style=3D"padding-top: 10px; paddin=
+g-right: 10px; padding-bottom: 10px; padding-left: 10px; text-size-adjust: =
+none; font-size: 16px; box-sizing: border-box; font-family: 'Open Sans', sa=
+ns-serif; line-height: 120%; font-weight: 400; letter-spacing: 0px; word-br=
+eak: break-word; background-color: transparent; color: rgb(0, 0, 0);"><p st=
+yle=3D"text-align: center;"><span style=3D"font-size:22px"><b><span style=
+=3D"color:#1946b9">C=C4=83l=C4=83toriile</span> tale.=C2=A0<span style=3D"c=
+olor:#1946b9">Confortul</span> t=C4=83u.=C2=A0Accesoriile <span style=3D"co=
+lor:#1946b9">eBagaje=C2=A0</span></b></span>=E2=80=8B=E2=80=8B=E2=80=8B=E2=
+=80=8B=E2=80=8B=E2=80=8B=E2=80=8B<br></p></div><div id=3D"iwfv0c" class=3D"=
+text-block" style=3D"text-size-adjust: none; font-size: 20px; box-sizing: b=
+order-box; font-family: 'Open Sans', sans-serif; line-height: 120%; font-we=
+ight: 400; letter-spacing: 0px; word-break: break-word; padding-top: 10px; =
+padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-c=
+olor: transparent; color: rgb(0, 0, 0);"><p>Evadeaz=C4=83 din rutin=C4=83 c=
+u accesorii de c=C4=83l=C4=83torie ideale pentru:</p><p><br></p><p>=F0=9F=
+=91=89c=C4=83l=C4=83torii cu familia,<br>=F0=9F=91=89c=C4=83l=C4=83torii sc=
+urte,<br>=F0=9F=91=89concedii,<br>=F0=9F=91=89city breaks.</p><p><br></p><p=
+>=F0=9F=92=99Iube=C8=99te. Exploreaz=C4=83. C=C4=83l=C4=83tore=C8=99te=F0=
+=9F=92=99</p></div><table data-comp=3D"button" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"100%" align=3D"center" target=3D"_blank" id=
+=3D"i5iqw-2" style=3D"width: 100%; margin-top: 0px; margin-right: auto; mar=
+gin-bottom: 0px; margin-left: auto; max-width: 700px;"><tbody><tr><td id=3D=
+"imujw9" style=3D"width: 100%; max-width: 100%; padding-top: 10px; padding-=
+bottom: 10px; background-image: initial; background-position: initial; back=
+ground-size: initial; background-repeat: initial; background-attachment: in=
+itial; background-origin: initial; background-clip: initial; background-col=
+or: transparent; text-align: center;" width=3D"100%" background=3D"initial"=
+ bgcolor=3D"transparent" align=3D"center"><!--[if mso]>
+                                <v:roundrect xmlns:v=3D"urn:schemas-microso=
+ft-com:vml"
+                                             xmlns:w=3D"urn:schemas-microso=
+ft-com:office:word"
+                                             href=3D"https://www.ebagaje.ro=
+/luna-femeii/"
+                                             style=3D"height:59px;width:198=
+px;mso-wrap-style:none; v-text-anchor:middle;"
+                                             arcsize=3D"20%"
+                                             strokecolor=3D"#1946b9"
+                                             fillcolor=3D"#1946b9"
+                                             >
+                                    <w:anchorlock/>
+                                        <center style=3D"color:#FFFFFF; fon=
+t-family:Open Sans, sans-serif; font-size:24px">
+                                        Vezi produsele
+                                </center></v:roundrect><![endif]--><!--[if =
+!mso]>--><a target=3D"_blank" href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/f51f21=
+4c50a5dc86d39ac43d666a28fb?mktci=3Dm74x9kqzlgx0sac30d" id=3D"m74x9kqzlgx0sa=
+c30d" tag=3D"m74x9kqzlgx0sac30d" class=3D"inline-button" style=3D"display: =
+inline-block; border-top-width: 5px; border-right-width: 5px; border-bottom=
+-width: 5px; border-left-width: 5px; border-top-style: none; border-right-s=
+tyle: none; border-bottom-style: none; border-left-style: none; border-top-=
+color: rgb(25, 70, 185); border-right-color: rgb(25, 70, 185); border-botto=
+m-color: rgb(25, 70, 185); border-left-color: rgb(25, 70, 185); border-imag=
+e-source: initial; border-image-slice: initial; border-image-width: initial=
+; border-image-outset: initial; border-image-repeat: initial; color: rgb(25=
+5, 255, 255); text-align: center; max-width: 100%; font-family: 'Open Sans'=
+, sans-serif; font-size: 24px; font-weight: 400; text-transform: none; lett=
+er-spacing: 0px; padding-top: 10px; padding-right: 20px; padding-bottom: 10=
+px; padding-left: 20px; text-decoration-line: none; text-decoration-thickne=
+ss: initial; text-decoration-style: initial; text-decoration-color: initial=
+; border-top-left-radius: 12px; border-top-right-radius: 12px; border-botto=
+m-right-radius: 12px; border-bottom-left-radius: 12px; white-space-collapse=
+: collapse; text-wrap-mode: wrap; word-break: break-word; background-image:=
+ url(''); background-position: center; background-repeat: no-repeat; backgr=
+ound-attachment: initial; background-origin: initial; background-clip: init=
+ial; background-color: rgb(25, 70, 185); background-size: auto;">Vezi produ=
+sele</a><!--<![endif]--></td></tr></tbody></table><div id=3D"idniij" class=
+=3D"text-block" style=3D"padding-top: 10px; padding-right: 10px; padding-bo=
+ttom: 10px; padding-left: 10px; text-size-adjust: none; font-size: 20px; bo=
+x-sizing: border-box; font-family: 'Open Sans', sans-serif; line-height: 12=
+0%; font-weight: 400; letter-spacing: 0px; word-break: break-word; backgrou=
+nd-color: transparent; color: rgb(0, 0, 0);"><p><span style=3D"font-size:18=
+px;">Pe data viitoare,<br>Adelina=F0=9F=91=A9</span></p></div><table border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" align=3D"c=
+enter" width=3D"100%" id=3D"ibv14d" class=3D"gjs-f-divider" style=3D"text-a=
+lign: center; width: 100%; margin-top: 0px; margin-right: auto; margin-bott=
+om: 0px; margin-left: auto; max-width: 700px; background-image: initial; ba=
+ckground-position: initial; background-size: initial; background-repeat: in=
+itial; background-attachment: initial; background-origin: initial; backgrou=
+nd-clip: initial; background-color: transparent; border-collapse: separate;=
+ -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0=
+px;" background=3D"initial" bgcolor=3D"transparent"><tbody><tr><td valign=
+=3D"middle" id=3D"ieyq2v" style=3D"vertical-align: middle; text-align: left=
+; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-lef=
+t: 10px; background-image: initial; background-position: initial; backgroun=
+d-size: initial; background-repeat: initial; background-attachment: initial=
+; background-origin: initial; background-clip: initial; background-color: t=
+ransparent; width: 100%;" width=3D"100%" align=3D"left" background=3D"initi=
+al" bgcolor=3D"transparent"><table border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" role=3D"presentation" align=3D"left" width=3D"100%" id=3D"ior7r9" =
+style=3D"width: 100%; min-width: 100%; text-align: left; margin-top: auto; =
+margin-right: auto; margin-bottom: auto; margin-left: 0px; border-collapse:=
+ separate; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-=
+spacing: 0px;"><tbody><tr><td valign=3D"middle" id=3D"ibqkyx" style=3D"vert=
+ical-align: middle; border-bottom-width: 1px; border-bottom-style: solid; b=
+order-bottom-color: rgb(179, 192, 206); width: 100%;" width=3D"100%"><span =
+id=3D"i6ufjl" class=3D"text-block" style=3D"font-family: Arial, Helvetica, =
+'Helvetica Neue', sans-serif; font-size: 1px; line-height: 1px;"></span></t=
+d></tr></tbody></table></td></tr></tbody></table><table width=3D"100%" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" align=3D=
+"center" data-comp=3D"footer" id=3D"i3abqn" class=3D"footer base_row" style=
+=3D"text-align: center; width: 100%; margin-top: 0px; margin-right: auto; m=
+argin-bottom: 0px; margin-left: auto; max-width: 700px; min-width: 100%; ba=
+ckground-image: initial; background-position: initial; background-size: ini=
+tial; background-repeat: initial; background-attachment: initial; backgroun=
+d-origin: initial; background-clip: initial; background-color: rgb(25, 70, =
+185);" background=3D"initial" bgcolor=3D"rgb(25, 70, 185)"><tbody><tr><td v=
+align=3D"middle" id=3D"m7t4t4fprqntyocfz8a" style=3D"vertical-align: middle=
+; width: 100%; min-width: 100%; padding: 25px 0;" width=3D"100%"><table cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"100%" id=3D"i19y1x" style=3D"widt=
+h: 100%; border: 0; padding: 20px 0; text-align: center; background: transp=
+arent;" align=3D"center"><tbody><tr><td valign=3D"middle" id=3D"iail8p" sty=
+le=3D"vertical-align: middle;"><table border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" role=3D"presentation" align=3D"center" width=3D"100%" id=3D"iq5=
+8b2" style=3D"width: 100%; max-width: 700px; text-align: center; margin: 0 =
+auto;"><tbody><tr><td id=3D"iivy5k" style=3D"display: table-cell; width: au=
+to;"><div> </div></td><td id=3D"ia1e3k" style=3D"text-align: center; width:=
+ 42px; display: table-cell;" width=3D"42" align=3D"center"><a href=3D"https=
+://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250102f3a10bd570caa8af5=
+/c249a6f1588af9751cac1176/b2da250de381f049f9882555d8e75f25?mktci=3Dm7t4t4fp=
+rqntyocfz8a" title=3D"Facebook" target=3D"_blank" tag=3D"m7t4t4fprqntyocfz8=
+a" id=3D"ir32xg" style=3D"display: inline-block; margin: 0 5px; width: 32px=
+;"><img alt=3D"Facebook" src=3D"https://cdn1.mktr2.com/email-campaigns/asse=
+ts/footer/rounded-white/fb-icon.png" width=3D"32" height=3D"32" id=3D"i56hn=
+k" style=3D"display: block; height: auto; max-width: 32px; margin: 0 auto; =
+width: 100%; max-height: unset;"></a></td><td id=3D"ig0x1i" style=3D"text-a=
+lign: center; width: 42px; display: table-cell;" width=3D"42" align=3D"cent=
+er"><a href=3D"https://api4.mktr2.com/act/e/r/c215900d8f9f04356ca65635/c250=
+102f3a10bd570caa8af5/c249a6f1588af9751cac1176/562340719a12861e34c10acf7fe55=
+dc3?mktci=3Dm7t4t4fprqntyocfz8a" title=3D"Instagram" target=3D"_blank" tag=
+=3D"m7t4t4fprqntyocfz8a" id=3D"iyvzpj" style=3D"display: inline-block; marg=
+in: 0 5px; width: 32px;"><img alt=3D"Instagram" src=3D"https://cdn1.mktr2.c=
+om/email-campaigns/assets/footer/rounded-white/ig-icon.png" width=3D"32" he=
+ight=3D"32" id=3D"is5z0q" style=3D"display: block; height: auto; max-width:=
+ 32px; margin: 0 auto; width: 100%; max-height: unset;"></a></td><td id=3D"=
+in6dui" style=3D"text-align: center; width: 42px; display: table-cell;" wid=
+th=3D"42" align=3D"center"><a href=3D"https://api4.mktr2.com/act/e/r/c21590=
+0d8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176/4201c5=
+5749fb95d7bfdf8b77cf377eeb?mktci=3Dm7t4t4fprqntyocfz8a" title=3D"Youtube" t=
+arget=3D"_blank" tag=3D"m7t4t4fprqntyocfz8a" id=3D"i0ivmh" style=3D"display=
+: inline-block; margin: 0 5px; width: 32px;"><img alt=3D"Youtube" src=3D"ht=
+tps://cdn1.mktr2.com/email-campaigns/assets/footer/rounded-white/yt-icon.pn=
+g" width=3D"32" height=3D"32" id=3D"im17a2" style=3D"display: block; height=
+: auto; max-width: 32px; margin: 0 auto; width: 100%; max-height: unset;"><=
+/a></td><td id=3D"ifzv0h" style=3D"display: table-cell; width: auto;"><div>=
+ </div></td></tr></tbody></table></td></tr><tr><td id=3D"i0z858" style=3D"w=
+idth: 100%; text-align: center; margin: 0 auto;" width=3D"100%" align=3D"ce=
+nter"><div id=3D"footer-custom-text" class=3D"footer-custom-text" style=3D"=
+font-family: Open Sans, sans-serif; font-size: 14px; line-height: 14px; mar=
+gin: 0 auto; display: inline-block; width: 100%; padding: 16px 0; max-width=
+: 90%; color: #ffffff; font-weight: 400; letter-spacing: 0px; text-decorati=
+on: none; text-transform: none;"><p><strong>Contacteaz=C4=83-ne!</strong></=
+p><p>=F0=9F=93=9E <strong>Telefon:</strong> 031 333 0331 <i>(Luni - Vineri:=
+ 09:00 - 17:00)</i><br>=F0=9F=93=A7 <strong>Email:</strong> contact@ebagaje=
+.ro</p><p>=C2=A0</p><p>=C2=A9 2025 <strong>Mondial Caprice S.R.L.</strong> =
+Toate drepturile rezervate.</p></div></td></tr><tr><td id=3D"ihm6au" style=
+=3D"width: 100%; text-align: center; margin: 0 auto;" width=3D"100%" align=
+=3D"center"><span id=3D"footer-unsubscribe-text" class=3D"gjs_footer_unsub"=
+ style=3D"font-family: Open Sans, sans-serif; font-size: 14px; margin: 0 au=
+to; display: inline-block; max-width: 90%; color: #FFFFFF; font-weight: 400=
+; letter-spacing: 0px; text-decoration: none; text-transform: none; line-he=
+ight: 14px; text-align: center;">Dac=C4=83 dori=C8=9Bi s=C4=83 v=C4=83 deza=
+bona=C8=9Bi, face=C8=9Bi <a href=3D"https://api4.mktr2.com/act/e/u/c215900d=
+8f9f04356ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176?mktci=3D=
+m7t4t4fprqntyocfz8a" tag=3D"m7t4t4fprqntyocfz8a" class=3D"gjs-footer-unsub"=
+ id=3D"ickzqw" style=3D"text-transform: none; display: inline-block; text-a=
+lign: left; font-size: 14px; line-height: 14px; font-family: Open Sans, san=
+s-serif; color: #FFFFFF; font-weight: 400; letter-spacing: 0px; text-decora=
+tion: underline;">click aici</a></span></td></tr><tr><td id=3D"iw58mw" styl=
+e=3D"width: 100%; text-align: center; margin: 0 auto;" width=3D"100%" align=
+=3D"center"><span id=3D"footer-view-in-browser-text" class=3D"gjs_footer_vi=
+ew_in_browser" style=3D"font-family: Open Sans, sans-serif; font-size: 14px=
+; margin: 0 auto; display: inline-block; max-width: 90%; color: #FFFFFF; fo=
+nt-weight: 400; letter-spacing: 0px; text-decoration: none; text-transform:=
+ none; line-height: 14px; text-align: center;">Vizualiza=C8=9Bi acest e-mai=
+l ca <a href=3D"https://api4.mktr2.com/act/e/v/c215900d8f9f04356ca65635/c25=
+0102f3a10bd570caa8af5/c249a6f1588af9751cac1176?mktdi=3Dc250102f3a10bd570caa=
+8af5&amp;mktci=3Dm7t4t4fprqntyocfz8a" tag=3D"m7t4t4fprqntyocfz8a" class=3D"=
+gjs-footer-view-b" id=3D"iokje6" style=3D"display: inline-block; text-align=
+: left; font-size: 14px; line-height: 14px; font-family: Open Sans, sans-se=
+rif; color: #FFFFFF; font-weight: 400; letter-spacing: 0px; text-decoration=
+: underline; text-transform: none;">pagin=C4=83 web</a></span></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody></table><style>* {=
+box-sizing: border-box;} body {margin: 0; padding: 0;} a[x-apple-data-detec=
+tors] {color: inherit !important;text-decoration: inherit !important}  #Mes=
+sageViewBody a {color: inherit;text-decoration: none} p {margin-top: 0; mar=
+gin-right: 0; margin-bottom: 0; margin-left: 0;} table {border-collapse: co=
+llapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt; border-spacing: 0;} td =
+{mso-table-lspace: 0pt;mso-table-rspace: 0pt;} .nl-hide-block-on-desktop, .=
+nl-hide-table-on-desktop {mso-hide: all;display: none;} @media (max-width: =
+520px) {.full_width {width: 100% !important; max-width: 100% !important; di=
+splay: block;margin: 20px 0 0 0 !important; padding: 0 !important;} .produc=
+t_image_h {max-height: 100px !important; min-height: 100px !important; heig=
+ht: 100px !important;} .product_image_h_2 {max-height: 200px !important; mi=
+n-height: 200px !important; height: 200px !important;} .product_image_h_1 {=
+max-height: 300px !important; min-height: auto !important; height: auto !im=
+portant;} .product_image_v {height: auto !important; min-height: unset !imp=
+ortant;} .stacked_row td.row_cell {width: 100% !important;display: block;} =
+.stacked_row_h_auto td.row_cell {width: 100% !important; height: auto !impo=
+rtant; display: block;} .stacked_row td.base_td_33 {width: 33% !important; =
+display: table-cell !important;} .stacked_row_h_auto td.base_td_33 {width: =
+33% !important; display: table-cell !important;} .stacked_row td.base_td_50=
+ {width: 50% !important; display: table-cell !important;} .stacked_row_h_au=
+to td.base_td_50 {width: 50% !important; display: table-cell !important;} .=
+stacked_row td.base_td_100 {width: 100% !important; display: table-cell !im=
+portant;} .stacked_row_h_auto td.base_td_100 {width: 100% !important; displ=
+ay: table-cell !important;} .nl-hide-block-on-desktop {mso-hide: none;displ=
+ay: block;} .nl-hide-table-on-desktop {mso-hide: none;display: table;} .nl-=
+hide-on-mobile {display: none;min-height: 0;max-height: 0;max-width: 0;over=
+flow: hidden;font-size: 0;mso-hide: all;} .item_d_block {display: block !im=
+portant;} .item_d_none {display: none !important;} .reverse_stack_mobile  t=
+r.reverse_row {display: table;width: 100%;} .reverse_stack_mobile td.first_=
+col {display: table-footer-group !important;} .reverse_stack_mobile td.last=
+_col {display: table-header-group !important;} .product_name {overflow: hid=
+den !important;} .linked-images {max-width: 240px !important; width: 240px;=
+}}</style></body><img src=3D"https://api4.mktr2.com/act/e/o/c215900d8f9f043=
+56ca65635/c250102f3a10bd570caa8af5/c249a6f1588af9751cac1176" alt=3D"" style=
+=3D"display: none; width: 1px; height: 1px;"></html>
+
+------=_Part_510759_1263831119.1741064947192--
