@@ -1,0 +1,67 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie/4. Cod/0. Final/Data/my_spam_gmails/_1_IP_nou.ppt
+File Type: application/vnd.ms-powerpoint (d0 cf 11 e0)
+File Size: 941056 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-03-24 17:57:21
+Modified: 2025-03-24 17:57:22
+Accessed: 2025-03-25 17:57:05
+File Hash (MD5): 6cc099e12a5fca675192d0219339ad27
+
+Hex Dump (first 256 bytes):
+d0 cf 11 e0 a1 b1 1a e1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 00 03 00 fe ff 09 00 06 00 00 00 00 00 00 00 00 00 00 00 0f 00 00 00 18 07 00 00 00 00 00 00 00 10 00 00 1a 07 00 00 01 00 00 00 fe ff ff ff 00 00 00 00 1c 07 00 00 1d 07 00 00 1e 07 00 00 1f 07 00 00 20 07 00 00 21 07 00 00 22 07 00 00 23 07 00 00 24 07 00 00 25 07 00 00 26 07 00 00 27 07 00 00 28 07 00 00 29 07 00 00 19 07 00 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 50 strings):
+IHDR
+sRGB
+gAMA
+ cHRM
+pHYs
+IDATx^
+ hpwww+
+Wh|1#Py
+ylKo
+U~6I64
+6~_o
+Z1kF!
+~bC)
+3]:k
+/d gK
+=#`i
+Rr^cZghF
+e;z/wS
+v[*Z8
+4(gh
+]:cG{
+oM#G
+3@o\
+@?Wd6
+P8[?
+VYn#
+~w_O
+cDKm
+3+L>
+4y|k
+iemKr
+T'Z5
+o~05
+$`P'ot$o
+^>oC
+Z"].
+`3`G
+|QT = 
+wMLr
+=kru5&3SQ
+0'J\
+&[B)
+[a`$&
+7r|d
+4;A\
+z~_k|
+^?LF
+\K>a
+dAkc
+se)z
