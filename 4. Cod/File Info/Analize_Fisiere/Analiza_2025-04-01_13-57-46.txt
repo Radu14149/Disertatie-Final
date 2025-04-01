@@ -1,0 +1,22 @@
+File Analysis
+File Path: C:/Users/Here/Documents/cloud_6b7351af-7501-4841-ba52-b7e82aaacc7b.cmd
+File Type: Unknown (40 73 65 74)
+File Size: 448926 bytes
+Permissions: 777
+Owner: Here
+Group: N/A
+Created: 2024-07-14 09:19:01
+Modified: 2024-07-14 09:19:01
+Accessed: 2025-04-01 13:57:46
+File Hash (MD5): 88d518ea04598e056440635851ba61db
+
+Hex Dump (first 10 bytes):
+40 73 65 74 20 6d 61 73 76 65
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 5 strings):
+@set masver=2.6
+@setlocal DisableDelayedExpansion
+@echo off
+::  For command line switches, check mass grave [.] dev/command_line_switches.html
+::  If you want to better understand script, read from MAS separate files version. 

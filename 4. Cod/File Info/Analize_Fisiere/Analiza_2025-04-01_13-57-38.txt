@@ -1,0 +1,22 @@
+File Analysis
+File Path: C:/Users/Here/Documents/ag_senat_2024-bun.pdf
+File Type: application/pdf (25 50 44 46)
+File Size: 2109257 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2024-11-26 18:48:11
+Modified: 2024-11-26 18:48:11
+Accessed: 2025-04-01 13:57:38
+File Hash (MD5): f6f0e0be3fb1dd1098a48a67809fd542
+
+Hex Dump (first 10 bytes):
+25 50 44 46 2d 31 2e 37 0d 25
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 5 strings):
+%PDF-1.7
+23 0 obj
+<</Linearized 1/L 2109257/O 25/E 2090460/N 8/T 2108920/H [ 570 390]>>
+endobj
+            
