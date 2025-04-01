@@ -1,0 +1,117 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie/4. Cod/0. Final/Data/my_spam_gmails/_1_IP_nou.ppt
+File Type: application/vnd.ms-powerpoint (d0 cf 11 e0)
+File Size: 941056 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-03-24 17:57:21
+Modified: 2025-03-24 17:57:22
+Accessed: 2025-04-01 13:41:08
+File Hash (MD5): 6cc099e12a5fca675192d0219339ad27
+
+Hex Dump (first 1024 bytes):
+d0 cf 11 e0 a1 b1 1a e1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 00 03 00 fe ff 09 00 06 00 00 00 00 00 00 00 00 00 00 00 0f 00 00 00 18 07 00 00 00 00 00 00 00 10 00 00 1a 07 00 00 01 00 00 00 fe ff ff ff 00 00 00 00 1c 07 00 00 1d 07 00 00 1e 07 00 00 1f 07 00 00 20 07 00 00 21 07 00 00 22 07 00 00 23 07 00 00 24 07 00 00 25 07 00 00 26 07 00 00 27 07 00 00 28 07 00 00 29 07 00 00 19 07 00 00 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 00 6e 1e f0 74 9e 00 00 b4 90 07 8f 0d 42 e7 4d 86 da 90 28 3b 93 e8 f7 ff 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 b7 00 00 00 c9 08 06 00 00 00 61 46 a3 2e 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00 00 04 67 41 4d 41 00 00 b1 8f 0b fc 61 05 00 00 00 20 63 48 52 4d 00 00 7a 26 00 00 80 84 00 00 fa 00 00 00 80 e8 00 00 75 30 00 00 ea 60 00 00 3a 98 00 00 17 70 9c ba 51 3c 00 00 00 09 70 48 59 73 00 00 21 d5 00 00 21 d5 01 04 9c b4 9d 00 00 9d cc 49 44 41 54 78 5e ed 5d 05 78 14 57 d7 2e 0e 71 3c ee 21 58 0b 2d 94 16 28 a5 14 87 e2 ee 56 dc dd dd dd e3 9e 10 27 24 81 20 21 10 20 68 70 77 77 77 2b f0 9d ff 3d 77 77 b2 33 bb 1b 92 50 da ff fb 08 3c cf 3e c0 ee ec ec cc 9d f7 9e 7b ee 39 ef 79 4f 8e 6f be fe 51 8c 40 ae 5c 39 02 6a d6 30 ee 62 66 f6 fe 9b 1c 39 72 7e b3 79 cb eb 83 8f 1e 7d a8 f8 75 98 be 8e c0 ff fc 08 e4 ce 9b 7f cc a6 f5 2e f4 e1 85 15 bd 7f 65 45 df 7d 9b ff c0 ff fc 4d 7d bd 81 af 23 a0 1e 81 ca fe be c5 e8 c3 33 2b 7a f7 dc 8e 4a 38 9b 7d 05 f7 57 68 7c 31 23 50 79 d9 52 35 b8 9f d9 91 83 9d 0e b8 7f c2 9d 16 fd 62 ee f6 eb 8d 7c d1 23 50 ad f2 4f a6 6f ba 74 32 79 d3 ac 49 d1 37 55 7f 36 7b eb e3 51 58 58 ee f7 cf 6d a9 76 8d 82 ff e1 cf 5b 34 2b f2 a6 5b 17 93 37 6d 5a 14 7e 9f 2f 5f 9e ee 5f f4 88 7c bd b9 2f 66 04 aa 2f 98 63 21 7c ec 0f cf 6d e8 af 27 d6 f4 d7 53 6b 01 6e 7e bd 79 6c 4b 6f f1 de 87 17 36 e2 98 43 7b ed c8 d2 b2 60 e5 2f e6 ee bf de c8 17 3d 02 d5 e7 cf 2a 92 06 66 09 d4 e9 fd 9d 9a f2 15 dc 5f 34 1a be b0 9b ab 3e 6d b2 25 dd ba 6a 4d 17 4e db d1 e1 fd
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 100 strings):
+IHDR
+sRGB
+gAMA
+ cHRM
+pHYs
+IDATx^
+ hpwww+
+Wh|1#Py
+ylKo
+U~6I64
+6~_o
+Z1kF!
+~bC)
+3]:k
+/d gK
+=#`i
+Rr^cZghF
+e;z/wS
+v[*Z8
+4(gh
+]:cG{
+oM#G
+3@o\
+@?Wd6
+P8[?
+VYn#
+~w_O
+cDKm
+3+L>
+4y|k
+iemKr
+T'Z5
+o~05
+$`P'ot$o
+^>oC
+Z"].
+`3`G
+|QT = 
+wMLr
+=kru5&3SQ
+0'J\
+&[B)
+[a`$&
+7r|d
+4;A\
+z~_k|
+^?LF
+\K>a
+dAkc
+se)z
+|<J@HG
+du=W
+%ow'z+Ec
+oq@i
+|(P W
+/Y`C
+f&yV
+G !Q
+0&nr
+&gG#~0
+jR`S
+0urq
+$|ji0
+b'[43
+Vu11
+gvva
+~M)q
+\Wo(O 
+P5)y
+Z4O%
+%>u7@
+thkN
+^gZ0
+Y]Y2L
+DdHm
+<ysm
+U%,VG"
+@Cjm
++2W:
+yfd4
+P[$M
+ovDx
+h@_[
+Q8 fmz7
+f HMXQ
+'PS9
+:xH;
+Dy^=
+fWrav
+?TRLd
+clT`
+yqSL e<
+y{zvW3!
+pcG@A
+Rp}Y
+x,o[6sF
+;ru)
+GjfNG
+'vdait$
+g8e"

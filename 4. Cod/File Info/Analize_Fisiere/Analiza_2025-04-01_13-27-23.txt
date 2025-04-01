@@ -1,0 +1,67 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie/4. Cod/0. Final/Data/my_spam_gmails/10. An Introduction to Intrusion-Detection Systems.pdf
+File Type: application/pdf (25 50 44 46)
+File Size: 648959 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-03-16 20:41:09
+Modified: 2025-03-16 20:41:09
+Accessed: 2025-04-01 13:27:23
+File Hash (MD5): 08c82d8141fea4ed8193c64b0006e7de
+
+Hex Dump (first 256 bytes):
+25 50 44 46 2d 31 2e 37 0d 0a 25 a1 b3 c5 d7 0d 0a 31 20 30 20 6f 62 6a 0d 0a 3c 3c 2f 50 61 67 65 73 20 32 20 30 20 52 20 2f 54 79 70 65 2f 43 61 74 61 6c 6f 67 3e 3e 0d 0a 65 6e 64 6f 62 6a 0d 0a 32 20 30 20 6f 62 6a 0d 0a 3c 3c 2f 43 6f 75 6e 74 20 31 38 2f 4b 69 64 73 5b 20 31 31 20 30 20 52 20 20 31 36 20 30 20 52 20 20 32 31 20 30 20 52 20 20 32 36 20 30 20 52 20 20 33 31 20 30 20 52 20 20 33 36 20 30 20 52 20 20 34 31 20 30 20 52 20 20 34 36 20 30 20 52 20 20 35 31 20 30 20 52 20 20 35 36 20 30 20 52 20 20 36 31 20 30 20 52 20 20 36 36 20 30 20 52 20 20 37 31 20 30 20 52 20 20 37 36 20 30 20 52 20 20 38 31 20 30 20 52 20 20 38 36 20 30 20 52 20 20 39 31 20 30 20 52 20 20 39 36 20 30 20 52 20 5d 2f 54 79 70 65 2f 50 61 67 65 73 3e 3e 0d 0a 65 6e 64 6f
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 50 strings):
+%PDF-1.7
+1 0 obj
+<</Pages 2 0 R /Type/Catalog>>
+endobj
+2 0 obj
+<</Count 18/Kids[ 11 0 R  16 0 R  21 0 R  26 0 R  31 0 R  36 0 R  41 0 R  46 0 R  51 0 R  56 0 R  61 0 R  66 0 R  71 0 R  76 0 R  81 0 R  86 0 R  91 0 R  96 0 R ]/Type/Pages>>
+endobj
+3 0 obj
+<</CreationDate(D:20250316184105)/Creator(PDFium)>>
+endobj
+4 0 obj
+<</BaseFont/NotoSans-Regular/DescendantFonts[ 5 0 R ]/Encoding/Identity-H/Subtype/Type0/ToUnicode 10 0 R /Type/Font>>
+endobj
+5 0 obj
+<</BaseFont/NotoSans-Regular/CIDSystemInfo 6 0 R /FontDescriptor 7 0 R /Subtype/CIDFontType2/Type/Font/W 9 0 R >>
+endobj
+6 0 obj
+<</Ordering(Identity)/Registry(Adobe)/Supplement 0>>
+endobj
+7 0 obj
+<</Ascent 1069/CapHeight 1069/Descent -292/Flags 32/FontBBox[ -621 -389 2800 1067]/FontFile2 8 0 R /FontName/NotoSans-Regular/ItalicAngle 0/StemV 70/Type/FontDescriptor>>
+endobj
+8 0 obj
+<</Filter/FlateDecode/Length 7550/Length1 11944>>stream
+ST:s
+G(3gf
+%~|+
+Mf+X
+[YDF^3
+M..-
+b<&6Q
+iP:.]
+^/=-
+YH6%
+h/*D
+{9<=
+<53PX
+.@9PLX
+HJZ j{
+L#)>
+$(&(
+hx> o
+By#V
+S-?Y
+nq+^1
+rs#J
+KnXG
+T3jA
+Iy)E 
+`*AB

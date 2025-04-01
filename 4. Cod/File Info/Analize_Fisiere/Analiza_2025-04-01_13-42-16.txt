@@ -1,0 +1,217 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie/4. Cod/0. Final/Data/my_spam_gmails/20051114.mbox
+File Type: Unknown (46 72 6f 6d)
+File Size: 4071556 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-03-26 23:10:03
+Modified: 2025-03-26 23:10:07
+Accessed: 2025-04-01 13:42:16
+File Hash (MD5): 03329ded087048d5af8c7d8c6554699f
+
+Hex Dump (first 4096 bytes):
+46 72 6f 6d 20 61 77 2d 63 6f 6e 66 69 72 6d 40 65 62 61 79 2e 63 6f 6d 20 20 54 75 65 20 4a 75 6e 20 31 34 20 31 39 3a 35 32 3a 30 39 20 32 30 30 35 0a 52 65 74 75 72 6e 2d 50 61 74 68 3a 20 3c 61 77 2d 63 6f 6e 66 69 72 6d 40 65 62 61 79 2e 63 6f 6d 3e 0a 58 2d 4f 72 69 67 69 6e 61 6c 2d 54 6f 3a 20 75 73 65 72 6e 61 6d 65 40 6c 6f 67 69 6e 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 0a 44 65 6c 69 76 65 72 65 64 2d 54 6f 3a 20 75 73 65 72 6e 61 6d 65 40 6c 6f 67 69 6e 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 0a 52 65 63 65 69 76 65 64 3a 20 66 72 6f 6d 20 6d 61 69 6c 31 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 20 28 6d 61 69 6c 31 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 20 5b 31 30 2e 30 2e 32 2e 33 5d 29 0a 09 62 79 20 6e 61 75 67 68 74 79 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 20 28 50 6f 73 74 66 69 78 29 20 77 69 74 68 20 45 53 4d 54 50 20 69 64 20 41 34 38 42 33 35 33 36 45 36 42 0a 09 66 6f 72 20 3c 75 73 65 72 6e 61 6d 65 40 6c 6f 67 69 6e 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 3e 3b 20 54 75 65 2c 20 31 34 20 4a 75 6e 20 32 30 30 35 20 31 39 3a 35 32 3a 30 39 20 2d 30 34 30 30 20 28 45 44 54 29 0a 52 65 63 65 69 76 65 64 3a 20 66 72 6f 6d 20 63 61 6c 63 75 6c 61 74 6f 72 20 28 75 6e 6b 6e 6f 77 6e 20 5b 31 39 35 2e 32 34 35 2e 32 31 34 2e 38 33 5d 29 0a 09 62 79 20 6d 61 69 6c 31 2e 64 6f 6d 61 69 6e 2e 63 6f 6d 20 28 50 6f 73 74 66 69 78 29 20 77 69 74 68 20 45 53 4d 54 50 20 69 64 20 33 44 31 32 36 38 35 41 43 45 30 0a 09 66 6f 72 20 3c 75 73 65 72 6e 61 6d 65 40 64 6f 6d 61 69 6e 2e 63 6f 6d 3e 3b 20 54 75 65 2c 20 31 34 20 4a 75 6e 20 32 30 30 35 20 31 39 3a 35 32 3a 30 37 20 2d 30 34 30 30 20 28 45 44 54 29 0a 52 65 63 65 69 76 65 64 3a 20 66 72 6f 6d 20 32 31 36 2e 32 33 31 2e 33 36 2e 36 34 20 62 79 20 3b 20 46 72 69 2c 20 31 37 20 4a 75 6e 20 32 30 30 35 20 31 39 3a 35 32 3a 32 32 20 2d 30 35 30 30 0a 4d 65 73 73 61 67 65 2d 49 44 3a 20 3c 57 49 55 4c 49 49 4f 4b 50 54 58 59 41 4f 56 45 49 58 51 4a 4a 40 79 61 68 6f 6f 2e 63 6f 6d 3e 0a 46 72 6f 6d 3a 20 22 61 77 2d 63 6f 6e 66 69 72 6d 40 65 62 61 79 2e 63 6f 6d 22 20 3c 61 77 2d 63 6f 6e 66 69 72 6d 40 65 62 61 79 2e 63 6f 6d 3e 0a 52 65 70 6c 79 2d 54 6f 3a 20 22 61 77 2d 63 6f 6e 66 69 72 6d 40 65 62 61 79 2e 63 6f 6d 22 20 3c 61 77 2d 63 6f 6e 66 69 72 6d 40 65 62 61 79 2e 63 6f 6d 3e 0a 54 6f 3a 20 75 73 65 72 6e 61 6d 65 40 64 6f 6d 61 69 6e 2e 63 6f 6d 0a 53 75 62 6a 65 63 74 3a 20 54 4b 4f 20 4e 6f 74 69 63 65 3a 20 2a 2a 2a 55 72 67 65 6e 74 20 53 61 66 65 68 61 72 62 6f 72 20 44 65 70 61 72 74 6d 65 6e 74 20 4e 6f 74 69 63 65 2a 2a 2a 20 0a 44 61 74 65 3a 20 53 61 74 2c 20 31 38 20 4a 75 6e 20 32 30 30 35 20 30 31 3a 35 37 3a 32 32 20 2b 30 31 30 30 0a 4d 49 4d 45 2d 56 65 72 73 69 6f 6e 3a 20 31 2e 30 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 6d 75 6c 74 69 70 61 72 74 2f 61 6c 74 65 72 6e 61 74 69 76 65 3b 0a 09 62 6f 75 6e 64 61 72 79 3d 22 2d 2d 38 31 35 35 30 32 32 30 33 38 32 33 30 33 33 33 30 36 22 0a 58 2d 49 50 3a 20 31 38 35 2e 34 39 2e 31 38 32 2e 32 34 34 0a 58 2d 50 72 69 6f 72 69 74 79 3a 20 33 0a 53 74 61 74 75 73 3a 20 52 4f 0a 58 2d 53 74 61 74 75 73 3a 20 0a 58 2d 4b 65 79 77 6f 72 64 73 3a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 0a 58 2d 55 49 44 3a 20 31 0a 0a 2d 2d 2d 2d 38 31 35 35 30 32 32 30 33 38 32 33 30 33 33 33 30 36 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 74 2f 68 74 6d 6c 3b 0a 43 6f 6e 74 65 6e 74 2d 54 72 61 6e 73 66 65 72 2d 45 6e 63 6f 64 69 6e 67 3a 20 71 75 6f 74 65 64 2d 70 72 69 6e 74 61 62 6c 65 0a 0a 3c 68 74 6d 6c 3e 0a 3c 68 65 61 64 3e 0a 3c 21 2d 2d 20 20 20 65 78 74 72 61 6e 65 6f 75 73 20 6d 65 74 61 20 74 61 67 20 72 65 6d 6f 76 65 64 20 62 79 20 65 62 61 79 20 63 6f 64 65 20 20 2d 2d 3e 0a 3c 21 2d 2d 73 72 63 49 64 3a 20 53 69 67 6e 49 6e 2d 2d 3e 0a 3c 4d 45 54 41 20 48 54 54 50 2d 45 51 55 49 56 3d 33 44 22 43 6f 6e 74 65 6e 74 2d 54 79 70 65 22 20 43 4f 4e 54 45 4e 54 3d 33 44 22 74 65 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65 74 3d 33 44 49 53 4f 2d 38 38 35 39 3d 0a 2d 31 22 3e 0a 3c 74 69 74 6c 65 3e 65 42 61 79 20 53 75 73 70 65 6e 73 69 6f 6e 3c 2f 74 69 74 6c 65 3e 0a 3c 2f 68 65 61 64 3e 0a 3c 62 6f 64 79 20 62 67 63 6f 6c 6f 72 3d 33 44 22 23 66 66 66 66 66 66 22 3e 0a 3c 74 61 62 6c 65 20 62 6f 72 64 65 72 3d 33 44 22 30 22 20 63 65 6c 6c 73 70 61 63 69 6e 67 3d 33 44 22 30 22 20 63 65 6c 6c 70 61 64 64 69 6e 67 3d 33 44 22 30 22 0a 62 67 63 6f 6c 6f 72 3d 33 44 22 23 46 46 46 46 46 46 22 3e 3c 74 72 3e 3c 74 64 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 66 22 20 77 69 64 74 68 3d 33 44 22 31 38 30 22 0a 68 65 69 67 68 74 3d 33 44 22 31 22 3e 3c 2f 74 64 3e 3c 2f 74 72 3e 3c 74 72 3e 3c 74 64 3e 0a 3c 61 20 68 72 65 66 3d 33 44 22 68 74 74 70 3a 2f 2f 70 61 67 65 73 2e 65 62 61 79 2e 63 6f 6d 2f 22 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 72 65 67 69 73 74 65 72 2f 48 65 61 64 65 72 52 65 67 69 73 74 65 72 5f 33 38 37 78 34 30 2e 67 3d 0a 69 66 22 0a 61 6c 74 3d 33 44 22 46 72 6f 6d 20 63 6f 6c 6c 65 63 74 69 62 6c 65 73 20 74 6f 20 63 61 72 73 2c 20 62 75 79 20 61 6e 64 20 73 65 6c 6c 20 61 6c 6c 20 6b 69 6e 64 73 20 6f 66 20 69 74 65 6d 73 20 6f 6e 20 65 42 61 79 22 3d 0a 0a 62 6f 72 64 65 72 3d 33 44 22 30 22 3e 3c 2f 61 3e 3c 2f 74 64 3e 3c 2f 74 72 3e 3c 2f 74 61 62 6c 65 3e 0a 3c 21 2d 2d 48 65 61 64 65 72 20 63 6f 64 65 20 65 6e 64 73 2d 2d 3e 3c 74 61 62 6c 65 20 62 6f 72 64 65 72 3d 33 44 22 30 22 0a 63 65 6c 6c 70 61 64 64 69 6e 67 3d 33 44 22 30 22 20 63 65 6c 6c 73 70 61 63 69 6e 67 3d 33 44 22 30 22 20 77 69 64 74 68 3d 33 44 22 36 30 30 22 3e 0a 3c 74 72 3e 0a 3c 74 64 20 63 6f 6c 73 70 61 6e 3d 33 44 22 32 22 3e 3c 69 6d 67 20 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 3d 0a 66 22 0a 77 69 64 74 68 3d 33 44 22 31 22 20 68 65 69 67 68 74 3d 33 44 22 31 30 22 20 61 6c 74 3d 33 44 22 20 22 3e 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 74 72 3e 0a 3c 74 64 20 63 6f 6c 73 70 61 6e 3d 33 44 22 32 22 20 62 67 63 6f 6c 6f 72 3d 33 44 22 23 39 39 39 39 43 43 22 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 66 22 20 77 69 64 74 68 3d 33 44 22 31 22 20 68 65 69 67 68 74 3d 33 44 3d 0a 22 32 22 0a 61 6c 74 3d 33 44 22 20 22 3e 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 74 72 20 62 67 63 6f 6c 6f 72 3d 33 44 22 23 44 36 44 43 46 45 22 3e 0a 3c 74 64 20 77 69 64 74 68 3d 33 44 22 32 35 22 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 69 74 65 77 69 64 65 2f 6c 65 66 74 4c 69 6e 65 5f 31 36 78 33 2e 67 69 66 22 0a 57 49 44 54 48 3d 33 44 22 31 36 22 20 48 45 49 47 48 54 3d 33 44 22 33 22 20 41 4c 54 3d 33 44 22 22 20 41 4c 49 47 4e 3d 33 44 22 6d 69 64 64 6c 65 22 3e 3c 2f 74 64 3e 0a 3c 74 64 20 77 69 64 74 68 3d 33 44 22 35 37 35 22 20 76 61 6c 69 67 6e 3d 33 44 22 6d 69 64 64 6c 65 22 3e 0a 3c 74 61 62 6c 65 20 62 6f 72 64 65 72 3d 33 44 22 30 22 20 77 69 64 74 68 3d 33 44 22 31 30 30 25 22 20 63 65 6c 6c 70 61 64 64 69 6e 67 3d 33 44 22 31 22 20 63 65 6c 6c 73 70 61 63 69 6e 67 3d 33 44 22 30 22 3e 0a 3c 74 72 3e 0a 3c 74 64 20 6e 6f 77 72 61 70 3d 33 44 22 79 65 73 22 20 76 61 6c 69 67 6e 3d 33 44 22 6d 69 64 64 6c 65 22 3e 0a 3c 66 6f 6e 74 20 66 61 63 65 3d 33 44 22 56 65 72 64 61 6e 61 2c 20 48 65 6c 76 65 74 69 63 61 2c 20 41 72 69 61 6c 2c 20 73 61 6e 73 2d 73 65 72 69 66 22 20 73 69 7a 65 3d 33 44 22 33 22 3e 3c 62 3e 65 42 61 79 20 53 75 3d 0a 73 70 65 6e 73 69 6f 6e 3c 2f 62 3e 3c 2f 66 6f 6e 74 3e 0a 3c 2f 74 64 3e 0a 3c 74 64 20 61 6c 69 67 6e 3d 33 44 22 72 69 67 68 74 22 20 6e 6f 77 72 61 70 3d 33 44 22 79 65 73 22 20 76 61 6c 69 67 6e 3d 33 44 22 6d 69 64 64 6c 65 22 3e 3c 41 0a 48 52 45 46 3d 33 44 22 68 74 74 70 3a 2f 2f 70 61 67 65 73 2e 65 62 61 79 2e 63 6f 6d 2f 68 65 6c 70 2f 6e 65 77 2f 73 69 67 6e 69 6e 2e 68 74 6d 6c 22 20 74 61 72 67 65 74 3d 33 44 22 68 65 6c 70 77 69 6e 22 0a 6f 6e 63 6c 69 63 6b 3d 33 44 22 72 65 74 75 72 6e 20 6f 70 65 6e 48 65 6c 70 57 69 6e 64 6f 77 28 74 68 69 73 2e 68 72 65 66 29 3b 22 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 6c 69 73 74 69 6e 67 73 2f 71 75 65 73 74 69 6f 6e 4d 61 72 6b 5f 31 34 78 31 34 2e 67 69 66 22 3d 0a 0a 77 69 64 74 68 3d 33 44 22 31 34 22 20 48 45 49 47 48 54 3d 33 44 22 31 34 22 20 62 6f 72 64 65 72 3d 33 44 22 30 22 3e 3c 2f 41 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 66 22 20 77 69 64 74 68 3d 33 44 22 34 22 20 68 65 69 67 68 74 3d 33 44 3d 0a 22 31 22 0a 61 6c 74 3d 33 44 22 20 22 3e 3c 66 6f 6e 74 20 66 61 63 65 3d 33 44 22 41 72 69 61 6c 2c 20 48 65 6c 76 65 74 69 63 61 2c 20 73 61 6e 73 2d 73 65 72 69 66 22 20 73 69 7a 65 3d 33 44 22 32 22 3e 3c 41 0a 48 52 45 46 3d 33 44 22 68 74 74 70 3a 2f 2f 70 61 67 65 73 2e 65 62 61 79 2e 63 6f 6d 2f 68 65 6c 70 2f 6e 65 77 2f 73 69 67 6e 69 6e 2e 68 74 6d 6c 22 20 74 61 72 67 65 74 3d 33 44 22 68 65 6c 70 77 69 6e 22 0a 6f 6e 63 6c 69 63 6b 3d 33 44 22 72 65 74 75 72 6e 20 6f 70 65 6e 48 65 6c 70 57 69 6e 64 6f 77 28 74 68 69 73 2e 68 72 65 66 29 3b 22 3e 4e 65 65 64 20 48 65 6c 70 3f 3c 2f 41 3e 3c 2f 66 6f 6e 74 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 66 22 20 77 69 64 74 68 3d 33 44 22 32 22 20 68 65 69 67 68 74 3d 33 44 3d 0a 22 31 22 0a 61 6c 74 3d 33 44 22 20 22 3e 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 2f 74 61 62 6c 65 3e 0a 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 74 72 3e 0a 3c 74 64 20 63 6f 6c 73 70 61 6e 3d 33 44 22 33 22 20 62 67 63 6f 6c 6f 72 3d 33 44 22 23 39 39 39 39 43 43 22 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 66 22 20 77 69 64 74 68 3d 33 44 22 31 22 20 68 65 69 67 68 74 3d 33 44 3d 0a 22 32 22 0a 61 6c 74 3d 33 44 22 20 22 3e 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 74 72 20 62 67 63 6f 6c 6f 72 3d 33 44 22 23 66 66 66 66 63 63 22 3e 0a 3c 74 64 20 63 6f 6c 73 70 61 6e 3d 33 44 22 33 22 20 77 69 64 74 68 3d 33 44 22 31 30 30 25 22 3e 0a 3c 74 61 62 6c 65 20 62 6f 72 64 65 72 3d 33 44 22 30 22 20 63 65 6c 6c 70 61 64 64 69 6e 67 3d 33 44 22 30 22 20 63 65 6c 6c 73 70 61 63 69 6e 67 3d 33 44 22 30 22 3e 0a 3c 74 72 3e 0a 3c 74 64 20 61 6c 69 67 6e 3d 33 44 22 6c 65 66 74 22 3e 3c 69 6d 67 20 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 3d 0a 69 66 22 0a 77 69 64 74 68 3d 33 44 22 38 22 20 68 65 69 67 68 74 3d 33 44 22 31 22 3e 3c 2f 74 64 3e 0a 3c 74 64 20 77 69 64 74 68 3d 33 44 22 31 30 30 25 22 20 61 6c 69 67 6e 3d 33 44 22 6c 65 66 74 22 3e 0a 3c 66 6f 6e 74 20 66 61 63 65 3d 33 44 22 41 72 69 61 6c 2c 20 48 65 6c 76 65 74 69 63 61 2c 20 73 61 6e 73 2d 73 65 72 69 66 22 20 73 69 7a 65 3d 33 44 22 32 22 3e 3c 2f 66 6f 6e 74 3e 0a 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 2f 74 61 62 6c 65 3e 0a 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 74 72 3e 0a 3c 74 64 20 63 6f 6c 73 70 61 6e 3d 33 44 22 32 22 20 62 67 63 6f 6c 6f 72 3d 33 44 22 23 39 39 39 39 43 43 22 3e 3c 69 6d 67 0a 73 72 63 3d 33 44 22 68 74 74 70 3a 2f 2f 70 69 63 73 2e 65 62 61 79 73 74 61 74 69 63 2e 63 6f 6d 2f 61 77 2f 70 69 63 73 2f 73 70 61 63 65 72 2e 67 69 66 22 20 77 69 64 74 68 3d 33 44 22 31 22 20 68 65 69 67 68 74 3d 33 44 3d 0a 22 32 22 0a 61 6c 74 3d 33 44 22 20 22 3e 3c 2f 74 64 3e 0a 3c 2f 74 72 3e 0a 3c 2f 74 61 62 6c 65 3e 0a 3c 74 61 62 6c 65 20 62 6f 72 64 65 72 3d 33 44 22 30 22 20 63 65 6c 6c 70 61 64 64 69 6e 67 3d 33 44 22 30 22 20 63 65 6c 6c 73 70 61 63 69 6e 67 3d 33 44 22 30 22 20 77 69 64 74 68 3d 33 44 22 36 30 30 22 3e 0a 3c 74 72 20 62 67 63 6f 6c 6f 72 3d 33
+
+Eroare analiză PE: 'DOS Header magic not found.'
+Extracted Strings (first 200 strings):
+From aw-confirm@ebay.com  Tue Jun 14 19:52:09 2005
+Return-Path: <aw-confirm@ebay.com>
+X-Original-To: username@login.domain.com
+Delivered-To: username@login.domain.com
+Received: from mail1.domain.com (mail1.domain.com [10.0.2.3])
+by naughty.domain.com (Postfix) with ESMTP id A48B3536E6B
+for <username@login.domain.com>; Tue, 14 Jun 2005 19:52:09 -0400 (EDT)
+Received: from calculator (unknown [195.245.214.83])
+by mail1.domain.com (Postfix) with ESMTP id 3D12685ACE0
+for <username@domain.com>; Tue, 14 Jun 2005 19:52:07 -0400 (EDT)
+Received: from 216.231.36.64 by ; Fri, 17 Jun 2005 19:52:22 -0500
+Message-ID: <WIULIIOKPTXYAOVEIXQJJ@yahoo.com>
+From: "aw-confirm@ebay.com" <aw-confirm@ebay.com>
+Reply-To: "aw-confirm@ebay.com" <aw-confirm@ebay.com>
+To: username@domain.com
+Subject: TKO Notice: ***Urgent Safeharbor Department Notice*** 
+Date: Sat, 18 Jun 2005 01:57:22 +0100
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+boundary="--815502203823033306"
+X-IP: 185.49.182.244
+X-Priority: 3
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 1
+----815502203823033306
+Content-Type: text/html;
+Content-Transfer-Encoding: quoted-printable
+<html>
+<head>
+<!--   extraneous meta tag removed by ebay code  -->
+<!--srcId: SignIn-->
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; charset=3DISO-8859=
+-1">
+<title>eBay Suspension</title>
+</head>
+<body bgcolor=3D"#ffffff">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+bgcolor=3D"#FFFFFF"><tr><td><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"180"
+height=3D"1"></td></tr><tr><td>
+<a href=3D"http://pages.ebay.com/"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/register/HeaderRegister_387x40.g=
+alt=3D"From collectibles to cars, buy and sell all kinds of items on eBay"=
+border=3D"0"></a></td></tr></table>
+<!--Header code ends--><table border=3D"0"
+cellpadding=3D"0" cellspacing=3D"0" width=3D"600">
+<tr>
+<td colspan=3D"2"><img src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gi=
+width=3D"1" height=3D"10" alt=3D" "></td>
+</tr>
+<tr>
+<td colspan=3D"2" bgcolor=3D"#9999CC"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"1" height=3D=
+alt=3D" "></td>
+</tr>
+<tr bgcolor=3D"#D6DCFE">
+<td width=3D"25"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/sitewide/leftLine_16x3.gif"
+WIDTH=3D"16" HEIGHT=3D"3" ALT=3D"" ALIGN=3D"middle"></td>
+<td width=3D"575" valign=3D"middle">
+<table border=3D"0" width=3D"100%" cellpadding=3D"1" cellspacing=3D"0">
+<tr>
+<td nowrap=3D"yes" valign=3D"middle">
+<font face=3D"Verdana, Helvetica, Arial, sans-serif" size=3D"3"><b>eBay Su=
+spension</b></font>
+</td>
+<td align=3D"right" nowrap=3D"yes" valign=3D"middle"><A
+HREF=3D"http://pages.ebay.com/help/new/signin.html" target=3D"helpwin"
+onclick=3D"return openHelpWindow(this.href);"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/listings/questionMark_14x14.gif"=
+width=3D"14" HEIGHT=3D"14" border=3D"0"></A><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"4" height=3D=
+alt=3D" "><font face=3D"Arial, Helvetica, sans-serif" size=3D"2"><A
+HREF=3D"http://pages.ebay.com/help/new/signin.html" target=3D"helpwin"
+onclick=3D"return openHelpWindow(this.href);">Need Help?</A></font><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"2" height=3D=
+alt=3D" "></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D"3" bgcolor=3D"#9999CC"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"1" height=3D=
+alt=3D" "></td>
+</tr>
+<tr bgcolor=3D"#ffffcc">
+<td colspan=3D"3" width=3D"100%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td align=3D"left"><img src=3D"http://pics.ebaystatic.com/aw/pics/spacer.g=
+width=3D"8" height=3D"1"></td>
+<td width=3D"100%" align=3D"left">
+<font face=3D"Arial, Helvetica, sans-serif" size=3D"2"></font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D"2" bgcolor=3D"#9999CC"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"1" height=3D=
+alt=3D" "></td>
+</tr>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600">
+<tr bgcolor=3D"#ffffff">
+<td width=3D"15" height=3D"23"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif" width=3D"15" height=3D=
+alt=3D" "></td>
+<td colspan=3D"3" align=3D"center" valign=3D"bottom" height=3D"23">
+<td width=3D"60" HEIGHT=3D"23" HSPACE=3D"0" VSPACE=3D"0" BORDER=3D"0"></td=
+<font face=3D"Arial, Verdana, Helvetica" size=3D"2">
+<br>Dear valued eBay member,
+<br>
+<br>During our regularly scheduled account maintenance and verification pr=
+ocedures, we 
+have detected a slight error in your billing information.
+<br>
+<br>This might be due to either of the following reasons:
+<br>
+<br>1. A recent change in your personal information ( i.e.change of addres=
+<br>2. Submiting invalid information during the initial sign up process.
+<br>3. An inability to accurately verify your selected option of payment d=
+ue to an 
+internal error within our processors.
+<br>
+<br>Once you have updated your account records your eBay session will not =
+interrupted and will 
+<br>continue as normal.
+<br>
+<br>To update your eBay records click on the following link:
+<br><a
+HREF=3D"http://70.96.188.24/~backfoul/secure/aw-cgi/DllUpdate/ws2/ISAPIDll=
+/signin/error.html"
+target=3D"_self">http://cgi1.ebay.com/aw-cgi/ebayISAPI.dll?UPdate</a>
+<br>
+<br>If your account information is not updated within 48 hours then your a=
+bility to use 
+eBay will become restricted.
+<br><br>
+<br>Regards,
+<br>
+<br>Safeharbor Department
+<br>eBay, Inc.
+</tr>
+<tr>
+<table width=3D"599" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+bgcolor=3D"#9999CC">
+<tr>
+<td height=3D"2"><img src=3D"http://pics.ebaystatic.com/aw/pics/spacer.gif=
+width=3D"2" height=3D"2"></td>
+</tr>
+</table><SCRIPT
+SRC=3D"http://include.ebaystatic.com/aw/pics/js/stats/ss.js"></SCRIPT><SCR=
+SRC=3D"http://include.ebaystatic.com/aw/pics/js/stats/ss2.js"></SCRIPT><p>=
+<TABLE BORDER=3D"0" CELLPADDING=3D"0" CELLSPACING=3D"0" WIDTH=3D"600">
+<TD WIDTH=3D"450" HEIGHT=3D"31" VALIGN=3D"top" ALIGN=3D"left">
+<font size=3D"1" face=3D"Arial, Verdana, Helvetica, sans-serif">Copyright =
+1995-2005 eBay Inc. All Rights Reserved.<br>Designated trademarks and bran=
+are the property of their respective owners.<br>Use of this Web site
+constitutes acceptance of the eBay <a
+href=3D"http://pages.ebay.com/help/policies/user-agreement.html"
+target=3D"helpwin" onclick=3D"return openHelpWindow(this.href);">User
+Agreement</a> and <a
+href=3D"http://pages.ebay.com/help/policies/privacy-policy.html"
+target=3D"helpwin" onclick=3D"return openHelpWindow(this.href);">Privacy
+Policy</a>.</font><br></TD>
+<TD WIDTH=3D"150" HEIGHT=3D"31" VALIGN=3D"top" ALIGN=3D"right">
+<font face=3D"Arial, Verdana, Helvetica, sans-serif" size=3D"1"><a
+href=3D"http://pages.ebay.com/help/policies/privacy-policy.html"
+target=3D"helpwin" onclick=3D"return openHelpWindow(this.href);"><img
+src=3D"http://pics.ebaystatic.com/aw/pics/truste_button.gif" align=3D"midd=
+width=3D"116" height=3D"31" ALT=3D"TrustE" border=3D"0"></a></font>
+</TD>
+</TR>
+</TABLE>
+</p>
+</body>
+</html>
+----815502203823033306--
+From online-banking@lasallebank.com  Wed Jun 15 16:45:29 2005
+Return-Path: <online-banking@lasallebank.com>
+X-Original-To: username@login.domain.com
+Delivered-To: username@login.domain.com
+Received: from mail1.domain.com (mail1.domain.com [10.0.2.3])
+by naughty.domain.com (Postfix) with ESMTP
+id 876C1536E9E; Wed, 15 Jun 2005 16:45:29 -0400 (EDT)
+Received: from pcp04337700pcs.stclco01.mi.comcast.net (pcp04337700pcs.stclco01.mi.comcast.net [68.60.190.245])
+by mail1.domain.com (Postfix) with SMTP id 93B7C85AAD7;
+Wed, 15 Jun 2005 16:45:28 -0400 (EDT)
+Received: from [67.38.206.72] by pcp04337700pcs.stclco01.mi.comcast.net SMTP id ylPJMCmIr29065 for <joewee@domain.com>; Wed, 15 Jun 2005 17:36:17 -0400
+Message-ID: <7xv$03ng4$---$pk22k$s@m6zklvchq>
+From: "" <online-banking@lasallebank.com>
+Reply-To: "" <online-banking@lasallebank.com>
+To: joewee@domain.com
+Subject: ATM cards attention. conformation code? yftue  fvkg ts r
+Date: Wed, 15 Jun 05 17:36:17 GMT

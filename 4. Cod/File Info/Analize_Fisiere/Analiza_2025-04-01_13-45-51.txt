@@ -1,0 +1,481 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie-Final/3. Experimente/1. Fişiere test/pe-Windows-x64-cmd
+File Type: Unknown (4d 5a 90 00)
+File Size: 345088 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-04-01 13:43:54
+Modified: 2025-04-01 13:43:54
+Accessed: 2025-04-01 13:45:51
+File Hash (MD5): 5746bd7e255dd6a8afa06f7c42c1ba41
+
+Hex Dump (first 4096 bytes):
+4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 f0 00 00 00 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e 0d 0d 0a 24 00 00 00 00 00 00 00 4d 7c a4 8a 09 1d ca d9 09 1d ca d9 09 1d ca d9 00 65 4e d9 08 1d ca d9 00 65 5f d9 0b 1d ca d9 09 1d cb d9 f4 1d ca d9 00 65 59 d9 00 1d ca d9 00 65 49 d9 1b 1d ca d9 00 65 43 d9 2e 1d ca d9 00 65 5e d9 08 1d ca d9 00 65 5b d9 08 1d ca d9 52 69 63 68 09 1d ca d9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 45 00 00 64 86 06 00 e5 98 e7 4c 00 00 00 00 00 00 00 00 f0 00 22 00 0b 02 09 00 00 72 02 00 00 ce 02 00 00 00 00 00 b4 90 00 00 00 10 00 00 00 00 d0 4a 00 00 00 00 00 10 00 00 00 02 00 00 06 00 01 00 06 00 01 00 06 00 01 00 00 00 00 00 00 90 05 00 00 04 00 00 ec bd 05 00 03 00 40 81 00 00 10 00 00 00 00 00 00 c0 0f 00 00 00 00 00 00 00 10 00 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 58 a7 02 00 64 00 00 00 00 f0 04 00 58 84 00 00 00 c0 04 00 dc 26 00 00 00 00 00 00 00 00 00 00 00 80 05 00 24 01 00 00 70 80 02 00 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e8 02 00 00 9c 00 00 00 00 90 02 00 48 07 00 00 2c a4 02 00 a0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2e 74 65 78 74 00 00 00 cc 70 02 00 00 10 00 00 00 72 02 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 20 00 00 60 2e 72 64 61 74 61 00 00 10 49 00 00 00 90 02 00 00 4a 00 00 00 76 02 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 40 2e 64 61 74 61 00 00 00 98 d3 01 00 00 e0 02 00 00 d4 01 00 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 c0 2e 70 64 61 74 61 00 00 dc 26 00 00 00 c0 04 00 00 28 00 00 00 94 04 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 40 2e 72 73 72 63 00 00 00 58 84 00 00 00 f0 04 00 00 86 00 00 00 bc 04 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 40 2e 72 65 6c 6f 63 00 00 24 01 00 00 00 80 05 00 00 02 00 00 00 42 05 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 42 37 c8 e7 4c 40 00 01 00 f9 c8 e7 4c 4b 00 00 00 f9 c8 e7 4c 4b 00 00 00 8b c7 e7 4c 55 00 02 00 f9 c8 e7 4c 4b 00 00 00 81 c4 e7 4c 62 00 00 00 1b ca e7 4c 8c 00 00 00 00 00 00 00 00 00 00 00 6d 73 76 63 72 74 2e 64 6c 6c 00 4e 54 44 4c 4c 2e 44 4c 4c 00 4b 45 52 4e 45 4c 33 32 2e 64 6c 6c 00 61 70 69 2d 6d 73 2d 77 69 6e 2d 63 6f 72 65 2d 70 72 6f 63 65 73 73 74 68 72 65 61 64 73 2d 6c 31 2d 31 2d 30 2e 44 4c 4c 00 57 49 4e 42 52 41 4e 44 2e 64 6c 6c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 48 3b 0d c1 d1 02 00 0f 85 24 51 01 00 48 c1 c1 10 66 f7 c1 ff ff 0f 85 11 51 01 00 c2 00 00 90 90 90 90 90 90 90 90 90 ff 25 ea 7f 02 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 48 85 c9 74 65 53 48 83 ec 20 48 8b 05 bf d1 02 00 48 85 c0 74 4f 8b 15 cc d0 02 00 4c 8d 41 f0 48 8b d8 85 d2 74 3e 48 8b 4c 24 30 49 3b d8 0f 85 b2 02 00 00 48 3b d8 48 8b 43 08 0f 85 ba 02 00 00 48 89 05 87 d1 02 00 eb 00 ff 15 37 85 02 00 4c 8b c3 33 d2 48 8b c8 ff 15 31 85 02 00 ff 0d 83 d0 02 00 48 83 c4 20 5b c3 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 ff 25 3a 7f 02 00 90 90 90 90 90 90 48 89 5c 24 08 48 89 74 24 18 57 48 81 ec 80 00 00 00 48 8b da 8b f9 48 85 d2 0f 84 01 25 00 00 80 3d d6 cf 02 00 00 0f 85 f4 24 00 00 83 3a 2d 0f 84 eb 24 00 00 80 3d c2 cf 02 00 00 be 01 00 00 00 74 24 44 8d 46 5f 48 8d 4c 24 20 33 d2 e8 a0 ff ff ff 48 8d 54 24 20 45 33 c0 48 8b cb e8 50 31 00 00 85 c0 75 66 3b fe 0f 84 84 96 00 00 83 3b 00 0f 84 e3 08 00 00 83 3b 33 0f 84 da 08 00 00 83 3b 3b 0f 84 d1 08 00 00 83 3b 3c 0f 84 c8 08 00 00 83 3b 00 0f 84 e1 08 00 00 48 63 03 48 8d 0d 15 62 03 00 48 c1 e0 05 48 8b 04 08 48 8b cb ff d0 eb 00 8b f0 48 8b 05 7d d0 02 00 48 85 c0 74 0a 48 39 58 08 0f 84 de 5a 00 00 80 3d 2a cf 02 00 00 74 15 48 85 db 74 10 48 8d 54 24 20 41 b0 01 48 8b cb e8 c8 30 00 00 8b c6 eb 00 4c 8d 9c 24 80 00 00 00 49 8b 5b 10 49 8b 73 20 49 8b e3 5f c3 90 90 90 90 90 90 90 48 83 ec 28 b9 01 00 00 00 ff 15 01 80 02 00 8b 15 a7 cf 02 00 48 8b c8 ff 15 6a 84 02 00 b9 01 00 00 00 ff 15 e7 7f 02 00 48 8d 15 8c cf 02 00 48 8b c8 ff 15 47 84 02 00 85 c0 74 13 8b 15 79 cf 02 00 8b c2 83 e0 03 3c 03 0f 85 21 a9 00 00 33 c9 ff 15 b8 7f 02 00 48 8d 15 61 cf 02 00 48 8b c8 ff 15 18 84 02 00 85 c0 74 31 8b 0d 4e cf 02 00 8b c1 83 e0 07 3c 07 0f 85 c9 a8 00 00 f6 c1 10 0f 85 c0 a8 00 00 48 8b 05 61 d0 02 00 48 85 c0 74 09 48 8d 0d d5 84 02 00 ff d0 48 83 c4 28 c3 90 90 90 90 90 90 48 83 ec 28 48 8b 05 bd cf 02 00 48 85 c0 0f 84 93 7f 00 00 33 c9 ff d0 48 83 c4 28 c3 0f b7 08 e8 e3 3e 00 00 3b c3 0f 84 8a 96 01 00 48 8b 46 70 0f b7 08 e8 13 46 00 00 3b c3 0f 85 8a 96 01 00 48 8b 46 70 0f b7 08 ff 15 2a 7f 02 00 44 8d 58 c0 33 c0 48 83 c9 ff 48 8b 7e 70 66 f2 af 48 f7 d1 48 ff c9 48 83 f9 02 0f 84 81 43 01 00 48 8b ce e8 59 03 00 00 eb 00 48 8b 8c 24 50 04 00 00 48 33 cc e8 f7 fc ff ff 4c 8d 9c 24 60 04 00 00 49 8b 5b 28 49 8b 73 30 49 8b 7b 38 49 8b e3 41 5f 41 5d 41 5c c3 83 c2 ff 48 8b cb 48 8b 5b 08 0f 85 35 fd ff ff e9 69 fd ff ff 48 89 41 08 e9 46 fd ff ff 90 90 90 90 90 90 90 48 89 5c 24 08 57 48 83 ec 20 33 db 4c 8b c1 88 1d 6d cd 02 00 48 3b d3 74 1b 48 83 c9 ff 33 c0 48 8b fa 66 f2 af 48 f7 d1 48 ff c9 48 f7 d9 48 1b c0 48 23 d0 49 8b c8 ff 15 06 83 02 00 8b f8 ff 15 36 82 02 00 4c 8b 05 07 cf 02 00 48 8b c8 33 d2 ff 15 2c 82 02 00 e8 2b 00 00 00 3b fb 0f 94 c3 48 89 05 eb ce 02 00 8b c3 48 8b 5c 24 30 48 83 c4 20 5f c3 90 90 90 90 90 90 ff 25 3a 7c 02 00 90 90 90 90 90 90 48 89 5c 24 08 48 89 6c 24 10 48 89 74 24 18 57 48 83 ec 20 ff 15 92 82 02 00 33 ed 48 8b d8 48 8b fd 48 3b c5 74 69 48 8b c8 66 39 28 74 1e 90 90 90 90 90 90 90 90 90 90 90 90 90 0f b7 01 48 83 c1 02 66 3b c5 75 f4 66 39 29 75 ef 48 2b cb 48 83 c1 02 48 d1 f9 8d 34 09 ff 15 94 81 02 00 4c 8b c6 48 8b c8 ba 08 00 00 00 ff 15 7b 81 02 00 48 8b f8 48 3b c5 74 0e 4c 8b c6 48 8b d3 48 8b c8 e8 6d ff ff ff 48 8b cb ff 15 24 82 02 00 48 8b 5c 24 30 48 8b 6c 24 38 48 8b 74 24 40 48 8b c7 48 83 c4 20 5f c3 90 90 90 90 90 90 90 90 4c 89 44 24 18 4c 89 4c 24 20 53 55 56 57 48 83 ec 28 33 ed 48 8b f1 8b dd 48 3b d5 0f 84 ca 64 01 00 48 81 fa ff ff ff 7f 0f 87 bd 64 01 00 3b dd 7c 2d 48 8d 7a ff 4c 8d 4c 24 68 8b dd 48 8b d7 ff 15 0d 7d 02 00 3b c5 0f 8c a9 64 01 00 48 98 48 3b c7 0f 87 9e 64 01 00 0f 84 96 64 01 00 8b c3 48 83 c4 28 5f 5e 5d 5b c3 90 90 90 90 90 90 90 90 90 ff f3 48 83 ec 20 83 ca ff 48 8b d9 c6 05 c5 cb 02 00 00 89 54 24 38 ff 15 53 7e 02 00 48 8d 54 24 38 48 8b cb ff 15 3d 7e 02 00 81 7c 24 38 3a 01 00 c0 0f 84 38 c3 01 00 48 8b cb c6 05 95 cb 02 00 01 ff 15 ff 7f 02 00 8b 44 24 38 48 83 c4 20 5b c3 90 90 90 90 90 90 90 90 90 48 89 74 24 10 48 89 7c 24 18 4c 89 64 24 20 41 55 41 56 41 57 48 81 ec 50 02 00 00 48 8b 05 51 cc 02 00 48 33 c4 48 89 84 24 40 02 00 00 45 8b f0 44 8b fa 4c 8b e1 b9 08 02 00 00 e8 47 01 00 00 4c 8b e8 48 85 c0 0f 84 7d 6f 01 00 49 8b cc e8 37 16 00 00 48 8b f0 48 85 c0 0f 84 72 6f 01 00 41 b8 04 01 00 00 49 8b d5 49 8b cc e8 7a 35 00 00 bf 01 00 00 00 3b c7 0f 85 9f 6b 00 00 ba 04 01 00 00 48 8d 4c 24 30 ff 15 bd 80 02 00 48 8b ce e8 99 16 00 00 90 48 89 74 24 28 4c 89 6c 24 20 4c 8b ce 45 8b c6 41 8b d7 49 8b cc e8 dd 25 00 00 8b f8 48 83 3d d7 cb 02 00 00 0f 84 68 63 00 00 8b c7 eb 00 48 8b 8c 24 40 02 00 00 48 33 cc e8 d5 f9 ff ff 4c 8d 9c 24 50 02 00 00 49 8b 73 28 49 8b 7b 30 4d 8b 63 38 49 8b e3 41 5f 41 5e 41 5d c3 90 90 90 90 90 90 90 ff f7 48 83 ec 20 48 83 3d 8a cb 02 00 00 4c 8b c9 74 0e 48 8b 41 70 66 83 38 3a 0f 84 a6 6e 01 00 48 85 c9 0f 84 9d 6e 01 00 48 8b 79 70 48 85 ff 0f 84 90 6e 01 00 48 83 c9 ff 33 c0 66 f2 af 48 f7 d1 48 83 f9 01 0f 84 7a 6e 01 00 45 33 c0 33 d2 49 8b c9 e8 aa fe ff ff eb 00 48 83 c4 20 5f c3 44 3b ed 0f 84 b0 14 00 00 e9 9a 23 00 00 41 8b fc e9 d0 38 00 00 48 8b ce e8 80 ff ff ff e9 24 fc ff ff 90 90 90 90 90 90 90 48 89 5c 24 08 57 48 83 ec 20 8d 79 10 3b f9 0f 82 ad 98 01 00 ff 15 d1 7e 02 00 44 8b c7 ba 08 00 00 00 48 8b c8 ff 15 b8 7e 02 00 48 85 c0 0f 84 8d 98 01 00 48 8b 0d f8 ca 02 00 ff 05 0a ca 02 00 89 38 48 89 48 08 48 89 05 e5 ca 02 00 48 83 c0 10 eb 00 48 8b 5c 24 30 48 83 c4 20 5f c3 90 90 90 90 90 90 90 90 45 33 db 45 8b cb 49 3b d3 0f 84 47 62 01 00 48 81 fa ff ff ff 7f 0f 87 3a 62 01 00 45 3b cb 7c 46 45 8b cb 49 3b d3 0f 84 34 62 01 00 41 ba fe ff ff 7f 4c 2b d2 4c 2b c1 49 8d 04 12 49 3b c3 74 18 41 0f b7 04 08 66 41 3b c3 74 0d 66 89 01 48 83 c1 02 48 83 ea 01 75 df 49 3b d3 0f 84 fe 61 01 00 66 44 89 19 41 8b c1 c3 90 90 90 90 90 90 90 90 90 48 83 ec 28 e8 1b ff ff ff 48 85 c0 0f 84 e5 97 01 00 48 83 c4 28 c3 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 48 89 5c 24 08 57 48 83 ec 20 8b 15 38 c9 02 00 8b f9 3b d1 76 45 48 8b 1d 13 ca 02 00 48 85 db 74 39 48 8b 43 08 83 23 00 48 83 63 08 00 ff ca 48 89 05 f9 c9 02 00 89 15 0b c9 02 00 ff 15 a5 7d 02 00 4c 8b c3 48 8b c8 33 d2 ff 15 9f 7d 02 00 8b 15 f1 c8 02 00 3b d7 77 bb 33 db 48 83 fb 01 77 14 48 8d 3d 7e a7 03 00 48 8b 0c df 48 85 c9 0f 85 17 0f 01 00 48 ff c3 48 83 fb 02 7c dd 48 8b 5c 24 30 48 83 c4 20 5f c3 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 48 89 5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b f1 48 83 c9 ff 33 c0 48 8b fe 66 f2 af 48 f7 d1 48 63 d9 03 c9 e8 31 fe ff ff 48 8b f8 48 85 c0 74 0e 48 8b d3 4c 8b c6 48 8b c8 e8 83 fe ff ff 48 8b 5c 24 30 48 8b 74 24 38 48 8b c7 48 83 c4 20 5f c3 90 90 90 90 90 90 90 90 4c 8b dc 49 89 5b 10 49 89 73 18 49 89 7b 20 41 54 41 55 41 57 48 81 ec 60 04 00 00 48 8b 05 c9 c8 02 00 48 33 c4 48 89 84 24 50 04 00 00 48 8b f1 ba 04 01 00 00 49 8d 8b c8 fd ff ff ff 15 81 7d 02 00 48 8b 46 70 33 db 48 3b c3 0f 84 01 90 01 00 66 83 78 02 3a 0f 84 64 f9 ff ff 48 8d 54 24 20 48 8b ce e8 c2 1f 00 00 4c 63 e8 41 83 fd ff 0f 84 75 fd ff ff 49 8b c5 48 c1 e0 05 4c 8d 3d 27 5a 03 00 4e 8b 3c 38 4c 3b fb 0f 84 f6 8f 01 00 b8 2f 00 00 00 66 89 44 24 30 66 89 5c 24 32 44 8d 40 d3 48 8d 54 24 30 48 8b 4e 78 e8 e5 10 00 00 4c 8b e0 41 83 fd 0a 0f 84 b0 2a 00 00 41 83 fd 1f 74 19 41 b8 01 00 00 00 49 8b d4 41 8b cd e8 a5 1b 00 00 3a c3 0f 85 b0 8f 01 00 4c 3b e3 0f 84 24 21 00 00 66 41 39 1c 24 0f 84 19 21 00 00 49 8b cc e8 69 14 00 00 4c 8b c0 33 c0 48 83 c9 ff 49 8b fc 66 f2 af 48 f7 d1 48 8b d1 49 8b cc e8 50 fd ff ff f6 44 24 20 01 0f 85 40 63 00 00 f6 44 24 20 02 0f 85 fe 62 00 00 33 c0 48 83 c9 ff 49 8b fc 66 f2 af 48 f7 d1 4d 8d 24 4c 4c 3b e3 0f 84 c2 20 00 00 eb 9c 48 83 7b 68 00 0f 84 2d f7 ff ff 8b d7 48 8b cb e8 03 54 00 00 85 c0 0f 84 1b f7 ff ff e9 50 f7 ff ff 48 8b cb e8 8a fe ff ff 90 e9 2a f7 ff ff 90 90 90 90 90 90 90 90 48 89 5c 24 08 48 89 6c 24 18 48 89 74 24 20 57 48 83 ec 20 48 8d 3d e5 d8 02 00 bd 00 20 00 00 33 f6 48 8b d7 44 8b c5 48 8b d9 66 89 35 ce d8 02 00 ff 15 d0 7b 02 00 3b c6 0f 84 86 1d 00 00 48 8b c7 eb 00 48 8b 5c 24 30 48 8b 6c 24 40 48 8b 74 24 48 48 83 c4 20 5f c3 90 90 90 90 90 90 48 89 5c 24 08 48 89 7c 24 10 4c 8b d2 33 ff 49 8b d8 4c 8b d9 ba 57 00 07 80 44 8b cf 4c 3b d7 0f 84 68 5e 01 00 49 81 fa ff ff ff 7f 0f 87 5b 5e 01 00 44 3b cf 0f 8c 5d 5e 01 00 49 8b c2 44 8b cf 4c 3b d7 0f 84 4b 5e 01 00 66 39 39 74 0a 48 83 c1 02 48 83 e8 01 75 f1 48 3b c7 0f 84 33 5e 01 00 4d 8b c2 4c 2b c0 eb 00 44 3b cf 7c 50 49 8b d2 4b 8d 0c 43 44 8b cf 49 2b d0 0f 84 1e 5e 01 00 48 8b c2 49 2b c2 48 2b d9 4e 8d 94 00 ff ff ff 7f 4c 3b d7 74 1b 0f b7 04 0b 66 3b c7 74 12 48 ff ca 66 89 01 49 ff ca 48 83 c1 02 48 3b d7 75 e0 48 3b d7 0f 84 e4 5d 01 00 66 89 39 48 8b 5c 24 08 48 8b 7c 24 10 41 8b c1 c3 90 90 90 90 90 90 ff f3 48 83 ec 20 48 63 15 d3 c5 02 00 8b d9 48 8d 0d d6 a0 03 00 88 1c 0a ff c2 89 15 bf c5 02 00 83 fb 33 0f 84 80 4f 00 00 b9 08 00 00 00 c7 05 bf c5 02 00 01 00 00 00 e8 0e 01 00 00 83 25 b3 c5 02 00 00 83 3d a0 c5 02 00 00 0f 84 2a 43 00 00 e8 6d 09 00 00 ff 0d 83 c5 02 00 83 fb 33 0f 84 4f 4f 00 00 48 83 c4 20 5b c3
+
+PE Analysis:
+Imports:
+
+msvcrt.dll:
+	memset
+	memcpy
+	memcmp
+	_setjmp
+	?terminate@@YAXXZ
+	__set_app_type
+	_fmode
+	_commode
+	__setusermatherr
+	_amsg_exit
+	_initterm
+	_cexit
+	_exit
+	_XcptFilter
+	__C_specific_handler
+	__getmainargs
+	calloc
+	free
+	_wcslwr
+	qsort
+	_dup2
+	_dup
+	_close
+	_open_osfhandle
+	swscanf
+	_ultoa
+	_pipe
+	wcsncmp
+	_setmode
+	exit
+	iswxdigit
+	time
+	srand
+	_wtol
+	fflush
+	wcsstr
+	iswalpha
+	wcstoul
+	_errno
+	printf
+	rand
+	_iob
+	fprintf
+	wcsrchr
+	realloc
+	towlower
+	setlocale
+	_wcsupr
+	iswdigit
+	_wcsicmp
+	iswspace
+	wcschr
+	memmove
+	fgets
+	_pclose
+	ferror
+	feof
+	_wpopen
+	_wcsnicmp
+	_vsnwprintf
+	wcstol
+	_get_osfhandle
+	_getch
+	towupper
+	wcsspn
+	_tell
+	longjmp
+	_local_unwind
+
+ntdll.dll:
+	RtlCaptureContext
+	RtlLookupFunctionEntry
+	RtlVirtualUnwind
+	RtlFreeHeap
+	NtFsControlFile
+	NtOpenThreadToken
+	NtClose
+	NtOpenProcessToken
+	NtQueryInformationToken
+	RtlDosPathNameToNtPathName_U
+	RtlFindLeastSignificantBit
+	NtSetInformationProcess
+	NtQueryInformationProcess
+	RtlNtStatusToDosError
+
+KERNEL32.dll:
+	GetTimeFormatW
+	GetTickCount
+	QueryPerformanceCounter
+	SetUnhandledExceptionFilter
+	Sleep
+	DelayLoadFailureHook
+	LoadLibraryExA
+	FreeLibrary
+	CreateHardLinkW
+	CreateSymbolicLinkW
+	GetVolumePathNameW
+	GetThreadLocale
+	ResumeThread
+	SetProcessAffinityMask
+	GetNumaNodeProcessorMaskEx
+	GetThreadGroupAffinity
+	FindFirstFileExW
+	GetDiskFreeSpaceExW
+	FindNextStreamW
+	FindFirstStreamW
+	DeviceIoControl
+	CompareFileTime
+	RemoveDirectoryW
+	GetCurrentDirectoryW
+	GetExitCodeProcess
+	WaitForSingleObject
+	TerminateProcess
+	SetCurrentDirectoryW
+	SetFileTime
+	DeleteFileW
+	SetEndOfFile
+	SetFileAttributesW
+	CopyFileW
+	CreateDirectoryW
+	SetConsoleTextAttribute
+	FillConsoleOutputAttribute
+	ScrollConsoleScreenBufferW
+	GetACP
+	FormatMessageW
+	FlushFileBuffers
+	DuplicateHandle
+	HeapSize
+	HeapReAlloc
+	VirtualAlloc
+	VirtualFree
+	HeapSetInformation
+	GetCurrentThreadId
+	OpenThread
+	GetFileAttributesExW
+	GetDriveTypeW
+	GetVersion
+	LeaveCriticalSection
+	EnterCriticalSection
+	GetModuleFileNameW
+	GetWindowsDirectoryW
+	SetConsoleCtrlHandler
+	InitializeCriticalSection
+	ExpandEnvironmentStringsW
+	CancelSynchronousIo
+	GetVolumeInformationW
+	GlobalFree
+	GlobalAlloc
+	SetFilePointerEx
+	WriteFile
+	SearchPathW
+	LocalFree
+	SetConsoleTitleW
+	MoveFileExW
+	MoveFileW
+	QueryFullProcessImageNameW
+	ReadProcessMemory
+	LoadLibraryW
+	RegSetValueExW
+	RegCreateKeyExW
+	UnhandledExceptionFilter
+	GetCurrentProcess
+	GetSystemTimeAsFileTime
+	VirtualQuery
+	CmdBatNotification
+	GetCPInfo
+	GetConsoleOutputCP
+	SetThreadLocale
+	GetProcAddress
+	GetModuleHandleW
+	CloseHandle
+	GetLastError
+	SetFilePointer
+	GetFullPathNameW
+	FindFirstFileW
+	FindNextFileW
+	FindClose
+	CreateFileW
+	ReadFile
+	MultiByteToWideChar
+	GetFileSize
+	WideCharToMultiByte
+	lstrcmpiW
+	lstrcmpW
+	GetStdHandle
+	FlushConsoleInputBuffer
+	HeapAlloc
+	GetProcessHeap
+	HeapFree
+	GetConsoleScreenBufferInfo
+	ReadConsoleW
+	SetConsoleCursorPosition
+	FillConsoleOutputCharacterW
+	WriteConsoleW
+	GetFileType
+	GetUserDefaultLCID
+	GetLocaleInfoW
+	SetLocalTime
+	GetSystemTime
+	SystemTimeToFileTime
+	FileTimeToLocalFileTime
+	FileTimeToSystemTime
+	GetDateFormatW
+	RegDeleteValueW
+	GetLocalTime
+	GetConsoleMode
+	SetConsoleMode
+	GetEnvironmentVariableW
+	GetCommandLineW
+	GetNumaHighestNodeNumber
+	GetEnvironmentStringsW
+	FreeEnvironmentStringsW
+	SetEnvironmentVariableW
+	SetEnvironmentStringsW
+	GetConsoleTitleW
+	GetVDMCurrentDirectories
+	SetErrorMode
+	InitializeProcThreadAttributeList
+	UpdateProcThreadAttribute
+	DeleteProcThreadAttributeList
+	GetStartupInfoW
+	CreateProcessW
+	GetConsoleWindow
+	GetFileAttributesW
+	NeedCurrentDirectoryForExePathW
+	GetBinaryTypeW
+	RegOpenKeyExW
+	RegCloseKey
+	SetLastError
+	RegQueryValueExW
+	RegDeleteKeyExW
+	GetCurrentProcessId
+
+WINBRAND.dll:
+	BrandingFormatString
+
+Exports:
+Niciun export detectat.
+
+Assembly Code (first 20 instructions):
+0x4ad00000:	dec eax
+0x4ad00001:	cmp ecx, dword ptr [0x2d1c1]
+0x4ad00007:	jne 0x4ad15131
+0x4ad0000d:	dec eax
+0x4ad0000e:	rol ecx, 0x10
+0x4ad00011:	test cx, 0xffff
+0x4ad00016:	jne 0x4ad1512d
+0x4ad0001c:	ret 0
+0x4ad0001f:	nop 
+0x4ad00020:	nop 
+0x4ad00021:	nop 
+0x4ad00022:	nop 
+0x4ad00023:	nop 
+0x4ad00024:	nop 
+0x4ad00025:	nop 
+0x4ad00026:	nop 
+0x4ad00027:	nop 
+0x4ad00028:	jmp dword ptr [0x27fea]
+0x4ad0002e:	nop 
+0x4ad0002f:	nop 
+
+Extracted Strings (first 200 strings):
+!This program cannot be run in DOS mode.
+Rich
+.text
+`.rdata
+@.data
+.pdata
+@.rsrc
+@.reloc
+msvcrt.dll
+NTDLL.DLL
+KERNEL32.dll
+api-ms-win-core-processthreads-l1-1-0.DLL
+WINBRAND.dll
+teSH
+L$0I;
+L$ 3
+T$ E3
+T$ A
+A_A]A\
+\$0H
+f9(t
+f9)u
+\$0H
+l$8H
+t$@H
+L$ SUVWH
+(_^][
+T$8H
+|$8:
+D$8H
+d$ AUAVAWH
+t$(L
+l$ L
+A_A^A]
+\$0H
+\$0H
+\$0H
+t$8H
+{ ATAUAWH
+T$ H
+<8L;
+D$0f
+\$2D
+T$0H
+$LL;
+t$ WH
+\$0H
+l$@H
+t$HH
+f99t
+f99t
+\$0H
+UVWATAUH
+\$`I;
+u1D8-
+D$p!H
+T$pH
+|$ f
+\$`f
+D$ f;C
+D$ f
+<u`f;
+L$p@H
+T$pf
+L$ H
+\$`D
+D$ H
+T$pH
+L$ f
+f9D$ t
+\$xH
+0A]A\_^]
+WATAUH
+L$ H
+T$ ;
+L$ I
+D$(3
+|$ H
+fD9(
+l$(+
+L$(E3
+A]A\_
+UVWATAWH
++fA;
+\$pH
+0A_A\_^]
+` AUH
+\$0H
+t$8H
+|$@L
+d$HH
+\$0H
+l$8H
+WATAUH
+fD9(tQ3
+\$@H
+l$HH
+t$PH
+ A]A\_
+p WH
+\$0H
+f9(t/3
+L$0H
+\$0H;
+\$8H
+l$@H
+t$HH
+x ATAUAVH
+\$@H
+l$HH
+t$PH
+|$XH
+ A^A]A\
+VWATH
+fD9!t2
+D$@H
+\$HH
+l$PH
+ A\_^
+\$0H
+UVWATAUAVAWH
+D$ L
+l$0L
+D$(H
+,$fA;
+t*M;
+|$ 3
+lD0D
+A_A^A]A\_^]
+FpHc
+\$0H
+t$8H
+x ATH
+\$0H
+l$8H
+t$@H
+|$HH
+x ATAUAVH
+\$@H
+l$HH
+t$PH
+|$XH
+ A^A]A\
+L$(H+
+\$0H
+t$8H
+\$0H
+l$8H
+t$@H
+t$8H
+\$0H
+WATAUAVAWH
+D9;u
+D9;u H
+\$0H
+l$8H
+t$@H
+_s#A
+WATAUAVAWH
+\$`I
+A_A^A]A\_
+\$8H
+\$0H
+t$ WATAUAVAWH
+L$p;
+\$`H
+l$hH
+t$xH
+0A_A^A]A\_
+t$(L
+|$ @
+x ATH
+\$0H
+l$8H
+t$@H
+|$HH
+fD9)t
+tQfD9E
+@8=R
+D$`H
+D$`H
+HcD$`L
+UVWATAUAVAWH
+tSE:
+|, H
+T$ M
+A_A^A]A\_^]
+|$ 3
+\$0H
+SVWATAUAVAWH
+\$0H
+\$(H
+D$xH
+t?L;
+H8H;
+D$PH
+D$HL
+d$@H
+|$(H
+\$ E3
