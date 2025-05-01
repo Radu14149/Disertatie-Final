@@ -1,0 +1,12 @@
+0.0000	Eroare: y contains previously unseen labels: [18]	0.00%
+0	192.168.1.1	192.168.1.2	udp	private	SF	47	44
+----------------------------------------
+3.2235	Eroare: y contains previously unseen labels: [18]	0.00%
+1	192.168.1.1	192.168.1.2	tcp	http	SF	215	4713
+----------------------------------------
+6.2968	Eroare: y contains previously unseen labels: [18]	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	32	0
+----------------------------------------
+9.3611	Eroare: y contains previously unseen labels: [18]	0.00%
+3	192.168.1.1	192.168.1.2	udp	private	SF	53	50
+----------------------------------------

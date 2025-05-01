@@ -1,0 +1,4 @@
+user: Ce mai faci
+
+assistant: Știi că nu sunt un robot perfectat și nu pot face lucruri? Nu pot face nimic. Sunt doar o asistentă care îți ajută să faci ceva mai ușor, prin oferirea de informații sau ajutor la completarea unei sarcini. Puteți să mă solicite să caut în internet pentru tine sau să te ajut în a rezolva o problemă de calcul, dar nu pot face lucruri precum mâncărarea sau o curățare.
+

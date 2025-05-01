@@ -1,0 +1,867 @@
+0.0099	Trafic Legitim	55.38%
+0	192.168.1.1	192.168.1.2	tcp	1322	Random sample analysis
+----------------------------------------
+3.2148	Trafic Legitim	55.38%
+1	192.168.1.1	192.168.1.2	udp	1	Random sample analysis
+----------------------------------------
+6.2752	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	123	Random sample analysis
+----------------------------------------
+10.3392	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	299	Random sample analysis
+----------------------------------------
+14.4238	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3093	Random sample analysis
+----------------------------------------
+18.5016	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+22.5723	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	508	Random sample analysis
+----------------------------------------
+26.6251	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	6781	Random sample analysis
+----------------------------------------
+30.6835	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2388	Random sample analysis
+----------------------------------------
+34.7536	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	35	Random sample analysis
+----------------------------------------
+38.8377	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1865	Random sample analysis
+----------------------------------------
+42.8914	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2141	Random sample analysis
+----------------------------------------
+46.9415	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	46	Random sample analysis
+----------------------------------------
+51.0126	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	627	Random sample analysis
+----------------------------------------
+55.1121	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2224	Random sample analysis
+----------------------------------------
+59.1916	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+63.2499	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	283618	Random sample analysis
+----------------------------------------
+67.3359	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	33140	Random sample analysis
+----------------------------------------
+71.4224	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+75.4670	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+79.5108	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1839	Random sample analysis
+----------------------------------------
+83.5553	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	40008	Random sample analysis
+----------------------------------------
+87.6010	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	125	Random sample analysis
+----------------------------------------
+91.6449	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+95.6885	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+99.7263	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	9651	Random sample analysis
+----------------------------------------
+103.7810	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+107.8427	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+111.8877	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+115.9289	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+119.9758	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3114	Random sample analysis
+----------------------------------------
+124.0208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+128.0650	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+132.1092	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	62854	Random sample analysis
+----------------------------------------
+136.1536	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+140.1981	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+144.2805	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1245	Random sample analysis
+----------------------------------------
+148.3689	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	59090	Random sample analysis
+----------------------------------------
+152.4653	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	311	Random sample analysis
+----------------------------------------
+156.5630	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1032	Random sample analysis
+----------------------------------------
+160.6755	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1402	Random sample analysis
+----------------------------------------
+164.7773	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+168.8241	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+172.9028	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+176.9796	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	403	Random sample analysis
+----------------------------------------
+181.0238	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	991	Random sample analysis
+----------------------------------------
+185.0686	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	636	Random sample analysis
+----------------------------------------
+189.1128	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+193.1594	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+197.2312	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	938	Random sample analysis
+----------------------------------------
+201.3290	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	41	Random sample analysis
+----------------------------------------
+205.4187	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	2	Random sample analysis
+----------------------------------------
+209.4982	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1377	Random sample analysis
+----------------------------------------
+213.5862	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	8	Random sample analysis
+----------------------------------------
+217.6885	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+221.7594	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	283618	Random sample analysis
+----------------------------------------
+225.8459	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	298	Random sample analysis
+----------------------------------------
+229.9333	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	749	Random sample analysis
+----------------------------------------
+234.0337	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	20727	Random sample analysis
+----------------------------------------
+238.0958	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+242.2037	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	622	Random sample analysis
+----------------------------------------
+246.2689	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1511	Random sample analysis
+----------------------------------------
+250.3362	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+254.3800	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	638	Random sample analysis
+----------------------------------------
+258.4368	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	250	Random sample analysis
+----------------------------------------
+262.5089	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1480	Random sample analysis
+----------------------------------------
+266.5741	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1466	Random sample analysis
+----------------------------------------
+270.6188	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+274.6705	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+278.7073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	120	Random sample analysis
+----------------------------------------
+282.7519	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1002	Random sample analysis
+----------------------------------------
+286.7968	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	903	Random sample analysis
+----------------------------------------
+290.8477	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+294.9059	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+298.9530	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1032	Random sample analysis
+----------------------------------------
+302.9882	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+307.0321	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1850	Random sample analysis
+----------------------------------------
+311.0768	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	12216	Random sample analysis
+----------------------------------------
+315.1210	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	12	Random sample analysis
+----------------------------------------
+319.1656	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1304	Random sample analysis
+----------------------------------------
+323.2171	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	108	Random sample analysis
+----------------------------------------
+327.2683	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	5025	Random sample analysis
+----------------------------------------
+331.3135	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2892	Random sample analysis
+----------------------------------------
+335.3639	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	653	Random sample analysis
+----------------------------------------
+339.4085	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2867	Random sample analysis
+----------------------------------------
+343.4457	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+347.5041	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	8891	Random sample analysis
+----------------------------------------
+351.5487	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3962	Random sample analysis
+----------------------------------------
+355.6002	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	972	Random sample analysis
+----------------------------------------
+359.6517	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	105	Random sample analysis
+----------------------------------------
+363.7030	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+367.7471	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	133	Random sample analysis
+----------------------------------------
+371.7984	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	827	Random sample analysis
+----------------------------------------
+375.8360	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	121	Random sample analysis
+----------------------------------------
+379.8996	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1951	Random sample analysis
+----------------------------------------
+384.0050	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	130	Random sample analysis
+----------------------------------------
+388.0527	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+392.1387	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+396.2220	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+400.3094	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	346	Random sample analysis
+----------------------------------------
+404.3901	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	41	Random sample analysis
+----------------------------------------
+408.4420	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	133	Random sample analysis
+----------------------------------------
+412.4789	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+416.5162	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	1	Random sample analysis
+----------------------------------------
+420.5661	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+424.6348	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+428.6995	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+432.7426	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+436.8026	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	36	Random sample analysis
+----------------------------------------
+440.8659	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	26	Random sample analysis
+----------------------------------------
+444.9392	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+449.0310	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+453.1016	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	759	Random sample analysis
+----------------------------------------
+457.1638	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+461.2484	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1752	Random sample analysis
+----------------------------------------
+465.3409	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+469.4336	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	20	Random sample analysis
+----------------------------------------
+473.4970	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3982	Random sample analysis
+----------------------------------------
+477.5502	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	4791	Random sample analysis
+----------------------------------------
+481.6020	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	766	Random sample analysis
+----------------------------------------
+485.6466	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+489.6906	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+493.7348	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	6577	Random sample analysis
+----------------------------------------
+497.7933	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	16456	Random sample analysis
+----------------------------------------
+501.8515	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+505.9031	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+509.9404	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	620	Random sample analysis
+----------------------------------------
+513.9919	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	405	Random sample analysis
+----------------------------------------
+518.0342	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+522.1377	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+526.2342	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2601	Random sample analysis
+----------------------------------------
+530.3130	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+534.3975	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+538.4840	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3654	Random sample analysis
+----------------------------------------
+542.5872	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+546.6749	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+550.7697	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1026	Random sample analysis
+----------------------------------------
+554.8558	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+558.9489	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3378	Random sample analysis
+----------------------------------------
+563.0365	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3052	Random sample analysis
+----------------------------------------
+567.1332	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	203	Random sample analysis
+----------------------------------------
+571.2346	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+575.3378	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1141	Random sample analysis
+----------------------------------------
+579.4657	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	2	Random sample analysis
+----------------------------------------
+583.5589	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+587.6538	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+591.7412	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	62854	Random sample analysis
+----------------------------------------
+595.8256	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	298	Random sample analysis
+----------------------------------------
+599.9220	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+604.0235	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1112	Random sample analysis
+----------------------------------------
+608.1008	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	283618	Random sample analysis
+----------------------------------------
+612.1749	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+616.2854	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	157	Random sample analysis
+----------------------------------------
+620.4012	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	15	Random sample analysis
+----------------------------------------
+624.4901	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	9254	Random sample analysis
+----------------------------------------
+628.5931	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+632.6851	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	2	Random sample analysis
+----------------------------------------
+636.7747	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1843	Random sample analysis
+----------------------------------------
+640.8763	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	88	Random sample analysis
+----------------------------------------
+644.9781	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+649.0882	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	15	Random sample analysis
+----------------------------------------
+653.1830	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+657.2778	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	12	Random sample analysis
+----------------------------------------
+661.3882	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+665.4828	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	68	Random sample analysis
+----------------------------------------
+669.5846	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+673.6720	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+677.7842	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	62854	Random sample analysis
+----------------------------------------
+681.8615	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2892	Random sample analysis
+----------------------------------------
+685.9580	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+690.0666	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+694.1616	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	123	Random sample analysis
+----------------------------------------
+698.2562	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+702.3424	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	7326	Random sample analysis
+----------------------------------------
+706.4388	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	4038	Random sample analysis
+----------------------------------------
+710.5403	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	20	Random sample analysis
+----------------------------------------
+714.6334	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	299	Random sample analysis
+----------------------------------------
+718.7212	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2674	Random sample analysis
+----------------------------------------
+722.8175	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2054	Random sample analysis
+----------------------------------------
+726.9176	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+731.0050	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	538	Random sample analysis
+----------------------------------------
+735.1087	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	6397	Random sample analysis
+----------------------------------------
+739.2174	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+743.2906	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	56505	Random sample analysis
+----------------------------------------
+747.3684	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+751.4634	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1740	Random sample analysis
+----------------------------------------
+755.5582	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	497	Random sample analysis
+----------------------------------------
+759.6528	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+763.7475	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+767.8439	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+771.9284	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+776.0386	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	3122	Random sample analysis
+----------------------------------------
+780.1263	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+784.2212	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1229	Random sample analysis
+----------------------------------------
+788.3314	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	729	Random sample analysis
+----------------------------------------
+792.4433	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	508	Random sample analysis
+----------------------------------------
+796.5293	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+800.6330	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1032	Random sample analysis
+----------------------------------------
+804.7419	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	125	Random sample analysis
+----------------------------------------
+808.8509	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+812.9599	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	18	Random sample analysis
+----------------------------------------
+817.0687	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1032	Random sample analysis
+----------------------------------------
+821.1777	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	89	Random sample analysis
+----------------------------------------
+825.2847	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	5082	Random sample analysis
+----------------------------------------
+829.3937	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	9509	Random sample analysis
+----------------------------------------
+833.4995	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+837.5905	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1937	Random sample analysis
+----------------------------------------
+841.6943	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1691	Random sample analysis
+----------------------------------------
+845.7948	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	7435	Random sample analysis
+----------------------------------------
+849.9026	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	4195	Random sample analysis
+----------------------------------------
+854.0115	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	12500	Random sample analysis
+----------------------------------------
+858.1205	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	147	Random sample analysis
+----------------------------------------
+862.2086	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	2	Random sample analysis
+----------------------------------------
+866.3004	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	759	Random sample analysis
+----------------------------------------
+870.3574	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	44	Random sample analysis
+----------------------------------------
+874.4496	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	62854	Random sample analysis
+----------------------------------------
+878.5190	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	171	Random sample analysis
+----------------------------------------
+882.6267	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	865	Random sample analysis
+----------------------------------------
+886.7357	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	125	Random sample analysis
+----------------------------------------
+890.8378	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+894.9468	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+899.0556	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+903.1647	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+907.2660	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2279	Random sample analysis
+----------------------------------------
+911.3563	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+915.4528	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	658	Random sample analysis
+----------------------------------------
+919.4866	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	2	Random sample analysis
+----------------------------------------
+923.5955	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+927.6998	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	106627	Random sample analysis
+----------------------------------------
+931.7948	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	72564	Random sample analysis
+----------------------------------------
+935.9037	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+939.9969	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	925	Random sample analysis
+----------------------------------------
+944.0802	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+948.1891	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+952.2981	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+956.4071	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2992	Random sample analysis
+----------------------------------------
+960.5159	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	520	Random sample analysis
+----------------------------------------
+964.6250	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	40008	Random sample analysis
+----------------------------------------
+968.7260	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+972.8348	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	92	Random sample analysis
+----------------------------------------
+976.9334	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+980.9877	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1699	Random sample analysis
+----------------------------------------
+985.1005	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	32990	Random sample analysis
+----------------------------------------
+989.2095	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	508	Random sample analysis
+----------------------------------------
+993.3124	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	125	Random sample analysis
+----------------------------------------
+997.4212	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1008	Random sample analysis
+----------------------------------------
+1001.5302	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	12	Random sample analysis
+----------------------------------------
+1005.6322	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1032	Random sample analysis
+----------------------------------------
+1009.7275	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	7232	Random sample analysis
+----------------------------------------
+1013.8329	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	294	Random sample analysis
+----------------------------------------
+1017.9418	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	1032	Random sample analysis
+----------------------------------------
+1022.0508	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	2892	Random sample analysis
+----------------------------------------
+1026.1597	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1030.2687	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1034.3777	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1038.4866	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1762	Random sample analysis
+----------------------------------------
+1042.5955	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	14272	Random sample analysis
+----------------------------------------
+1046.7044	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1050.8134	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1054.9222	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1059.0313	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1063.1401	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1104	Random sample analysis
+----------------------------------------
+1067.2491	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	88	Random sample analysis
+----------------------------------------
+1071.3481	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	57964	Random sample analysis
+----------------------------------------
+1075.4453	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1079.5091	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	59424	Random sample analysis
+----------------------------------------
+1083.5623	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	6300	Random sample analysis
+----------------------------------------
+1087.6617	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	107	Random sample analysis
+----------------------------------------
+1091.7219	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+1095.7990	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1099.8504	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1504	Random sample analysis
+----------------------------------------
+1103.8977	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	6152	Random sample analysis
+----------------------------------------
+1107.9952	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1917	Random sample analysis
+----------------------------------------
+1112.0986	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1834	Random sample analysis
+----------------------------------------
+1116.1669	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1120.2354	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	36	Random sample analysis
+----------------------------------------
+1124.3225	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	5182	Random sample analysis
+----------------------------------------
+1128.3904	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	603	Random sample analysis
+----------------------------------------
+1132.4713	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	104	Random sample analysis
+----------------------------------------
+1136.5693	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1140.6208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1144.6965	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1148.7581	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1152.8324	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	1325	Random sample analysis
+----------------------------------------
+1156.8818	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	301	Random sample analysis
+----------------------------------------
+1160.9331	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	48	Random sample analysis
+----------------------------------------
+1164.9850	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	44	Random sample analysis
+----------------------------------------
+1169.0844	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	0	Random sample analysis
+----------------------------------------
+1173.1760	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	525	Random sample analysis
+----------------------------------------
