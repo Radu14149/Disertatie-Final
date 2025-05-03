@@ -1,0 +1,12 @@
+0.0000	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+0	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	1342	0
+----------------------------------------
+3.0573	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+1	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+6.1097	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	315	4714
+----------------------------------------
+9.1656	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+3	192.168.1.1	192.168.1.2	tcp	mtp	REJ	0	0
+----------------------------------------
