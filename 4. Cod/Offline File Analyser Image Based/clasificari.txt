@@ -44,3 +44,7 @@
 2025-04-22 19:06:42 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Swizzor.gen!I: 64.21%
 2025-05-03 17:52:33 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Swizzor.gen!I: 64.21%
 2025-05-03 17:52:55 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Swizzor.gen!I: 64.21%
+2025-05-04 20:58:52 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 91.2%
+2025-05-04 21:47:40 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0A32eTdBKayjCWhZqDOQ.bytes - 0A32eTdBKayjCWhZqDOQ.bytes - Lolyda.AA3: 99.99%
+2025-05-04 21:47:51 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0ACDbR5M3ZhBJajygTuf.bytes - 0ACDbR5M3ZhBJajygTuf.bytes - Lolyda.AA3: 99.99%
+2025-05-04 21:56:42 - C:\Users\Here\Desktop\Contractul blatului electoral dintre George Simion și Marcel Ciolacu nu a fost raportat de AUR la Autoritatea Electorală.pdf - Contractul blatului electoral dintre George Simion și Marcel Ciolacu nu a fost raportat de AUR la Autoritatea Electorală.pdf - Lolyda.AA3: 100.0%

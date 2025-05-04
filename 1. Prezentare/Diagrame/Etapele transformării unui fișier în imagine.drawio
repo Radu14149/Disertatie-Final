@@ -1,0 +1,40 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Pagină-1" id="5eUkdSgX30Y44kpR-12e">
+    <mxGraphModel dx="3160" dy="1398" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FSYm2LaGMuL27qVGOOie-42" value="&lt;font&gt;convert_and_save()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=35;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-63" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="690" width="2220" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=35;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" edge="1" parent="1" source="FSYm2LaGMuL27qVGOOie-50" target="FSYm2LaGMuL27qVGOOie-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-50" value="Conversie fișier&amp;nbsp;&lt;code data-end=&quot;1301&quot; data-start=&quot;1293&quot;&gt;.bytes&lt;/code&gt;&amp;nbsp;în&amp;nbsp;&lt;div&gt;&lt;code data-end=&quot;1317&quot; data-start=&quot;1310&quot;&gt;array&lt;/code&gt;&amp;nbsp;de pixeli&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=35;verticalAlign=middle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="105" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-53" value="Conversie array în imagine&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=35;verticalAlign=middle;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="105" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-56" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;convert_to_bytes()&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=35;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="130" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FSYm2LaGMuL27qVGOOie-64" target="FSYm2LaGMuL27qVGOOie-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-64" value="Conversie binar în .bytes (hexazecimal)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=35;verticalAlign=middle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="105" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FSYm2LaGMuL27qVGOOie-66" target="FSYm2LaGMuL27qVGOOie-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FSYm2LaGMuL27qVGOOie-66" value="Fișier încărcat" style="rounded=1;whiteSpace=wrap;html=1;fontSize=35;verticalAlign=middle;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="105" width="350" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
