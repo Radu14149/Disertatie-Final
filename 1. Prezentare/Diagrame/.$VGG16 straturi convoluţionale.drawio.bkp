@@ -1,0 +1,49 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Pagină-1" id="LawEo0qD4Mh-QFfUfYKL">
+    <mxGraphModel dx="194" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-1" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="206.55" y="173.82" width="256" height="256" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-3" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="216.55" y="183.82" width="256" height="256" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-5" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="270.55" y="247.82" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-6" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="280.55" y="257.82" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-7" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="312.55" y="289.82" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-9" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="322.55" y="299.82" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-20" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="332.55" y="309.82" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-22" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="352.55" y="329.82" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-23" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="362.55" y="339.82" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-24" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="372.55" y="349.82" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-26" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#00FFFF;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="382.55" y="359.82" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-28" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#00FFFF;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="392.55" y="369.82" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="kcpuL6EKzRE6_aehxLiG-29" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;imageWidth=256;imageHeight=256;fillColor=#00FFFF;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="402.55" y="379.82" width="16" height="16" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

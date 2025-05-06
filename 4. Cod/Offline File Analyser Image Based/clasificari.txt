@@ -48,3 +48,27 @@
 2025-05-04 21:47:40 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0A32eTdBKayjCWhZqDOQ.bytes - 0A32eTdBKayjCWhZqDOQ.bytes - Lolyda.AA3: 99.99%
 2025-05-04 21:47:51 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0ACDbR5M3ZhBJajygTuf.bytes - 0ACDbR5M3ZhBJajygTuf.bytes - Lolyda.AA3: 99.99%
 2025-05-04 21:56:42 - C:\Users\Here\Desktop\Contractul blatului electoral dintre George Simion și Marcel Ciolacu nu a fost raportat de AUR la Autoritatea Electorală.pdf - Contractul blatului electoral dintre George Simion și Marcel Ciolacu nu a fost raportat de AUR la Autoritatea Electorală.pdf - Lolyda.AA3: 100.0%
+2025-05-06 18:47:47 - C:\Users\Here\Desktop\Cărți Apocrife.docx - Cărți Apocrife.docx - Lolyda.AT: 57.67%
+2025-05-06 18:48:09 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0ACDbR5M3ZhBJajygTuf.bytes - 0ACDbR5M3ZhBJajygTuf.bytes - Lolyda.AA3: 74.02%
+2025-05-06 18:48:19 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0A32eTdBKayjCWhZqDOQ.bytes - 0A32eTdBKayjCWhZqDOQ.bytes - Lolyda.AA3: 72.31%
+2025-05-06 18:48:43 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0A32eTdBKayjCWhZqDOQ.bytes - 0A32eTdBKayjCWhZqDOQ.bytes - Lolyda.AA3: 72.31%
+2025-05-06 18:48:50 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0ACDbR5M3ZhBJajygTuf.bytes - 0ACDbR5M3ZhBJajygTuf.bytes - Lolyda.AA3: 74.02%
+2025-05-06 18:48:55 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-06 18:49:01 - C:\Users\Here\Pictures\1_B_ZaaaBg2njhp8SThjCufA.png - 1_B_ZaaaBg2njhp8SThjCufA.png - Allaple.A: 70.62%
+2025-05-06 18:50:18 - C:\Users\Here\Pictures\Imagini de salvat\20250226 - US-Military-Presence-Web.jpg - 20250226 - US-Military-Presence-Web.jpg - Agent.FYI: 43.2%
+2025-05-06 20:06:04 - C:\Users\Here\Pictures\Imagini de salvat\20250226 - US-Military-Presence-Web.jpg - 20250226 - US-Military-Presence-Web.jpg - Lolyda.AA3: 99.98%
+2025-05-06 20:06:37 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0A32eTdBKayjCWhZqDOQ.bytes - 0A32eTdBKayjCWhZqDOQ.bytes - Lolyda.AA3: 63.92%
+2025-05-06 20:06:43 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 99.1%
+2025-05-06 20:06:48 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 99.1%
+2025-05-06 20:08:57 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0A32eTdBKayjCWhZqDOQ.bytes - 0A32eTdBKayjCWhZqDOQ.bytes - Lolyda.AA3: 63.92%
+2025-05-06 20:09:36 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Agent.FYI\00a6fb4c9c3a7894b7d43c32c5a223b3.png - 00a6fb4c9c3a7894b7d43c32c5a223b3.png - Lolyda.AA3: 100.0%
+2025-05-06 20:09:44 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Dialplatform.B\00a33e9e026c67529e2ae137d4b8bce4.png - 00a33e9e026c67529e2ae137d4b8bce4.png - Lolyda.AA3: 99.99%
+2025-05-06 20:09:50 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Rbot!gen\0a121ff94845770cea8135795ea19114.exe.png - 0a121ff94845770cea8135795ea19114.exe.png - Lolyda.AA3: 99.98%
+2025-05-06 20:09:54 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Rbot!gen\8df5a7c3a4e2be1e4469262e75480647.exe.png - 8df5a7c3a4e2be1e4469262e75480647.exe.png - Lolyda.AA3: 99.99%
+2025-05-06 20:09:57 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Rbot!gen\1c019b59a436aa910ab885d3fabfe50f.exe.png - 1c019b59a436aa910ab885d3fabfe50f.exe.png - Lolyda.AA3: 99.98%
+2025-05-06 20:30:38 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Rbot!gen\0b363e34828dd0d04e2c9e60e6aee5a5.exe.png - 0b363e34828dd0d04e2c9e60e6aee5a5.exe.png - Rbot!gen: 99.79%
+2025-05-06 20:30:46 - C:\Users\Here\Pictures\1_B_ZaaaBg2njhp8SThjCufA.png - 1_B_ZaaaBg2njhp8SThjCufA.png - Lolyda.AA3: 99.99%
+2025-05-06 20:30:56 - C:\Users\Here\Pictures\Ucraina împărţire.jpg - Ucraina împărţire.jpg - Lolyda.AA3: 100.0%
+2025-05-06 20:34:46 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\C2LOP.P\00e0ce9e888d9e4495fb2f0812fd1834.png - 00e0ce9e888d9e4495fb2f0812fd1834.png - C2LOP.P: 90.07%
+2025-05-06 20:35:48 - C:\Users\Here\Pictures\1_B_ZaaaBg2njhp8SThjCufA.png - 1_B_ZaaaBg2njhp8SThjCufA.png - Allaple.A: 70.62%
+2025-05-06 20:35:58 - C:\Users\Here\Pictures\suniți și șiiți.png - suniți și șiiți.png - Allaple.A: 56.38%
