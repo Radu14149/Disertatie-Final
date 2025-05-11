@@ -1,0 +1,18 @@
+File Analysis
+File Path: C:/Users/Here/Desktop/Disertatie-Final/3. Măsurători/0. Fişiere test/Phishing email.txt
+File Type: text/plain ()
+File Size: 0 bytes
+Permissions: 666
+Owner: Here
+Group: N/A
+Created: 2025-05-08 20:00:57
+Modified: 2025-05-08 20:00:57
+Accessed: 2025-05-08 20:00:57
+File Hash (MD5): d41d8cd98f00b204e9800998ecf8427e
+File Hash (SHA-256): e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Hex Dump (first 10 bytes):
+
+
+Eroare analiză PE: 'The file is empty'
+Extracted Strings (first 5 strings):

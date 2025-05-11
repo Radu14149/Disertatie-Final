@@ -72,3 +72,25 @@
 2025-05-06 20:34:46 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\C2LOP.P\00e0ce9e888d9e4495fb2f0812fd1834.png - 00e0ce9e888d9e4495fb2f0812fd1834.png - C2LOP.P: 90.07%
 2025-05-06 20:35:48 - C:\Users\Here\Pictures\1_B_ZaaaBg2njhp8SThjCufA.png - 1_B_ZaaaBg2njhp8SThjCufA.png - Allaple.A: 70.62%
 2025-05-06 20:35:58 - C:\Users\Here\Pictures\suniți și șiiți.png - suniți și șiiți.png - Allaple.A: 56.38%
+2025-05-08 20:16:20 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-08 20:16:43 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Allaple.L\0000c4ee5f408b0a985b18ffb5acbb71.png - 0000c4ee5f408b0a985b18ffb5acbb71.png - Allaple.L: 99.9%
+2025-05-08 20:34:56 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Allaple.L\000c4d9de4b50ec41a6434936ce9dea7.png - 000c4d9de4b50ec41a6434936ce9dea7.png - Allaple.L: 99.72%
+2025-05-08 20:35:13 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-08 21:20:54 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-08 21:21:25 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Dialplatform.B\00a33e9e026c67529e2ae137d4b8bce4.png - 00a33e9e026c67529e2ae137d4b8bce4.png - Dialplatform.B: 100.0%
+2025-05-08 21:21:43 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\C2LOP.P\00bac869d1a5cfc70026f00bf7174463.png - 00bac869d1a5cfc70026f00bf7174463.png - C2LOP.P: 99.03%
+2025-05-08 21:35:10 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-08 21:35:54 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Skintrim.N\000d9ca6a08dce414ac3ea0e466b489e.png - 000d9ca6a08dce414ac3ea0e466b489e.png - Skintrim.N: 80.48%
+2025-05-11 13:08:01 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\0ACDbR5M3ZhBJajygTuf.bytes - 0ACDbR5M3ZhBJajygTuf.bytes - Lolyda.AA3: 74.02%
+2025-05-11 13:08:50 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\C2LOP.P\00bac869d1a5cfc70026f00bf7174463.png - 00bac869d1a5cfc70026f00bf7174463.png - C2LOP.P: 99.03%
+2025-05-11 13:10:06 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-11 13:31:14 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-11 13:31:48 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Fakerean\00a44c1e2e3bb58e2644b5f3c3384dba.png - 00a44c1e2e3bb58e2644b5f3c3384dba.png - Fakerean: 100.0%
+2025-05-11 14:18:59 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\Phishing email.txt - Phishing email.txt - Lolyda.AA3: 68.31%
+2025-05-11 14:19:28 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Autorun.K\00aad43545abcab69c3d53bca4bce847.png - 00aad43545abcab69c3d53bca4bce847.png - Autorun.K: 55.22%
+2025-05-11 14:59:55 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-11 15:00:32 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Dontovo.A\00ade293ddb065c3bdda9af08906fbb3.png - 00ade293ddb065c3bdda9af08906fbb3.png - Dontovo.A: 99.51%
+2025-05-11 15:34:20 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-11 15:34:48 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Wintrim.BX\00a898f7bd4a810ae81d9b5ee1b7486f.png - 00a898f7bd4a810ae81d9b5ee1b7486f.png - Wintrim.BX: 99.85%
+2025-05-11 15:54:15 - C:\Users\Here\Desktop\Disertatie-Final\3. Măsurători\0. Fişiere test\pe-Windows-x64-cmd - pe-Windows-x64-cmd - Lolyda.AA3: 61.53%
+2025-05-11 15:54:45 - C:\Users\Here\Desktop\Disertatie-Final\4. Cod\Data\malimg\Dontovo.A\00b6a578944b4fd2b372098e67284648.png - 00b6a578944b4fd2b372098e67284648.png - Dontovo.A: 99.85%

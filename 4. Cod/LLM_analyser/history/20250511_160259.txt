@@ -1,0 +1,19 @@
+user: Ești un expert în analiza malware. Analizează următoarele detalii ale unui fișier și determină dacă este suspect sau chiar malware. Oferă un rezumat la nivel macro și micro și justifică evaluarea ta.
+
+Nume fișier: pe-Windows-x64-cmd
+Dimensiune: 345088 bytes
+
+Hex dump (primele 256 de octeți):
+4d5a90000300000004000000ffff0000b800000000000000400000000000000000000000000000000000000000000000000000000000000000000000f00000000e1fba0e00b409cd21b8014ccd21546869732070726f6772616d2063616e6e6f742062652072756e20696e20444f53206d6f64652e0d0d0a24000000000000004d7ca48a091dcad9091dcad9091dcad900654ed9081dcad900655fd90b1dcad9091dcbd9f41dcad9006559d9001dcad9006549d91b1dcad9006543d92e1dcad900655ed9081dcad900655bd9081dcad952696368091dcad90000000000000000000000000000000000000000000000005045000064860600e598e74c00000000
+
+
+assistant: Ștergerea virusurilor este un domeniu de specialitate, dar pot să te ajut pentru a identifica semnele unui posibil malware. O analiză detaliată este necesară pentru o evaluare faimoasă și pot fi oferite informații generale în ceea ce privește acest fișier:
+
+Nume fișier: pe-Windows-x64-cmd
+Dimensiune: 345088 bytes
+
+Mărimea fișierului este destul de mare pentru un executabil Windows, însă nu poate fi considerată o sarcină definitivă asupra său. Există astfel posibilitatea ca acesta să fie un program bine intenționat care conține biblioteci de mărime mare sau date suplimentare.
+
+Hex dump (primele 256 de octeți):
+4d5a90000300000004000000ffff0000b80000000000000040000000000000000000000000000000
+

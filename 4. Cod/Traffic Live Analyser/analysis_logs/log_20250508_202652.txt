@@ -1,0 +1,90 @@
+0.0343	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+0	192.168.125.179:62857	140.82.112.22:443	6	55	Ether / IP / TCP 192.168.125.179:62857 > 140.82.112.22:https A / Raw
+----------------------------------------
+0.3912	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+1	140.82.112.22:443	192.168.125.179:62857	6	66	Ether / IP / TCP 140.82.112.22:https > 192.168.125.179:62857 A
+----------------------------------------
+0.6842	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+2	192.168.125.179:60257	74.248.74.217:443	6	112	Ether / IP / TCP 192.168.125.179:60257 > 74.248.74.217:https PA / Raw
+----------------------------------------
+0.9002	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+3	74.248.74.217:443	192.168.125.179:60257	6	101	Ether / IP / TCP 74.248.74.217:https > 192.168.125.179:60257 PA / Raw
+----------------------------------------
+0.9722	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+4	192.168.125.179:60257	74.248.74.217:443	6	54	Ether / IP / TCP 192.168.125.179:60257 > 74.248.74.217:https A
+----------------------------------------
+2.1615	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+5	192.168.125.179:57952	192.168.125.213:53	17	74	Ether / IP / UDP / DNS Qry b'ecs.office.com.'
+----------------------------------------
+2.2649	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+6	192.168.125.179:57952	192.168.125.213:53	17	74	Ether / IP / UDP / DNS Qry b'ecs.office.com.'
+----------------------------------------
+2.3522	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+6	192.168.125.213:53	192.168.125.179:57952	17	256	Ether / IP / UDP / DNS Ans b'ecs.office.trafficmanager.net.'
+----------------------------------------
+2.4331	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+8	192.168.125.179:62894	52.123.243.38:443	6	66	Ether / IP / TCP 192.168.125.179:62894 > 52.123.243.38:https S
+----------------------------------------
+2.5262	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+9	192.168.125.213:53	192.168.125.179:57952	17	279	Ether / IP / UDP / DNS Ans b'ecs.office.trafficmanager.net.'
+----------------------------------------
+2.6212	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+10	52.123.243.38:443	192.168.125.179:62894	6	66	Ether / IP / TCP 52.123.243.38:https > 192.168.125.179:62894 SA
+----------------------------------------
+2.7152	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+11	192.168.125.179:62894	52.123.243.38:443	6	54	Ether / IP / TCP 192.168.125.179:62894 > 52.123.243.38:https A
+----------------------------------------
+2.8812	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+11	192.168.125.179:62894	52.123.243.38:443	6	543	Ether / IP / TCP 192.168.125.179:62894 > 52.123.243.38:https PA / Raw
+----------------------------------------
+2.9677	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+13	52.123.243.38:443	192.168.125.179:62894	6	1354	Ether / IP / TCP 52.123.243.38:https > 192.168.125.179:62894 A / Raw
+----------------------------------------
+3.0583	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+14	52.123.243.38:443	192.168.125.179:62894	6	1354	Ether / IP / TCP 52.123.243.38:https > 192.168.125.179:62894 A / Raw
+----------------------------------------
+3.3057	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+15	192.168.125.179:62532	162.247.241.14:443	6	55	Ether / IP / TCP 192.168.125.179:62532 > 162.247.241.14:https A / Raw
+----------------------------------------
+3.5594	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+16	162.247.241.14:443	192.168.125.179:62532	6	66	Ether / IP / TCP 162.247.241.14:https > 192.168.125.179:62532 A
+----------------------------------------
+8.7612	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:137	192.168.125.255:137	17	92	Ether / IP / UDP / NBNSHeader / NBNSQueryRequest who has '\\DESKTOP-H45KHRK'
+----------------------------------------
+9.9111	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.213:53	192.168.125.179:53447	17	217	Ether / IP / UDP / DNS Ans b'mobile.events.data.trafficmanager.net.'
+----------------------------------------
+11.1378	Eroare: main thread is not in main loop	0.00%
+17	52.123.243.38:443	192.168.125.179:62894	6	1223	Ether / IP / TCP 52.123.243.38:https > 192.168.125.179:62894 PA / Raw
+----------------------------------------
+12.6332	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:59074	192.168.125.213:53	17	74	Ether / IP / UDP / DNS Qry b'api.github.com.'
+----------------------------------------
+13.7712	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62897	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62897 > 20.50.73.10:https S
+----------------------------------------
+15.2861	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62901	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62901 > 20.50.73.10:https S
+----------------------------------------
+16.7421	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62895	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62895 > 20.50.73.10:https S
+----------------------------------------
+18.3068	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62901	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62901 > 20.50.73.10:https S
+----------------------------------------
+22.3138	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62901	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62901 > 20.50.73.10:https S
+----------------------------------------
+24.7532	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62895	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62895 > 20.50.73.10:https S
+----------------------------------------
+26.8540	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62898	20.50.73.10:443	6	66	Ether / IP / TCP 192.168.125.179:62898 > 20.50.73.10:https S
+----------------------------------------
+28.0357	Eroare: main thread is not in main loop	0.00%
+17	140.82.112.21:443	192.168.125.179:62902	6	66	Ether / IP / TCP 140.82.112.21:https > 192.168.125.179:62902 SA
+----------------------------------------
+29.5058	Eroare: main thread is not in main loop	0.00%
+17	192.168.125.179:62902	140.82.112.21:443	6	26408	Ether / IP / TCP 192.168.125.179:62902 > 140.82.112.21:https PA / Raw
+----------------------------------------

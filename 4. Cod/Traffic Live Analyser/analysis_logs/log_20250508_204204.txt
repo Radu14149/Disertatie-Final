@@ -1,0 +1,12 @@
+0.0020	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+0	192.168.1.1	192.168.1.2	tcp	discard	RSTO	0	0
+----------------------------------------
+3.1498	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+1	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+6.2674	Eroare: main thread is not in main loop	0.00%
+1	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+10.5977	Eroare: main thread is not in main loop	0.00%
+1	192.168.1.1	192.168.1.2	tcp	ftp	SF	145	501
+----------------------------------------

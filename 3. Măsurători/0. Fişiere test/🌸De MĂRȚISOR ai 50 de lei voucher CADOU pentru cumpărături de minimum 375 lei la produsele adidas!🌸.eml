@@ -1,0 +1,2575 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp1405572gdb;
+        Sat, 1 Mar 2025 00:20:41 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGTO/UNYPyaVmk+us04HME2dn0dJLkbLF8IU70Apeyb4UK3A5EKaGOpt2KmYIZHQFDadS29
+X-Received: by 2002:a17:907:86ac:b0:ab6:df79:f577 with SMTP id a640c23a62f3a-abf25d945c1mr664376266b.9.1740817241358;
+        Sat, 01 Mar 2025 00:20:41 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1740817241; cv=none;
+        d=google.com; s=arc-20240605;
+        b=XhEO+LGjQXr85f11lyil3kivfJtkVwd5oer3GTZrUCE9ktDB7AYschsj5teRKvSOhP
+         Mepbz30/Xttvf/XLmOeh6DVF5RFnuzu1Uk7YaIOG7wDrFV3p+Fu0GWt3ARdqUdsI0xdW
+         e9av+aEnqi8kPdqSW8UbUtWFVHx4w8CVDg+E4noi5Ua2qj/A/yrLs7M2E7DNyQ4yFNph
+         1soETp4BfpuqGe8JwON+9o4/96YXMO1qBTCdhkM/cP03S6YtTFkPGc6Qm9CmQ12rTPvr
+         Knz3kPO22makYYPbuxG9rUNJBoPMgn6/oFC6QlXHB6GCNPET8NFE2Qu1awUqihrlpsEx
+         RFQQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:feedback-id:list-unsubscribe:reply-to:errors-to:subject
+         :to:from:date:content-transfer-encoding:mime-version:dkim-signature;
+        bh=7rkbN2HNv4bXZtaB6B90ED8sV6Thx//3dWNjjvPcB8s=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=bTbLUfSJNU1CcX7S16slxv2pVcUCnIBk+7qJQC1euEqTOJ7Qqw/Bz88ycDip0YGOp4
+         MyZb67av3/0NPRA2m3IGT+haiHKSjN7VPTXo2lF7vgMs79ZBh4Oic8eHgVov9EHe4BEs
+         kbIM7N9e8hFFONtqwOzo5CR+eU7xVJy/j88ZLciaPBa21sWk0Ac23ikcLzlWLNSAw2Cl
+         Cq8F4ShAufWv+aUTw9L4VMogQQ4T1iNXK5yyPVbo4EhNCaYqkrHJrvjp4OhFqkm7O7k/
+         xb5CVZ69397jgD8SU85vrp/S9T5T7I39mUqvyxJicQbmZjS7p+OuxFw1jk/91LMgz8qP
+         BNew==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@intersport.ro header.s=cp1 header.b=ehp5k5U5;
+       spf=softfail (google.com: domain of transitioning bounces_85639784.1880310@bounces.cpigsv32.com does not designate 108.181.58.140 as permitted sender) smtp.mailfrom=bounces_85639784.1880310@bounces.cpigsv32.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=intersport.ro
+Return-Path: <bounces_85639784.1880310@bounces.cpigsv32.com>
+Received: from s140.bl140.cpigsv32.com (s140.bl140.cpigsv32.com. [108.181.58.140])
+        by mx.google.com with ESMTPS id a640c23a62f3a-abf5419ad8fsi82943366b.561.2025.03.01.00.20.41
+        for <radu.25201@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 01 Mar 2025 00:20:41 -0800 (PST)
+Received-SPF: softfail (google.com: domain of transitioning bounces_85639784.1880310@bounces.cpigsv32.com does not designate 108.181.58.140 as permitted sender) client-ip=108.181.58.140;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@intersport.ro header.s=cp1 header.b=ehp5k5U5;
+       spf=softfail (google.com: domain of transitioning bounces_85639784.1880310@bounces.cpigsv32.com does not designate 108.181.58.140 as permitted sender) smtp.mailfrom=bounces_85639784.1880310@bounces.cpigsv32.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=intersport.ro
+Received: from localhost.localdomain (s140.bl140.cpigsv32.com [108.181.58.140])
+	by s140.bl140.cpigsv32.com (Postfix) with ESMTP id 181C987
+	for <radu.25201@gmail.com>; Sat,  1 Mar 2025 10:20:41 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=intersport.ro; s=cp1;
+	t=1740817241; bh=7rkbN2HNv4bXZtaB6B90ED8sV6Thx//3dWNjjvPcB8s=;
+	h=Date:From:To:Subject:Reply-To:List-Unsubscribe:From;
+	b=ehp5k5U5xPMgztdyR0oyROFKAxSWO9vhEIu+Kj67651dFznxa9AmKnm3MCl2eSbLZ
+	 0wINZSGZWli2u+aQXGIXvIqoDVs0sqkuECsZ/v4NRfv4LmENiaxW2+Sel0DdRCxOMK
+	 NL2HtjiOtwLeiItsS3n9ADUFIDsCb6eCiCTtW63s=
+MIME-Version: 1.0
+Content-Transfer-Encoding: binary
+Content-Type: multipart/alternative; boundary="_----------=_174081724129495421730"; charset="UTF-8"
+Date: Sat, 1 Mar 2025 10:20:41 +0200
+From: =?UTF-8?B?SW50ZXJzcG9ydA==?= <newletters@intersport.ro>
+To: radu.25201@gmail.com
+Subject: =?UTF-8?B?8J+MuERlIE3EglLImklTT1IgYWkgNTAgZGUgbGVpIHZvdWNoZXIgQ0FET1UgcGVudHJ1IGN1bXDEg3LEg3R1cmkgZGUgbWluaW11bSAzNzUgbGVpIGxhIHByb2R1c2VsZSBhZGlkYXMh8J+MuA==?=
+Errors-To: bounces_85639784.1880310@bounces.cpigsv32.com
+X-Return-Path-Hint: bounces_85639784.1880310@bounces.cpigsv32.com
+Reply-To: =?UTF-8?B?SW50ZXJzcG9ydA==?= <newletters@intersport.ro>
+List-Unsubscribe: <https://do.contactpigeon.com/apps/en/stem/unsubscribe.html/?emid=1880310&em=radu.25201@gmail.com&crid=85639784&scid=2510>
+X-List-Unsubscribe: <https://do.contactpigeon.com/apps/en/stem/unsubscribe.html/?emid=1880310&em=radu.25201@gmail.com&crid=85639784&scid=2510>
+X-Unsubscribe-Web: <https://do.contactpigeon.com/apps/en/stem/unsubscribe.html/?emid=1880310&em=radu.25201@gmail.com&crid=85639784&scid=2510>
+X-Auto-Response-Suppress: OOF, AutoReply
+Feedback-Id: 1880310:85639784:do._bk:s2024s2510
+X-Mailer: contactpigeon.com Mailer v0.9.7
+Message-Id: <20250301082041.181C987@s140.bl140.cpigsv32.com>
+
+This is a multi-part message in MIME format.
+
+--_----------=_174081724129495421730
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+ Aplic=C4=83 acum codul ADIDAS50 =C8=99i coloreaz=C4=83-=C8=9Bi =C8=9Binuta=
+ de prim=C4=83var=C4=83! Femei B=C4=83rba=C8=9Bi Copii Cost livrare =C3=AEn=
+ Easybox sau Fanbox cu doar 10 lei. Transport gratuit la tine acas=C4=83 pe=
+ntru comenzi de peste 250 de lei. DESOPERA SELECTIA DE PRODUSE ADIDAS adida=
+s HANORAC FZ W Z.N.E. FZ 549.99 LEI CUMPARA adidas HANORAC FZ W Z.N.E. FZ 5=
+49.99 LEI CUMPARA adidas HANORAC FZ W Z.N.E. FZ roz pal 549.99 LEI CUMPARA =
+adidas PANTALONI W Z.N.E.PT 449.99 LEI CUMPARA adidas PANTALONI W Z.N.E. PT=
+ 449.99 LEI CUMPARA adidas PANTALONI W Z.N.E. PT 449.99 LEI CUMPARA adidas =
+HANORAC FARM TIRO TT 324.99 LEI CUMPARA adidas JACHETA Femei OTR B CB JKT 3=
+99.99 LEI CUMPARA adidas MAIOU dama FARM TRN TANK 199.99 LEI CUMPARA adidas=
+ PANTALONI FARM TIRO TP 324.99 LEI CUMPARA adidas COLANTI dama FARM LEGGING=
+S 299.99 LEI CUMPARA adidas COLANTI dama FARM LEGGINGS 299.99 LEI CUMPARA a=
+didas Pantofi sport dama AlphaBounce + 499.99 LEI CUMPARA adidas PANTOFI DU=
+RAMO SPEED W 449.99 LEI CUMPARA adidas PANTOFI ULTRABOOST 5 W 899.99 LEI CU=
+MPARA adidas PANTOFI TERREX SOULSTRIDE FLOW W 699.99 LEI CUMPARA adidas PAN=
+TOFI dama ALPHABOOST V2 W 599.99 LEI CUMPARA adidas PANTOFI dama ULTRABOOST=
+ 5 W 899.99 LEI CUMPARA Rezervare =C3=AEn magazine Rezervare gratuit=C4=83=
+=C2=A0=C3=AEn cele 37 de magazine ale noastre Livrare gratuit=C4=83 la adre=
+sa ta Pentru toate comenzile online de peste 250 lei Retur =C8=99i schimb g=
+ratuite =C3=8En cele 37 de magazine ale noastre Livrare cu doar 10 lei =C3=
+=AEn Easybox =C8=99i Fanbox Facebook LinkedIn Instagram YouTube Dezaboneaz=
+=C4=83-te Deschide =C3=AEn browser=20
+
+--_----------=_174081724129495421730
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title></title><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width" initial-scale=3D"1.0=
+" user-scalable=3D"yes"><meta http-equiv=3D"Content-Type" content=3D"text/h=
+tml; charset=3Dutf-8"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D=
+edge"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
+e=3D1"></head><body style=3D"cursor: auto;"><img style=3D"display:none !imp=
+ortant; width:1px; height:1px;" src=3D"https://go.contactpigeon.com/redir/i=
+huWsurgm1/e/85639784/ei/1880310/image/im.jpg" alt=3D"" height=3D1 width=3D1=
+ border=3D"0" title=3D"=CE=B9"/><style>a{text-decoration: none;}body{font:1=
+4px/1.5 Arial,Helvetica,sans-serif;margin:0;padding:0;-webkit-text-size-adj=
+ust:100%;-ms-text-size-adjust:100%}=0D
+@media screen and (max-device-width:600px),screen and (max-width:600px){tab=
+le.main,td.main{width:100%!important;}td.block-text h2{font-size:20px!impor=
+tant;line-height:170%!important}td.block-text p{line-height:170%!important}=
+td.block-text li{line-height:170%!important}td.two-columns{padding-left:25p=
+x!important;padding-right:25px!important}td.image img{width:100%!important;=
+height:auto!important;box-sizing:border-box}.givemeid{border:0;display:bloc=
+k;margin:0 auto 15px;width:100%!important;max-width:none!important}.allowch=
+ild{display:block!important;margin:0px auto;width:100%}.mobile-full img{hei=
+ght:auto!important;box-sizing:border-box}}</style><style class=3D"linkcolor=
+"> #primary a { color:#c91926;}</style><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size: 14px; font-family: Arial, Helvetica=
+, sans-serif; background: transparent; color: rgb(0, 0, 0);" width=3D"100%"=
+><tbody><tr><td align=3D"center" class=3D"main demo" id=3D"primary" style=
+=3D"min-height: 896px; color: rgb(0, 0, 0);" valign=3D"top" width=3D"100%">=
+<div style=3D"font-size:0px;visibility:hidden;overflow:hidden;float:left;di=
+splay:none;line-height:0px;" class=3D"previewtext">Aplic=C4=83 acum codul A=
+DIDAS50 =C8=99i coloreaz=C4=83-=C8=9Bi =C8=9Binuta de prim=C4=83var=C4=83!<=
+/div><div class=3D"column"><!-- default element text --><div class=3D"lyrow=
+" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfi=
+x"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <di=
+v class=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical=
+-align: top; width: 100%; background-color: rgb(243, 243, 243); overflow: h=
+idden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-=
+-><table class=3D"main" style=3D"border: 0px; background-color: rgb(243, 24=
+3, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica, san=
+s-serif; display: table; min-width: 100% !important;" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"spacer" id=3D"39b=
+08db8-fe08-4d46-5360-178525930a23" width=3D"640"> <tbody> <tr> <td class=3D=
+"spacer-simple" style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0)=
+;"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"min-width:100% !important; width:100% !important"> <tbody> <tr> <t=
+d id=3D"spaceman" width=3D"100%" height=3D"12" style=3D"width: 640px; font-=
+size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr=
+> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[i=
+f mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyro=
+w" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearf=
+ix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <d=
+iv class=3D"mobile-full" style=3D"display: block; max-width: 640px; width: =
+100%; background-color: rgb(243, 243, 243); overflow: hidden;"><!--[if mso]=
+><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" w=
+idth=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <table class=3D"ma=
+in" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14=
+px; background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; f=
+ont-family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !=
+important;" data-type=3D"image" id=3D"b060d199-6ab2-f6ae-9f3f-6ea968007653"=
+ width=3D"640"> <tbody> <tr> <td align=3D"center" style=3D"padding: 0px 15p=
+x; width: 400px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"image oneb=
+efore" id=3D"ed533c26-0b2d-3e6b-da5d-f1367bc78219"> <a class=3D"link" href=
+=3D"https://go.contactpigeon.com/redir/85639784/71948116/" id=3D"1b22c0c9-b=
+43c-02b2-9f1d-9618935be5a9"> <img border=3D"0" style=3D"box-sizing: border-=
+box; display: block; max-width: 400px; width: 100%; padding: 0px;" alt=3D"i=
+mage" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510/1677=
+147980_69259_1677148016.png" putwidth=3D"400" haspadding=3D"1" realdimensio=
+ns=3D"400x51" tabindex=3D"0" id=3D"eb95f981-3e2a-dbe8-25ef-76c9eac0a390" wi=
+dth=3D"400"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td></tr></ta=
+ble><![endif]--></div><!--[if mso]></td></tr></table><![endif]--></div> </d=
+iv> </div><div class=3D"lyrow" style=3D"display: block;"> <div class=3D"vie=
+w"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"spacer" id=3D"aaffda7a-adf2-14b3-9db0-ab90d8f47067" width=3D"64=
+0"> <tbody> <tr> <td class=3D"spacer-simple" style=3D"width: 640px; font-si=
+ze: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" style=3D"min-width:100% !important; width:100%=
+ !important"> <tbody> <tr> <td id=3D"spaceman" width=3D"100%" height=3D"6" =
+style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> =
+</tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></tab=
+le><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </d=
+iv> </div><div class=3D"lyrow" data-code=3D"colsettings" style=3D"display: =
+block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D=
+"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width=
+:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: =
+block; max-width: 640px; vertical-align: top; width: 100%; background-color=
+: rgb(243, 243, 243); overflow: hidden;"><table class=3D"main" style=3D"bor=
+der-collapse: collapse; text-align: center; background: rgb(243, 243, 243);=
+ width: 640px; max-width: 640px; display: table; font-family: Arial, Helvet=
+ica, sans-serif;" data-type=3D"multiculti" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" align=3D"center" id=3D"ca80eb56-c496-3ae7-a784-256a79d0f61=
+6" width=3D"640"><!--[if mso]><tbody><tr><![endif]--><tbody><tr class=3D"ly=
+row displaytable" align=3D"center" style=3D"display: block;"><td style=3D"w=
+idth: 640px; font-size: 14px; color: rgb(0, 0, 0);"><div style=3D"font-size=
+: 14px; display: inline-block; background-position: center top; vertical-al=
+ign: top; float: left; max-width: 213px; height: auto; background-color: rg=
+b(243, 243, 243); width: 33.2812% !important; min-width: 10px !important; o=
+verflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" width=3D"=
+213" id=3D"e1062569-d9d3-f17c-4bc5-013df584fba5"><div class=3D"lyrow" style=
+=3D"display: block; position: relative; opacity: 1; left: 0px; top: 0px;"><=
+div class=3D"view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"wi=
+dth: 213px; vertical-align: top;"><![endif]--><div class=3D"mobile-full" st=
+yle=3D"display: block; max-width: 213px; vertical-align: top; width: 100%; =
+background-color: rgb(243, 243, 243); overflow: hidden;"><table class=3D"ma=
+in" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=
+=3D"background-color: rgb(243, 243, 243); width: 213px; font-family: Arial,=
+ Helvetica, sans-serif; display: table; min-width: 100% !important;" data-t=
+ype=3D"button" id=3D"c6c49590-efeb-f143-7138-1873ec67a1e1" width=3D"213"><t=
+body><tr align=3D"center"><td style=3D"padding: 8px 10px; font-size: 14px; =
+color: rgb(0, 0, 0);" class=3D"buttons-full-width" width=3D"213" id=3D"29b8=
+2b7e-cfa7-acc6-a1e8-d40dcf840464"><!--[if mso]><table align=3D"center" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"193" style=3D"width:1=
+93px;"><![endif]--><table class=3D"button" style=3D"" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100" style=3D"width:100px;"><![endif]--><td style=3D"text-align: center; f=
+ont-family: Cabin, Avenir, sans-serif; white-space: nowrap; background-colo=
+r: rgb(0, 63, 152); margin: 0px; width: 100px; padding: 8px 10px; border-ra=
+dius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset; font-size=
+: 14px; color: rgb(0, 0, 0);" class=3D"button" btn-style=3D"btn-shadow" btn=
+bc=3D"rgb(0, 63, 152)" id=3D"11dd07c3-ba8e-4851-e836-55f8af97f0e3"><a style=
+=3D"white-space: nowrap; font-family: Cabin, Avenir, sans-serif; padding: 1=
+5px; color: rgb(255, 255, 255); font-size: 11px; text-align: center; text-d=
+ecoration: none; font-weight: bold;" class=3D"button-1" href=3D"https://go.=
+contactpigeon.com/redir/85639784/71948117/" btn-style=3D"btn-flat" data-def=
+ault=3D"1" id=3D"f875a05a-c3e4-1ba6-0d73-a5725394879c">Femei </a></td><!--[=
+if mso]></table><![endif]--></tr></tbody></table><!--[if mso]></table><![en=
+dif]--></td></tr></tbody></table></div><!-- [if mso]></td><![endif] --></di=
+v></div></div></div><div style=3D"font-size: 14px; display: inline-block; b=
+ackground-position: center top; vertical-align: top; float: left; max-width=
+: 213px; height: auto; background-color: rgb(243, 243, 243); width: 33.2812=
+% !important; min-width: 10px !important; overflow: hidden;" valign=3D"top"=
+ class=3D"mobile-full allowchild" width=3D"213"><div class=3D"lyrow" style=
+=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix"><!--[i=
+f mso]><td style=3D"width: 213px; vertical-align: top;"><![endif]--><div cl=
+ass=3D"mobile-full" style=3D"display: block; max-width: 213px; vertical-ali=
+gn: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidde=
+n;"><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+align=3D"center" style=3D"background-color: rgb(243, 243, 243); width: 213p=
+x; font-family: Arial, Helvetica, sans-serif; display: table; min-width: 10=
+0% !important;" data-type=3D"button" id=3D"8d6f4e18-cf01-f184-e4a0-4474b7a0=
+2e35" width=3D"213"><tbody><tr align=3D"center"><td style=3D"padding: 8px 1=
+0px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"buttons-full-width" wi=
+dth=3D"213" id=3D"50d8fdeb-112f-5cff-84ae-9af8d4734809"><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"193" style=3D"width:193px;"><![endif]--><table class=3D"button" style=3D""=
+ cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"><tbody><=
+tr><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"100" style=3D"width:100px;"><![endif]--><td style=3D=
+"text-align: center; font-family: Cabin, Avenir, sans-serif; white-space: n=
+owrap; background-color: rgb(0, 63, 152); margin: 0px; width: 100px; paddin=
+g: 8px 10px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0p=
+x 0px inset; font-size: 14px; color: rgb(0, 0, 0);" class=3D"button" btn-st=
+yle=3D"btn-shadow" btnbc=3D"rgb(0, 63, 152)" id=3D"3e793ec7-21e7-40b2-45fa-=
+ff4b70c0d290"><a style=3D"white-space: nowrap; font-family: Cabin, Avenir, =
+sans-serif; padding: 15px; color: rgb(255, 255, 255); font-size: 11px; text=
+-align: center; text-decoration: none; font-weight: bold;" class=3D"button-=
+1" href=3D"https://go.contactpigeon.com/redir/85639784/71948120/" btn-style=
+=3D"btn-flat" data-default=3D"1" id=3D"a3bccd43-6c09-5ee6-73e3-3258f54f475d=
+">B=C4=83rba=C8=9Bi </a></td><!--[if mso]></table><![endif]--></tr></tbody>=
+</table><!--[if mso]></table><![endif]--></td></tr></tbody></table></div><!=
+-- [if mso]></td><![endif] --></div></div></div></div><div style=3D"font-si=
+ze: 14px; display: inline-block; background-position: center top; vertical-=
+align: top; float: left; max-width: 213px; height: auto; background-color: =
+rgb(243, 243, 243); width: 33.2812% !important; min-width: 10px !important;=
+ overflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" width=
+=3D"213"><div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"=
+><div class=3D"row clearfix"><!--[if mso]><td style=3D"width: 213px; vertic=
+al-align: top;"><![endif]--><div class=3D"mobile-full" style=3D"display: bl=
+ock; max-width: 213px; vertical-align: top; width: 100%; background-color: =
+rgb(243, 243, 243); overflow: hidden;"><table class=3D"main" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=3D"background-col=
+or: rgb(243, 243, 243); width: 213px; font-family: Arial, Helvetica, sans-s=
+erif; display: table; min-width: 100% !important;" data-type=3D"button" id=
+=3D"b36dc466-1b0e-8762-22f5-ec0a2cc679c2" width=3D"213"><tbody><tr align=3D=
+"center"><td style=3D"padding: 8px 10px; font-size: 14px; color: rgb(0, 0, =
+0);" class=3D"buttons-full-width" width=3D"213" id=3D"7b66b517-3413-41b4-39=
+5e-95e8b0a8c6a6"><!--[if mso]><table align=3D"center" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"193" style=3D"width:193px;"><![endif]-=
+-><table class=3D"button" style=3D"" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100" style=3D"wi=
+dth:100px;"><![endif]--><td style=3D"text-align: center; font-family: Cabin=
+, Avenir, sans-serif; white-space: nowrap; background-color: rgb(0, 63, 152=
+); margin: 0px; width: 100px; padding: 8px 10px; border-radius: 6px; box-sh=
+adow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset; font-size: 14px; color: rg=
+b(0, 0, 0);" class=3D"button" btn-style=3D"btn-shadow" btnbc=3D"rgb(0, 63, =
+152)" id=3D"350acff2-152c-d4dc-8094-10fed2e9eab2"><a style=3D"white-space: =
+nowrap; font-family: Cabin, Avenir, sans-serif; padding: 15px; color: rgb(2=
+55, 255, 255); font-size: 11px; text-align: center; text-decoration: none; =
+font-weight: bold;" class=3D"button-1" href=3D"https://go.contactpigeon.com=
+/redir/85639784/71948128/" btn-style=3D"btn-flat" data-default=3D"1" id=3D"=
+fa5eb6da-6261-1601-7a0e-48489e3fd60a">Copii </a></td><!--[if mso]></table><=
+![endif]--></tr></tbody></table><!--[if mso]></table><![endif]--></td></tr>=
+</tbody></table></div><!-- [if mso]></td><![endif] --></div></div></div></d=
+iv></td></tr></tbody><!--[if mso]></td></tr></tbody><![endif]--></table></d=
+iv><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div clas=
+s=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; left: =
+0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if m=
+so]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"m=
+obile-full" style=3D"display: block; max-width: 640px; vertical-align: top;=
+ width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"> <!-=
+-[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table cla=
+ss=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243); wid=
+th: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; dis=
+play: table; min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"248=
+58cfb-d30f-6e2c-f456-eac368396b50"> <tbody> <tr> <td class=3D"divider-simpl=
+e" style=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <tab=
+le width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D=
+"border-top: 1px solid rgb(0, 0, 0); min-width: 100% !important; width: 100=
+% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; c=
+olor: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </=
+table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td><=
+/tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" data-code=
+=3D"colsettings" style=3D"display: block;"> <div class=3D"view"> <div class=
+=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><=
+![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: =
+640px; vertical-align: top; width: 100%; background-color: rgb(255, 255, 25=
+5); overflow: hidden;"><table class=3D"main" style=3D"border-collapse: coll=
+apse; text-align: center; background: rgb(255, 255, 255); width: 640px; max=
+-width: 640px; display: table; font-family: Arial, Helvetica, sans-serif;" =
+data-type=3D"multiculti" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" a=
+lign=3D"center" id=3D"e9c64d9e-9082-38f3-2a68-04de3c47b32d" width=3D"640"><=
+!--[if mso]><tbody><tr><![endif]--><tbody><tr class=3D"lyrow displaytable" =
+align=3D"center" style=3D"display: block;"><td style=3D"width: 640px; font-=
+size: 14px; color: rgb(0, 0, 0);"><div style=3D"font-size: 14px; display: i=
+nline-block; background-position: center top; vertical-align: top; float: l=
+eft; max-width: 320px; height: auto; background-color: rgb(255, 255, 255); =
+width: 50% !important; min-width: 10px !important; overflow: hidden;" valig=
+n=3D"top" class=3D"mobile-full allowchild" width=3D"320" id=3D"0bd44f06-38c=
+a-5ebb-ab43-98ff12cb8ef2"><div class=3D"lyrow" style=3D"display: block;"><d=
+iv class=3D"view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"wid=
+th: 320px; vertical-align: top;"><![endif]--><div class=3D"mobile-full" sty=
+le=3D"display: block; max-width: 320px; vertical-align: top; width: 100%; b=
+ackground-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"320" style=3D"width:320px;"><tr><td style=3D"padding: 0;"><![endif]--><tab=
+le class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D=
+"font-size: 14px; background-color: rgb(255, 255, 255); width: 320px; text-=
+align: center; font-family: Arial, Helvetica, sans-serif; display: table; m=
+in-width: 100% !important;" data-type=3D"text-block" id=3D"cb568c39-546a-db=
+d4-f53b-142b4bb68888" width=3D"320"><tbody><tr><td class=3D"block-text" dat=
+a-clonable=3D"true" style=3D"padding: 10px 20px; font-size: 14px; color: rg=
+b(0, 0, 0);" width=3D"320"><div id=3D"f76d44c9-d9be-0f1d-b7db-a51a816c49b6"=
+>Cost livrare =C3=AEn Easybox sau <span style=3D"color: #000000;">Fanbox </=
+span>cu doar 10 lei.</div></td></tr></tbody></table><!--[if mso]></td></tr>=
+</table><![endif]--></div><!-- [if mso]></td><![endif] --></div></div></div=
+></div><div style=3D"font-size: 14px; display: inline-block; background-pos=
+ition: center top; vertical-align: top; float: left; max-width: 320px; heig=
+ht: auto; background-color: rgb(255, 255, 255); width: 50% !important; min-=
+width: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-f=
+ull allowchild" width=3D"320"><div class=3D"lyrow" style=3D"display: block;=
+"><div class=3D"view"><div class=3D"row clearfix"><!--[if mso]><td style=3D=
+"width: 320px; vertical-align: top;"><![endif]--><div class=3D"mobile-full"=
+ style=3D"display: block; max-width: 320px; vertical-align: top; width: 100=
+%; background-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><t=
+able align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" widt=
+h=3D"320" style=3D"width:320px;"><tr><td style=3D"padding: 0;"><![endif]-->=
+<table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"font-size: 14px; background-color: rgb(255, 255, 255); width: 320px; t=
+ext-align: center; font-family: Arial, Helvetica, sans-serif; display: tabl=
+e; min-width: 100% !important;" data-type=3D"text-block" id=3D"5624e2fe-f10=
+9-0736-fb3e-a5888dc48c0b" width=3D"320"><tbody><tr><td class=3D"block-text"=
+ data-clonable=3D"true" style=3D"padding: 10px 20px; font-size: 14px; color=
+: rgb(0, 0, 0);" width=3D"320"><div id=3D"4116d9e6-b1e6-18bd-1a15-d868c1c09=
+125">Transport gratuit la tine acas=C4=83 pentru comenzi de peste 250 de le=
+i.</div></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]-=
+-></div><!-- [if mso]></td><![endif] --></div></div></div></div></td></tr><=
+/tbody><!--[if mso]></td></tr></tbody><![endif]--></table></div><!--[if mso=
+]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" st=
+yle=3D"display: block; position: relative; opacity: 1; left: 0px; top: 0px;=
+"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table ali=
+gn=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640=
+" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" st=
+yle=3D"display: block; max-width: 640px; vertical-align: top; width: 100%; =
+background-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" s=
+tyle=3D"border: 0px; background-color: rgb(243, 243, 243); width: 640px; ma=
+x-width: 640px; font-family: Arial, Helvetica, sans-serif; display: table; =
+min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"fd39c625-b03e-66=
+ba-3b54-167056e91324"> <tbody> <tr> <td class=3D"divider-simple" style=3D"p=
+adding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"1=
+00%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: =
+1px solid rgb(0, 0, 0); min-width: 100% !important; width: 100% !important;=
+"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, =
+0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if=
+ mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><=
+![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block=
+;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table al=
+ign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"64=
+0" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" s=
+tyle=3D"display: block; max-width: 640px; width: 100%; background-color: rg=
+b(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"widt=
+h:640px;"><tr><td><![endif]--> <table class=3D"main" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(=
+255, 255, 255); width: 640px; max-width: 640px; font-family: Arial, Helveti=
+ca, sans-serif; display: table; min-width: 100% !important;" data-type=3D"i=
+mage" id=3D"4ca9179d-53d7-e0a2-d18e-42f159629798" width=3D"640"> <tbody> <t=
+r> <td align=3D"center" style=3D"padding: 0px; width: 640px; font-size: 14p=
+x; color: rgb(0, 0, 0);" class=3D"image onebefore"> <a class=3D"link" href=
+=3D"https://go.contactpigeon.com/redir/85639784/71948124/"> <img border=3D"=
+0" style=3D"box-sizing: border-box; display: block; max-width: 640px; width=
+: 100%;" alt=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/uploa=
+d/files/2510/1727256163_32507.jpg" putwidth=3D"640" haspadding=3D"0" realdi=
+mensions=3D"640x100" tabindex=3D"0" id=3D"dfbe02db-caba-66b5-405a-1b2c3b562=
+616" width=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td></=
+tr></table><![endif]--></div><!--[if mso]></td></tr></table><![endif]--></d=
+iv> </div> </div><div class=3D"lyrow" style=3D"display: block; position: re=
+lative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=
+=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><=
+![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: =
+640px; vertical-align: top; width: 100%; background-color: rgb(243, 243, 24=
+3); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr=
+><td><![endif]--><table class=3D"main" style=3D"border: 0px; background-col=
+or: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial,=
+ Helvetica, sans-serif; display: table; min-width: 100% !important;" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"li=
+ne" width=3D"640" id=3D"a08727b5-46d7-fcbf-c33b-9ce7c97d8f6a"> <tbody> <tr>=
+ <td class=3D"divider-simple" style=3D"padding: 5px 40px; font-size: 14px; =
+color: rgb(0, 0, 0);" id=3D"cea6adb1-91fc-f589-e798-aa9c8680251c"> <table w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"bor=
+der-top: 1px solid rgba(0, 0, 0, 0); min-width: 100% !important; width: 100=
+% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; c=
+olor: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </=
+table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td><=
+/tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"d=
+isplay: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if m=
+so]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"m=
+obile-full" style=3D"display: block; max-width: 640px; width: 100%; backgro=
+und-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" =
+style=3D"width:640px;"><tr><td><![endif]--> <table class=3D"main" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; backgroun=
+d-color: rgb(255, 255, 255); width: 640px; max-width: 640px; font-family: A=
+rial, Helvetica, sans-serif; display: table; min-width: 100% !important;" d=
+ata-type=3D"image" id=3D"a6498740-34d7-9c5d-9385-2c8488df3d03" width=3D"640=
+"> <tbody> <tr> <td align=3D"center" style=3D"padding: 0px; width: 640px; f=
+ont-size: 14px;" class=3D"image onebefore"> <a class=3D"link" href=3D"https=
+://go.contactpigeon.com/redir/85639784/71948127/"> <img border=3D"0" style=
+=3D"box-sizing: border-box; display: block; max-width: 640px; width: 100%;"=
+ alt=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/=
+2510/1740794333_15320.jpg" putwidth=3D"640" haspadding=3D"0" realdimensions=
+=3D"640x420" tabindex=3D"0" id=3D"7739e643-97ab-5f40-6383-bffab16b53f3" wid=
+th=3D"640"> </a> </td> </tr> </tbody> </table> <!--[if mso]></td></tr></tab=
+le><![endif]--></div><!--[if mso]></td></tr></table><![endif]--></div> </di=
+v> </div><div class=3D"lyrow" style=3D"display: block; position: relative; =
+opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row c=
+learfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-=
+-> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; ve=
+rtical-align: top; width: 100%; background-color: rgb(243, 243, 243); overf=
+low: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![e=
+ndif]--><table class=3D"main" style=3D"border: 0px; background-color: rgb(2=
+43, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetic=
+a, sans-serif; display: table; min-width: 100% !important;" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=
+=3D"640" id=3D"5b4d4923-9a5c-ff6b-286e-3cc0d3ef2d9f"> <tbody> <tr> <td clas=
+s=3D"divider-simple" style=3D"padding: 0px 40px 5px; font-size: 14px; color=
+: rgb(0, 0, 0);" id=3D"ca0650e3-67e9-10cc-6c6c-113ad8a97069"> <table width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-=
+top: 1px solid rgba(0, 0, 0, 0); min-width: 100% !important; width: 100% !i=
+mportant;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color=
+: rgb(0, 0, 0);" id=3D"7ee29804-287b-a500-e737-b3a98ddb193d"> </td> </tr> <=
+/tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></tabl=
+e><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </di=
+v> </div><div class=3D"lyrow" style=3D"display: block; position: relative; =
+opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row c=
+learfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-=
+-> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; ve=
+rtical-align: top; width: 100%; background-color: rgb(133, 84, 227); overfl=
+ow: hidden;"> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" align=3D"center" style=3D"background-color: rgb(133, 84, 227); ma=
+x-width: 640px; width: 640px; font-family: Arial, Helvetica, sans-serif; di=
+splay: table; min-width: 100% !important;" data-type=3D"button" width=3D"64=
+0" id=3D"84ccd6a7-70fd-e782-1552-9cef5f5d78aa"> <tbody> <tr align=3D"center=
+"> <td style=3D"padding: 8px 10px; font-size: 14px;" class=3D"buttons-full-=
+width" id=3D"b6810bc4-649b-f949-fcc7-d94604c49ed2"> <!--[if mso]><table ali=
+gn=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"620=
+" style=3D"width:620px;"><![endif]--><table class=3D"button" style=3D"" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"> <tbody> <tr=
+> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"356" style=3D"width:356px;"><![endif]--><td style=3D"=
+text-align: center; font-family: Arial; white-space: nowrap; background-col=
+or: rgb(221, 149, 127); margin: 0px; width: 102px; padding: 8px 10px; borde=
+r-radius: 6px; font-size: 14px;" class=3D"button" btn-style=3D"btn-flat" bt=
+nbc=3D"#DD957F"> <a style=3D"white-space: nowrap; font-family: Arial; paddi=
+ng: 15px; color: rgb(255, 255, 255); font-size: 15px; text-align: center; t=
+ext-decoration: none; font-weight: bold;" class=3D"button-1" href=3D"https:=
+//go.contactpigeon.com/redir/85639784/71948127/" btn-style=3D"btn-flat" dat=
+a-default=3D"1" id=3D"5750dc41-085b-15c1-dad1-f2bb136bedce">DESOPERA SELECT=
+IA DE PRODUSE ADIDAS</a> </td><!--[if mso]></table><![endif]--> </tr> </tbo=
+dy> </table><!--[if mso]></table><![endif]--> </td> </tr> </tbody> </table>=
+ </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div =
+class=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; le=
+ft: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[=
+if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"=
+> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tabl=
+e class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=
+=3D"16868dd6-47e3-5ea2-39d4-8a843e00dedd"> <tbody> <tr> <td class=3D"divide=
+r-simple" style=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);=
+"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" s=
+tyle=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 100% !important; =
+width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-siz=
+e: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> <=
+/tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if m=
+so]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow p=
+roducts" data-code=3D"_AC_PROD_" style=3D"display: block;"> <div class=3D"v=
+iew"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:6=
+40px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bl=
+ock; max-width: 640px; vertical-align: top; width: 100%; background-color: =
+rgb(221, 149, 127); overflow: hidden;"><table class=3D"main" style=3D"borde=
+r-collapse: collapse; text-align: center; background: rgb(221, 149, 127); w=
+idth: 640px; max-width: 640px; display: table; font-family: Arial, Helvetic=
+a, sans-serif;" data-type=3D"productgrid" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" align=3D"center" id=3D"805a2899-2c9e-f9a8-9d7d-dd270f85a6e5=
+" width=3D"640"><tbody><tr class=3D"lyrow displaytable"><td style=3D"width:=
+ 640px; font-size: 14px;" width=3D"640"> <!--[if mso]><td style=3D"width:20=
+3px; vertical-align: top;"><![endif]--><div class=3D"mobile-full givemeid" =
+style=3D"display: inline-block; vertical-align: top; width: 203px; max-widt=
+h: 203px; background-color: rgb(255, 255, 255); overflow: hidden;"> <div cl=
+ass=3D"row"><div class=3D"mobile-full" style=3D"display: block; max-width: =
+203px; vertical-align: top; width: 100%; margin: 0px auto; background-color=
+: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"cente=
+r" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"203" style=3D"=
+width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203" valign=3D"top"=
+ style=3D"width:203px;"><![endif]--><table class=3D"main" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct=
+" style=3D"overflow: hidden; background-color: rgb(255, 255, 255); width: 2=
+03px; font-family: Arial, Helvetica, sans-serif; display: table;" id=3D"3c4=
+46c8b-586a-e5a4-668e-33bf26a6308f" width=3D"203" data-templid=3D"460" itemu=
+sedid=3D"1938027987"><tbody><tr><td align=3D"center" class=3D"foredit" styl=
+e=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"wi=
+dth:100%;"><tr><td><![endif]--><table class=3D"layout_element clickement" s=
+tyle=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto=
+; background-color: #dd957f; border: 0px solid #dd957f;" border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=
+=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 203px;" width=
+=3D"203"><table class=3D"clickement title_element" style=3D"z-index: 999999=
+99; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"cpT=
+extContent" style=3D"text-align: center; padding: 0 9px 0 9px;" align=3D"ce=
+nter"><span style=3D"font-size: 14px; font-family: Arial; color: #ffffff; f=
+ont-weight: bold; font-style: normal;"><a style=3D"color: #ffffff; width: 1=
+00%; padding: 5px 5px; text-decoration: none;" href=3D"https://go.contactpi=
+geon.com/redir/85639784/71948132/"> adidas HANORAC FZ W Z.N.E. FZ</a></span=
+></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"widt=
+h: 203px;" width=3D"203"><table class=3D"clickement image_element" style=3D=
+"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"cent=
+er"><tbody><tr><td style=3D"width: 85%; height: 170px;" align=3D"center" va=
+lign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/85639784/7194=
+8132/" target=3D"_blank" rel=3D"noopener"><img id=3D"bda1f76c-9b58-1b50-3e9=
+8-7dd972a79c25" style=3D"width: 85%; max-width: 172.8px; border: 10px solid=
+ rgb(133, 84, 227);" src=3D"https://www.intersport.ro/Uploads/resources/431=
+808/hanorac-fz-w-z-n-e-fz-affiliate.jpg?lm=3D16268909" alt=3D"adidas HANORA=
+C FZ W Z.N.E. FZ" width=3D"172.8" data-originalsrc=3D"https://www.interspor=
+t.ro/Uploads/resources/431808/hanorac-fz-w-z-n-e-fz-affiliate.jpg?lm=3D1626=
+8909"></a></td></tr></tbody></table></td></tr><tr style=3D"height: 50px;" a=
+lign=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"c=
+lickement price_element" style=3D"width: 100%; height: 60px;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=
+=3D"text-align: center; font-size: 14px; font-family: Arial; color: white; =
+font-weight: normal; font-style: normal; width: 640px;" align=3D"center"><s=
+pan style=3D"font-size: 14px; font-family: Arial; color: white; font-weight=
+: normal; font-style: normal;">549.99 LEI</span></td></tr></tbody></table><=
+/td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><!-=
+- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif]--><table c=
+lass=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]=
+--><td class=3D"button" style=3D"background: url() center; background-repea=
+t: no-repeat; width: 102px; white-space: nowrap; margin: 0 auto; background=
+-color: #8554e3; border-radius: 5px; padding: 8px 10px; text-align: center;=
+ font-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D"white=
+-space: nowrap; letter-spacing: normal; line-height: 100%; text-align: cent=
+er; font-weight: normal; color: white; font-style: normal; text-decoration:=
+ none; padding: 7px; display: inline-block; height: 100%;" title=3D"adidas =
+HANORAC FZ W Z.N.E. FZ" href=3D"https://go.contactpigeon.com/redir/85639784=
+/71948132/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso=
+]></table><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table>=
+<![endif]--></td></tr></tbody></table><!-- [if mso]></td></tr></table><![en=
+dif]--></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--=
+></div></div></div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D=
+"width:203px; vertical-align: top;"><![endif]--><div class=3D"mobile-full g=
+ivemeid" style=3D"display: inline-block; vertical-align: top; width: 203px;=
+ max-width: 203px; background-color: rgb(255, 255, 255); overflow: hidden;"=
+> <div class=3D"row"><div class=3D"mobile-full" style=3D"display: block; ma=
+x-width: 203px; vertical-align: top; width: 100%; margin: 0px auto; backgro=
+und-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"203" =
+style=3D"width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203" valig=
+n=3D"top" style=3D"width:203px;"><![endif]--><table class=3D"main" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"sing=
+leproduct" style=3D"overflow: hidden; background-color: rgb(255, 255, 255);=
+ width: 203px; font-family: Arial, Helvetica, sans-serif; display: table;" =
+id=3D"88f880dd-ba47-328e-ac4a-e882f6bc75c7" width=3D"203" data-templid=3D"4=
+60" itemusedid=3D"1938032933"><tbody><tr><td align=3D"center" class=3D"fore=
+dit" style=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" st=
+yle=3D"width:100%;"><tr><td><![endif]--><table class=3D"layout_element clic=
+kement" style=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margi=
+n: 0 auto; background-color: #dd957f; border: 0px solid #dd957f;" border=3D=
+"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" dat=
+a-layout=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 203px=
+;" width=3D"203"><table class=3D"clickement title_element" style=3D"z-index=
+: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=
+=3D"cpTextContent" style=3D"text-align: center; padding: 0 9px 0 9px;" alig=
+n=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color: #ff=
+ffff; font-weight: bold; font-style: normal;"><a style=3D"color: #ffffff; w=
+idth: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https://go.co=
+ntactpigeon.com/redir/85639784/71948111/"> adidas HANORAC FZ W Z.N.E. FZ</a=
+></span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=
+=3D"width: 203px;" width=3D"203"><table class=3D"clickement image_element" =
+style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px;" align=3D"ce=
+nter" valign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/85639=
+784/71948111/" target=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%;=
+ border: 10px solid rgb(133, 84, 227); max-width: 172.8px;" src=3D"https://=
+www.intersport.ro/Uploads/resources/431509/hanorac-fz-w-z-n-e-fz-affiliate.=
+jpg?lm=3D11647264" alt=3D"adidas HANORAC FZ W Z.N.E. FZ" width=3D"172.8" da=
+ta-originalsrc=3D"https://www.intersport.ro/Uploads/resources/431509/hanora=
+c-fz-w-z-n-e-fz-affiliate.jpg?lm=3D11647264" id=3D"504fe7c9-9826-2976-05ec-=
+db9163ed4af9"></a></td></tr></tbody></table></td></tr><tr style=3D"height: =
+50px;" align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table cl=
+ass=3D"clickement price_element" style=3D"width: 100%; height: 60px;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td=
+ style=3D"text-align: center; font-size: 14px; font-family: Arial; color: w=
+hite; font-weight: normal; font-style: normal; width: 640px;" align=3D"cent=
+er"><span style=3D"font-size: 14px; font-family: Arial; color: white; font-=
+weight: normal; font-style: normal;">549.99 LEI</span></td></tr></tbody></t=
+able></td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"20=
+3"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif]--><t=
+able class=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![=
+endif]--><td class=3D"button" style=3D"background: url() center; background=
+-repeat: no-repeat; width: 102px; white-space: nowrap; margin: 0 auto; back=
+ground-color: #8554e3; border-radius: 5px; padding: 8px 10px; text-align: c=
+enter; font-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D=
+"white-space: nowrap; letter-spacing: normal; line-height: 100%; text-align=
+: center; font-weight: normal; color: white; font-style: normal; text-decor=
+ation: none; padding: 7px; display: inline-block; height: 100%;" title=3D"a=
+didas HANORAC FZ W Z.N.E. FZ" href=3D"https://go.contactpigeon.com/redir/85=
+639784/71948111/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[=
+if mso]></table><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></=
+table><![endif]--></td></tr></tbody></table><!-- [if mso]></td></tr></table=
+><![endif]--></td></tr></tbody></table><!--[if mso]></td></tr></table><![en=
+dif]--></div></div></div><!--[if mso]></td><![endif]--> <!--[if mso]><td st=
+yle=3D"width:203px; vertical-align: top;"><![endif]--><div class=3D"mobile-=
+full givemeid" style=3D"display: inline-block; vertical-align: top; width: =
+203px; max-width: 203px; background-color: rgb(255, 255, 255); overflow: hi=
+dden;"> <div class=3D"row"><div class=3D"mobile-full" style=3D"display: blo=
+ck; max-width: 203px; vertical-align: top; width: 100%; margin: 0px auto; b=
+ackground-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"203" style=3D"width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203"=
+ valign=3D"top" style=3D"width:203px;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=
+=3D"singleproduct" style=3D"overflow: hidden; background-color: rgb(255, 25=
+5, 255); width: 203px; font-family: Arial, Helvetica, sans-serif; display: =
+table;" id=3D"ca255cdf-4c7d-932f-74d8-7b057ca0237c" width=3D"203" data-temp=
+lid=3D"460" itemusedid=3D"1993658871"><tbody><tr><td align=3D"center" class=
+=3D"foredit" style=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table =
+align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+100%" style=3D"width:100%;"><tr><td><![endif]--><table class=3D"layout_elem=
+ent clickement" style=3D"overflow: hidden; padding-bottom: 21px; width: 100=
+%; margin: 0 auto; background-color: #dd957f; border: 0px solid #dd957f;" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"cen=
+ter" data-layout=3D"vertical"><tbody><tr align=3D"center"><td style=3D"widt=
+h: 203px;" width=3D"203"><table class=3D"clickement title_element" style=3D=
+"z-index: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><=
+td class=3D"cpTextContent" style=3D"text-align: center; padding: 0 9px 0 9p=
+x;" align=3D"center"><span style=3D"font-size: 14px; font-family: Arial; co=
+lor: #ffffff; font-weight: bold; font-style: normal;"><a style=3D"color: #f=
+fffff; width: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https=
+://go.contactpigeon.com/redir/85639784/71948108/"> adidas HANORAC FZ W Z.N.=
+E. FZ roz pal</a></span></td></tr></tbody></table></td></tr><tr align=3D"ce=
+nter"><td style=3D"width: 203px;" width=3D"203"><table class=3D"clickement =
+image_element" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170p=
+x;" align=3D"center" valign=3D"middle"><a href=3D"https://go.contactpigeon.=
+com/redir/85639784/71948108/" target=3D"_blank" rel=3D"noopener"><img style=
+=3D"width: 85%; border: 10px solid rgb(133, 84, 227); max-width: 172.8px;" =
+src=3D"https://www.intersport.ro/Uploads/resources/431664/hanorac-fz-w-z-n-=
+e-fz-affiliate.jpg?lm=3D13316072" alt=3D"adidas HANORAC FZ W Z.N.E. FZ roz =
+pal" width=3D"172.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/=
+resources/431664/hanorac-fz-w-z-n-e-fz-affiliate.jpg?lm=3D13316072" id=3D"f=
+549619a-2a18-a14c-d566-53d819ec0c24"></a></td></tr></tbody></table></td></t=
+r><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width: 203px;" =
+width=3D"203"><table class=3D"clickement price_element" style=3D"width: 100=
+%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D=
+"center"><tbody><tr><td style=3D"text-align: center; font-size: 14px; font-=
+family: Arial; color: white; font-weight: normal; font-style: normal; width=
+: 640px;" align=3D"center"><span style=3D"font-size: 14px; font-family: Ari=
+al; color: white; font-weight: normal; font-style: normal;">549.99 LEI</spa=
+n></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"wid=
+th: 203px;" width=3D"203"><!-- [if mso]><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: center; margin: =
+0 auto;"><![endif]--><table class=3D"button" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" sty=
+le=3D"width:102px;"><![endif]--><td class=3D"button" style=3D"background: u=
+rl() center; background-repeat: no-repeat; width: 102px; white-space: nowra=
+p; margin: 0 auto; background-color: #8554e3; border-radius: 5px; padding: =
+8px 10px; text-align: center; font-family: Arial; font-size: 16px;"><a clas=
+s=3D"cpButton" style=3D"white-space: nowrap; letter-spacing: normal; line-h=
+eight: 100%; text-align: center; font-weight: normal; color: white; font-st=
+yle: normal; text-decoration: none; padding: 7px; display: inline-block; he=
+ight: 100%;" title=3D"adidas HANORAC FZ W Z.N.E. FZ roz pal" href=3D"https:=
+//go.contactpigeon.com/redir/85639784/71948108/" target=3D"_blank" rel=3D"n=
+oopener">CUMPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></t=
+able><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table>=
+<!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!--[=
+if mso]></td></tr></table><![endif]--></div></div></div><!--[if mso]></td><=
+![endif]--></td> </tr><tr class=3D"lyrow displaytable"><td width=3D"640" st=
+yle=3D"width: 640px; font-size: 14px;" id=3D"075eb9f6-1b0b-1f3a-8d4a-f45320=
+e29d3e"> <!--[if mso]><td style=3D"width:203px; vertical-align: top;"><![en=
+dif]--><div class=3D"mobile-full givemeid" style=3D"display: inline-block; =
+vertical-align: top; width: 203px; max-width: 203px; background-color: rgb(=
+255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile=
+-full" style=3D"display: block; max-width: 203px; vertical-align: top; widt=
+h: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); overflow: =
+hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><![endif]--><!=
+--[if mso]><td width=3D"203" valign=3D"top" style=3D"width:203px;"><![endif=
+]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+align=3D"center" data-type=3D"singleproduct" style=3D"overflow: hidden; bac=
+kground-color: rgb(255, 255, 255); width: 203px; font-family: Arial, Helvet=
+ica, sans-serif; display: table;" id=3D"057cdd7f-00fc-c609-e047-b3440a691a8=
+6" width=3D"203" data-templid=3D"460" itemusedid=3D"1938032975"><tbody><tr>=
+<td align=3D"center" class=3D"foredit" style=3D"width: 203px; font-size: 14=
+px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><=
+table class=3D"layout_element clickement" style=3D"overflow: hidden; paddin=
+g-bottom: 21px; width: 100%; margin: 0 auto; background-color: #dd957f; bor=
+der: 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D=
+"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"clickeme=
+nt title_element" style=3D"z-index: 99999999; width: 100%; height: 100%;" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr=
+ style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-align: c=
+enter; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"font-size: 14=
+px; font-family: Arial; color: #ffffff; font-weight: bold; font-style: norm=
+al;"><a style=3D"color: #ffffff; width: 100%; padding: 5px 5px; text-decora=
+tion: none;" href=3D"https://go.contactpigeon.com/redir/85639784/71948110/"=
+> adidas PANTALONI W Z.N.E.PT</a></span></td></tr></tbody></table></td></tr=
+><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table clas=
+s=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 8=
+5%; height: 170px;" align=3D"center" valign=3D"middle"><a href=3D"https://g=
+o.contactpigeon.com/redir/85639784/71948110/" target=3D"_blank" rel=3D"noop=
+ener"><img style=3D"width: 85%; border: 10px solid rgb(133, 84, 227); max-w=
+idth: 172.8px;" src=3D"https://www.intersport.ro/Uploads/resources/431749/p=
+antaloni-w-z-n-e-pt-affiliate.jpg?lm=3D13980699" alt=3D"adidas PANTALONI W =
+Z.N.E.PT" width=3D"172.8" data-originalsrc=3D"https://www.intersport.ro/Upl=
+oads/resources/431749/pantaloni-w-z-n-e-pt-affiliate.jpg?lm=3D13980699" id=
+=3D"f85baa7a-fb78-6ce3-0db4-e5798348db3a"></a></td></tr></tbody></table></t=
+d></tr><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width: 203=
+px;" width=3D"203"><table class=3D"clickement price_element" style=3D"width=
+: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"center"><tbody><tr><td style=3D"text-align: center; font-size: 14px; =
+font-family: Arial; color: white; font-weight: normal; font-style: normal; =
+width: 640px;" align=3D"center"><span style=3D"font-size: 14px; font-family=
+: Arial; color: white; font-weight: normal; font-style: normal;">449.99 LEI=
+</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=
+=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=3D"center" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: center; m=
+argin: 0 auto;"><![endif]--><table class=3D"button" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1=
+02" style=3D"width:102px;"><![endif]--><td class=3D"button" style=3D"backgr=
+ound: url() center; background-repeat: no-repeat; width: 102px; white-space=
+: nowrap; margin: 0 auto; background-color: #8554e3; border-radius: 5px; pa=
+dding: 8px 10px; text-align: center; font-family: Arial; font-size: 16px;">=
+<a class=3D"cpButton" style=3D"white-space: nowrap; letter-spacing: normal;=
+ line-height: 100%; text-align: center; font-weight: normal; color: white; =
+font-style: normal; text-decoration: none; padding: 7px; display: inline-bl=
+ock; height: 100%;" title=3D"adidas PANTALONI W Z.N.E.PT" href=3D"https://g=
+o.contactpigeon.com/redir/85639784/71948110/" target=3D"_blank" rel=3D"noop=
+ener">CUMPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></tabl=
+e><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!-=
+- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!--[if =
+mso]></td></tr></table><![endif]--></div></div></div><!--[if mso]></td><![e=
+ndif]--> <!--[if mso]><td style=3D"width:203px; vertical-align: top;"><![en=
+dif]--><div class=3D"mobile-full givemeid" style=3D"display: inline-block; =
+vertical-align: top; width: 203px; max-width: 203px; background-color: rgb(=
+255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile=
+-full" style=3D"display: block; max-width: 203px; vertical-align: top; widt=
+h: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); overflow: =
+hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><![endif]--><!=
+--[if mso]><td width=3D"203" valign=3D"top" style=3D"width:203px;"><![endif=
+]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+align=3D"center" data-type=3D"singleproduct" style=3D"overflow: hidden; bac=
+kground-color: rgb(255, 255, 255); width: 203px; font-family: Arial, Helvet=
+ica, sans-serif; display: table;" id=3D"18f02ae9-4dda-45e5-5d7a-43d6aa48034=
+b" width=3D"203" data-templid=3D"460" itemusedid=3D"1938027913"><tbody><tr>=
+<td align=3D"center" class=3D"foredit" style=3D"width: 203px; font-size: 14=
+px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><=
+table class=3D"layout_element clickement" style=3D"overflow: hidden; paddin=
+g-bottom: 21px; width: 100%; margin: 0 auto; background-color: #dd957f; bor=
+der: 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D=
+"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"clickeme=
+nt title_element" style=3D"z-index: 99999999; width: 100%; height: 100%;" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr=
+ style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-align: c=
+enter; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"font-size: 14=
+px; font-family: Arial; color: #ffffff; font-weight: bold; font-style: norm=
+al;"><a style=3D"color: #ffffff; width: 100%; padding: 5px 5px; text-decora=
+tion: none;" href=3D"https://go.contactpigeon.com/redir/85639784/71948126/"=
+> adidas PANTALONI W Z.N.E. PT</a></span></td></tr></tbody></table></td></t=
+r><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table cla=
+ss=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: =
+85%; height: 170px;" align=3D"center" valign=3D"middle"><a href=3D"https://=
+go.contactpigeon.com/redir/85639784/71948126/" target=3D"_blank" rel=3D"noo=
+pener"><img style=3D"width: 85%; border: 10px solid rgb(133, 84, 227); max-=
+width: 172.8px;" src=3D"https://www.intersport.ro/Uploads/resources/431591/=
+pantaloni-w-z-n-e-pt-affiliate.jpg?lm=3D13018571" alt=3D"adidas PANTALONI W=
+ Z.N.E. PT" width=3D"172.8" data-originalsrc=3D"https://www.intersport.ro/U=
+ploads/resources/431591/pantaloni-w-z-n-e-pt-affiliate.jpg?lm=3D13018571" i=
+d=3D"6cd3e83c-755f-671b-06b5-add7a7ac3c74"></a></td></tr></tbody></table></=
+td></tr><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width: 20=
+3px;" width=3D"203"><table class=3D"clickement price_element" style=3D"widt=
+h: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center"><tbody><tr><td style=3D"text-align: center; font-size: 14px;=
+ font-family: Arial; color: white; font-weight: normal; font-style: normal;=
+ width: 640px;" align=3D"center"><span style=3D"font-size: 14px; font-famil=
+y: Arial; color: white; font-weight: normal; font-style: normal;">449.99 LE=
+I</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=
+=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=3D"center" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: center; m=
+argin: 0 auto;"><![endif]--><table class=3D"button" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"1=
+02" style=3D"width:102px;"><![endif]--><td class=3D"button" style=3D"backgr=
+ound: url() center; background-repeat: no-repeat; width: 102px; white-space=
+: nowrap; margin: 0 auto; background-color: #8554e3; border-radius: 5px; pa=
+dding: 8px 10px; text-align: center; font-family: Arial; font-size: 16px;">=
+<a class=3D"cpButton" style=3D"white-space: nowrap; letter-spacing: normal;=
+ line-height: 100%; text-align: center; font-weight: normal; color: white; =
+font-style: normal; text-decoration: none; padding: 7px; display: inline-bl=
+ock; height: 100%;" title=3D"adidas PANTALONI W Z.N.E. PT" href=3D"https://=
+go.contactpigeon.com/redir/85639784/71948126/" target=3D"_blank" rel=3D"noo=
+pener">CUMPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></tab=
+le><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!=
+-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!--[if=
+ mso]></td></tr></table><![endif]--></div></div></div><!--[if mso]></td><![=
+endif]--> <!--[if mso]><td style=3D"width:203px; vertical-align: top;"><![e=
+ndif]--><div class=3D"mobile-full givemeid" style=3D"display: inline-block;=
+ vertical-align: top; width: 203px; max-width: 203px; background-color: rgb=
+(255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobil=
+e-full" style=3D"display: block; max-width: 203px; vertical-align: top; wid=
+th: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); overflow:=
+ hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><![endif]--><=
+!--[if mso]><td width=3D"203" valign=3D"top" style=3D"width:203px;"><![endi=
+f]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center" data-type=3D"singleproduct" style=3D"overflow: hidden; ba=
+ckground-color: rgb(255, 255, 255); width: 203px; font-family: Arial, Helve=
+tica, sans-serif; display: table;" id=3D"c32a5024-a4d0-684f-6eb8-a91afdcfb0=
+e1" width=3D"203" data-templid=3D"460" itemusedid=3D"1996158629"><tbody><tr=
+><td align=3D"center" class=3D"foredit" style=3D"width: 203px; font-size: 1=
+4px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]-->=
+<table class=3D"layout_element clickement" style=3D"overflow: hidden; paddi=
+ng-bottom: 21px; width: 100%; margin: 0 auto; background-color: #dd957f; bo=
+rder: 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=
+=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"click=
+ement title_element" style=3D"z-index: 99999999; width: 100%; height: 100%;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody>=
+<tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-align=
+: center; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"font-size:=
+ 14px; font-family: Arial; color: #ffffff; font-weight: bold; font-style: n=
+ormal;"><a style=3D"color: #ffffff; width: 100%; padding: 5px 5px; text-dec=
+oration: none;" href=3D"https://go.contactpigeon.com/redir/85639784/7194811=
+4/"> adidas PANTALONI W Z.N.E. PT</a></span></td></tr></tbody></table></td>=
+</tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table =
+class=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"widt=
+h: 85%; height: 170px;" align=3D"center" valign=3D"middle"><a href=3D"https=
+://go.contactpigeon.com/redir/85639784/71948114/" target=3D"_blank" rel=3D"=
+noopener"><img style=3D"width: 85%; border: 10px solid rgb(133, 84, 227); m=
+ax-width: 172.8px;" src=3D"https://www.intersport.ro/Uploads/resources/4316=
+38/pantaloni-w-z-n-e-pt-affiliate.jpg?lm=3D13196256" alt=3D"adidas PANTALON=
+I W Z.N.E. PT" width=3D"172.8" data-originalsrc=3D"https://www.intersport.r=
+o/Uploads/resources/431638/pantaloni-w-z-n-e-pt-affiliate.jpg?lm=3D13196256=
+" id=3D"03f3f02d-06f7-e630-ea95-27d4b4ea0830"></a></td></tr></tbody></table=
+></td></tr><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width:=
+ 203px;" width=3D"203"><table class=3D"clickement price_element" style=3D"w=
+idth: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"center"><tbody><tr><td style=3D"text-align: center; font-size: 14=
+px; font-family: Arial; color: white; font-weight: normal; font-style: norm=
+al; width: 640px;" align=3D"center"><span style=3D"font-size: 14px; font-fa=
+mily: Arial; color: white; font-weight: normal; font-style: normal;">449.99=
+ LEI</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td sty=
+le=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: center;=
+ margin: 0 auto;"><![endif]--><table class=3D"button" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"102" style=3D"width:102px;"><![endif]--><td class=3D"button" style=3D"back=
+ground: url() center; background-repeat: no-repeat; width: 102px; white-spa=
+ce: nowrap; margin: 0 auto; background-color: #8554e3; border-radius: 5px; =
+padding: 8px 10px; text-align: center; font-family: Arial; font-size: 16px;=
+"><a class=3D"cpButton" style=3D"white-space: nowrap; letter-spacing: norma=
+l; line-height: 100%; text-align: center; font-weight: normal; color: white=
+; font-style: normal; text-decoration: none; padding: 7px; display: inline-=
+block; height: 100%;" title=3D"adidas PANTALONI W Z.N.E. PT" href=3D"https:=
+//go.contactpigeon.com/redir/85639784/71948114/" target=3D"_blank" rel=3D"n=
+oopener">CUMPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></t=
+able><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table>=
+<!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!--[=
+if mso]></td></tr></table><![endif]--></div></div></div><!--[if mso]></td><=
+![endif]--></td> </tr></tbody></table></div><!--[if mso]></td></tr></table>=
+<![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: bloc=
+k; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"vie=
+w"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"line" width=3D"640" id=3D"0716af99-332a-7cb5-dde1-6ace7fc1ddb6"=
+> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 5px 40px; fon=
+t-size: 14px; color: rgb(0, 0, 0);" id=3D"0cd3ad64-f6bc-b813-8293-9b204a43f=
+4b9"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" style=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 100% !importan=
+t; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-=
+size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr=
+> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[i=
+f mso]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyro=
+w products" data-code=3D"_AC_PROD_" style=3D"display: block; position: rela=
+tive; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D=
+"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![e=
+ndif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640=
+px; vertical-align: top; width: 100%; background-color: rgb(221, 149, 127);=
+ overflow: hidden;"><table class=3D"main" style=3D"border-collapse: collaps=
+e; text-align: center; background: rgb(221, 149, 127); width: 640px; max-wi=
+dth: 640px; display: table; font-family: Arial, Helvetica, sans-serif;" dat=
+a-type=3D"productgrid" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" ali=
+gn=3D"center" width=3D"640" id=3D"6fc495e4-53db-ff6b-4fe4-07916251d215"><tb=
+ody><tr class=3D"lyrow displaytable"><td style=3D"width: 640px; font-size: =
+14px;" width=3D"640"> <!--[if mso]><td style=3D"width:203px; vertical-align=
+: top;"><![endif]--><div class=3D"mobile-full givemeid" style=3D"display: i=
+nline-block; vertical-align: top; width: 203px; max-width: 203px; backgroun=
+d-color: rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row"><div cl=
+ass=3D"mobile-full" style=3D"display: block; max-width: 203px; vertical-ali=
+gn: top; width: 100%; margin: 0px auto; background-color: rgb(255, 255, 255=
+); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><=
+![endif]--><!--[if mso]><td width=3D"203" valign=3D"top" style=3D"width:203=
+px;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"overflow=
+: hidden; background-color: rgb(255, 255, 255); width: 203px; font-family: =
+Arial, Helvetica, sans-serif; display: table;" width=3D"203" data-templid=
+=3D"460" itemusedid=3D"1993657865" id=3D"66faf308-ba63-962c-7adc-af381b158a=
+8d"><tbody><tr><td align=3D"center" class=3D"foredit" style=3D"width: 203px=
+; font-size: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><t=
+d><![endif]--><table class=3D"layout_element clickement" style=3D"overflow:=
+ hidden; padding-bottom: 21px; width: 100%; margin: 0 auto; background-colo=
+r: #dd957f; border: 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"><tbo=
+dy><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table cl=
+ass=3D"clickement title_element" style=3D"z-index: 99999999; width: 100%; h=
+eight: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"cen=
+ter"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=
+=3D"text-align: center; padding: 0 9px 0 9px;" align=3D"center"><span style=
+=3D"font-size: 14px; font-family: Arial; color: #ffffff; font-weight: bold;=
+ font-style: normal;"><a style=3D"color: #ffffff; width: 100%; padding: 5px=
+ 5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redir/85=
+639784/71948118/"> adidas HANORAC FARM TIRO TT</a></span></td></tr></tbody>=
+</table></td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D=
+"203"><table class=3D"clickement image_element" style=3D"border: 0;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td =
+style=3D"width: 85%; height: 170px;" align=3D"center" valign=3D"middle"><a =
+href=3D"https://go.contactpigeon.com/redir/85639784/71948118/" target=3D"_b=
+lank" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid rgb(133=
+, 84, 227); max-width: 172.8px;" src=3D"https://www.intersport.ro/Uploads/r=
+esources/442873/hanorac-farm-tiro-tt-affiliate.jpg?lm=3D12654560" alt=3D"ad=
+idas HANORAC FARM TIRO TT" width=3D"172.8" data-originalsrc=3D"https://www.=
+intersport.ro/Uploads/resources/442873/hanorac-farm-tiro-tt-affiliate.jpg?l=
+m=3D12654560" id=3D"327a050b-e7ff-938b-cb41-9139daf54766"></a></td></tr></t=
+body></table></td></tr><tr style=3D"height: 50px;" align=3D"center"><td sty=
+le=3D"width: 203px;" width=3D"203"><table class=3D"clickement price_element=
+" style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center; f=
+ont-size: 14px; font-family: Arial; color: white; font-weight: normal; font=
+-style: normal; width: 640px;" align=3D"center"><span style=3D"font-size: 1=
+4px; font-family: Arial; color: white; font-weight: normal; font-style: nor=
+mal;">324.99 LEI</span></td></tr></tbody></table></td></tr><tr align=3D"cen=
+ter"><td style=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-=
+align: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button=
+" style=3D"background: url() center; background-repeat: no-repeat; width: 1=
+02px; white-space: nowrap; margin: 0 auto; background-color: #8554e3; borde=
+r-radius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; f=
+ont-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter=
+-spacing: normal; line-height: 100%; text-align: center; font-weight: norma=
+l; color: white; font-style: normal; text-decoration: none; padding: 7px; d=
+isplay: inline-block; height: 100%;" title=3D"adidas HANORAC FARM TIRO TT" =
+href=3D"https://go.contactpigeon.com/redir/85639784/71948118/" target=3D"_b=
+lank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table><![endif]--></=
+tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></=
+tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody=
+></table><!--[if mso]></td></tr></table><![endif]--></div></div></div><!--[=
+if mso]></td><![endif]--> <!--[if mso]><td style=3D"width:203px; vertical-a=
+lign: top;"><![endif]--><div class=3D"mobile-full givemeid" style=3D"displa=
+y: inline-block; vertical-align: top; width: 203px; max-width: 203px; backg=
+round-color: rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row"><di=
+v class=3D"mobile-full" style=3D"display: block; max-width: 203px; vertical=
+-align: top; width: 100%; margin: 0px auto; background-color: rgb(255, 255,=
+ 255); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><=
+tr><![endif]--><!--[if mso]><td width=3D"203" valign=3D"top" style=3D"width=
+:203px;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"over=
+flow: hidden; background-color: rgb(255, 255, 255); width: 203px; font-fami=
+ly: Arial, Helvetica, sans-serif; display: table;" width=3D"203" data-templ=
+id=3D"460" itemusedid=3D"1938027953" id=3D"0e536c58-5263-8fe9-511d-7ae96fda=
+6adf"><tbody><tr><td align=3D"center" class=3D"foredit" style=3D"width: 203=
+px; font-size: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr>=
+<td><![endif]--><table class=3D"layout_element clickement" style=3D"overflo=
+w: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto; background-co=
+lor: #dd957f; border: 0px solid #dd957f;" border=3D"0" width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"><t=
+body><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table =
+class=3D"clickement title_element" style=3D"z-index: 99999999; width: 100%;=
+ height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=
+=3D"text-align: center; padding: 0 9px 0 9px;" align=3D"center"><span style=
+=3D"font-size: 14px; font-family: Arial; color: #ffffff; font-weight: bold;=
+ font-style: normal;"><a style=3D"color: #ffffff; width: 100%; padding: 5px=
+ 5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/redir/85=
+639784/71948122/"> adidas JACHETA Femei OTR B CB JKT</a></span></td></tr></=
+tbody></table></td></tr><tr align=3D"center"><td style=3D"width: 203px;" wi=
+dth=3D"203"><table class=3D"clickement image_element" style=3D"border: 0;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><t=
+r><td style=3D"width: 85%; height: 170px;" align=3D"center" valign=3D"middl=
+e"><a href=3D"https://go.contactpigeon.com/redir/85639784/71948122/" target=
+=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid r=
+gb(133, 84, 227); max-width: 172.8px;" src=3D"https://www.intersport.ro/Upl=
+oads/resources/429254/jacheta-femei-otr-b-cb-jkt-affiliate.jpg?lm=3D1184159=
+9" alt=3D"adidas JACHETA Femei OTR B CB JKT" width=3D"172.8" data-originals=
+rc=3D"https://www.intersport.ro/Uploads/resources/429254/jacheta-femei-otr-=
+b-cb-jkt-affiliate.jpg?lm=3D11841599" id=3D"f48dcf80-50b2-6ba5-1143-5477a48=
+74048"></a></td></tr></tbody></table></td></tr><tr style=3D"height: 50px;" =
+align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"=
+clickement price_element" style=3D"width: 100%; height: 60px;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=
+=3D"text-align: center; font-size: 14px; font-family: Arial; color: white; =
+font-weight: normal; font-style: normal; width: 640px;" align=3D"center"><s=
+pan style=3D"font-size: 14px; font-family: Arial; color: white; font-weight=
+: normal; font-style: normal;">399.99 LEI</span></td></tr></tbody></table><=
+/td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><!-=
+- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif]--><table c=
+lass=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]=
+--><td class=3D"button" style=3D"background: url() center; background-repea=
+t: no-repeat; width: 102px; white-space: nowrap; margin: 0 auto; background=
+-color: #8554e3; border-radius: 5px; padding: 8px 10px; text-align: center;=
+ font-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D"white=
+-space: nowrap; letter-spacing: normal; line-height: 100%; text-align: cent=
+er; font-weight: normal; color: white; font-style: normal; text-decoration:=
+ none; padding: 7px; display: inline-block; height: 100%;" title=3D"adidas =
+JACHETA Femei OTR B CB JKT" href=3D"https://go.contactpigeon.com/redir/8563=
+9784/71948122/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if=
+ mso]></table><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></ta=
+ble><![endif]--></td></tr></tbody></table><!-- [if mso]></td></tr></table><=
+![endif]--></td></tr></tbody></table><!--[if mso]></td></tr></table><![endi=
+f]--></div></div></div><!--[if mso]></td><![endif]--> <!--[if mso]><td styl=
+e=3D"width:203px; vertical-align: top;"><![endif]--><div class=3D"mobile-fu=
+ll givemeid" style=3D"display: inline-block; vertical-align: top; width: 20=
+3px; max-width: 203px; background-color: rgb(255, 255, 255); overflow: hidd=
+en;"> <div class=3D"row"><div class=3D"mobile-full" style=3D"display: block=
+; max-width: 203px; vertical-align: top; width: 100%; margin: 0px auto; bac=
+kground-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table a=
+lign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"2=
+03" style=3D"width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203" v=
+align=3D"top" style=3D"width:203px;"><![endif]--><table class=3D"main" cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"=
+singleproduct" style=3D"overflow: hidden; background-color: rgb(255, 255, 2=
+55); width: 203px; font-family: Arial, Helvetica, sans-serif; display: tabl=
+e;" width=3D"203" data-templid=3D"460" itemusedid=3D"1996157755" id=3D"008a=
+29a3-7cd7-87f2-c953-05a8fb05afe8"><tbody><tr><td align=3D"center" class=3D"=
+foredit" style=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table alig=
+n=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%=
+" style=3D"width:100%;"><tr><td><![endif]--><table class=3D"layout_element =
+clickement" style=3D"overflow: hidden; padding-bottom: 21px; width: 100%; m=
+argin: 0 auto; background-color: #dd957f; border: 0px solid #dd957f;" borde=
+r=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"=
+ data-layout=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 2=
+03px;" width=3D"203"><table class=3D"clickement title_element" style=3D"z-i=
+ndex: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td c=
+lass=3D"cpTextContent" style=3D"text-align: center; padding: 0 9px 0 9px;" =
+align=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color:=
+ #ffffff; font-weight: bold; font-style: normal;"><a style=3D"color: #fffff=
+f; width: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https://g=
+o.contactpigeon.com/redir/85639784/71948109/"> adidas MAIOU dama FARM TRN T=
+ANK</a></span></td></tr></tbody></table></td></tr><tr align=3D"center"><td =
+style=3D"width: 203px;" width=3D"203"><table class=3D"clickement image_elem=
+ent" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px;" align=
+=3D"center" valign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir=
+/85639784/71948109/" target=3D"_blank" rel=3D"noopener"><img style=3D"width=
+: 85%; border: 10px solid rgb(133, 84, 227); max-width: 172.8px;" src=3D"ht=
+tps://www.intersport.ro/Uploads/resources/407277/maiou-farm-trn-tank-affili=
+ate.jpg?lm=3D18359439" alt=3D"adidas MAIOU dama FARM TRN TANK" width=3D"172=
+.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/resources/407277/=
+maiou-farm-trn-tank-affiliate.jpg?lm=3D18359439" id=3D"c75d234c-5aa2-1ccb-f=
+628-d688bb63d16d"></a></td></tr></tbody></table></td></tr><tr style=3D"heig=
+ht: 50px;" align=3D"center"><td style=3D"width: 203px;" width=3D"203"><tabl=
+e class=3D"clickement price_element" style=3D"width: 100%; height: 60px;" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr=
+><td style=3D"text-align: center; font-size: 14px; font-family: Arial; colo=
+r: white; font-weight: normal; font-style: normal; width: 640px;" align=3D"=
+center"><span style=3D"font-size: 14px; font-family: Arial; color: white; f=
+ont-weight: normal; font-style: normal;">199.99 LEI</span></td></tr></tbody=
+></table></td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=
+=3D"203"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><![endif=
+]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102=
+px;"><![endif]--><td class=3D"button" style=3D"background: url() center; ba=
+ckground-repeat: no-repeat; width: 102px; white-space: nowrap; margin: 0 au=
+to; background-color: #8554e3; border-radius: 5px; padding: 8px 10px; text-=
+align: center; font-family: Arial; font-size: 16px;"><a class=3D"cpButton" =
+style=3D"white-space: nowrap; letter-spacing: normal; line-height: 100%; te=
+xt-align: center; font-weight: normal; color: white; font-style: normal; te=
+xt-decoration: none; padding: 7px; display: inline-block; height: 100%;" ti=
+tle=3D"adidas MAIOU dama FARM TRN TANK" href=3D"https://go.contactpigeon.co=
+m/redir/85639784/71948109/" target=3D"_blank" rel=3D"noopener">CUMPARA </a>=
+</td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if mso]></=
+td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]></td></=
+tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td></tr></t=
+able><![endif]--></div></div></div><!--[if mso]></td><![endif]--></td> </tr=
+><tr class=3D"lyrow displaytable"><td width=3D"640" style=3D"width: 640px; =
+font-size: 14px;"> <!--[if mso]><td style=3D"width:203px; vertical-align: t=
+op;"><![endif]--><div class=3D"mobile-full givemeid" style=3D"display: inli=
+ne-block; vertical-align: top; width: 203px; max-width: 203px; background-c=
+olor: rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=
+=3D"mobile-full" style=3D"display: block; max-width: 203px; vertical-align:=
+ top; width: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); =
+overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><![e=
+ndif]--><!--[if mso]><td width=3D"203" valign=3D"top" style=3D"width:203px;=
+"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"overflow: h=
+idden; background-color: rgb(255, 255, 255); width: 203px; font-family: Ari=
+al, Helvetica, sans-serif; display: table;" width=3D"203" data-templid=3D"4=
+60" itemusedid=3D"1875536749" id=3D"9ef2e0e7-0437-42dc-77c1-a27e94a31186"><=
+tbody><tr><td align=3D"center" class=3D"foredit" style=3D"width: 203px; fon=
+t-size: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![=
+endif]--><table class=3D"layout_element clickement" style=3D"overflow: hidd=
+en; padding-bottom: 21px; width: 100%; margin: 0 auto; background-color: #d=
+d957f; border: 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><=
+tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=
+=3D"clickement title_element" style=3D"z-index: 99999999; width: 100%; heig=
+ht: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"t=
+ext-align: center; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"f=
+ont-size: 14px; font-family: Arial; color: #ffffff; font-weight: bold; font=
+-style: normal;"><a style=3D"color: #ffffff; width: 100%; padding: 5px 5px;=
+ text-decoration: none;" href=3D"https://go.contactpigeon.com/redir/8563978=
+4/71948106/"> adidas PANTALONI FARM TIRO TP</a></span></td></tr></tbody></t=
+able></td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"20=
+3"><table class=3D"clickement image_element" style=3D"border: 0;" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td sty=
+le=3D"width: 85%; height: 170px;" align=3D"center" valign=3D"middle"><a hre=
+f=3D"https://go.contactpigeon.com/redir/85639784/71948106/" target=3D"_blan=
+k" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid rgb(133, 8=
+4, 227); max-width: 172.8px;" src=3D"https://www.intersport.ro/Uploads/reso=
+urces/430898/pantaloni-farm-tiro-tp-affiliate.jpg?lm=3D13316293" alt=3D"adi=
+das PANTALONI FARM TIRO TP" width=3D"172.8" data-originalsrc=3D"https://www=
+.intersport.ro/Uploads/resources/430898/pantaloni-farm-tiro-tp-affiliate.jp=
+g?lm=3D13316293" id=3D"09560338-dc98-def9-fde7-3c094e3e28e5"></a></td></tr>=
+</tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"center"><td =
+style=3D"width: 203px;" width=3D"203"><table class=3D"clickement price_elem=
+ent" style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center=
+; font-size: 14px; font-family: Arial; color: white; font-weight: normal; f=
+ont-style: normal; width: 640px;" align=3D"center"><span style=3D"font-size=
+: 14px; font-family: Arial; color: white; font-weight: normal; font-style: =
+normal;">324.99 LEI</span></td></tr></tbody></table></td></tr><tr align=3D"=
+center"><td style=3D"width: 203px;" width=3D"203"><!-- [if mso]><table alig=
+n=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text=
+-align: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button=
+" style=3D"background: url() center; background-repeat: no-repeat; width: 1=
+02px; white-space: nowrap; margin: 0 auto; background-color: #8554e3; borde=
+r-radius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; f=
+ont-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter=
+-spacing: normal; line-height: 100%; text-align: center; font-weight: norma=
+l; color: white; font-style: normal; text-decoration: none; padding: 7px; d=
+isplay: inline-block; height: 100%;" title=3D"adidas PANTALONI FARM TIRO TP=
+" href=3D"https://go.contactpigeon.com/redir/85639784/71948106/" target=3D"=
+_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table><![endif]-->=
+</tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr>=
+</tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbo=
+dy></table><!--[if mso]></td></tr></table><![endif]--></div></div></div><!-=
+-[if mso]></td><![endif]--> <!--[if mso]><td style=3D"width:203px; vertical=
+-align: top;"><![endif]--><div class=3D"mobile-full givemeid" style=3D"disp=
+lay: inline-block; vertical-align: top; width: 203px; max-width: 203px; bac=
+kground-color: rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row"><=
+div class=3D"mobile-full" style=3D"display: block; max-width: 203px; vertic=
+al-align: top; width: 100%; margin: 0px auto; background-color: rgb(255, 25=
+5, 255); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"=
+><tr><![endif]--><!--[if mso]><td width=3D"203" valign=3D"top" style=3D"wid=
+th:203px;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"o=
+verflow: hidden; background-color: rgb(255, 255, 255); width: 203px; font-f=
+amily: Arial, Helvetica, sans-serif; display: table;" width=3D"203" data-te=
+mplid=3D"460" itemusedid=3D"1938034939" id=3D"9f232528-f0c4-b797-2edc-c66d8=
+4473ff1"><tbody><tr><td align=3D"center" class=3D"foredit" style=3D"width: =
+203px; font-size: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><=
+tr><td><![endif]--><table class=3D"layout_element clickement" style=3D"over=
+flow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto; background=
+-color: #dd957f; border: 0px solid #dd957f;" border=3D"0" width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"=
+><tbody><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><tab=
+le class=3D"clickement title_element" style=3D"z-index: 99999999; width: 10=
+0%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"cpTextContent" =
+style=3D"text-align: center; padding: 0 9px 0 9px;" align=3D"center"><span =
+style=3D"font-size: 14px; font-family: Arial; color: #ffffff; font-weight: =
+bold; font-style: normal;"><a style=3D"color: #ffffff; width: 100%; padding=
+: 5px 5px; text-decoration: none;" href=3D"https://go.contactpigeon.com/red=
+ir/85639784/71948123/"> adidas COLANTI dama FARM LEGGINGS</a></span></td></=
+tr></tbody></table></td></tr><tr align=3D"center"><td style=3D"width: 203px=
+;" width=3D"203"><table class=3D"clickement image_element" style=3D"border:=
+ 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbo=
+dy><tr><td style=3D"width: 85%; height: 170px;" align=3D"center" valign=3D"=
+middle"><a href=3D"https://go.contactpigeon.com/redir/85639784/71948123/" t=
+arget=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%; border: 10px so=
+lid rgb(133, 84, 227); max-width: 172.8px;" src=3D"https://www.intersport.r=
+o/Uploads/resources/407189/colanti-farm-leggings-affiliate.jpg?lm=3D1704559=
+9" alt=3D"adidas COLANTI dama FARM LEGGINGS" width=3D"172.8" data-originals=
+rc=3D"https://www.intersport.ro/Uploads/resources/407189/colanti-farm-leggi=
+ngs-affiliate.jpg?lm=3D17045599" id=3D"b489109c-1791-1061-ca62-876d316660fc=
+"></a></td></tr></tbody></table></td></tr><tr style=3D"height: 50px;" align=
+=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"click=
+ement price_element" style=3D"width: 100%; height: 60px;" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"te=
+xt-align: center; font-size: 14px; font-family: Arial; color: white; font-w=
+eight: normal; font-style: normal; width: 640px;" align=3D"center"><span st=
+yle=3D"font-size: 14px; font-family: Arial; color: white; font-weight: norm=
+al; font-style: normal;">299.99 LEI</span></td></tr></tbody></table></td></=
+tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><!-- [if =
+mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"text-align: center; margin: 0 auto;"><![endif]--><table class=
+=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"cente=
+r"><tbody><tr><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><=
+td class=3D"button" style=3D"background: url() center; background-repeat: n=
+o-repeat; width: 102px; white-space: nowrap; margin: 0 auto; background-col=
+or: #8554e3; border-radius: 5px; padding: 8px 10px; text-align: center; fon=
+t-family: Arial; font-size: 16px;"><a class=3D"cpButton" style=3D"white-spa=
+ce: nowrap; letter-spacing: normal; line-height: 100%; text-align: center; =
+font-weight: normal; color: white; font-style: normal; text-decoration: non=
+e; padding: 7px; display: inline-block; height: 100%;" title=3D"adidas COLA=
+NTI dama FARM LEGGINGS" href=3D"https://go.contactpigeon.com/redir/85639784=
+/71948123/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso=
+]></table><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table>=
+<![endif]--></td></tr></tbody></table><!-- [if mso]></td></tr></table><![en=
+dif]--></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--=
+></div></div></div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D=
+"width:203px; vertical-align: top;"><![endif]--><div class=3D"mobile-full g=
+ivemeid" style=3D"display: inline-block; vertical-align: top; width: 203px;=
+ max-width: 203px; background-color: rgb(255, 255, 255); overflow: hidden;"=
+> <div class=3D"row"><div class=3D"mobile-full" style=3D"display: block; ma=
+x-width: 203px; vertical-align: top; width: 100%; margin: 0px auto; backgro=
+und-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"203" =
+style=3D"width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203" valig=
+n=3D"top" style=3D"width:203px;"><![endif]--><table class=3D"main" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"sing=
+leproduct" style=3D"overflow: hidden; background-color: rgb(255, 255, 255);=
+ width: 203px; font-family: Arial, Helvetica, sans-serif; display: table;" =
+width=3D"203" data-templid=3D"460" itemusedid=3D"1938029907" id=3D"046c6264=
+-8502-6a22-23af-4bca140363e9"><tbody><tr><td align=3D"center" class=3D"fore=
+dit" style=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" st=
+yle=3D"width:100%;"><tr><td><![endif]--><table class=3D"layout_element clic=
+kement" style=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margi=
+n: 0 auto; background-color: #dd957f; border: 0px solid #dd957f;" border=3D=
+"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" dat=
+a-layout=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 203px=
+;" width=3D"203"><table class=3D"clickement title_element" style=3D"z-index=
+: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=
+=3D"cpTextContent" style=3D"text-align: center; padding: 0 9px 0 9px;" alig=
+n=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color: #ff=
+ffff; font-weight: bold; font-style: normal;"><a style=3D"color: #ffffff; w=
+idth: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https://go.co=
+ntactpigeon.com/redir/85639784/71948115/"> adidas COLANTI dama FARM LEGGING=
+S</a></span></td></tr></tbody></table></td></tr><tr align=3D"center"><td st=
+yle=3D"width: 203px;" width=3D"203"><table class=3D"clickement image_elemen=
+t" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px;" align=3D=
+"center" valign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/85=
+639784/71948115/" target=3D"_blank" rel=3D"noopener"><img style=3D"width: 8=
+5%; border: 10px solid rgb(133, 84, 227); max-width: 172.8px;" src=3D"https=
+://www.intersport.ro/Uploads/resources/407237/colanti-farm-leggings-affilia=
+te.jpg?lm=3D17740459" alt=3D"adidas COLANTI dama FARM LEGGINGS" width=3D"17=
+2.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/resources/407237=
+/colanti-farm-leggings-affiliate.jpg?lm=3D17740459" id=3D"84f765bd-523f-09a=
+4-0c3e-729df687f269"></a></td></tr></tbody></table></td></tr><tr style=3D"h=
+eight: 50px;" align=3D"center"><td style=3D"width: 203px;" width=3D"203"><t=
+able class=3D"clickement price_element" style=3D"width: 100%; height: 60px;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody>=
+<tr><td style=3D"text-align: center; font-size: 14px; font-family: Arial; c=
+olor: white; font-weight: normal; font-style: normal; width: 640px;" align=
+=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color: whit=
+e; font-weight: normal; font-style: normal;">299.99 LEI</span></td></tr></t=
+body></table></td></tr><tr align=3D"center"><td style=3D"width: 203px;" wid=
+th=3D"203"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><![e=
+ndif]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width:=
+102px;"><![endif]--><td class=3D"button" style=3D"background: url() center;=
+ background-repeat: no-repeat; width: 102px; white-space: nowrap; margin: 0=
+ auto; background-color: #8554e3; border-radius: 5px; padding: 8px 10px; te=
+xt-align: center; font-family: Arial; font-size: 16px;"><a class=3D"cpButto=
+n" style=3D"white-space: nowrap; letter-spacing: normal; line-height: 100%;=
+ text-align: center; font-weight: normal; color: white; font-style: normal;=
+ text-decoration: none; padding: 7px; display: inline-block; height: 100%;"=
+ title=3D"adidas COLANTI dama FARM LEGGINGS" href=3D"https://go.contactpige=
+on.com/redir/85639784/71948115/" target=3D"_blank" rel=3D"noopener">CUMPARA=
+ </a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if ms=
+o]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]></=
+td></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td></t=
+r></table><![endif]--></div></div></div><!--[if mso]></td><![endif]--></td>=
+ </tr></tbody></table></div><!--[if mso]></td></tr></table><![endif]--></di=
+v> </div> </div><div class=3D"lyrow" style=3D"display: block; position: rel=
+ative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=
+=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><=
+![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: =
+640px; vertical-align: top; width: 100%; background-color: rgb(243, 243, 24=
+3); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr=
+><td><![endif]--><table class=3D"main" style=3D"border: 0px; background-col=
+or: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: Arial,=
+ Helvetica, sans-serif; display: table; min-width: 100% !important;" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"li=
+ne" width=3D"640" id=3D"c39ab4e1-d32b-0097-a701-3420f518151b"> <tbody> <tr>=
+ <td class=3D"divider-simple" style=3D"padding: 5px 40px; font-size: 14px; =
+color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-wid=
+th: 100% !important; width: 100% !important;"> <tbody> <tr> <td width=3D"10=
+0%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> <=
+/table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endi=
+f]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div>=
+<div class=3D"lyrow products" data-code=3D"_AC_PROD_" style=3D"display: blo=
+ck; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"vi=
+ew"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:64=
+0px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: blo=
+ck; max-width: 640px; vertical-align: top; width: 100%; background-color: r=
+gb(221, 149, 127); overflow: hidden;"><table class=3D"main" style=3D"border=
+-collapse: collapse; text-align: center; background: rgb(221, 149, 127); wi=
+dth: 640px; max-width: 640px; display: table; font-family: Arial, Helvetica=
+, sans-serif;" data-type=3D"productgrid" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" align=3D"center" width=3D"640" id=3D"42df4cca-5110-952f-8975=
+-0f016d58ae53"><tbody><tr class=3D"lyrow displaytable"><td style=3D"width: =
+640px; font-size: 14px;" width=3D"640"> <!--[if mso]><td style=3D"width:203=
+px; vertical-align: top;"><![endif]--><div class=3D"mobile-full givemeid" s=
+tyle=3D"display: inline-block; vertical-align: top; width: 203px; max-width=
+: 203px; background-color: rgb(255, 255, 255); overflow: hidden;"> <div cla=
+ss=3D"row"><div class=3D"mobile-full" style=3D"display: block; max-width: 2=
+03px; vertical-align: top; width: 100%; margin: 0px auto; background-color:=
+ rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"center=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"203" style=3D"w=
+idth:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203" valign=3D"top" =
+style=3D"width:203px;"><![endif]--><table class=3D"main" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduct"=
+ style=3D"overflow: hidden; background-color: rgb(255, 255, 255); width: 20=
+3px; font-family: Arial, Helvetica, sans-serif; display: table;" width=3D"2=
+03" data-templid=3D"460" itemusedid=3D"1879790877" id=3D"8475b9b9-fac5-239c=
+-51ad-30049dedf89c"><tbody><tr><td align=3D"center" class=3D"foredit" style=
+=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"wid=
+th:100%;"><tr><td><![endif]--><table class=3D"layout_element clickement" st=
+yle=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margin: 0 auto;=
+ background-color: #dd957f; border: 0px solid #dd957f;" border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=
+=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 203px;" width=
+=3D"203"><table class=3D"clickement title_element" style=3D"z-index: 999999=
+99; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"cpT=
+extContent" style=3D"text-align: center; padding: 0 9px 0 9px;" align=3D"ce=
+nter"><span style=3D"font-size: 14px; font-family: Arial; color: #ffffff; f=
+ont-weight: bold; font-style: normal;"><a style=3D"color: #ffffff; width: 1=
+00%; padding: 5px 5px; text-decoration: none;" href=3D"https://go.contactpi=
+geon.com/redir/85639784/71948113/"> adidas Pantofi sport dama AlphaBounce +=
+</a></span></td></tr></tbody></table></td></tr><tr align=3D"center"><td sty=
+le=3D"width: 203px;" width=3D"203"><table class=3D"clickement image_element=
+" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px;" align=3D"=
+center" valign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/856=
+39784/71948113/" target=3D"_blank" rel=3D"noopener"><img style=3D"width: 85=
+%; border: 10px solid rgb(133, 84, 227); max-width: 172.8px;" src=3D"https:=
+//www.intersport.ro/Uploads/resources/348196/pantofi-alphabounce-w-affiliat=
+e.jpg?lm=3D17268051" alt=3D"adidas Pantofi sport dama AlphaBounce +" width=
+=3D"172.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/resources/=
+348196/pantofi-alphabounce-w-affiliate.jpg?lm=3D17268051" id=3D"bad0cf27-72=
+9e-9ac4-b104-beb0e8473491"></a></td></tr></tbody></table></td></tr><tr styl=
+e=3D"height: 50px;" align=3D"center"><td style=3D"width: 203px;" width=3D"2=
+03"><table class=3D"clickement price_element" style=3D"width: 100%; height:=
+ 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><=
+tbody><tr><td style=3D"text-align: center; font-size: 14px; font-family: Ar=
+ial; color: white; font-weight: normal; font-style: normal; width: 640px;" =
+align=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color:=
+ white; font-weight: normal; font-style: normal;">499.99 LEI</span></td></t=
+r></tbody></table></td></tr><tr align=3D"center"><td style=3D"width: 203px;=
+" width=3D"203"><!-- [if mso]><table align=3D"center" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><=
+![endif]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"widt=
+h:102px;"><![endif]--><td class=3D"button" style=3D"background: url() cente=
+r; background-repeat: no-repeat; width: 102px; white-space: nowrap; margin:=
+ 0 auto; background-color: #8554e3; border-radius: 5px; padding: 8px 10px; =
+text-align: center; font-family: Arial; font-size: 16px;"><a class=3D"cpBut=
+ton" style=3D"white-space: nowrap; letter-spacing: normal; line-height: 100=
+%; text-align: center; font-weight: normal; color: white; font-style: norma=
+l; text-decoration: none; padding: 7px; display: inline-block; height: 100%=
+;" title=3D"adidas Pantofi sport dama AlphaBounce +" href=3D"https://go.con=
+tactpigeon.com/redir/85639784/71948113/" target=3D"_blank" rel=3D"noopener"=
+>CUMPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-=
+- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if=
+ mso]></td></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]>=
+</td></tr></table><![endif]--></div></div></div><!--[if mso]></td><![endif]=
+--> <!--[if mso]><td style=3D"width:203px; vertical-align: top;"><![endif]-=
+-><div class=3D"mobile-full givemeid" style=3D"display: inline-block; verti=
+cal-align: top; width: 203px; max-width: 203px; background-color: rgb(255, =
+255, 255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full=
+" style=3D"display: block; max-width: 203px; vertical-align: top; width: 10=
+0%; margin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidde=
+n;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><![endif]--><!--[if=
+ mso]><td width=3D"203" valign=3D"top" style=3D"width:203px;"><![endif]--><=
+table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" data-type=3D"singleproduct" style=3D"overflow: hidden; backgrou=
+nd-color: rgb(255, 255, 255); width: 203px; font-family: Arial, Helvetica, =
+sans-serif; display: table;" width=3D"203" data-templid=3D"460" itemusedid=
+=3D"1996158555" id=3D"df7850b8-d819-c5db-5017-92efaca82586"><tbody><tr><td =
+align=3D"center" class=3D"foredit" style=3D"width: 203px; font-size: 14px;"=
+><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><tabl=
+e class=3D"layout_element clickement" style=3D"overflow: hidden; padding-bo=
+ttom: 21px; width: 100%; margin: 0 auto; background-color: #dd957f; border:=
+ 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"cen=
+ter"><td style=3D"width: 203px;" width=3D"203"><table class=3D"clickement t=
+itle_element" style=3D"z-index: 99999999; width: 100%; height: 100%;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr sty=
+le=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-align: cente=
+r; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"font-size: 14px; =
+font-family: Arial; color: #ffffff; font-weight: bold; font-style: normal;"=
+><a style=3D"color: #ffffff; width: 100%; padding: 5px 5px; text-decoration=
+: none;" href=3D"https://go.contactpigeon.com/redir/85639784/71948129/"> ad=
+idas PANTOFI DURAMO SPEED W</a></span></td></tr></tbody></table></td></tr><=
+tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=
+=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85=
+%; height: 170px;" align=3D"center" valign=3D"middle"><a href=3D"https://go=
+.contactpigeon.com/redir/85639784/71948129/" target=3D"_blank" rel=3D"noope=
+ner"><img style=3D"width: 85%; border: 10px solid rgb(133, 84, 227); max-wi=
+dth: 172.8px;" src=3D"https://www.intersport.ro/Uploads/resources/422917/pa=
+ntofi-duramo-speed-w-affiliate.jpg?lm=3D18870929" alt=3D"adidas PANTOFI DUR=
+AMO SPEED W" width=3D"172.8" data-originalsrc=3D"https://www.intersport.ro/=
+Uploads/resources/422917/pantofi-duramo-speed-w-affiliate.jpg?lm=3D18870929=
+" id=3D"32fb4e76-9cca-b339-dcdb-2385ba6fac6c"></a></td></tr></tbody></table=
+></td></tr><tr style=3D"height: 50px;" align=3D"center"><td style=3D"width:=
+ 203px;" width=3D"203"><table class=3D"clickement price_element" style=3D"w=
+idth: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"center"><tbody><tr><td style=3D"text-align: center; font-size: 14=
+px; font-family: Arial; color: white; font-weight: normal; font-style: norm=
+al; width: 640px;" align=3D"center"><span style=3D"font-size: 14px; font-fa=
+mily: Arial; color: white; font-weight: normal; font-style: normal;">449.99=
+ LEI</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td sty=
+le=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: center;=
+ margin: 0 auto;"><![endif]--><table class=3D"button" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"102" style=3D"width:102px;"><![endif]--><td class=3D"button" style=3D"back=
+ground: url() center; background-repeat: no-repeat; width: 102px; white-spa=
+ce: nowrap; margin: 0 auto; background-color: #8554e3; border-radius: 5px; =
+padding: 8px 10px; text-align: center; font-family: Arial; font-size: 16px;=
+"><a class=3D"cpButton" style=3D"white-space: nowrap; letter-spacing: norma=
+l; line-height: 100%; text-align: center; font-weight: normal; color: white=
+; font-style: normal; text-decoration: none; padding: 7px; display: inline-=
+block; height: 100%;" title=3D"adidas PANTOFI DURAMO SPEED W" href=3D"https=
+://go.contactpigeon.com/redir/85639784/71948129/" target=3D"_blank" rel=3D"=
+noopener">CUMPARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></=
+table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table=
+><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbody></table><!--=
+[if mso]></td></tr></table><![endif]--></div></div></div><!--[if mso]></td>=
+<![endif]--> <!--[if mso]><td style=3D"width:203px; vertical-align: top;"><=
+![endif]--><div class=3D"mobile-full givemeid" style=3D"display: inline-blo=
+ck; vertical-align: top; width: 203px; max-width: 203px; background-color: =
+rgb(255, 255, 255); overflow: hidden;"> <div class=3D"row"><div class=3D"mo=
+bile-full" style=3D"display: block; max-width: 203px; vertical-align: top; =
+width: 100%; margin: 0px auto; background-color: rgb(255, 255, 255); overfl=
+ow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"203" style=3D"width:203px;"><tr><![endif]=
+--><!--[if mso]><td width=3D"203" valign=3D"top" style=3D"width:203px;"><![=
+endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" align=3D"center" data-type=3D"singleproduct" style=3D"overflow: hidd=
+en; background-color: rgb(255, 255, 255); width: 203px; font-family: Arial,=
+ Helvetica, sans-serif; display: table;" width=3D"203" data-templid=3D"460"=
+ itemusedid=3D"1993657941" id=3D"658cf6bc-6c44-7307-e4b3-caeec1ca9c99"><tbo=
+dy><tr><td align=3D"center" class=3D"foredit" style=3D"width: 203px; font-s=
+ize: 14px;"><!-- [if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![en=
+dif]--><table class=3D"layout_element clickement" style=3D"overflow: hidden=
+; padding-bottom: 21px; width: 100%; margin: 0 auto; background-color: #dd9=
+57f; border: 0px solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=3D=
+"0" cellpadding=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr =
+align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"=
+clickement title_element" style=3D"z-index: 99999999; width: 100%; height: =
+100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><t=
+body><tr style=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-=
+align: center; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"font-=
+size: 14px; font-family: Arial; color: #ffffff; font-weight: bold; font-sty=
+le: normal;"><a style=3D"color: #ffffff; width: 100%; padding: 5px 5px; tex=
+t-decoration: none;" href=3D"https://go.contactpigeon.com/redir/85639784/71=
+948121/"> adidas PANTOFI ULTRABOOST 5 W</a></span></td></tr></tbody></table=
+></td></tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><=
+table class=3D"clickement image_element" style=3D"border: 0;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=
+=3D"width: 85%; height: 170px;" align=3D"center" valign=3D"middle"><a href=
+=3D"https://go.contactpigeon.com/redir/85639784/71948121/" target=3D"_blank=
+" rel=3D"noopener"><img style=3D"width: 85%; border: 10px solid rgb(133, 84=
+, 227); max-width: 172.8px;" src=3D"https://www.intersport.ro/Uploads/resou=
+rces/430535/pantofi-ultraboost-5-w-affiliate.jpg?lm=3D23575448" alt=3D"adid=
+as PANTOFI ULTRABOOST 5 W" width=3D"172.8" data-originalsrc=3D"https://www.=
+intersport.ro/Uploads/resources/430535/pantofi-ultraboost-5-w-affiliate.jpg=
+?lm=3D23575448" id=3D"b0b19de4-5ccd-e1a5-c117-654258734a6c"></a></td></tr><=
+/tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"center"><td s=
+tyle=3D"width: 203px;" width=3D"203"><table class=3D"clickement price_eleme=
+nt" style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center;=
+ font-size: 14px; font-family: Arial; color: white; font-weight: normal; fo=
+nt-style: normal; width: 640px;" align=3D"center"><span style=3D"font-size:=
+ 14px; font-family: Arial; color: white; font-weight: normal; font-style: n=
+ormal;">899.99 LEI</span></td></tr></tbody></table></td></tr><tr align=3D"c=
+enter"><td style=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-=
+align: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button=
+" style=3D"background: url() center; background-repeat: no-repeat; width: 1=
+02px; white-space: nowrap; margin: 0 auto; background-color: #8554e3; borde=
+r-radius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; f=
+ont-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter=
+-spacing: normal; line-height: 100%; text-align: center; font-weight: norma=
+l; color: white; font-style: normal; text-decoration: none; padding: 7px; d=
+isplay: inline-block; height: 100%;" title=3D"adidas PANTOFI ULTRABOOST 5 W=
+" href=3D"https://go.contactpigeon.com/redir/85639784/71948121/" target=3D"=
+_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table><![endif]-->=
+</tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr>=
+</tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbo=
+dy></table><!--[if mso]></td></tr></table><![endif]--></div></div></div><!-=
+-[if mso]></td><![endif]--></td> </tr><tr class=3D"lyrow displaytable"><td =
+width=3D"640" style=3D"width: 640px; font-size: 14px;"> <!--[if mso]><td st=
+yle=3D"width:203px; vertical-align: top;"><![endif]--><div class=3D"mobile-=
+full givemeid" style=3D"display: inline-block; vertical-align: top; width: =
+203px; max-width: 203px; background-color: rgb(255, 255, 255); overflow: hi=
+dden;"> <div class=3D"row"><div class=3D"mobile-full" style=3D"display: blo=
+ck; max-width: 203px; vertical-align: top; width: 100%; margin: 0px auto; b=
+ackground-color: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"203" style=3D"width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203"=
+ valign=3D"top" style=3D"width:203px;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=
+=3D"singleproduct" style=3D"overflow: hidden; background-color: rgb(255, 25=
+5, 255); width: 203px; font-family: Arial, Helvetica, sans-serif; display: =
+table;" width=3D"203" data-templid=3D"460" itemusedid=3D"1996157707" id=3D"=
+6fb3cd37-3b33-6104-bcbc-9e58e4face3e"><tbody><tr><td align=3D"center" class=
+=3D"foredit" style=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table =
+align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+100%" style=3D"width:100%;"><tr><td><![endif]--><table class=3D"layout_elem=
+ent clickement" style=3D"overflow: hidden; padding-bottom: 21px; width: 100=
+%; margin: 0 auto; background-color: #dd957f; border: 0px solid #dd957f;" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"cen=
+ter" data-layout=3D"vertical"><tbody><tr align=3D"center"><td style=3D"widt=
+h: 203px;" width=3D"203"><table class=3D"clickement title_element" style=3D=
+"z-index: 99999999; width: 100%; height: 100%;" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><=
+td class=3D"cpTextContent" style=3D"text-align: center; padding: 0 9px 0 9p=
+x;" align=3D"center"><span style=3D"font-size: 14px; font-family: Arial; co=
+lor: #ffffff; font-weight: bold; font-style: normal;"><a style=3D"color: #f=
+fffff; width: 100%; padding: 5px 5px; text-decoration: none;" href=3D"https=
+://go.contactpigeon.com/redir/85639784/71948112/"> adidas PANTOFI TERREX SO=
+ULSTRIDE FLOW W</a></span></td></tr></tbody></table></td></tr><tr align=3D"=
+center"><td style=3D"width: 203px;" width=3D"203"><table class=3D"clickemen=
+t image_element" style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" align=3D"center"><tbody><tr><td style=3D"width: 85%; height: 17=
+0px;" align=3D"center" valign=3D"middle"><a href=3D"https://go.contactpigeo=
+n.com/redir/85639784/71948112/" target=3D"_blank" rel=3D"noopener"><img sty=
+le=3D"width: 85%; border: 10px solid rgb(133, 84, 227); max-width: 172.8px;=
+" src=3D"https://www.intersport.ro/Uploads/resources/410411/pantofi-terrex-=
+soulstride-flow-w-affiliate.jpg?lm=3D11648839" alt=3D"adidas PANTOFI TERREX=
+ SOULSTRIDE FLOW W" width=3D"172.8" data-originalsrc=3D"https://www.intersp=
+ort.ro/Uploads/resources/410411/pantofi-terrex-soulstride-flow-w-affiliate.=
+jpg?lm=3D11648839" id=3D"45352a51-45bf-18ea-abd0-c3e7fb6e359c"></a></td></t=
+r></tbody></table></td></tr><tr style=3D"height: 50px;" align=3D"center"><t=
+d style=3D"width: 203px;" width=3D"203"><table class=3D"clickement price_el=
+ement" style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: cent=
+er; font-size: 14px; font-family: Arial; color: white; font-weight: normal;=
+ font-style: normal; width: 640px;" align=3D"center"><span style=3D"font-si=
+ze: 14px; font-family: Arial; color: white; font-weight: normal; font-style=
+: normal;">699.99 LEI</span></td></tr></tbody></table></td></tr><tr align=
+=3D"center"><td style=3D"width: 203px;" width=3D"203"><!-- [if mso]><table =
+align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"=
+text-align: center; margin: 0 auto;"><![endif]--><table class=3D"button" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr>=
+<!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"bu=
+tton" style=3D"background: url() center; background-repeat: no-repeat; widt=
+h: 102px; white-space: nowrap; margin: 0 auto; background-color: #8554e3; b=
+order-radius: 5px; padding: 8px 10px; text-align: center; font-family: Aria=
+l; font-size: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; le=
+tter-spacing: normal; line-height: 100%; text-align: center; font-weight: n=
+ormal; color: white; font-style: normal; text-decoration: none; padding: 7p=
+x; display: inline-block; height: 100%;" title=3D"adidas PANTOFI TERREX SOU=
+LSTRIDE FLOW W" href=3D"https://go.contactpigeon.com/redir/85639784/7194811=
+2/" target=3D"_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></tabl=
+e><![endif]--></tr></tbody></table><!-- [if mso]></td></tr></table><![endif=
+]--></td></tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--><=
+/td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></div><=
+/div></div><!--[if mso]></td><![endif]--> <!--[if mso]><td style=3D"width:2=
+03px; vertical-align: top;"><![endif]--><div class=3D"mobile-full givemeid"=
+ style=3D"display: inline-block; vertical-align: top; width: 203px; max-wid=
+th: 203px; background-color: rgb(255, 255, 255); overflow: hidden;"> <div c=
+lass=3D"row"><div class=3D"mobile-full" style=3D"display: block; max-width:=
+ 203px; vertical-align: top; width: 100%; margin: 0px auto; background-colo=
+r: rgb(255, 255, 255); overflow: hidden;"><!--[if mso]><table align=3D"cent=
+er" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"203" style=3D=
+"width:203px;"><tr><![endif]--><!--[if mso]><td width=3D"203" valign=3D"top=
+" style=3D"width:203px;"><![endif]--><table class=3D"main" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"singleproduc=
+t" style=3D"overflow: hidden; background-color: rgb(255, 255, 255); width: =
+203px; font-family: Arial, Helvetica, sans-serif; display: table;" width=3D=
+"203" data-templid=3D"460" itemusedid=3D"1996158551" id=3D"5db43caa-8421-02=
+2d-5132-62d36898be1f"><tbody><tr><td align=3D"center" class=3D"foredit" sty=
+le=3D"width: 203px; font-size: 14px;"><!-- [if mso]><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"w=
+idth:100%;"><tr><td><![endif]--><table class=3D"layout_element clickement" =
+style=3D"overflow: hidden; padding-bottom: 21px; width: 100%; margin: 0 aut=
+o; background-color: #dd957f; border: 0px solid #dd957f;" border=3D"0" widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" data-layout=
+=3D"vertical"><tbody><tr align=3D"center"><td style=3D"width: 203px;" width=
+=3D"203"><table class=3D"clickement title_element" style=3D"z-index: 999999=
+99; width: 100%; height: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center"><tbody><tr style=3D"height: 65px;"><td class=3D"cpT=
+extContent" style=3D"text-align: center; padding: 0 9px 0 9px;" align=3D"ce=
+nter"><span style=3D"font-size: 14px; font-family: Arial; color: #ffffff; f=
+ont-weight: bold; font-style: normal;"><a style=3D"color: #ffffff; width: 1=
+00%; padding: 5px 5px; text-decoration: none;" href=3D"https://go.contactpi=
+geon.com/redir/85639784/71948133/"> adidas PANTOFI dama ALPHABOOST V2 W</a>=
+</span></td></tr></tbody></table></td></tr><tr align=3D"center"><td style=
+=3D"width: 203px;" width=3D"203"><table class=3D"clickement image_element" =
+style=3D"border: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center"><tbody><tr><td style=3D"width: 85%; height: 170px;" align=3D"ce=
+nter" valign=3D"middle"><a href=3D"https://go.contactpigeon.com/redir/85639=
+784/71948133/" target=3D"_blank" rel=3D"noopener"><img style=3D"width: 85%;=
+ border: 10px solid rgb(133, 84, 227); max-width: 172.8px;" src=3D"https://=
+www.intersport.ro/Uploads/resources/426337/pantofi-alphaboost-v2-w-affiliat=
+e.jpg?lm=3D16846869" alt=3D"adidas PANTOFI dama ALPHABOOST V2 W" width=3D"1=
+72.8" data-originalsrc=3D"https://www.intersport.ro/Uploads/resources/42633=
+7/pantofi-alphaboost-v2-w-affiliate.jpg?lm=3D16846869" id=3D"d49de713-74e2-=
+ddb8-74de-56d97dd5c0c7"></a></td></tr></tbody></table></td></tr><tr style=
+=3D"height: 50px;" align=3D"center"><td style=3D"width: 203px;" width=3D"20=
+3"><table class=3D"clickement price_element" style=3D"width: 100%; height: =
+60px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><t=
+body><tr><td style=3D"text-align: center; font-size: 14px; font-family: Ari=
+al; color: white; font-weight: normal; font-style: normal; width: 640px;" a=
+lign=3D"center"><span style=3D"font-size: 14px; font-family: Arial; color: =
+white; font-weight: normal; font-style: normal;">599.99 LEI</span></td></tr=
+></tbody></table></td></tr><tr align=3D"center"><td style=3D"width: 203px;"=
+ width=3D"203"><!-- [if mso]><table align=3D"center" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" style=3D"text-align: center; margin: 0 auto;"><!=
+[endif]--><table class=3D"button" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" align=3D"center"><tbody><tr><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"102" style=3D"width=
+:102px;"><![endif]--><td class=3D"button" style=3D"background: url() center=
+; background-repeat: no-repeat; width: 102px; white-space: nowrap; margin: =
+0 auto; background-color: #8554e3; border-radius: 5px; padding: 8px 10px; t=
+ext-align: center; font-family: Arial; font-size: 16px;"><a class=3D"cpButt=
+on" style=3D"white-space: nowrap; letter-spacing: normal; line-height: 100%=
+; text-align: center; font-weight: normal; color: white; font-style: normal=
+; text-decoration: none; padding: 7px; display: inline-block; height: 100%;=
+" title=3D"adidas PANTOFI dama ALPHABOOST V2 W" href=3D"https://go.contactp=
+igeon.com/redir/85639784/71948133/" target=3D"_blank" rel=3D"noopener">CUMP=
+ARA </a></td><!--[if mso]></table><![endif]--></tr></tbody></table><!-- [if=
+ mso]></td></tr></table><![endif]--></td></tr></tbody></table><!-- [if mso]=
+></td></tr></table><![endif]--></td></tr></tbody></table><!--[if mso]></td>=
+</tr></table><![endif]--></div></div></div><!--[if mso]></td><![endif]--> <=
+!--[if mso]><td style=3D"width:203px; vertical-align: top;"><![endif]--><di=
+v class=3D"mobile-full givemeid" style=3D"display: inline-block; vertical-a=
+lign: top; width: 203px; max-width: 203px; background-color: rgb(255, 255, =
+255); overflow: hidden;"> <div class=3D"row"><div class=3D"mobile-full" sty=
+le=3D"display: block; max-width: 203px; vertical-align: top; width: 100%; m=
+argin: 0px auto; background-color: rgb(255, 255, 255); overflow: hidden;"><=
+!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" width=3D"203" style=3D"width:203px;"><tr><![endif]--><!--[if mso]=
+><td width=3D"203" valign=3D"top" style=3D"width:203px;"><![endif]--><table=
+ class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"c=
+enter" data-type=3D"singleproduct" style=3D"overflow: hidden; background-co=
+lor: rgb(255, 255, 255); width: 203px; font-family: Arial, Helvetica, sans-=
+serif; display: table;" width=3D"203" data-templid=3D"460" itemusedid=3D"19=
+96158431" id=3D"f16edb59-520a-e37b-4ba7-03c400cb14a0"><tbody><tr><td align=
+=3D"center" class=3D"foredit" style=3D"width: 203px; font-size: 14px;"><!--=
+ [if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;"><tr><td><![endif]--><table cla=
+ss=3D"layout_element clickement" style=3D"overflow: hidden; padding-bottom:=
+ 21px; width: 100%; margin: 0 auto; background-color: #dd957f; border: 0px =
+solid #dd957f;" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" data-layout=3D"vertical"><tbody><tr align=3D"center=
+"><td style=3D"width: 203px;" width=3D"203"><table class=3D"clickement titl=
+e_element" style=3D"z-index: 99999999; width: 100%; height: 100%;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr styl=
+e=3D"height: 65px;"><td class=3D"cpTextContent" style=3D"text-align: center=
+; padding: 0 9px 0 9px;" align=3D"center"><span style=3D"font-size: 14px; f=
+ont-family: Arial; color: #ffffff; font-weight: bold; font-style: normal;">=
+<a style=3D"color: #ffffff; width: 100%; padding: 5px 5px; text-decoration:=
+ none;" href=3D"https://go.contactpigeon.com/redir/85639784/71948131/"> adi=
+das PANTOFI dama ULTRABOOST 5 W</a></span></td></tr></tbody></table></td></=
+tr><tr align=3D"center"><td style=3D"width: 203px;" width=3D"203"><table cl=
+ass=3D"clickement image_element" style=3D"border: 0;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><td style=3D"width:=
+ 85%; height: 170px;" align=3D"center" valign=3D"middle"><a href=3D"https:/=
+/go.contactpigeon.com/redir/85639784/71948131/" target=3D"_blank" rel=3D"no=
+opener"><img style=3D"width: 85%; border: 10px solid rgb(133, 84, 227); max=
+-width: 172.8px;" src=3D"https://www.intersport.ro/Uploads/resources/422587=
+/pantofi-ultraboost-5-w-affiliate.jpg?lm=3D18207822" alt=3D"adidas PANTOFI =
+dama ULTRABOOST 5 W" width=3D"172.8" data-originalsrc=3D"https://www.inters=
+port.ro/Uploads/resources/422587/pantofi-ultraboost-5-w-affiliate.jpg?lm=3D=
+18207822" id=3D"bc4b9494-5293-6702-ff55-bd3e28f4b573"></a></td></tr></tbody=
+></table></td></tr><tr style=3D"height: 50px;" align=3D"center"><td style=
+=3D"width: 203px;" width=3D"203"><table class=3D"clickement price_element" =
+style=3D"width: 100%; height: 60px;" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" align=3D"center"><tbody><tr><td style=3D"text-align: center; fon=
+t-size: 14px; font-family: Arial; color: white; font-weight: normal; font-s=
+tyle: normal; width: 640px;" align=3D"center"><span style=3D"font-size: 14p=
+x; font-family: Arial; color: white; font-weight: normal; font-style: norma=
+l;">899.99 LEI</span></td></tr></tbody></table></td></tr><tr align=3D"cente=
+r"><td style=3D"width: 203px;" width=3D"203"><!-- [if mso]><table align=3D"=
+center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-alig=
+n: center; margin: 0 auto;"><![endif]--><table class=3D"button" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"><tbody><tr><!--[if m=
+so]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"102" style=3D"width:102px;"><![endif]--><td class=3D"button" sty=
+le=3D"background: url() center; background-repeat: no-repeat; width: 102px;=
+ white-space: nowrap; margin: 0 auto; background-color: #8554e3; border-rad=
+ius: 5px; padding: 8px 10px; text-align: center; font-family: Arial; font-s=
+ize: 16px;"><a class=3D"cpButton" style=3D"white-space: nowrap; letter-spac=
+ing: normal; line-height: 100%; text-align: center; font-weight: normal; co=
+lor: white; font-style: normal; text-decoration: none; padding: 7px; displa=
+y: inline-block; height: 100%;" title=3D"adidas PANTOFI dama ULTRABOOST 5 W=
+" href=3D"https://go.contactpigeon.com/redir/85639784/71948131/" target=3D"=
+_blank" rel=3D"noopener">CUMPARA </a></td><!--[if mso]></table><![endif]-->=
+</tr></tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr>=
+</tbody></table><!-- [if mso]></td></tr></table><![endif]--></td></tr></tbo=
+dy></table><!--[if mso]></td></tr></table><![endif]--></div></div></div><!-=
+-[if mso]></td><![endif]--></td> </tr></tbody></table></div><!--[if mso]></=
+td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=
+=3D"display: block; position: relative; opacity: 1; left: 0px; top: 0px;"> =
+<div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=
+=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" =
+style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" styl=
+e=3D"display: block; max-width: 640px; vertical-align: top; width: 100%; ba=
+ckground-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"640" style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" styl=
+e=3D"border: 0px; background-color: rgb(243, 243, 243); width: 640px; max-w=
+idth: 640px; font-family: Arial, Helvetica, sans-serif; display: table; min=
+-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+align=3D"center" data-type=3D"line" width=3D"640" id=3D"f51b16f4-acb7-b7c8-=
+82f7-3b42cb584dda"> <tbody> <tr> <td class=3D"divider-simple" style=3D"padd=
+ing: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px=
+ solid rgb(51, 51, 51); min-width: 100% !important; width: 100% !important;=
+"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, =
+0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if=
+ mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><=
+![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block=
+; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view=
+"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"line" width=3D"640" id=3D"26ecebb8-8c36-355e-b188-534ed0c0cef4"=
+> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 0px 40px; fon=
+t-size: 14px; color: rgb(0, 0, 0);" id=3D"76affdee-b7a6-9c18-0039-5d2c54ea3=
+edf"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" style=3D"border-top: 1px solid rgba(0, 0, 0, 0); min-width: 100% !importa=
+nt; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font=
+-size: 14px; color: rgb(0, 0, 0);" id=3D"b9713fca-998e-fe21-b395-accc4d0d24=
+d6"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso=
+]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![en=
+dif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block; po=
+sition: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <=
+div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;">=
+<tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; ma=
+x-width: 640px; vertical-align: top; width: 100%; background-color: rgb(243=
+, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:64=
+0px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; backg=
+round-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-famil=
+y: Arial, Helvetica, sans-serif; display: table; min-width: 100% !important=
+;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-t=
+ype=3D"line" width=3D"640" id=3D"166dacf2-a15b-ecf5-2bdd-e963b0924e58"> <tb=
+ody> <tr> <td class=3D"divider-simple" style=3D"padding: 0px 40px; font-siz=
+e: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgba(0, 0, 0, 0)=
+; min-width: 100% !important; width: 100% !important;" id=3D"97643bba-9667-=
+22cf-869b-a9dbd89ec0df"> <tbody> <tr> <td width=3D"100%" style=3D"font-size=
+: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </=
+tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if ms=
+o]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" s=
+tyle=3D"display: block; position: relative; opacity: 1; left: 0px; top: 0px=
+;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table al=
+ign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"64=
+0" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" s=
+tyle=3D"display: block; max-width: 640px; vertical-align: top; width: 100%;=
+ background-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><ta=
+ble align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" s=
+tyle=3D"border: 0px; background-color: rgb(243, 243, 243); width: 640px; ma=
+x-width: 640px; font-family: Arial, Helvetica, sans-serif; display: table; =
+min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"71d42a08-9b4d-3e=
+77-1bf6-85a7bd94c237"> <tbody> <tr> <td class=3D"divider-simple" style=3D"p=
+adding: 0px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"1=
+00%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: =
+1px solid rgba(0, 0, 0, 0); min-width: 100% !important; width: 100% !import=
+ant;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb=
+(0, 0, 0);" id=3D"c3e05df5-18c2-e041-9fd9-99f007b587cf"> </td> </tr> </tbod=
+y> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![=
+endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </=
+div><div class=3D"lyrow" style=3D"display: block; position: relative; opaci=
+ty: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearf=
+ix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <d=
+iv class=3D"mobile-full" style=3D"display: block; max-width: 640px; vertica=
+l-align: top; width: 100%; background-color: rgb(243, 243, 243); overflow: =
+hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]=
+--><table class=3D"main" style=3D"border: 0px; background-color: rgb(243, 2=
+43, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica, sa=
+ns-serif; display: table; min-width: 100% !important;" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"6=
+40" id=3D"e91687d4-5a2a-5f37-5cd4-dc8ccdb9b040"> <tbody> <tr> <td class=3D"=
+divider-simple" style=3D"padding: 0px 40px; font-size: 14px; color: rgb(0, =
+0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"border-top: 1px solid rgba(0, 0, 0, 0); min-width: 100% !im=
+portant; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D=
+"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td=
+> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div>=
+<!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=
+=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; left: 0=
+px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if ms=
+o]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mo=
+bile-full" style=3D"display: block; max-width: 640px; vertical-align: top; =
+width: 100%; background-color: rgb(221, 149, 127); overflow: hidden;"> <!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table clas=
+s=3D"main" style=3D"border: 0px; background-color: rgb(221, 149, 127); widt=
+h: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; disp=
+lay: table; min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"1dfc=
+081b-fc97-e0f5-8718-588dd8c47600"> <tbody> <tr> <td class=3D"divider-simple=
+" style=3D"padding: 0px 50px 20px; font-size: 14px; color: rgb(0, 0, 0);" i=
+d=3D"856d75f7-d730-dba7-0061-e4487c2ebade"> <table width=3D"100%" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(=
+221, 149, 127); min-width: 100% !important; width: 100% !important;"> <tbod=
+y> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);">=
+ </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></=
+td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><![endif]=
+--></div> </div> </div><div class=3D"lyrow" style=3D"display: block; positi=
+on: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div =
+class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr>=
+<td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-wi=
+dth: 640px; vertical-align: top; width: 100%; background-color: rgb(243, 24=
+3, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;=
+"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; backgroun=
+d-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-family: A=
+rial, Helvetica, sans-serif; display: table; min-width: 100% !important;" c=
+ellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=
+=3D"line" width=3D"640" id=3D"fa2a206f-aa2c-c925-9fb5-97b2e482bb37"> <tbody=
+> <tr> <td class=3D"divider-simple" style=3D"padding: 5px 40px; font-size: =
+14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(0, 0, 0); min-w=
+idth: 100% !important; width: 100% !important;"> <tbody> <tr> <td width=3D"=
+100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody>=
+ </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![en=
+dif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </di=
+v><div class=3D"lyrow" style=3D"display: block;"> <div class=3D"view"> <div=
+ class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr=
+><td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-w=
+idth: 640px; width: 100%; background-color: rgb(255, 255, 255); overflow: h=
+idden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--=
+> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" st=
+yle=3D"font-size: 14px; background-color: rgb(255, 255, 255); width: 640px;=
+ max-width: 640px; font-family: Arial, Helvetica, sans-serif; display: tabl=
+e; min-width: 100% !important;" data-type=3D"image" id=3D"872843ef-ecca-b5a=
+3-8e4b-5837dbe454d9" width=3D"640"> <tbody> <tr> <td align=3D"center" style=
+=3D"padding: 0px; width: 640px; font-size: 14px; color: rgb(0, 0, 0);" clas=
+s=3D"image onebefore"> <a class=3D"link" href=3D"https://go.contactpigeon.c=
+om/redir/85639784/71948124/"> <img border=3D"0" style=3D"box-sizing: border=
+-box; display: block; max-width: 640px; width: 100%;" alt=3D"image" src=3D"=
+https://dimages.contactpigeon.com/dndcp/upload/files/2510/1728474695_19193.=
+jpg" putwidth=3D"640" haspadding=3D"0" realdimensions=3D"640x200" tabindex=
+=3D"0" id=3D"9ea31830-be99-baed-34ce-bcdc60543d16" width=3D"640"> </a> </td=
+> </tr> </tbody> </table> <!--[if mso]></td></tr></table><![endif]--></div>=
+<!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=
+=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; left: 0=
+px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if ms=
+o]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mo=
+bile-full" style=3D"display: block; max-width: 640px; vertical-align: top; =
+width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"> <!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><table clas=
+s=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243); widt=
+h: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif; disp=
+lay: table; min-width: 100% !important;" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=3D"8a07=
+ad9a-cd2e-2e4e-0888-2934c8d4ea27"> <tbody> <tr> <td class=3D"divider-simple=
+" style=3D"padding: 5px 40px; font-size: 14px; color: rgb(0, 0, 0);"> <tabl=
+e width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"=
+border-top: 1px solid rgb(0, 0, 0); min-width: 100% !important; width: 100%=
+ !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; co=
+lor: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </t=
+able><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></=
+tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"di=
+splay: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div c=
+lass=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"cen=
+ter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=
+=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"=
+display: block; max-width: 640px; vertical-align: top; width: 100%; backgro=
+und-color: rgb(221, 149, 127); overflow: hidden;"> <!--[if mso]><table alig=
+n=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640"=
+ style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"=
+border: 0px; background-color: rgb(221, 149, 127); width: 640px; max-width:=
+ 640px; font-family: Arial, Helvetica, sans-serif; display: table; min-widt=
+h: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" data-type=3D"line" width=3D"640" id=3D"a5a6d6a2-ce3d-cfb3-a3ba-=
+8c95a8d88113"> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: =
+0px 50px 20px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"ea170618-af20-3=
+921-1cb2-4010790f3538"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" style=3D"border-top: 1px solid rgb(221, 149, 127); min-=
+width: 100% !important; width: 100% !important;"> <tbody> <tr> <td width=3D=
+"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody=
+> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![e=
+ndif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </d=
+iv><div class=3D"lyrow" style=3D"display: block; position: relative; opacit=
+y: 1; left: 0px; top: 0px;"><div class=3D"view"><div class=3D"row clearfix"=
+><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><div c=
+lass=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-al=
+ign: top; width: 100%; background-color: rgb(255, 255, 255); overflow: hidd=
+en;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"main" data-type=3D"image" id=3D"e48be318-bb20-93ab-c78e-cbb9bddd9c1a" =
+style=3D"background-color: rgb(255, 255, 255); width: 640px; max-width: 640=
+px; font-family: Arial, Helvetica, sans-serif; display: table;" width=3D"64=
+0"><tbody><tr><td align=3D"center" class=3D"image onebefore" style=3D"paddi=
+ng: 0px; font-size: 14px; width: 640px; color: rgb(0, 0, 0);"><a class=3D"l=
+ink" href=3D"https://go.contactpigeon.com/redir/85639784/71948116/"><img al=
+t=3D"image" border=3D"0" id=3D"f2c0b449-67b0-5179-fd94-89b3140a6bba" src=3D=
+"https://dimages.contactpigeon.com/dndcp/upload/files/2510/1728028719_89422=
+.jpg" style=3D"box-sizing: border-box; display: block; max-width: 640px; wi=
+dth: 100%;" tabindex=3D"0" width=3D"640" putwidth=3D"640" realdimensions=3D=
+"640x200" haspadding=3D"0"></a></td></tr></tbody></table><!--[if mso]></td>=
+</tr></table><![endif]--></div><!--[if mso]></td></tr></table><![endif]--><=
+/div></div></div><div class=3D"lyrow" style=3D"display: block; position: re=
+lative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=
+=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><=
+![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-width: =
+640px; vertical-align: top; width: 100%; background-color: rgb(18, 75, 156)=
+; overflow: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><=
+td><![endif]--><table class=3D"main" style=3D"border: 0px; background-color=
+: rgb(18, 75, 156); width: 640px; max-width: 640px; font-family: Arial, Hel=
+vetica, sans-serif; display: table; min-width: 100% !important;" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"line" =
+width=3D"640" id=3D"f227a4e8-2b6f-8d71-3423-69f3c7b5ee8b"> <tbody> <tr> <td=
+ class=3D"divider-simple" style=3D"padding: 0px 50px 20px; font-size: 14px;=
+ color: rgb(0, 0, 0);" id=3D"148d4af7-576b-73b2-1a12-21857f925dd0"> <table =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"bo=
+rder-top: 1px solid rgb(18, 75, 156); min-width: 100% !important; width: 10=
+0% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; =
+color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> <=
+/table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td>=
+</tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"=
+display: block; position: relative; opacity: 1; left: 0px; top: 0px;"> <div=
+ class=3D"view"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"c=
+enter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=
+=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"=
+display: block; max-width: 640px; vertical-align: top; width: 100%; backgro=
+und-color: rgb(243, 243, 243); overflow: hidden;"> <!--[if mso]><table alig=
+n=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640"=
+ style=3D"width:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"=
+border: 0px; background-color: rgb(243, 243, 243); width: 640px; max-width:=
+ 640px; font-family: Arial, Helvetica, sans-serif; display: table; min-widt=
+h: 100% !important;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center" data-type=3D"spacer" width=3D"640" id=3D"9c1d4583-4f68-5cd0-a64=
+0-f59c32d40d57"> <tbody> <tr> <td class=3D"spacer-simple" style=3D"width: 6=
+40px; font-size: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"min-width:100% !importan=
+t; width:100% !important"> <tbody> <tr> <td width=3D"100%" height=3D"13" st=
+yle=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"ed4999ae-=
+e0ee-8056-8689-d66f15af2c8d"> </td> </tr> </tbody> </table> </td> </tr> </t=
+body> </table><!--[if mso]></td></tr></table><![endif]--> </div><!--[if mso=
+]></td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" da=
+ta-code=3D"colsettings" style=3D"display: block;"> <div class=3D"view"> <di=
+v class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><t=
+r><td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-=
+width: 640px; vertical-align: top; width: 100%; background-color: rgb(243, =
+243, 243); overflow: hidden;"><table class=3D"main" style=3D"border-collaps=
+e: collapse; text-align: center; background: rgb(243, 243, 243); width: 640=
+px; max-width: 640px; display: table; font-family: Arial, Helvetica, sans-s=
+erif;" data-type=3D"multiculti" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" align=3D"center" id=3D"0bd3fae5-fe2e-3eec-d55a-7c9d00c44ab9" width=
+=3D"640"><!--[if mso]><tbody><tr><![endif]--><tbody><tr class=3D"lyrow disp=
+laytable" align=3D"center" style=3D"display: block;"><td style=3D"width: 64=
+0px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"77f69f01-6a31-8937-51dc-7=
+089cbcb3899"><div style=3D"font-size: 14px; display: inline-block; backgrou=
+nd-position: center top; vertical-align: top; float: left; max-width: 320px=
+; height: auto; background-color: rgb(243, 243, 243); width: 50% !important=
+; min-width: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mo=
+bile-full allowchild" width=3D"320" id=3D"5fca5df7-6e71-b5ff-d4b7-246bf5868=
+d7d"><div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><di=
+v class=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; vertical-a=
+lign: top;"><![endif]--><div class=3D"mobile-full" style=3D"display: block;=
+ max-width: 320px; width: 100%; background-color: rgb(243, 243, 243); overf=
+low: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td style=
+=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(24=
+3, 243, 243); width: 100%; font-family: Arial, Helvetica, sans-serif; displ=
+ay: table; min-width: 100% !important;" data-type=3D"image" id=3D"0d5a03eb-=
+203e-8ef4-cbee-64fbbfc72361" width=3D"320"><tbody><tr><td align=3D"center" =
+style=3D"padding: 0px; width: 90px; font-size: 14px; color: rgb(0, 0, 0);" =
+class=3D"image onebefore" width=3D"320"><a class=3D"link" id=3D"a6bf3ad0-3b=
+58-cf96-bba9-08648b7229a3"><img border=3D"0" style=3D"box-sizing: border-bo=
+x; display: block; max-width: 90px; width: 100%;" alt=3D"image" src=3D"http=
+s://dimages.contactpigeon.com/dndcp/upload/files/2510/1709030359_35901.png"=
+ putwidth=3D"90" haspadding=3D"0" realdimensions=3D"90x90" tabindex=3D"0" i=
+d=3D"bbd64ff3-c939-0346-363e-5ae4969ed053" width=3D"90"></a></td></tr></tbo=
+dy></table><!--[if mso]></td></tr></table><![endif]--></div><!-- [if mso]><=
+/td><![endif] --></div></div></div><div class=3D"lyrow" style=3D"display: b=
+lock;"><div class=3D"view"><div class=3D"row clearfix"><div class=3D"mobile=
+-full" style=3D"display: block; max-width: 320px; vertical-align: top; widt=
+h: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"><!--[if m=
+so]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"320" style=3D"width:320px;"><tr><td style=3D"padding: 0;"><![end=
+if]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" style=3D"font-size: 14px; background-color: rgb(243, 243, 243); width: 32=
+0px; text-align: center; font-family: Arial, Helvetica, sans-serif; display=
+: table; line-height: 17px; min-width: 100% !important;" data-type=3D"text-=
+block" id=3D"08959554-0095-4768-578a-85d0d9e2f141" width=3D"320"><tbody><tr=
+><td class=3D"block-text" data-clonable=3D"true" style=3D"padding: 0px 20px=
+ 5px; font-size: 14px; color: rgb(0, 0, 0);" id=3D"0dd41edf-ce7d-5acd-94ca-=
+2ce265bcc7b7"><div id=3D"820c9a57-f202-8e82-1d0a-927a15f26aa7"><span style=
+=3D"color: #164196; font-family: Cabin, Avenir, sans-serif;"><span style=3D=
+"font-size: 12px;"><strong id=3D"2cc58e55-160e-92e3-830e-cd26d623c49c">Reze=
+rvare=C2=A0<span id=3D"e046a68f-fab2-f137-86af-67e78923542d" style=3D"color=
+: #164196; font-family: Cabin, Avenir, sans-serif; font-size: 12px;">=C3=AE=
+n</span> magazine</strong></span></span><br><span id=3D"e046a68f-fab2-f137-=
+86af-67e78923542d" style=3D"color: #164196; font-family: Cabin, Avenir, san=
+s-serif; font-size: 12px;">Rezervare gratuit=C4=83=C2=A0=C3=AEn cele 37 de =
+magazine ale noastre</span></div></td></tr></tbody></table><!--[if mso]></t=
+d></tr></table><![endif]--></div></div></div></div></div><div style=3D"font=
+-size: 14px; display: inline-block; background-position: center top; vertic=
+al-align: top; float: left; max-width: 320px; height: auto; background-colo=
+r: rgb(243, 243, 243); width: 50% !important; min-width: 10px !important; o=
+verflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" width=3D"=
+320" id=3D"edfc23f3-2267-b901-3d72-af7736b7b8e3"><div class=3D"lyrow" style=
+=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix"><!--[i=
+f mso]><td style=3D"width: 320px; vertical-align: top;"><![endif]--><div cl=
+ass=3D"mobile-full" style=3D"display: block; max-width: 320px; width: 100%;=
+ background-color: rgb(243, 243, 243); overflow: hidden;"><!--[if mso]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"320" style=3D"width:320px;"><tr><td style=3D"padding: 0;"><![endif]--><=
+table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=
+=3D"font-size: 14px; background-color: rgb(243, 243, 243); width: 100%; fon=
+t-family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !im=
+portant;" data-type=3D"image" id=3D"b5fe48d2-5589-08fb-dbb3-5eb6488bb665" w=
+idth=3D"320"><tbody><tr><td align=3D"center" style=3D"padding: 0px; width: =
+90px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"image onebefore" widt=
+h=3D"320"><a class=3D"link" id=3D"c6748a43-19d9-3b26-8b36-faa47de84f27"><im=
+g border=3D"0" style=3D"box-sizing: border-box; display: block; max-width: =
+90px; width: 100%;" alt=3D"image" src=3D"https://dimages.contactpigeon.com/=
+dndcp/upload/files/2510/1709030394_66144.png" putwidth=3D"90" haspadding=3D=
+"0" realdimensions=3D"90x90" tabindex=3D"0" id=3D"634ba243-66f3-6c1b-13b9-1=
+28f64c35c4b" width=3D"90"></a></td></tr></tbody></table><!--[if mso]></td><=
+/tr></table><![endif]--></div><!-- [if mso]></td><![endif] --></div></div><=
+/div><div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><di=
+v class=3D"row clearfix"><div class=3D"mobile-full" style=3D"display: block=
+; max-width: 320px; vertical-align: top; width: 100%; background-color: rgb=
+(243, 243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width=
+:320px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; ba=
+ckground-color: rgb(243, 243, 243); width: 320px; text-align: center; font-=
+family: Arial, Helvetica, sans-serif; display: table; line-height: 17px; mi=
+n-width: 100% !important;" data-type=3D"text-block" id=3D"edd5b5be-9587-7d9=
+b-3d46-88437b157e25" width=3D"320"><tbody><tr><td class=3D"block-text" data=
+-clonable=3D"true" style=3D"padding: 0px 20px 5px; font-size: 14px; color: =
+rgb(0, 0, 0);"><div id=3D"7fb289f6-a65a-9481-939b-a2bd309fe33f"><span style=
+=3D"color: #164196; font-family: Cabin, Avenir, sans-serif; font-size: 12px=
+;"><strong id=3D"e3cc2237-73e5-1773-ba5e-5ef2df542a9c">Livrare gratuit=C4=
+=83 la adresa ta</strong></span><br><span id=3D"5dae2fb4-056c-365f-3727-fd2=
+b53a0cd55" style=3D"color: #164196; font-family: Cabin, Avenir, sans-serif;=
+ font-size: 12px;">Pentru toate comenzile online de peste 250 lei</span></d=
+iv></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></d=
+iv></div></div></div></div></td></tr></tbody><!--[if mso]></td></tr></tbody=
+><![endif]--></table></div><!--[if mso]></td></tr></table><![endif]--></div=
+> </div> </div><div class=3D"lyrow" data-code=3D"colsettings" style=3D"disp=
+lay: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--[if mso]=
+><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" w=
+idth=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=3D"mobi=
+le-full" style=3D"display: block; max-width: 640px; vertical-align: top; wi=
+dth: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"><table =
+class=3D"main" style=3D"border-collapse: collapse; text-align: center; back=
+ground: rgb(243, 243, 243); width: 640px; max-width: 640px; display: table;=
+ font-family: Arial, Helvetica, sans-serif;" data-type=3D"multiculti" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" width=3D"640" =
+id=3D"02b84261-6214-2d9b-c190-58db2efe8151"><!--[if mso]><tbody><tr><![endi=
+f]--><tbody><tr class=3D"lyrow displaytable" align=3D"center" style=3D"disp=
+lay: block;"><td style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0=
+);"><div style=3D"font-size: 14px; display: inline-block; background-positi=
+on: center top; vertical-align: top; float: left; max-width: 320px; height:=
+ auto; background-color: rgb(243, 243, 243); width: 50% !important; min-wid=
+th: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-full=
+ allowchild" width=3D"320"><div class=3D"lyrow" style=3D"display: block;"><=
+div class=3D"view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"wi=
+dth: 320px; vertical-align: top;"><![endif]--><div class=3D"mobile-full" st=
+yle=3D"display: block; max-width: 320px; width: 100%; background-color: rgb=
+(243, 243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width=
+:320px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; ba=
+ckground-color: rgb(243, 243, 243); width: 100%; font-family: Arial, Helvet=
+ica, sans-serif; display: table; min-width: 100% !important;" data-type=3D"=
+image" width=3D"320" id=3D"ac48f02d-7d8d-c82b-5726-cc3c7408af08"><tbody><tr=
+><td align=3D"center" style=3D"padding: 0px; width: 90px; font-size: 14px; =
+color: rgb(0, 0, 0);" class=3D"image onebefore" width=3D"320"><a class=3D"l=
+ink" id=3D"d7889e2e-c868-ddbc-ef7e-7157f2857d1a"><img border=3D"0" style=3D=
+"box-sizing: border-box; display: block; max-width: 90px; width: 100%;" alt=
+=3D"image" src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510=
+/1709030429_89141.png" putwidth=3D"90" haspadding=3D"0" realdimensions=3D"9=
+0x90" tabindex=3D"0" width=3D"90" id=3D"6760091f-242a-2c32-939a-2caf7754e48=
+6"></a></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--=
+></div><!-- [if mso]></td><![endif] --></div></div></div><div class=3D"lyro=
+w" style=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix=
+"><div class=3D"mobile-full" style=3D"display: block; max-width: 320px; ver=
+tical-align: top; width: 100%; background-color: rgb(243, 243, 243); overfl=
+ow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td style=
+=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(24=
+3, 243, 243); width: 320px; text-align: center; font-family: Arial, Helveti=
+ca, sans-serif; display: table; line-height: 17px; min-width: 100% !importa=
+nt;" data-type=3D"text-block" width=3D"320" id=3D"0b4bafbf-a95d-7cfb-49e0-b=
+48e4b65c6ee"><tbody><tr><td class=3D"block-text" data-clonable=3D"true" sty=
+le=3D"padding: 0px 20px 5px; font-size: 14px; color: rgb(0, 0, 0);"><div id=
+=3D"e0259448-9bf1-1135-3109-67826dacfee4"><span style=3D"color: #164196; fo=
+nt-family: Cabin, Avenir, sans-serif; font-size: 12px;"><strong id=3D"89c2b=
+b0d-9bda-5229-3485-66c9d100b6af">Retur =C8=99i schimb gratuite</strong></sp=
+an><br><span id=3D"6c1b00cb-7811-cb24-2ca7-1b261537505f" style=3D"color: #1=
+64196; font-family: Cabin, Avenir, sans-serif; font-size: 12px;">=C3=8En ce=
+le 37 de magazine ale noastre</span></div></td></tr></tbody></table><!--[if=
+ mso]></td></tr></table><![endif]--></div></div></div></div></div><div styl=
+e=3D"font-size: 14px; display: inline-block; background-position: center to=
+p; vertical-align: top; float: left; max-width: 320px; height: auto; backgr=
+ound-color: rgb(243, 243, 243); width: 50% !important; min-width: 10px !imp=
+ortant; overflow: hidden;" valign=3D"top" class=3D"mobile-full allowchild" =
+width=3D"320"><div class=3D"lyrow" style=3D"display: block;"><div class=3D"=
+view"><div class=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; v=
+ertical-align: top;"><![endif]--><div class=3D"mobile-full" style=3D"displa=
+y: block; max-width: 320px; width: 100%; background-color: rgb(243, 243, 24=
+3); overflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr>=
+<td style=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; background-colo=
+r: rgb(243, 243, 243); width: 100%; font-family: Arial, Helvetica, sans-ser=
+if; display: table; min-width: 100% !important;" data-type=3D"image" width=
+=3D"320" id=3D"8e5ae3a2-c684-4250-910c-3eba0972f45d"><tbody><tr><td align=
+=3D"center" style=3D"padding: 0px; width: 90px; font-size: 14px; color: rgb=
+(0, 0, 0);" class=3D"image onebefore" width=3D"320"><a class=3D"link" id=3D=
+"c6ae51dc-c5e1-c25a-df4b-e1afb6ec3745"><img border=3D"0" style=3D"box-sizin=
+g: border-box; display: block; max-width: 90px; width: 100%;" alt=3D"image"=
+ src=3D"https://dimages.contactpigeon.com/dndcp/upload/files/2510/170903046=
+1_61066.png" putwidth=3D"90" haspadding=3D"0" realdimensions=3D"90x90" tabi=
+ndex=3D"0" width=3D"90" id=3D"2847359b-af34-1607-10cf-f6d1eb64c330"></a></t=
+d></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></div><!-=
+- [if mso]></td><![endif] --></div></div></div><div class=3D"lyrow" style=
+=3D"display: block;"><div class=3D"view"><div class=3D"row clearfix"><div c=
+lass=3D"mobile-full" style=3D"display: block; max-width: 320px; vertical-al=
+ign: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidd=
+en;"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td style=3D"paddi=
+ng: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(243, 243, 2=
+43); width: 320px; text-align: center; font-family: Arial, Helvetica, sans-=
+serif; display: table; line-height: 17px; min-width: 100% !important;" data=
+-type=3D"text-block" width=3D"320" id=3D"f0434baf-2358-c7a3-76c3-20411119e0=
+f1"><tbody><tr><td class=3D"block-text" data-clonable=3D"true" style=3D"pad=
+ding: 0px 20px 5px; font-size: 14px; color: rgb(0, 0, 0);"><div id=3D"95cb8=
+3b1-8bf2-3a79-2aee-91dd025f55c4"><span style=3D"color: #164196; font-family=
+: Cabin, Avenir, sans-serif; font-size: 12px;"><strong id=3D"e3cc2237-73e5-=
+1773-ba5e-5ef2df542a9c">Livrare cu doar 10 lei=C2=A0<span id=3D"e046a68f-fa=
+b2-f137-86af-67e78923542d" style=3D"color: #164196; font-family: Cabin, Ave=
+nir, sans-serif; font-size: 12px;">=C3=AEn</span> Easybox=C2=A0<strong id=
+=3D"89c2bb0d-9bda-5229-3485-66c9d100b6af">=C8=99i</strong> Fanbox<br><br></=
+strong></span></div></td></tr></tbody></table><!--[if mso]></td></tr></tabl=
+e><![endif]--></div></div></div></div></div></td></tr></tbody><!--[if mso]>=
+</td></tr></tbody><![endif]--></table></div><!--[if mso]></td></tr></table>=
+<![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: bloc=
+k; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"vie=
+w"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"line" width=3D"640" id=3D"f515476c-56f7-5160-c562-c5691f4959fc"=
+> <tbody> <tr> <td class=3D"divider-simple" style=3D"padding: 6px 50px 0px;=
+ font-size: 14px; color: rgb(0, 0, 0);" id=3D"a3089c85-b610-ef75-9363-21f42=
+89a592e"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"border-top: 1px solid rgb(51, 51, 51); min-width: 100% !imp=
+ortant; width: 100% !important;"> <tbody> <tr> <td width=3D"100%" style=3D"=
+font-size: 14px; color: rgb(0, 0, 0);" id=3D"6ec33a12-4004-5303-5f72-2e4e32=
+019cc2"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!--[if=
+ mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></table><=
+![endif]--></div> </div> </div><div class=3D"lyrow" style=3D"display: block=
+; position: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view=
+"> <div class=3D"row clearfix"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640=
+px;"><tr><td><![endif]--> <div class=3D"mobile-full" style=3D"display: bloc=
+k; max-width: 640px; vertical-align: top; width: 100%; background-color: rg=
+b(243, 243, 243); overflow: hidden;"> <!--[if mso]><table align=3D"center" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"wid=
+th:640px;"><tr><td><![endif]--><table class=3D"main" style=3D"border: 0px; =
+background-color: rgb(243, 243, 243); width: 640px; max-width: 640px; font-=
+family: Arial, Helvetica, sans-serif; display: table; min-width: 100% !impo=
+rtant;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" d=
+ata-type=3D"spacer" id=3D"c0692e48-471a-66e8-cf43-a2f7feb897d4" width=3D"64=
+0"> <tbody> <tr> <td class=3D"spacer-simple" style=3D"width: 640px; font-si=
+ze: 14px; color: rgb(0, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" style=3D"min-width:100% !important; width:100%=
+ !important"> <tbody> <tr> <td id=3D"spaceman" width=3D"100%" height=3D"9" =
+style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> =
+</tbody> </table> </td> </tr> </tbody> </table><!--[if mso]></td></tr></tab=
+le><![endif]--> </div><!--[if mso]></td></tr></table><![endif]--></div> </d=
+iv> </div><div class=3D"lyrow" style=3D"display: block; position: relative;=
+ opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row =
+clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]=
+--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; w=
+idth: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"><!--[i=
+f mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <table cla=
+ss=3D"main" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-=
+size: 14px; background-color: rgb(243, 243, 243); width: 640px; max-width: =
+640px; font-family: Arial, Helvetica, sans-serif; display: table; min-width=
+: 100% !important;" data-type=3D"image" id=3D"0617abe3-99a4-a4a5-a1ad-ca642=
+a8cc689" width=3D"640"> <tbody> <tr> <td align=3D"center" style=3D"padding:=
+ 0px 15px; width: 400px; font-size: 14px; color: rgb(0, 0, 0);" class=3D"im=
+age onebefore"> <a class=3D"link" id=3D"f15b0e60-90e8-0b59-e9ad-ca5343fc780=
+8" href=3D"https://go.contactpigeon.com/redir/85639784/71948116/"> <img bor=
+der=3D"0" style=3D"box-sizing: border-box; display: block; max-width: 400px=
+; width: 100%; padding: 0px;" alt=3D"image" src=3D"https://dimages.contactp=
+igeon.com/dndcp/upload/files/2510/1677672384_49249_1677672431.png" putwidth=
+=3D"400" haspadding=3D"1" realdimensions=3D"400x52" tabindex=3D"0" id=3D"94=
+b08ae3-091d-3c1c-0ee4-42abf0bdf4c7" width=3D"400"> </a> </td> </tr> </tbody=
+> </table> <!--[if mso]></td></tr></table><![endif]--></div><!--[if mso]></=
+td></tr></table><![endif]--></div> </div> </div><div class=3D"lyrow" style=
+=3D"display: block;"> <div class=3D"view"> <div class=3D"row clearfix"><!--=
+[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div class=
+=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align:=
+ top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;"=
+> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tabl=
+e class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" align=3D"center" data-type=3D"spacer" width=3D"640" id=
+=3D"a5b8efe1-7c37-480b-a452-d250c46924c5"> <tbody> <tr> <td class=3D"spacer=
+-simple" style=3D"width: 640px; font-size: 14px; color: rgb(0, 0, 0);"> <ta=
+ble width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=
+=3D"min-width:100% !important; width:100% !important"> <tbody> <tr> <td wid=
+th=3D"100%" height=3D"13" style=3D"width: 640px; font-size: 14px; color: rg=
+b(0, 0, 0);"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table><!=
+--[if mso]></td></tr></table><![endif]--> </div><!--[if mso]></td></tr></ta=
+ble><![endif]--></div> </div> </div><div class=3D"lyrow" data-code=3D"_AC_S=
+OCTABLE_" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row=
+ clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif=
+]--> <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; =
+vertical-align: top; width: 100%; background-color: rgb(243, 243, 243); ove=
+rflow: hidden;"> <table class=3D"main" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" style=3D"font-size: 14px; background-color: rgb(243, 243, 243)=
+; width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-serif=
+; display: table; min-width: 100% !important;" data-type=3D"socials" id=3D"=
+bbe0a65a-315c-d4a1-21d3-b939d40da833" width=3D"640"> <tbody> <tr> <td style=
+=3D"padding-left: 9px; padding-right: 9px; font-size: 14px; color: rgb(0, 0=
+, 0);" align=3D"center" valign=3D"top" id=3D"43867c06-cf2c-d7f5-bad0-84261d=
+5ac71e"> <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"> <tbody> <tr> <td align=3D"center" valign=3D"top" style=3D"font-size=
+: 14px; color: rgb(0, 0, 0);"> <!--[if mso]><td align=3D"center" valign=3D"=
+top"><![endif]--><table class=3D"singlesocial" style=3D"display:inline;" al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tbody><tr> =
+<td style=3D"padding-right: 10px; padding-bottom: 5px; font-size: 14px; col=
+or: rgb(0, 0, 0);" align=3D"center" valign=3D"top"> <a href=3D"https://go.c=
+ontactpigeon.com/redir/85639784/71948107/" target=3D"_blank" id=3D"9ee0b012=
+-5d1f-e7e2-52aa-1982579ad643"><img src=3D"https://dimages.contactpigeon.com=
+/editor/v5/img/blackWhite/facebook.png" alt=3D"Facebook" width=3D"23" style=
+=3D"border: 0px; width: 23px; max-width: 640px; display: block;" id=3D"1b3b=
+8617-d99e-5766-5385-9c1ae7e984af"></a> </td> </tr> <tr> <td style=3D"paddin=
+g-right: 10px; font-size: 14px; color: rgb(0, 0, 0);" align=3D"center" vali=
+gn=3D"top"> <a style=3D"color: #202020;font-family: Arial;font-size: 11px;f=
+ont-weight: normal;text-decoration: none;" href=3D"https://go.contactpigeon=
+.com/redir/85639784/71948107/" target=3D"_blank">Facebook</a> </td> </tr> <=
+/tbody></table><!--[if mso]></td><![endif]--> <!--[if mso]><td align=3D"cen=
+ter" valign=3D"top"><![endif]--><table class=3D"singlesocial" style=3D"disp=
+lay:inline;" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"> <tbody><tr> <td style=3D"padding-right: 10px; padding-bottom: 5px; font-=
+size: 14px; color: rgb(0, 0, 0);" align=3D"center" valign=3D"top"> <a href=
+=3D"https://go.contactpigeon.com/redir/85639784/71948119/" target=3D"_blank=
+" id=3D"ecd0071b-6f51-e88e-f3bf-a9eb2770f43f"><img src=3D"https://dimages.c=
+ontactpigeon.com/editor/v5/img/blackWhite/linkedin.png" alt=3D"LinkedIn" wi=
+dth=3D"23" style=3D"border: 0px; width: 23px; max-width: 640px; display: bl=
+ock;" id=3D"df5b4890-fb5a-c044-e768-19ea09c2d90f"></a> </td> </tr> <tr> <td=
+ style=3D"padding-right: 10px; font-size: 14px; color: rgb(0, 0, 0);" align=
+=3D"center" valign=3D"top"> <a style=3D"color: #202020;font-family: Arial;f=
+ont-size: 11px;font-weight: normal;text-decoration: none;" href=3D"https://=
+go.contactpigeon.com/redir/85639784/71948119/" target=3D"_blank">LinkedIn</=
+a> </td> </tr> </tbody></table><!--[if mso]></td><![endif]--> <!--[if mso]>=
+<td align=3D"center" valign=3D"top"><![endif]--><table class=3D"singlesocia=
+l" style=3D"display:inline;" align=3D"left" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0"> <tbody><tr> <td style=3D"padding-right: 10px; padding-bo=
+ttom: 5px; font-size: 14px; color: rgb(0, 0, 0);" align=3D"center" valign=
+=3D"top"> <a href=3D"https://go.contactpigeon.com/redir/85639784/71948125/"=
+ target=3D"_blank"><img src=3D"https://dimages.contactpigeon.com/editor/v5/=
+img/blackWhite/instagram.png" alt=3D"Instagram" width=3D"23" style=3D"borde=
+r: 0px; width: 23px; max-width: 640px; display: block;" id=3D"a918dc8f-c004=
+-4bd7-09d9-9ba13a23375b"></a> </td> </tr> <tr> <td style=3D"padding-right: =
+10px; font-size: 14px; color: rgb(0, 0, 0);" align=3D"center" valign=3D"top=
+"> <a style=3D"color: #202020;font-family: Arial;font-size: 11px;font-weigh=
+t: normal;text-decoration: none;" href=3D"https://go.contactpigeon.com/redi=
+r/85639784/71948125/" target=3D"_blank">Instagram</a> </td> </tr> </tbody><=
+/table><!--[if mso]></td><![endif]--> <!--[if mso]><td align=3D"center" val=
+ign=3D"top"><![endif]--><table class=3D"singlesocial" style=3D"display:inli=
+ne;" align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tbod=
+y><tr> <td style=3D"padding-right: 10px; padding-bottom: 5px; font-size: 14=
+px; color: rgb(0, 0, 0);" align=3D"center" valign=3D"top"> <a href=3D"https=
+://go.contactpigeon.com/redir/85639784/71948130/" target=3D"_blank"><img sr=
+c=3D"https://dimages.contactpigeon.com/editor/v5/img/blackWhite/youtube.png=
+" alt=3D"YouTube" width=3D"23" style=3D"border: 0px; width: 23px; max-width=
+: 640px; display: block;" id=3D"d1be51a1-4670-15b9-3061-525fdbbc37ea"></a> =
+</td> </tr> <tr> <td style=3D"padding-right: 10px; font-size: 14px; color: =
+rgb(0, 0, 0);" align=3D"center" valign=3D"top" id=3D"47c4b221-c756-c3d6-0da=
+4-c3677c65aba6"> <a style=3D"color: #202020;font-family: Arial;font-size: 1=
+1px;font-weight: normal;text-decoration: none;" href=3D"https://go.contactp=
+igeon.com/redir/85639784/71948130/" target=3D"_blank" id=3D"25834873-426f-4=
+fbd-4307-52b2ba8758c4">YouTube</a> </td> </tr> </tbody></table><!--[if mso]=
+></td><![endif]--> </td> </tr> </tbody> </table> </td> </tr> </tbody></tabl=
+e> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><di=
+v class=3D"lyrow" style=3D"display: block; position: relative; opacity: 1; =
+left: 0px; top: 0px;"> <div class=3D"view"> <div class=3D"row clearfix"><!-=
+-[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--> <div clas=
+s=3D"mobile-full" style=3D"display: block; max-width: 640px; vertical-align=
+: top; width: 100%; background-color: rgb(243, 243, 243); overflow: hidden;=
+"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]--><tab=
+le class=3D"main" style=3D"border: 0px; background-color: rgb(243, 243, 243=
+); width: 640px; max-width: 640px; font-family: Arial, Helvetica, sans-seri=
+f; display: table; min-width: 100% !important;" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" align=3D"center" data-type=3D"line" width=3D"640" id=
+=3D"d1c22401-3c98-91ea-1292-08b029ca0b6d"> <tbody> <tr> <td class=3D"divide=
+r-simple" style=3D"padding: 6px 50px 0px; font-size: 14px; color: rgb(0, 0,=
+ 0);" id=3D"bbfd92a3-8bd9-1d11-a74b-25864a0d9508"> <table width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px sol=
+id rgb(51, 51, 51); min-width: 100% !important; width: 100% !important;"> <=
+tbody> <tr> <td width=3D"100%" style=3D"font-size: 14px; color: rgb(0, 0, 0=
+);" id=3D"dba2b956-91bc-bb73-3394-a04e3e5411fd"> </td> </tr> </tbody> </tab=
+le> </td> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--=
+> </div><!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div=
+ class=3D"lyrow" data-code=3D"colsettings" style=3D"display: block; positio=
+n: relative; opacity: 1; left: 0px; top: 0px;"> <div class=3D"view"> <div c=
+lass=3D"row clearfix"><!--[if mso]><table align=3D"center" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><=
+td><![endif]--> <div class=3D"mobile-full" style=3D"display: block; max-wid=
+th: 640px; vertical-align: top; width: 100%; background-color: rgb(255, 255=
+, 255); overflow: hidden;"><table class=3D"main" style=3D"border-collapse: =
+collapse; text-align: center; background: rgb(255, 255, 255); width: 640px;=
+ max-width: 640px; display: table; font-family: Arial, Helvetica, sans-seri=
+f;" data-type=3D"multiculti" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" align=3D"center" id=3D"7d967603-7712-35e4-02d7-43fdbefb5f61" width=3D"64=
+0"><!--[if mso]><tbody><tr><![endif]--><tbody><tr class=3D"lyrow displaytab=
+le" align=3D"center" style=3D"display: block;"><td style=3D"width: 640px; f=
+ont-size: 14px; color: rgb(0, 0, 0);"><div style=3D"font-size: 14px; displa=
+y: inline-block; background-position: center top; vertical-align: top; floa=
+t: left; max-width: 320px; height: auto; background-color: rgb(243, 243, 24=
+3); width: 50% !important; min-width: 10px !important; overflow: hidden;" v=
+align=3D"top" class=3D"mobile-full allowchild" width=3D"320"><div class=3D"=
+lyrow" style=3D"display: block;"><div class=3D"view"><div class=3D"row clea=
+rfix"><!--[if mso]><td style=3D"width: 320px; vertical-align: top;"><![endi=
+f]--><div class=3D"mobile-full" style=3D"display: block; max-width: 320px; =
+vertical-align: top; width: 100%; background-color: rgb(243, 243, 243); ove=
+rflow: hidden;"><!--[if mso]><table align=3D"center" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320px;"><tr><td sty=
+le=3D"padding: 0;"><![endif]--><table class=3D"main" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" style=3D"font-size: 14px; background-color: rgb(=
+243, 243, 243); width: 320px; text-align: center; font-family: Arial, Helve=
+tica, sans-serif; display: table; color: rgb(51, 51, 51); min-width: 100% !=
+important;" data-type=3D"text-block" id=3D"0a06e0e0-5eea-618b-cc74-7213b4a4=
+b3ce" width=3D"320"><tbody><tr><td class=3D"block-text" data-clonable=3D"tr=
+ue" style=3D"padding: 10px 20px; font-size: 14px; color: rgb(0, 0, 0);" wid=
+th=3D"320" id=3D"6fccf096-c96e-34dc-66fe-fa8bc3e5dc27"><div id=3D"26a2f948-=
+6804-e584-29fb-4d457928bd8d"><span style=3D"text-decoration: underline; col=
+or: #333399; font-family: Cabin, Avenir, sans-serif;"><span style=3D"font-s=
+ize: 8px;"><a style=3D"color: #333399; text-decoration: underline;" href=3D=
+"https://do.contactpigeon.com/apps/en/stem/unsubscribev2.html/?emid=3D18803=
+10&em=3Dradu.25201@gmail.com&crid=3D85639784&scid=3D2510&">Dezaboneaz=C4=83=
+-te</a></span></span></div></td></tr></tbody></table><!--[if mso]></td></tr=
+></table><![endif]--></div><!-- [if mso]></td><![endif] --></div></div></di=
+v></div><div style=3D"font-size: 14px; display: inline-block; background-po=
+sition: center top; vertical-align: top; float: left; max-width: 320px; hei=
+ght: auto; background-color: rgb(243, 243, 243); width: 50% !important; min=
+-width: 10px !important; overflow: hidden;" valign=3D"top" class=3D"mobile-=
+full allowchild" width=3D"320" id=3D"ab3e2eee-7cfa-70c3-e341-975401f015ed">=
+<div class=3D"lyrow" style=3D"display: block;"><div class=3D"view"><div cla=
+ss=3D"row clearfix"><!--[if mso]><td style=3D"width: 320px; vertical-align:=
+ top;"><![endif]--><div class=3D"mobile-full" style=3D"display: block; max-=
+width: 320px; vertical-align: top; width: 100%; background-color: rgb(243, =
+243, 243); overflow: hidden;"><!--[if mso]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"320" style=3D"width:320=
+px;"><tr><td style=3D"padding: 0;"><![endif]--><table class=3D"main" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"font-size: 14px; backgr=
+ound-color: rgb(243, 243, 243); width: 320px; text-align: center; font-fami=
+ly: Arial, Helvetica, sans-serif; display: table; color: rgb(51, 51, 51); m=
+in-width: 100% !important;" data-type=3D"text-block" id=3D"f3b4ac84-a17f-11=
+8c-1e9e-4de13dbfccea" width=3D"320"><tbody><tr><td class=3D"block-text" dat=
+a-clonable=3D"true" style=3D"padding: 10px 20px; font-size: 14px; color: rg=
+b(0, 0, 0);" width=3D"320"><div id=3D"0da33c1e-dc8f-3551-4f67-c9f5ae755529"=
+><span style=3D"text-decoration: underline; font-family: Cabin, Avenir, san=
+s-serif;"><span style=3D"color: #333399; font-size: 8px;"><a style=3D"color=
+: #333399; text-decoration: underline;" href=3D"https://do.contactpigeon.co=
+m/apps/en/stem/viewmail.html?gm_pid=3D1880310&gm_nID=3D&crid=3D85639784&rdm=
+e=3D57011260&">Deschide =C3=AEn browser</a></span></span></div></td></tr></=
+tbody></table><!--[if mso]></td></tr></table><![endif]--></div><!-- [if mso=
+]></td><![endif] --></div></div></div></div></td></tr></tbody><!--[if mso]>=
+</td></tr></tbody><![endif]--></table></div><!--[if mso]></td></tr></table>=
+<![endif]--></div> </div> </div><div class=3D"column"></div><div class=3D"l=
+yrow" style=3D"display: block;"> <div class=3D"view"> <div class=3D"row cle=
+arfix"><!--[if mso]><table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![endif]-->=
+ <div class=3D"mobile-full" style=3D"display: block; max-width: 640px; vert=
+ical-align: top; width: 100%; background-color: rgb(243, 243, 243); overflo=
+w: hidden;"> <!--[if mso]><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"640" style=3D"width:640px;"><tr><td><![en=
+dif]--><table class=3D"main" style=3D"border: 0px; background-color: rgb(24=
+3, 243, 243); width: 640px; max-width: 640px; font-family: Arial, Helvetica=
+, sans-serif; display: table; min-width: 100% !important;" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0" align=3D"center" data-type=3D"spacer" id=
+=3D"bb06f6e0-16f3-63ee-caa5-5a2da811aa9e" width=3D"640"> <tbody> <tr> <td c=
+lass=3D"spacer-simple" style=3D"width: 640px; font-size: 14px; color: rgb(0=
+, 0, 0);"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" style=3D"min-width:100% !important; width:100% !important"> <tbody> =
+<tr> <td id=3D"spaceman" width=3D"100%" height=3D"2" style=3D"width: 640px;=
+ font-size: 14px; color: rgb(0, 0, 0);"> </td> </tr> </tbody> </table> </td=
+> </tr> </tbody> </table><!--[if mso]></td></tr></table><![endif]--> </div>=
+<!--[if mso]></td></tr></table><![endif]--></div> </div> </div><div class=
+=3D"generaldataishere" data-emailwidth=3D"640"></div></div></td></tr></tbod=
+y></table> <img style=3D"display:none !important; width:1px; height:1px;" s=
+rc=3D"https://sloth.contactpigeon.com/sloth/ihuWsurgm1/e/85639784/ei/188031=
+0/image/im-intersportro.jpg" alt=3D"" height=3D1 width=3D1 border=3D"0" tit=
+le=3D"=CE=B9"/></body></html>=
+
+--_----------=_174081724129495421730--
+

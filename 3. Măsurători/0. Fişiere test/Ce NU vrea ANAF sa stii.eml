@@ -1,0 +1,1141 @@
+Delivered-To: radu.25201@gmail.com
+Received: by 2002:a05:7108:9316:b0:3ef:e700:b403 with SMTP id ht22csp1016529gdb;
+        Fri, 28 Feb 2025 08:15:04 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGheQhwDoG1C1a/yp2N4EKHfJkWj9JEcrosHJZ/GP8U+SEg4zcrJJwAZppzArnwJO/f8tg7
+X-Received: by 2002:a05:6402:2106:b0:5e0:69df:ccbb with SMTP id 4fb4d7f45d1cf-5e4d6b62349mr3767013a12.28.1740759304064;
+        Fri, 28 Feb 2025 08:15:04 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1740759304; cv=none;
+        d=google.com; s=arc-20240605;
+        b=kCLrS5uGp5o6BF0qZkAtVreWIX4ikN2B88/6WNL3qoeK5A/INhdFvF/axa7x6/aHod
+         HNc9QZAdeTlIbBBn8Jt3BPdzH7LbpUlVVSLD6rGrk6vi9BI0k+M2FpayxEZ9WVnSoi9I
+         UVrvX6GreiJcI8iijxCBEz5NEV3x/+HsCh2fi8X0/AAabrAhXCceljCLJxV/H1oJWE6z
+         mdFydk8repECfTIkhFZzymKPoJ3/6950ZcC+WjYj7/Kjny1388UuRx1tnfm2rmhJykMQ
+         P24xD/Q4YS9v3AzwV/GQBfCXHNccId4RQXlUmy6FMoYchXsjkD84krHoNyIVaf8UWCZe
+         fSuA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:message-id:list-unsubscribe
+         :require-recipient-valid-since:subject:errors-to:reply-to:from:to
+         :date:domainkey-signature:dkim-signature;
+        bh=E6yMRnkqF1ryD4/RYmY1JcDS0+PuFw4/xvtbFnmf0QY=;
+        fh=k/T2pFNc3vySu/nRvVGoPen3KpTYIXmS/bkdCdtjKcU=;
+        b=FqCjgEjsobRNZfjha90cDsam4pzkDtdvJd6rHTBVocxp8v0p28nJdrykSAkRsXKDPb
+         OtwEmkfHD6l5UtS/5iOGFxkGalg3RCAdB7YcfPOHYlEul+ECkl210tT0v/Ga66WWBd4+
+         g5dYos/phS+XtQ8b+YmhR9DphjxpnwYsQmaNpjxcgs4c70PMRChDXK5OrusoqzwVrqu6
+         Mt16g1Qb7UaRNm4HrbPf9rKhaXdhy7wIvsae+AJ4dkq+JbIZeX1yCm9nChTl+faih3S8
+         tThvsbCPFMfRC7iqbxpD+aQhgLmanW9aF0O5+uKrvBASSUnpwmNlkKiUyk+jF7AeSAWy
+         RyeA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b=njR1ETto;
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Return-Path: <news@info.contabilul.ro>
+Received: from info.contabilul.ro (info.contabilul.ro. [89.46.103.122])
+        by mx.google.com with ESMTP id 4fb4d7f45d1cf-5e4c44ca7f8si3491388a12.546.2025.02.28.08.15.03
+        for <radu.25201@gmail.com>;
+        Fri, 28 Feb 2025 08:15:04 -0800 (PST)
+Received-SPF: pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) client-ip=89.46.103.122;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@info.contabilul.ro header.s=private header.b=njR1ETto;
+       spf=pass (google.com: domain of news@info.contabilul.ro designates 89.46.103.122 as permitted sender) smtp.mailfrom=news@info.contabilul.ro;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=info.contabilul.ro
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id 3BE00448CDC5C
+	for <radu.25201@gmail.com>; Fri, 28 Feb 2025 18:15:03 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; s=private; bh=wM7Yswi0nC6XsMHlo6MD9X
+	upCdU=; b=njR1ETtokimJXidsveaB2zYjqNtD//2FL372+7s7p0jl1Gbk6uqyU+
+	Lmq2eYBFPRcoNZiBvHFiV3I+wFVhPXdSuM6PsvC6RScf6uC7GtyHpNeJFU+FGiRy
+	cvDC1/zjCYMDTqM5jJZ+Gzzzbk63ggwBIF57yMzcPKoliPcNbkhlM=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=info.contabilul.ro; h=date
+	:to:from:reply-to:subject:list-unsubscribe:message-id
+	:mime-version:content-type; q=dns; s=private; b=Nwg8JUTXfkNUkyGu
+	w3dOUO3bwClJIp3dildT29EhmQpSr7+nJItosgId/K7YArrIgzNcrlArZQeTiIAg
+	7qqBLWOdc6POuRLG5/b+xq9KwknSoO4C2eVRdeD7YhbdML+ayX/04/ME55yjCupE
+	47ob6l5cLrzhMd+8YLp2wVgfzlM=
+Received: from info.contabilul.ro (localhost [127.0.0.1])
+	by info.contabilul.ro (Postfix) with ESMTP id 2D192448CDC4D
+	for <radu.25201@gmail.com>; Fri, 28 Feb 2025 18:15:03 +0200 (EET)
+Date: Fri, 28 Feb 2025 18:15:03 +0200
+To: radu.25201@gmail.com
+From: InfoNews Contabilul <news@info.contabilul.ro>
+Reply-to: eIC <office@info.contabilul.ro>
+Errors-To: news@info.contabilul.ro
+Subject: Ce NU vrea ANAF sa stii
+X-Complaints-To: abuse@info.contabilul.ro
+Require-Recipient-Valid-Since: radu.25201@gmail.com; Tue, 05 Jul 2022 16:46:51 +0300
+List-Unsubscribe: http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3790&CampaignStatisticsID=3390&Demo=0&EncryptedMemberID=NDY1ODExODYwOA%3D%3D&Email=cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Sender: news@info.contabilul.ro
+Message-ID: <b329ba14ba50e4c9d9eb6b991376cb9c@info.contabilul.ro>
+X-Priority: 3
+X-Mailer-MsgId: cmFkdS4yNTIwMUBnbWFpbC5jb20=
+X-Mailer-CSID: Mzc5MF8zMzkw
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_b329ba14ba50e4c9d9eb6b991376cb9c"
+
+
+--b1_b329ba14ba50e4c9d9eb6b991376cb9c
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+	=09
+=09
+=09
+	=09
+	=09
+		=09
+			=09
+				=09
+					=09
+						=09
+							=09
+									Stimate Abonat  , inscris la data de 05/25/2022
+										Bucuresti, 28.2.25 18:15
+							=09
+						=09
+					=09
+					=09
+						=09
+					=09
+					=09
+						=09
+							=09
+								=09
+									=09
+										=09
+											=09
+												=09
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) ?
+Care sunt cele 13 situatii ce fac ca procesul-verbal intocmit de
+inspectorii ANAF sa fie desfiintat pentru nulitate?
+															? Care sunt contraventiile pe care le pot inventa
+inspectorii fiscali?=20
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+Lucrarea "Ce NU vrea ANAF sa stii. Piruete legale in aspecte fiscale"
+raspunde la toate aceste intrebari!=20
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+...Detalii Click AICI=20
+														Stimate coleg contabil,
+														Lucrarea (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )Ce NU vrea ANAF sa
+stii. Piruete legale in aspecte fiscale  ar trebui sa se afle pe
+biroul oricarui intreprinzator, manager, contabil sau director
+economic din Romania.
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) Iata
+ce informatii rare gasesti in lucrarea Ce NU vrea ANAF sa stii.
+Piruete legale in aspecte fiscale":
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														1. Care sunt cele doua intrebari care taie imediat
+avantul inspectorilor ANAF? (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) (...detalii aici )
+															2. Care este strategia prin care poti suspenda
+executarea unei sanctiuni?
+															3. Care sunt cele 13 situatii ce fac ca procesul-verbal
+intocmit de inspectori sa fie desfiintat pentru nulitate? (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) (...detalii aici )
+															4. Care sunt cele doua cuvinte din lege care te scapa
+SIGUR de dosar penal?
+															5. Cum raspunde contabilul pentru inregistrarile la
+care a fost fortat de patron? (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) (...detalii aici )
+															6. Care sunt contraventiile pe care le pot inventa
+inspectorii fiscali?
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )Ce NU
+vrea ANAF sa stii. Piruete legale in aspecte fiscale  prezinta
+raspunsurile detaliate la toate aceste intrebari punctuale si, de
+asemenea, mai face un lucru extrem de interesant si de util: prezinta
+lista celor mai arzatoare (inclusiv la buzunar) a contraventiilor si
+infractiunilor fiscale prevazute in legislatia din Romania - dar si
+cum sa EVITAM sa fim sanctionati!
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) Ce NU
+vrea ANAF sa stii inventariaza toate greselile contraventionale si
+penale care iti ameninta activitatea de zi cu zi!
+														Lucrarea explica intr-un stil limpede:
+															( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )=20
+unde gresesti
+															 in ce consta greseala
+															 ce articole de lege se incalca
+															 care sunt sanctiunile/amenzile
+															 cum se interpreteaza corect textul de lege
+															 cum se poate evita greseala (...detalii aici )
+															 daca respectiva greseala se poate corecta si cum se
+poate corecta=20
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+Important este ca nicio greseala care iti poate duce afacerea in
+faliment
+															(mai ales acum) nu este lasata pe dinafara.
+														Si acesta este un avantaj imens pentru tine, in
+conditiile in care Codul fiscal, Codul de procedura fiscala, Legea
+contabilitatii, Legea evaziunii fiscale, Codul muncii etc. sunt pline
+de  potentiale abateri, multe dintre ele bine ascunse in text.=20
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+Atentie: Si hartia igienica poate fi motiv de amenda!
+														Exemplu de studiu de caz:
+															La o societate care avea cifra de afaceri de milioane
+de lei (noi) si impozite calculate si platite exemplar, organul de
+control, dupa ce a verificat la sange inregistrarile contabile,
+declaratiile etc., a aplicat maximul amenzii (5.000 de lei) deoarece
+hartia igienica de la baie nu era inregistrata ca intrare in
+societate.
+														=09
+															 Cazul este absolut real!  Evident, procesul-verbal a
+fost contestat in instanta pe motiv ca fapta nu constituie pericol
+social, iar instanta a decis in favoarea societatii.
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+(...Click AICI pentru mai multe detalii )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )Ce NU
+vrea ANAF sa stii. Piruete LEGALE in aspecte fiscale iti dezvaluie
+toate aceste abateri, impreuna cu sfaturi extrem de binevenite despre
+cum pot fi diminuate consecintele lor nefaste, cu indicatii clare
+despre cum poti interpreta legea in favoarea ta.
+														In plus, dezvaluie in premiera si explica in amanunt
+niste lucruri mai putin stiute:
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														 ce trucuri folosesc inspectorii Fiscului atunci cand
+vin in control ( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+(...detalii aici )
+															  ce metode de intimidare folosesc acestia (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) (...detalii aici )
+															  care sunt modalitatile prin care ii poti imblanzi
+instantaneu
+															  cum folosesti in favoarea ta cee NU spune legea
+															  cum poti elimina din start acuzatiile agresive de
+evaziune fiscala si de spalare de bani (adica la ce e bine sa fii
+atent)
+															  ce prevederi fiscal-contabile lucreaza clar in
+avantajul tau
+															  de ce ACUM procesele-verbale de contraventie NU mai
+beneficiaza de prezumtia de adevar
+															  cum te apara instantele de la cele romane pana la
+cele internationale (!) (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) (...detalii aici )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )Ce NU
+vrea ANAF sa stii  are secrete legale pentru pentru probleme fiscale=20
+prin informatiile pe care le ofera si prin multitudinea de exemple
+practice.
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+Extrase din cuprinsul lucrarii Ce NU vrea ANAF sa stii:
+														 Cazurile care te scutesc de sanctiuni
+															 Poate sa raspunda penal si persoana juridica?
+															 Fapta comisa fara vinovatie nu este infractiune. Si
+alte secrete.
+															 Caile legale si ilegale de a scoate bani din firma.
+Alege!
+															 Nu exista evaziune fiscala daca nu sunt realizate in
+intregime elementele infractiunii!
+															 Neprezentarea fortuita a documentelor nu este evaziune
+fiscala
+															 Cazuri de aplicare incorecta a legii
+															 Stiai ca organele de control NU au dreptul sa intre
+cand vor, unde vor?
+															 Buna-credinta exclude evaziunea
+															 Contraventiile si infractiunile prevazute de legea
+societatilor sunt doar pentru administratori si directori?
+															 Folosirea neadecvata a fondurilor societatii  dosare
+penale din senin
+															 Contraventiile la regimul caselor de marcat O.U.G. nr.
+28/1991
+															 Terorist cu acte in (ne)regula - sau despre ce e de
+facut ca sa nu iti spulbere functionarii afacerea pentru ca iti
+lipseste o hartie
+															 Cosmetizarea rezultatelor financiare/fiscale ale
+activitatii  dosar penal sau nu?
+															 Impozitul pe dividende - probleme fiscale, contabile,
+juridice si penale
+															 Cum te apara instantele romane si cele europene.
+Cazuri des intalnite in practica si solutionate
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+Produsul pe scurt
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														Titlu: ( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418
+)Ce NU vrea ANAF sa stii. Piruete legale in aspecte fiscale
+														=09
+															Continut: lista completa a contraventiilor si
+infractiunilor fiscal-contabile. Comentarii, solutii, corelatii putin
+evidente intre diferite texte de lege
+														=09
+															Format: stick de memorie + online
+															( https://www.rsonline.ro/ )(vizualizare in
+www.rsonline.ro)
+															Pret: 157 lei + 5% TVA, redus cu 20% de la 194 lei + 5%
+tva
+														=09
+															Mod de comanda: (
+https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )prin intermediul
+formularului de AICI=20
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+IMPORTANT!
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418
+)Lucrarea pe stick Ce nu vrea ANAF sa stii. Piruete LEGALE in aspecte
+fiscale  este o editie premium, actualizata, ce ofera ca bonus
+informatii extrem de oportune si de utile in contextul legislativ
+actual:
+															 1. Impozitul pe dividende - solutii fiscale,
+contabile, juridice si penale - toate impreuna.(abordare unica pana
+acum)
+													=09
+															Contine referiri la scadente, proceduri si greseli
+prevazute de Legea societatilor, dividendele trimestriale,
+infractiuni.
+													=09
+														2. Principii care te ajuta in fata abuzurilor organelor
+fiscale ( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 ) (...detalii
+aici )
+															3. Cum scoti bani din firma fara ca Fiscul sa aiba ceva
+de comentat
+															4. Cartonase rosii pentru contribuabil in viziunea
+ANAF, dar de fapt actiuni perfect valabile  studii de caz explicate
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )
+Comanda chiar acum!=20
+														( https://cenuvreaanafsastii.fisc.ro/?cs=3D1632418 )Ce NU
+vrea ANAF sa stii. Piruete LEGALE in aspecte fiscale  este, cel mai
+util produs editorial pentru activitatea ta de zi cu zi, mai ales in
+contextul modificarilor dese ale Codului fiscal!
+													=09
+														Cu stima,
+														=09
+															Diana Gheorghiu=20
+															Coordonator oferta
+															Divizia Fiscalitate RentropStraton
+												=09
+											=09
+										=09
+									=09
+								=09
+							=09
+						=09
+					=09
+					=09
+						=09
+							=09
+						=09
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+							( http://www.contabilul.ro/privacypolicy/privacypolicy.html
+)Politica de confidentialitate | ( mailto:gdpr@rs.ro )Raporteaza abuz
+| (
+http://www.info.contabilul.ro/html_version.php?CampaignID=3D3790&Campaign=
+StatisticsID=3D3390&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Ema=
+il=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvbQ=3D=3D
+)Versiune html | (
+http://www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3790&CampaignS=
+tatisticsID=3D3390&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Emai=
+l=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D
+)Click aici pentru dezabonare
+					=09
+				=09
+			=09
+			=09
+				=09
+					=09
+						=09
+								Va reamintim ca ati solicitat primirea acestui newsletter pe
+data de 05/25/2022
+								Expeditor: RentropStraton, Bdul. Natiunile Unite nr. 4,
+Bucuresti, Romania
+									Tel: 004-021.209.45.12
+						=09
+					=09
+				=09
+			=09
+		=09
+	=09
+
+
+--b1_b329ba14ba50e4c9d9eb6b991376cb9c
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:s=
+chemas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:=
+vml">
+	<head>
+		<meta charset=3D"utf-8">
+		<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+		<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+		<meta name=3D"x-apple-disable-message-reformatting">
+		<title></title>
+		<style type=3D"text/css">html,
+			body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			}
+
+			* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			}
+
+			div[style*=3D"margin: 16px 0"] {
+			margin: 0 !important;
+			}
+
+			table,
+			td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			}
+
+			table {
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			table-layout: fixed !important;
+			margin: 0 auto !important;
+			}
+			table table table {
+			table-layout: auto;
+			}
+
+			img {
+			-ms-interpolation-mode:bicubic;
+			}
+
+			a {
+			text-decoration: none;
+			}
+
+			*[x-apple-data-detectors],  /* iOS */
+			.unstyle-auto-detected-links *,
+			.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+			}
+
+			.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+			}
+			img.g-img + div {
+			display: none !important;
+			}
+
+			@media only screen and (min-device-width: 320px) and (max-device-width=
+: 374px) {
+			u ~ div .email-container {
+			min-width: 320px !important;
+			}
+			}
+			@media only screen and (min-device-width: 375px) and (max-device-width=
+: 413px) {
+			u ~ div .email-container {
+			min-width: 375px !important;
+			}
+			}
+			@media only screen and (min-device-width: 414px) {
+			u ~ div .email-container {
+			min-width: 414px !important;
+			}
+			}</style>
+		<style type=3D"text/css">.button-td, .button-a {
+				transition: all 100ms ease-in;
+			}
+			.button-td-primary:hover, .button-a-primary:hover {
+				background: #555555 !important;
+				border-color: #555555 !important;
+			}
+
+			@media screen and (max-width: 480px) {
+				.fluid {
+					width: 100% !important;
+					max-width: 100% !important;
+					height: auto !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+
+				.stack-column, .stack-column-center {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					direction: ltr !important;
+				}
+				.stack-column-center {
+					text-align: center !important;
+				}
+
+				.center-on-narrow {
+					text-align: center !important;
+					display: block !important;
+					margin-left: auto !important;
+					margin-right: auto !important;
+					float: none !important;
+				}
+				table.center-on-narrow {
+					display: inline-block !important;
+				}
+
+				.email-container p {
+					font-size: 17px !important;
+				}
+				.maxwidthmobile {
+					max-width: 100% !important;
+				}
+				.center-on-narrow img {
+					max-width: 320px !important;
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!--[if mso]>
+		<noscript>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		</noscript>
+		<![endif]--><!--[if lte mso 11]>
+		<style type=3D"text/css">
+		.mj-outlook-group-fix { width:100% !important; }
+		</style>
+		<![endif]-->		<style type=3D"text/css">@media only screen and (min-widt=
+h: 480px) {
+				.mj-column-per-100 {
+					width: 100% !important;
+					max-width: 100%;
+				}
+				.mj-column-per-32 {
+					width: 32% !important;
+					max-width: 32%;
+				}
+				.mj-column-per-50 {
+					width: 50% !important;
+					max-width: 50%;
+				}
+			}</style>
+		<style media=3D"screen and (min-width:480px)" type=3D"text/css">.moz-te=
+xt-html .mj-column-per-100 {
+				width: 100% !important;
+				max-width: 100%;
+			}
+			.moz-text-html .mj-column-per-32 {
+				width: 32% !important;
+				max-width: 32%;
+			}
+			.moz-text-html .mj-column-per-50 {
+				width: 50% !important;
+				max-width: 50%;
+			}</style>
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				table.mj-full-width-mobile {
+					width: 100% !important;
+				}
+				td.mj-full-width-mobile {
+					width: auto !important;
+				}
+			}</style>
+<!--[if gte mso 9]>
+		<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml>
+		<![endif]-->	</head>
+	<body style=3D"margin: 0; padding: 0 !important; mso-line-height-rule: e=
+xactly; background-color:#f0f0f0;" width=3D"100%">
+		<style type=3D"text/css">@media only screen and (max-width: 480px) {
+				.img-prod {
+					width: 100% !important;
+					display: block !important;
+				}
+			}</style>
+<!-- <center style=3D"width: 100%; background-color: #f0f0f0;"> --><!--[i=
+f mso | IE]>
+		<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"background-color:#f0f0f0;">
+		<tr>
+		<td>
+		<![endif]-->		<div align=3D"center" style=3D"background: #f0f0f0; paddi=
+ng: 15px 0 15px 0;">
+			<div class=3D"email-container" style=3D"max-width: 720px; margin: 0 au=
+to;"><!--[if mso]>
+				<table align=3D"center" role=3D"presentation" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" width=3D"720">
+				<tr>
+				<td>
+				<![endif]--><!-- Email Body : BEGIN -->
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"margin: 0px auto; width: 100%;"><!-- Hero Image, Flush =
+: BEGIN -->
+				=09
+						<tr>
+							<td style=3D"padding: 10px 20px; text-align: left; background-colo=
+r: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-=
+serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; font=
+-weight: 400; color: #000000;">
+								<div style=3D"text-align: left; background-color: #ffffff; font-f=
+amily: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-size: =
+15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; colo=
+r: #000000;">
+									<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helv=
+etica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height:=
+ 24px; text-align: center; color: #343535;">Stimate Abonat <span style=3D=
+"text-transform: uppercase;"> </span>, inscris la data de 05/25/2022<br>
+										Bucuresti, 28.2.25 18:15</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style=3D"background-color: #ffffff; text-align: center;"><img =
+alt=3D"alt_text" border=3D"0" class=3D"fluid g-img" height=3D"" src=3D"ht=
+tp://contabilul.manager.ro/images/nws_img/contabilul_header.png" style=3D=
+"width: 100%; max-width: 720px; height: auto; background: #dddddd; font-f=
+amily: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; =
+color: #000000; margin: auto;" width=3D"720"></td>
+						</tr>
+<!-- Hero Image, Flush : END --><!-- 1 Column Text: BEGIN -->						<tr>
+							<td style=3D"background-color: #ffffff;">
+								<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"width: 100%;">
+								=09
+										<tr>
+											<td style=3D"padding: 10px 20px; text-align: left; background-=
+color: #ffffff; font-family: 'Helvetica Neue','HelveticaNeue',Helvetica,s=
+ans-serif; font-size: 15px; line-height: 140%; mso-line-height: exactly; =
+font-weight: 400; color: #000000;"><!--START_CONTENT-->
+												<div style=3D"text-align: left; background-color: #ffffff; fo=
+nt-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 140%; mso-line-height: exactly; font-weight: 400; =
+color: #000000;">
+													<div style=3D"text-align: left; background-color: #ffffff; f=
+ont-family: 'Helvetica Neue','HelveticaNeue',Helvetica,sans-serif; font-s=
+ize: 15px; line-height: 140%; mso-line-height: exactly; font-weight: 400;=
+ color: #000000;">
+														<h1 align=3D"center" style=3D"line-height: 1.4;"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZ=
+zYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY=
+1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&=
+Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; c=
+olor: #000000; font-size: 20px; line-height: 1.4; font-weight: normal;" t=
+arget=3D"_blank"> <span style=3D"color: #c10707;"><b>?</b></span> Care su=
+nt cele 13 situatii ce fac ca procesul-verbal intocmit de inspectorii ANA=
+F <u>sa fie desfiintat</u> pentru nulitate?<br>
+															<span style=3D"color: #c10707;"><b>?</b></span> Care sunt =
+contraventiile pe care <u>le pot inventa</u> inspectorii fiscali? </a></h=
+1>
+														<h1 align=3D"center" style=3D"line-height: 1.4;"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZ=
+zYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY=
+1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&=
+Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; c=
+olor: #c10707; font-size: 26px; font-weight: bold;" target=3D"_blank"> Lu=
+crarea <u>&quot;Ce NU vrea ANAF sa stii. Piruete legale in aspecte fiscal=
+e&quot;</u> raspunde la toate aceste intrebari! </a></h1>
+														<p align=3D"center"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYz=
+MjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><img alt=3D"alt_text" height=3D"50" src=3D"https://img.rspedia.ro/beta=
+/upload/buton_1671435181.png" style=3D"border: 0; height: 50px; line-heig=
+ht: 100%; outline: none; text-decoration: none; margin: auto; max-width: =
+100%; min-height: 50px; vertical-align: top; display: block;" title=3D"">=
+</a></p>
+														<h3 align=3D"center" style=3D"line-height: 1.4;"><a href=3D=
+"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZ=
+zYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY=
+1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&=
+Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; c=
+olor: #0000ff; font-size: 25px; font-weight: bold;" target=3D"_blank"> ..=
+.Detalii Click <u>AICI</u> &raquo;</a></h3>
+														<p style=3D"font-size: 18px;"><b>Stimate coleg contabil,</b=
+></p>
+														<p style=3D"font-size: 16px;">Lucrarea <a href=3D"http://ww=
+w.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZ=
+mlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwO=
+A%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3Dcm=
+FkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #000=
+0ff; font-size: 16px; font-weight: bold;" target=3D"_blank"><u>Ce NU vrea=
+ ANAF sa stii. Piruete legale in aspecte fiscale </u></a> ar trebui sa se=
+ afle pe biroul oricarui intreprinzator, manager, contabil sau director e=
+conomic din Romania.</p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> Iata ce informatii =
+rare gasesti in lucrarea &ldquo;Ce NU vrea ANAF sa stii. Piruete legale i=
+n aspecte fiscale&quot;:</a></h3>
+														<p align=3D"right"><a href=3D"http://www.info.contabilul.ro=
+/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzM=
+jQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><span class=3D"img-prod"><img align=3D"right" alt=3D"alt_text" class=3D=
+"img-prod" height=3D"238" id=3D"img-prod" src=3D"https://lp.rs.ro/upload_=
+img/5693_cenuvreaanafsastii.fisc.ro/foto_1_small_a9b46fbf67.png" style=3D=
+"width: 250px;" title=3D"" width=3D"250"></span></a></p>
+														<p style=3D"font-size: 16px;">1. Care sunt cele doua intreb=
+ari care taie imediat avantul inspectorilor ANAF? <a href=3D"http://www.i=
+nfo.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlz=
+Yy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3=
+D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkd=
+S4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff=
+; font-size: 16px; font-weight: bold;" target=3D"_blank"> (...detalii <u>=
+aici</u> &raquo;)</a><br>
+															2. Care este strategia prin care poti suspenda executarea =
+unei sanctiuni?<br>
+															3. Care sunt cele 13 situatii ce fac ca procesul-verbal in=
+tocmit de inspectori sa fie desfiintat pentru nulitate? <a href=3D"http:/=
+/www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aW=
+kuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExOD=
+YwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3D=
+cmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0=
+000ff; font-size: 16px; font-weight: bold;" target=3D"_blank"> (...detali=
+i <u>aici</u> &raquo;)</a><br>
+															4. Care sunt cele doua cuvinte din lege care te scapa SIGU=
+R de dosar penal?<br>
+															5. Cum raspunde contabilul pentru inregistrarile la care a=
+ fost fortat de patron? <a href=3D"http://www.info.contabilul.ro/link.php=
+?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D=
+&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3790&Campa=
+ignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" s=
+tyle=3D"text-decoration: none; color: #0000ff; font-size: 16px; font-weig=
+ht: bold;" target=3D"_blank"> (...detalii <u>aici</u> &raquo;)</a><br>
+															6. Care sunt contraventiile pe care le pot inventa inspect=
+orii fiscali?</p>
+														<p style=3D"font-size: 16px;"><a href=3D"http://www.info.co=
+ntabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby=
+8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&C=
+ampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTI=
+wMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; font=
+-size: 16px; font-weight: bold;" target=3D"_blank"><u>Ce NU vrea ANAF sa =
+stii. Piruete legale in aspecte fiscale </u></a> prezinta raspunsurile de=
+taliate la toate aceste intrebari punctuale si, de asemenea, mai face un =
+lucru extrem de interesant si de util: prezinta lista celor mai arzatoare=
+ (inclusiv la buzunar) a contraventiilor si infractiunilor fiscale prevaz=
+ute in legislatia din Romania - dar si cum sa EVITAM sa fim sanctionati!<=
+/p>
+														<p align=3D"center"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYz=
+MjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><img alt=3D"alt_text" height=3D"50" src=3D"https://img.rspedia.ro/beta=
+/upload/buton_1671435181.png" style=3D"border: 0; height: 50px; line-heig=
+ht: 100%; outline: none; text-decoration: none; margin: auto; max-width: =
+100%; min-height: 50px; vertical-align: top; display: block;" title=3D"">=
+</a></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> <u>&ldquo;Ce NU vre=
+a ANAF sa stii&rdquo;</u> inventariaza toate greselile contraventionale s=
+i penale care iti ameninta activitatea de zi cu zi!</a></h3>
+														<p style=3D"font-size: 16px;">Lucrarea explica intr-un stil=
+ limpede:<br>
+															<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D=
+&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignStati=
+sticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"=
+text-decoration: none; color: #0000ff; font-size: 16px; font-weight: norm=
+al;" target=3D"_blank"> &bull; unde gresesti<br>
+															&bull; in ce consta greseala<br>
+															&bull; ce articole de lege se incalca<br>
+															&bull; care sunt sanctiunile/amenzile<br>
+															&bull; cum se interpreteaza corect textul de lege<br>
+															&bull; cum se poate evita greseala (...detalii <u>aici</u>=
+ &raquo;)<br>
+															&bull; daca respectiva greseala se poate corecta si cum se=
+ poate corecta </a></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> Important este ca n=
+icio greseala care iti poate duce afacerea in faliment<br>
+															(mai ales acum) nu este lasata pe dinafara.</a></h3>
+														<p style=3D"font-size: 16px;">Si acesta este un avantaj ime=
+ns pentru tine, in conditiile in care Codul fiscal, Codul de procedura fi=
+scala, Legea contabilitatii, Legea evaziunii fiscale, Codul muncii etc. s=
+unt pline de <b> potentiale abateri, multe dintre ele bine ascunse in tex=
+t. </b></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> Atentie: Si hartia =
+igienica poate fi motiv de amenda!</a></h3>
+														<p style=3D"font-size: 16px;"><b>Exemplu de studiu de caz:<=
+/b><br>
+															La o societate care avea cifra de afaceri de milioane de l=
+ei (noi) si impozite calculate si platite exemplar, organul de control, d=
+upa ce a verificat la sange inregistrarile contabile, declaratiile etc., =
+a aplicat maximul amenzii (5.000 de lei) deoarece hartia igienica de la b=
+aie nu era inregistrata ca intrare in societate.<br>
+															<br>
+															<b> Cazul este absolut real! </b> Evident, procesul-verbal=
+ a fost contestat in instanta pe motiv ca fapta nu constituie pericol soc=
+ial, iar instanta a decis in favoarea societatii.</p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> (...Click <u>AICI</=
+u> pentru mai multe detalii &raquo;)</a></h3>
+														<p style=3D"font-size: 16px;"><strong><a href=3D"http://www=
+.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZm=
+lzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA=
+%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c107=
+07; font-size: 16px; font-weight: bold;" target=3D"_blank"><u>Ce NU vrea =
+ANAF sa stii. Piruete LEGALE in aspecte fiscale</u></a></strong> iti dezv=
+aluie toate aceste abateri, impreuna cu sfaturi extrem de binevenite desp=
+re cum pot fi diminuate consecintele lor nefaste, cu indicatii clare desp=
+re cum poti interpreta legea in favoarea ta.</p>
+														<p style=3D"font-size: 16px;">In plus, <b>dezvaluie in prem=
+iera si explica in amanunt niste lucruri mai putin stiute:</b></p>
+														<p align=3D"right"><a href=3D"http://www.info.contabilul.ro=
+/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzM=
+jQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><span class=3D"img-prod"><img align=3D"right" alt=3D"alt_text" class=3D=
+"img-prod" height=3D"238" id=3D"img-prod" src=3D"https://lp.rs.ro/upload_=
+img/5693_cenuvreaanafsastii.fisc.ro/foto_1_small_a9b46fbf67.png" style=3D=
+"width: 250px;" title=3D"" width=3D"250"></span></a></p>
+														<p style=3D"font-size: 16px;"><b style=3D"color: #0000ff;">=
+*</b> ce trucuri folosesc inspectorii Fiscului atunci cand vin in control=
+ <a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51=
+dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMem=
+berID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D339=
+0&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decorati=
+on: none; color: #0000ff; font-size: 16px; font-weight: bold;" target=3D"=
+_blank"> (...detalii <u>aici</u> &raquo;)</a><br>
+															<b style=3D"color: #0000ff;"> *</b> ce metode de intimidar=
+e folosesc acestia <a href=3D"http://www.info.contabilul.ro/link.php?URL=3D=
+aHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=
+=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignSt=
+atisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D=
+"text-decoration: none; color: #0000ff; font-size: 16px; font-weight: bol=
+d;" target=3D"_blank"> (...detalii <u>aici</u> &raquo;)</a><br>
+															<b style=3D"color: #0000ff;"> *</b> care sunt modalitatile=
+ prin care ii poti &ldquo;imblanzi&rdquo; instantaneu<br>
+															<b style=3D"color: #0000ff;"> *</b> cum folosesti in favoa=
+rea ta cee NU spune legea<br>
+															<b style=3D"color: #0000ff;"> *</b> cum poti elimina din s=
+tart acuzatiile agresive de evaziune fiscala si de spalare de bani (adica=
+ la ce e bine sa fii atent)<br>
+															<b style=3D"color: #0000ff;"> *</b> ce prevederi fiscal-co=
+ntabile lucreaza clar in avantajul tau<br>
+															<b style=3D"color: #0000ff;"> *</b> de ce ACUM procesele-v=
+erbale de contraventie NU mai beneficiaza de prezumtia de adevar<br>
+															<b style=3D"color: #0000ff;"> *</b> cum te apara instantel=
+e de la cele romane pana la cele internationale (!) <a href=3D"http://www=
+.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZm=
+lzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA=
+%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000=
+ff; font-size: 16px; font-weight: bold;" target=3D"_blank"> (...detalii <=
+u>aici</u> &raquo;)</a></p>
+														<p style=3D"font-size: 16px;"><a href=3D"http://www.info.co=
+ntabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby=
+8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&C=
+ampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTI=
+wMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; font=
+-size: 16px; font-weight: bold;" target=3D"_blank"><b><u>Ce NU vrea ANAF =
+sa stii </u></b></a> <b>are secrete legale pentru pentru probleme fiscale=
+ </b> prin informatiile pe care le ofera si prin multitudinea de exemple =
+practice.</p>
+														<p align=3D"center"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYz=
+MjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><img alt=3D"alt_text" height=3D"50" src=3D"https://img.rspedia.ro/beta=
+/upload/buton_1674209286.png" style=3D"border: 0; height: 50px; line-heig=
+ht: 100%; outline: none; text-decoration: none; margin: auto; max-width: =
+100%; min-height: 50px; vertical-align: top; display: block;" title=3D"">=
+</a></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> Extrase din cuprins=
+ul lucrarii Ce NU vrea ANAF sa stii:</a></h3>
+														<p style=3D"font-size: 16px;">&bull; Cazurile care te scute=
+sc de sanctiuni<br>
+															&bull; Poate sa raspunda penal si persoana juridica?<br>
+															&bull; Fapta comisa fara vinovatie nu este infractiune. Si=
+ alte secrete.<br>
+															&bull; Caile legale si ilegale de a scoate bani din firma.=
+ Alege!<br>
+															&bull; Nu exista evaziune fiscala daca nu sunt realizate i=
+n intregime elementele infractiunii!<br>
+															&bull; Neprezentarea fortuita a documentelor nu este evazi=
+une fiscala<br>
+															&bull; Cazuri de aplicare incorecta a legii<br>
+															&bull; Stiai ca organele de control NU au dreptul sa intre=
+ cand vor, unde vor?<br>
+															&bull; Buna-credinta exclude evaziunea<br>
+															&bull; Contraventiile si infractiunile prevazute de legea =
+societatilor sunt doar pentru administratori si directori?<br>
+															&bull; Folosirea neadecvata a fondurilor societatii &ndash=
+; dosare penale din senin<br>
+															&bull; Contraventiile la regimul caselor de marcat O.U.G. =
+nr. 28/1991<br>
+															&bull; Terorist cu acte in (ne)regula - sau despre ce e de=
+ facut ca sa nu iti spulbere functionarii afacerea pentru ca iti lipseste=
+ o hartie<br>
+															&bull; &bdquo;Cosmetizarea&ldquo; rezultatelor financiare/=
+fiscale ale activitatii &ndash; dosar penal sau nu?<br>
+															&bull; Impozitul pe dividende - probleme fiscale, contabil=
+e, juridice si penale<br>
+															&bull; Cum te apara instantele romane si cele europene. Ca=
+zuri des intalnite in practica si solutionate</p>
+														<p align=3D"center"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYz=
+MjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><img alt=3D"alt_text" height=3D"50" src=3D"https://img.rspedia.ro/beta=
+/upload/buton_1671435181.png" style=3D"border: 0; height: 50px; line-heig=
+ht: 100%; outline: none; text-decoration: none; margin: auto; max-width: =
+100%; min-height: 50px; vertical-align: top; display: block;" title=3D"">=
+</a></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> Produsul pe scurt</=
+a></h3>
+														<p align=3D"right"><a href=3D"http://www.info.contabilul.ro=
+/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYzM=
+jQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><span class=3D"img-prod"><img align=3D"right" alt=3D"alt_text" class=3D=
+"img-prod" height=3D"238" id=3D"img-prod" src=3D"https://lp.rs.ro/upload_=
+img/5693_cenuvreaanafsastii.fisc.ro/foto_1_small_a9b46fbf67.png" style=3D=
+"width: 250px;" title=3D"" width=3D"250"></span></a></p>
+														<p style=3D"font-size: 16px;"><b>Titlu:</b> <a href=3D"http=
+://www.info.contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0=
+aWkuZmlzYy5yby8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODEx=
+ODYwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=
+=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color:=
+ #0000ff; font-size: 16px; font-weight: bold;" target=3D"_blank">&ldquo;C=
+e NU vrea ANAF sa stii. Piruete legale in aspecte fiscale&rdquo;</a><br>
+															<br>
+															<b>Continut:</b> lista completa a contraventiilor si infra=
+ctiunilor fiscal-contabile. Comentarii, solutii, corelatii putin evidente=
+ intre diferite texte de lege<br>
+															<br>
+															<b>Format:</b> stick de memorie + online<br>
+															<a href=3D"http://www.info.contabilul.ro/link.php?URL=3DaH=
+R0cHM6Ly93d3cucnNvbmxpbmUucm8v&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA=
+%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000=
+ff; font-size: 16px; font-weight: bold;" target=3D"_blank">(vizualizare i=
+n www.rsonline.ro)</a><br>
+															<b>Pret:</b> 157 lei + 5% TVA, redus cu 20% de la 194 lei =
++ 5% tva<br>
+															<br>
+															<b>Mod de comanda:</b> <a href=3D"http://www.info.contabil=
+ul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9=
+MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Campaig=
+nID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnb=
+WFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; font-size:=
+ 16px; font-weight: bold; background-color: yellow;" target=3D"_blank">pr=
+in intermediul formularului de <u>AICI</u> &lt;&lt;</a></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> IMPORTANT!</a></h3>
+														<p style=3D"font-size: 16px;"><a href=3D"http://www.info.co=
+ntabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby=
+8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&C=
+ampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTI=
+wMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; font=
+-size: 16px; font-weight: bold;" target=3D"_blank"><u>Lucrarea pe stick C=
+e nu vrea ANAF sa stii. Piruete LEGALE in aspecte fiscale </u></a> este o=
+ editie premium, actualizata, ce ofera ca bonus informatii extrem de opor=
+tune si de utile in contextul legislativ actual:<br>
+															<b> 1. Impozitul pe dividende - solutii fiscale, contabile=
+, juridice si penale - toate impreuna.<span style=3D"background-color: #f=
+fff00;">&nbsp;(abordare unica pana acum)</span></b></p>
+														<ul>
+															<li>Contine referiri la scadente, proceduri si greseli pre=
+vazute de Legea societatilor, dividendele trimestriale, infractiuni.</li>
+														</ul>
+														<p style=3D"font-size: 16px;"><b>2. Principii care te ajuta=
+ in fata abuzurilor organelor fiscale</b> <a href=3D"http://www.info.cont=
+abilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/=
+Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Cam=
+paignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwM=
+UBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; font-s=
+ize: 16px; font-weight: bold;" target=3D"_blank"> (...detalii <u>aici</u>=
+ &raquo;)</a><br>
+															<b>3. Cum &rdquo;scoti&rdquo; bani din firma fara ca Fiscu=
+l sa aiba ceva de comentat</b><br>
+															<b>4. &rdquo;Cartonase rosii&rdquo; pentru contribuabil in=
+ viziunea ANAF, dar de fapt actiuni perfect valabile</b> &ndash; studii d=
+e caz explicate</p>
+														<p align=3D"center"><a href=3D"http://www.info.contabilul.r=
+o/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby8/Y3M9MTYz=
+MjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&CampaignID=3D=
+3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBnbWFpbC5=
+jb20=3D" style=3D"text-decoration: none; color: #339272;" target=3D"_blan=
+k"><img alt=3D"alt_text" height=3D"50" src=3D"https://img.rspedia.ro/beta=
+/upload/buton_1674209286.png" style=3D"border: 0; height: 50px; line-heig=
+ht: 100%; outline: none; text-decoration: none; margin: auto; max-width: =
+100%; min-height: 50px; vertical-align: top; display: block;" title=3D"">=
+</a></p>
+														<h3 style=3D"line-height: 1.4;"><a href=3D"http://www.info.=
+contabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5y=
+by8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D=
+&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yN=
+TIwMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #c10707; fo=
+nt-size: 18px; font-weight: bold;" target=3D"_blank"> Comanda chiar acum!=
+ </a></h3>
+														<p style=3D"font-size: 16px;"><a href=3D"http://www.info.co=
+ntabilul.ro/link.php?URL=3DaHR0cHM6Ly9jZW51dnJlYWFuYWZzYXN0aWkuZmlzYy5yby=
+8/Y3M9MTYzMjQxOA=3D=3D&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&C=
+ampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTI=
+wMUBnbWFpbC5jb20=3D" style=3D"text-decoration: none; color: #0000ff; font=
+-size: 16px; font-weight: bold;" target=3D"_blank"><u>Ce NU vrea ANAF sa =
+stii. Piruete LEGALE in aspecte fiscale </u></a> este, cel mai util produ=
+s editorial pentru activitatea ta de zi cu zi, mai ales in contextul modi=
+ficarilor dese ale Codului fiscal!</p>
+														<br>
+														<p align=3D"right" style=3D"font-size: 16px;"><b><i>Cu stim=
+a,</i></b><br>
+															<br>
+															<b><i>Diana Gheorghiu </i></b><br>
+															Coordonator oferta<br>
+															Divizia Fiscalitate Rentrop&amp;Straton</p>
+													</div>
+												</div>
+<!--END_CONTENT-->											</td>
+										</tr>
+								=09
+								</table>
+							</td>
+						</tr>
+<!-- 1 Column Text
+						<!-- Clear Spacer : END -->						<tr>
+							<td class=3D"center-on-narrow" dir=3D"ltr" style=3D"font-family: A=
+rial, Helvetica, sans-serif; font-size: 12px; line-height: 20px; color: #=
+000000; padding: 0px 10px; text-align: center; background-color: #ffffff;=
+">
+								<p style=3D"margin: 0 0 10px 0; text-align: center; font-size: 12=
+px!important; line-height: 20px;">&nbsp;</p>
+							</td>
+						</tr>
+				=09
+				</table>
+<!-- Email Body : END -->				<table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" style=3D"max-width: 720px; width: 100%;=
+">
+				=09
+						<tr>
+							<td style=3D"padding: 20px; font-family: Arial, Helvetica, sans-se=
+rif; font-size: 12px; line-height: 15px; text-align: center; color: #6373=
+81; background-color:#e7e7e7;"><a href=3D"http://www.info.contabilul.ro/l=
+ink.php?URL=3DaHR0cDovL3d3dy5jb250YWJpbHVsLnJvL3ByaXZhY3lwb2xpY3kvcHJpdmF=
+jeXBvbGljeS5odG1s&Name=3D&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Campai=
+gnID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Email=3DcmFkdS4yNTIwMUBn=
+bWFpbC5jb20=3D" style=3D"color: #637381;" target=3D"_blank">Politica de c=
+onfidentialitate</a> | <a href=3D"mailto:gdpr@rs.ro" style=3D"color: #637=
+381;">Raporteaza abuz</a> | <a href=3D"http://www.info.contabilul.ro/html=
+_version.php?CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0&Encry=
+ptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmFkdS4yNTIwMSU0MGdtYWlsLmNvb=
+Q=3D=3D" style=3D"color: #637381;">Versiune html</a> | <a href=3D"http://=
+www.info.contabilul.ro/unsubscribe.php?CampaignID=3D3790&CampaignStatisti=
+csID=3D3390&Demo=3D0&EncryptedMemberID=3DNDY1ODExODYwOA%3D%3D&Email=3DcmF=
+kdS4yNTIwMUBnbWFpbC5jb20=3D"
+style=3D"color: #637381;">Click aici pentru dezabonare</a></td>
+						</tr>
+				=09
+				</table>
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"background-color: #fbfbfb; padding: 15px 0px; width: 10=
+0%;">
+				=09
+						<tr>
+							<td style=3D"padding: 0px 20px; text-align: center; font-family: '=
+Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weig=
+ht: 400; line-height: 24px; color: #343535;">
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Va reamintim ca ati solicitat =
+primirea acestui newsletter pe data de 05/25/2022</p>
+								<p align=3D"center" style=3D"font-family: 'Helvetica Neue', Helve=
+tica, Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: =
+24px; text-align: center; color: #343535;">Expeditor: Rentrop&amp;Straton=
+, Bdul. Natiunile Unite nr. 4, Bucuresti, Romania<br>
+									Tel: 004-021.209.45.12</p>
+							</td>
+						</tr>
+				=09
+				</table>
+<!--[if mso]>
+
+				</td>
+				</tr>
+				</table>
+				<![endif]-->			</div>
+		</div>
+<!--[if mso | IE]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+<img src=3D"http://www.info.contabilul.ro/read.php?EncryptedMemberID=3DND=
+Y1ODExODYwOA%3D%3D&CampaignID=3D3790&CampaignStatisticsID=3D3390&Demo=3D0=
+&Email=3DcmFkdS4yNTIwMUBnbWFpbC5jb20=3D" width=3D"10" height=3D"10" alt=3D=
+"---">
+
+</body>
+</html>
+
+
+
+--b1_b329ba14ba50e4c9d9eb6b991376cb9c--
+
+

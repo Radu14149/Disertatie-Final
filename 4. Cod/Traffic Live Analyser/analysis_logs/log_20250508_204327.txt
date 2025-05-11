@@ -1,0 +1,2784 @@
+0.0000	Trafic Legitim	6.12%
+0	192.168.1.1	192.168.1.2	tcp	http	SF	319	629
+----------------------------------------
+3.3785	Trafic Legitim	6.12%
+1	192.168.1.1	192.168.1.2	tcp	smtp	SF	0	83
+----------------------------------------
+6.5325	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	331	1078
+----------------------------------------
+10.6280	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	347	908
+----------------------------------------
+14.7134	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S1	0	0
+----------------------------------------
+18.8192	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	333	9231
+----------------------------------------
+22.9272	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+26.9979	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+31.0940	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	53	56
+----------------------------------------
+35.1851	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	2507
+----------------------------------------
+39.2703	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	55	53
+----------------------------------------
+43.3562	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	Z39_50	REJ	0	0
+----------------------------------------
+47.4425	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	REJ	0	0
+----------------------------------------
+51.5012	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+55.5920	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+59.6449	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	mtp	S0	0	0
+----------------------------------------
+63.7310	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	336	1944
+----------------------------------------
+67.8240	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+71.9082	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	268	2023
+----------------------------------------
+76.0156	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	240	12210
+----------------------------------------
+80.0846	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	212	298
+----------------------------------------
+84.1357	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	171	405
+----------------------------------------
+88.2125	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	359	771
+----------------------------------------
+92.3126	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	248	489
+----------------------------------------
+96.4276	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+100.5264	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	RSTO	0	44
+----------------------------------------
+104.6261	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+108.7754	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	18	0
+----------------------------------------
+112.8743	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	time	S0	0	0
+----------------------------------------
+116.9680	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+121.0749	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	235	34228
+----------------------------------------
+125.1488	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	121	174
+----------------------------------------
+129.2190	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	158	595
+----------------------------------------
+133.2843	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	Z39_50	S0	0	0
+----------------------------------------
+137.3841	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	0
+----------------------------------------
+141.4501	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	56	52
+----------------------------------------
+145.5156	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	145
+----------------------------------------
+149.6046	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	bgp	REJ	0	0
+----------------------------------------
+153.6847	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	62344	0
+----------------------------------------
+157.7727	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	324	276
+----------------------------------------
+161.8528	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	229	925
+----------------------------------------
+165.9046	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	173	12382
+----------------------------------------
+170.0102	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sql_net	S0	0	0
+----------------------------------------
+174.0859	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	641	0
+----------------------------------------
+178.1755	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+182.2891	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	44	79
+----------------------------------------
+186.3892	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	61504	0
+----------------------------------------
+190.4948	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	319	0
+----------------------------------------
+194.6100	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	158	595
+----------------------------------------
+198.7010	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	125	174
+----------------------------------------
+202.7675	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	18	0
+----------------------------------------
+206.8703	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+210.9681	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	277	4968
+----------------------------------------
+215.0332	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	54	49
+----------------------------------------
+219.1261	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+223.2259	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	508	0
+----------------------------------------
+227.3262	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	netbios_ns	REJ	0	0
+----------------------------------------
+231.4123	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	221	295
+----------------------------------------
+235.4975	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+239.5844	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	191	10965
+----------------------------------------
+243.6845	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	308	3222
+----------------------------------------
+247.7775	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	299	174
+----------------------------------------
+251.8775	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	251	2043
+----------------------------------------
+255.9635	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	219	774
+----------------------------------------
+260.0423	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	215	1532
+----------------------------------------
+264.1425	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+268.2286	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	18	0
+----------------------------------------
+272.3147	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+276.4076	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	296	6482
+----------------------------------------
+280.4937	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	206	3731
+----------------------------------------
+284.6006	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	319	693
+----------------------------------------
+288.6798	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	164	599
+----------------------------------------
+292.7659	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	219	608
+----------------------------------------
+296.8449	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+300.9241	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	20	0
+----------------------------------------
+305.0380	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	RSTO	0	36
+----------------------------------------
+309.1240	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	119	174
+----------------------------------------
+313.2102	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+317.3030	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+321.4032	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+325.4891	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S0	0	0
+----------------------------------------
+329.5752	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+333.6613	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+337.7628	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	RSTO	0	36
+----------------------------------------
+341.8472	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	54	51
+----------------------------------------
+345.9402	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	869	337
+----------------------------------------
+350.0540	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	login	RSTO	0	0
+----------------------------------------
+354.1471	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	54	50
+----------------------------------------
+358.2540	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sql_net	S0	0	0
+----------------------------------------
+362.3400	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	62344	0
+----------------------------------------
+366.4259	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+370.5189	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+374.6121	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+378.6913	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	26	93
+----------------------------------------
+382.7773	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+386.8773	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	124	174
+----------------------------------------
+390.9563	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	200	4800
+----------------------------------------
+395.0355	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+399.1144	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+403.2423	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+407.3006	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	636	326
+----------------------------------------
+411.4078	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	54540	8314
+----------------------------------------
+415.5142	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+419.6074	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ssh	S0	0	0
+----------------------------------------
+423.6935	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	netbios_dgm	REJ	0	0
+----------------------------------------
+427.7796	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+431.8860	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+435.9517	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+440.0517	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	296	16530
+----------------------------------------
+444.1723	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+448.2792	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	302	15264
+----------------------------------------
+452.3719	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	RSTO	0	0
+----------------------------------------
+456.4723	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+460.5582	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2680	327
+----------------------------------------
+464.6581	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+468.7511	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	342	404
+----------------------------------------
+472.8442	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+476.9509	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	205	398
+----------------------------------------
+481.0095	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1281	484
+----------------------------------------
+485.1024	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	RSTO	0	36
+----------------------------------------
+489.1885	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+493.2676	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+497.3535	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+501.4329	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S1	322	1024
+----------------------------------------
+505.5189	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+509.5982	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1918	332
+----------------------------------------
+513.6911	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	25	93
+----------------------------------------
+517.7887	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+521.8909	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	REJ	0	0
+----------------------------------------
+525.9769	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	15
+----------------------------------------
+530.0700	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	18	0
+----------------------------------------
+534.1560	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	S0	0	0
+----------------------------------------
+538.2350	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+542.3213	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+546.4004	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	3944	0
+----------------------------------------
+550.5073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	303	1345
+----------------------------------------
+554.6138	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	uucp_path	S0	0	0
+----------------------------------------
+558.6932	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+562.7655	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	278	397
+----------------------------------------
+566.8584	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+570.9336	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+575.0095	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ssh	REJ	0	0
+----------------------------------------
+579.0840	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	213	2080
+----------------------------------------
+583.1680	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	RSTR	0	0
+----------------------------------------
+587.2617	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	X11	SF	1262796	15820
+----------------------------------------
+591.3292	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	315	347
+----------------------------------------
+595.3915	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	223	2225
+----------------------------------------
+599.4845	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+603.5702	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	217
+----------------------------------------
+607.6529	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+611.7357	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+615.8229	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+619.9288	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+624.0286	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	163	3365
+----------------------------------------
+628.1147	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	332	1301
+----------------------------------------
+632.1935	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+636.2798	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	237	675
+----------------------------------------
+640.3879	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	other	SF	1	0
+----------------------------------------
+644.4798	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	260	743
+----------------------------------------
+648.5797	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	46	46
+----------------------------------------
+652.6676	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+656.7521	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	122	174
+----------------------------------------
+660.8243	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	47	0
+----------------------------------------
+664.9169	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	8173	0
+----------------------------------------
+669.0309	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+673.1371	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+677.2376	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+681.3319	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	43	109
+----------------------------------------
+685.4238	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+689.5094	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	RSTO	0	15
+----------------------------------------
+693.5956	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+697.6891	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+701.7781	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+705.8814	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+709.9539	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	26	93
+----------------------------------------
+714.0332	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+718.1331	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+722.2261	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	daytime	RSTO	0	0
+----------------------------------------
+726.3191	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	309	2394
+----------------------------------------
+730.3982	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	name	REJ	0	0
+----------------------------------------
+734.4981	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	290	3376
+----------------------------------------
+738.5912	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	2731
+----------------------------------------
+742.6841	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+746.7845	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	868	0
+----------------------------------------
+750.8839	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+754.9978	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+759.1047	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	350	3610
+----------------------------------------
+763.2185	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	44	44
+----------------------------------------
+767.3323	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	145
+----------------------------------------
+771.4392	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+775.5185	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+779.6044	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	303	308
+----------------------------------------
+783.6766	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+787.7901	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	auth	SF	14	40
+----------------------------------------
+791.8555	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	43	43
+----------------------------------------
+795.9556	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	50	0
+----------------------------------------
+800.0487	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+804.1207	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+808.2168	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	finger	SF	10	141
+----------------------------------------
+812.3067	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	219	5014
+----------------------------------------
+816.4137	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+820.4923	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	S0	0	0
+----------------------------------------
+824.5927	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	266	2502
+----------------------------------------
+828.6788	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	62344	0
+----------------------------------------
+832.7647	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	231	330
+----------------------------------------
+836.8643	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	284	1108
+----------------------------------------
+840.9509	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+845.0439	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	2783	15142
+----------------------------------------
+849.1438	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	257	5320
+----------------------------------------
+853.2160	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	RSTO	0	15
+----------------------------------------
+857.3021	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	33580	2920
+----------------------------------------
+861.3812	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+865.4878	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	327	664
+----------------------------------------
+869.5669	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	REJ	0	0
+----------------------------------------
+873.6464	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	121	174
+----------------------------------------
+877.7462	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	finger	SF	9	144
+----------------------------------------
+881.8391	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	123	174
+----------------------------------------
+885.9101	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+890.0044	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	316	2147
+----------------------------------------
+894.1111	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+898.1971	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	292	182
+----------------------------------------
+902.2834	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	687	0
+----------------------------------------
+906.3691	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	250	12743
+----------------------------------------
+910.4557	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	222	827
+----------------------------------------
+914.5344	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	326	2650
+----------------------------------------
+918.6486	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	162	597
+----------------------------------------
+922.7348	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+926.8346	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+930.9277	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+935.0001	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	314	990
+----------------------------------------
+939.0860	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+943.1859	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	595
+----------------------------------------
+947.2790	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	46	0
+----------------------------------------
+951.3787	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	167	497
+----------------------------------------
+955.4508	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	241	307
+----------------------------------------
+959.5309	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	321	6299
+----------------------------------------
+963.6092	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	RSTO	0	44
+----------------------------------------
+967.7021	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+971.7752	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+975.8751	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	321	15416
+----------------------------------------
+979.9833	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	289	2976
+----------------------------------------
+984.0672	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1550	331
+----------------------------------------
+988.1404	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	RSTR	0	0
+----------------------------------------
+992.2543	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+996.3193	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+1000.4076	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	508	0
+----------------------------------------
+1004.4766	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	243	468
+----------------------------------------
+1008.5778	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+1012.6569	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1016.7637	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	315	590
+----------------------------------------
+1020.8519	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1024.9485	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	307	2507
+----------------------------------------
+1029.0280	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1033.1346	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	298	11515
+----------------------------------------
+1037.2495	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	868	0
+----------------------------------------
+1041.3206	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	124	174
+----------------------------------------
+1045.4077	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	597
+----------------------------------------
+1049.4858	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S0	0	0
+----------------------------------------
+1053.5591	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+1057.6466	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	S0	0	0
+----------------------------------------
+1061.7208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	377	1266
+----------------------------------------
+1065.7967	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	216	9151
+----------------------------------------
+1069.8966	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+1073.9637	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	28	0
+----------------------------------------
+1078.0489	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1082.1267	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	daytime	RSTO	0	0
+----------------------------------------
+1086.2232	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	218	712
+----------------------------------------
+1090.3198	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	229	772
+----------------------------------------
+1094.3838	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	232	2013
+----------------------------------------
+1098.4701	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+1102.5654	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+1106.6492	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	35	91
+----------------------------------------
+1110.7684	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	194	794
+----------------------------------------
+1114.8629	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	252	1148
+----------------------------------------
+1118.9363	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+1123.0242	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	REJ	0	0
+----------------------------------------
+1127.1242	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	260	392
+----------------------------------------
+1131.2347	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1135.3124	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	336	1304
+----------------------------------------
+1139.3803	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	173	12382
+----------------------------------------
+1143.4639	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1147.5803	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	341	2315
+----------------------------------------
+1151.6883	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	261	396
+----------------------------------------
+1155.7930	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	2728
+----------------------------------------
+1159.8858	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	289	2317
+----------------------------------------
+1163.9883	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1168.0544	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+1172.1380	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+1176.2175	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1180.2886	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	219	875
+----------------------------------------
+1184.3813	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+1188.4565	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1192.5727	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	REJ	0	0
+----------------------------------------
+1196.6812	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+1200.7852	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+1204.8672	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	57964	0
+----------------------------------------
+1208.9475	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	353	5661
+----------------------------------------
+1213.0325	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	838
+----------------------------------------
+1217.0991	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1221.1843	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+1225.2974	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	207	300
+----------------------------------------
+1229.3524	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	auth	SF	10	36
+----------------------------------------
+1233.4284	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	597
+----------------------------------------
+1237.5049	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	211	3204
+----------------------------------------
+1241.5872	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	netstat	S0	0	0
+----------------------------------------
+1245.6886	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1249.7594	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	gopher	REJ	0	0
+----------------------------------------
+1253.8704	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	15924
+----------------------------------------
+1257.9574	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	0	1452
+----------------------------------------
+1262.0424	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	924	279
+----------------------------------------
+1266.1107	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	294	6442
+----------------------------------------
+1270.1688	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1274.2612	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	153	365
+----------------------------------------
+1278.3310	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	323	2855
+----------------------------------------
+1282.4408	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+1286.5410	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1290.6397	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sunrpc	REJ	0	0
+----------------------------------------
+1294.7350	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	171	4539
+----------------------------------------
+1298.8162	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	netbios_ssn	REJ	0	0
+----------------------------------------
+1302.9071	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	75904	0
+----------------------------------------
+1306.9772	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	87164	0
+----------------------------------------
+1311.0966	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	uucp	REJ	0	0
+----------------------------------------
+1315.1659	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	93004	0
+----------------------------------------
+1319.2527	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1323.3366	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+1327.4226	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1331.4968	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	56504	0
+----------------------------------------
+1335.5809	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1339.6472	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1343.7663	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1347.8631	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1351.9388	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1356.0294	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+1360.1213	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	44	44
+----------------------------------------
+1364.1959	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	35	35
+----------------------------------------
+1368.2727	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	304	1942
+----------------------------------------
+1372.3320	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	3886954	0
+----------------------------------------
+1376.4320	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1871	336
+----------------------------------------
+1380.5571	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	74024	0
+----------------------------------------
+1384.6318	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+1388.7412	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	300	1585
+----------------------------------------
+1392.8158	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+1396.9059	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+1400.9689	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+1405.0670	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	S0	0	0
+----------------------------------------
+1409.1691	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1413.2691	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	301	1569
+----------------------------------------
+1417.3446	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+1421.4192	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	277	485
+----------------------------------------
+1425.5134	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1429.5812	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	RSTO	0	0
+----------------------------------------
+1433.6811	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	72564	0
+----------------------------------------
+1437.7395	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	235	1388
+----------------------------------------
+1441.8235	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	S0	0	0
+----------------------------------------
+1445.9296	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	293	3410
+----------------------------------------
+1450.0295	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S0	0	0
+----------------------------------------
+1454.1197	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	162	440
+----------------------------------------
+1458.2215	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	214	1010
+----------------------------------------
+1462.3136	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+1466.3959	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+1470.4821	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	47	0
+----------------------------------------
+1474.5792	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+1478.6723	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	219	413
+----------------------------------------
+1482.7541	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	227	406
+----------------------------------------
+1486.8270	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1490.9470	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	link	REJ	0	0
+----------------------------------------
+1495.0388	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	193	454
+----------------------------------------
+1499.1468	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1503.2446	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1507.3255	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	595
+----------------------------------------
+1511.4081	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	248	26227
+----------------------------------------
+1515.5037	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	158	1263
+----------------------------------------
+1519.6174	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+1523.7105	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	114
+----------------------------------------
+1527.8129	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+1531.9115	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1536.0126	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1540.0778	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	333	261
+----------------------------------------
+1544.1630	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1548.2605	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	838
+----------------------------------------
+1552.3696	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	0
+----------------------------------------
+1556.4477	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	393	6248
+----------------------------------------
+1560.5487	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	238	445
+----------------------------------------
+1564.6522	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+1568.7390	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	0	2336
+----------------------------------------
+1572.8646	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	126	188
+----------------------------------------
+1576.9234	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+1581.0404	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	RSTO	0	15
+----------------------------------------
+1585.1324	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	192	10121
+----------------------------------------
+1589.2052	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	195	4768
+----------------------------------------
+1593.3060	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1597.3762	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+1601.4657	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	REJ	0	0
+----------------------------------------
+1605.5497	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	uucp_path	REJ	0	0
+----------------------------------------
+1609.6471	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	209	10469
+----------------------------------------
+1613.7636	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	72564	0
+----------------------------------------
+1617.8679	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	335	295
+----------------------------------------
+1621.9503	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+1626.0414	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1630.1433	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	178	2742
+----------------------------------------
+1634.2622	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	206	310
+----------------------------------------
+1638.3422	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+1642.4342	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1646.5342	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	47	44
+----------------------------------------
+1650.6422	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	223	2064
+----------------------------------------
+1654.7163	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	SF	240	619
+----------------------------------------
+1658.7918	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	REJ	0	0
+----------------------------------------
+1662.8864	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	login	RSTO	0	0
+----------------------------------------
+1667.0103	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1480	0
+----------------------------------------
+1671.0990	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+1675.2072	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	27	93
+----------------------------------------
+1679.2987	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	SH	0	0
+----------------------------------------
+1683.3811	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	335	6589
+----------------------------------------
+1687.4778	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+1691.5359	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	196	308
+----------------------------------------
+1695.6178	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+1699.7247	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	40	40
+----------------------------------------
+1703.7803	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	224	25101
+----------------------------------------
+1707.8321	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+1711.9037	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	355	327
+----------------------------------------
+1715.9625	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1720.0411	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	318	1599
+----------------------------------------
+1724.0995	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+1728.2083	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+1732.2858	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	18	0
+----------------------------------------
+1736.3651	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	73024	0
+----------------------------------------
+1740.4302	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1744.4840	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1748.5802	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	220	3313
+----------------------------------------
+1752.6691	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	15
+----------------------------------------
+1756.7601	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	230	437
+----------------------------------------
+1760.8594	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	174	12382
+----------------------------------------
+1764.9551	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	REJ	0	0
+----------------------------------------
+1769.0473	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+1773.1391	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	57184	0
+----------------------------------------
+1777.2321	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1781.3163	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	120	174
+----------------------------------------
+1785.4083	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	42	42
+----------------------------------------
+1789.4934	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	S0	0	0
+----------------------------------------
+1793.5784	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	251	3984
+----------------------------------------
+1797.6695	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+1801.7564	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1805.8508	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+1809.9395	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	250	611
+----------------------------------------
+1814.0369	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	S0	0	0
+----------------------------------------
+1818.1303	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+1822.2311	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+1826.3115	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+1830.4092	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	306	1075
+----------------------------------------
+1834.4919	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1838.5799	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1842.6638	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	205	1600
+----------------------------------------
+1846.7605	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1850.8588	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	RSTO	0	36
+----------------------------------------
+1854.9497	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	42	70
+----------------------------------------
+1859.0363	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	207	622
+----------------------------------------
+1863.1208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+1867.2044	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	55	52
+----------------------------------------
+1871.2971	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ldap	REJ	0	0
+----------------------------------------
+1875.3915	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	53	53
+----------------------------------------
+1879.4765	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+1883.5646	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1887.6454	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1891.7308	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	44	112
+----------------------------------------
+1895.8242	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1899.9165	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	SH	0	0
+----------------------------------------
+1904.0065	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2054	328
+----------------------------------------
+1908.0995	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+1912.1929	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	287	1708
+----------------------------------------
+1916.2906	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	303	1850
+----------------------------------------
+1920.3880	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	217
+----------------------------------------
+1924.4719	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	303	480
+----------------------------------------
+1928.5729	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+1932.6584	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+1936.7454	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	128	174
+----------------------------------------
+1940.8320	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	302	2698
+----------------------------------------
+1944.9177	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	307	5381
+----------------------------------------
+1949.0198	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sunrpc	REJ	0	0
+----------------------------------------
+1953.1219	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1957.2133	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	233	5410
+----------------------------------------
+1961.3073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	S0	0	0
+----------------------------------------
+1965.4002	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	201	417
+----------------------------------------
+1969.4932	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	finger	S0	0	0
+----------------------------------------
+1973.5842	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+1977.6843	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	223	1784
+----------------------------------------
+1981.7830	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	other	SF	1	1
+----------------------------------------
+1985.8725	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+1989.9576	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	S0	0	0
+----------------------------------------
+1994.0477	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	32813	327
+----------------------------------------
+1998.1418	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	0
+----------------------------------------
+2002.2331	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+2006.3251	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	121	174
+----------------------------------------
+2010.4138	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2014.5031	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	31	93
+----------------------------------------
+2018.5938	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	247	13425
+----------------------------------------
+2022.6858	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	mtp	REJ	0	0
+----------------------------------------
+2026.7701	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	290	171
+----------------------------------------
+2030.8732	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sunrpc	REJ	0	0
+----------------------------------------
+2034.9691	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	280	1945
+----------------------------------------
+2039.0538	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+2043.1380	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	207	2302
+----------------------------------------
+2047.2250	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http_443	S0	0	0
+----------------------------------------
+2051.3073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	60884	0
+----------------------------------------
+2055.4004	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	S0	0	0
+----------------------------------------
+2059.4886	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2063.5772	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	186	5393
+----------------------------------------
+2067.6699	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	125	174
+----------------------------------------
+2071.7558	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	352	1217
+----------------------------------------
+2075.8536	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	58624	0
+----------------------------------------
+2079.9450	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	1	1
+----------------------------------------
+2084.0450	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2088.1326	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2092.2304	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2096.3150	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2100.4139	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	53	55
+----------------------------------------
+2104.4981	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ctf	S0	0	0
+----------------------------------------
+2108.5960	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	361	1135
+----------------------------------------
+2112.6948	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	158	595
+----------------------------------------
+2116.7926	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+2120.8892	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+2124.9741	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+2129.0589	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2133.1473	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	44	69
+----------------------------------------
+2137.2436	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2141.3413	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2145.4303	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	194	1654
+----------------------------------------
+2149.5227	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+2153.6102	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	147
+----------------------------------------
+2157.6920	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2161.7871	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+2165.8791	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	53	50
+----------------------------------------
+2169.9861	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	69644	0
+----------------------------------------
+2174.0869	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2178.1848	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2182.2814	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2186.3647	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	REJ	0	0
+----------------------------------------
+2190.4540	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2194.5437	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+2198.6496	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2202.7425	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	0
+----------------------------------------
+2206.8308	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	293	662
+----------------------------------------
+2210.9229	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	197	481
+----------------------------------------
+2215.0159	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	366	1164
+----------------------------------------
+2219.1150	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	S0	0	0
+----------------------------------------
+2223.2094	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	31	93
+----------------------------------------
+2227.2954	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	304	2698
+----------------------------------------
+2231.3846	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2235.4820	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	28	0
+----------------------------------------
+2239.5642	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	252	8110
+----------------------------------------
+2243.6521	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	720	281
+----------------------------------------
+2247.7344	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2251.8211	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	SF	0	0
+----------------------------------------
+2255.9093	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	198	788
+----------------------------------------
+2259.9964	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	RSTO	0	44
+----------------------------------------
+2264.0877	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	56504	0
+----------------------------------------
+2268.1793	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2272.2667	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2276.3554	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	195	8234
+----------------------------------------
+2280.4413	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1096	405
+----------------------------------------
+2284.5323	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	43	127
+----------------------------------------
+2288.6208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	259	5759
+----------------------------------------
+2292.7181	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	223	6060
+----------------------------------------
+2296.8089	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+2300.8925	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1480	0
+----------------------------------------
+2304.9828	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2309.0787	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	230	3163
+----------------------------------------
+2313.1764	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	28	0
+----------------------------------------
+2317.2814	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	Z39_50	REJ	0	0
+----------------------------------------
+2321.3814	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	18	0
+----------------------------------------
+2325.4700	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	47	0
+----------------------------------------
+2329.5710	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	121	174
+----------------------------------------
+2333.6762	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	0
+----------------------------------------
+2337.7749	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2341.8741	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+2345.9584	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	641	0
+----------------------------------------
+2350.0560	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2354.1423	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	190	26063
+----------------------------------------
+2358.2371	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	324	269
+----------------------------------------
+2362.3365	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	329	832
+----------------------------------------
+2366.4237	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2370.5177	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+2374.6055	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	226	6969
+----------------------------------------
+2378.6939	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2382.7854	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	49	0
+----------------------------------------
+2386.8706	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	207	300
+----------------------------------------
+2390.9694	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	213	972
+----------------------------------------
+2395.0656	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	26	157
+----------------------------------------
+2399.1486	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2403.2479	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	197	22603
+----------------------------------------
+2407.3393	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	46	46
+----------------------------------------
+2411.4445	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	224	2531
+----------------------------------------
+2415.5340	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	211	254
+----------------------------------------
+2419.6159	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	216	415
+----------------------------------------
+2423.7107	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2427.8240	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	308	375
+----------------------------------------
+2431.9150	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+2436.0165	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2440.3197	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	288	313
+----------------------------------------
+2444.4168	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2448.5125	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2452.6074	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1366	330
+----------------------------------------
+2456.6940	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	imap4	S0	0	0
+----------------------------------------
+2460.7794	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1480	0
+----------------------------------------
+2464.8657	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	214	1919
+----------------------------------------
+2468.9496	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	192	942
+----------------------------------------
+2473.0376	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	159	597
+----------------------------------------
+2477.1350	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	158	1623
+----------------------------------------
+2481.2344	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	597
+----------------------------------------
+2485.3326	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2489.4158	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	208	588
+----------------------------------------
+2493.5002	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sunrpc	RSTO	0	0
+----------------------------------------
+2497.5911	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2501.6728	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	300	369
+----------------------------------------
+2505.7663	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	328	10176
+----------------------------------------
+2509.8641	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2513.9546	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	293	182
+----------------------------------------
+2518.0515	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	303	1850
+----------------------------------------
+2522.1466	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+2526.2436	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2530.3475	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	217
+----------------------------------------
+2534.4413	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	328	2216
+----------------------------------------
+2538.5458	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	51	0
+----------------------------------------
+2542.6357	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	72564	0
+----------------------------------------
+2546.7357	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	50	0
+----------------------------------------
+2550.8335	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	297	4894
+----------------------------------------
+2554.9335	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	42	42
+----------------------------------------
+2559.0287	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2563.1274	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2567.2257	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	2726	0
+----------------------------------------
+2571.3237	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+2575.4230	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	320	2056
+----------------------------------------
+2579.5178	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1428	286
+----------------------------------------
+2583.6116	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2587.7146	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	46	46
+----------------------------------------
+2591.8134	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+2595.9073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	15
+----------------------------------------
+2600.0050	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2604.1066	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	189	215
+----------------------------------------
+2608.1999	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2612.3005	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	174	8885
+----------------------------------------
+2616.3900	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+2620.4912	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	233	50431
+----------------------------------------
+2624.5841	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2628.6762	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+2632.7645	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	125	174
+----------------------------------------
+2636.8592	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	324	269
+----------------------------------------
+2640.9537	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	288	1392
+----------------------------------------
+2645.0379	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	6864	0
+----------------------------------------
+2649.1252	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	124	174
+----------------------------------------
+2653.2101	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	44	126
+----------------------------------------
+2657.2925	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	294	1415
+----------------------------------------
+2661.3683	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	243	420
+----------------------------------------
+2665.4199	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+2669.4571	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	259	1448
+----------------------------------------
+2673.5063	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	1	15
+----------------------------------------
+2677.5573	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2681.6564	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	53	52
+----------------------------------------
+2685.7413	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+2689.8362	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	274	16956
+----------------------------------------
+2693.9175	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	321	4226
+----------------------------------------
+2698.0179	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	211	1227
+----------------------------------------
+2702.1081	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	25	157
+----------------------------------------
+2706.1910	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	168	10972
+----------------------------------------
+2710.2944	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2714.3785	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	echo	RSTO	0	0
+----------------------------------------
+2718.4719	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	43	127
+----------------------------------------
+2722.5572	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	200	418
+----------------------------------------
+2726.6531	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1480	0
+----------------------------------------
+2730.7403	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	156	1561
+----------------------------------------
+2734.8287	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+2738.9196	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	75484	0
+----------------------------------------
+2743.0149	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	260	267
+----------------------------------------
+2747.1141	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2751.2048	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sql_net	S0	0	0
+----------------------------------------
+2755.3007	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2759.3889	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	206	1977
+----------------------------------------
+2763.4803	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	uucp_path	S0	0	0
+----------------------------------------
+2767.5839	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	login	RSTO	0	0
+----------------------------------------
+2771.6695	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2775.7650	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	3548	37496
+----------------------------------------
+2779.8531	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+2783.9479	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	149	31692
+----------------------------------------
+2788.0416	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	43	107
+----------------------------------------
+2792.1282	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+2796.2158	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	S0	0	0
+----------------------------------------
+2800.3015	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+2804.3891	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	REJ	0	0
+----------------------------------------
+2808.4715	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+2812.5567	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	login	RSTO	0	0
+----------------------------------------
+2816.6459	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2820.7296	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+2824.8227	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+2828.9208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	36	0
+----------------------------------------
+2833.0089	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	215	241
+----------------------------------------
+2837.1082	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2841.1989	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+2845.2887	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2849.3772	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	214	7487
+----------------------------------------
+2853.4791	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	256	11326
+----------------------------------------
+2857.5808	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	SH	0	0
+----------------------------------------
+2861.6734	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+2865.7659	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	334	55417
+----------------------------------------
+2869.8550	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+2873.9459	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2878.0368	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2882.1234	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2886.2074	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2890.2993	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	46	43
+----------------------------------------
+2894.3955	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	42	42
+----------------------------------------
+2898.4790	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	47	0
+----------------------------------------
+2902.5776	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	165	5028
+----------------------------------------
+2906.6697	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	4296
+----------------------------------------
+2910.7592	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	0
+----------------------------------------
+2914.8581	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	222	333
+----------------------------------------
+2918.9535	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+2923.0394	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1309	331
+----------------------------------------
+2927.1268	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2931.2273	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+2935.3164	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	210	3946
+----------------------------------------
+2939.4101	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	217
+----------------------------------------
+2943.4963	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+2947.5841	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	10044	0
+----------------------------------------
+2951.6843	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	26	157
+----------------------------------------
+2955.7814	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	313	7177
+----------------------------------------
+2959.8794	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+2963.9755	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+2968.0608	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	RSTO	122	177
+----------------------------------------
+2972.1495	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	317	702
+----------------------------------------
+2976.2373	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	discard	RSTO	0	0
+----------------------------------------
+2980.3434	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	domain	REJ	0	0
+----------------------------------------
+2984.4312	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	0
+----------------------------------------
+2988.5270	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	226	301
+----------------------------------------
+2992.6278	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	discard	RSTO	0	0
+----------------------------------------
+2996.7194	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	264	132
+----------------------------------------
+3000.8152	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	uucp_path	REJ	0	0
+----------------------------------------
+3004.8973	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3008.9822	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+3013.0823	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	162	597
+----------------------------------------
+3017.1671	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	REJ	0	0
+----------------------------------------
+3021.2540	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sunrpc	RSTO	0	0
+----------------------------------------
+3025.3483	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3029.4385	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	252	1719
+----------------------------------------
+3033.5385	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3037.6330	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	121	174
+----------------------------------------
+3041.7161	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	307	3222
+----------------------------------------
+3045.8144	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3049.9084	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	28	93
+----------------------------------------
+3054.0016	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+3058.0886	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	courier	REJ	0	0
+----------------------------------------
+3062.1864	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	217	2445
+----------------------------------------
+3066.2846	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	209	2881
+----------------------------------------
+3070.3741	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3074.4649	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+3078.5614	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+3082.6484	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3086.7487	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	242	1310
+----------------------------------------
+3090.8348	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3094.9232	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	162	597
+----------------------------------------
+3099.0230	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	62344	0
+----------------------------------------
+3103.1110	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	320	1978
+----------------------------------------
+3107.1986	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	26	157
+----------------------------------------
+3111.2920	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	bgp	REJ	0	0
+----------------------------------------
+3115.3821	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3119.4783	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	42	42
+----------------------------------------
+3123.5775	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+3127.6703	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	222	1450
+----------------------------------------
+3131.7678	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	54	55
+----------------------------------------
+3135.8656	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+3139.9523	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	sunrpc	REJ	0	0
+----------------------------------------
+3144.0369	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	282	758
+----------------------------------------
+3148.1322	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	other	SF	1	1
+----------------------------------------
+3152.2352	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1227	390
+----------------------------------------
+3156.3279	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	52	54
+----------------------------------------
+3160.4251	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	13334	880
+----------------------------------------
+3164.5189	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+3168.6147	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3172.7127	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	211	73588
+----------------------------------------
+3176.8055	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+3180.8910	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	echo	S0	0	0
+----------------------------------------
+3184.9810	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3189.0649	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	finger	S0	0	0
+----------------------------------------
+3193.1573	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3197.2509	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	0	0
+----------------------------------------
+3201.3356	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3205.4212	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	43	0
+----------------------------------------
+3209.5165	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	netbios_ssn	S0	0	0
+----------------------------------------
+3213.6073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	508	0
+----------------------------------------
+3217.7070	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3221.7924	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	RSTO	0	0
+----------------------------------------
+3225.9759	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	357	7332
+----------------------------------------
+3230.0612	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	336	278
+----------------------------------------
+3234.1507	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	297	17151
+----------------------------------------
+3238.2430	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	nnsp	S0	0	0
+----------------------------------------
+3242.3339	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	250	8706
+----------------------------------------
+3246.4264	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+3250.5263	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	321	581
+----------------------------------------
+3254.6175	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	164	601
+----------------------------------------
+3258.7077	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+3262.7985	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+3266.8976	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	235	2698
+----------------------------------------
+3270.9869	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	4024	405
+----------------------------------------
+3275.0835	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3279.1790	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	1
+----------------------------------------
+3283.2758	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	217	1712
+----------------------------------------
+3287.3734	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+3291.4587	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	ntp_u	SF	48	48
+----------------------------------------
+3295.5455	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+3299.6385	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	SH	0	0
+----------------------------------------
+3303.7226	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ctf	REJ	0	0
+----------------------------------------
+3307.8123	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	349	2929
+----------------------------------------
+3311.9064	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	71584	0
+----------------------------------------
+3315.9922	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	24	715
+----------------------------------------
+3320.0820	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	20	0
+----------------------------------------
+3324.1842	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	343	462
+----------------------------------------
+3328.2815	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	3787	403
+----------------------------------------
+3332.3803	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	S0	0	0
+----------------------------------------
+3336.4806	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	0	44
+----------------------------------------
+3340.5767	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	77	44
+----------------------------------------
+3344.6727	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	45
+----------------------------------------
+3348.7757	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3352.8794	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3356.9811	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	REJ	0	0
+----------------------------------------
+3361.0640	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+3365.1503	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	211	2543
+----------------------------------------
+3369.2345	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	46	79
+----------------------------------------
+3373.3258	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	netbios_ns	REJ	0	0
+----------------------------------------
+3377.4253	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+3381.5217	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3385.6221	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	link	REJ	0	0
+----------------------------------------
+3389.7212	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+3393.8134	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+3397.9059	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	401	282
+----------------------------------------
+3401.9980	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	717	331
+----------------------------------------
+3406.1014	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+3410.2025	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+3414.3078	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+3418.4097	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	RSTO	0	15
+----------------------------------------
+3422.5122	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	REJ	0	0
+----------------------------------------
+3426.6126	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	277	7372
+----------------------------------------
+3430.7116	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	162	597
+----------------------------------------
+3434.8128	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	S0	0	0
+----------------------------------------
+3438.9094	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	339	454
+----------------------------------------
+3443.0130	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	46	46
+----------------------------------------
+3447.1152	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	318	488
+----------------------------------------
+3451.2172	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	155	591
+----------------------------------------
+3455.3163	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	128
+----------------------------------------
+3459.4236	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	312	1851
+----------------------------------------
+3463.5335	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	12	0
+----------------------------------------
+3467.6232	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3471.7205	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	kshell	REJ	0	0
+----------------------------------------
+3475.8130	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3479.9074	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	205	23736
+----------------------------------------
+3484.0020	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+3488.0906	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3492.1802	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	796
+----------------------------------------
+3496.2665	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3500.3539	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	294	1415
+----------------------------------------
+3504.4450	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S3	0	44
+----------------------------------------
+3508.5428	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	Z39_50	REJ	0	0
+----------------------------------------
+3512.6420	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp_data	SF	283618	0
+----------------------------------------
+3516.7241	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	194	2996
+----------------------------------------
+3520.7878	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	42	42
+----------------------------------------
+3524.9070	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	328	968
+----------------------------------------
+3528.9845	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	194	3016
+----------------------------------------
+3533.0246	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	45	128
+----------------------------------------
+3537.0854	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	348	1299
+----------------------------------------
+3541.1756	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	205	23736
+----------------------------------------
+3545.2373	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	303	694
+----------------------------------------
+3549.3404	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	1	1
+----------------------------------------
+3553.4519	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	53	55
+----------------------------------------
+3557.5620	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	301	2239
+----------------------------------------
+3561.6491	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	SF	120	174
+----------------------------------------
+3565.7208	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	210	1118
+----------------------------------------
+3569.8331	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	other	SF	1	1
+----------------------------------------
+3573.9052	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	40008	0
+----------------------------------------
+3578.0094	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3582.1165	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1008	0
+----------------------------------------
+3586.2073	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	eco_i	SF	10008	0
+----------------------------------------
+3590.3332	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	241	590
+----------------------------------------
+3594.3585	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	32	93
+----------------------------------------
+3598.4514	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	227	181
+----------------------------------------
+3602.5757	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	45	0
+----------------------------------------
+3606.6855	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3610.7937	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	597
+----------------------------------------
+3614.8875	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	230	437
+----------------------------------------
+3618.9587	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+3623.0572	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	508	0
+----------------------------------------
+3627.1150	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3631.1695	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	206	347
+----------------------------------------
+3635.2632	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3639.3870	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3643.5040	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	692	395
+----------------------------------------
+3647.5859	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	55	51
+----------------------------------------
+3651.7076	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	305	7667
+----------------------------------------
+3655.7543	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	981	330
+----------------------------------------
+3659.7936	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	ftp	SF	160	597
+----------------------------------------
+3663.8726	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3667.9590	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	RSTO	0	0
+----------------------------------------
+3672.0550	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	45	45
+----------------------------------------
+3676.1617	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	241	1982
+----------------------------------------
+3680.2662	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	telnet	S0	0	0
+----------------------------------------
+3684.3896	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	310	267
+----------------------------------------
+3688.5027	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	836	332
+----------------------------------------
+3692.5803	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1814	330
+----------------------------------------
+3696.7135	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	RSTR	59424	0
+----------------------------------------
+3700.7437	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	1032	0
+----------------------------------------
+3704.7824	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http_443	REJ	0	0
+----------------------------------------
+3708.9488	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	S0	0	0
+----------------------------------------
+3713.1086	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	1	0
+----------------------------------------
+3717.2839	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	domain_u	SF	44	71
+----------------------------------------
+3721.3687	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	160	9876
+----------------------------------------
+3725.4210	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	228	1484
+----------------------------------------
+3729.4356	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	146
+----------------------------------------
+3733.4817	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3737.5077	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	334	4292
+----------------------------------------
+3741.5473	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+3745.5607	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	508	0
+----------------------------------------
+3749.5902	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	224	285
+----------------------------------------
+3753.6198	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+3757.6347	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	105	105
+----------------------------------------
+3761.6501	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	private	REJ	0	0
+----------------------------------------
+3765.6580	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	other	REJ	0	0
+----------------------------------------
+3769.7759	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	282	41575
+----------------------------------------
+3773.8308	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	1566	471
+----------------------------------------
+3777.9853	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	54540	8314
+----------------------------------------
+3782.0115	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+3786.0950	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	udp	private	SF	46	43
+----------------------------------------
+3790.1214	Eroare: main thread is not in main loop	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	207	709
+----------------------------------------

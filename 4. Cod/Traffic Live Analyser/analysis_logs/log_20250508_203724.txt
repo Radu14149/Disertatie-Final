@@ -1,0 +1,39 @@
+0.0130	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+0	192.168.1.1	192.168.1.2	tcp	private	RSTR	0	0
+----------------------------------------
+3.1539	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+1	192.168.1.1	192.168.1.2	tcp	pop_3	SF	30	93
+----------------------------------------
+6.2786	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+2	192.168.1.1	192.168.1.2	tcp	http	SF	245	2130
+----------------------------------------
+9.4059	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	smtp	SF	2599	293
+----------------------------------------
+13.4971	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	vmnet	REJ	0	0
+----------------------------------------
+17.5971	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	ftp	SF	158	597
+----------------------------------------
+21.6966	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	http	SF	214	10645
+----------------------------------------
+25.7948	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	vmnet	S0	0	0
+----------------------------------------
+29.8831	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	udp	private	SF	40	0
+----------------------------------------
+33.9888	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	telnet	S0	0	0
+----------------------------------------
+38.0918	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	icmp	ecr_i	SF	520	0
+----------------------------------------
+42.1869	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	http	SF	163	704
+----------------------------------------
+46.2767	Eroare: main thread is not in main loop	0.00%
+3	192.168.1.1	192.168.1.2	tcp	http	SF	217	999
+----------------------------------------

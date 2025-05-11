@@ -1,0 +1,90 @@
+1.0346	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+0	192.168.125.179:64067	150.171.27.11:443	6	55	Ether / IP / TCP 192.168.125.179:64067 > 150.171.27.11:https A / Raw
+----------------------------------------
+1.1601	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+1	150.171.27.11:443	192.168.125.179:64067	6	66	Ether / IP / TCP 150.171.27.11:https > 192.168.125.179:64067 A
+----------------------------------------
+1.7970	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+2	192.168.125.179:57087	192.168.125.213:53	17	91	Ether / IP / UDP / DNS Qry b'teams.events.data.microsoft.com.'
+----------------------------------------
+1.8502	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+3	192.168.125.179:52139	192.168.125.213:53	17	91	Ether / IP / UDP / DNS Qry b'teams.events.data.microsoft.com.'
+----------------------------------------
+1.9012	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+3	192.168.125.213:53	192.168.125.179:57087	17	222	Ether / IP / UDP / DNS Ans b'teams-events-data.trafficmanager.net.'
+----------------------------------------
+1.9742	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+5	192.168.125.213:53	192.168.125.179:52139	17	266	Ether / IP / UDP / DNS Ans b'teams-events-data.trafficmanager.net.'
+----------------------------------------
+2.1330	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+6	192.168.125.179:64071	104.46.162.226:443	6	66	Ether / IP / TCP 192.168.125.179:64071 > 104.46.162.226:https S
+----------------------------------------
+2.8910	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+7	192.168.125.179:64070	104.46.162.226:443	6	66	Ether / IP / TCP 192.168.125.179:64070 > 104.46.162.226:https S
+----------------------------------------
+3.1382	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+8	192.168.125.179:64071	104.46.162.226:443	6	66	Ether / IP / TCP 192.168.125.179:64071 > 104.46.162.226:https S
+----------------------------------------
+3.5262	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+9	192.168.125.179:64066	3.160.246.23:443	6	55	Ether / IP / TCP 192.168.125.179:64066 > 3.160.246.23:https A / Raw
+----------------------------------------
+3.6186	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+10	3.160.246.23:443	192.168.125.179:64066	6	66	Ether / IP / TCP 3.160.246.23:https > 192.168.125.179:64066 A
+----------------------------------------
+3.6688	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+11	13.107.246.44:443	192.168.125.179:64022	6	93	Ether / IP / TCP 13.107.246.44:https > 192.168.125.179:64022 PA / Raw
+----------------------------------------
+3.7207	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+12	13.107.246.44:443	192.168.125.179:64022	6	78	Ether / IP / TCP 13.107.246.44:https > 192.168.125.179:64022 PA / Raw
+----------------------------------------
+3.7997	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+13	13.107.246.44:443	192.168.125.179:64022	6	54	Ether / IP / TCP 13.107.246.44:https > 192.168.125.179:64022 FA
+----------------------------------------
+3.8492	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+13	192.168.125.179:64022	13.107.246.44:443	6	54	Ether / IP / TCP 192.168.125.179:64022 > 13.107.246.44:https A
+----------------------------------------
+3.9032	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+15	192.168.125.179:64022	13.107.246.44:443	6	54	Ether / IP / TCP 192.168.125.179:64022 > 13.107.246.44:https A
+----------------------------------------
+3.9550	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+15	192.168.125.179:64022	13.107.246.44:443	6	54	Ether / IP / TCP 192.168.125.179:64022 > 13.107.246.44:https FA
+----------------------------------------
+4.0110	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+17	13.107.246.44:443	192.168.125.179:64022	6	54	Ether / IP / TCP 13.107.246.44:https > 192.168.125.179:64022 FA
+----------------------------------------
+4.2738	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+18	192.168.125.179:64072	13.69.109.130:443	6	66	Ether / IP / TCP 192.168.125.179:64072 > 13.69.109.130:https S
+----------------------------------------
+4.3248	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+19	192.168.125.179:61912	192.168.125.213:53	17	95	Ether / IP / UDP / DNS Qry b'eu-mobile.events.data.microsoft.com.'
+----------------------------------------
+4.3775	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+20	192.168.125.179:50488	192.168.125.213:53	17	95	Ether / IP / UDP / DNS Qry b'eu-mobile.events.data.microsoft.com.'
+----------------------------------------
+4.4604	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+20	192.168.125.179:61912	192.168.125.213:53	17	95	Ether / IP / UDP / DNS Qry b'eu-mobile.events.data.microsoft.com.'
+----------------------------------------
+4.5114	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+22	192.168.125.179:50488	192.168.125.213:53	17	95	Ether / IP / UDP / DNS Qry b'eu-mobile.events.data.microsoft.com.'
+----------------------------------------
+4.5624	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+22	192.168.125.213:53	192.168.125.179:61912	17	260	Ether / IP / UDP / DNS Ans b'eu.events.data.trafficmanager.net.'
+----------------------------------------
+4.6134	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+24	192.168.125.213:53	192.168.125.179:50488	17	215	Ether / IP / UDP / DNS Ans b'eu.events.data.trafficmanager.net.'
+----------------------------------------
+4.6644	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+24	192.168.125.213:53	192.168.125.179:61912	17	260	Ether / IP / UDP / DNS Ans b'eu.events.data.trafficmanager.net.'
+----------------------------------------
+4.7144	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+26	192.168.125.213:53	192.168.125.179:50488	17	215	Ether / IP / UDP / DNS Ans b'eu.events.data.trafficmanager.net.'
+----------------------------------------
+4.9045	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+27	192.168.125.179:64070	104.46.162.226:443	6	66	Ether / IP / TCP 192.168.125.179:64070 > 104.46.162.226:https S
+----------------------------------------
+5.1396	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+28	192.168.125.179:64071	104.46.162.226:443	6	66	Ether / IP / TCP 192.168.125.179:64071 > 104.46.162.226:https S
+----------------------------------------
+5.2793	Eroare: Input 0 of layer "functional_1" is incompatible with the layer: expected shape=(None, 42, 1), found shape=(1, 41)	0.00%
+29	192.168.125.179:64072	13.69.109.130:443	6	66	Ether / IP / TCP 192.168.125.179:64072 > 13.69.109.130:https S
+----------------------------------------
